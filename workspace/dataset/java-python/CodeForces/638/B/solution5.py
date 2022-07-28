@@ -1,0 +1,1 @@
+n=int(input())d={}p={}ans=''for x in [input() for i in range(n)]:    for i in range(len(x)-1): d[x[i]]=x[i+1]    for i in range(1,len(x)): p[x[i]]=1    d.setdefault(x[-1],'')for x in range(9,123):    x=chr(x)    if p.get(x,0)>0 or d.get(x,'Q')=='Q': continue    while x!='':        ans+=x        t=d[x]        del d[x]        x=tprint(ans)

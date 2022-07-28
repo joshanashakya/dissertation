@@ -1,0 +1,1 @@
+n=int(input())arr=[int(i) for i in input().split()]i=0while(i<n and arr[i]==0):    arr[i]=-1    i=i+1i=n-1while(arr[i]==0):    arr[i]=-1    i=i-1i,c=0,0while(i<n):    if arr[i]==1:        c=c+1        i=i+1    elif arr[i]==0:        c=c+1        while(arr[i]==0):            i=i+1    else:        i=i+1print(c)         

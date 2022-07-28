@@ -1,0 +1,1 @@
+n, m = map(int, input().split())A = [[] for _ in range(n+1)]B = [0 for _ in range(n+1)]for i in range(m):    u, v = map(int, input().split())    if u > v:        u, v = v, u    A[u].append(v)    B[u] += 1    B[v] += 1C = [0 for _ in range(n+1)]X = B[1]for u in range(1, n+1):    for v in A[u]:        C[v] = max(C[v], C[u] + 1)        X = max(X, (C[v] + 1) * B[v])print(X)

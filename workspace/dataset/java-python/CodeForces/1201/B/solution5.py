@@ -1,0 +1,1 @@
+import heapqn = int(input())arr = list(map(int, input().split()))arr.sort()largest = arr[-1]total = sum(arr)others = total - arr[-1]if total%2 == 0 and largest<=others:    print("YES")else:    print("NO")

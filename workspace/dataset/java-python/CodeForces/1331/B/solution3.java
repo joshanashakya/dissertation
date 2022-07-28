@@ -1,0 +1,1 @@
+import java.io.*;import java.util.*;public class T {    public static void main(String[] args) throws IOException {    Scanner sc=new Scanner(System.in);     int loops=sc.nextInt();         for(int i=2; i<=loops; i++)        while(loops%i==0){            System.out.print(i);            loops /= i;        }      } }

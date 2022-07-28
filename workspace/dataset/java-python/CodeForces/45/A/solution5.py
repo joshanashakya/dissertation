@@ -1,0 +1,1 @@
+m = input()t = int(input()) a = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'] m = a.index(m) for i in range(t): if m == 11:  m = 0 else:  m += 1  print(a[m])

@@ -1,0 +1,1 @@
+import io,osinput = io.BytesIO(os.read(0,os.fstat(0).st_size)).readline n, k, x = map(int, input().split())l = [int(x) for x in input().split()]ans=0for i in range(n-k):    ans+=l[i] for i in range(k):    ans+=x print(ans)

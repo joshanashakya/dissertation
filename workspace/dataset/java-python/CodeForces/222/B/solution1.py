@@ -1,0 +1,1 @@
+n,m,k=list(map(int,input().split()))matrix=[input().split() for i in range(n)]row=[i for i in range(n)]col=[i for i in range(m)] ans=[]for i in range(k):	s,x,y=input().split()	x,y=int(x)-1,int(y)-1	if s=="c":		col[x],col[y]=col[y],col[x]	elif s=="r":		row[x],row[y]=row[y],row[x]	else:		ans.append(matrix[row[x]][col[y]]) print("\n".join(ans))

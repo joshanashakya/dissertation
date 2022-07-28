@@ -1,0 +1,1 @@
+from collections import Counter cases = int(input())x = caseslst = []while cases:    cases -= 1    arr = list(map(int, input().split()))[1:]     lst.extend(arr) frq = Counter(lst) ans = [] for key, val in frq.items():    if val == x:        ans.append(key) print(*ans) 

@@ -1,0 +1,1 @@
+n, m = map(int, input().split()) G = [[] for i in range(n)]for i in range(m):    a, b = map(int, input().split())    G[a-1].append(b-1)    G[b-1].append(a-1) max_dist = 0dist = [0]*nfor v in range(n):    dist[v] = 1    for u in G[v]:        if (u < v):            dist[v] = max(dist[v], dist[u] + 1);        max_dist = max(max_dist, dist[v] * len(G[v])); print(max_dist)

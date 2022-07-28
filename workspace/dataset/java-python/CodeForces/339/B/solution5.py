@@ -1,0 +1,1 @@
+n,m=map(int,input().split())x=list(map(int,input().split()))c=0for i in range(0,len(x)-1):    if(x[i]<x[i+1]):        c=c+x[i+1]-x[i]    elif(x[i]==x[i+1]):        c=c+0    else:        a=n-x[i]        c=c+x[i+1]+a        print(c+x[0]-1)

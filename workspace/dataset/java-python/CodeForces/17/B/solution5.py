@@ -1,0 +1,1 @@
+import sysimport math n = int(input())q = map(int, input().split())m = int(input())upc = [1000005] * nfor i in range(m):    a, b, c = map(int, input().split())    upc[b-1] = min(upc[b-1], c) a, c = 0, 0 for x in upc:    if x > 1000000:        c += 1        if c > 1:            print("-1")            sys.exit(0)    else:        a += x print(a)  	 	   						 	 		 	   	 					

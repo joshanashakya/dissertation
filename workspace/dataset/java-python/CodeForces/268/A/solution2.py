@@ -1,0 +1,1 @@
+n = int(input())l1 = []l2 = []r = 0for i in range(n):    t = input().split()    l1.append(t[0])    l2.append(t[1]) for i in range(len(l1)):    for j in range(len(l2)):        if l1[i] == l2[j]:            r += 1  print(r)

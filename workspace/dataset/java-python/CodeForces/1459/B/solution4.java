@@ -1,0 +1,1 @@
+import java.util.Scanner;public class suanfa5 {     public static void main(String [] args){        Scanner sc=new Scanner(System.in);         int n=sc.nextInt();         int m=0;         if(n%2==0){            int res= (n/2+1);            m=res*res;        }       else{          m=(n+3)*(n+1)/2;          }    System.out.println(m);}}	 	 	  	 				 		 	   		   					

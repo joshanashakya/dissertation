@@ -1,0 +1,1 @@
+import math n = int(input()) res = []sqrt = int(math.sqrt(n))if sqrt * sqrt >= n:    print(sqrt * 2)elif (sqrt+1) * sqrt >= n:    print(sqrt * 2 + 1)elif (sqrt + 1) * (sqrt + 1) >= n:    print(sqrt * 2 + 2)

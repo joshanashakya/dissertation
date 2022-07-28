@@ -1,0 +1,1 @@
+strand = input()add = 0count = 1for i in range(len(strand)-1):	if strand[i] == strand[i+1]:		count+=1	elif strand[i]!=strand[i+1]:		if count%2 == 0:			add+=1		count=1 	if i == len(strand)-2:		if count%2==0:			add+=1 print(add)

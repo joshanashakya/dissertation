@@ -1,0 +1,1 @@
+raw = input()R, C = (int(token) for token in raw.split(' '))mat = list()for i in range(R):    row = input()    mat.append(row) count = 0for i in range(1, R):    for j in range(1, C):        sq = [mat[i-1][j-1], mat[i-1][j], mat[i][j-1], mat[i][j]]        sq.sort()        if ''.join(sq) == 'acef':            count += 1print(count)  	 					 	   	 	  	 		 		 			

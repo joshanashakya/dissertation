@@ -1,0 +1,1 @@
+dic = {'vert':0,'horz':0}copydic = dic.copy()n = int(input())s = input()count = 0dics = {'U':1,'D':-1,'L':-1,'R':1}for i in range(n):    for j in range(i,n):        if s[j]=='U' or s[j]=='D':            dic['vert'] += dics[s[j]]        else:            dic['horz'] += dics[s[j]]        if dic['vert']==dic['horz']==0:            count += 1    dic = copydic.copy()print(count)

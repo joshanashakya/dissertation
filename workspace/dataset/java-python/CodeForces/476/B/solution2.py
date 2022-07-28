@@ -1,0 +1,1 @@
+import math  def nCr(n, r):    f = math.factorial    return f(n) / f(r) / f(n-r)  a = input()b = input()ap = a.count('+')an = a.count('-')bp = b.count('+')bn = b.count('-')bq = b.count('?')if bq == abs(ap-bp)+abs(an-bn):    temp = (nCr(bq, abs(ap-bp)))/pow(2, bq)    print(temp)else:    print(0)

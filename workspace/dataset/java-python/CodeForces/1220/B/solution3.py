@@ -1,0 +1,1 @@
+n = int(input())l = []for i in range(n):    l.append(list(map(int,input().split())))ans = []a = int(((l[0][1]*l[1][2])//l[0][2])**0.5) for i in range(n):    if l[1][i]!=0:        ans.append(l[1][i]//a)    else:        ans.append(a)print(*ans)

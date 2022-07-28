@@ -1,0 +1,1 @@
+def sol(a,i,j):    if(len(a)==1):return True    for i in range(i+1,j+1):        if(a[i]<a[i-1]): return False    return Truedef solve(a,i,j):    if(i>j):return 0;    if(sol(a,i,j)):return j-i+1    mid=(j+i)//2    return max(solve(a,i,mid),solve(a,mid+1,j))n=int(input())    a=list(map(int,input().split()))print(solve(a,0,len(a)-1))

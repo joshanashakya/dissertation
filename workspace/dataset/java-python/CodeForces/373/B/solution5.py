@@ -1,0 +1,1 @@
+w,m,k = map(int,input().split())cur = len(str(m))g = 9base = 1g = g*(10**(cur-1))base = base*(10**(cur-1))gg = g - (m - base)ans = 0while(w):	if(w>cur*gg*k):		w-=cur*gg*k		ans +=gg		cur+=1		gg = g*10		g*=10	else:		ans += w//(cur*k)		breakprint(ans)

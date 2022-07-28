@@ -1,0 +1,1 @@
+import operatorfrom collections import defaultdict n = int(input())lst = [int(i) for i in input().split()]add = [] for i in range(n):    for j in range(i + 1, n):        add.append(lst[i] + lst[j]) occ = defaultdict(lambda: 0)for i in add:    occ[i] += 1 MaxKey = max(occ.items(), key=operator.itemgetter(1))[1]print(MaxKey)

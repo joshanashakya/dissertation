@@ -1,0 +1,1 @@
+n = int(input())x = list(map(int,input().split()))q = int(input())presum = [0]*(max(x)+1)sum = 0x.sort()for i in range(n):	presum[x[i]] = (i+1)for i in range(len(presum)):	if presum[i]!=0:		sum = presum[i]	presum[i] = sum# print(presum)for __ in range(q):	m = int(input())	if m>=len(presum):		print(presum[len(presum)-1])	else:		print(presum[m])

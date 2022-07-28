@@ -1,0 +1,1 @@
+import java.util.*;import java.io.*;public class horses{	public static void main(String args[])	{		Scanner sc=new Scanner(System.in);		int n=sc.nextInt();		int v=sc.nextInt();		if(n-1<=v)		{			System.out.println(n-1);			return;		}		long cost=v-1;		for(int i=1;i<=n-v;i++)			cost+=i;		System.out.println(cost);	}}

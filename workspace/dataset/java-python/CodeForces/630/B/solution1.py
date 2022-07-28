@@ -1,0 +1,1 @@
+def f(t):    z = 1.000000011    p = 1    while t:        if t%2:            t -= 1            p *= z        else:            t //= 2            z *= z    return pn,t = map(int,input().split())print(n*f(t))

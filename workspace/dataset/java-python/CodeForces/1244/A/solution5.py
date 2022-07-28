@@ -1,0 +1,1 @@
+from math import ceiln = int(input())for i in range(n):    a, b, c, d, k = map(int, input().split())    pens = ceil(a/c)    pencils = ceil(b/d)     if pens + pencils <= k:        print(str(pens)+" "+str(pencils))    else:        print("-1")

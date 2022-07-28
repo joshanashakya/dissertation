@@ -1,0 +1,1 @@
+a=[]for i in range(3):    x=list(map(int,input().strip().split()))    a.append(x)x=(a[0][1]+a[0][2]+a[1][0]+a[1][2]+a[2][1]+a[2][0])//2 a[0][0]=x-(a[0][1]+a[0][2])a[1][1]=x-(a[1][0]+a[1][2])a[2][2]=x-(a[2][1]+a[2][0])for i in range(3):    for j in range(3):        print(a[i][j],end=" ")    print()

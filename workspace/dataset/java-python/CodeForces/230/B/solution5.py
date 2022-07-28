@@ -1,0 +1,1 @@
+import math  _ = int(input()) n = 1_000_000d = {1: True}for i in range(2, int(math.sqrt(n)) + 1):    if i not in d:        for m in range(i * 2, n + 1, i):            d[m] = True  for n in map(int, input().split()):    sq = math.sqrt(n)    if sq == int(sq):        if int(sq) not in d:            print("YES")        else:            print("NO")    else:        print("NO")

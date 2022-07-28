@@ -1,0 +1,1 @@
+s = input().split()days = 366 if s[2] == 'week':    ans = 52    if int(s[0]) == 5 or int(s[0]) == 6: ans+=1    print(ans) else:    if int(s[0]) == 31:        print(7)    elif int(s[0]) == 30:        print(11)     else:        print(12)

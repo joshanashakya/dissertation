@@ -1,0 +1,1 @@
+n, x = [int(i) for i in input().split()]b = 0for i in range(n):    a = input()    if '+' in a:        x += int(a[2:])    else:        if int(a[2:]) > x:            b += 1        else:            x -= int(a[2:])print(x, b)

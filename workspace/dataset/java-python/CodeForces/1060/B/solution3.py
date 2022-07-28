@@ -1,0 +1,1 @@
+n = int(input())res = 0carrier = 0while n > 9:    target = (n % 10) - carrier    if target == 9:        res += 9        carrier = 0    elif target == -1:        res += 9        carrier = 1    else:        res += 10 + target        carrier = 1    n //= 10 print(res+n-carrier)    

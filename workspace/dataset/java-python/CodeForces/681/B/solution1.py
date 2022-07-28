@@ -1,0 +1,1 @@
+n = int(input()) a = 1234567b = 123456c = 1234 nat = 'NO'for i in range(n // a + 1):    n2 = n - a * i         for i2 in range(n2 // b + 1):                 if (n2 - b * i2) % c == 0:                       nat = 'YES'print(nat)              

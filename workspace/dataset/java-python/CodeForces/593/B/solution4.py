@@ -1,0 +1,1 @@
+n=int(input())x1,x2=map(int,input().split(" ")) liste=[]for test in range(n):    k,b=map(int,input().split(" "))    liste.append((k*x1+b,k*x2+b))liste.sort()  flag=0i=1while i<n:    if liste[i][1]<liste[i-1][1]:        flag=1        break     i+=1 print(['NO','YES'][flag])

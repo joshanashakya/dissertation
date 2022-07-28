@@ -1,0 +1,1 @@
+n = int(input())for i in range(n) :    a = sorted(list(input()))    flag = True    for j in range(len(a) - 1):        if ord(a[j]) + 1 != ord(a[j + 1]):            flag = False    if (flag):        print("Yes")    else:        print("No")

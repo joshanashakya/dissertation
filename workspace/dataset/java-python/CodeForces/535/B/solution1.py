@@ -1,0 +1,1 @@
+try:    n = input()    length = len(n)    ans = (1<<length)-2    count = 0    for i in range(length-1,-1,-1):        if n[i] == "7":            ans += (1<<count)        count += 1    print(ans+1)except EOFError as e:    print(" ")

@@ -1,0 +1,1 @@
+import datetime n = int(input())a , b = input().split() x = datetime.timedelta(hours= int(a) , minutes=int(b))c = 0while '7' not in str(x):    x -= datetime.timedelta(hours= 0 , minutes=n)    c +=1 print(c)

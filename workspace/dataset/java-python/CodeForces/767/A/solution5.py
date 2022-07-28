@@ -1,0 +1,1 @@
+n = int(input())t = list(map(int, input().split())) p = n-1used = [False]*n for x in range(n):    used[t[x]-1] = True     while p >= 0 and used[p]:         print(p+1, end=' ')        p -= 1    print('')         

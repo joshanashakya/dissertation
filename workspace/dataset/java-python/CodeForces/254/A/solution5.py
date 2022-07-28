@@ -1,0 +1,1 @@
+l = list(map(int,open("input.txt").read().split()[1:])) s = set(l) f = open("output.txt",'w') ans = []dict = {}for i in range(len(l)):    if l[i] not in dict.keys():        dict[l[i]] = i+1    else:        ans.append(str(dict[l[i]])+" "+str(i+1))        del dict[l[i]]if len(dict) == 0:    f.write('\n'.join(ans))else:    f.write("-1")

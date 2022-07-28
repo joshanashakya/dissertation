@@ -1,0 +1,1 @@
+n,m=map(int,input().split())s=[]ans=0for i in range(n):    l=input()    s.append(l)marks=list(map(int,input().split()))    t={'A':0,'B':1,'C':2,'D':3,'E':4}for i in range(m):    d=[0,0,0,0,0]    for j in range(n):        d[t.get(s[j][i])]+=1    ans+=max(d)*marks[i]print(ans)

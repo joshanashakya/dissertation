@@ -1,0 +1,1 @@
+n = int(input())s = str(input())for i in range(n-1):    j = ord(s[i])-ord('a')    k = ord(s[i+1])-ord('a')    if j > k:        p = i        breakelse:    print(s[0:n-1])    exit()ans = s[0:p]+s[p+1:n]print(ans)

@@ -1,0 +1,1 @@
+import java.util.Scanner; public class Main {		public static void main(String[] args) {		Scanner s = new Scanner(System.in);		int n = s.nextInt();		int m = s.nextInt();		int k = s.nextInt();		String ans = Math.min(m, k) >= n? "YES":"NO";		System.out.println(ans);	}} 	  	  			 		 	 	 	  				 				 		

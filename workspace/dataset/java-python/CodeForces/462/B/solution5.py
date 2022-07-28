@@ -1,0 +1,1 @@
+n, k = map(int, input().split())c = list(input())ncl = []trash = []for i in c:    if i not in trash:        trash.append(i)        ncl.append(c.count(i)) ncl.sort(reverse=True)bruh = 0j = 0while k > 0:     if k >= ncl[j]:        k -= ncl[j]        bruh += ncl[j]*ncl[j]    else:        bruh += k*k        k = 0    j += 1print(bruh)

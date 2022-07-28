@@ -1,0 +1,1 @@
+import sysimport bisect#input=sys.stdin.readlines=input()hashi=dict()for i in s:    if(i in hashi):        hashi[i]+=1    else:        hashi[i]=1z=len(hashi)if(len(s)<4):    print("No")    quit()if(z>4):    print("No")    quit()if(z==1):    print("No")    quit()rem=0for i in hashi:    if(hashi[i]>1):        rem+=1if(rem+z>=4):    print("Yes")else:    print("No")

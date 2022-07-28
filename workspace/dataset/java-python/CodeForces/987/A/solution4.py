@@ -1,0 +1,1 @@
+n=int(input())l=[]d={'purple':'Power','green':'Time','blue':'Space','orange':'Soul','red':'Reality','yellow':'Mind'}for i in range(n):    l.append(input())d1=dict.fromkeys(l)print(6-len(l))for i in d:    if(i not in d1):        print(d[i])

@@ -1,0 +1,1 @@
+'''import syssys.stdin=open("input.txt","r")sys.stdout=open("output.txt","w")''' n=input()ans=list()while int(n)>0:    s=""    for c in n:        if c!='0':            s+='1'        else:            s+='0'    n=str(int(n)-int(s))    ans.append(s)print(len(ans))for a in ans:    print(a,end=" ")

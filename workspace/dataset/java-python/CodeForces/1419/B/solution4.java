@@ -1,0 +1,1 @@
+import java.util.*; public class Stairs { 	public static void main(String[] args) {		// TODO Auto-generated method stub		Scanner sc=new Scanner(System.in);		int t=sc.nextInt();		while(t-->0) {			long n=sc.nextLong();			long x=1,ht=1;			long ans=0;			while(n-x>=0) {				n=n-x;				ht=2*ht+1;				x=(ht*(ht+1))/2;				ans++;			}			System.out.println(ans);		} 	} }

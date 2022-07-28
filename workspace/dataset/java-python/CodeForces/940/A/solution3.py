@@ -1,0 +1,1 @@
+n,k=map(int,input().split())arr=list(map(int,input().split()))arr=sorted(arr);d=[0]*(101)for i in arr:  d[i]+=1ans=10**18for i in range(0,101):  if i+k+1>101:break  else:ans=min(n-sum(d[i:i+k+1]),ans)print(ans)      

@@ -1,0 +1,1 @@
+number = int(input())for i in range(number):    n = input()    new = []    for i, num in enumerate(n[::-1]):        if int(num) >0:            new.append(int(num)*10**i)    print(len(new))    print(*new,sep=" ")   

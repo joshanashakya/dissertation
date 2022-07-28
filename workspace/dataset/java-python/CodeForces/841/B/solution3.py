@@ -1,0 +1,1 @@
+n=int(input())a=list(map(int,input().split()))oddeven=[]s=sum(a)odd=0even=0 for i in a:    if(i%2==0):        even+=1        oddeven.append(0)    else:        odd+=1        oddeven.append(1)        if(s%2!=0):    print("First")else:    if(odd==0):        print("Second")    else:        print("First")            

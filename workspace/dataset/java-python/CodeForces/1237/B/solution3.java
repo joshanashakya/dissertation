@@ -1,0 +1,1 @@
+import java.util.Scanner;public class B {    public static void main(String[] args) {        Scanner sc=new Scanner(System.in);        int n=sc.nextInt(),a[]=new int[n],b[]=new int[n+1],x=-1,c=0;        for(int i=0;i<n;i++) a[i]=sc.nextInt();        for(int i=0;i<n;i++) b[sc.nextInt()]=i+1;        for(int i:a) if(x==(x=Math.max(x, b[i]))) c++;        System.out.println(c);    }}

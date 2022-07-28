@@ -1,0 +1,1 @@
+import java.util.*; public class Main {     public static void main(String[] args) {        Scanner scanner = new Scanner(System.in);       int n=scanner.nextInt();       if(n==1||n==2)           System.out.println(-1);       else{           for(int i=n;i>=1;i--){               System.out.print(i+" ");           }       } }}

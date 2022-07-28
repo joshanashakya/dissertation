@@ -1,0 +1,1 @@
+l=["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday","monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]x=input()y=input()z=l.index(x)a=28%7b=30%7c=31%7if(l[z+a]==y or l[z+b]==y or l[z+c]==y):    print("YES")else:    print("NO")

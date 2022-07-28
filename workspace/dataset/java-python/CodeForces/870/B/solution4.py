@@ -1,0 +1,1 @@
+def maxMaxMin(nums, k):    if k == 1:        return min(nums)    else:        maximum = max(nums)        if k != 2:            return maximum        if nums[0] == maximum or nums[-1] == maximum:            return maximum        return max(nums[0], nums[-1])   n, k = map(int, input().split())nums = list(map(int, input().split()))print(maxMaxMin(nums, k))

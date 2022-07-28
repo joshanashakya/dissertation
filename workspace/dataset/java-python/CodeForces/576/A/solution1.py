@@ -1,0 +1,1 @@
+def prime(n):	for i in range(2,n):		if n%i==0:			return False	return Truen = int(input())ans = []for i in range(2,n+1):	if prime(i):		ans.append(i)		k = 2		while i**k<=n:			ans.append(i**k)			k+=1print(len(ans))print(*ans)

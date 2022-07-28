@@ -1,0 +1,1 @@
+import sysinput = sys.stdin.readline n = int(input())arr = [int(x) for x in input().split()] pos = set([]) for z in arr:    while(z % 2 == 0):        z //= 2            while(z % 3 == 0):        z //= 3            pos.add(z)    if len(pos) != 1:    print("No")else:    print("Yes")

@@ -1,0 +1,1 @@
+def main_function():    x = int(input())    for a in range(1, x + 1):        i = 1        while i * a <= x:            if i * a ** 2 > x and i < x:                return f"{i * a} {a}"            i += 1    return "-1"    print(main_function())

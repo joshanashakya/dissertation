@@ -1,0 +1,1 @@
+g1 = input()g2 = input()s1 = []s2 = []if len(g1) != len(g2):    print('NO')else:    for i in range(len(g1)):        if g1[i] != g2[i]:            s1.append(g1[i])            s2.append(g2[i])     if len(s1) != 2 or len(s2) != 2:        print('NO')    else:        if s1[0] == s2[1] and s1[1] == s2[0]:            print("YES")        else:            print("NO")

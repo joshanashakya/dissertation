@@ -1,0 +1,1 @@
+from math import gcd def base(n , b):    c = 0    while n:        c += n%b        n //= b    return c   n = int(input())x = 0 for i in range(2 , int(n)):    x += base(int(n) , i)  n -= 2hcf = gcd(x , n)  x //= hcfn //= hcfprint(f"{x}/{n}") 

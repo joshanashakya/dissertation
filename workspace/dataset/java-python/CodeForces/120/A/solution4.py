@@ -1,0 +1,1 @@
+input_file = open("input.txt","r") door = input_file.readline()[:-1]rail_no = int(input_file.readline()) if(door == "front"):	d_num = 1else:	d_num = 2 output_file = open("output.txt", "w")if((rail_no + d_num) % 2 == 0):	output_file.write("L")else:	output_file.write("R")

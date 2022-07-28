@@ -1,0 +1,1 @@
+import sys def main():    a, b, c, d, e, f = map(int, sys.stdin.read().strip().split())    n1, n2 = min(a,d), min((b,c,d))    if e < f: return n2*f + min(a, max(d - n2, 0))*e    return n1*e + min((b, c, max(d - n1, 0)))*f        print(main())

@@ -1,0 +1,1 @@
+n, x = map(int, input().split())a = list(map(int, input().split()))exist = [False] * 101for e in a:  exist[e] = Trueans = 0if exist[x]:  ans += 1for i in range(x):  if not exist[i]:    ans += 1print(ans)

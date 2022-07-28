@@ -1,0 +1,1 @@
+# code.pyfor _ in range(1):	n = int(input())	a = list(map(int,input().split()))	i=0	ok = True	while i<n-1:		if a[i]>=a[i+1]:			break		i+=1 	while i<n-1:		if a[i]<a[i+1]:			ok = False			break		i+=1	if ok:		print('YES')	else:		print('NO')

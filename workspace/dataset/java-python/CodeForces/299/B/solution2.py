@@ -1,0 +1,1 @@
+n, k = map(int, input().split())a = input()mx, cur = 0, 0for ch in a:  if ch == '.':    mx = max(mx, cur)    cur = 0  else:    cur += 1print("YES") if mx < k else print("NO") '''* So I drown it out * Like I always do* Dancing through our house* With the ghost of you'''

@@ -1,0 +1,1 @@
+n, k = map(int, input().split())if k == 1:    ans = 6+(n-2)*3elif k == n:    ans = 6+(n-2)*3else:    ans1 = 6+(k-2)*3+(k-1)+(n-k)*3    ans2 = 6+(n-k-1)*3+(n-k)+(k-1)*3    ans = min(ans1, ans2)print(ans)

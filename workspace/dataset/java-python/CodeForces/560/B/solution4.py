@@ -1,0 +1,1 @@
+a,b=map(int,input().split())c,d=map(int,input().split())e,f=map(int,input().split()) for A,B in [(a,b),(b,a)]:    for C,D in [(c,d),(d,c)]:        for E,F in [(e,f),(f,e)]:            if C+E<=A and max(D,F)<=B:                print('YES')                exit()print('NO')

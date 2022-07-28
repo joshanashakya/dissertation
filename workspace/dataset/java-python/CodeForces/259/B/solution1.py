@@ -1,0 +1,1 @@
+a,b,c=map(int,input().split())d,e,f=map(int,input().split())g,h,i=map(int,input().split()) sum1=a+b+csum2=d+e+fsum3=g+h+ia=(sum1+sum2+sum3)//2-(sum1)e=(sum1+sum2+sum3)//2-(sum2)i=(sum1+sum2+sum3)//2-(sum3)print(a,b,c)print(d,e,f)print(g,h,i)     

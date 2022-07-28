@@ -1,0 +1,1 @@
+# # RED CODER # #n = int(input())a = list(map(int, input().split()))[:n]x = 0y = 0z = 0for i in range(0, n, 3):    x += a[i]for k in range(1, n, 3):    y += a[k]for m in range(2, n, 3):    z += a[m]if x > y and x > z:    print("chest")elif y > x and y > z:    print("biceps")else:    print("back")

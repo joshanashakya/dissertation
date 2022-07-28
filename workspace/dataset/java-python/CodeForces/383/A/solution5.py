@@ -1,0 +1,1 @@
+n=int(input())l=list(map(int,input().split()))x=l.count(0)y=l.count(1)if x>=y:    a=[]    k=0    for i in range(n-1,-1,-1):        if l[i]==1:            a.append(k)        else:            k+=1else:    a=[]    k=0    for i in range(n):        if l[i]==0:            a.append(k)        else:            k+=1print(sum(a))

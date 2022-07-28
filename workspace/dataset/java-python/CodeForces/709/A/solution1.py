@@ -1,0 +1,1 @@
+n, b, d = map(int, input().split())summa = 0ans = 0a = [int(i) for i in input().split()]for i in a:    if i <= b:        summa += i    if summa > d:        summa = 0        ans += 1            print(ans)            

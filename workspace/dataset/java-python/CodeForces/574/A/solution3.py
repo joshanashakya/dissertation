@@ -1,0 +1,1 @@
+n=int(input()) b,*l=map(int,input().split()) l=sorted(l) '''u need to sort at every step then only you wil get the minimum steps '''   ans=0 while b<=l[-1]:     l[-1]-=1     b+=1     ans+=1    l = sorted(l)     print(ans) 

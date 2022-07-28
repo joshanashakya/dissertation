@@ -1,0 +1,1 @@
+nk = input().strip().split(' ')n = int(nk[0])k = int(nk[1]) pks = input().strip().split(' ')pks = [int(p) for p in pks]  for i in range(1, 2*n, 2):    if pks[i]-1>pks[i-1] and pks[i]-1>pks[i+1]:        pks[i]-= 1        k -= 1        if k==0:            breakfor i in range(2*n+1):    print(pks[i], end=' ')            

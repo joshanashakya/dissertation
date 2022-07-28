@@ -1,0 +1,1 @@
+import syssys.stdin = open("input.txt","r")sys.stdout = open("output.txt","w+")a=int(input());z=[]for i,j in enumerate(input()):    if j=='1':z.append(i)f=[]for i in range(1,len(z)):f.append(z[i]-z[i-1])if len(set(f))<=1:print("YES")else:print("NO")

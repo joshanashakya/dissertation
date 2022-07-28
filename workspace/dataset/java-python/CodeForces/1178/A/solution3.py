@@ -1,0 +1,1 @@
+n, = map(int,input().split())arr = list(map(int,input().split()))su = sum(arr) ans = [1]sa = arr[0]for i in range(1,n):    if arr[i]*2<=arr[0]:        ans.append(i+1)        sa+= arr[i]if sa> su//2:    print(len(ans))    print(*ans)else:    print(0)

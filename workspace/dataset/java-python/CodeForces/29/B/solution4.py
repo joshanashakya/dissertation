@@ -1,0 +1,1 @@
+def solve():    l, d, v, g, r = [int(x) for x in input().split(' ')]    #Get to Traffic Lights    t = d / v    #Stop at lights if necessary    x = t % (g + r)    if x >= g:        t += (g + r) - x    #Continue to complete journey    t += (l - d) / v    #Return total time    return t print(solve())

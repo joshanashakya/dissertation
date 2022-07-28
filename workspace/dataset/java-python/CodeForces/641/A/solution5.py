@@ -1,0 +1,1 @@
+if __name__ == '__main__':    Y = lambda: list(map(int, input().split()))    N = lambda: int(input())     n = N()    s = input()    a = Y()    nxt, ans = 0, 0     for i in range(n):        nxt += [a[nxt], -a[nxt]][s[nxt] == '<']        if nxt >= n or nxt < 0:            ans = 2            break    print("INFINITE"[ans:])

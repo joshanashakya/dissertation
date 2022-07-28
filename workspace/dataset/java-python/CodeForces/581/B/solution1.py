@@ -1,0 +1,1 @@
+n = int(input())h = list(map(int, input().split()))r = [0]m = h[-1] for i in range(n-2,-1,-1):	if h[i] <= m:		r.append(m + 1 - h[i])	else:		r.append(0)		m = h[i]for i in range(n - 1,-1,-1):	print(r[i], end=' ')

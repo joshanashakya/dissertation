@@ -1,0 +1,1 @@
+_, d = input().split(' ')d = int(d) current = 0previous = 0 for i in range(d):    s = input()    if '0' in s:        current += 1    elif(current > previous):        previous = current        current = 0    else:        current = 0 print(max(previous, current))

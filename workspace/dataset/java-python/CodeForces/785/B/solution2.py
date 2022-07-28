@@ -1,0 +1,1 @@
+n = int(input())a = 1e10b = 0for _ in range(n):    x, y = map(int, input().split())    if(y<a):        a = int(y)    if(x>b):        b= x m = int(input())c = 1e10d = 0for _ in range(m):    x, y = map(int, input().split())    if(y<c):        c = int(y)    if(x>d):        d= x# print(a, b, c, d)print(max(0, b-c, d-a))

@@ -1,0 +1,1 @@
+if __name__ == '__main__':    n = int(input())    for i in range(n):        for j in range(n):            if min(i, n - i - 1) + min(j, n - j - 1) < n // 2:                print('*', end='')            else:                print('D', end='')        print()

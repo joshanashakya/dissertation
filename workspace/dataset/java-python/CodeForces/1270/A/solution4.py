@@ -1,0 +1,1 @@
+for _ in range(int(input())):    n, k1, k2 = map(int, input().split())    fir = sorted([int(i) for i in input().split()], reverse=True)    sec = sorted([int(i) for i in input().split()], reverse=True)    print('YES' if fir[0] > sec[0] else 'NO')

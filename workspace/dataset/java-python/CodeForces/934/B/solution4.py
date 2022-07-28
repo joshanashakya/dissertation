@@ -1,0 +1,1 @@
+import sysdef input():    return sys.stdin.readline().strip()def iinput():   return int(input())def minput():   return map(int, input().split()) def listinput(): return list(map(int, input().split()))n=iinput()if n>36:    print(-1)else:    print("8"*(n//2)+"4"*(n%2))

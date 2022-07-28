@@ -1,0 +1,1 @@
+import java.util.Scanner;public class AA { 	public static void main(String[] args) {	    int y,x;		Scanner ob=new Scanner(System.in);		int a=ob.nextInt();		int b=ob.nextInt();		x=a/b;		y=a+x;		 x=(x+a%b);		while(x>b) {		    y+=x/b;		    x=(x/b+x%b);		} 		if (x==b) {			y+=1;}		System.out.println(y);	}  }

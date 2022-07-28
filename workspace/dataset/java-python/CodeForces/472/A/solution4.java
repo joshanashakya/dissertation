@@ -1,0 +1,1 @@
+import java.util.Scanner; public class Code {    public static void main(String[] args) {        Scanner sc = new Scanner(System.in);        int x = sc.nextInt();        if (x % 2 == 0) {            System.out.println(x - 4 + " 4");        } else {            System.out.println(x - 9 + " 9");        }    }}

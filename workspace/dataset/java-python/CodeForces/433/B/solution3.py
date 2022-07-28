@@ -1,0 +1,1 @@
+n = int(input())v = list(map(int, input().split()))v.insert(0, 0)n += 1a = v.copy()a.sort()for i in range(n):    a[i] += 0 if i == 0 else a[i-1]    v[i] += 0 if i == 0 else v[i-1] m = int(input())for _ in range(m):    t, l, r = map(int, input().split())    if t == 1:        print(v[r] - v[l-1])    else:        print(a[r] - a[l-1])

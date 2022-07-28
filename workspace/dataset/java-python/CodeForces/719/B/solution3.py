@@ -1,0 +1,1 @@
+n=int(input())l=list(input())x1,x2,y1,y2=0,0,0,0for i in range(n):    if i%2==0:        if l[i]=='r': x1+=1        else: x2+=1    else:        if l[i]=='b': y1+=1        else: y2+=1print(min(max(x1,y1),max(x2,y2)))

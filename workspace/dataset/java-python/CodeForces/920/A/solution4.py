@@ -1,0 +1,1 @@
+for _ in range(int(input())):    n,m=map(int,input().split())    k=[int(i) for i in input().split()]    lis=[1]*n    for i in k:        lis[i-1]=0    t=1    newlis=lis[:]    while sum(lis):        for i in range(n):            if lis[i]==0:                newlis[max(0,i-1)]=0                newlis[min(n-1,i+1)]=0        lis=newlis[:]        t+=1     print(t)

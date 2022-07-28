@@ -1,0 +1,1 @@
+b=str(input())c=0if '1' not in b:    print('no')else:    for i in range(len(b)):        if b[i]=='1':            idx=i            break     for i in range(idx,len(b)):        if b[i]=='0':            c+=1     if c>=6:        print('yes')    else:        print('no')

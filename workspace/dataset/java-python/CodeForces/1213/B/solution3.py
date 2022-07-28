@@ -1,0 +1,1 @@
+t = int(input()) for p in range(t):    n = int(input())    a = list(map(int, input().split()))    mini = 10000000    c = 0    for i in range(n-1, -1, -1):        if a[i]<= mini:            mini = a[i]        else:            c += 1    print(c)

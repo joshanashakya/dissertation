@@ -1,0 +1,1 @@
+from sys import stdin for case in range(int(stdin.readline())):    n,m,x1,y1,x2,y2 = [int(x) for x in stdin.readline().split()]     total = n*m     xDiff = abs(x1-x2)    yDiff = abs(y1-y2)     rectX = n-xDiff    rectY = m-yDiff    midSquare = (rectX*2-n)*(rectY*2-m)        total -= 2*(n-xDiff)*(m-yDiff)    if rectX*2 > n:        total += max(midSquare,0)    print(total)

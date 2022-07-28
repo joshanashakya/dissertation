@@ -1,0 +1,1 @@
+import java.util.*;import java.io.*;import java.lang.Math.*;public class Main{	public static void main(String[] args) {		Scanner sc=new Scanner(System.in);		int k2=sc.nextInt();		int k3=sc.nextInt();		int k5=sc.nextInt();		int k6=sc.nextInt();		int a=Math.min(k2,(Math.min(k5,k6)));		k2=k2-a;		int b=Math.min(k2,k3);		long val=256*a+32*b;		System.out.println(val);	}}

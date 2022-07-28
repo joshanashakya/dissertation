@@ -1,0 +1,1 @@
+x=[]s=0for i in range(3):    y=list(map(int,input().split()))    x.append(y)    s+=sum(y)s=s//2x[0][0]=s-x[0][1]-x[0][2]x[1][1]=s-x[1][0]-x[1][2]x[2][2]=s-x[2][0]-x[2][1]for i in x:    for j in i:        print(j,end=" ")    print("")

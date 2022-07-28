@@ -1,0 +1,1 @@
+n,a=map(int,input().split())x=(((n-2)*180)/n)/(n-2)y1=int(a//x)if y1==0:    y1+=1y1=min(y1,n-2)y2=y1+1y2=min(y2,n-2)if abs(y1*x-a)<abs(y2*x-a):    print(2,1,y1+2)else:    print(2,1,y2+2)                

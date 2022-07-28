@@ -1,0 +1,1 @@
+n=int(input())l=list(map(int,input().split()))a,b,c=0,0,0for i in range(n):	if i%3==0:		a+=l[i]	elif i%3==1:		b+=l[i]	else:		c+=l[i]if max(a,b,c)==a:	print('chest')elif max(a,b,c)==b:	print('biceps')else:	print('back')

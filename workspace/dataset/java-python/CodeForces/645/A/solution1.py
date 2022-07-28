@@ -1,0 +1,1 @@
+s1=input()s2=input()s3=input()s4=input()s11=s1+s2[::-1]s22=s3+s4[::-1]k1=""k2=""for i in range(4):    if s11[i]!='X':        k1+=s11[i]for i in range(4):    if s22[i]!='X':        k2+=s22[i]k1=k1*3#print(k1)#print(k2)if k2 in k1:    print('YES')else:    print('NO')

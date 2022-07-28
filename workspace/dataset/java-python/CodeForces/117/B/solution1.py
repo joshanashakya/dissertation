@@ -1,0 +1,1 @@
+a, b, m = map(int, input().split())c = (10 ** 9) % mans = -1for x in range(1, min(a + 1, m)):    z = (x * c) % m    if z == 0:        continue    if z + b < m:        ans = x        breakif ans == -1:    print(2)else:    s = str(ans)    s = ('0' * 9 + s)[-9:]    print(1, s)

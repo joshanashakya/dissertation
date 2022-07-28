@@ -1,0 +1,1 @@
+t = int(input()) for test in range(t):    a = list(sorted(map(int, input().split())))    b = list(sorted(map(int, input().split())))    if a[0] + b[0] == a[1] and a[0] + b[0] == b[1]:        print("YES")    else:        print("NO")

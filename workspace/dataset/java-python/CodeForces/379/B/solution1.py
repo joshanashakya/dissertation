@@ -1,0 +1,1 @@
+l, s, l = input(), '', list(map(int, input().split()))for i in range(len(l)):	if l[i] != 0:		if (len(s) < 2 or s[-1] == 'R') and l[i] == 1:			s += 'PR'		else:			if i != 0:				s += 'PLR' * l[i]			else:				s += 'PRL' * l[i]			s += 'R'	else:		s += 'R'print(s[:-1])

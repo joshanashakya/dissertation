@@ -1,0 +1,1 @@
+import java.util.Scanner;public class Main{	public static void main(String[] args){		Scanner scan = new Scanner(System.in);		short n = scan.nextShort(), day = 0;		int[] a = new int[n];		int t = scan.nextInt(), i;		for(i = 0; i < n; i ++){			a[i]=scan.nextInt();			t -= 86400 - a[i];			day ++;			if(t <= 0)break;		}		System.out.println(day);	}}

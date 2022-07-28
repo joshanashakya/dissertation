@@ -1,0 +1,1 @@
+n=int(input())x=list(map(int,input().split())) x.sort()  if n>1:    for i in range(n):        if x[i]!=-1:            for j in range(i+1,n):                if x[j]%x[i]==0:                    x[j]=-1count=0 for i in x:    if i!=-1:        count=count+1 print(count)

@@ -1,0 +1,1 @@
+n, m = map(int, input().split())s = input()t = input()l = [] for i in range(len(t)-len(s)+1):    l.append([])    for j in range(len(s)):        if s[j] != t[i+j]:            l[-1].append(j+1)print(len(min(l, key=lambda x: len(x))))print(*min(l, key=lambda x: len(x)))

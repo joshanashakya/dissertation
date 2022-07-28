@@ -1,0 +1,1 @@
+n=int(input())i=input()arr=list(map(int,input().split()))if "RL" not in i:    print(-1)else:    ris=999999999999999999999999999999    for x in range(n-1):        if i[x]=="R" and i[x+1]=="L":            ris=min(ris,(arr[x+1]-arr[x])//2)    print(ris)

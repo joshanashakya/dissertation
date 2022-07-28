@@ -1,0 +1,1 @@
+def solve():    l=list(map(int,input().split()))    l2=list(map(int,input().split()))    l3=list(map(int,input().split()))    l2.sort()    l3.sort()    if(l2[0]<l3[len(l3)-1]):        x=int(l[2]/l2[0])*l3[len(l3)-1]+(l[2]%l2[0])        print(x)    else:        print(l[2])solve()

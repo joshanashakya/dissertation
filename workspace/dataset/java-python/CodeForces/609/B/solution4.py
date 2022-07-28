@@ -1,0 +1,1 @@
+n,m=map(int,input().split())l=list(map(int,input().split()))d={}for i in set(l):    d[i]=0c=0d[l[-1]]=1#print(d)for i in range(n-2,-1,-1):    f=d[l[i]]    if f==0:        d[l[i]]=1    else:        d[l[i]]=d[l[i]]+1    c=c+n-(i+1)-fprint(c)             

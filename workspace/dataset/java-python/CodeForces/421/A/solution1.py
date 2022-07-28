@@ -1,0 +1,1 @@
+# https://codeforces.com/problemset/problem/421/A n, a, b = map(int, input().split())athur = map(int, input().split())alex = map(int, input().split()) total = [1] * n for i in alex:    total[i-1] = 2 print(*total)  

@@ -1,0 +1,1 @@
+def isPrime(n):    if n % 2 == 0:        return n == 2    d = 3    while d * d <= n and n % d != 0:        d += 2    return d * d > n n = int(input())a = 4b = n - awhile isPrime(b) or isPrime(a):    a += 1    b = n - aprint(a,b)

@@ -1,0 +1,1 @@
+from itertools import permutations as pfrom collections import Counter as countn,k=list(map(int,input().split()))z=[[] for i in range(k)]for i in range(n):    s=input()    for j in range(k):        z[j].append(s[j])s=list(p(z))z=[]for i in s:    l=[]    for a in zip(*i):        l.append(int("".join(a)))    z.append((max(l)-min(l)))print(min(z))

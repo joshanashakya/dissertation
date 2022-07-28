@@ -1,0 +1,1 @@
+s=int(input())t=sfor tt in range(t):    s=input().split()    a=int(s[0])    b=int(s[1])    c=int(s[2])    ans=0    while(c):        if(b>=1 and c>=2):            ans+=3        else:            break        b-=1        c-=2    while(a):        if(b>=2 and a>=1):            ans+=3        else:            break        b-=2        a-=1    print(ans)

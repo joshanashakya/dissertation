@@ -1,0 +1,1 @@
+n = int(input())a = [int(x) for x in input().split()]c = sorted(a)if c == a:    print(c[n-1])else:    count = 0    for i in range(n):        if i == 0:            count += abs(a[0])        else:            count += abs(a[i-1]-a[i])    print(count)

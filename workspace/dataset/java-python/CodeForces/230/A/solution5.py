@@ -1,0 +1,1 @@
+s, n = [int(i) for i in input().split()]dr = [] for i in range(n):    dr.append([int(j) for j in input().split()]) dr.sort() for i in range(n):    if s > dr[i][0]:        s += dr[i][1]    else:        print("NO")        exit(0)print("YES")   

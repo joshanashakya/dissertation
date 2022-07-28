@@ -1,0 +1,1 @@
+m,n=map(int,input().split())s=[int(v) for v in input().split()]count=2for i in range(len(s)-1):    val=(abs(s[i]-s[i+1])/(n*2))    if val==1:        count+=1    elif val>1:        count+=2    else:        count+=0print(count)

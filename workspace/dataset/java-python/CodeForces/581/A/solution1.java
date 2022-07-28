@@ -1,0 +1,1 @@
+import java.util.*;import java.lang.*;public class Socks{	public static void main(String[] args) {	    Scanner sc=new Scanner(System.in);	    int l=sc.nextInt();	    int r=sc.nextInt();	    int pairs=Math.min(l,r);	    int days=Math.abs(l-r)/2;		System.out.println(pairs+" "+days);	}}

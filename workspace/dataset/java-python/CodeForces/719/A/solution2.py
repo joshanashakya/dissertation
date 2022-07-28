@@ -1,0 +1,1 @@
+ n = int(input())l = [int(x) for x in input().split()] ans = -1if l[-1] == 15:    ans = 'DOWN'elif l[-1] == 0:    ans = 'UP'elif n == 1:    passelif n > 1:    if l[-2] > l[-1]:        ans = 'DOWN'    else:        ans = 'UP'  print(ans)

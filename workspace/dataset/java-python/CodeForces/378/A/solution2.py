@@ -1,0 +1,1 @@
+import matha,b=[int(i) for i in input().split(" ")]w1,w2,t=0,0,0if (a<b):    tmp=int((b-a-1)/2)    w1=a+tmp    w2=7-b+tmp    t=math.ceil(b-a-1)%2    print(w1,t,w2)elif(a>b):    tmp=int((a-b-1)/2)    w1=7-a+tmp    w2=b+tmp    t=math.ceil(a-b-1)%2    print(w1,t,w2)else:    print(0,6,0)

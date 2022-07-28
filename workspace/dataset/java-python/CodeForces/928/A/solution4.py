@@ -1,0 +1,1 @@
+a = input()a = a.lower()a = a.replace('i', '1')a = a.replace('l', '1')a = a.replace('o', '0')logins = []for _ in range(int(input())):    b = input()    b = b.lower()    b = b.replace('i', '1')    b = b.replace('l', '1')    b = b.replace('o', '0')    logins.append(b)print(["Yes", "No"][a in logins])

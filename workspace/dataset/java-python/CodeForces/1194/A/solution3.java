@@ -1,0 +1,1 @@
+import java.util.*; public class CodeForces {    public static void main(String[] args) {         Scanner scan = new Scanner(System.in);         int t = scan.nextInt();         while (t-- > 0)        {            int n = scan.nextInt();            int x = scan.nextInt();             System.out.println(x * 2);        }         scan.close();    }}

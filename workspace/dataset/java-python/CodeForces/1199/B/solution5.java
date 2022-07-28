@@ -1,0 +1,1 @@
+import java.util.*; public class questionCF {			public static void main(String[] args) {				Scanner sc = new Scanner(System.in);		long h = sc.nextInt();		long l = sc.nextInt();		System.out.printf( "%.13f", (double)(l*l-h*h)/(2*h) );			}}

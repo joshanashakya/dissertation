@@ -1,0 +1,1 @@
+n = list(map(int,input().split())) n.sort(reverse=True)st = set()MIN = 0for i in range(len(n)):    if n.count(n[i]) >= 3:        MIN = sum(n) - 3*n[i]        st.add(MIN)    elif n.count(n[i]) >= 2:        MIN = sum(n) - 2*n[i]        st.add(MIN)    else:        continueelse:    MIN = sum(n)    st.add(MIN) print(min(st))

@@ -1,0 +1,1 @@
+#include <iostream> using namespace std; int n, m; int putere(int x, int p); int main(){	int i; 	cin >> n >> m;	int rez = putere(3, n);	rez--;	if (rez < 0)		rez += m;	cout << rez << '\n';	return 0;} int putere(int x, int p){	int aux = 1; 	while (p)	{		if (p % 2)			aux = (1ll * aux * x) % m;		x = (1ll * x * x) % m;		p /= 2;	}	return aux;} 				  		 	   		   	     	 			

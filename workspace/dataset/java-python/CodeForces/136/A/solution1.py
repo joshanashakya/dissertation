@@ -1,0 +1,1 @@
+# # s = list(map(int, input().split()))# a = [[int(j) for j in input().split()] for i in range(3)]  ##ввод матрицы с консоли# a = list(map(int,input().strip().split()))  ввод массива под цикломa=int(input())l=list(map(int,input().split()))b=[]for i in range(1,a+1):    print(l.index(i)+1,end=' ')

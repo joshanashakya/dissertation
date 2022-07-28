@@ -1,0 +1,1 @@
+import mathimport sys n,vb,vs=map(int,input().split())x=list(map(int,input().split()))xu,yu=map(int,input().split()) answer=1min_dist=0time=10**9for i in range(1,n):    r=((x[i]-xu)**2+(yu**2))**0.5    tt=x[i]/vb+r/vs    if tt<time:        time=tt        answer=i+1        min_dist=r    elif tt==time:        if r<min_dist:            min_dist=r            answer=i+1 print(answer)

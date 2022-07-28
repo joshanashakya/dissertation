@@ -1,0 +1,1 @@
+n,k=input().split()n,k=int(n),int(k)if k>(n*n+1)//2:    print("NO")    exit()print("YES")for i in range(0,n):    for j in range(0,n):        if((i+j)%2==0and k>0):            print('L',end='')            k-=1        else:            print('S',end='')    print()

@@ -1,0 +1,1 @@
+tc = int(input()) def odd(n):    return ((n+1)//2)**2 def even(n):    return int(n*(n+1)) for _ in range(tc):    l, r = list(map(int, input().split()))    l -= 1    ret = (even(r//2) - even(l//2)) - (odd(r) - odd(l))    print(ret)        			  	 	 	 	 							  		   	

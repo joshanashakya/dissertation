@@ -1,0 +1,1 @@
+n=int(input())if n<4:	print("NO")elif n%2==0:	print("YES")	print("1 * 2 = 2")	print("2 * 3 = 6")	print("6 * 4 = 24")	for i in range(5,n+1,2):		print(i+1,"-",i,"=",1)		print("24 * 1 = 24")else:	print("YES")	print("5 + 4 = 9")	print("9 + 3 = 12")	print("12 * 2 = 24")	print("24 * 1 = 24")	for i in range(6,n+1,2):		print(i+1,"-",i,"=",1)		print("24 * 1 = 24")

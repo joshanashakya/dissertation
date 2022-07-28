@@ -1,0 +1,1 @@
+s=input()ans=-1for i in range(len(s)-2):	for j in range(i+1, len(s)-1):		x=s[:i+1]		y=s[i+1:j+1]		z=s[j+1:]		if len(x)==len(str(int(x))) and len(y)==len(str(int(y))) and len(z)==len(str(int(z))):			if int(x)<=1e6 and int(y)<=1e6 and int(z)<=1e6:				ans=max(ans, int(x)+int(y)+int(z))print(ans)

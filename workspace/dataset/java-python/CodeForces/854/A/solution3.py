@@ -1,0 +1,1 @@
+import mathn = int(input())a, b = 1, n - 1for i in range(1, n):    for j in range(i + 1, n):        if i + j == n and math.gcd(i, j) == 1:            if i * b > j * a:                a, b = i, jprint(a, b)

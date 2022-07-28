@@ -1,0 +1,1 @@
+cards = []value = 0count = 1for i in range(int(input())):	ai, bi = map(int, input().split())	if bi == 0:		cards.append(ai)	else:		value += ai		count += bi - 1print(value + sum(sorted(cards, reverse=True)[:count]))

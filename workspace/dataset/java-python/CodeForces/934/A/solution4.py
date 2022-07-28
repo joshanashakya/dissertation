@@ -1,0 +1,1 @@
+ input()a=sorted([int(x) for x in input().split()])b=sorted([int(x) for x in input().split()])ans=[]for i in a:    cur=[]    for ii in b:        cur.append(ii*i)    ans.append(max(cur))print(sorted(ans)[-2])

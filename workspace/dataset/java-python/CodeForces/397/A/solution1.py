@@ -1,0 +1,1 @@
+n=int(input())l=[]q=[0]*100p=list(map(int,input().split()))l.append(p)for i in range(n-1):    p=list(map(int,input().split()))    l.append(p)    for k in range(p[0],p[1]):        q[k]=1r=0for i in range(l[0][0],l[0][1]):    if(q[i]==0):        r=r+1print(r)

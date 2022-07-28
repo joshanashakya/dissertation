@@ -1,0 +1,1 @@
+def sameSize(sticks):    if sticks % 2 ==0:        return ((sticks - 1) // 2) + 1   # eg: 6 neglecting 6 we take (1,5), (2,4), (3,3)    return (sticks // 2) + 1 for _ in range(int(input())):    all_sticks = int(input())    print(sameSize(all_sticks))

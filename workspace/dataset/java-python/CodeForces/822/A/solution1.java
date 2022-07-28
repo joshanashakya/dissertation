@@ -1,0 +1,1 @@
+import java.util.*; public class Main {     public static void main(String[] args) {        Scanner scanner = new Scanner(System.in);        long a = scanner.nextLong(), b = scanner.nextLong();        long min = Math.min(a, b);        long ans = 1;        for (long i = 1; i <= min; i++) {            ans *= i;        }        System.out.println(ans);    }}

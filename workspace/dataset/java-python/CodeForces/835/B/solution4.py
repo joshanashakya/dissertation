@@ -1,0 +1,1 @@
+import sysdef input():    return sys.stdin.readline().strip()def iinput():   return int(input())def minput():   return map(int, input().split()) def listinput(): return list(map(int, input()))k=iinput()n=listinput()n.sort()i=0s=sum(n)while s<k:    s+=9-n[i]    i+=1print(i)

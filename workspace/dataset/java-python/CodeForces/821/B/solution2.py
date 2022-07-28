@@ -1,0 +1,1 @@
+#Okabe and Banana Treesdef rectangle_value(x, y):    return (int(x*(x+1)/2)*(y+1))+(int(y*(y+1)/2)*(x+1)) raw = str(input()).split() m = int(raw[0])b = int(raw[1]) y = bhighest = 0 while (y >= 0):    x = int(-m*(y-b))    value = rectangle_value(x,y)    if (value > highest):        highest = value    y -= 1print(int(highest)) 

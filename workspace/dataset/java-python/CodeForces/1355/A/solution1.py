@@ -1,0 +1,1 @@
+if __name__=="__main__":    for _ in range(int(input())):        a1, k = map(int, input().split())        i = 1        a = a1        while i < k and '0' not in str(a):            p = a            s = str(a)            li = list(s)            a = p + (int(min(li)) * int(max(li)))            i = i + 1        print(a) 

@@ -1,0 +1,1 @@
+n,b,p=map(int,input().split())l=[int(i) for i in input().split()]w=0for i in l:    if(i==1):        if(b>0):            b=b-1        else:            w=w+1    else:        if(p>0):            p=p-1        elif(b>0):            b=b-1        else:            w=w+1print(w)            

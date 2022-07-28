@@ -1,0 +1,1 @@
+n  = int(input())l = list(input())d = dict()for i in set(l):    d[i] = ([k for k, n in enumerate(l) if n == i]) for i in range(int(input())):    s = input()     mx = 0    dc = dict()     for i in s:        j = dc.get(i, 0)        mx = max(mx, d[i][j])        dc[i] = j +1     print(mx+1)

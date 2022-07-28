@@ -1,0 +1,1 @@
+n,m,k=map(int,input().split())e=[tuple(map(int,input().split())) for _ in range(m)]if k:    a=set(map(int,input().split()))else:    a=set()ans=-1for i in e:    if i[0] in a and i[1] not in a or i[1] in a and i[0] not in a:        if ans==-1:            ans=i[2]        else:            ans=min(ans,i[2])print(ans)

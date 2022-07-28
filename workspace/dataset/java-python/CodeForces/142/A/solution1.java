@@ -1,0 +1,1 @@
+n=int(raw_input())d=[]res=10**20res1=0for i in range(1,int(n**0.5)+1):    if n%i==0:        d.append(i)        d.append(n/i)for i in range(len(d)):    for j in range(len(d)):        if n%(d[i]*d[j])==0:            res=min(res,((d[i]+1)*(d[j]+2)*(n/(d[i]*d[j])+2))-n)            res1=max(res1,((d[i]+1)*(d[j]+2)*(n/(d[i]*d[j])+2))-n)print res,res1

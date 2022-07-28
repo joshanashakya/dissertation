@@ -1,0 +1,1 @@
+import sys input = sys.stdin.readline n,m = map(int,input().split())  f=[-1]*(n+1)  u={} for j in range(m):    a,b = map(int,input().split())     u[a]=1    u[b]=1     f[a]=b    f[b]=a x=-1for j in range(1,n+1):     if j not in u:        x=j        break d=[] for j in range(1,n+1):    if j!=x:        d.append([x,j]) print(len(d)) for j in d:    print(*j)        

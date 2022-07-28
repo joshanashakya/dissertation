@@ -1,0 +1,1 @@
+for _ in range(int(input())):    n,m = map(int, input().split())    ali = list(map(int, input().split()))    bli = list(map(int, input().split()))    q = list(set(ali).intersection(bli))    if(len(q) == 0):        print("NO")    else:        print("YES")        print(1,q[0])        

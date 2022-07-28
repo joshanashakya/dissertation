@@ -1,0 +1,1 @@
+def solN():    n,k=map(int,input().split())    if n==1 or k==1: print('YES')    elif n==2 and k==2: print('YES')    else: print('NO')def main():    for _ in range(int(input())): solN()if __name__=='__main__':    main()

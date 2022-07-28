@@ -1,0 +1,1 @@
+n,h = map(int,input().split())lst = list(map(int,input().split()))lst.sort(reverse = True)ans = 0for i in range(1,n):    if lst[i-1] == 1:        ans += lst[i] - 1        lst[i] = 1    else:        if lst[i-1] <= lst[i]:            ans += lst[i] - lst[i-1] + 1            lst[i] = lst[i-1] - 1for i in range(n-1):    if lst[i] != lst[i+1]:        ans += lst[i+1]print(ans)

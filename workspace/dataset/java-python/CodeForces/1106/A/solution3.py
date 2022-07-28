@@ -1,0 +1,1 @@
+p = list(map(int, input().split()))k = p[0]a = []for i in range(k):    s = input()    a.append(s)ans = int(0)for i in range(1, k - 1):    for j in range(1, k - 1):        if a[i - 1][j - 1] == 'X' and a[i - 1][j + 1] == 'X' and a[i + 1][j - 1] == 'X' and a[i + 1][j + 1] == 'X' and a[i][j] == 'X':            ans = ans + 1print(ans)				  	 	 		     	   							  	

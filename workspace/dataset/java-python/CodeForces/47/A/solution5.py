@@ -1,0 +1,1 @@
+n = int(input())encontrado = Falsenum = n * 2a = 0b = 1 while a * b <= num:    if a * b == num:        encontrado = True        break    a = a+1    b = b+1 if encontrado:    print('YES')else:    print('NO')

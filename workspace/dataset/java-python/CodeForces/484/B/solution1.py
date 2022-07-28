@@ -1,0 +1,1 @@
+n = int(input())a = list(set(map(int, input().split())))mx = max(a) b = [0] * (2 * mx)for e in a:    b[e] = efor i in range(1, len(b)):    if b[i] == 0:        b[i] = b[i - 1] best = 0for e in a:    for m in range(2 * e, 2 * mx, e):        if b[m - 1] >= e:            best = max(best, b[m - 1] % e)print(best)

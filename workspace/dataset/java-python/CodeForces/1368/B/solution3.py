@@ -1,0 +1,1 @@
+from sys import*input= stdin.readlinen=int(input())l=[1,1,1,1,1,1,1,1,1,1]p=1i=0while(p<n):    l[i]+=1    p=(p*l[i])//(l[i]-1)    i+=1    if(i==10):        i=0s="codeforces"for i in range(10):    print(s[i]*l[i],end="")

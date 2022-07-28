@@ -1,0 +1,1 @@
+for i in range (int(input())):    n=int(input())    l1=list(map(int,input().split()))    l2=l1.copy()    l2=l2[::-1]    c=0    for i in range (n):        if(l1.count(l1[i])>1):            index=n-l2.index(l1[i])-1            if(index!=i+1 and index!=i):                c=1    if(c==1):        print("YES")    else:        print("NO")

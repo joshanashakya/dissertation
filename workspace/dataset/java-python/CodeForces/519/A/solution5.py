@@ -1,0 +1,1 @@
+cap={'Q':9, 'R':5, 'B':3, 'N':3, 'P':1, 'q':9, 'r':5, 'b':3, 'n':3, 'p':1}low="qrbnp"upp="QRBNP"upp_c=0low_c=0i=8while i:    for j in input():        if j in upp:            upp_c+=cap[j]        elif j in low:            low_c+=cap[j]            i-=1if upp_c>low_c:    print("White")elif upp_c<low_c:    print("Black")else:    print("Draw") 

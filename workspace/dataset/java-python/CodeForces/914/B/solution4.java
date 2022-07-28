@@ -1,0 +1,1 @@
+import java.util.*; public class CodeForces914B{	public static void main(String[] args) {		Scanner input = new Scanner(System.in);		int n = input.nextInt();		int[] a = new int[100000+1];		for(int i = 0;i<n;i++){			a[input.nextInt()]++;		}		String ans = "Agasa";		for(int i = 1;i<a.length;i++){			if(a[i]%2 != 0){				ans = "Conan";				break;			}		} 		System.out.println(ans); 	}}

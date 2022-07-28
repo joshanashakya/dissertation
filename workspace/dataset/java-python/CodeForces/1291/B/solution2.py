@@ -1,0 +1,1 @@
+for _ in range(int(input())):  n=int(input());arr=list(map(int,input().split()));k=(n)//2;flag=True  maxx=max(arr[n//2],arr[n//2-1])  minn=min(arr[n//2],arr[n//2-1])  if n%2==0 and (maxx<k or minn<k-1):print("NO");continue  for i in range((n+1)//2):    if arr[i]>=i and arr[n-i-1]>=i:continue    else:print("NO");flag=False;break  if flag:print("YES")

@@ -1,0 +1,1 @@
+# cook your dish here#import sys#input=sys.stdin.readline#m=int(input())t=input()length=len(t)count=0for i in t:	if i=="a":		count+=1slength=(length+count)//2if (slength)==slength:	s=t[0:(slength)]	s1=""	for i in s:		if i!="a":			s1+=i	s2=t[(slength):]	if s1==s2:		print (s)	else:		print (":(")else:	print (":(")

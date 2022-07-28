@@ -1,0 +1,1 @@
+a = input()coins = [int(x) for x in input().split()]numbers = dict() for d in coins:    if d in numbers:        numbers[d] += 1    else:        numbers[d] = 1pockets = 0for v in numbers.values():    if v > pockets:        pockets = vprint(pockets)

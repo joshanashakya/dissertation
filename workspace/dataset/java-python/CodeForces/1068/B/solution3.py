@@ -1,0 +1,1 @@
+import sysdef input():    return sys.stdin.readline().strip()def iinput():   return int(input())def minput():   return map(int, input().split()) def listinput(): return list(map(int, input().split()))x=iinput()b=x**0.5a=int(b)p=0if b==a:    p-=1for i in range(1,a+1):    if x%i==0:        p+=2print(p)

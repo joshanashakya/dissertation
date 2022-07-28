@@ -1,0 +1,1 @@
+n,k=map(int,input().split())a=list(map(int,input().split()))i=0j=n-1c=0while(i<=j and (a[i]<=k or a[j]<=k)):    if(a[i]<=k):        i+=1        c+=1    if(a[j]<=k and i<j):        j-=1        c+=1print(c)    

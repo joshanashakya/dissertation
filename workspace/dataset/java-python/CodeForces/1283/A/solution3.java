@@ -1,0 +1,1 @@
+import java.util.Scanner; public class Minutes_Before_the_Year {     public static void main(String[] args) {        Scanner in = new Scanner(System.in);         int n = in.nextInt();         while (n-- != 0) {            System.out.println(1440 - (in.nextInt() * 60 + in.nextInt()));        }    }}

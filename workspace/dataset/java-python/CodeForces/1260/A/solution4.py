@@ -1,0 +1,1 @@
+t=int(input())for _ in range(t):    c,summ=[int(x) for x in input().split()]        avg=summ//c    cntsWithAvgPlusOne=summ%c    cntsWithAvg=c-cntsWithAvgPlusOne        ans=cntsWithAvg*(avg**2)+cntsWithAvgPlusOne*((avg+1)**2)    print(ans)

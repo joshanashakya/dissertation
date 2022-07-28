@@ -1,0 +1,1 @@
+days,bowls,plates=map(int,input().split()) dishes=list(map(int,input().split())) cwash=0 for i in range(0,days):    if(dishes[i]==1 and bowls > 0):        bowls-=1    elif(dishes[i]==2 and plates > 0):        plates-=1    elif(dishes[i]==2 and plates==0 and bowls>0):        bowls-=1    else:        cwash+=1 print(cwash)        

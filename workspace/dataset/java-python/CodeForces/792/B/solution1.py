@@ -1,0 +1,1 @@
+n, k = map(int, (input().split()))arr = list(map(int, input().split())) nums = list(range(1, n+1))leader = 0elims = []for i in range(k):    elim = (leader + arr[i]) % n    elims.append(nums.pop(elim))    n -= 1    leader = elimprint(*elims)   

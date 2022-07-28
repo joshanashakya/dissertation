@@ -1,0 +1,1 @@
+import math as mtn,k=map(int,input().split())arr=[list(map(int,input().split())) for i in range(n)]dist=0for i in range(1,n):    dist+=(mt.sqrt((arr[i][1]-arr[i-1][1])**2+(arr[i][0]-arr[i-1][0])**2))print("{:.9f}".format(dist*k/50))

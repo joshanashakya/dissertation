@@ -1,0 +1,1 @@
+x1,y1,r1=list(map(float,input().split()))x2,y2,r2=list(map(float,input().split()))if r1>r2:    r2,r1=r1,r2d=((x2-x1)**2 + (y2-y1)**2)**(0.5)if d>r1+r2:    print((d-(r1+r2))/2)elif r2>d+r1:    print((r2-(r1+d))/2)else:    print(0)

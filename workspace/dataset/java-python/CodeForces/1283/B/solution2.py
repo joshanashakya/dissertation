@@ -1,0 +1,1 @@
+cases = int(input())while cases:    cases -= 1    # num = int(input())    a, b = map(int, input().split())     ans = 0     each = a//b    ans += each*b     half = b //2     ans += min(half, a%b)     print(ans)

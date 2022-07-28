@@ -1,0 +1,1 @@
+#import sys#import math#sys.stdout=open("C:/Users/pipal/OneDrive/Desktop/VS code/python/output.txt","w")#sys.stdin=open("C:/Users/pipal/OneDrive/Desktop/VS code/python/input.txt","r")t=int(input())for i in range(t):    a,b,x,y=map(int,input().split())    a1=a*(max(b-y-1,y))    a2=b*(max(a-x-1,x))    print(max(a1,a2))     

@@ -1,0 +1,1 @@
+t = int(input())lst = []for i in range(t):    var = list(map(int, input().split()))    lst.append(var)for i in range(t):    x, y, a, b = lst[i]    n = (x - y) % (a + b)    if n == 0:        print(abs(int((x - y) / (a + b))))    else:        print(-1)       				 	   				 	 	 			 				   		

@@ -1,0 +1,1 @@
+from math import sqrtfor _ in range(int(input())):    a,b = list(map(int,input().split()))    if a-b != 1 :        print("NO")    else:        c = a+b        div = False        for i in range(2, int(sqrt(c))+2):            if c%i == 0 :                 div = True                break        if div :             print("NO")        else:            print("YES")

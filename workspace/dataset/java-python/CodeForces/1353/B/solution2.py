@@ -1,0 +1,1 @@
+import heapqfor _ in range(int(input())):	n,k=map(int,input().split())	a=[int(i)for i in input().split()]	b=[int(i)for i in input().split()]	heapq.heapify(a)	heapq.heapify(b)	c=heapq.nsmallest(k,a)	d=heapq.nlargest(k,b)	print(sum(a)-sum(c)+sum(heapq.nlargest(k,c+d)))

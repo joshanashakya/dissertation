@@ -1,0 +1,1 @@
+from fractions import Fractiona,b,c,d=map(int,input().split())if(a/b==c/d):    print('0/1')elif(a/b<c/d):    r1=((b*c)-(a*d))/(b*c)    print(Fraction(r1).limit_denominator())elif(a/b>c/d):    r=((a*d)-(b*c))/(a*d)    print(Fraction(r).limit_denominator())

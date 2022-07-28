@@ -1,0 +1,1 @@
+from math import ceils=input();n=len(s);ans=0last_idx=-1for i in range(n-3):  if s[i:i+4]=='bear':   if i==0:ans+=(n-1)-(i+3)+1;last_idx=i   else:     k=i-last_idx-1     k1=(n-1)-(i+3)+1     ans+=k*k1     ans+=k1     last_idx=iprint(ans)

@@ -1,0 +1,1 @@
+a = int(input())b = int(input()) if a<b:    small = a    large = b    d = b-aelse:    small = b    large = a    d = a-b center = small + d//2 s1 = 0s2 = 0 for i in range(1, (d//2)+1):    s1+=i for i in range(1, (large-center)+1):    s2+=i print(s1+s2)

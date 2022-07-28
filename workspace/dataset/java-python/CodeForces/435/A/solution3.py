@@ -1,0 +1,1 @@
+n,m = map(int, input().split())a = list(map(int, input().split()))res = 1pep = 0for i in range(0,n) :    if (pep + a[i] <= m):        pep += a[i]    else :        res += 1         pep = a[i]print(res)

@@ -1,0 +1,1 @@
+from math import gcdn = int(input())arr = list(map(int, input().split()))d = {}for i in arr:    d[i] = d.get(i, 0) + 1d = {i : d[i] for i in sorted(d, key=lambda w:-w)}out = []for i in d:    while d[i] > 0:        for y in out:            d[gcd(y, i)] -= 2        out += [i]        d[i] -= 1print(*out)

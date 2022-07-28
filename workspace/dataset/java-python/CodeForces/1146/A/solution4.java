@@ -1,0 +1,1 @@
+import java.util.*;public class Main{	public static void main(String[] args) {	    Scanner s=new Scanner(System.in);	    String str=s.next();	    int n=str.length(),ca=0,co=0;	    char[] a=str.toCharArray();	    for(int i=0;i<n;i++)	    if(a[i]=='a')	    ca++;	    else	    co++;	    while(co>=ca)	    co--;		System.out.println(co+ca);	}}

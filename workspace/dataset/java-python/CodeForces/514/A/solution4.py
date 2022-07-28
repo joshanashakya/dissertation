@@ -1,0 +1,1 @@
+s = input()ans = '' if s[0] == '9' and len(s) == 1 :    print('9')   else :    for i in range(0, len(s)) :        check = int(s[i])        if (i == 0 and s[i]  == '9') :            ans += '9'            continue                elif check >= 5 :            num = 9 - int(s[i])            ans += str(num)        else :             ans += s[i]    print(ans)

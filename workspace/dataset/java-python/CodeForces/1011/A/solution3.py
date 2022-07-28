@@ -1,0 +1,1 @@
+n, k = list(map(int, input().split()))s = sorted(list(str(input())))r = 0c = 0m = sorted(list(set(s)))for i in range(len(m)):    if i == 0:        r += (ord(m[i])-96)        c += 1        t = m[i]    else:        if ord(m[i]) - ord(t) != 1:            r += (ord(m[i]) - 96)            c += 1            t = m[i]    if c == k:        breakprint(-1 if c != k else r)

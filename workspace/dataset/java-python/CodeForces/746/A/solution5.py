@@ -1,0 +1,1 @@
+a = int(input())b = int(input())c = int(input())   compotes = c//4compotes = min(compotes, b//2) compotes = min(compotes, a) # fruits = lemons(x1) + apples(x2) + pears(x4)fruits = compotes + compotes*2 + compotes*4 print(fruits)

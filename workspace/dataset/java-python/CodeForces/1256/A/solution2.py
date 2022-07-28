@@ -1,0 +1,1 @@
+q = int(input())for line in range(q):    a, b, n, s = list(map(int, input().split()))    ans = s // n    if ans <= a:        s -= ans * n    else:        s -= a * n        if s <= b:        print('YES')    else:        print('NO')

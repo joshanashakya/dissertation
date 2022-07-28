@@ -1,0 +1,1 @@
+I = lambda: map(int, input().split()) ##T = int(input())T = 1for _ in range(T):     n = int(input())##     n, k = map(int, input().split())     a = list(I())     b = list(I())     d = {v: i for i, v in enumerate(a)}     m = -1     for j in b:          print(max(0, d[j] - m), end=" ")          m = max(m, d[j])     

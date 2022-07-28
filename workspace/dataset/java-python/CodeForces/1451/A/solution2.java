@@ -1,0 +1,1 @@
+import java.util.*;public class Main {     public static void main(String[] args)    {        int t,n;         Scanner sc=new Scanner(System.in);         t=sc.nextInt();         while(t-->0)        {            n=sc.nextInt();             System.out.println((n<=3)?n-1:2+(n&1));        }	// write your code here    }}

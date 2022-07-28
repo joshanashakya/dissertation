@@ -1,0 +1,1 @@
+n=int(input())a=[]for i in range(n):    p,q=map(int,input().split())    a.append([p,q])a.sort(key = lambda x:x[0])f=0for i in range(n-1):    if a[i][1]>a[i+1][1]:        f=1        breakif f:    print("Happy Alex")else:    print("Poor Alex")

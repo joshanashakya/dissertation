@@ -1,0 +1,1 @@
+# Exercicio H n = int(input())t = input().split() thread = []for i in range(n):    thread.append(int(t[i])) position = 0for j in range(n-1):    if thread[j] > thread[j + 1]:        position = j + 1 print(position)    		 		 				 		 	 	  		 		 		

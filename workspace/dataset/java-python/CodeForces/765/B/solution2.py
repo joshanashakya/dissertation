@@ -1,0 +1,1 @@
+import string obf = [x for x in input()]obf = [x for i, x in enumerate(obf) if x not in obf[:i]]n = len(obf) letters = list(string.ascii_lowercase)letters = letters[:n] if obf == letters:	print('Yes')else:	print('No') 

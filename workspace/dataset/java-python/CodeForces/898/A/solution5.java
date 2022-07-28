@@ -1,0 +1,1 @@
+import java.util.*; public class Test {    public static void main(String[] args) {         Scanner input = new Scanner(System.in);        int n = input.nextInt();        int t = n % 10;        System.out.println((t >= 5) ? n + (10 - t) : n - t);    }}

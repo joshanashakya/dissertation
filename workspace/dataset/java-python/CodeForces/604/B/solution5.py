@@ -1,0 +1,1 @@
+n,k = map(int,input().split())a = list(map(int,input().split()))if k>=n:    print(max(a))else:    i = n-1    ans = 0    for j in range(2*k-n):        ans = max(ans,a[i])        i-=1    start = 0    while start<i:        ans = max(ans,a[i]+a[start])        i-=1        start+=1    print(ans)

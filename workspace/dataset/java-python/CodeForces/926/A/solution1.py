@@ -1,0 +1,1 @@
+count = 0l, r = map(int, input().split())for i in range(50):    for j in range(50):        if l <= (2 ** i) * (3 ** j) <= r:            count += 1        if (2 ** i) * (3 ** j) > r:            break print(count)

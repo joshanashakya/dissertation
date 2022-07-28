@@ -1,0 +1,1 @@
+num = input()given = input() num = "".join(sorted(num)) idx = -1for i in range(len(num)):	if int(num[i])>0:		idx=i		break if idx==-1:	solution = "0"else:	solution = num[idx]+num[:idx]+num[idx+1:] print("WRONG_ANSWER" if solution != given else "OK")# print(given, "vs", solution)

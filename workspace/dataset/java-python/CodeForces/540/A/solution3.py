@@ -1,0 +1,1 @@
+n = int(input())lock = str(input())unlock = str(input()) total_comb = 0 for i in range(0,n):	a = int(lock[i])	b = int(unlock[i]) 	d1 = abs(a - b)	d2 = 10 - max(a,b) + min(a,b) 	total_comb += min(d1,d2) print(total_comb)

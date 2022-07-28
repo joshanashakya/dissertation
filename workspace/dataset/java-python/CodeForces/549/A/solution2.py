@@ -1,0 +1,1 @@
+n, m = map(int, input().split())a = []ans = 0for i in range(n):    a.append(input())for i in range(1, n):    for j in range(1, m):        c = [a[i][j], a[i - 1][j], a[i - 1][j - 1], a[i][j - 1]]        if 'f' in c and 'a' in c and 'c' in c and 'e' in c:            ans += 1print(ans)

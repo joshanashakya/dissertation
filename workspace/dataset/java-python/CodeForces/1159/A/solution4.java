@@ -1,0 +1,1 @@
+import java.util.*;public class test {	public static void main(String[] args) {		int n,x=0;		char[] a;		String a1;		Scanner input=new Scanner(System.in);		n=input.nextInt();		a=new char[n];		a1=input.next();		a=a1.toCharArray();		for(int i=0;i<n;i++)		{			if(a[i]=='+')				x++;			else				if(x-1>=0)					x--;			}		System.out.println(x);	}}  				 	 	    		  	  	 	  	  		

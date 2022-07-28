@@ -1,0 +1,1 @@
+t=int(input()) answer=[]for i in range(t):	n=int(input()) 	li=[int(j) for j in input().split()] 		ans=[]	for item in li:		if item not in ans:			ans.append(item) 	answer.append(ans)  for x in answer:	print(*x) 

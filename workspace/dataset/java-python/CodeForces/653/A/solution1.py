@@ -1,0 +1,1 @@
+n = int(input())t = list(map(int, input().split()))t = list(set(t))t.sort(reverse=True) for i in range(len(t)):    if len(t) > i+2:        if t[i] - t[i+1] <= 1:            if t[i+1] - t[i+2] <= 1:                print("YES")                break    else:        print("NO")        break

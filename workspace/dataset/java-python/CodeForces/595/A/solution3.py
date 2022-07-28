@@ -1,0 +1,1 @@
+import sys def main():    inp = sys.stdin.read().strip().split('\n')    c = 0    for s in inp[1:]:        t = s.split()        for i in range(0, len(t), 2):            c += '1' in t[i:i+2]    return c print(main())

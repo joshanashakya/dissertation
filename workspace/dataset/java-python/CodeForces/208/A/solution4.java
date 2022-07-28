@@ -1,0 +1,1 @@
+import java.util.*;import java.lang.Math;public class question3 { 	public static void main(String[] args) {		Scanner sc= new Scanner(System.in);		String s =sc.next();		String ss[]=s.split("WUB");		for(int i=0;i<ss.length;i++) {			System.out.println(ss[i]+" ");		}			} }

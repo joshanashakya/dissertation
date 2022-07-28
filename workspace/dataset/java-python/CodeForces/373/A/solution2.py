@@ -1,0 +1,1 @@
+n = int(input()) arr = []for i in range(4): arr.append(input()) flag = Truefor i in arr:    for j in i:        if j=='.': continue        else:            c = 0            for k in arr: c+=k.count(j)            if c>(2*n):                flag = False                break         if not flag: break    if not flag: break if flag: print("YES")else: print("NO")

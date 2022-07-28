@@ -1,0 +1,1 @@
+from collections import Counter input()F = Counter(input()) if len(F) < 2:    print(*F)elif len(F) > 2:    print('BGR')else:    f1, f2 = F.values()    if f1 == f2 == 1:        print((set('BGR') - set(F.keys())).pop())    elif f1 > 1 and f2 > 1:        print('BGR')    else:        print(*(c for c in 'BGR' if c not in F or F[c] == 1), sep='')

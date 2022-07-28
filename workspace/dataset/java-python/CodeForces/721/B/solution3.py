@@ -1,0 +1,1 @@
+n,k=map(int,input().split())l=[]for _ in range(n):    l.append(input())s=input()a,b,c=0,0,0for i in l:    if len(i)<len(s):        a+=1    elif len(i)==len(s):        b+=1    else:        c+=1best=a+((a//k)*5)+1worst=(((n-c-1)//k)*5)+n-cprint(int(best),int(worst))

@@ -1,0 +1,1 @@
+arr = [int(x) for x in input().split()]a = arr[0]b = arr[1]resp = 0if a == b:  resp = 'infinity'if resp != 'infinity':  x = a - b  i = 1  c = 0  while i**2 < x:    c += 1    if x % i == 0:      if i > b:        resp += 1      if x/i > b:        resp += 1    i += 1  if i**2 == x and i > b:    resp += 1print (resp) 	 					 		  		  	 			     	   	

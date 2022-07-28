@@ -1,0 +1,1 @@
+cases = int(input())powers = set() for i in range(32):    powers.add(2**i)while cases:    cases -= 1    num = int(input())     ans = num*(num+1)//2     for i in powers:        if i <= num:            ans -= 2*i     print(ans)  

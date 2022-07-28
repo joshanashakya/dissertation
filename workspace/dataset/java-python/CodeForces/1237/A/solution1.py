@@ -1,0 +1,1 @@
+import mathn = int(input()) arr =[] for i in range(n):	arr.append(int(input())) res = []	flag = Falsefor i in arr:	if i %2 ==0:		res.append(int(i/2))		continue	if flag:		res.append(math.floor(i/2))		flag = False	else:		res.append(math.ceil(i/2))		flag = True		for i in res:	print(i)

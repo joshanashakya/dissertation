@@ -1,0 +1,1 @@
+t = int(input())for _ in range(t):        n = int(input())    arr = list(map(int,input().split()))       s = ['a'*52]        tmp = {        'a' : 'b',        'b' : 'a'    }        for i in range(n):                p = s[-1][0:arr[i]] + tmp[s[-1][arr[i]]]*(52-arr[i])        s.append(p)            for i in range(n+1):        print(s[i])

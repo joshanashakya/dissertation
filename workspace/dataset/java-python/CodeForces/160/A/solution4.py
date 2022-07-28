@@ -1,0 +1,1 @@
+ReadStr = lambda : input()ReadList = lambda : list(map(int,input().split()))ReadInt = lambda : int(input())ReadMultipleValues = lambda :map(int,input().split()) n = ReadInt()coins = sorted(ReadList())[::-1]s=0count=0for i in range(n):    if sum(coins[i:])<s:        break    else:        s+=coins[i]        count+=1print(count)

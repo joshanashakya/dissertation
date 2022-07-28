@@ -1,0 +1,1 @@
+n, m, k = list(map(int, input().split(' ')))my_dict = {}while n > 0:    r, c = list(map(int, input().split(' ')))    key = r    value = c    if key in my_dict:        if my_dict[key] > value:            my_dict[key] = value    else:        my_dict[key] = value    n -= 1ans = 0for key, value in my_dict.items():    ans += my_dict[key]if ans > k:    print(k)else:    print(ans)

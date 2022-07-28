@@ -1,0 +1,1 @@
+T=int(input())for _ in range(T): n=int(input()) arr=list(map(int,input().split()));k=0 for i in range(1,n+1):    idx=arr.index(i)    if idx==k:k+=1;continue    elif idx>k:     for i in range(idx,k,-1):       arr[i],arr[i-1]=arr[i-1],arr[i]     k=idx print(*arr)

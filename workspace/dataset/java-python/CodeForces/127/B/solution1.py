@@ -1,0 +1,1 @@
+n = int(input())a = list(map(int,input().split()))d = [0]*(max(a)+1)pas = 0x = 0for k in range(n):    d[a[k]] += 1for k in range(len(d)):    pas += d[k]//4     if d[k]%4 > 1:        if x==1:            pas += 1            x = 0         else:            x = 1print(pas)    

@@ -1,0 +1,1 @@
+def nCk(n, k):    res = 1    for i in range(1, k + 1):        res = res * (n - i + 1) // i    return res  n, _, me = map(int, input().split())a = [0] + list(map(int, input().split())) s = sum(a)if n > s:    print(-1)    exit() allWays = nCk(s - 1, n - 1)aa=nCk(s-a[me],n-1)print(1-aa/allWays)

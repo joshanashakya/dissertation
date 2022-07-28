@@ -1,0 +1,1 @@
+import sysx = input()for i in range(len(x)-1,-1,-1):    if x[i] != '0':        new = (i+1)        for j in range(new//2):            if(x[j] != x[new-j-1]):                print("NO")                sys.exit(0)        breakprint("YES")

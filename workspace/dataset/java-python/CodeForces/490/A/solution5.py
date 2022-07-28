@@ -1,0 +1,1 @@
+n = int(input())li = list(map(int,input().split()))p=0m=0pe=0pl=list()ml=list()pel=list()for i in range(n):    if li[i]==1:        p+=1        pl.append(i+1)    elif li[i]==2:        m+=1        ml.append(i+1)    else:        pe+=1        pel.append(i+1)mn=min(p,m,pe)print(mn)for j in range(mn):    print(pl[j],ml[j],pel[j]) 	      	    			 	  	  		     		

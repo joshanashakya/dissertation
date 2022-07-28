@@ -1,0 +1,1 @@
+import sys inp = sys.stdin.readlines(); ii = 0 out = [] t = int(inp[ii])ii += 1 a = inp[ii]ii += 1b = inp[ii]ii += 1 x, y = 0, 0for i in range(t):    if(a[i]=='1' and b[i]=='0'):        y+=1    if(a[i]=='0' and b[i]=='0'):        x+=1 sys.stdout.write(str((x*a.count('1') + (a.count('0') - x) * y)))       

@@ -1,0 +1,1 @@
+for i in range(int(input())):    l,r,m=list(map(int,input().split()))    d=r-l    f=max(1,m-d)    for j in range(l,r+1):        if f+j-f%j<=m+d or f%j==0:            a=j            if f%j==0:                e=m-f            else:                e=m-f-j+f%j            break    if e>0:        c=l        b=c+e    else:        c=r        b=c+e    print(a,b,c)

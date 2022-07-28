@@ -1,0 +1,1 @@
+max_width ,max_height,x ,y = map(int,input().split())   def hcf(num1 ,num2):    if(num2==0):        return num1     return hcf(num2 ,num1%num2) ratio = 0ratio = hcf(x,y)if(ratio!=0):    x = x//ratio     y = y//ratio     posible_width = max_width // x possible_height = max_height //y   print(min(possible_height,posible_width)) 

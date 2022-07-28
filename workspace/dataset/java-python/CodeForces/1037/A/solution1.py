@@ -1,0 +1,1 @@
+a=int(input()) n=acount=0arr=[] while 1:    if 2**count<=a:        arr.append(2**count)        n-=2**count    else:        break        if n<=0:        break     count+=1 if n>0:    arr.append(n) print(len(arr))

@@ -1,0 +1,1 @@
+import java.util.Scanner; /** * @author 汪家豪 * @version 1.0 * @description * @date 2021/3/22 18:16 */public class Main {    public static void main(String[] args) {        Scanner sc = new Scanner(System.in);        int num = sc.nextInt();        if(num%10<=5)   num-=num%10;        else    num+=10-num%10;        System.out.println(num);    }}

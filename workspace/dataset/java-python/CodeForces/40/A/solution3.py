@@ -1,0 +1,1 @@
+from math import sqrt, floorx, y = map(int, input().split())rmin = floor(sqrt(x**2+y**2))if x**2 + y**2 == rmin**2:  print("black")else:  if x >= 0 and y >= 0 or x <= 0 and y <= 0:    print("white" if rmin%2 else "black")  else:    print("white" if rmin%2==0 else "black")

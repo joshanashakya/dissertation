@@ -1,0 +1,1 @@
+h1, h2 = map(int, input().split())a, b = map(int, input().split())# 0 day starts at 2pmday = 0h1 += 8 * aif h1 >= h2:    print(day)    exit()h1 -= 12 * b;# 1 dayif h1 + 12 * a < h2 and a <= b:    print(-1)else:    while True:        h1 += 12 * a        day += 1        if h1 >= h2:            print(day)            exit()        h1 -= 12 * b

@@ -1,0 +1,1 @@
+n = int(input()) min_a = Nonemin_b = Noneminimal = None arr = [int(i) for i in input().split()] for i in range(len(arr)-1):    if minimal == None or abs(arr[i] - arr[i + 1]) < minimal:         minimal = abs(arr[i] -arr[i+1])        min_a = i + 1        min_b = i + 2 if abs(arr[-1] - arr[0]) < minimal:    min_a = 1    min_b = n print(min_a, min_b)

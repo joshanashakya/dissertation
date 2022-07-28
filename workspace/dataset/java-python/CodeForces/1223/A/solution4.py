@@ -1,0 +1,1 @@
+q = int(input())answer = 0ch = []for i in range(q):    n = int(input())    if n == 2:        ch.append(2)    if n % 2 == 0 and n != 2:        ch.append(0)    if n % 2 != 0:        ch.append(1)for j in ch:    print(j , end = "\n")        

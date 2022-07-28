@@ -1,0 +1,1 @@
+def main_function():    n, m = [int(i) for i in input().split(" ")]    collector = [0 for i in range(m + 1)]    for i in range(n):        l = [int(i) for i in input().split(" ")]        for i in range(1, len(l)):            collector[l[i]] += 1    #print(collector)    for i in collector[1:]:        if i == 0:            return "NO"    return "YES"  print(main_function()) 

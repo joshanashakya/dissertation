@@ -1,0 +1,1 @@
+n = int(input())a = list(map(int, input().split()))total = sum(a)if n == 1:  print(-1)else:  ans = -1  for i in range(n):    if a[i] != total - a[i]:      ans = i      break  if ans == -1:    print(-1)  else:    print(1)    print(ans + 1)

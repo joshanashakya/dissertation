@@ -1,0 +1,1 @@
+numTests = int(input())string = input()  if numTests > 26 or numTests == 1:    print("Yes")else:    temp = []    result = "No"    for x in string:        if x in temp:            result = "Yes"            break        else:            temp.append(x)        print(result)	  	 				 		    						 	 		

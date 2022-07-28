@@ -1,0 +1,1 @@
+import java.util.Scanner; public class _0669PashaandStick { 	public static void main(String[] args) {				Scanner sc = new Scanner(System.in);		int n=sc.nextInt();		if(n%2!=0) {			System.out.println(0);		}		else {		int val=n/2;		val--;			System.out.println(val/2);		}	} }

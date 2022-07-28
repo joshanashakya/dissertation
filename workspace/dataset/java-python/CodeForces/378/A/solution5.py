@@ -1,0 +1,1 @@
+F,S=map(int,input().split())if F==S:    print(0, 6, 0)elif abs(F-S)%2==1:    if F<S:        F=F+((abs(F-S)-1)//2)        print(F, 0, 6-F)    else:        S=S+((abs(F-S)-1)//2)        print(6-S, 0, S)else:    if F<S:        F=F+((abs(F-S)//2)-1)        print(F, 1, 6-F-1)    else:        S=S+((abs(F-S)//2)-1)        print(6-S-1, 1, S)

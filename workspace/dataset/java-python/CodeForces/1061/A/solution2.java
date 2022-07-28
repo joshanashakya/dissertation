@@ -1,0 +1,1 @@
+import java.util.Scanner;public class WayTooLongWords {    public static void main(String[] args) {         Scanner in=new Scanner(System.in);                  int num = in.nextInt();         int limit = in.nextInt();         int x = 0;          while(limit>0){             limit = limit - num;             x++;          }          System.out.println(x);              }}

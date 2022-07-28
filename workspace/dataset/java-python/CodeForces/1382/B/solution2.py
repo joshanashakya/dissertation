@@ -1,0 +1,1 @@
+for _ in range(int(input())):    n = int(input())    arr = [int(x) for x in input().split()]    k = 0    while k < n and arr[k] == 1:        k += 1    if (k %2 == 1):        if n ==k:            print("First")        else:            print("Second")    else:        if n == k:            print("Second")        else:            print("First")

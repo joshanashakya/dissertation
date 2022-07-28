@@ -1,0 +1,1 @@
+import java.util.*;public class b {	public static void main(String[] args) {		Scanner in = new Scanner(System.in);		long n = in.nextInt(), a = in.nextInt(), b = in.nextInt(), c = in.nextInt(), d = in.nextInt();		if (Math.abs(a - d) + Math.abs(b - c) <= n) System.out.printf("%d\n", n * (n - Math.abs(a - d) - Math.abs(b - c)));		else System.out.printf("0\n");		in.close();	}}

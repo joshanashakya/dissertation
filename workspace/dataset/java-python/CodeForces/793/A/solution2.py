@@ -1,0 +1,1 @@
+nk = input().split()n = int(nk[0])k = int(nk[1])a = [int(i) for i in input().split()]m = a[0]ans = 0for i in range(n):    if m > a[i]:        m = a[i]for i in range(n):    if (a[i] - m) % k != 0:        ans = -1        break    else:        ans += (a[i] - m) // kprint(ans)

@@ -1,0 +1,1 @@
+#n=int(input())#n,m=map(int,input().split())#arr=list(map(int,input().split()))\#for i in range(m):n,m=map(int,input().split())A=1B=nfor i in range(m):    u,v=map(int,input().split())    if u>v:        u,v=v,u    #print(u,v)    A=max(u,A)    B=min(v,B)print(max(0,B-A))

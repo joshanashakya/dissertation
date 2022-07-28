@@ -1,0 +1,1 @@
+from typing import Iterator  def get_num_input() -> Iterator[int]:    return map(int, input().split())  def main() -> None:    first: int    second: int    _, first, second, _ = get_num_input()     print(first, second, second)  if __name__ == "__main__":    ONLY_ONCE: bool = False    for _ in range(1 if ONLY_ONCE else int(input())):        main()

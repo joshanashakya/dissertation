@@ -1,0 +1,1 @@
+import sys def main():    l = sys.stdin.read().strip().split('\n')    out = []    for i in range(2, len(l), 3):        m1 = max(map(int, l[i].split()))        m2 = max(map(int, l[i+1].split()))        out.append(('NO', 'YES')[m1 > m2])    return out print(*main(), sep='\n')

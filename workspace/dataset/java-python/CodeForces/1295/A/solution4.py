@@ -1,0 +1,1 @@
+l=[6,2,5,5,4,5,6,3,7,6]p=[6,7,3,6,5,4,5,5,2,6]for _ in range(int(input())):    n=int(input())    d=n//2    r=n%2    if(r==0):        print('1'*d)    else:        d=d-1        print('7'+'1'*d)            

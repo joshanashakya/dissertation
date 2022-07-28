@@ -1,0 +1,1 @@
+n = int(input()) s = input() a = s.count('X')b = s.count('x') if a==b:    print(0)    print(s)else:        if a>b:        c = a - n//2        s = s.replace('X' , 'x' , c)        print(c)    else:        c = b - n//2        print(c)        s = s.replace('x' , 'X' , c)     print(s)

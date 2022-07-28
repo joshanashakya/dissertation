@@ -1,0 +1,1 @@
+import mathc,d=map(int,input().split())n,m=map(int,input().split())k=int(input()) if m*n <= k:    print(0)else:    c1=m*c     c2 = ((((m*n)-k)//n)*c)+((((m*n)-k)%n)*d)     c3 = math.ceil(((m*n)-k)/n)*c     c4 = ((m*n)-k)*d     print(min(c1,c2,c3,c4))

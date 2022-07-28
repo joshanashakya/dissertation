@@ -1,0 +1,1 @@
+if __name__ == '__main__':    cin = input    n = int(cin())    a = [int(i) for i in input().split()]    s = sum(a)    b = [str(i + 1) for i in range(n) if a[i] * (n - 1) == s - a[i]]    print(len(b))    print(" ".join(b))

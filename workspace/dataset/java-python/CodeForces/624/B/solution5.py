@@ -1,0 +1,1 @@
+num = int(input())arr = sorted(map(int, input().split()), reverse=True) ans = 0 seen = set() for num in arr:    if num in seen:        while num in seen and num > 0:            num -= 1        ans += num        seen.add(num)    else:        ans += num        seen.add(num) print(ans)

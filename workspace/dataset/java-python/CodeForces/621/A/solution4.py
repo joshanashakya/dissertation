@@ -1,0 +1,1 @@
+num = int(input())arr = list(map(int, input().split())) odds = [i for i in arr if i %2 != 0] evens = [i for i in arr if i %2 == 0] if len(odds) % 2 == 0:    print(sum(arr))else:    print(sum(arr)-min(odds))

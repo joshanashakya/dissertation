@@ -1,0 +1,1 @@
+def solve(l, r):    i = 62    while i >= 0 and l & (1 << i) == r & (1 << i):        i -= 1    if i < 0:        return l    for c in [r | ((1 << (i + 1)) - 1), l | ((1 << i) - 1)]:        if c <= r:            return c  n = int(input())for _ in range(n):    l, r = map(int, input().split())    print(solve(l, r))

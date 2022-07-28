@@ -1,0 +1,1 @@
+n = int(input())a = -1b = -1mmm = 0c = 1while n > 0:    n -= 1    h, m = map(int, input().split())    if h == a and b == m:        c += 1    else:        c = 1    if c > mmm:        mmm = c    a = h    b = m print(mmm)

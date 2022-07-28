@@ -1,0 +1,1 @@
+n=int(input())s=list(input())t=list(input())for i in range(n):  s[i]=int(s[i])  t[i]=int(t[i])s.sort()t.sort()c1=0idx=0for i in range(n):  while idx<n and s[i]>t[idx]:    idx+=1  if idx<n:    c1+=1  idx+=1ans1=n-c1c2=0idx=0for i in range(n):  while idx<n and s[i]>=t[idx]:    idx+=1  if idx<n:    c2+=1  idx+=1ans2=c2print(ans1)print(ans2)

@@ -1,0 +1,1 @@
+import matht=int(input())anss=[]while t:    n,a,b=map(int,input().split())    ans=0    if a>=b:        ans=n    else:        m=math.ceil(n/2)        if m%a==0:            ans=m+((m//a)-1)*b        else:            ans=m+(m//a)*b    anss.append(max(ans,n))    t=t-1for i in anss:    print(i)    

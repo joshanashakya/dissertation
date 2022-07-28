@@ -1,0 +1,1 @@
+import java.util.Scanner; public class Main {    public static void main(String[] args) {        Scanner scan = new Scanner(System.in);        int a = 0, b = 0;        for (int i = 0; i < 25; i++) {            if (scan.nextInt() == 1) {                a = i % 5;                b = i / 5;            }        }        System.out.println(Math.abs(a - 2) + Math.abs(b - 2));    }}   

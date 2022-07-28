@@ -1,0 +1,1 @@
+n,m=map(int,input().split())s=str(input())t=str(input())if '*' in s:    a,b=s.split('*')    s1=t.startswith(a)    s2=t[len(a):].endswith(b)    if s1 and s2:        print("YES")    else:        print("NO")else:    if s==t:        print("YES")    else:        print("NO")

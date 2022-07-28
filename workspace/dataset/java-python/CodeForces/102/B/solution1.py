@@ -1,0 +1,1 @@
+def sum_of_digits(n):    sum = 0    for digit in str(n):      sum += int(digit)    return sum n= int(input())fs = 0ans = 0if n>9:    fs = sum_of_digits(n)    ans+= 1    while fs>9:        fs = sum_of_digits(fs)        ans+= 1print(ans)  

@@ -1,0 +1,1 @@
+from sys import stdin# input=stdin.readlinefor _ in range(int(input())):    a,b=map(int,input().split())    x=max(a,b)-min(a,b)    s=0    ans=0    for i in range(0,100000):        s+=i        if s-x>=0 and (s-x)%2==0:            ans=i            break    print(ans)

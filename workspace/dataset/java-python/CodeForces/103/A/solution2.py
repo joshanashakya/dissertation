@@ -1,0 +1,1 @@
+import sys # sys.stdin = open('input.txt', 'r')# sys.stdout = open('output.txt', 'w') input = sys.stdin.readline n = int(input())a = list(map(int, input().split())) ans = 0answered = 0for choices in a:    ans += (choices-1)*(answered+1) + 1    answered += 1print(ans)

@@ -1,0 +1,1 @@
+import java.util.Scanner; public class PhotoString {    public static void main(String[] args) {        Scanner scan = new Scanner(System.in);         System.out.println(26 + 25*scan.nextLine().length());    }}

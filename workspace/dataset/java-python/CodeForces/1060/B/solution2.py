@@ -1,0 +1,1 @@
+def ds(n):    s=str(n)    k=0    for i in s:        k+=int(i)    return kn=int(input())k=len(str(n))-1m=str(n)s=""print(s)if m[0]=="1":    s="9"*kelse:    s="1"+"9"*kif s=="":    s="0"x=n-int(s)print(ds(x)+ds(int(s)))                

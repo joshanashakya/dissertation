@@ -1,0 +1,1 @@
+def sol(z,o,k):    c = 1    idx = 1    if z>o:        s = ['0']*z+['1']*o    else:        s = ['1']*o+['0']*z    while (c<k):        key = s.pop(-1)        s.insert(idx, key)        c+=2        idx+=2    if c>k:        for _ in range(2):            key = s.pop(idx-2)            s.append(key)    return ''.join(s)  z,o,k = map(int, input().split())print(sol(z,o,k))

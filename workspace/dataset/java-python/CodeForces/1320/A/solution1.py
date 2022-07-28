@@ -1,0 +1,1 @@
+n=int(input())arr = list(map(int, input().split()))for i in range(n):    arr[i]-=i    arr[i]=[arr[i],i]arr.sort()ma=0s=arr[0][0]+arr[0][1]for i in range(1,n):    if(arr[i-1][0]!=arr[i][0]):        ma=max(s,ma)        s=arr[i][0]+arr[i][1]    else:        s+=arr[i][0]+arr[i][1]ma=max(ma,s)print(ma)

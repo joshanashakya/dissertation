@@ -1,0 +1,1 @@
+a = [1 , 2 , 2 , 1 , 0 , 0]b = [0 , 0 , 1 , 2 , 2 , 1]c = [2 , 1 , 0 , 0 , 1 , 2]  n = int(input())n = n%6 if not n: n = 6 x = int(input())if a[n-1] == x: print(0)elif b[n-1] ==x: print(1)else: print(2)

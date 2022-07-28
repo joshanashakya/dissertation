@@ -1,0 +1,1 @@
+n = int(input())c = "*" *nx = 1mid = Falsefor i in range(n):    if i == (n-1)/2:        mid = True    a = c[:int((n-x)/2)]    b = "D"*x    print(a+b+a)    if mid == True:        x -= 2    else:        x += 2

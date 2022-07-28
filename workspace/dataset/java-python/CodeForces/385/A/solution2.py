@@ -1,0 +1,1 @@
+n , y = [int(x) for x in input().split()]li = [int(x) for x in input().split()]maxDiff = 0for x in range(n-1):    if maxDiff < li[x] - li[x+1]:        maxDiff = li[x] - li[x+1]if maxDiff - y > 0:    print(maxDiff-y)else:    print(0)

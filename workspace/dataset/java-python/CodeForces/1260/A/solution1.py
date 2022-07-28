@@ -1,0 +1,1 @@
+import math def solve():  c, sm = map(int, input().split())  if sm <= c:    print(sm)  else:    if sm % c == 0:      print(c * (sm // c) ** 2)    else:      cnt2 = sm % c      cnt1 = c - cnt2      print(cnt1 * (sm // c) ** 2 + cnt2 * math.ceil(sm / c) ** 2) t = int(input())for _ in range(t):  solve()

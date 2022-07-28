@@ -1,0 +1,1 @@
+import math cases = int(input())while cases:    cases -= 1    a, b = map(int, input().split())     if a % 2 == 0:        print(a + b * 2)    else:        for i in range(3, a + 1):            if a % i == 0:                a += i                break        print(a+(b-1)*2) 

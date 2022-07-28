@@ -1,0 +1,1 @@
+M=[0 for i in range(367)]F=[0 for i in range(367)]n=int(input())for _ in range(n):    g,n1,n2=input().split()    b=int(n1)    c=int(n2)    for j in range(b,c+1):        if g=='M':            M[j]+=1        else:            F[j]+=1k=0for i in range(367):    m=min(M[i],F[i])    if m>k:        k=mprint(k*2) 

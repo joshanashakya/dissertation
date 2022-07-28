@@ -1,0 +1,1 @@
+n, k = map(int,input().split())s = input()d = {} val = 0; i = 0while i < n:    count = 1    ch = s[i]    i += 1    while i < n:        if s[i] == s[i-1]:            count += 1            i += 1        else:            break            d[ch] = d.get(ch, 0) + (count//k) print(max(d.values()))

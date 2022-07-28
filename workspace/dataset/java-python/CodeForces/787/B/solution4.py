@@ -1,0 +1,1 @@
+from collections import defaultdict   n,m=map(int, input().split())lst =[]for i in range(m):    a = list(map(int, input().split()))[1:]    n = len(a)    d = defaultdict(int)    s = "YES"    for j in range(n):        if d[-a[j]]:            s="NO"        d[a[j]]+=1    lst.append(s)print("YES" if "YES" in lst else "NO")

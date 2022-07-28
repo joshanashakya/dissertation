@@ -1,0 +1,1 @@
+odd=['1','3','5','7','9']for i in range(int(input())):    size=int(input())    nums=input()    x=[j for j in nums if j in odd]    if len(x)<=1:        print(-1)    else:        print(''.join(x[:2]))    

@@ -1,0 +1,1 @@
+       import java.util.*;      public class Main {         public static void main(String[] args) {		Scanner input = new Scanner(System.in);                       int n = input.nextInt();            long k = input.nextLong();            System.out.println(Long.numberOfTrailingZeros(k)+1);                      }     } 

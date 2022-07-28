@@ -1,0 +1,1 @@
+m = int(input())count = 0i = n = 5arr = []while count<=m:    while n%5==0:        count += 1        n //= 5    if count==m:        arr.append(i)    i += 1    n = iif arr==[]:    print(0)else:    print(5)    print(*arr)

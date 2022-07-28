@@ -1,0 +1,1 @@
+def most_common(lst):  return max(set(lst), key=lst.count)n,m = [int(x) for x in input().split()]a = []for i in range(m):  t = [int(x) for x in input().split()]  a.append(t.index(max(t))+1)print(most_common(a))

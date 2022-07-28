@@ -1,0 +1,1 @@
+def gcd(a, b):    if b == 0:        return a    else:        return gcd(b, a % b)  n = int(input())lst = [int(i) for i in input().split()] for i in range(n):    ans = 1 + int(4*lst[i]/gcd(4*lst[i], lst[i]+1))    print(ans)

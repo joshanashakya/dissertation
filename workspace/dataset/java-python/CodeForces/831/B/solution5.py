@@ -1,0 +1,1 @@
+board1=input()board2=input()s=input()ans=""for i in s:    if i>='A' and i<='Z':        index=board1.index(i.lower())        ans+=board2[index].upper()    elif i>='a' and i<='z':        index=board1.index(i)        ans+=board2[index]    else:        ans+=iprint(ans)

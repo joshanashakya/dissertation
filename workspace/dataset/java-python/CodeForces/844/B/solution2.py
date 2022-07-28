@@ -1,0 +1,1 @@
+n,m=map(int,input().split());arr=[]for i in range(n):  a=list(map(int,input().split()));arr.append(a)ans=0for i in arr: k1=i.count(0);k2=i.count(1) ans+=(2**k1)-1 ans+=(2**k2)-1#print(ans)for i in range(m): one,zero=0,0 for j in range(n):   if arr[j][i]==0:zero+=1   else:one+=1 ans+=(2**zero)-1 ans+=(2**one)-1print(ans-(n*m))

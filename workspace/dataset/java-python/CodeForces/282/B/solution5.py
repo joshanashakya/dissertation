@@ -1,0 +1,1 @@
+a= int(input())sumA = 0sumG = 0s = ''for i in range(a):    c,d = map(int,input().split())    if sumA+c-500 > sumG:        s+='G'        sumG+=d    else:        s+='A'        sumA+=c if abs(sumA-sumG)>500:    print(-1)else:    print(s)    

@@ -1,0 +1,1 @@
+r = int(input())if r % 2 == 0:    print (-1)elif r == 1:    print(0)    print(0)    print(0) else:    for i in range(r):        print(i,end=" ")    print()    i = r - 1    while i >= 0:        print(i,end=" ")        i -= 2    i = r - 2    while i >= 0:        print(i,end=" ")        i -= 2    print()    for i in range(r - 1, -1, -1):        print(i,end=" ")

@@ -1,0 +1,1 @@
+from collections import defaultdictn,k,m=map(int,input().split())l=list(map(int,input().split()))d=defaultdict(list)for p in l:    d[p%m].append(p)#print(d)for p in list(d.values()):    if len(p)>=k:        print('Yes')        print(*p[:k])        exit()print('No')

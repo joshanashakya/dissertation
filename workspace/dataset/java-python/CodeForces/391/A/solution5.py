@@ -1,0 +1,1 @@
+s = input()num = 0i = 0while(i < len(s)):    for j in range(i + 1, len(s) + 1):        if(j == len(s) or s[i] != s[j]):            if((j - i) % 2 == 0):                num += 1            i = j - 1            break    i += 1print(num)

@@ -1,0 +1,1 @@
+t=input()p=input()n=len(t)m=len(p)a=[int(i) for i in input().split()]l=0r=n-1while(l<r):    mid=(r+l)//2    f=[0]*n    for i in range(mid+1):        f[a[i]-1]=1    c=0    for i in range(n):        if(f[i]==0 and t[i]==p[c]):            c+=1        if(c==m):            break    if(c==m):        l=mid+1    else:        r=midprint(l) 		  	 	   	  			 	 					 	 		

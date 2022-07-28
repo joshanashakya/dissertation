@@ -1,0 +1,1 @@
+import sys, collections, math, itertools, random, bisectINF = sys.maxsizedef get_ints(): return map(int, sys.stdin.readline().strip().split())def get_array(): return list(map(int, sys.stdin.readline().strip().split()))def input(): return sys.stdin.readline().strip()mod = 1000000007 for _ in range(int(input())):    a=int(input())    print(1<<(bin(a)[2:].count('1')))

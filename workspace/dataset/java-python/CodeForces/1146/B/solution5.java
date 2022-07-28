@@ -1,0 +1,1 @@
+import java.util.*; public class Main {    public static void main(String[] args) {        Scanner in = new Scanner(System.in);        String t = in.next();        String s = t.substring(0, (int) (t.length() + t.chars().filter(c -> c == 'a').count()) / 2);        System.out.println(t.equals(s + s.replaceAll("a", "")) ? s : ":(");    }}

@@ -1,0 +1,1 @@
+for _ in range(int(input())):    n=int(input())    l=list(map(int,input().split()))    flag=False    for i in range(0,n-1):        for j in range(i+1,n):            if(l[i]==l[j] and abs(j-i)>1):                flag=True                break    if(flag==True):        print("YES")    else:        print("NO")

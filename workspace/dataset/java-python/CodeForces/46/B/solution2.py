@@ -1,0 +1,1 @@
+n=list(map(int,input().split()))a={'S':0,'M':1,'L':2,'XL':3,'XXL':4}b=['S','M','L','XL','XXL']for i in range(int(input())):    c=a[input()]    for i in range(5):        if c+i<5 and n[c+i]>0:            print(b[c+i])            n[c+i]-=1            break        elif c-i>=0 and n[c-i]>0:            print(b[c-i])            n[c-i]-=1            break

@@ -1,0 +1,1 @@
+n = int(input())a = list(map(int,input().split()))arr=sorted(a,reverse=True)ans=[None for x in range(n)]for i in range(n-1):    pos=a.index(arr[i])    ans[pos]=arr[i+1]for i in range(n):    if ans[i]==None:        ans[i]=arr[0]print(*ans)

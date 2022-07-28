@@ -1,0 +1,1 @@
+a=int(input())b=int(input())l=list(range(b+1,0,-1))if a==0:    for i in l:        print(i,end=" ")else:    q=list(range(b+2,a+b+2))    print(1,end=" ")    for i in q:        print(i,end=" ")    for i in l[:-1]:        print(i,end=" ")

@@ -1,0 +1,1 @@
+import java.util.Scanner;public class Cf {    public static void main(String[] args) {                Scanner input = new Scanner(System.in);           int n = input.nextInt();        int  totalbags=n*n;  for(int i=1 ;i<=totalbags/2 ;i++){      System.out.println(i +" "+((totalbags-i)+1));  }    }    }

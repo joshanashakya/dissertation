@@ -1,0 +1,1 @@
+n=int(input())a=list(map(int,input().split()))s=input()def m(s,a):    q,w=0,0    for i in range(n):        if s[i]=="A":q+=a[i]        else:w+=a[i]    r=w    for i in range(n):        if s[i]=="A":w+=a[i];q-=a[i]        else:q+=a[i];w-=a[i]        r=max(r,w)    return rprint(max(m(s,a),m(s[::-1],a[::-1])))

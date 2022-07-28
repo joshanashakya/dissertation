@@ -1,0 +1,1 @@
+import sysfrom itertools import zip_longestfrom math import ceil def main():    s = sys.stdin.read().strip()    t = int(ceil(len(s)/2))    return ''.join(i+j for i,j in zip_longest(s[:t][::-1], s[t:], fillvalue='')) print(main())

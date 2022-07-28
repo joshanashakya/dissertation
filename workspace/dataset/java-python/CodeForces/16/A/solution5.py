@@ -1,0 +1,1 @@
+n, m = [int(j) for j in input().split()]output = "YES"prev = str(input())if prev.count(prev[0]) != m:    output = "NO"for j in range(n - 1):    s = str(input())    if s.count(s[0]) != m or s[0] == prev[0]:        output = "NO"    prev = sprint(output)

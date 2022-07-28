@@ -1,0 +1,1 @@
+n,k=map(int,input().split())if(n==k):    print("-1")else:    print(n-k,end=" ")    r=0    r=r+1    j=1    while(r<n):        if(j==n-k):            j=j+1            print(j,end=" ")            j=j+1        else:            print(j,end=" ")            j=j+1        r=r+1

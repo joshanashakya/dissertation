@@ -1,0 +1,1 @@
+from collections import *n,m=map(int,input().split())l=list(map(int,input().split()))l.sort()d=defaultdict(int)for i in l:    d[i]+=1x=list(d.values())s=sum(x)k=len(x)c=0for i in range(k-1):    s=s-x[i]    c=c+s*x[i]print(c)

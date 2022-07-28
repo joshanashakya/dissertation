@@ -1,0 +1,1 @@
+x, y, z = map(int, input().split())if x>y:    if z>=abs(x-y):        print("?")    else:        print("+")elif y>x:    if z>=abs(x-y):        print("?")    else:        print("-")else:    if z==0:        print("0")    else:        print("?")

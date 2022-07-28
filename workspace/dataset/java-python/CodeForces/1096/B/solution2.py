@@ -1,0 +1,1 @@
+length=int(input())string=input()m=0n=0temp1=string[0]temp2=string[-1]for i in string:    if i==temp1:        m+=1        continue    for j in range(1,length+1):        if string[-j]==temp2:            n+=1            continue        break    breakif n==0:    print((((m+1)*m)/2)%998244353)elif temp1==temp2:    print(((m+1)*(n+1))%998244353)else:    print((n+m+1)%998244353)

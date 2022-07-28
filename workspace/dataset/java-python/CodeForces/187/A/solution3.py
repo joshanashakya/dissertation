@@ -1,0 +1,1 @@
+import sysinput = sys.stdin.readlinefrom math import *import bisect as bsn=int(input())a=[int(x) for x in input().split()]b=  [int(x) for x in input().split()]d={}for i in range(n):    d[b[i]]=i c=0ans=0u=[0 for i in range(n)]for i in range(n):    u[i]=d[a[i]]#print(u)    for i in range(1,n):    if u[i]<u[i-1]:        ans=n-i        breakprint(ans)        

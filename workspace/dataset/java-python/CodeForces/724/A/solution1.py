@@ -1,0 +1,1 @@
+s = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"] a = input()b = input() pos = s.index(a) if s[pos] == b or s[(pos+2)%7] ==b or s[(pos+3)%7] ==b:    print("YES")else:    print("NO")

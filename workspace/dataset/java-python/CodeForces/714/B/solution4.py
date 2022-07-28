@@ -1,0 +1,1 @@
+  n = int(input()) t=  list(map(int,input().split()))   t.sort()m=t[0] for j in range(n):    t[j]-=m  x=-1 for j in range(n):    if t[j]>0:        x=t[j]        break   if x==-1:    print('YES')else:     u=0    for j in range(n):        if t[j]==0 or t[j]==x or t[j]==2*x:            continue        else:u+=1     if u>0:        print('NO')    else:        print('YES')

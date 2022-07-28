@@ -1,0 +1,1 @@
+t = int(input())for _ in range(t):    n = int(input())    a = list(map(lambda x:int(x) % 2, input().split()))    if 1 in a:        if 0 in a:            print('YES')        else:            if n % 2 == 1:                print('YES')            else:                print('NO')    else:        print('NO')

@@ -1,0 +1,1 @@
+for i in range(int(input())):    n=int(input())    ok=False    arr=list(map(int,input().split()))    for i in range(n):        for j in range(i+2,n):            if(arr[i]==arr[j]):                ok=True    if(ok):        print("YES")    else:        print("NO")

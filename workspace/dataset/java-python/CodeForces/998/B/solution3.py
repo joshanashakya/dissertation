@@ -1,0 +1,1 @@
+n,k=map(int,input().split())l=list(map(int,input().split()))t=0cost=[]for i in range(n-1):	if l[i]%2==0:		t=t+1	else:		t=t-1	if t==0:		cost.append(abs(l[i+1]-l[i]))i=0cost.sort() while i<len(cost) and k>=0:	k=k-cost[i]	if k>=0:		i+=1print(i)

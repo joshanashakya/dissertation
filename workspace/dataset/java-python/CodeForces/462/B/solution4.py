@@ -1,0 +1,1 @@
+from collections import Counterdef f(arr,k):	x=Counter(arr)	ans=0	for i,j in sorted(x.items(),key=lambda s:s[1],reverse=True):		if j<=k:			k-=j			ans+=j**2		else:			ans+=k**2			k=0			break	return ans  a,b=map(int,input().strip().split())lst=input()print(f(lst,b))

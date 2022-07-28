@@ -1,0 +1,1 @@
+s=input()s1=input()s2=input()s3=s+s1s3=''.join(sorted(s3))s2=''.join(sorted(s2))cnt=0if(len(s3)==len(s2)):    for i in range(0,len(s3)):        if(s3[i]==s2[i]):            cnt+=1    if(cnt==len(s3) and len(s3)==len(s2)):        print("YES")    else:        print("NO")else:    print("NO")

@@ -1,0 +1,1 @@
+n,m = map(int,input().split())arr = [x for x in range(0,n+1)]d = 1for i in range(m):    a,b = map(int,input().split())    a,b = arr[a],arr[b]    while a != arr[a]:        a = arr[a]    while b != arr[b]:        b = arr[b]    if a != b:        arr[b] = a        d *= 2print(d)

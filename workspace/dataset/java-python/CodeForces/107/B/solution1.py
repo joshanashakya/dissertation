@@ -1,0 +1,1 @@
+def nck(n,k):    if(n<k):        return 0    num=1    den=1    if(k>n-k):        return nck(n,n-k)    for i in range(k):        num=num*(n-i)        den=den*(i+1)    return num//denl=input().split()n=int(l[0])m=int(l[1])h=int(l[2])l=input().split()li=[int(i) for i in l]poss=sum(li)-1if(poss<n-1):    print(-1)else:    ki=li[h-1]-1    print(1-(nck(poss-ki,n-1)/nck(poss,n-1)))

@@ -1,0 +1,1 @@
+n=int(input())f=0if n/2<5:    print(-1)else:    for i in range(5,n//2):        if n%i==0 and n//i>=5:            s='aeiou'+'g'*((i)-5);j=1            ans=s            while j<n//i:                s=s[-1]+s[:-1]                ans=ans+s                j+=1            print(ans)            f=1            break    if f==0:      print(-1)                         

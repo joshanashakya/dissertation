@@ -1,0 +1,1 @@
+a=input()b=input()coun=0leta=[]letb=[]n=len(a)if len(a)==len(b):    for i in range(len(a)):        if a[i]==b[i]:            coun+=1        else:            leta.append(a[i])            letb.append(b[i])    if coun>=n-2:        leta.sort();letb.sort()        if leta==letb:            print("YES")        else:            print("NO")    else:        print("NO")else:    print("NO")

@@ -1,0 +1,1 @@
+n=int(input())w,h,h1,h2=[],[],0,0for i in range(n):    x,y=map(int,input().split())    w.append(x)    h.append(y)    if y>h1:        h2=h1        h1=y    elif y>h2:        h2=yans=sum(w)for i in range(n):    if h[i]==h1:        print((ans-w[i])*h2,end=' ')    else:        print((ans-w[i])*h1,end=' ')

@@ -1,0 +1,1 @@
+n,m,k=map(int,input().split())a=list(map(int,input().split()))b=list(map(int,input().split()))c=list(map(int,input().split()))d={}for i in range(n):    if d.get(b[i]):        if d[b[i]]<a[i]:            d[b[i]]=a[i]    else:        d[b[i]]=a[i]ans=0for i in c:    if a[i-1]<d[b[i-1]]:        ans+=1print(ans)

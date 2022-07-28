@@ -1,0 +1,1 @@
+n,m = map(int, input() .split())x= list(map(int, input() .split()))y = [0]*nfor i in range (m):  c = x[i]  while x[i] <= n:    b = x[i] - 1     if y[b] != 0 :      break    else:        y[b] = c      b+=1      x[i]+=1 for j in range(n):  print(y[j],end= ' ')

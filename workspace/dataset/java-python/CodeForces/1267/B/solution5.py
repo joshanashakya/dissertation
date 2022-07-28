@@ -1,0 +1,1 @@
+s = input()j = len(s)-1i = 0while i<=j:	c = 0	p = s[i]	if p!=s[j]:		exit(print(0))	while i<=j and s[i]==p:		i+=1		c+=1	while i<=j and s[j]==p:		j-=1		c+=1	if c<=2 and i<j:		exit(print(0))if c>1:	print(c+1)else:	print(0)

@@ -1,0 +1,1 @@
+n = int(input())a = list(map(int, input().split()))sum1 = int(100000000)ans = int(0)for i in range(1, 200):    sum2 = int(0)    for j in range(0, n):        sum2 = sum2 + min(int(abs(a[j] - (i - 1))), int(abs(a[j] - (i + 1))), int(abs(a[j] - i)))    if sum2 < sum1:        sum1 = sum2        ans = iprint(ans, end=" ")print(sum1)  						 	  	 	 	 		 		   		 		

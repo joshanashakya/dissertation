@@ -1,0 +1,1 @@
+counter = {}max_goal = 0for _ in range(int(input())):    team = input()    counter[team] = counter.get(team, 0) + 1    max_goal = max(max_goal, counter[team]) for team in counter.keys():    if counter[team] == max_goal:        print(team)

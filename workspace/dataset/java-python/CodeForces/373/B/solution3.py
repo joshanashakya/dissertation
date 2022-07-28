@@ -1,0 +1,1 @@
+from math import * w, m, k = list(map(int, input().split()))cnt = 0add = 9*10**(-1) if m < 10 else 0for i in range(int(log10(m)), int(1e10)):    v = (9 * 10**i - (m-1-9*10**(i-1)+add if i == int(log10(m)) else 0)) * (i+1) * k    if w - v < 0:        cnt += w//((i+1)*k)        break    w -= v    cnt += v//(k*(i+1))print(int(cnt))

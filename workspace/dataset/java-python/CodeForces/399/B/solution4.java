@@ -1,0 +1,1 @@
+import java.util.*;public class Main{	static long count = 0;	public static void main(String args[]){		Scanner sc = new Scanner(System.in);		int n = sc.nextInt();		String s = sc.next();		count = 0;		for(int i=0; i<n; i++){			if(s.charAt(i) == 'B'){				count += (long)Math.pow(2, i);			}		}		System.out.println(count);	}}

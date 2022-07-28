@@ -1,0 +1,1 @@
+def solution():	k=int(input()) 	st=input() 	cnt=[0]*26 	for i in st:		cnt[ord(i)-ord('a')]+=1	for cnts in cnt:		if cnts%k!=0:			print(-1)			return	ans='' 	for i in range(26):		ans+=chr(97+i)*(cnt[i]//k)	print(ans*k)  	return    if __name__=='__main__':	solution()

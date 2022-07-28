@@ -1,0 +1,1 @@
+import java.util.Scanner; public class StupidWalker {    public static void main(String[] args) {        Scanner scan = new Scanner(System.in);         long d = Math.abs(scan.nextLong()) + Math.abs(scan.nextLong());        long s = scan.nextLong() - d;         if(s >= 0 && s%2 == 0) System.out.println("YES");        else System.out.println("NO");    }}

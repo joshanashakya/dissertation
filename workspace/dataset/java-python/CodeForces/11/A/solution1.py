@@ -1,0 +1,1 @@
+#  author:  violist#  created: 14.04.2021 15:41:42import sysinput = sys.stdin.readline n, d = [int(i) for i in input().split()]a = [int(i) for i in input().split()]ans = 0for i in range(1, n):    if a[i] <= a[i - 1]:        ans += (a[i - 1] - a[i]) // d + 1        a[i] += d * ((a[i - 1] - a[i]) // d + 1)print(ans)

@@ -1,0 +1,1 @@
+for _ in range(int(input())):    L=list(map(int,input().split()))    x=L[-1]    y=L[-2]    if (x//y)<=L[0]:        if (x%y)<=L[1]:            print("YES")        else:            print("NO")    else:        if (y*((x//y)-L[0]))+(x%y)>L[1]:            print("NO")        else:            print("YES")

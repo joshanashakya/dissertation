@@ -1,0 +1,1 @@
+n = int(input())arr = list(map(int, input().split()))bs = 0for i in range(32, -1, -1):    cnt = 0    for j, c in enumerate(arr):        if (c >> i) & 1:            cnt += 1            bs = j    if cnt == 1:        breakprint(arr[bs], end=" ")for j, c in enumerate(arr):    if j != bs:        print(c, end=" ")

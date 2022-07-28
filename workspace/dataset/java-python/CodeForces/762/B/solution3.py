@@ -1,0 +1,1 @@
+c = list(map(int, input().split()))m = int(input())a = []for i in range(m):    n, t = input().split()    a.append((int(n), int(t=="PS/2")))a.sort()res = 0b = [0] * 3for n, t in a:    if c[t]-b[t] > 0:        b[t] += 1        res += n    elif c[2]-b[2] > 0:        b[2] += 1        res += nprint(sum(b), res)

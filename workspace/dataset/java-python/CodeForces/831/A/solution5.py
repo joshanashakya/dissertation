@@ -1,0 +1,1 @@
+from sys import stdinn = int(stdin.readline())a = list(map(int, stdin.readline().split()))i = 0while i < n-1 and a[i] < a[i+1]:    i += 1 while i < n-1 and a[i] == a[i+1]:    i += 1 while i < n-1:    if a[i] <= a[i+1]:        exit(print("NO"))    i += 1 print("Yes")

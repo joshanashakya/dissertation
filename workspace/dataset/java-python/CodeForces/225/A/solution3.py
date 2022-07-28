@@ -1,0 +1,1 @@
+n = int(input())x = int(input())end = []end.append(x)end.append(7-x)flag = 1for i in range(int(n)):    something = []    for i in input().split():        something.append(int(i))        something.append(7 - int(i))    if end[0] in something or end[1] in something:        flag = 0if flag == 1:    print("YES")else:    print("NO")

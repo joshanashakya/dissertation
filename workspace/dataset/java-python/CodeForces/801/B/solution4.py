@@ -1,0 +1,1 @@
+x = input()y = input()a = ''for i in range(len(x)):    if(y[i] < x[i]):        a += y[i]    elif(y[i] == x[i]):        a += 'z'    else:        a = '-1'        breakprint(a)			 						 		 	   						 		 	 	

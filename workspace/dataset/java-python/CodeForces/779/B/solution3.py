@@ -1,0 +1,1 @@
+#B. Weird Roundingn,k=map(int,input().split())ns=len(str(n))n=str(n)n=n[::-1]count=0for i in range(len(n)):    if k<=0:        break    if n[i]=='0':        k-=1    else:        count+=1if k<=0:    print(count)        else:    print(len(n)-1)

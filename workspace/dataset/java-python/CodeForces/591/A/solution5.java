@@ -1,0 +1,1 @@
+import java.util.Scanner; public class Main {     public static void main(String[] args) {        Scanner S= new Scanner(System.in);        int i= S.nextInt();        int v1 = S.nextInt();        int v2 = S.nextInt();         System.out.println(i/(Float.parseFloat(String.valueOf(v2))/v1+1));    }    }   	 								  		  	 		 		    	

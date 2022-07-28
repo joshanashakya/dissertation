@@ -1,0 +1,1 @@
+n, m = map(int, input().split())success = []inp = []lst = [[0 for i in range(n)] for j in range(m)] for _ in range(n):    inp.append(input()) for i in range(m):    for j in range(n):        lst[i][j] = inp[j][i] for j in lst:    mx = max(j)    for i in range(n):        if j[i] == mx:            success.append(i) print(len(set(success)))

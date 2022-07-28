@@ -1,0 +1,1 @@
+import java.util.*; public class CodeForces628A{	public static void main(String[] args) {		Scanner input = new Scanner(System.in);		int n = input.nextInt();		int b = input.nextInt();		int p = input.nextInt();		int ans = 0;		int m = n;		while(n > 1){			int k = 1;			while(k*2 <= n){				k*= 2;			}			n-= k/2;			ans+= (k/2)*(b*2) + k/2;		} 		System.out.println(ans + " " + (m*p)); 	}}

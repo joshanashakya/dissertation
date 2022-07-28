@@ -1,0 +1,1 @@
+t=int(input())for i in range(t):    n,x=map(int,input().split())    m=list(map(int,input().split()))    m.sort()    s=sum(m)    num=n    for i in range(n):        if x<= s/num:            break        s=s-m[i]        num-=1    print(num)                                                 

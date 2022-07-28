@@ -1,0 +1,1 @@
+import matha,b = (int(x) for x in input().split())best = float('INF')for _ in range(int(input())):    x,y,v = (int(x) for x in input().split())    best = min(best,(math.sqrt((a-x)**2 + (b-y)**2))/v)print(best)

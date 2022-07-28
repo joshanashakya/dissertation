@@ -1,0 +1,1 @@
+ import java.util.Scanner;  public class num {   public static void main(String[] args) {  Scanner Input= new Scanner(System.in);  int n=0;  n=Input.nextInt();  System.out.println(n);  for(int i=0;i<n;i++)  {    System.out.print("1 ");          }    }}

@@ -1,0 +1,1 @@
+n = int(input())arr = list(map(int, input().split()))values = [0]*nc = 0for i in range(n):    if(arr[i]>n):        c+=1    else:        values[arr[i]-1]+=1        if(values[arr[i]-1]>1):            c+=1print(c)

@@ -1,0 +1,1 @@
+import sys# sys.setrecursionlimit(10**6) input=sys.stdin.readlines =  input().strip()l = "CODEFORCES"n = len(s)d = {}f = 0 for i in range(n+1):    for j in range(i,n+1):         temp = s[:i] + s[j:]        # print(temp)        if(temp == l ):            f = 1            breakif(f == 1 ):    print("YES")else:    print("NO")

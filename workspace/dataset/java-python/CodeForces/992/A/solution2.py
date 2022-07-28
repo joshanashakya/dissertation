@@ -1,0 +1,1 @@
+i=int(input())s=list(input().split())l={}c=0for j in range(i):    if int(s[j])!=0:        if int(s[j]) not in l.keys():            l[int(s[j])]=1            c+=1        else:            l[int(s[j])]+=1print(c)

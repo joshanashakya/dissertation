@@ -1,0 +1,1 @@
+def answer(n, a, b):    if b.count(0) >= 1 and b.count(1) >= 1:        return 'Yes'    a_s = sorted(a)    if a_s == a:        return 'Yes'         return 'No' def main():    t = int(input())    while t:        n = int(input())        a = [int(i) for i in input().split()]        b = [int(i) for i in input().split()]        print(answer(n, a, b))        t -= 1    returnmain()

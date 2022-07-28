@@ -1,0 +1,1 @@
+import sysdef get_list ():    return list (map (int , sys.stdin.readline ().strip().split ()))n = int (sys.stdin.readline ().strip ())ar = get_list ()prev = 0for i in ar:    print (i + prev)    if (i+prev) > prev:        prev+= i

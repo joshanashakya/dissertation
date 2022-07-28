@@ -1,0 +1,1 @@
+length = int(input()) message = [] for i in range(0, length):    message.append(input()) nmessage = "<3" for i in range(0, length):    nmessage += message[i]    nmessage += "<3" encoded_message = input() for i in encoded_message:    if len(nmessage) != 0:        if i == nmessage[0]:            nmessage = nmessage[1:] if len(nmessage) == 0:    print("yes")else:    print("no")

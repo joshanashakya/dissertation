@@ -1,0 +1,1 @@
+n , m = map(int, input().split())ch = m/nk = 0if n == m:    k = 0else:    while ch != 1:        if ch % 3 == 0:            ch = ch / 3            k+= 1        elif ch % 2 == 0:            ch = ch/2            k += 1        else:            k = -1            ch = 1print(k) 

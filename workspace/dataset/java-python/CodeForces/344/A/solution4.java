@@ -1,0 +1,1 @@
+import java.util.*;public class magnets{    public static void main(String args[])    {        Scanner sc=new Scanner(System.in);        int n=sc.nextInt();        int c=0,d=0;        for(int i=0;i<n;i++)        {            int m=sc.nextInt();            if(m!=c)            {                c=m;                d++;            }        }        System.out.println(d);    }}

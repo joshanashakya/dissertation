@@ -1,0 +1,1 @@
+k=int(input())length=[int(i) for i in input().split()]length.sort(reverse=True)tot=0count=0if sum(length)<k:  print(-1)else:  for i in length:    if tot<k:      tot=i+tot      count=count+1      #print(tot)    else:      break  print(count)

@@ -1,0 +1,1 @@
+import java.util.Scanner;import java.util.Arrays;public class Ishu{	static long gcd(long a, long b)	{	if(b==0)		return a;	else		return gcd(b,a%b);	}	public static void main(String[] args)	{	Scanner scan=new Scanner(System.in);	long t;	long n,ans=1;	t=scan.nextLong();	while(t-->0)		{		n=scan.nextLong();		ans=1+((4*n)/gcd(4*n,n+1));		System.out.println(ans);		}	}}

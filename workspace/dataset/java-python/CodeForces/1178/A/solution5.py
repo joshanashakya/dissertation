@@ -1,0 +1,1 @@
+for _ in range(1):  n=int(input())  #a=sorted(list(map(int, input().split())))  #a,b,c=map(int, input().split())  a=list(map(int, input().split()))  ind=[1]  opp=0  side=a[0]  for i in range(1,n):    if a[0]>=2*a[i]:      ind.append(i+1)      side+=a[i]    else:      opp+=a[i]  if opp>=side: print(0)  else:    print(len(ind))    print(*ind)

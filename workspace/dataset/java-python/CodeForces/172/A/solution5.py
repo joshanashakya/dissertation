@@ -1,0 +1,1 @@
+num = int(input())arr, arr2 = ([], [])i = 0for x in range(num):    nums = input()    while len(arr) < len(nums):        arr.append(set())    for y in range(len(nums)):        arr[y].add(nums[y])    y = 0for z in range(len(arr)):    if len(arr[z]) == 1 and i == z:        arr2.append(arr[z])        i += 1    else:        breakif len(nums) > 1:    print(len(arr2))else:    print(0)

@@ -1,0 +1,1 @@
+n=int(input())a=list(map(int,input().split()))x=a.index(max(a))y=a.index(min(a))if(x==0)or(y==n-1)or(x==n-1)or(y==0):    print(n-1)else:    b=[]    b.append(y-0)    b.append(n-y-1)    b.append(x-0)    b.append(n-x-1)    print(max(b))

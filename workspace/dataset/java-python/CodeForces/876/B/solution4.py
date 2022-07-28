@@ -1,0 +1,1 @@
+#dividing by 2 and 3 and 5 maeans subtracrting the powersn,k,m=map(int,input().split())arr=list(map(int,input().split()))if k>n:print("No")else: d={} for i in range(n):   r=arr[i]%m  #print(r)   if r in d:d[r].append(arr[i])   else:d[r]=[arr[i]] #print(d) for i in d:   if len(d[i])>=k:     print("Yes")     for j in range(k):        print(d[i][j],end=" ")     exit() print("No")

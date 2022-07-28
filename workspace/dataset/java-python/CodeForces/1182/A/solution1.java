@@ -1,0 +1,1 @@
+import java.util.*;public class Main {	public static void main(String[] args)	{		Scanner in = new Scanner(System.in);		int n;		n = in.nextInt();		long ans = 1;		if(n % 2 == 1) ans = 0;		else		{			n /= 2;			for(int i = 0;i < n;i++)			{				ans *= 2;			}		}		System.out.print(ans);	}}

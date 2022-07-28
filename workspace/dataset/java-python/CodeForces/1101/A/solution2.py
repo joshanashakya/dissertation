@@ -1,0 +1,1 @@
+n = int(input())x = []for i in range(n):    st = input().split()    for i in range(len(st)):        st[i] = int(st[i])    x.append(st)a = []for index,i in enumerate(x):    if x[index][2]>=x[index][0]:        a.append(x[index][1]//x[index][2]*x[index][2]+x[index][2])    else:        a.append(x[index][2])         for i in a:    print(i)

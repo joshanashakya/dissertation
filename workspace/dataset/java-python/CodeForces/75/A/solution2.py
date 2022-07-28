@@ -1,0 +1,6 @@
+a = int(input())
+b = int(input()) c = a + ba = str(a)
+b = str(b)
+c = str(c) x = a.replace('0', "")
+y = b.replace('0', "")
+z = c.replace('0', "") d = int(y) + int(x)  # print(d) print("YES" if d == int(z) else "NO")

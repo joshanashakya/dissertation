@@ -1,0 +1,1 @@
+from datetime import *in_d = str(input()).split(':')fi_d =str(input()).split(':')date_init=date(int(in_d[0]),int(in_d[1]),int(in_d[2]))date_final=date(int(fi_d[0]),int(fi_d[1]),int(fi_d[2]))print(abs(date_init-date_final).days)  

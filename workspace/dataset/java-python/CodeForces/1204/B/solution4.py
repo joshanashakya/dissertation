@@ -1,0 +1,1 @@
+def sumeve(n):    s=1    cur=1    for i in range(n-1):        cur *= 2        s+=cur    return s n, l,r = map(int, input().rstrip().split())mi=sumeve(l)+n-lma=sumeve(r)+(n-r)*(2**(r-1))# print(sumeve(r))print(mi,ma)

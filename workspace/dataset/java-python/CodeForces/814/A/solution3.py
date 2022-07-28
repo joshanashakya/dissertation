@@ -1,0 +1,1 @@
+n,k = map(int, input().split()) list1 = list(map(int, input().strip().split()))[:n]list2 = list(map(int, input().strip().split()))[:k]list2.sort(reverse=True) for j in range(k):   for i in range(n):       if list1[i] == 0:           list1[i] = list2[j]           break if list1 == sorted(list1):    print("NO")else:    print("YES")      

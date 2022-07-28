@@ -1,0 +1,1 @@
+n = int(input())a = list(map(int,input().split()))ans = 0min_odd = float("-inf")max_odd = float("inf")for i in a:    if i>0:        ans+=i    if i%2!=0:        if i<0:            min_odd = max(min_odd,i)        else:            max_odd = min(max_odd,i)if ans%2==0:    print(max(ans+min_odd,ans-max_odd))else:    print(ans)

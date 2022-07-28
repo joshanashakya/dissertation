@@ -1,0 +1,1 @@
+n, num1, num2, num3 = int(input()), 0, 0, 0 for item in [int(item) for item in input().split(' ')]:    if item == 1:        num1 += 1    elif item == 2:        num2 += 1    else:        num3 += 1 if num1 < num2:    t = num1    num1 = num2    num2 = tif num1 < num3:    t = num1    num1 = num3    num3 = t print(num2 + num3)

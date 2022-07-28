@@ -1,0 +1,1 @@
+n=int(input()) from collections import defaultdictax=dict()  ax['polycarp']=1ans=1for i in range(n):    a,b,c=map(str,input().split())     a=a.lower()    c=c.lower()     ax[a]=ax[c]+1     #print(ax[a])    e=ax[a]    ans=max(ans,e)print(ans)

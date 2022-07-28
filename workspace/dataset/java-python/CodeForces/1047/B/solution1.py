@@ -1,0 +1,1 @@
+import sysfrom collections import defaultdict def getInts():    return int(input()) def getListOfInts():    return list(map(int, input().split(' '))) # start 7:15 pmdef main():    t = getInts()    y_coord = 0    for _ in range(t):        x, y = getListOfInts()        y_coord = max(y_coord, x+y)    print(y_coord)main()

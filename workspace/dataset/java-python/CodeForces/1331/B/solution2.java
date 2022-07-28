@@ -1,0 +1,1 @@
+import java.util.Scanner;public class p1331B {    public static void main(String[] args) {        Scanner sc=new Scanner(System.in);        int n=sc.nextInt();StringBuilder s=new StringBuilder();        for(int i=2,j=(int)Math.sqrt(n);i<=j;i++) {            if(n%i==0) {                System.out.print(i+""+n/i);                return;            }        }    }}

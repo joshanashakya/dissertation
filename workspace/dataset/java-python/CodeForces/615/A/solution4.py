@@ -1,0 +1,1 @@
+buttons, bulbs = map(int, input() .split())storage=[]s = set()for i in range(buttons):  storage += [list(map(int, input() .split()))]  storage[i][0] = 'i'for i in range(buttons):  for j in range(1,len(storage[i])):    s.add(storage[i][j])if len(s) == bulbs:  print('YES')else:  print('NO')

@@ -1,0 +1,1 @@
+import sysinput=sys.stdin.readlinen=int(input())l=input().split()li=[int(i) for i in l]ok=[[] for i in range(n)]for i in range(2*n):    ok[li[i]-1].append(i)ans=abs(ok[0][0]+ok[0][1])for i in range(1,n):    num1=abs(ok[i][0]-ok[i-1][0])+abs(ok[i][1]-ok[i-1][1])    num2=abs(ok[i][1]-ok[i-1][0])+abs(ok[i][0]-ok[i-1][1])    ans+=min(num1,num2)print(ans)

@@ -1,0 +1,1 @@
+import java.util.*;  public class l700 { 	public static void main(String[] args) {		// TODO Auto-generated method stub		Scanner sc = new Scanner(System.in);		int n = sc.nextInt();		int k = sc.nextInt();				System.out.println((int)(Math.ceil(8*n/(double)k) +  Math.ceil(5*n/(double)k) + Math.ceil(2*n/(double)k)));	} }

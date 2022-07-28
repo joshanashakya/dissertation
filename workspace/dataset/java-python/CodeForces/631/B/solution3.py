@@ -1,0 +1,1 @@
+n,m,k=[int(x)for x in input().split()]a=[]r=[(0,0)]*nc=[(0,0)]*mfor i in range(n):a.append([0]*m)for _ in range(k):    x,y,z=[int(t)for t in input().split()]    if x==1:r[y-1]=(_,z)    else:c[y-1]=(_,z)for i in range(n):    for j in range(m):        a[i][j]=max(r[i],c[j])[1]    print(*a[i])    

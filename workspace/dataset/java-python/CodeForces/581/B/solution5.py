@@ -1,0 +1,1 @@
+#codeforcesif __name__=="__main__":    n=int(input())    a=list(map(int,input().split()))    ma=a[n-1]    ans=[0]    i=n-2    while i>=0:        if a[i]>ma:            ans.append(0)            ma=a[i]        else:            d=(ma-a[i])+1            ans.append(d)        i=i-1    ans.reverse()    print(*ans)

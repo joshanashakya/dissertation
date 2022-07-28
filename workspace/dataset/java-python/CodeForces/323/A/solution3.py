@@ -1,0 +1,1 @@
+# METO Bot 0.9.9n=int(input())print(["\n".join("\n".join("".join("b" if (i//2+j//2+k)%2 else "w" for j in range(n)) for i in range(n))+"\n" for k in range(n)),-1][n%2])  			     		 	 			 					     			

@@ -1,0 +1,4 @@
+from math import floordef
+
+pic(x,
+    y):  # x/y    factors=[2**i for i in range(0,50)]    ans=[]    p=0    i=0    tx,ty=1,1    for i in factors:        if i<=x:            tx=i        else:            break    for i in factors:        if i<=y:            ty=i        else:            break    for ay in range(floor(tx/0.8),floor(tx/1.25)-1,-1):        if ay<=y :            c=tx/ay            if c>= 0.8 and c <= 1.25:                ans.append([tx,ay])                break    for ax in range(floor(ty*1.25),floor(ty*0.8)-1,-1):        if ax<=x :            c=ax/ty            if c>=0.8 and c<=1.25:                ans.append([ax,ty])                break     ans=sorted(ans,key=lambda s:s[0],reverse=True)    maxi=max(ans,key=lambda s:s[0]*s[1])    print(*maxi)    return "" a,b=map(int,input().strip().split())print(pic(a,b))

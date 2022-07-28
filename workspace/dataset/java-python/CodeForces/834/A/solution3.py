@@ -1,0 +1,1 @@
+a, c, b = list(str(input()))n = int(input())s = [94, 62, 118, 60]if n % 2 == 0:    print("undefined")else:    k = s.index(ord(a))    if s[(k + n) % 4] == ord(b):        print("cw")    else:        print("ccw")  

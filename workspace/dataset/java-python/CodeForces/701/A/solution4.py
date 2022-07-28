@@ -1,0 +1,1 @@
+n = int(input())cards = [int(i) for i in input().split()]flag = [False for i in range(n)]val = 2*sum(cards)//n for i in range(n):    if not flag[i]:        for j in range(i+1, n):            if not flag[j] and cards[i] + cards[j] == val:                print(i+1, j+1)                flag[i], flag[j] = True, True                break

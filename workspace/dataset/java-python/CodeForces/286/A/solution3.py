@@ -1,0 +1,1 @@
+n=int(input())if n==1:	print (1)	exit()if n%4>1:	print (-1)	exit()ans=[-1]*nleft=nstart=n-2nums=1nume=nwhile left>=4:	ans[start]=nums	ans[nums-1]=nums+1	ans[nums]=nume	ans[nume-1]=nume-1	start-=2	nums+=2	nume-=2	left-=4	# print (ans)if left==1:	ans[start+1]=start+2print (*ans)

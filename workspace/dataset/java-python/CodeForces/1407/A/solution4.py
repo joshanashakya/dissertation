@@ -1,0 +1,5 @@
+for i in range(int(input())):    N = int(input())
+A = list(map(int, input().split()))
+if A.count(0) >= A.count(1):        print(N // 2)
+print("0 " * (N // 2)) else:        print(N // 2 + int(N // 2 % 2 == 1))
+print("1 " * (N // 2 + int(N // 2 % 2 == 1)))

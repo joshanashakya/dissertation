@@ -1,0 +1,1 @@
+import sysfrom string import ascii_lowercase def main():    _, *l = map(int, sys.stdin.read().strip().split())    out = []    for i,j in zip(l[::2], l[1::2]):        r = ascii_lowercase[:j]        out.append(i//j*r + r[:i%j])    return out        print(*main(), sep='\n')

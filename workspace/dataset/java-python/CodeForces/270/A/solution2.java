@@ -1,0 +1,1 @@
+import java.util.Scanner; public class FancyFence {	public static void main(String[] args) {		Scanner scan = new Scanner(System.in);				int t = scan.nextInt();				for(int i = 0; i < t; i++) {			int n = scan.nextInt();						if(360%(180-n) == 0) {				System.out.println("YES");			}else {				System.out.println("NO");			}		}				scan.close();	}}

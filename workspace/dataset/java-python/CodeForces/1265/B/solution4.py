@@ -1,0 +1,1 @@
+t = int(input()) for i in range(t):	n = int(input())	lista = list(map(int,input().split()))	pos = {}	for j in range(n):		pos[lista[j]] = j			l = r = pos[1]	ans = "1"		for j in range(2,n+1):		l = min(l,pos[j])		r = max(r,pos[j])				if(r-l+1 == j):			ans += "1"		else:			ans += "0"				print(ans)

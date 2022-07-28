@@ -1,0 +1,1 @@
+n=int(input())lst=[]d = set()for i in range(n):    x,y=map(int, input().split())    lst.append([x,y])    d.add((x,y))ans=0for i in range(n):    for j in range(i+1,n):        if (lst[i][0]+lst[j][0])%2==0 and (lst[i][1]+lst[j][1])%2==0:            x1 = (lst[i][0]+lst[j][0])//2            y1 = (lst[i][1]+lst[j][1])//2            if (x1,y1) in d:                ans+=1print(ans)

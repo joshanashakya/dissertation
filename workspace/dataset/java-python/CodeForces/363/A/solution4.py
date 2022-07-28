@@ -1,0 +1,1 @@
+n = input()[::-1] for i in range(len(n)):    if n[i] >= '5':        print('-O|', end='')        print((int(n[i]) - 5) * 'O' + '-' + (9 - int(n[i])) * 'O')    else:        print('O-|', end='')        print(int(n[i])*'O'+'-'+(4-int(n[i]))*'O')

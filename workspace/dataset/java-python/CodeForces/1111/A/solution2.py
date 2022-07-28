@@ -1,0 +1,1 @@
+def isvowel(ch):    return ch.upper() in ['A', 'E', 'I', 'O', 'U']s=input()t=input()if(len(s)!=len(t)):    print("NO")else:    flag=1    for i in range(len(s)):        if((isvowel(s[i]) and isvowel(t[i])) or (not(isvowel(s[i])) and not(isvowel(t[i])))):            continue        else:            print("NO")            flag=0            break    if(flag):        print("YES")

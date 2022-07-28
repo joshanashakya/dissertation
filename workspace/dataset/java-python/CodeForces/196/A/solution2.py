@@ -1,0 +1,1 @@
+si = input()ans = ""while 1:    co = si.count(max(si))    ans = ans + max(si)*co    #print("ans " ,ans)    new = (si[::-1].index(max(si)))    #print("new ",new)    si = si[len(si)-new:]    #print(si)    if len(si)==0:        #print("lets break")        breakprint(ans)

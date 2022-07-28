@@ -1,0 +1,1 @@
+import java.util.*; public class Main{public static void main(String[] args){Scanner infile = new Scanner(System.in); int T = infile.nextInt(); while(T-->0){int N = infile.nextInt(); int[] freq = new int[N+1]; while(N-->0){freq[infile.nextInt()]++;} int res = 0; for(int x: freq)res = Math.max(res, x); System.out.println(res); }}}

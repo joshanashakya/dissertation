@@ -1,0 +1,1 @@
+n=int(input())nums=list(map(int,input().split(' ')))one=nums.count(1)two=nums.count(2)if one==0:    print(0)elif two==0:    print(one//3)    else:        discard=max(one,two)-min(one,two)    form=len(nums)-discard    if discard>2 and one>two:        discard=discard//3        print((form//2)+discard)    else:        print(form//2)

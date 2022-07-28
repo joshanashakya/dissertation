@@ -1,0 +1,1 @@
+import sysinput(); list1 = list(map(int,input().split(' '))); list2 = list(map(int,input().split(' '))); list3 = []for element in list1:    if element in list2:        list3.append(element)if list3:    print(min(list3))else:    mini1, mini2 = min(list1), min(list2)    print(mini1*10+mini2) if mini1 <= mini2 else print(mini2*10+mini1)

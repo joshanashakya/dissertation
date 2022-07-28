@@ -1,0 +1,1 @@
+for i in range(int(input())):    a,b,c,n = map(int,input().split())    y = max(a,b,c)    if y == a:        n -= (a - b) + (a - c)    elif y == b:        n -= (b - a) + (b - c)    else:        n -= (c - a) + (c - b)    if n % 3 == 0 and n >= 0:        print("YES")    else:        print("NO")

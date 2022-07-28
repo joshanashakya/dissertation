@@ -1,0 +1,1 @@
+l= list(map(int, input().split()))n=l[0]a=l[1]b=l[2]c=l[3]d=l[4]k=0for i in range(n):    x=i+1    c2=x+b-c    c3=x+a-d    c4=x+a+b-c-d    if(c2>0 and c3>0 and c4>0):        if(c2<n+1 and c3<n+1 and c4<n+1):            k+=1print(n*k) 

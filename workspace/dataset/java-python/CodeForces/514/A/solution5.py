@@ -1,0 +1,1 @@
+n = str(input()) i = 0store = 0if n[i] == '9':	store = store*10 + (ord(n[i]) - ord('0'))	i += 1 while i < len(n) :	if n[i] >= '5' :		a = ord('9') - ord(n[i]) 		# print(a) 	else :		a = ord(n[i]) - ord('0')		store = store*10 + a	i += 1 print(store)# print(type(store))

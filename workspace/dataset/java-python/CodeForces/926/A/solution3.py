@@ -1,0 +1,1 @@
+l, r = map(int, input().split())max_pow = 0while 2 ** max_pow <= r:    max_pow += 1ans = set()for i in range(0, max_pow + 1):    for j in range(0, max_pow + 1):        num =  2 ** i *  3 ** j        if l <= num <= r:            ans.add(num)print(len(ans))

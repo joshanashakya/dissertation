@@ -1,0 +1,1 @@
+import sysn = int(input())arr = list(map(int, input().split()))k,l=0,0min = sys.maxsizefor i in range(n):    for j in range(i, n+1):        mi1 = abs(arr[(j+1)%n]-arr[j%n])        if mi1 < min:            min = mi1            k,l=j%n,(j+1)%nprint(k+1,l+1)

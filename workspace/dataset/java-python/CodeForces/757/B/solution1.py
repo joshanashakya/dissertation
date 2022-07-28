@@ -1,0 +1,1 @@
+res, N = 1, int(1e5 + 16)n = int(input())M = {}for i in map(int, input().split()):    M[i] = M.get(i, 0) + 1for i in range(2, N):    num = 0    for k in range(i, N, i):        num += M.get(k, 0)    res = max(res, num)print(res)

@@ -1,0 +1,1 @@
+n = int(input())houses = [int(h) for h in input().split()][::-1] maxheight = houses[0] res = []res.append(0) for house in houses[1:]:    if house <= maxheight:        res.append(maxheight - house + 1)    else:        res.append(0)    maxheight = max(maxheight, house) res1 = [str(r) for r in res[::-1]] print(' '.join(res1))

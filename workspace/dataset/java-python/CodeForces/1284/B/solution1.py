@@ -1,0 +1,1 @@
+import bisectfrom sys import stdinn=int(input())a,b=[],[]for i in range(n):  l,*s=map(int,stdin.readline().split())  if sorted(s)==s[::-1]:    a.append(s[0])    b.append(s[-1])a.sort()print(n*n-sum([bisect.bisect_right(a,bb) for bb in b]))

@@ -1,0 +1,1 @@
+n,s = map(int,input().split())maxi = check = 0for i in range(n):    x,y = map(int,input().split())    if x<s or (x==s and y==0):        check= 1        if maxi<(100-y)%100:            maxi = 100-yif check==0:    print(-1)else:    print(maxi)

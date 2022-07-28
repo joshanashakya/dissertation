@@ -1,0 +1,1 @@
+num_rows = int(input())rows = []vacancy = Falsefor i in range(num_rows):    row = input()    # print(row)    if 'OO' in row and not vacancy:        index = row.index('OO')        # print(index)        vacancy = True        rows.append(row[:index] + '++' + row[index + 2:])    else:        rows.append(row) if vacancy:    print("YES")    print(*rows, sep='\n')else:    print("NO")

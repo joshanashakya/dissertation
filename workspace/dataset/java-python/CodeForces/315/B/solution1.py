@@ -1,0 +1,1 @@
+I = lambda: map(int, input().split()) _, m = I()A = list(I())s = ''d = 0 for _ in range(m):    t, *X = I()    if t==1:        A[X[0]-1] = X[1] - d    elif t==2:        d += X[0]    else:        s += str(A[X[0]-1]+d) + '\n' print(s)

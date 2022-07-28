@@ -1,0 +1,1 @@
+import sysfrom os import pathif (path.exists('input.txt') and path.exists('output.txt')):    sys.stdout = open('output.txt', 'w')    sys.stdin = open('input.txt', 'r')  def main():    N = int(input())    min_price = 200    ans = 0    for i in range(N):        a, p = map(int, input().split())        min_price = min(min_price, p)        ans += min_price * a        print(ans) main()

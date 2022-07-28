@@ -1,0 +1,1 @@
+#l,r = map(int, input().strip().split(' '))#lst = list(map(int, input().strip().split(' ')))s=input()s=list(s)n=len(s)i=n-1p=[]m='a'while(i>=0):    if s[i]>=m:        p.append(s[i])        m=s[i]       i-=1j=len(p)-1while(j>=0):    print(p[j],end="")    j-=1                               

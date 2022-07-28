@@ -1,0 +1,1 @@
+from sys import stdin n, m = map(int, stdin.readline().strip().split())arr = list(map(int, stdin.readline().strip().split()))a, b = arr.count(-1), arr.count(1) for i in range(m):    l, r = map(int, stdin.readline().strip().split())    d = r - l + 1    if d % 2 == 0:        print(1 if min(a, b) >= d // 2 else 0)    else:        print(0)

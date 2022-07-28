@@ -1,0 +1,1 @@
+t = int(input())price=[0]+[10**9]*7for _ in range(t):    c, s = input().split()    c = int(c)     a = sum([1 << (ord(x) - ord('A')) for x in s])    for i in range(8):        price[i|a]=min(price[i|a],price[i]+c)if price[-1]==10**9:    print(-1)else:    print(price[-1])

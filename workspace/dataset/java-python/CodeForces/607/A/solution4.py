@@ -1,0 +1,1 @@
+import bisectn=int(input())b=[]p=[]a=[]for i in range(n):    a.append(list(map(int,input().split())))a.sort()for i in range(n):    b.append(a[i][0])    p.append(a[i][1])dp=[0]*nfor i in range(n):    j=bisect.bisect_left(b,b[i]-p[i])    dp[i]=i-j + dp[j-1]ans=10**9c=1for j in range(n-1,-1,-1):    ans=min(ans,dp[j-1]+c,dp[j]+c-1)    c=c+1print(ans)

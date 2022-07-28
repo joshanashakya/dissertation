@@ -1,0 +1,1 @@
+n = int(input())s = list(input()) ans = []if n % 2 == 0:    while s:        let = s.pop(0)        ans.insert(0, let)        if not s:            break        let2 = s.pop(0)        ans.append(let2)else:    while s:        let2 = s.pop(0)        ans.append(let2)        if not s:            break        let = s.pop(0)        ans.insert(0, let) print("".join(ans)) 

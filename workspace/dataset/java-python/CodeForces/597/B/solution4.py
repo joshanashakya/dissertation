@@ -1,0 +1,1 @@
+n = int(input()) main = []for i in range(n):    s, e = map(int, input().split())    main.append((s,e)) main.sort(key = lambda x: x[1]) cs, ce = main[0][0], main[0][1]count = 1for s, e in main[1:]:    if ce < s:        count += 1        cs = s        ce = e print(count)

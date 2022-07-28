@@ -1,0 +1,1 @@
+ cases = int(input()) arr1 = (map(int, input().split()))arr2 = (map(int, input().split())) lost = 0win = 0 for i, j in zip(arr1, arr2):    if i == 1 and j == 0:        win += 1    elif i == 0 and j == 1:        lost += 1 if win == 0:    print(-1)else:    ans = (lost+win-1)//win    if ans * win == lost:        ans +=1    print(ans)  

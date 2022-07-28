@@ -1,0 +1,1 @@
+import heapqn,k = map(int,input().split())l = list(map(int,input().split()))ans = [0]*nh = []for i in range(k):    h.append((-1*l[i],i)) heapq.heapify(h)som = 0for i in range(k,n+k):    if i < n:        heapq.heappush(h, (-1 * l[i], i))     x = heapq.heappop(h)    s = -1*x[0]*(i-x[1])    som += s    ans[x[1]] = i+1 print(som)print(*ans)

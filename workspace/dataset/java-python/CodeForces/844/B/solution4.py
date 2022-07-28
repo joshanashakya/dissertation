@@ -1,0 +1,1 @@
+n,m=map(int,input().split())matr=[]res=0for i in range(n):    arr=list(map(int,input().split()))    c=arr.count(0)    d=m-c    matr.append(arr)    res=res+2**c + 2**d -2for i in range(m):    c=0    d=0    for j in range(n):        if matr[j][i]==0:            c=c+1        else:            d=d+1    res=res+2**c + 2**d -2res=res-m*nprint(res)	   	 	  	 		 	     			 						

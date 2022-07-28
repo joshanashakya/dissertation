@@ -1,0 +1,1 @@
+#import sysimport math#sys.stdout=open("C:/Users/pipal/OneDrive/Desktop/VS code/python/output.txt","w")#sys.stdin=open("C:/Users/pipal/OneDrive/Desktop/VS code/python/input.txt","r")t=int(input())for i in range(t):    n,k=map(int,input().split())     a=math.ceil(n/k)    b=math.floor(n/k)    more=k//2    less=k-more    print(min(more*a+less*b,n))                  

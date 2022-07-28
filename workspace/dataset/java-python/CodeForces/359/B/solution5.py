@@ -1,0 +1,1 @@
+# new=open('output.txt','w')# new.write("5 6\n")# new.write("3 4 5 6 7")# new.close()# f = open('input.txt','r')# li=list(f.read().split())# print(li)# n,k=int(li[0]),int(li[1])# for i in range(2,len(li)):#       nl.append(int(li[i]))n,k=map(int,input().split())for i in range(k):    print(4*i+2,4*i+1,4*i+3,4*i+4,end=" ")for i in range(4*k+1,2*n+1):    print(i,end=" ")

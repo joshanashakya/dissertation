@@ -1,0 +1,1 @@
+import mathdef solve():    houro,mino=list(map(int,input().split()))    hunger,inc,cost,dec=list(map(int,input().split()))    t_l=0    if houro<20:        t_l=20-houro-1        t_l*=60        t_l+=(60-mino)    x,y=math.ceil((t_l*inc+hunger)/dec)*0.8*cost,math.ceil(hunger/dec)*cost    print('%.5f'%min(x,y))solve()

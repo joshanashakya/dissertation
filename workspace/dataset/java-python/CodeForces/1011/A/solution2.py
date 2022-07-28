@@ -1,0 +1,1 @@
+n, k = map(int, input().split())s = sorted(input())     t = ''p = ' 'for c in s:    if ord(c) > ord(p) + 1:        t += c        p = c     ans = -1if len(t) >= k:    ans = sum(map(lambda x: ord(x) - 96, t[:k]))     print (ans)

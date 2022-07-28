@@ -1,0 +1,1 @@
+l1=list(str(input()))l2=list(str(input()))l3=list(str(input()))s=''for i in l3:    if i.isalpha() and i.isupper():        lcase=i.lower()         if lcase in l1:            idx1=l1.index(lcase)            s=s+l2[idx1].upper()    elif i.isalpha() and i.islower():        if i in l1:            idx2=l1.index(i)            s+=l2[idx2]    else:        s+=iprint(s)

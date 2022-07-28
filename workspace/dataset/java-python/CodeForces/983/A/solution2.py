@@ -1,0 +1,1 @@
+import sysinput = sys.stdin.readline t = int(input())res = []for _ in range(t):    p, q, b = map(int, input().split())    if p * pow(b, 64, q) % q != 0:        res.append("Infinite")    else:        res.append("Finite")print('\n'.join(res))

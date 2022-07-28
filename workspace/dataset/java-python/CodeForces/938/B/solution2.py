@@ -1,0 +1,1 @@
+n = int(input())a = [int(x) for x in input().strip().split(' ')]friend = 1000000me = 0for i in a:    if i <= 500000:        if i > me:            me = i    else:        if friend > i:            friend = ians = me - 1if ans < 1000000-friend:    ans = 1000000-friendprint(ans)	 			  	 		   		  						 	  	 	

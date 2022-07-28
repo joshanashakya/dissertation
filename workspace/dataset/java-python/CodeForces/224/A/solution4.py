@@ -1,0 +1,1 @@
+from math import ceil def sqrt(x):  return pow(x, 0.5) m, n, p = map(int, input().split())a = int(sqrt((n * p) // m))b = int(sqrt((m * p) // n))c = int(sqrt((m * n) // p))print(4 * (a + b + c)) '''* So I drown it out * Like I always do* Dancing through our house* With the ghost of you'''

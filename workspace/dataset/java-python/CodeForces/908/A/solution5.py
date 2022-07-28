@@ -1,0 +1,1 @@
+vowels_and_even_numbers = ['1', '3', '5', '7', '9', 'a' ,'e', 'i', 'o', 'u']minimum = 0s = input() for char in s:	if char in vowels_and_even_numbers:		minimum += 1 print(minimum) 				  	 	  	     	 				      	

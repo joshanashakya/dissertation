@@ -1,0 +1,1 @@
+def solve(arr, n):  for i,v in enumerate(arr):    c1 = min(v[0], v[1])    c2 = min(v[2], v[3])    if c1+c2 <= n:      return [i+1, c1,n-c1]  return [-1]          def main() :  n = int(input())  arr = []  for _ in range(4):    i = list(map(int, input().split(' ')))    arr.append(i)  print(*solve(arr, n))main()

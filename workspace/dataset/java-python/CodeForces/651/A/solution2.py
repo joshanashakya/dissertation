@@ -1,0 +1,1 @@
+a1, a2 = map(int, input().split()) minute = 0while True:    if a1 < a2:        a1 += 1        a2 -= 2        minute += 1    elif a2 < a1:        a2 += 1        a1 -= 2        minute += 1    else:        if a1 == 1:            a1 -= 1        else:            a1 += 1            a2 -= 2            minute += 1    if a1 <= 0 or a2 <= 0:        break print(minute)

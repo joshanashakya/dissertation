@@ -1,0 +1,1 @@
+n,m=[int(i) for i in input().split()]a=[]for i in range(m):    k,l=[int(i) for i in input().split()]    a.append([k,l])b=set()for x in range(1,105):    for i in range(len(a)):        q=(a[i][1]-1)*x+1        e=a[i][1]*x        if a[i][0]<q or a[i][0]>e:            break    else:        b.add((n+x-1)//x)if len(b)>1:    print(-1)else:    print(*b)

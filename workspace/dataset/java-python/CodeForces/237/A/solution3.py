@@ -1,0 +1,1 @@
+count, prev, great_count = 1, -1, 1for i in range(int(input())):    h, m = map(int, input().split())     if h * 60 + m == prev:        count += 1        if count > great_count:            great_count = count    else:        count = 1    prev = h * 60 + m print(great_count)

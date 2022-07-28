@@ -1,0 +1,1 @@
+def valid(v):    ans = 0    while v != 0:         ans += v        v = v // k    return ans >= n  def BSfindFirst(start, end):	while start + 1 < end:		mid = (end+start)//2		if valid(mid):			end = mid		else:			start = mid	return end  n, k = map(int, input().split())print(BSfindFirst(0, 1000000000))#print(summation(53))

@@ -1,0 +1,1 @@
+n,k=[int(x) for x in input().split()]last=0cnt=1ai=[int(x)for x in input().split()]for i in range(n):    #print("{},{}".format(cnt,last))    a=ai[i]    if(a==last):        cnt+=1    else:        cnt=1    last=aif((k+cnt)>n):    print(n-cnt)else:    print("-1")

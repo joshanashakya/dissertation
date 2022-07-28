@@ -1,0 +1,1 @@
+n, x = [int(i) for i in input().split()]c = 0for _ in range(n):    op, num = [i for i in input().split()]    num = int(num)    if op == '+':        x += num    elif x >= num:        x -= num    else:        c += 1print(x, c)

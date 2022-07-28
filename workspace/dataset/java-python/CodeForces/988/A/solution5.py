@@ -1,0 +1,1 @@
+n, k = list(map(int,input().split()))arreglo = list(map(int,input().split())) set1 = set(arreglo) if len(set1) >= k:    print("YES")    for i in range(k):        print(arreglo.index(set1.pop()) + 1, end = " " )else:    print("NO")				  	    	      			  	  		 		

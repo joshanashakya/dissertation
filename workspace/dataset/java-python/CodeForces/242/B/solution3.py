@@ -1,0 +1,1 @@
+n =int(input()) l=[]r=[]for i in range(n):    s,e=map(int,input().split())    l.append(s)    r.append(e)               mn=l[0]mx=r[0] for i in range(n):    if(l[i]<mn):        mn=l[i]    if r[i]>mx:        mx=r[i]flag=1p=0for i in range(n):    if l[i]<=mn and r[i]>=mx:        p=i+1        flag=0     if flag==0:    print(p)else:    print(-1)

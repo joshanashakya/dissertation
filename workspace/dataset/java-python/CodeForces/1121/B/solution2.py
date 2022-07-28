@@ -1,0 +1,1 @@
+from collections import Counterfrom itertools import combinations if __name__ == '__main__':    cin = input    n = int(cin())    a = [int(i) for i in input().split()]    print(max(Counter(map(sum, combinations(a, 2))).values()))

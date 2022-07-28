@@ -1,0 +1,1 @@
+n = str(input())s = str(input())ref = 10 * [0]for j in range(len(s)):    index = ord(s[j]) - 48    ref[index] += 1for j in range(len(n)):    output = n[j]    num = ord(n[j]) - 48    for k in range(9, num, -1):        if ref[k] > 0:            output = str(k)            ref[k] -= 1            break    print(end = output)

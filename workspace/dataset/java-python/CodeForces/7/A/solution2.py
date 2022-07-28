@@ -1,0 +1,1 @@
+count = 0columns = ["", "", "", "", "", "", "", ""]for _ in range(8):    line = input()    if "W" not in line:        count += 1    for index, character in enumerate(line):        columns[index] += characterfor column in columns:    if "W" not in column:        count += 1print(8 if count == 16 else count)

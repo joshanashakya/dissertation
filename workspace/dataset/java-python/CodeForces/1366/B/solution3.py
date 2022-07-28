@@ -1,0 +1,1 @@
+import sys input = sys.stdin.readline for i in range(int(input())):      n,x,m = map(int,input().split())         a=x    b=x    for j in range(m):        l,r = map(int,input().split())           if l<=a<=r or l<=b<=r:            a=min(a,l)            b=max(b,r)                print(b-a+1)        

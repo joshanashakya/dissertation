@@ -1,0 +1,1 @@
+import matha,b,n=map(int,input().split())i=0while math.gcd(a,n)<=n or math.gcd(b,n)<=n:   if i%2==0:      g=math.gcd(a,n)      n=n-g   else:      g=math.gcd(b,n)      n=n-g   i=i+1if i%2==1:   print(0)else:   print(1)

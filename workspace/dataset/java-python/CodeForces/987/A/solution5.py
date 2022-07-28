@@ -1,0 +1,1 @@
+l = {'purple':'Power','green':'Time','blue':'Space','orange':'Soul','red':'Reality','yellow':'Mind'}set1 = set()n = int(input()) for i in range(n):    s1 = input()    set1.add(s1)print(6-n)for (key,value) in l.items():    if key not in set1 :        print(value) 

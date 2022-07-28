@@ -1,0 +1,1 @@
+n = int(input())a = [0] + [int(i) for i in input().split()] x = []for ind, a_i in enumerate(a[1:]):    x.append(a_i - a[ind]) # print(x) ans = []for i in range(1, n + 1):    flag = 0    for ind, j in enumerate(x):        if x[ind % i] == j:            continue        else:            flag = 1            break    if flag == 0:        ans.append(i) print(len(ans))print(*ans)

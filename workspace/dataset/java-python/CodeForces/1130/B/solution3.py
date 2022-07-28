@@ -1,0 +1,1 @@
+n=int(input())lst = list(map(int, input().strip().split(' ')))l=[0]*(n) for i in range(2*n):    if l[lst[i]-1]==0:        l[lst[i]-1]=([i+1])    else:        l[lst[i]-1].append(i+1)    #print(l)s=0for i in range(1,n):    s+=min(abs(l[i][0]-l[i-1][0])+abs(l[i][1]-l[i-1][1]),abs(l[i][1]-l[i-1][0])+abs(l[i][0]-l[i-1][1]) )print(s+lst.index(1)+l[0][1]-1)

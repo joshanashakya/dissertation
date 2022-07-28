@@ -1,0 +1,1 @@
+n = int(input())a = list(map(int, input().split()))d = {}for i in range(n):    d[a[i]] = i# print(d)q = int(input())b = list(map(int, input().split()))q1 = 0q2 = 0for i in b:    q1+=d[i] + 1    q2+=n - d[i]print("{} {}".format(q1,q2))

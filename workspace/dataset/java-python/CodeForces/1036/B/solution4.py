@@ -1,0 +1,1 @@
+def solve(n, m, k):    n, m = max(abs(n), abs(m)), min(abs(n), abs(m))    if (n - m) % 2 != 0:        k -= 1        n -= 1    elif (n - k) % 2 != 0:        n -= 1        m -= 1        k -= 2    if k < n:        return -1    else:        return k  q = int(input())for case in range(q):    print(solve(*[int(x) for x in input().split(' ')]))

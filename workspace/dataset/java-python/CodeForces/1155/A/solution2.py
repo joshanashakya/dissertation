@@ -1,0 +1,1 @@
+def issorted(a):    for i in range(len(a)-1):        if a[i]>a[i+1]:            return [False,i]    return [True]n=int(input())s=input()x=[ord(i) for i in s]c=issorted(s)if c[0]:    print("NO")else:    print("YES")    ans=issorted(s)    print(ans[1]+1,ans[1]+2)    

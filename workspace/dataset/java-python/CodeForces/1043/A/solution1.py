@@ -1,0 +1,1 @@
+def Awruk_wins(stds_votes, max_vote):    Elodreip_votes = sum(stds_votes)    Awruk_votes = (len(stds_votes) * max_vote) - Elodreip_votes    if Awruk_votes > Elodreip_votes:        return True    return False   no_of_stds = int(input()) votes = list(map(int, input().split())) max_votes = max(votes) while not(Awruk_wins(votes, max_votes)):    max_votes += 1 print(max_votes) 

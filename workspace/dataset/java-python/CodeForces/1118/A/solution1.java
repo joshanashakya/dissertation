@@ -1,0 +1,1 @@
+import java.util.*;public class waterbuying{    public static void main(String[] args)    {	long q,n,a,b,cost; 	Scanner sc=new Scanner(System.in); 	q=sc.nextLong(); 	while(q-->0)	{	    n=sc.nextLong();	    a=sc.nextLong();	    b=sc.nextLong(); 	    cost=(long)(Math.ceil(n/2)*Math.min(2*a,b)+(n%2)*a); 	    System.out.println(cost);	}     } }

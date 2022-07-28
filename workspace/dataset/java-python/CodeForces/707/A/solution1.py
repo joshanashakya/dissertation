@@ -1,0 +1,1 @@
+p,s=map(int,input().split())c=0for i in range(p):    h=list(map(str,input().split()))    if(("C" in h) or ("M" in h) or ("Y" in h)):        c=1if(c==1):    print("#Color")elif(c==0):    print("#Black&White")

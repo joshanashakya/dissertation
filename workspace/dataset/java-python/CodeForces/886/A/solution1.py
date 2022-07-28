@@ -1,0 +1,1 @@
+r = lambda : list(map(int, input().split()))arr = r()arr.sort()  f = Falsefor i in range(0 , len(arr)):    for j in range(0 , len(arr)):        for k in range(0,len(arr)):            if i!=j!=k!=i:                if arr[i]+arr[j]+arr[k] == sum(arr)/2:                    # print(i , j , k)                    f = True                    break       print("YES" if f else "NO")

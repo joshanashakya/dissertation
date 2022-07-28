@@ -1,0 +1,1 @@
+n=int(input())a=list(map(int,input().split()))for i in range(n):    if i==0 :        print(a[i+1]-a[i],end=" ")        print(a[n-1]-a[i])    elif i==n-1:        print(a[i]-a[i-1],end=" ")        print(a[i]-a[0])    else:        mini=min(a[i]-a[i-1],a[i+1]-a[i])        print(mini,end=" ")        maxi=max(a[n-1]-a[i],a[i]-a[0])        print(maxi)        

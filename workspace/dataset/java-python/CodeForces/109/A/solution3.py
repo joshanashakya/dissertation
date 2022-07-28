@@ -1,0 +1,1 @@
+n = int(input())base = (n//4 + 1) * '9'ans = basei = j = 1 f = Truefor i in range(0,n+1):    j = 0    while i*4 + j*7 < n: j+=1    if i*4 + j*7 == n:        x = ('4'*i + '7'*j)        print(x)        f  = False        break  if f: print(-1)      

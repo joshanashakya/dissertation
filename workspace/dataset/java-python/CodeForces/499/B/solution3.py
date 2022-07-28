@@ -1,0 +1,1 @@
+n,m = map(int,input().split())l1=[]l2=[] for i in range(m):    s1,s2 = input().split()    l1.append(s1)    l2.append(s2)    k = list(input().split()) for i in range(len(k)):    l = l1.index(k[i])    if(len(l2[l])<len(l1[l])):        k[i]=l2[l]        print(*k)    

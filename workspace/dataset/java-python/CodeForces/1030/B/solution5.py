@@ -1,0 +1,1 @@
+import mathimport collectionsimport bisect def solve(n, d, m):    for i in range(m):        x, y = [int(s) for s in input().split()]        if d <= x + y and x + y <= 2*n - d and -d <= x - y and x - y <= d:            print("YES")        else:            print("NO") n, d = [int(s) for s in input().split()]m = int(input())solve(n, d, m)

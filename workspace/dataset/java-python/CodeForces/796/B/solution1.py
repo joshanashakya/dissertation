@@ -1,0 +1,1 @@
+n, m, k = map(int, input().split())holes = set(map(int, input().split()))p = 1f = Truefor _ in range(k):    u, v = map(int, input().split())    if not f:        continue    else:        if p in holes:            f = False            break        elif u == p:            p = v        elif v == p:            p = uprint(p)

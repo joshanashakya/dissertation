@@ -1,0 +1,1 @@
+n_queries = int(input())for _ in range(n_queries):  l1, r1, l2, r2 = map(int, input().strip().split(' '))  if l1 != l2:    print(f'{l1} {l2}')  elif l1 != r1:    print(f'{r1} {l2}')  else:    print(f'{l1} {r2}')    		 			 			 		 	 	  	     			 	

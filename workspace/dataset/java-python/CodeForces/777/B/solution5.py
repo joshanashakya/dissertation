@@ -1,0 +1,1 @@
+n=int(input())s1=input()s2=input()dp1=[0]*10;dp2=[0]*10for i in s1:  dp1[int(i)]+=1for i in s2:  dp2[int(i)]+=1#n1=nfor i in s1:  k=int(i)  for i in range(10):    if dp2[i]>0 and i>=k:      dp2[i]-=1      n1-=1     # print(i,k)      break      print(n1)#ans=0s2=sorted(s2)for i in s2: k=int(i) for i in range(10):  if i<k and dp1[i]>0:    dp1[i]-=1    ans+=1    breakprint(ans)

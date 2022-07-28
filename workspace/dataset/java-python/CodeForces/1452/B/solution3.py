@@ -1,0 +1,5 @@
+import math for _ in range(int(input())):    n = int(input())
+a = list(map(int, input().split()))
+suma = sum(a)
+s = max(max(a), math.ceil(suma / (n - 1)))
+print(s * (n - 1) - suma)

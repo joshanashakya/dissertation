@@ -1,0 +1,1 @@
+c, v, max, a, l = map(int, input().split()) i = 1days = 1page = v while page < c:    if v + i*a <= max:        page = page - l + v + i*a    else:        page = page - l + max    days += 1     i += 1 print(days)

@@ -1,0 +1,1 @@
+input_file = open("input.txt", "r")n, k = tuple([int(num) for num in input_file.readline()[:-1].split()])arr = [int(num) for num in input_file.readline()[:-1].split()]print(n)print(k)print(arr)k = k - 1while(arr[k] == 0):	k = (k+1) % noutput_file = open("output.txt", "w")output_file.write("%d"%(k+1))

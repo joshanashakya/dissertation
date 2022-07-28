@@ -1,0 +1,1 @@
+a1, a2 = [int(x) for x in input().split()] t = 0while ((a1 > 0) and (a2 > 0)):     if a1 < a2:        # power a1        a1 += 1        a2 -= 2        if a2 >= 0:            t += 1    else:        # power a2        a2 += 1        a1 -= 2        if a1 >= 0:            t += 1 print(t) 

@@ -1,0 +1,1 @@
+n, m = list(map(int, input().split()))d = {}for i in range(1, m+1):    d[i] = []for i in range(n):    a, b, c = input().split()    a = str(a)    b = int(b)    c = int(c)    d[b].append([c, a])for i in range(1, m+1):    a = d[i]    a.sort(reverse=True)    if len(a) > 2 and a[1][0] == a[2][0]:        print("?")    else:        print(a[0][1], a[1][1])

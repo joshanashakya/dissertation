@@ -1,0 +1,1 @@
+k = int(input())lst = list(map(int, input().split())) if k <= 0:    print(0)else:    lst.sort(reverse=True)    for idx, growth in enumerate(lst):        k -= growth        if k <= 0:            print(idx+1)            break    else:        print(-1)

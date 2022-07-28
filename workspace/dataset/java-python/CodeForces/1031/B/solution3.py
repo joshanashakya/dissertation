@@ -1,0 +1,1 @@
+n=int(input())a=list(map(int,input().split()))b=list(map(int,input().split()))for i in range(4):    c=[-1]*n	    c[0]=i    for j in range(n-1):        if c[j] == -1:            break        for k in range(4):            if((c[j]|k)==a[j] and (c[j]&k)==b[j]):                c[j+1]=k    if -1 not in c:        print("YES")        print(*c)        exit(0)print("NO")

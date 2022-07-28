@@ -1,0 +1,1 @@
+n,s=map(int,input().split())l=[]for i in range(n):	l.append(list(map(int,input().split())))m=-1f=0for i in l:	if i[0]<s:		f=1		if i[1]!=0:			m=max(100-i[1],m)	else:		if i[0]==s:			if i[1]==0:				f=1if f==1:	m=max(m,0)print(m)

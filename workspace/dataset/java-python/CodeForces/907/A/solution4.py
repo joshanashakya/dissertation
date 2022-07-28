@@ -1,0 +1,1 @@
+def aaa(): a,b,c,d=map(int,input().split()) for aa in range(a,2*a+1):  for bb in range(b,min(aa,2*b+1)):   for cc in range(c,min(bb,2*c+1)):    if d<=aa and aa>d*2 and d<=bb and bb>d*2 and d<=cc and cc<=d*2:     return [aa,bb,cc] return [-1]for aa in aaa(): print(aa) 		 		     		 		 				  	 			  	

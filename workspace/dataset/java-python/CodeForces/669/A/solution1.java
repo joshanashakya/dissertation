@@ -1,0 +1,1 @@
+import java.util.Scanner; public class LittleArtem {    public static void main(String[] args) {        Scanner scanner = new Scanner(System.in);        int n = scanner.nextInt();        int remaining = n % 3;        if (remaining != 0) {            System.out.println((n / 3)*2 + 1);        }else{            System.out.println((n / 3)*2);        }     }}

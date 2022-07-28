@@ -1,0 +1,1 @@
+n = int(input())mp = dict()ans, cur = 0, 0 for i in range(n):    c,x = [_ for _ in input().split()]    x=int(x)    if c == '-':        if mp.get(x) == True:            cur -= 1            mp[x] = False        elif mp.get(x) is None:            ans += 1            mp[x] = False    elif c == '+':        cur += 1        mp[x] = True    ans = max(ans,cur)print(ans)

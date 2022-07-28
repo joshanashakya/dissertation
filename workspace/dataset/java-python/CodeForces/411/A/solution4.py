@@ -1,0 +1,1 @@
+a=input()c=0s=0n=0i=0   while((c==0 or s==0 or n==0) and i<len(a)):   if(a[i]>='A' and a[i]<='Z'):       c=1    if(a[i]>='a' and a[i]<='z'):       s=1    if(a[i]>='0' and a[i]<='9'):       n=1    i=i+1if(c==0 or s==0 or n==0 or len(a)<5):    print("Too weak")else:    print("Correct")

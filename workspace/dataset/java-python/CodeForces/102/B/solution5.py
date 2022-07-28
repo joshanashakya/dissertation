@@ -1,0 +1,1 @@
+strNumber=input()counter=0if (len(strNumber)<2):    print(0)else:    x=11    while x>=10:        x=0        for i in strNumber:            x+=(int(i))        counter+=1        strNumber=str(x)    print(counter)    

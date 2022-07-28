@@ -1,0 +1,1 @@
+import math def main():    k, a, b = map(int, input().split())     low = (a+k-1)//k    big = b//k     ans = big - low+1     # if a<0 and b>0:    #     ans += 1    print(int(ans))                   if __name__ == '__main__':    main()

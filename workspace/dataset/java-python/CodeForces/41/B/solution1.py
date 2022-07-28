@@ -1,0 +1,1 @@
+  n,b = map(int,input().split()) t= list(map(int,input().split())) ans=0 ma=999999999mi=0for i in range(n):     if t[i] < ma:        ma = t[i]    elif t[i]>ma:        temp = b//ma         rest= b-(b//ma)*ma        rest+= (temp)*t[i]         ans=max(rest , ans) print(max(ans,b))                  

@@ -1,0 +1,1 @@
+n=int(input())c1,c2=0,0for i in range(n):    a,b=map(int,input().split())    if a>b:        c1+=1    elif a<b:        c2+=1if c1>c2:    print("Mishka")elif c1<c2:    print("Chris")else:    print("Friendship is magic!^^")

@@ -1,0 +1,1 @@
+n=int(input())a=list(map(int, input().split()))s1,s2=0,0for i in range(n):    if i%2==0:        s1+=a[i]    else:        s2+=a[i] ans=0pre=0ev,od=0,0for i in range(n):    if i%2==0:        s1-=a[i]        od+=pre    else:        s2-=a[i]        ev+=pre    if ev+s2==od+s1:        ans+=1    pre=a[i]print(ans)

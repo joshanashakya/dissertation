@@ -1,0 +1,1 @@
+n = int(input()) def tri_nums():    arr = [0]    a = 1    for i in range(31):        arr.append(arr[i] + a)        a += 1    return(arr) tri_num = tri_nums() if(n in tri_num):    print('YES')else:    print('NO')

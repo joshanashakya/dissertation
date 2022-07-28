@@ -1,0 +1,1 @@
+n=input()n1=int(n)c=list(map(int,input().split()[:n1]))c.sort(reverse=True)l=len(c)i=-1while i<l-2:    i=i+1    if i==l-1:        break    if c[i]>c[i+1]:        c[i]=c[i]-c[i+1]        c.sort(reverse=True)        i=-1print(sum(c))

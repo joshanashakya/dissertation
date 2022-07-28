@@ -1,0 +1,1 @@
+k = int(input()) list = (input().split(' '))for i in range(12): list[i] = int(list[i]) c = 0g = 0max = 0 while True: if len(list) == 0 or g >= k or all(i<1 for i in list):  break  i = (0, 0) for i in enumerate(list):  if i[1] > max:   max = i[1] list.remove(max) #print(list)  g += max c += 1 max = 0 if g >= k: print(c)else: print(-1)

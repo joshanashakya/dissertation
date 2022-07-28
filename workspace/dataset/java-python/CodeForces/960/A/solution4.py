@@ -1,0 +1,1 @@
+x = str(input())ca = x.count('a')cb = x.count('b')cc = x.count('c')if ca == 0 or cb == 0 :    print('NO')elif ca*'a'+cb*"b"+cc*"c" == x and (cc == ca or cc == cb):    print('YES')else :    print('NO')

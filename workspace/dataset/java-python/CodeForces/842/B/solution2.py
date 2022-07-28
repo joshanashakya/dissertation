@@ -1,0 +1,1 @@
+R,d = map(int,input().split())n = int(input())count = 0for _ in range(n):	x,y,r = map(int,input().split())	if 2*r<=d:		dis = ((x**2)+(y**2))**(1/2)		mind = dis-r		maxd = dis+r		if mind>=R-d and maxd<=R:			count+=1print(count)

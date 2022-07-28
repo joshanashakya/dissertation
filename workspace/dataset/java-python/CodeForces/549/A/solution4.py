@@ -1,0 +1,1 @@
+n, m = map(int, input().split())l = []p=0for i in range(n):        lprime = list(input())        l.append(lprime) for i in range(0,n-1):        for j in range(0,m-1):                u = l[i][j] + l[i][j+1] + l[i+1][j] + l[i+1][j+1]                if "f" in u and "a" in u and "c" in u and "e" in u:                        p+=1 print(p)                         

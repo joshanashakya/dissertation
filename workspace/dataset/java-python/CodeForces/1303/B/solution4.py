@@ -1,0 +1,1 @@
+import mathfor _ in range(int(input())):    n,g,b=map(int,input().split())    if(n<=g):        print(n)    else:         total=g+b        y=math.ceil(n/2)        d=y//g        ans=d*total        work=y        if(y-d*g>0):            ans=ans+y-d*g        else:            ans=ans-b        print(max(ans,n))

@@ -1,0 +1,1 @@
+import sysdef input():    return sys.stdin.readline().strip()def iinput():   return int(input())def minput():   return map(int, input().split()) def listinput(): return list(map(int, input().split()))n,l,r=minput()mi=2**l-1+n-lma=2**r-1+2**(r-1)*(n-r)print(mi,ma)

@@ -1,0 +1,1 @@
+# include <iostream>#include <vector>using namespace std;void solve(){    int t; cin >> t;    vector<int> arr(t);    for(int i=0; i<t; ++i)cin>>arr[i];    int x=-1;    for(int i=t-1; i>=0; --i){        cout << arr[i]*x << " ";        x = x*-1;   //keeping alternate array -ve    }}int main(){    int tt; cin >> tt;    while(tt--)solve();}

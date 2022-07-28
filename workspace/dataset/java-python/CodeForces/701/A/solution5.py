@@ -1,0 +1,1 @@
+n = int(input())a = [int(x) for x in input().split()]s = sum(a)//(n//2)checked = []for i in range(n):    if i not in checked:        for j in range(i+1, n):            if a[i] + a[j] == s and j not in checked:                print(i+1, j+1)                checked.append(i)                checked.append(j)                break

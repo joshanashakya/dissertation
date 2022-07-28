@@ -1,0 +1,1 @@
+from sys import stdin,stdoutinput = stdin.readline def main():    n = int(input())    preva = prevb = -1    ans = 0    for i in range(n):        a,b = map(int,input().split())        if preva != prevb:            ans += max(0,min(a,b) - max(preva,prevb) + 1)        else:            ans += max(0,min(a,b) - max(preva,prevb))        preva,prevb = a,b    print(ans)main() 

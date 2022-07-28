@@ -1,0 +1,1 @@
+import java.util.Scanner; public class Elephant {    public static void main(String[] args) {        Scanner scanner = new Scanner(System.in);        int n = scanner.nextInt();         int res = 0;        for (int i = 5; i >= 1; i--) {            res += n / i;            n = n % i;        }         System.out.println(res);    }}

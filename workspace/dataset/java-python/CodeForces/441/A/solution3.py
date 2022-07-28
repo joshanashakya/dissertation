@@ -1,0 +1,1 @@
+n = [int(x) for x in input().split()]l = n[0]u = n[1]counter = 0list1 = ''ind = 1for i in range(l):    s = [int(x) for x in input().split()]    ni = s[0]    i = s[1:]    i.sort()    for e in range(s[0]):        if u > i[0]:            counter += 1            list1 += str(ind) + ' '            break    ind += 1print(counter)print(list1)

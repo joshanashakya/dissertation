@@ -1,0 +1,1 @@
+from sys import stdin,stdoutinput = stdin.readline def main():    q = int(input())    for i in range(q):        n,g,b = map(int,input().split())        num = (n+1)//2        temp = (num-1)//g        print(max(n,temp*(g+b)+num-temp*g))main()

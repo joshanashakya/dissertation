@@ -1,0 +1,1 @@
+a,b=input(),"00"if "." in a:    a,b=a.split(".")    if len(b)>=2:        b=b[:2]    else:        b+="0"flag=Falseif a[0]=="-": a,flag=a[1:],Truei,z=1,""for c in a[::-1]:    z+=c    if i % 3==0 and i!=len(a):        z+=","    i+=1z="$"+z[::-1]+"."+bif flag:    z="("+z+")"print(z)            

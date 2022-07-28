@@ -1,0 +1,1 @@
+li = list()for _ in range(int(input())):	b, a = map(int, input().split())	li.append(a)	if b != a:		print("rated")		breakelse:	li2 = sorted(li)	li.reverse()	if li==li2:		print("maybe")	else:		print("unrated") 	 							 						     			   		

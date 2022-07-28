@@ -1,0 +1,1 @@
+import heapqs = str(input())k = int(input()) n = len(s)l = []if k>(n*(n+1))//2:    print('No such line.')else:    for i in range(n):        heapq.heappush(l,(s[i],i+1))    while k>0:        k -= 1        x,y = heapq.heappop(l)        if y<n:            heapq.heappush(l,(x+s[y],y+1))     print(x)

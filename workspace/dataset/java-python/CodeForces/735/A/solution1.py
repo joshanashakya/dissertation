@@ -1,0 +1,1 @@
+n,k = map(int,input().split())s = input()g,t,l = s.index('G'),s.index('T'),len(s)if t>=g:	while g<l:		g += k		if g>=l:			print('NO')			break		if s[g] == '#':			print('NO')			break		if s[g] == 'T':			print('YES')			breakelse:	while g>=0:		g -= k		if g<0:			print('NO')			break		if s[g] == '#':			print('NO')			break		if s[g] == 'T':			print('YES')			break

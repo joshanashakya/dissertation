@@ -1,0 +1,1 @@
+n=int(input())s=set()a=[0]*ncnt=[0]*nfor i in range(n*(n-1)//2-1):  x,y=map(int,input().split())  a[x-1]+=1  a[y-1]-=1  cnt[x-1]+=1  cnt[y-1]+=1r=[]for i in range(n):  if cnt[i]==(n-2):    r.append((a[i],i+1))r.sort()print(r[1][1],r[0][1])

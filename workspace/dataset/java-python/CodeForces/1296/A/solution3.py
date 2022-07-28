@@ -1,0 +1,1 @@
+t = int(input())for i in range(t):    even = 0    odd = 0    n = int(input())    x = list(map(int, input().split()))[:n]    s = sum(x)    for k in range(n):        if x[k] % 2 == 0:            even += 1        else:            odd += 1    if s % 2 == 0:        if even == n or odd == n:            print("NO")        else:            print("YES")    else:        print("YES")

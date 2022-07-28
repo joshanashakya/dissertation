@@ -1,0 +1,1 @@
+I = lambda: map(int, input().split())INT = lambda: int(input()) T = INT()##T = 1for _ in range(T):     n = INT()     a = list(I())     s = set()     for x in a:          if x % 2 == 0:               while x % 2 == 0 and x not in s:                    s.add(x)                    x //= 2     print(len(s))     

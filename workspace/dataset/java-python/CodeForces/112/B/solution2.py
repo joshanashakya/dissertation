@@ -1,0 +1,1 @@
+import mathn,x,y = map(int, input().strip().split(' '))#lst = list(map(int, input().strip().split(' ')))k=n//2p=[x,y]if p!=[k,k] and p!=[k+1,k+1] and p!=[k,k+1] and p!=[k+1,k]:    print('YES')else:    print('NO')    

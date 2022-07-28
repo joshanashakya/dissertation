@@ -1,0 +1,1 @@
+n = int(input()) arr = [int(i) for i in input().split()]arr = arr[1::] + [arr[0]]x = 1ans = [] for i in arr:    if i == 1:        ans.append(x)        x = 1    else:        x += 1 print(len(ans))print(*ans) 

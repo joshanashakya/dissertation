@@ -1,0 +1,1 @@
+for t in range(int(input())): input(); seen = {}; r='yes'; i = lambda: map(int,input().split()) for a,b in zip(i(),i()):  if a != b and not seen.get(b > a): r='no'; break  if a and not seen.get(a>0):   if seen.get(a<0): break   seen[a>0] = 1 print(r)

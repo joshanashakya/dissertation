@@ -1,0 +1,1 @@
+n, m = map(int, input().split())res = list(map(int, input().split()))spic = list(map(int, input().split()))res.sort(reverse=True)spic.sort(reverse=True)nado = 0for i in res:    if m == 0:        nado += 1    else:        if spic[0] >= i:            del spic[0]            m -= 1        else:            nado += 1print(nado)

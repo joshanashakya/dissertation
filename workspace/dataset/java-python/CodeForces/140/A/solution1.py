@@ -1,0 +1,1 @@
+import math[n, R, r] = [int(x) for x in input().split()] m = Noneif r > R:    m = 0elif 2*r > R:    m = 1elif 2*r == R:    m = 2else:    sina = r/(R-r)    vysek = math.asin(sina)    m = math.pi/vysek if n<=m+0.000000001:    print('YES')else:    print('NO')

@@ -1,0 +1,1 @@
+n = int(input())nums = [int(j) for j in input().split()]p = 0val = 0while p < n:    length, sp = 1, p + 1    while sp < n:        if nums[sp] - nums[sp - 1] < 2:            sp += 1            length += 1        else:            break    if nums[p] != 1:        length -= 1    if nums[sp - 1] != 1000:        length -= 1    val = max(val, length)    p = spprint(val)

@@ -1,0 +1,1 @@
+import mathn=int(input())s=math.log(n)/math.log(2)s=math.ceil(s)if n==1:    print(1)else: for i in range(math.ceil(s/2),0,-1):    k=((2**i)-1)*(2**(i-1))    if n%k==0:        print(k)        break    

@@ -1,0 +1,1 @@
+  def ok(a , b):    vo = "aeiou"     if len(a)!=len(b):        return False     for i,j in zip(a , b):        if i not in vo and j in vo or i in vo and j not in vo:            return False    return True  a = input()b = input()  print("Yes" if ok(a , b) else "No")

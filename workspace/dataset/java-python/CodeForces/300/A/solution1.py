@@ -1,0 +1,1 @@
+n = int(input())r = lambda : list(map(int, input().split()))arr = r()neg = [i for i in arr if i < 0]pos = [i for i in arr if i > 0]zero = [0] if len(neg)%2==0:    pos.extend(neg[1:-1])    zero.append(neg[-1])    neg = neg[:1]else:    if len(pos) == 0:        pos.extend(neg[-2:])        neg = neg[:-2]  print(len(neg) , *neg)print(len(pos) , *pos)print(len(zero) , *zero)    

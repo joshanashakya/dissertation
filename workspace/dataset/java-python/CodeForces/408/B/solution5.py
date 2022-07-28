@@ -1,0 +1,1 @@
+import sysfrom collections import Counter#input = sys.stdin.readline n = input()m = input()x, y = Counter(), Counter()for i in n:    x[i] += 1for i in m:    y[i] += 1ans = 0for i in y:    if x[i] == 0:        print(-1)        sys.exit()    ans += min(x[i], y[i])print(ans)

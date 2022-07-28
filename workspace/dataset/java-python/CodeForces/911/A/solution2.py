@@ -1,0 +1,1 @@
+n = int(input())a = list(map(int,input().split()))k = min(a)d = max(a) + 1 p = -100000pas = []while k in a:    s = a.index(k)       a[s]=d    if s-p==1:        exit(print(1))    pas.append(s-p)    p = s     print(min(pas)) 

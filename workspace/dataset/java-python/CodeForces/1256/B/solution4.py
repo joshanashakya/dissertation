@@ -1,0 +1,1 @@
+from math import *# from itertools import combinationsfrom sys import stdininput = stdin.readlineIN = lambda: map(int, input().split()) for _ in range(int(input())):    _, i = int(input()), 0    a = [*IN()]    while a[i:]:        j = a.index(min(a[i:]))        a.insert(i, a.pop(j))        i = j + (j == i)    print(*a)

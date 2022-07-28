@@ -1,0 +1,1 @@
+n, k = map(int, input().split())l = list(map(int, input().split()))m = list(map(int, input().split()))d, e, s, f = 0, 0, 0, 0for i in range(n):    if m[i]:        s = s+l[i]        l[i] = 0    if i > k-1:        e = max(e, d)        d = d-l[f]        f = f+1     d = d+l[i] print(s+max(d, e))

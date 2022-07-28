@@ -1,0 +1,1 @@
+import io, os, systry:	fin = open('in')	input = fin.readlineexcept:	input = io.BytesIO(os.read(0, os.fstat(0).st_size)).readline t, s, q = map(int, input().split())c = 0while s < t:	c += 1	s *= qprint (c)

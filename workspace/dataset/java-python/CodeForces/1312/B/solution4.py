@@ -1,0 +1,1 @@
+def answer(n, a):    a.sort(reverse = True)     return ' '.join(map(str, a))  def main():    t = int(input())    n = [0] * t    a = [0] * t    for j in range(t):        n[j] = int(input())        a[j] = [int(i) for i in input().split()]    for j in range(t):        print(answer(n[j], a[j])) main()

@@ -1,0 +1,1 @@
+a,b,c,d = input().split()a,b,c,d = int(a),int(b),int(c),int(d)def score(p,t):    sco = 0    sco1 = 3*p/10    sco2 = p - (p*t/250)    if sco1 > sco2:        sco = sco1        return sco    else:        sco = sco2        return scosco_misha = score(a,c)sco_vasya = score(b,d)if sco_misha > sco_vasya:    print("Misha")elif sco_misha<sco_vasya:    print("Vasya")else:    print("Tie")

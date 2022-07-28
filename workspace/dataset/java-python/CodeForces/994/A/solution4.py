@@ -1,0 +1,1 @@
+n, m = map(int, input().split())numbers = list(map(int, input().split()))fingerprints = list(map(int, input().split()))for i in range(n):    if numbers[i] in fingerprints:        print(numbers[i], end=" ")

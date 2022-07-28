@@ -1,0 +1,1 @@
+p, k = map(int, input().split())M = 1000000007if k == 0: print(pow(p, p - 1, M)), exit(0)if k == 1: print(pow(p, p, M)), exit(0)cnt, x = 0, 1while 1:    cnt -= -1    x = (k * x) % p    if x == 1: breakprint(pow(p, (p - 1) // cnt, M))

@@ -1,0 +1,1 @@
+import java.util.Scanner; public class _0709DiceTower { 	public static void main(String[] args) {				Scanner sc = new Scanner(System.in);		int t=sc.nextInt();		for(int i=0;i<t;i++) {			long n=sc.nextLong();			if(n<=14) {				System.out.println("NO");			}			else if(n%14<=6 && n%14>=1) {				System.out.println("YES");			}			else {				System.out.println("NO");			}		}	} }

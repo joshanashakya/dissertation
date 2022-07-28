@@ -1,0 +1,1 @@
+import mathn=int(input())a=list(map(int,input().split()))b=list(map(int,input().split()))result=0for i in range(n):    if b[i]<2 or b[i]>2*a[i]:        result-=1    else:        result+=math.floor(b[i]/2)*math.ceil(b[i]/2)print(result)                                                

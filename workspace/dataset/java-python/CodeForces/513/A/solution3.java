@@ -1,0 +1,1 @@
+import java.util.*;import static java.lang.Math.cbrt; public class Test {    public static void main(String[] args) throws Exception {         Scanner input = new Scanner(System.in);        int n1 = input.nextInt();        int n2 = input.nextInt();        int k1 = input.nextInt();        int k2 = input.nextInt();         System.out.println(n1 > n2 ? "First" : "Second");    }}

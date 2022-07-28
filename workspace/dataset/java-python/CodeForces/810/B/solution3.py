@@ -1,0 +1,1 @@
+numOfDays, sellOffDays = map(int, input().split())totalProductsSold = 0l = []for i in range(numOfDays):    numOfProduct, numOfClients = map(int, input().split())    totalProductsSold += min(numOfProduct, numOfClients)    l.append(min(2*numOfProduct, numOfClients)-min(numOfProduct,numOfClients))l.sort()print(totalProductsSold+sum(l[numOfDays-sellOffDays: ]))

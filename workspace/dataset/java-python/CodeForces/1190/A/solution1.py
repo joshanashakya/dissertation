@@ -1,0 +1,1 @@
+n,m,k = map(int,input().split())a = list(map(int,input().split()))ans,result = 0,0page,new_result = None,1for i in range(m):    if (a[i]-result)//k!=page:        ans+=1        result = new_result        page = (a[i]-result)//k    new_result+=1print(ans)

@@ -1,0 +1,1 @@
+import sysimport math n = int(input())a = list(map(int, input().split()))i = 1ans = [a[0]]while i < n:	if math.gcd(ans[-1], a[i]) == 1:		ans.append(a[i])		i += 1	else:		ans.append(1)print(len(ans) - n)print(*ans)

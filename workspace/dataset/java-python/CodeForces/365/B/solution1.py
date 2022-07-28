@@ -1,0 +1,1 @@
+a = int(input())I=lambda:list(map(int,input().split()))b= I()if a>=2:    ma = 2    current = 2    for i in range(2,len(b)):        if b[i-2] + b[i-1] == b[i]:            current +=1        else:            current = 2        if current > ma:            ma = current    print(ma)elif a == 1:    print(1)else:    print(0)

@@ -1,0 +1,1 @@
+l,r,a = map(int, input().split()) if l==r:    team = a//2    l+=team    r+=team    print((l+r-1) if (l+r)%2 !=0 else l+r)else:    if l<r:        l+=a        if l<=r:            print(l*2)        else:            r+= (l-r)//2            print(r*2)     else:        r+=a        if r<=l:            print(r*2)        else:            l+= (r-l)//2            print(l*2)

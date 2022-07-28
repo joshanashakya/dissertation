@@ -1,0 +1,1 @@
+import java.util.*; public class questionCF { 	public static void main(String[] args) {				Scanner sc = new Scanner(System.in);		 		int q = sc.nextInt();		while(q --> 0) {			long n = sc.nextLong(), a = sc.nextLong(), b = sc.nextLong();			System.out.println(Math.min(b*(n/2) + a*(n%2), a*n));				}		 				}}		

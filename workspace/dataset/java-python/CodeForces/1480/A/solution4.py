@@ -1,0 +1,1 @@
+# coding: utf-8 for ct in range(int(input())):  s = input()  answer = ''    for i, c in enumerate(s):    answer += ('b' if c == 'a' else 'a') if i % 2 == 0 else ('y' if c == 'z' else 'z')      print(answer)

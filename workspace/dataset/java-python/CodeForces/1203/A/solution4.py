@@ -1,0 +1,1 @@
+for _ in range(int(input())):    n=int(input())    l=list(map(int,input().split()))    l1=sorted(l)    i=l.index(1)    lr=l[i+1:]    if len(lr)!=n:        ll=l[:i]    else:        ll=[]    if [1]+lr+ll==l1:        print("YES")    elif [1]+ll[::-1]+lr[::-1]==l1:        print("YES")    else:        print("NO")

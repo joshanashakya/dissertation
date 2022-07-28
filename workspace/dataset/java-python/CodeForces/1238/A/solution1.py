@@ -1,0 +1,1 @@
+#import sys#import math#sys.stdout=open("C:/Users/pipal/OneDrive/Desktop/VS code/python/output.txt","w")#sys.stdin=open("C:/Users/pipal/OneDrive/Desktop/VS code/python/input.txt","r")t=int(input())for i in range(t):     a,b=(map(int,input().split()))    diff=a-b      if diff==1:        print("NO")    else:        print("YES")               

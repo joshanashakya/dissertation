@@ -1,0 +1,1 @@
+def f(a):    if a=="a":        return 4    if a=="b":        return 5    if a=="c":        return 6    if a=="d":        return 3    if a=="e":        return 2    if a=="f":        return 1 a=input()b=int(a[:-1])c=a[-1]s=((b-1)//4)*16b=b%2if b==1:    print(s+f(c))else:    print(7+s+f(c))

@@ -1,0 +1,1 @@
+a,b = map(int,input().split())c= list(map(int,input().split()))ans = 0mini = sum(c)for i in range(b):    d = i     su = 0     while(d<a):         su+=c[d]        d+=b    if su < mini:         mini = su        ans = iprint(ans+1)

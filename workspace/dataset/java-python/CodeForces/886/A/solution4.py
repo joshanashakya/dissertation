@@ -1,0 +1,1 @@
+from itertools import *a=[int(x) for x in input().split()]s1=0s2=0flag=0for o in permutations(a):              s1=o[0]+o[1]+o[2]              s2=o[3]+o[4]+o[5]                            if(s1==s2):                                                   flag=1                            break            if (flag==1):              print("YES")else:              print("NO")

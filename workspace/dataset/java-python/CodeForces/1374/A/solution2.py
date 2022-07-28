@@ -1,0 +1,1 @@
+def requiredRemainder(x,y,n):    if (n-n % x+y <= n):        print(n-n % x + y)    else:        print(n - n % x - (x - y))	  tc = int(input())for _ in range(0,tc):    x,y,n = input().split()    x = int(x)    y = int(y)    n = int(n)    requiredRemainder(x,y,n)

@@ -1,0 +1,1 @@
+n=int(input())a=list(map(int,input().split()))b=list(map(int,input().split()))x=b[0]y=b[1]i=1s=sum(a)ans1=0ans2=sans=0while i<=n:    ans1+=a[i-1]    ans2-=a[i-1]    ##print(ans1,ans2,i)    if (ans1>=x and ans1<=y) and (ans2>=x and ans2<=y):        print(i+1)        ans=1        break    i+=1if ans==0:    print(0)

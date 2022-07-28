@@ -1,0 +1,1 @@
+a,b,c = input().split()a = int (a)b = int (b)c = int (c)sum = a + b + cif sum % 2 == 0:	sum /= 2	x = int(sum - c)	y = int(sum - a)	z = int(sum - b)	if x >= 0 and y >= 0 and z >= 0:		print (x,y,z)	else :		print('Impossible\n')else :	print('Impossible\n')

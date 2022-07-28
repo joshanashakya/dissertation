@@ -1,0 +1,1 @@
+n,m = map(int, input().split())arr = []for i in range(m):    a,b = map(int, input().split())    arr.append((a,b))arr.sort(key=lambda x:x[1], reverse=True)rem = nres = 0for i,j in arr:    if rem<1:        break    if i>=rem:        res+= rem*j        rem -= n    else:        res += i*j        rem -= iprint(res)

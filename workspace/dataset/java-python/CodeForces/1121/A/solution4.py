@@ -1,0 +1,1 @@
+n, m, k = map(int, input().split())p = list(map(int, input().split()))s = list(map(int, input().split()))k = list(map(int, input().split()))count = 0for i in k:	l = s[i-1]	t = p[i-1]	for i in range(n):		if s[i] == l and p[i] > t :			count += 1			breakprint(count)

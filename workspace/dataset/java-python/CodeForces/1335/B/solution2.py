@@ -1,0 +1,1 @@
+for t in range(int(input())):    n, a, b = map(int, input().split())    alpha = ['a', 'b','c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']    s = 'a' * (a-b+1)    for i in range(1, b):        s += alpha[i]    s += (s*((n-a)//a) + s[:(n-a)%a])    print(s)

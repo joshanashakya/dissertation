@@ -1,0 +1,1 @@
+n = int(input())a = []for i in range(n):    b = [int(i) for i in input().split()]    a.append(b)can = Truefor i in range(n):    for j in range(n):        if a[i][j] != 1:            for k in range(n):                if a[i][j] - a[k][j] in a[i]:                    break            else:                can = Falseif can:    print("Yes")else:    print("No")

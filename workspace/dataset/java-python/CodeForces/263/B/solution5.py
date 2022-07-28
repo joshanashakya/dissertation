@@ -1,0 +1,1 @@
+n, k = list(map(int,input().split()))a = list(map(int,input().split()))if (k > n):    print(-1)elif (k == n):    print(0, 0)else:    a.sort(reverse=True)    for i in range(k):        if (i == k - 1):            print(a[i],0)            break    

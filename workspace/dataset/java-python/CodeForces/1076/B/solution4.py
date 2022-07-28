@@ -1,0 +1,1 @@
+is_prime = [0]*1000100 def primes():	for i in range(2,1000010):		if(is_prime[i] == 0):			is_prime[i] = 1			for j in range(i*i,1000010,i):					is_prime[j] = -1 n = int(input())primes() if(n%2==0): 	print(n//2)else: 	primo = 0	for i in range(3,int(n**0.5)+2):		if(is_prime[i] == 1 and n % i == 0):			primo = i			break			if(primo == 0):		n = 0	print((n-primo)//2 + 1)

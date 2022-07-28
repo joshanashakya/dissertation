@@ -1,0 +1,1 @@
+def solution():	n=int(input())	num=str(input())	first=[int(nm) for nm in num[:n]]	second=[int(nm) for nm in num[n:]]	idx=0	first.sort()	second.sort() 	while idx<n and first[idx]<second[idx]:		idx+=1	if idx==n:		print('YES')		return	idx=0	while idx<n and first[idx]>second[idx]:		idx+=1	if idx==n:		print('YES')		return	print('NO')	return  			solution() 

@@ -1,0 +1,1 @@
+for t in range(int(input())):    s = input()    ones = []    erase = 0    for i in range(len(s)):        if s[i] == '1': ones.append(i)    for i in range(len(ones)-1):        erase = erase + ones[i+1] - ones[i] - 1    print(erase)

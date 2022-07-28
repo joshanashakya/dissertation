@@ -1,0 +1,1 @@
+import java.util.*;public class Main{	public static void main(String[]args){		Scanner sc=new Scanner(System.in);		while(sc.hasNext()){			int n=sc.nextInt();			while(n-->0) {				long a=sc.nextLong(),b=sc.nextLong(),c=sc.nextLong();				System.out.println(Math.max((Math.abs(a-b)+Math.abs(a-c)+Math.abs(b-c)-4),0));			}		}	}} 			    		 	  			   	 		  	  		

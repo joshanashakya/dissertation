@@ -1,0 +1,1 @@
+from collections import Counter as c n,m = [int(i) for i in input().split()]a=[]x=[]y=[]for i in range(n):    a.append(input())for i in range(n):    for j in range(m):        if a[i][j] == '*':            x.append(j)            y.append(i)a= c(x)for i in a:    if a[i] == 1:        col =i b= c(y)for i in b :    if b[i] ==1:        row = i print(row+1,' ',col+1)

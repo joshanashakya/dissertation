@@ -1,0 +1,1 @@
+n,k= (int(x) for x in input().split())n_lst = [int(x) for x in input().split()]t = 0counter = 0for day in n_lst:    t += day    counter +=1    k -= (min(8,t))    t-=(min(8,t))    if k <= 0:        print(counter)        breakelse:    print('-1')

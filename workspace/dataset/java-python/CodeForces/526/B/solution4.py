@@ -1,0 +1,1 @@
+n = int(input())lst= {i+1:int(x) for i,x in enumerate(input().split())}lst[0]=0x = 2**(n+1)-1res = 0for i in range(n,0,-1):    for j in range(x-1,x-2**i-1,-2):        ma = max(lst[j],lst[j-1])        mi = min(lst[j],lst[j-1])        res+=ma-mi        lst[(j+1)//2-1]+=ma    x-=2**iprint(res)

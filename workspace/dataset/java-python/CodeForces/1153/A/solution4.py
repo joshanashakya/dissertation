@@ -1,0 +1,1 @@
+from math import ceiln, t = list(map(int, input().split())) minT = float('inf')ind = 0 for i in range(n):    s, d = list(map(int, input().split()))    if s >= t:        arrive = s    else:        arrive = ceil((t-s)/d)*d+s    if arrive < minT:        ind = i+1        minT = arrive print(ind)

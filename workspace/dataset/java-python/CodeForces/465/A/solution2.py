@@ -1,0 +1,1 @@
+n=int(input())s=input()c=1changes=0if( n>=1 and n<=100):    for i in range(n):        if(s[i]=='1' and c==1):            c=1            changes+=1        elif(s[i]=='0' and c==1):            c=0            changes+=1        elif(s[i]=='1' and c==0):            c=0        else:            c=0print(changes)

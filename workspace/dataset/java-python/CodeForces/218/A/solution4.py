@@ -1,0 +1,1 @@
+n, k = map(int,input().split())arr = input().split()original = []count = 0for i in range(len(arr)):    if(        i % 2 != 0 and count < k and        int(arr[i])-1 > int(arr[i+1]) and        int(arr[i])-1 > int(arr[i-1])    ):        original.append(int(arr[i])-1)        count += 1    else:        original.append(int(arr[i]))print(" ".join(map(str,original)))

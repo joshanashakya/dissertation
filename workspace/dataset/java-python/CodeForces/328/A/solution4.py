@@ -1,0 +1,1 @@
+def main():    a, b, c, d = [int(i) for i in input().split()]    p1, p2, p3 = b - a, c - b, d - c    q1, q2, q3 = b / a, c / b, d / c    if(p1 == p2 == p3):        print(d + p3)    elif(q1 == q2 == q3 and q1 != 1 and int(d * q3) == d * q3):        print(int(d * q3))    else:        print(42)main()

@@ -1,0 +1,1 @@
+n = int(input())d = dict()for i in range(2, 2 * n + 1):    l = list(map(int, input().split()))    for j in range(1, i):        d[l[j - 1]] = (i, j)f = [0 for i in range(0, 2 * n + 1)]for i in reversed(sorted(d.keys())):    if f[d[i][0]] == 0 and f[d[i][1]] == 0:        f[d[i][0]] = d[i][1]        f[d[i][1]] = d[i][0]for i in range(1, 2 * n + 1):    print(f[i], end=' ')

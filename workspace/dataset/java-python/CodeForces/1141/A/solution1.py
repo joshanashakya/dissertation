@@ -1,0 +1,1 @@
+# coding: utf-8 n, m = map(int, input().split())ratio = m / nmoves = 0 while ratio != 1:  if ratio % 2 == 0:    ratio /= 2    moves += 1      elif ratio % 3 == 0:    ratio /= 3    moves += 1      else:    moves = -1    break  print(moves)

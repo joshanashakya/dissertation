@@ -1,0 +1,1 @@
+/* Written by Preet Patel * Date: 2021-04-12 * FOR CODEFORCES SUBMISSIONS */import java.util.*; public class Main {     public static void main(String[] args) {         Scanner sc = new Scanner(System.in);         int m = sc.nextInt();        int n = sc.nextInt();         int size = m * n;        int max = size / 2;        System.out.print(max);     }}

@@ -1,0 +1,1 @@
+from collections import Counterd={'R':'P','S':'R','P':'S'}for _ in range(int(input())):    s=input().strip()    z=Counter(s)     for i in z:        if z[i]==max(z.values()):            print(d[i]*len(s))            break

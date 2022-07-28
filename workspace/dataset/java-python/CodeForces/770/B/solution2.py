@@ -1,0 +1,1 @@
+a=input()ans=[sum(map(int,a)),a]for i in range(len(a)-1,-1,-1):        b=a[:i]+str(int(a[i])-1)+'9'*len(a[i+1:])        if a[i]!='0'and sum(map(int,b))>ans[0]:ans=[sum(map(int,b)),b]print(ans[1].strip('0'))

@@ -1,0 +1,1 @@
+def Appel(arr):    cont=0    cont1 = 0    for i in arr:        if i==200:            cont+=1        else:            cont1+=1     if cont1%2!=0:        return "NO"    if cont%2!=0 and cont1==0:        return "NO"    return "YES" aux1= input()a = int(aux1)arr=[]arr = list(map(int, input().strip().split()))print(Appel(arr))	  	  					  					 		        	

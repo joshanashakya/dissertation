@@ -1,0 +1,1 @@
+n=int(input())f=-1l=[4,7,47,74,44,77,444,447,477,474,774,747,777]for j in range(0,len(str(n)),1):    n=str(n)    if n[j]=="4" or n[j]=="7":        f=0    else:        f=-1        breakif f==-1:    n=int(n)    for j in l:        if n%j==0:            f=0            break        else:            f=-1if f==0:    print("YES")else:    print("NO")        

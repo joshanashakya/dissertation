@@ -1,0 +1,1 @@
+s = [int(s) for s in input().split()]d = []total = 0total_init = 0for i in range(s[0]):    d.append([int(d) for d in input().split()])for i in d:    total += i[1] - i[0] + 1total_init = totalif total % s[1] == 0:    print(0)else:    while total % s[1] != 0:        total += 1    print(total - total_init)

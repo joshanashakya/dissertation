@@ -1,0 +1,1 @@
+n = int(input())p = list(map(int, input().split(" "))) adj_list = {i: [] for i in range(1, n + 1)}for i in range(len(p)):    adj_list[p[i]].append(i + 2) dep = [0] * (n + 1)s = [(1, 1)]while len(s) > 0:    x, d = s.pop()    dep[d] += 1    for i in adj_list[x]:        s.append((i, d + 1)) print(sum(i % 2 for i in dep))

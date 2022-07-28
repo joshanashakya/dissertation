@@ -1,0 +1,1 @@
+# Hamster Farmimport mathm=math.infn,k=map(int,input().split())a=list(map(int,input().split()))mi=[0]*kfor i in range(k):    mi[i]=n%a[i]l=0for i in range(k):    if mi[i]<m:        m=mi[i]        l=iprint(l+1,n//a[l])

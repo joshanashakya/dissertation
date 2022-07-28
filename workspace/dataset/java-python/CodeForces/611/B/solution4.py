@@ -1,0 +1,1 @@
+a,b = map(int,input().split())cnt = 0for i in range(2,65):    num = (1<<i) - 1    pow = 1    for j in range(i-1):        cur = num - pow        if cur >= a and cur <= b:            cnt += 1        pow <<= 1print(cnt)

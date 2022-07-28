@@ -1,0 +1,1 @@
+n = int(input())d = [0]arr = list(map(int, input().split()))for i, c in enumerate(arr):    if i % 2 == 0:        d.append(d[-1] + c)    else:        d.append(d[-1] - c)ans = 0for i in range(1, len(d)):    if d[i - 1] == d[-1] - d[i]:        ans += 1print(ans)

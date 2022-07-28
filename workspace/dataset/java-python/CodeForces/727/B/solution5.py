@@ -1,0 +1,1 @@
+s=input() R=str.replace for i in range(97,123):s=R(s,chr(i),' ') b=a=0 for x in s.split(): 	l=x.rfind('.') 	if l==-1 or len(x)-1-l>2:a+=int(R(x,'.','')) 	else:a+=int(R(x[:l],'.',''));b+=int(x[l+1:]) a+=b//100 b=str(b%100) a=str(a) r='' while a:r=a[-3:]+'.'+r;a=a[:-3] if b!='0':r+='0'*(2-len(b))+b else:r=r[:-1] print(r)   # Made By Mostafa_Khaled

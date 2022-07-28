@@ -1,0 +1,1 @@
+a=input()b=a[:a.find('|')]c=a[a.find('|')+1:]d=input()if (len(b)+len(c)+len(d))%2==0 and abs(len(b)-len(c))<=len(d):    if len(b)>len(c):        e=len(b)-len(c)        c+=d[:e]+d[e:(len(d)-e)//2+e]        b+=d[(len(d)-e)//2+e:]    else:        e=len(c)-len(b)        b+=d[:e]+d[e:(len(d)-e)//2+e]        c+=d[(len(d)-e)//2+e:]    print(b+'|'+c)else:    print('Impossible')

@@ -1,0 +1,1 @@
+def isPrime(x):    i=int(2)    if x==2:        return True    while(i*i<=x):        if x%i==0:            return False        i+=1    return True for _ in range(int(input())):    a,b=map(int,input().split())    if a-b==1 and isPrime(a+b):        print("YES")    else:        print("NO")

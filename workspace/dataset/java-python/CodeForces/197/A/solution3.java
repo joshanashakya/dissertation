@@ -1,0 +1,1 @@
+import java.util.Scanner; public class TestBetter{	public static void main(String[] args)	{		Scanner input = new Scanner(System.in);		int a, b, r;		a = input.nextInt();		b = input.nextInt();		r = input.nextInt(); 		System.out.println((((2 * r) <= a) && ((2 * r) <= b))?"First":"Second");	}}

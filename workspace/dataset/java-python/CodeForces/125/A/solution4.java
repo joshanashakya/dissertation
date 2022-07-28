@@ -1,0 +1,1 @@
+import java.util.Scanner;public class Test45{    public static void main(String[] args) {        Scanner input = new Scanner(System.in);        int n = input.nextInt();        int inches=(n+1)/3;        int feet=inches/12;        System.out.println(feet+" "+(inches-12*feet));    }}

@@ -1,0 +1,1 @@
+n, m = map(int, input().split())p = list(map(int, input().split()))temp = p.copy()p.sort()nc = nnr = 0r = 0while n > 0:    n -= 1    r += p[-1]    p[-1] -= 1     p.sort()z = 0temp.sort()while nc > 0:    nc -= 1    nr += temp[0]    temp[0] -= 1    if temp[0] == 0:        temp.remove(temp[0])    temp.sort() print(r, end=' ')print(nr)

@@ -1,0 +1,1 @@
+t=int(input())for _ in range(t):	n=int(input())	f=1	ans=0	while n!=1:		if n%5==0:			n=(n*4)//5			ans+=1		elif n%3==0:			n=(n*2)//3			ans+=1		elif n%2==0:			n=n//2			ans+=1		else:			f=0			break	if f:		print(ans)	else:		print(-1)

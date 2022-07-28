@@ -1,0 +1,1 @@
+s = input()strn = 'CODEFORCES'n = 0l = len(s)if l>=10:    for i in range(10):        if s[i]!=strn[i]:            break        n += 1    if s[l-(10-n):]==strn[n:]:        print('YES')    else:        print('NO')else:    print('NO')  # CODEWAITFORITFORCES

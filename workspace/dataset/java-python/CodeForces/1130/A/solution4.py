@@ -1,0 +1,1 @@
+import math n = int(input())L = list(map(int, input().split()))need = int(math.ceil(n/2))neg = 0pos = 0for i in L:    if i < 0:        neg += 1    elif i > 0:        pos += 1if pos >= need:    print(1)elif neg >= need:    print(-1)else:    print(0)

@@ -1,0 +1,1 @@
+n = int(input())s = set()arr = []for _ in range(n):    arr.append(int(input()))    s.add(arr[-1]) if len(s)!=2:    print("NO")else:    x , y = s    if(arr.count(x) == arr.count(y)):        print("YES")        print(y , x)    else: print("NO")    

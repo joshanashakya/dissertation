@@ -1,0 +1,1 @@
+#      *#     * *#    *   *#   *  *  *  Author:Aditya Joshi#  *       *# *         * n, a, b = map(int, input().split()) a -= 1b -= 1r = 0 while a != b:     a //= 2     b //= 2     r += 1if 2 ** r < n:    print(r)else:    print("Final!")

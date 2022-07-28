@@ -1,0 +1,1 @@
+s=str(input())a=s.find('a')b=s.find('b')c=s.find('c')if ('a' in s) and ('b' in s) and ('b' in s) and  (a<b<c) and ('ba' not in s) and ('ca' not in s) and ('cb' not in s):    if s.count('a')==s.count('c') or s.count('b')==s.count('c'):        print("YES")    else:        print("NO")else:    print("NO")

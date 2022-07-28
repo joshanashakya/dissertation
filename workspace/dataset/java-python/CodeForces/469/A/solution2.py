@@ -1,0 +1,1 @@
+games = int(input())x = input().split(" ")y = input().split(" ") x.pop(0)y.pop(0) levels = x + y for i in range(1, games + 1):    if str(i) not in levels:        print("Oh, my keyboard!")        break     if i == games and str(i) in levels:        print("I become the guy.")        break

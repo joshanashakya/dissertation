@@ -1,0 +1,1 @@
+import sysinput = sys.stdin.readline for test in range(int(input())):    n = int(input())    a = sorted([int(i) for i in input().split()])    ans = 1    for i in range(n - 1):        if a[i + 1] - a[i] == 1:            ans = 2    print(ans)

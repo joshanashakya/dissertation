@@ -1,0 +1,1 @@
+n = int(input())l1 = []for i in range(n):    l1.append([int(j) for j in input().split()])l2 = []for i in range(n):    l2.append([int(j) for j in input().split()])l1.sort()l2.sort()x = l1[0][0] + l2[-1][0]y = l1[0][1] + l2[-1][1]print(x,y)

@@ -1,0 +1,1 @@
+import java.util.Scanner;public class dice_tower {	public static void main(String[] args) {		Scanner in = new Scanner(System.in);		int n = in.nextInt(), x = in.nextInt();		boolean b = true;		for (int i=0; i<2*n; i++) {			int num = in.nextInt();			if (num == x || num == 7-x) {				b = false;			}		}		if (b) {			System.out.println("YES");		}		else {			System.out.println("NO");		}	} }

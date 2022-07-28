@@ -1,0 +1,1 @@
+a=int(input())k=input()b=[i for i in range(a) if k[i]=='*']for i in b:    for j in range(1,101):        ok=1        for x in range(1,5):            if i+j*x not in b:ok=0;break        if ok:exit(print("yes"))print("no")

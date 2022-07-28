@@ -1,0 +1,1 @@
+import java.util.*;public class Depression { 	public static void main(String[] args) {		// TODO Auto-generated method stub		Scanner sc=new Scanner(System.in);		String s=sc.next();		int h=(s.charAt(0)-48)*10+(s.charAt(1)-48);	    int m=(s.charAt(3)-48)*10+(s.charAt(4)-48);	    if(h>=12)	        h=h-12;	    System.out.println(((h*30)+(m*0.5))+" "+(m*6));	} }

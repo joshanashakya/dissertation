@@ -1,0 +1,1 @@
+n, f = map(int, input().split())gain = []sold = 0for i in range(n):	k,l = map(int, input().split())	sold += min(l,k)	if l == 0 or k== 0 or l<k:		gain.append(0)	else:		if 2*k > l:			gain.append(l-k)		else:			gain.append(k) gain = sorted(gain, reverse=True)for i in range(f):	sold += gain[i]print(sold)

@@ -1,0 +1,1 @@
+n,k = map(int, input().split())A = [int(input()) for i in range(n)]from collections import CounterC = Counter(A)B = []ans = 0r = 0for k, v in C.items():    if v%2 == 0:        ans += v    else:        ans += v-1        r += 1ans += (r+1)//2print(ans)

@@ -1,0 +1,1 @@
+n=int(input())a=list(map(int,input().split()))k=[]for j in range(n):  k.append([])for i in range(2*n):  k[a[i]-1].append(i)ans=k[0][0]+k[0][1]for i in range(n-1):  ans+=abs(k[i][0]-k[i+1][0])+abs(k[i][1]-k[i+1][1])print(ans)

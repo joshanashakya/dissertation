@@ -1,0 +1,1 @@
+import java.util.Scanner; public class B909 {     public static void main(String[] args) {        Scanner in = new Scanner(System.in);        int N = in.nextInt();        int answer = ((N+2)/2)*((N+1)/2);        System.out.println(answer);    } }

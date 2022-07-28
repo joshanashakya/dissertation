@@ -1,0 +1,1 @@
+n = int(input())a = list(map(int, input().split())) a.sort(reverse=True)ai = [1] * n j = 0for i in range(1, n):    if a[i] == a[i - 1]:        ai[j] += 1    else:        j += 1 ai = ai[:j + 1] conan = Falsefor i in ai:    if i % 2:        conan = True        break print("Conan" if conan else "Agasa")

@@ -1,0 +1,1 @@
+n,k=[int(x) for x in input().split()]capacities=[int(x) for x in input().split()]mods=[n%capacities[i] for i in range(k)]min_mod=min(mods)index=mods.index(min_mod)print("{} {}".format(index+1,n//capacities[index]))

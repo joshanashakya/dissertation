@@ -1,0 +1,1 @@
+n = 100001p = [0] * nt = [[] for i in range(n)]t[1] = [1]for i in range(2, n):    if not t[i]:        t[i] = [i]        for j in range(2 * i, n, i): t[j].append(i)n=int(input())l=[int(i) for i in input().split()] for a in l:    x=max(p[j] for j in t[a])+1    for j in t[a]: p[j]=xprint(max(p))

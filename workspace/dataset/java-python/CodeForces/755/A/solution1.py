@@ -1,0 +1,1 @@
+def prime (n):    c=0    for i in range (2,int(pow(n,0.5))+1):        if(n%i==0):            c=1            break    return c   n=int(input())if(n==1):    print(3)elif(n==2):    print(4)else:    for i in range (1,n+1):        c1=prime(n*i+1)        if(c1==1):            break    print(i)

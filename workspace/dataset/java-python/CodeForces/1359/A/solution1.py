@@ -1,0 +1,1 @@
+import matht=int(input())for i in range(t):    n,m,k=map(int,input().split())    if m==0:        print(0)    elif n//k>=m:        print(m)    else:        if (m-n//k)%(k-1)==0:            print((n//k)-((m-n//k)//(k-1)))          else:            print((n//k)-(((m-n//k)-(m-n//k)%(k-1))//(k-1)+1))              

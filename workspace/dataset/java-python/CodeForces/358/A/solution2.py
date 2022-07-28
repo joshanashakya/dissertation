@@ -1,0 +1,1 @@
+n=int(input())arr=list(map(int,input().split())) for x in range(len(arr)-1):    x1,x2=(arr[x],arr[x+1])    if x1>x2:        x1,x2=x2,x1    for y in range(x+2,len(arr)-1):        x3,x4=(arr[y],arr[y+1])        if x3>x4:            x3,x4=x4,x3        if x1<x3<x2<x4 or x3<x1<x4<x2:            print("yes")            exit()            print("no")

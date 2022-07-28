@@ -1,0 +1,1 @@
+#codeforcesif __name__=="__main__":    n=int(input())    a=int(input())    b= int(input())    d=n//a    rem=n%a    while(rem%b!=0 and d>=0):        d=d-1        rem=rem+a    if d<0:        print("NO")    else:        print("YES")        print(d,rem//b)

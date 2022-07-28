@@ -1,0 +1,1 @@
+t = int(input())for i in range(t):    temp = [int(x) for x in input().split()]    n = temp[0]    k = temp[1]    f = n // k    s = ''    for i in range(ord('a'), ord('a') + k):        s += chr(i)    result = s * f + s[:n % k]    print(result)

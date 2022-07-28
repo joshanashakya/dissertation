@@ -1,0 +1,1 @@
+n = int(input())A = list(map(int, input().split()))res = 0if A[0] == 1:    cnt = 2else:    cnt = 1for i in range(n-1):    if A[i]+1 == A[i+1]:        cnt += 1        if A[i+1] == 1000:            cnt += 1    else:        res = max(cnt, res)        cnt = 1else:    res = max(cnt, res)ans = max(res-2, 0)print(ans)

@@ -1,0 +1,1 @@
+n=int(input())arr=[int(x) for x in input().split()]b=[[] for x in range(1, 10**6+10)]for i, j in enumerate(arr):	b[j].append(i)maxi=0for i in b:	maxi=max(maxi, len(i))best=10**10l, r=1, 1for i in b:	if len(i)==maxi:		if i[-1]-i[0]<best:			best=i[-1]-i[0]			l, r=i[0], i[-1]print(l+1, r+1)

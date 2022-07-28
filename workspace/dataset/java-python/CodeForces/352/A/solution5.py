@@ -1,0 +1,1 @@
+def solution():	n=int(input())	arr=list(map(int,input().split()))	c5=0	c0=0	for i in arr:		if i==5:			c5+=1		else:			c0+=1	c5=(c5//9)*9 	if c0==0:		print(-1)		return	elif c5==0:		print(0)		return	else:		st='5'*c5		st+='0'*c0		print(int(st))		       	 if __name__=='__main__':	solution()

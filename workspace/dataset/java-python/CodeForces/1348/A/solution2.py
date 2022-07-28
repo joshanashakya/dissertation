@@ -1,0 +1,1 @@
+t = int(input())for _ in range(t):    n = int(input())    li = []    for i in range(1,n+1):        li.append(2**i)    # print(li)    q1 = 0    q2 = li[-1]    for i in range(0,n//2-1):        q2 += li[i]    for i in range(n//2-1, n-1):        q1 += li[i]    # print(q2,q1)    print(abs(q2-q1))

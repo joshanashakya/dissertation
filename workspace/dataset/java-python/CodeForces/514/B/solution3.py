@@ -1,0 +1,1 @@
+n,gx,gy=map(int,input().split())cx=0cy=0umap={}for i in range(n):	x,y=map(int,input().split())	if(x==gx):		cx+=1	elif y==gy:		cy+=1	else:		d=(y-gy)/(x-gx)		if(d in umap):			umap[d]+=1		else:			umap[d]=1c=0# print(umap)if(cx>0):	c+=1if(cy>0):	c+=1print(len(umap)+c)

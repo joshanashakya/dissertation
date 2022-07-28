@@ -1,0 +1,1 @@
+from sys import stdin,stdoutimport bisect as bsnmbr = lambda: int(stdin.readline())lst = lambda: list(map(int,stdin.readline().split()))for _ in range(1):#nmbr()):    s=input()    n=len(s)    x=s.count('x')    y=n-x    if y>=x:        for i in range(y-x):            stdout.write('y')    else:        for i in range(x-y):            stdout.write('x')

@@ -1,0 +1,1 @@
+from sys import stdin,stdoutnmbr = lambda: int(input())lst = lambda: list(map(int, input().split()))N=10**5+5M=10**9+7p3=[1]p7=[1]for i in range(3*N):    p3+=[(p3[-1]*3)%M]for i in range(N):    p7+=[(p7[-1]*7)%M]for _ in range(1):#nmbr():    n=nmbr()    print((p3[3*n]-p7[n]+M)%M)

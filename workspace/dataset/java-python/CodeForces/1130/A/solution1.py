@@ -1,0 +1,1 @@
+from math import ceilnum=(-(-int(input())))/2p,n,o=[],[],[]for v in map(int,input().split()):    if v>0:        p.append(v)    if v<0:        n.append(v)if len(p)>=num or len(n)>=num:    ans={1:len(p),-1:len(n)}    print(max(ans,key= lambda x:ans[x]))else:    print(0)# s=max(ans, key=lambda x:ans[x])# print(s)

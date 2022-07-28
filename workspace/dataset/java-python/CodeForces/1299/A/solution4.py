@@ -1,0 +1,1 @@
+n = int(input())arr = list(map(int, input().split()))s = set()for i in range(32, -1, -1):    cnt = 0    bs = []    for c in arr:        if (c >> i) & 1:            cnt += 1            bs.append(c)    if cnt == 1 and bs[0] not in s:        print(bs[0], end=" ")        s.add(bs[0])for c in arr:    if c not in s:        print(c, end=" ")

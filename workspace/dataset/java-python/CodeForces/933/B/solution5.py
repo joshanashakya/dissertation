@@ -1,0 +1,1 @@
+s = input()# s = '46 2' p, k = list(map(int, s.split())) res = []f = Truewhile p != 0:    if f:        n = p % k        m = (p - n) // k        f = False    else:        n = (-p) % k        m = (p + n) // k        f = True    res.append(n)    p = m print(len(res))print(' '.join(list(map(str, res))))

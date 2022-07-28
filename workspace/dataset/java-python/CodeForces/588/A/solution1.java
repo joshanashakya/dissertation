@@ -1,0 +1,1 @@
+import java.io.IOException;import java.util.Scanner; public class Main { 	public static void main(String[] args) throws IOException {		Scanner in = new Scanner(System.in);		int n = in.nextInt();		int ans = 0;		int p = 110;				for (int i = 0; i < n; i++) {			int a = in.nextInt();			p = Math.min(p, in.nextInt());			ans += p * a;		}				System.out.println(ans);	}}

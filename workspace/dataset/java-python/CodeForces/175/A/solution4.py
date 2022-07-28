@@ -1,0 +1,1 @@
+s=input()n=len(s)maxi=-1for i in range(n-2):    for j in range(i+1,n-1):        a,b,c= s[:i+1],s[i+1:j+1],s[j+1:]        if len(a)==len(str(int(a))) and len(b)==len(str(int(b))) and len(c)==len(str(int(c))):            if int(a)<=1e6 and int(b)<=1e6 and int(c)<=1e6:                maxi=max(maxi,int(a)+int(b)+int(c))print(maxi)

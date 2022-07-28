@@ -1,0 +1,1 @@
+n, k = map(int, input().split())l = len(bin(n)) - 2if k == 1:    print(n)else:    print(2 ** l - 1) #at most k, so we will choose 2....''' a = 1000....b = 0111... xor = 11111 length of digit will be same as length of bin of n'''

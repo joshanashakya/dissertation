@@ -1,0 +1,1 @@
+n = int(input())string = input()d = dict()for i in range(n-1):    new_str = string[i:i+2]    if new_str in d.keys():        d[new_str]+=1    else:        d[new_str] = 1ans = max(d, key=d.get)print(ans)

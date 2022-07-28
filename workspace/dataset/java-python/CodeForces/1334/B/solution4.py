@@ -1,0 +1,1 @@
+for i in range(int(input())):    a,b=[int(i) for i in input().split()]    l=[int(i) for i in input().split()]    l.sort(reverse=True)    count=0    sumi=0    for i in range(a):        if l[i]<b:            k=b-l[i]            if sumi>=k:                count+=1                sumi-=k        else:            count+=1            sumi+=(l[i]-b)    print(count)

@@ -1,0 +1,1 @@
+n, m = list(map(int, input().split()))  def canuseteleport(curr_pos, tele_start, tele_limit):    if tele_start <= curr_pos and tele_limit > curr_pos:        return True    return False  p = 0for i in range(n):    x, y = list(map(int, input().split()))    if canuseteleport(p, x, y):        p = y if m <= p:    print("Yes")else:    print("No") 

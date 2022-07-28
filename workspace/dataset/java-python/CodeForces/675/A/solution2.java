@@ -1,0 +1,1 @@
+import java.util.*;public class f { 	public static void main(String[] args) {		Scanner sc = new Scanner(System.in);		long a =sc.nextInt();		long b= sc.nextInt();		long c = sc.nextInt();		if(c==0)			System.out.println((a==b)?"YES":"NO");		else			System.out.println(((b-a)%c==0 &&(b-a)/c>=0 )?"YES":"NO");		 	} }

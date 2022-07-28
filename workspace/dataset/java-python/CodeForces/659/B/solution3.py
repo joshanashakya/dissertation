@@ -1,0 +1,1 @@
+from sys import stdin,stdouta,b=map(int,stdin.readline().split())d={}for i in range(1,b+1):d[i]=[]for _ in " "*a:    x,y,z=stdin.readline().split()    y=int(y);z=int(z)    d[y].append([z,x])ans=''for i in d:    d[i].sort(reverse=True)    if len(d[i])>2 and d[i][1][0]==d[i][2][0]:ans+='?'    else:ans+=d[i][0][1]+' '+d[i][1][1]    ans+='\n'stdout.write(ans)

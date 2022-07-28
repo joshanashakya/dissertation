@@ -1,0 +1,1 @@
+n,k=map(int,input().split(' '))arr=list(map(int,input().split(' '))) l=len(arr) def ans():    greater=0    prev=0    for i in range(l):                greater=(.5*((i+1)**2))+(.5*(i+1))                if greater>=k:            dif=int(k-prev)            return arr[dif-1]                    prev=greaterprint(ans())                            

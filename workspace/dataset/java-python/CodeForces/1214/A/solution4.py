@@ -1,0 +1,1 @@
+rub = int(input())dolls = int(input())eur = int(input()) dollars = []euros = []for i in [1, 2, 5, 10, 20, 50, 100]:    dollars.append(dolls*i)for j in [5, 10, 20, 50, 100, 200]:    euros.append(eur*j) res = float('inf') for i in range(0, rub+1, euros[0]):    res = min(res, (rub - i)%dollars[0]) print(rub if res==float('inf') else res)

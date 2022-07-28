@@ -1,0 +1,1 @@
+cases = int(input())while cases:    cases -= 1    a, b = map(int, input().split())    arr = list(map(int, input().split()))    ans = 0    for i in range(1, 1000):        if i in arr:            ans += 1            continue        else:            if b > 0:                ans +=1                b -= 1            else:                break    print(ans) 

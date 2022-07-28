@@ -1,0 +1,1 @@
+n = int(input())s = input() arr = set(list(s))if len(arr) < n:    print("NO") else:    ans = []    d = {}     for i in s:        if i in d:            ans[-1] += i        else:            d[i] = 1            ans.append(i)        print("YES")    for i in ans[:n-1]:        print(i)     print(''.join(ans[n-1:]))     

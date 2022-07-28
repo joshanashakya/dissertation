@@ -1,0 +1,1 @@
+import java.util.Scanner; public class Vsa {     public static void main(String[] args) {         Scanner in = new Scanner(System.in);         int n, m, k;        n = in.nextInt();        m = in.nextInt();        k = in.nextInt();         boolean b = m >= n && k >= n;        System.out.println((b) ? "YES" : "NO");     }}

@@ -1,0 +1,1 @@
+n = int(input())for i in range(n):    if i % 2 == 0:        if n % 2 == 1:            print("WB"*((n//2) - 1) + "WBW")        else:            print("WB"*(n//2))    else:        if n % 2 == 1:            print("BW"*((n//2) - 1) + "BWB")        else:            print("BW"*(n//2))  		 				  	 			 	 		  			   	

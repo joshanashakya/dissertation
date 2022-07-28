@@ -1,0 +1,1 @@
+import mathn,s=map(int,input().split())dist=[]for _ in range(n):    x,y,k=map(int,input().split())    dist.append([math.sqrt(x*x+y*y),k])left=1000000-sdist.sort(key = lambda x: x[0])ans=0i=-1while ans<left:    i+=1    if i==n:        break    ans=ans+dist[i][1]if i>=0 and i<n:    print(dist[i][0])else:    print("-1")

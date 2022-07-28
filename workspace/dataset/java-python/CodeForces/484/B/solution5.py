@@ -1,0 +1,1 @@
+n=int(input())l=list(map(int,input().split(' ')))l=list(set(l)) lb=[-1]*3000001# print(l)for i in l:    lb[i+1]=ifor i in range(1,3000001):    if(lb[i]==-1):        lb[i]=lb[i-1]ans=0maxi=2*l[-1]for i in l:    x=2*i    while x<=maxi:        ans=max(ans,lb[x]%i)        x+=i      ans=max(ans,lb[x]%i)  print(ans) 

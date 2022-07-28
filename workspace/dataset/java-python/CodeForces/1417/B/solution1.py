@@ -1,0 +1,2 @@
+import sys, functools, collections, bisect, math,
+    heapqinput = sys.stdin.readline  # print = sys.stdout.writesys.setrecursionlimit(200000)mod = 10**9 + 7 t = int(input())for _ in range(t):    n,k = map(int,input().strip().split())    arr = list(map(int,input().strip().split()))        res = ['0']*n    a = collections.Counter()    b = collections.Counter()    for i in range(n):        x = k-arr[i]        if a[x] < b[x]:            res[i] = '1'            a[arr[i]] += 1        else:            b[arr[i]] += 1    print(' '.join(res))

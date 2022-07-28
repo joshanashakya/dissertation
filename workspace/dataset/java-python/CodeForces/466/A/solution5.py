@@ -1,0 +1,1 @@
+n, m, a, b = list(map(int, input().split()))#n = numero de viagens#m = numero de viagens do ticket especial#a = preco de ticket individual#b = preco do ticket especialif(b/m < a):	money1 = 0	money1 += b*int(n/m)	money1 += (n%m)*a	money2 = b*(int(n/m)+1)	print(min(money1, money2))else:	print(n*a)

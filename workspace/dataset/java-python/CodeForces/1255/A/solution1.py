@@ -1,0 +1,1 @@
+t=int(input())while (t):    a,b=map(int,input().split())    if a<b:        a,b=b,a    ans=(a-b)//5    m=(a-b)%5    if m==1 or m==2:        ans+=1    elif m==3 or m==4:        ans+=2    print(ans)        t-=1            

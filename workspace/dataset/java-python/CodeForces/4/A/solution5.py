@@ -1,0 +1,1 @@
+kg = int(input())if kg <= 2:    print ("NO")else:    for n in range(2, kg, 2):        if (kg - n) % 2 == 0:            print ("YES")            break        elif n == kg - 1 or n == kg - 2:            print ("NO")

@@ -1,0 +1,1 @@
+'''input3 33 1 1''' n,m = map(int, input().split(" ")) l = list(map(int, input().split(" "))) l.sort()prev = 0req = 0 for i in range(len(l)):	req += 1 	if l[i] > prev:		prev += 1 req += l[len(l)-1] - prev# print(req) print(sum(l)-req) 

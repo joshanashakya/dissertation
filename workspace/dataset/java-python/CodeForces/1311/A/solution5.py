@@ -1,0 +1,1 @@
+t=int(input())for _ in range(t):    a,b=map(int,input().split())    if(abs(a-b)==0):        print('0')    elif(abs(a-b)%2==0 and a-abs(a-b)==b):        print('1')    elif(abs(a-b)%2==0 and a-abs(a-b)!=b):        print('2')    elif(abs(a-b)%2!=0 and a+abs(a-b)==b):        print('1')    else:        print('2')

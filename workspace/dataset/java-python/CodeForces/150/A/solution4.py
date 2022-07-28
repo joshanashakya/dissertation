@@ -1,0 +1,1 @@
+def factorize(n):    p = 2    r = []    while p * p <= n:        while n % p == 0:            r.append(p)            n //= p        p += 1    if n > 1:        r.append(n)    return r  q = int(input())f = factorize(q)if len(f) <= 1:    print(1)    print(0)elif len(f) == 2:    print(2)else:    print(1)    print(f[0] * f[1])

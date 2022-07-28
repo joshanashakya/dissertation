@@ -1,0 +1,1 @@
+l1,r1,l2,r2,k=map(int,input().split()) if l2<=l1:	if r1>=l1:		n1=l1		n2=min(r1,r2)	else:		n1=0		n2=0else:	if r1>=l1:		n1=l2		n2=min(r1,r2)	else:		n1=0		n2=0if n1!=0 or n2!=0:	ans=(n2-n1)+1	if k in range(n1,n2+1):		ans-=1	print(max(0,ans))else:	print(0)

@@ -1,0 +1,1 @@
+def canFill(cola_volumes, can_capacities):    total_volume = sum(cola_volumes)    can_capacities.sort()    if total_volume <= can_capacities[-1] + can_capacities[-2]:        return "YES"    return "NO" no_of_cans = int(input())cola_volumes = list(map(int, input().split()))can_capacities = list(map(int, input().split()))print(canFill(cola_volumes, can_capacities))

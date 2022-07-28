@@ -1,0 +1,1 @@
+n,s,t=map(int,input().split())x=list(map(int,input().split()))if(s==t):    print('0')else:    pos=s    k=0    f=0    for i in range(0,n):        if(pos==t):            f=1            break        pos=x[pos-1]        k=k+1        if(pos>n):            pos=pos%n    if(f==1):        print(k)    else:        print('-1')

@@ -1,0 +1,1 @@
+a=list(map(int,input().split()))arr=list(map(int,input().split()))n=a[0]dp=[ [0 for i in range(4)] for j in range(n+1)]for i in range(4):    dp[0][i]=(-10)**(27)for i in range(1,n+1):    for j in range(1,4):        x=arr[i-1]*a[j]+dp[i][j-1]        y=dp[i-1][j]        dp[i][j]= max(x,y)print(dp[n][3])

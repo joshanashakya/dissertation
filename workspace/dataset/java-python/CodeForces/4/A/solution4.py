@@ -1,0 +1,1 @@
+kg = int(input())if kg <= 2:    print ("NO")else:    for n in range(2, round(kg/2) + 1, 2):        if (kg - n) % 2 == 0:            print ("YES")            break        elif n == round (kg/2) or n == round (kg/2) - 1:            print ("NO")

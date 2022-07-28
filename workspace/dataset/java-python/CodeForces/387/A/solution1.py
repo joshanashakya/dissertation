@@ -1,0 +1,1 @@
+a = input().split(':')b = input().split(':')   x  = int(a[0]) * 60 + int(a[1])y  = int(b[0]) * 60 + int(b[1])  if y>x: x = ((int(a[0])+24) * 60 ) + int(a[1])  z = x - y hr = str(z // 60).rjust(2 , '0')z %=60mi = str(z).rjust(2 , '0') print(f"{hr}:{mi}") 

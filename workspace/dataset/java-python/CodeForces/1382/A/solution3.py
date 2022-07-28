@@ -1,0 +1,1 @@
+for _ in range(int(input())):    n, m = [int(x) for x in input().split()]    arr = set([int(x) for x in input().split()])    brr = set([int(x) for x in input().split()])        x = arr.intersection(brr)    if(len(x)==0):        print("NO")    else:        print("YES\n{} {}".format(1,list(x)[0]))

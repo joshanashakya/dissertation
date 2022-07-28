@@ -1,0 +1,1 @@
+t = int(input())for j in range(t):	n, a, b = map(int, input().split())	x, res = ord('a'), ''	for i in range(a - b + 1):		res += chr(x)	for i in range(b - 1):		x += 1		res += chr(x)	# print(res)	k = len(res)	ans = res	for i in range(k, n):		ans += res[i % k]	print(ans)

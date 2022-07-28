@@ -1,0 +1,1 @@
+n, a=map(int, input().split())l=[int(x) for x in input().split()]if n==1:	print(0)	exit()l.sort()ans1=l[-2]-l[0]+min(abs(a-l[-2]), abs(a-l[0]))ans2=l[-1]-l[1]+min(abs(a-l[-1]), abs(a-l[1]))print(min(ans1, ans2))

@@ -1,0 +1,1 @@
+for _ in range(int(input())):    n = int(input())    a = [int(x) for x in input().split()]    maxi = 0    for i in range(1, n):        if a[i-1]>a[i]:            maxi = max(maxi, a[i-1]-a[i])            a[i] = a[i-1]    temp = bin(maxi)    if temp[2] == '0':        print(len(temp)-3)    else:        print(len(temp)-2)

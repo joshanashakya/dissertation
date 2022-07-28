@@ -1,0 +1,1 @@
+n,k=map(int,input().split());s=[i for i in str(n)];i=0n=len(s)for i in range(n):  x=i  for j in range(i+1,min(n,i+k+1)):    if s[x]<s[j]:x=j  #print(s,x)  s=s[:i]+[s[x]]+s[i:x]+s[x+1:]  k-=x-iprint("".join(s))

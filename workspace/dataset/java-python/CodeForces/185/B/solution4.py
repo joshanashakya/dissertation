@@ -1,0 +1,1 @@
+def gribnye(s, a, b, c):    if a == b == c == s == 0:        return [0.0]    elif a == b == c == 0 and s != 0:        return 0, 0, 0    a1 = a * s / (a + b + c)    b1 = b * s / (a + b + c)    c1 = c * s / (a + b + c)    return a1, b1, c1  S = int(input())A, B, C = [int(i) for i in input().split()]print(*gribnye(S, A, B, C))

@@ -1,0 +1,1 @@
+a, b = [], []for s in input().replace(';',',').split(','):	try:		n = int(s)		if (n > 0 and s[0] != '0') or (n == 0 and len(s) == 1): a.append(s)		else: b.append(s)	except Exception:		b.append(s) if a: print('"'+','.join(a)+'"')else: print('-') if b: print('"'+','.join(b)+'"')else: print('-')

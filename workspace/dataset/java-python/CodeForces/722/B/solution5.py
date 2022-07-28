@@ -1,0 +1,1 @@
+ n = int(input())  t =  list(map(int,input().split()))x = 'aeiouy'r=0for j in range(n):     f = input()    p=0    for i in f:        if i in x:            p+=1    #print(p,j)    if p== t[j]:        r+=1 #print(r)if r==n:    print('YES')else:    print('NO')

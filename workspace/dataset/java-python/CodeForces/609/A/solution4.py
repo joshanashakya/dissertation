@@ -1,0 +1,1 @@
+ls=[]sum1=0lis=[]n=int(input())m=int(input())for i in range(n):       ls.append(int(input()))ls.sort()for i in ls[::-1]:       sum1+=i       lis.append(i)       if sum1>=m:              breakprint(len(lis))              

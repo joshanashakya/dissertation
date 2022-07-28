@@ -1,0 +1,1 @@
+from sys import stdin n = int(stdin.readline())x1,x2 = map(int,stdin.readline().split())ys = [] for i in range(n):    m,b = map(int,stdin.readline().split())    ys.append([x1*m+b,x2*m+b]) ys.sort() intersect = Falsefor i in range(1,n):    if ys[i-1][1] > ys[i][1]:        intersect = Trueif intersect:    print("YES")else:    print("NO")	  	  	 		   	 		    	 	 		 			

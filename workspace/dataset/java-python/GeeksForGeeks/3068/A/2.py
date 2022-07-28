@@ -1,0 +1,18 @@
+
+
+# Python3 implementation of above approach 
+  
+# Instantiate the string 
+s = "Mr John Smith "
+  
+# Trim the given string 
+s = s.strip() 
+  
+# Replace All space (unicode is \\s) to %20 
+s = s.replace(' ', "%20") 
+  
+# Display the result 
+print(s)  
+  
+# This code is contributed by vinayak 
+

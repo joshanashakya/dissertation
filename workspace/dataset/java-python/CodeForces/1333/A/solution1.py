@@ -1,0 +1,1 @@
+for _ in range(int(input())):    c,r=map(int,input().split())    grid=[[] for _ in range(c)]    grid[0].append('W')    for i in grid:        for _ in range(r):            i.append('B')    grid[0].remove(grid[0][-1])    for i in grid:        print(''.join(i))

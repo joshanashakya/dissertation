@@ -1,0 +1,1 @@
+n = int(input())p = max(map(int, input().split()))ans = 'YES'for i in range(n - 1):    w , h = map(int, input().split())    if w > h:        w, h = h, w    if h <= p:        p = h    elif w <= p:        p = w    else :        ans = 'NO'        breakprint(ans)

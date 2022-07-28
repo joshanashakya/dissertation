@@ -1,0 +1,1 @@
+num = int(input())arr = list(map(int, input().split())) + [10] summ = []ct =1for i in range(num):    if arr[i] == arr[i+1]:        ct += 1    else:        summ.append(ct)        ct =1# print(summ)ln = len(summ)ans = 0for i in range(ln-1):    x = min(summ[i], summ[i+1]) * 2    if x > ans:        ans = x print(ans) 

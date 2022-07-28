@@ -1,0 +1,1 @@
+a=int(input())c=[[] for i in range(a)]h=0for i in range(a):	b=input()	for j in range(a):		c[i].append(b[j])	h+=b.count('C')*(b.count('C')-1)//2for j in range(a):	num=0	for i in range(a):		if c[i][j]=='C':num+=1	h+=num*(num-1)//2print(h)

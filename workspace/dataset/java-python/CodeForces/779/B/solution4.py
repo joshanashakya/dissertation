@@ -1,0 +1,1 @@
+n,k=map(int,input().split())n=str(n)if(len(n)<=k):    print(len(n)-1)else:    n=str(n)    count=0    ans=0    for i in range(len(n)-1,-1,-1):        if(n[i]=="0"):            count=count+1            if(count==k):                break        else:            ans=ans+1    if(count!=k):        print(len(n)-1)    else:        print(ans)

@@ -1,0 +1,1 @@
+matrix = []for i in range(5):    row = list(map(int, input().split()))    matrix.append(row)r=0c=0for i in range(5):    for j in range(5):        if matrix[i][j] == 1:            if (i != 2):                r = abs(2-i)            if (j != 2):                c = abs(2-j)                 print(r+c)

@@ -1,0 +1,1 @@
+n,k,x=map(int,input().split())*a,=map(int,input().split())l=[0]*(n+1)r=[0]*(n+1)for i in range(0,n):  l[i+1]=l[i]|a[i]  r[n-i-1]=r[n-i]|a[n-i-1]num=x**kres=-1for i in range(0,n):  res=max(l[i]|(a[i]*num)|r[i+1],res)print(res)  

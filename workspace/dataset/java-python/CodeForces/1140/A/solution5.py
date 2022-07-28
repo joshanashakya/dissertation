@@ -1,0 +1,1 @@
+n, a = int(input()), [*map(int,input().split())]ans = 0; i = 0 while i<n:    ans += 1    max_day = a[i]    while(i+1 < max_day):        i += 1        max_day = max(max_day, a[i])        i += 1    print(ans)

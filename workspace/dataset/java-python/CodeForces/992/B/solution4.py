@@ -1,0 +1,1 @@
+def gcd(a,b):    while b:        a%=b        a,b=b,a    return al,r,x,y=map(int,input().split())if y%x!=0:    print(0)    exit()ans=0n=y//xi=1while i*i<=n:    if n%i==0:        c=n//i        if l<=c*x<=r and l<=i*x<=r and gcd(i,c)==1:            if i*i==n:                ans+=1            else:                ans+=2    i+=1print(ans)

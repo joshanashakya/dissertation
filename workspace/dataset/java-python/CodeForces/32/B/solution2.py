@@ -1,0 +1,1 @@
+s = input()res = ""i = 0while i < len(s):    if s[i] == ".":        res = res + str(0)        i += 1    elif i < len(s)-1:        if s[i] == "-" and s[i+1] == "-":            res = res + str(2)            i += 2        elif s[i] == "-" and s[i+1] == ".":            res = res + str(1)            i += 2print(res)

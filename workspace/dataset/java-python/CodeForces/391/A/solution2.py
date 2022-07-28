@@ -1,0 +1,1 @@
+arr = input()  count = 0insertion = 0for i in range(1,len(arr)):    if arr[i] == arr[i-1]:        count += 1    else:        if (count+1) % 2 == 0:            insertion += 1        count = 0if (count + 1) % 2 == 0:    insertion += 1print(insertion)

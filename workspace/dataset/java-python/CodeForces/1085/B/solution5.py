@@ -1,0 +1,1 @@
+n,k=map(int,input().split())if n<k:print(k+n)else:   ans=[];i=1   while i*i<=n:      if n%i==0 and n%(n//i)==0:ans.append([i,n//i])      i+=1   ans1=[]   for j in ans:      if k>j[0]:ans1.append(k*j[1]+j[0])      if k>j[1]:ans1.append(k*j[0]+j[1])   print(min(ans1))

@@ -1,0 +1,1 @@
+diag=[]nond=[]t=int(input())for a in range(t):    s=input()    for b in range(len(s)):                if b==0+a or b==t-1-a:            diag.append(s[b])        else:            nond.append(s[b])if len(diag)==diag.count(diag[0]) and len(nond)==nond.count(nond[0]) and nond[0]!=diag[0]:    print("YES")else:    print("NO")

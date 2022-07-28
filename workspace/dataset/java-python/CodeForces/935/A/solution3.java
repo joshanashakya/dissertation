@@ -1,0 +1,1 @@
+import java.io.IOException;import java.util.Scanner; public class fafa {	public static void main (String[] args) throws IOException	{		Scanner scanner=new Scanner(System.in);		int m = scanner.nextInt();		int count=0;		for(int i=1;i<=m/2;i++) {			if((m-i)%i==0) {				count+=1;			}		}		System.out.print(count);	} }

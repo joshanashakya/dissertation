@@ -1,0 +1,1 @@
+a = list(input())flag = 1k = 0for i in range(len(a)):    if(int(a[i])%2==0 and int(a[i])<int(a[-1])):        k = i        flag = 0        break    elif(int(a[i])%2==0):        k = i        flag = 0        if(flag):    print(-1)else:    temp = a[k]    a[k] = a[-1]    a[-1] = temp    print("".join(a))

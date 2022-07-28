@@ -1,0 +1,1 @@
+a=list(input())x=a.index("^")l=0r=0for i,j in enumerate(a):    if i<x and j!="=":        l+=int(j)*(x-i)    if i>x and j!="=":        r+=int(j)*(i-x)if l>r:    print("left")elif r>l:    print("right")else:    print("balance")

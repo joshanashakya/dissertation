@@ -1,0 +1,1 @@
+n = int(input())arr=list(map(int,input().split()))map = {}for i in arr:    if i not in map:        map[i]=1    else:        map[i]+=1max = 0for i in map:    if map[i]>max:        max = map[i]print (n-max)

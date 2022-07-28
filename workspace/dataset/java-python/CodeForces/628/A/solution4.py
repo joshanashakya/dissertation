@@ -1,0 +1,1 @@
+n, b, p = map(int, input().split())  max_pow = 1while True:    aux = max_pow*2    if aux > n:        break    max_pow = aux bottles = 0towels = n * pwhile n != 1:    bottles += max_pow * b + max_pow // 2    n -= max_pow // 2     while max_pow > n:        max_pow /= 2  print(int(bottles), towels)  	 	     	 							 	   	  	 		

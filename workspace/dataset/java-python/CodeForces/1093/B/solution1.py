@@ -1,0 +1,1 @@
+for _ in range(int(input())):    s = input()    if s == s[::-1]:        if s.count(s[0]) == len(s):            print(-1)        else:            s = list(s)            x = s.pop()            print(x + ''.join(s))    else:        print(s)

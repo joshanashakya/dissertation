@@ -1,0 +1,1 @@
+def solution():	st=input()	arr=[0]*26 	for i in st:		arr[ord(i)-ord('a')]+=1 	odds=0		for i in arr:				if i%2==1:			odds+=1		 	tot=odds 	if tot!=0 and tot%2==0:		print('Second')	else:		print('First')  	return  solution()

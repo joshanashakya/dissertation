@@ -1,0 +1,1 @@
+n,m,k = map(int,input().split())if k>n+m-2:    print(-1)else:    if n<m:        n,m = m,n    if m%(k+1)==0:        print(m*n//(k+1))    else:        if k<=n-1:            if k>m-1:                print(n//(k+1)*m)            else:                print(max(n//(k+1)*m,m//(k+1)*n))        else:            print(m//(k-(n-1)+1))

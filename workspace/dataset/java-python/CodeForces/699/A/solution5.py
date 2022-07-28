@@ -1,0 +1,1 @@
+from sys import stdinn = int(stdin.readline())s = stdin.readline()[:-1]a = list(map(int, stdin.readline().split()))min_val = Nonefor i in range(n-1):    if s[i] == 'R' and s[i+1] == 'L':        val = abs(a[i] - a[i+1])//2        if not min_val:            min_val = val        min_val = min(min_val, val)        if not min_val:    print(-1)else:    print(min_val)

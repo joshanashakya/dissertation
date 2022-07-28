@@ -1,0 +1,1 @@
+import java.util.*; public class question { 	public static void main(String[] args) {					Scanner sc = new Scanner(System.in);		int n = sc.nextInt();		String s = sc.next(); 		int j=0, a=0;		while( j<s.length() ) {			System.out.print( s.charAt( j ) );			a++;			j+=a;		}		}}				

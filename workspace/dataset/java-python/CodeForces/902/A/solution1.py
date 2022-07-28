@@ -1,0 +1,1 @@
+n, m = map(int, input().split())cur_pos = 0for i in range(n):    a, b = map(int, input().split())    if(a<=cur_pos):        if(b>cur_pos):            cur_pos = bif(cur_pos == m):    print('YES')else:    print('NO')

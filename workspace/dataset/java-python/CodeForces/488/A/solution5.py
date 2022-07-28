@@ -1,0 +1,1 @@
+n=int(input())count=0for x in range(n,8888888889):    x=str(x)    if "8" in x:        if count==0:            count+=1            continue        else:            print(count)            exit()    else:        count+=1

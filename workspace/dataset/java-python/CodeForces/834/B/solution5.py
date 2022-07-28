@@ -1,0 +1,1 @@
+n,k=map(int,input().split())s=input()s=list(s)m=0a=[0]*26b=[0]*26for i in s:    q=ord(i)-65    a[q]+=1for i in s:    q=ord(i)-65    if a[q]>0:        if b[q]==0:            if k==0:                m=1                break            b[q]=1            k-=1        a[q]-=1        if a[q]==0:            k+=1            b[q]=1if m==0:    print("NO")else:    print("YES")

@@ -1,0 +1,1 @@
+import java.util.Scanner; public class OmkarAndComp { 	public static void main(String[] args) {		Scanner s = new Scanner(System.in);		int t= s.nextInt();		while(t>0)		{				int natasha=  s.nextInt();		for(int i = natasha ;i>0;i--)		{			System.out.print(1+" ");		}		System.out.println();		t--;		} 	} }

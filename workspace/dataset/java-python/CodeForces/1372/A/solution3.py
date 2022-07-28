@@ -1,0 +1,1 @@
+def create_array(n):    a = []    up = 0    c = 0    while(n):        up = c*2 + 1        a.append(up) if up > 0 else -1        n -= 1        if n == 0:            break        down = 1000 - up        a.append(down) if down > 0 else -1        n -= 1        c += 1    print(" ".join(map(str, a)))      for _ in range(int(input())):    create_array(int(input()))

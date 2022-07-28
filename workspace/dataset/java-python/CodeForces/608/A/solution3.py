@@ -1,0 +1,1 @@
+n , top = map(int , input().split()) r = lambda : list(map(int, input().split()))arr = [r() for _ in range(n)] arr.sort(reverse=True , key = lambda x: x[0])arr.append([0 , 0])c = 0 # print(arr) for i,j in arr:    c += top - i    c += max(0 , j - c)    top = i print(c) 

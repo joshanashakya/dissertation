@@ -1,0 +1,1 @@
+n = int(input())ax, ay = map(int, input().split())bx, by = map(int, input().split())cx, cy = map(int, input().split())if ax in range(min(bx, cx),  max(bx, cx)) or ay in range(min(by, cy), max(by, cy)):  print('NO')else:  print('YES')

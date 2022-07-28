@@ -1,0 +1,1 @@
+from sys import stdin ,stdoutfrom os import pathrd = lambda:stdin.readline().strip()wr = stdout.writeif(path.exists('input.txt')):    stdin = open("input.txt","r")import time ,math#------------------------------------=a,b,c,d = map(int,rd().split())print((a/b)/(1-((1-a/b)*(1-c/d))))

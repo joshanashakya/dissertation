@@ -1,0 +1,1 @@
+import mathn, m, x, y, a, b = map(int, input().split())gcd = math.gcd(a, b)a //= gcdb //= gcdmax_ratio = min(n // a, m // b)a *= max_ratiob *= max_ratiox1 = max(0, min(x - (a + 1) // 2, n - a))y1 = max(0, min(y - (b + 1) // 2, m - b))print(x1, y1, x1 + a, y1 + b)

@@ -1,0 +1,1 @@
+# cook your dish heren=int(input())n=str(n)c4=n.count('4')c7=n.count('7')count=c4+c7ans=0for i in str(count):    if i=='4' or i=='7':        ans=1    else:        ans=0        breakif(ans==0):    print("NO")else:    print("YES")    

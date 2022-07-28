@@ -1,0 +1,1 @@
+n, m = map(int, input().split())arr = [1] + list(map(int, input().split()))ln = len(arr) ans = 0for i in range(ln-1):    step = arr[i+1] - arr[i]     if step >= 0:        ans += step    else:        ans += (step+n) print(ans) 

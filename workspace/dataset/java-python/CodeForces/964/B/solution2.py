@@ -1,0 +1,1 @@
+n, a, b, c, t = map(int, input().split())l = list(map(int, input().split()))f = [0] * 1001for i in l: f[i] -= -1tmp = 0tmp2 = 0for i in range(1, t):    tmp += (t - i) * f[i]tmp = n * a + tmp * c - tmp * bprint(max(n * a, tmp))

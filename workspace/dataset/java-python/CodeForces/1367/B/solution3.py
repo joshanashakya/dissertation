@@ -1,0 +1,1 @@
+for t in range(int(input())):	n=int(input())	a=list(map(int,input().split()))	e,o=0,0	for x in range(n):		if x%2==0 and a[x]%2!=0:			e+=1		if x%2!=0 and a[x]%2==0:			o+=1	if e!=o:		print(-1)	else:		print(e)

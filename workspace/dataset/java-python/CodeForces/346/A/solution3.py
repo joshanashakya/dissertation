@@ -1,0 +1,1 @@
+n, listo2, c= int(input()), [], 0import mathlisto = list(map(int,input().split()))listo.sort()obaa = listo[0] def gcd(x, y):     while(y):         x, y = y, x % y     return x  for i in range(1,n):    GCD = gcd(listo[i], obaa)    obaa = GCDbomba = int(listo[n-1]/GCD) - n if bomba % 2 == 0:    print("Bob")else:    print("Alice")

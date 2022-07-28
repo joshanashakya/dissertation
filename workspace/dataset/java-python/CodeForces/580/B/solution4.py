@@ -1,0 +1,1 @@
+n,d=map(int,input().split())mat=[]for _ in range(n):    mat.append(list(map(int,input().split())))mat.sort(key=lambda x:x[0]) dp=[0]*ndp[0]=mat[0][1]for i in range(1,n):    dp[i]=dp[i-1]+mat[i][1]i=j=0res=dp[0]while i<n and  j<n:    if mat[j][0]-mat[i][0]<d:        res=max(res,dp[j]-dp[i]+mat[i][1])        j+=1    else:        i+=1print(res)

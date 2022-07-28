@@ -1,0 +1,1 @@
+n=int(input())l=list(map(int,input().split()))ans=10000000000000for i in range (n):    l1=list(map(int,input().split()))    t=0    for j in range (len(l1)):        t=l1[j]*5+t    t=t+(len(l1)*15)    # print(t)    ans = min(ans,t)print(ans)

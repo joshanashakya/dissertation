@@ -1,0 +1,1 @@
+q = int(input()) for bruh in range(q):    n = int(input())    students = list(map(int, input().split()))     i = students.index(1)     new_order = students[i+1:] + students[:i]     if new_order == sorted(new_order) or new_order == sorted(new_order, reverse= True):        print("YES")    else:        print("NO")

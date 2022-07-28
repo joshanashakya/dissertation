@@ -1,0 +1,1 @@
+n,m = list(map(int,input().split())) def bin_search(m):    o = m+1    l = 0    while o != l:        k = (o+l)//2        if k*(k-1) >= 2*m:            o = k        else:            l = k+1    return o print(max(n-2*m,0), n-bin_search(m))

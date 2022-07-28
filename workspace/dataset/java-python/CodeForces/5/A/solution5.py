@@ -1,0 +1,1 @@
+d=[]score=0while True:    try:        line=input()    except:        print(score)        break    if line[0]=='+':        s=line[1:]        d.append(s)    elif line[0]=='-':        s=line[1:]        d.remove(s)    else:        s=line.split(':')        s=len(s[1])        score+=s*len(d)

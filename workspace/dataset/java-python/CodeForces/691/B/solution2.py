@@ -1,0 +1,1 @@
+a={"A":"A","H":"H","I":"I","M":"M","O":"O","T":"T","U":"U","V":"V","W":"W","X":"X","Y":"Y","b":"d","d":"b",   "o":"o","v":"v","w":"w","x":"x","q":"p","p":"q"}s=input().rstrip()n=len(s)ans="TAK"for i in range(n//2):    if a.get(s[i])==None or a[s[i]]!=s[-(i+1)]:        ans="NIE"        breakif n%2 and (a.get(s[n//2])==None or a[s[n//2]]!=s[n//2]):    ans="NIE"print(ans)

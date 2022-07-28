@@ -1,0 +1,1 @@
+n, k = map(int, input().split())ah = 2*nl = list(map(int, input().split()))i = 1while i < ah:    if k == 0:        break    if l[i]-l[i-1] > 1 and l[i]-l[i+1] > 1:        l[i] -= 1        k -= 1     i += 1for j in l:    print(j, end=' ')

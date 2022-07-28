@@ -1,0 +1,1 @@
+import re arr = "Vaporeon, Jolteon, Flareon, Espeon, Umbreon, Leafeon, Glaceon, Sylveon".split(", ") n = int(input())s = input()s = s.replace('.' , '(.*)')for i in range(len(arr)):    arr[i] = arr[i].lower() for i in arr:    if re.match(s , i) and len(i)==n:        print(i)        break 

@@ -1,0 +1,1 @@
+for _ in range(int(input())):  n,k=map(int,input().split())  s=['a']*n  for i in range(1,n+1):    c=(i*(i+1))//2    if k<=c:       pos1=i       pos2=c-k       break # print(pos1,pos2)  s[-pos1-1]='b'  s[-pos1+pos2]='b'  print("".join(s))   

@@ -1,0 +1,1 @@
+import mathn = int(input())s = input()num = 0nums = [] for i in range(n):    if s[i] == 'W' and num != 0:        nums.append(num)        num = 0    elif s[i] == 'B':        num += 1  if num != 0:    nums.append(num) print(len(nums))print(*nums)  

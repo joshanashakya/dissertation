@@ -1,0 +1,1 @@
+n, k = map(int, input().split()) if k == 0:    lst1 = []    for b in range(1, n+1):        lst1.append(b)    res1 = [str(r) for r in lst1]    print(' '.join(res1))else:    lst = []    for x in range(k):        lst.append(n - x)    for y in range(k, n):        lst.append(y - k + 1)    res = [str(b) for b in lst]    print(' '.join(res)) 

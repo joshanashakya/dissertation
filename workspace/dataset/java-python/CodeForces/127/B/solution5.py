@@ -1,0 +1,1 @@
+from sys import stdin,stdoutfrom collections import Counternmbr = lambda: int(stdin.readline())lst = lambda: list(map(int,stdin.readline().split()))for _ in range(1):#nmbr()):    n=nmbr()    a=lst()    d=Counter(a)    cnt=0    for k,v in d.items():        cnt+=v//2    print(cnt//2)

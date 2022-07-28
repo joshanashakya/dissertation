@@ -1,0 +1,1 @@
+for _ in range(int(input())):    a,b=map(int,input().split())    x=set(map(int,input().split()))    y=set(map(int,input().split()))    z=x.intersection(y)    if len(z):        print("YES")        print(1,list(z)[0])    else:        print("NO")

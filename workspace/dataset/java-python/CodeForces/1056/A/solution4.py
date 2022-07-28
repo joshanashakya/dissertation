@@ -1,0 +1,1 @@
+n=int(input())b=list((map(int,input().split())))c=b[1:]c=list(set(c))for i in range(n-1):    a=list(map(int,input().split()))    a=a[1:]    a=list(set(a))    for i in a:        if i in c:            c.append(i)l=list(set(c))for i in l:    if(c.count(i)==n):        print(i,end=" ")print()

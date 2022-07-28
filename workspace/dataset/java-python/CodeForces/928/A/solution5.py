@@ -1,0 +1,1 @@
+def transform(s):    return s.upper().replace('O', '0').replace('I', '1').replace('L', '1') login = transform(input())reserved = [transform(input()) for i in range(int(input()))]print ("No" if login in reserved else "Yes")

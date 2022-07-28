@@ -1,0 +1,1 @@
+ n = int(input())lis = list(map(int,input().split()))m =  int(input())edges = []for d in range(m):    edges.append(list(map(int,input().split())))    edges.sort(key  = lambda x: x[2])visited = []count = 0for i in range(m):    if edges[i][1] not in visited:        visited.append(edges[i][1])        count += edges[i][2] if len(visited) == n-1:    print(count)else:    print(-1)

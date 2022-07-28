@@ -1,0 +1,1 @@
+import java.util.*;import java.math.*;import java.lang.*;import javafx.util.Pair; public class gfg{      public static void main(String args[])  {    Scanner sc = new Scanner(System.in);    int n = sc.nextInt();    int m = sc.nextInt();        int max = Math.max(n,m);    int min = Math.min(n,m);        System.out.println(max-1 + " " + min);      } }

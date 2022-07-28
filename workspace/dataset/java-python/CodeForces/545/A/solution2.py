@@ -1,0 +1,1 @@
+a = int(input())c = []d = []for i in range(a):    b = list(map(int, input().split()))    c.append(b)for i in range(len(c)):    b = 0    for k in range(len(c)):        if c[i][k] == 1 or c[i][k] == 3:            b += 1    if b == 0:        d.append(i)print(len(d))for i in range(len(d)):    print(d[i] + 1, end = ' ')

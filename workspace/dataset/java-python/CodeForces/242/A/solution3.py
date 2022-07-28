@@ -1,0 +1,1 @@
+x,y,a,b=map(int,input().split())if(a<b and (x-a)<=(b-a)) or (a==b and x<y):    print(0)else:    c=0    for i in range(a,x+1):        for j in range(b,y+1):            if(i>j):                c=c+1    print(c)    for i in range(a,x+1):        for j in range(b,y+1):            if(i>j):                print(i,j)

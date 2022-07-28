@@ -1,0 +1,1 @@
+def new(n):	while n%10==0:		n = n//10	return n if __name__ == '__main__':	n = int(input())	d = dict()	c = 1	flag = 1	d.setdefault(n,1)	while flag ==1 :		n = n+1		n = new(n)		d.setdefault(n,0)		if d[n] == 0:			d[n] = 1			c+=1		else:			flag = 0	print(c)

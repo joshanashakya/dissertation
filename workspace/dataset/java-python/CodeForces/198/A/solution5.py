@@ -1,0 +1,1 @@
+import mathk,b,n,t=list(map(int,input().split()))if k>1:        ans=math.ceil(n-math.log((t+b/(k-1))/(1+b/(k-1)))/math.log(k))    print(max(0,ans))else:    z=1+n*b    f=1    ans=0    while f:        if t+ans*b>=z:            f=0            break        else:            ans=ans+1    print(ans)

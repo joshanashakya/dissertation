@@ -1,0 +1,1 @@
+n=int(input())p=ni=1l=1sd=0s=0j=1while(n>9):    n=int(n/10)    i*=10    l+=1if p>9:    while i!=1:        s=p-i        if j==1:            s=s+1        sd+=s*l        p=i        i=i/10        l-=1        j+=1    p=9print(int(p+sd))        

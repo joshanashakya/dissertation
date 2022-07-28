@@ -1,0 +1,1 @@
+inp = input().split(' ')n = int(inp[0])hrs = int(inp[1])order = input().split(' ')order = [int(x) for x in order] order = sorted(order)time = 0for chapters in order:    tps  =  chapters * hrs    if hrs > 1:        hrs -= 1    time += tps print(time)    

@@ -1,0 +1,1 @@
+n,h,k = [int(i) for i in input().split()]H = [int(i) for i in input().split()] curr = 0t = 0 for i in range(n):    if curr + H[i] <= h:        curr += H[i]        t += curr//k        curr %= k    else:        t  += 1        curr = H[i]%k        t += H[i]//k if curr!=0:    t += 1print(t) 

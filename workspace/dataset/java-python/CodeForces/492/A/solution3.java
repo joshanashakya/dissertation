@@ -1,0 +1,1 @@
+import java.util.Scanner; public class A492 {    public static void main(String[] args) {        Scanner scanner = new Scanner(System.in);        int n = scanner.nextInt(), i = 1, sum = 0;        while (n > sum) {            sum += i;            n = n - sum;            if (n<0) break;            i++;        }        System.out.println(i-1);    }}

@@ -1,0 +1,1 @@
+s=str(input())s1=str(input())s2=str(input())n=len(s)n1=len(s1)n2=len(s2)for i in range(n2):    if (s2[i].isupper()):        p=s.find(s2[i].lower())        print(s1[p].upper(),end='')    elif (s2[i].islower()):        p=s.find(s2[i])        print(s1[p],end='')    else:        print(s2[i],end='')

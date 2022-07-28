@@ -1,0 +1,1 @@
+from sys import stdinfrom bisect import bisect_right as br input = stdin.readline n = int(input())lst = list(map(int, input().strip().split()))arr = sorted(lst)ind = br(arr, arr[0]) - 1if ind == 0:    print(lst.index(arr[0]) + 1)else:    print('Still Rozdil')

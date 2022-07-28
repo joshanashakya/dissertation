@@ -1,0 +1,1 @@
+import mathimport sys x,y=map(int,input().split()) is_right=(x*y>=0)r=(x**2+y**2)**0.5 if r%1==0:    print("black")else:    if is_right:        if r%2>1:            print("white")        else:            print("black")    else:        if r%2>1:            print("black")        else:            print("white") 

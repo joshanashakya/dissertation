@@ -1,0 +1,1 @@
+n=int(input())a=[*map(int,input().split())]b=[]for i in range(n-1):    b.append([min(a[i],a[i+1]),max(a[i],a[i+1])])for i in range(n-1):    for j in range(n-1):        if i==j:            continue        if b[i][0]<b[j][0]<b[i][1]<b[j][1] or b[i][0]<b[j][1]<b[i][1]<b[j][0]:            print('yes')            exit(0)print('no')

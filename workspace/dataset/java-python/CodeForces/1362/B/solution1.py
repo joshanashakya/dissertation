@@ -1,0 +1,1 @@
+for t in range(int(input())):    n = int(input())    s = sorted(list(map(int, input().split())))    k = -1    for i in range(1, 1025):        temp = []        for j in s:            temp.append(j^i)        if sorted(temp) == s:            k = i            break    print(k)

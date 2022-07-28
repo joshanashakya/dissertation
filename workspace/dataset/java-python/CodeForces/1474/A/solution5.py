@@ -1,0 +1,1 @@
+# https://codeforces.com/problemset/problem/1474/A for _ in range(int(input())):    n = int(input())    b = tuple(map(int, list(input())))    ans = "1"    for i in range(1, n):        if b[i - 1] + int(ans[-1]) == b[i] + 1:            ans += "0"        else:            ans += "1"    print(ans) 

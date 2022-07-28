@@ -1,0 +1,1 @@
+def solve(a, b):     # if b > a:    #     return -1    #     # u = int((a + b) / (2 * b))    # x = (a + b) / 2 * u     if b > a:        return -1    else:        sol1 = (a + b) / (2 * int((a + b) / (2 * b)))        return sol1  if __name__ == '__main__':    a, b = map(int, input().split())        result = solve(a, b)        print(result)

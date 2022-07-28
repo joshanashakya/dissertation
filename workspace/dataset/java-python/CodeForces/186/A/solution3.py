@@ -1,0 +1,1 @@
+def solution():	a=input()	b=input()	ca=[0]*26	cb=[0]*26 	for i in a:		ca[ord(i)-ord('a')]+=1	for i in b:		cb[ord(i)-ord('a')]+=1 	if ca!=cb:		print('NO')		return	strike=0	n=len(a)	for i in range(n):		if a[i]!=b[i]:			if strike<2:				strike+=1			else:				print('NO')				return	print('YES') 	return		   solution()

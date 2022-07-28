@@ -1,0 +1,1 @@
+import mathfrom collections import defaultdict, Counter, deque INF = float('inf') t = int(input())for _ in range(t):	n = int(input())	arr = list(map(int, input().split())) 	peak = -INF	diff = 0	for i in range(n):		peak = max(peak, arr[i])		diff = max(diff, peak - arr[i]) 	p = 1	cnt = 0	while p <= diff:		p *= 2		cnt += 1 	print(cnt) 

@@ -1,0 +1,1 @@
+n = int(input())a1 = list(map(int, input().split()))a2 = list(map(int, input().split()))vis, j = set(), n-1res = jfor i in range(n-1, -1, -1):    if a2[i] in vis:        continue    if a2[i] == a1[j]:        j -= 1        continue    while a2[i] != a1[j]:        vis.add(a1[j])        j -= 1    j -= 1    res = j+1print(n-res-1)

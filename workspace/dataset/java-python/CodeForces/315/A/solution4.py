@@ -1,0 +1,1 @@
+n = int(input())count = 0a = []b = []for i in range(n):    x, y = map(int, input().split())    a.append(x)    b.append(y)v = b.copy()for i in range(n):    del v[i]    if not a[i] in v:        count += 1    v = b.copy()print(count) 

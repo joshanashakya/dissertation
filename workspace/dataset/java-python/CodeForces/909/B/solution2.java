@@ -1,0 +1,1 @@
+import java.math.BigInteger;import java.util.*; public class Main {     static Scanner input = new Scanner(System.in);     public static void main(String[] args) {            int n = input.nextInt();            System.out.println((int)Math.pow(n+1, 2)/4);    }}

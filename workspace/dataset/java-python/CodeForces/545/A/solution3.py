@@ -1,0 +1,1 @@
+n = int(input())ans = []for j in range(n):    c = True    a = [i for i in input().split()]    for i in a:        if i == '1' or i == '3':            c = False    if c:        ans.append(j + 1)print(len(ans))print(*ans)

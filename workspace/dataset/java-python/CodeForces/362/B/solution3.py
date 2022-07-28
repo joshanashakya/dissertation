@@ -1,0 +1,1 @@
+n, m = map(int, input().split())f = True if not m == 0:    s = sorted([int(i) for i in input().split()])     if s[0] == 1 or s[m-1] == n:        f = False    else:        for i in range(m-2):            if s[i] + 2 == s[i+1] + 1 == s[i+2]:                f = False print('YES' if f else 'NO')

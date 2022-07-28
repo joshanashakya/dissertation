@@ -1,0 +1,1 @@
+a, b, c = map(int, input().split()) divs = [1] * 1000001mod = 1073741824 for i in range(2, 1000001):    for j in range(i, 1000001, i):        divs[j] += 1 ans = 0for i in range(1, a + 1):    for j in range(1, b + 1):        for k in range(1, c + 1):            ans += (divs[i * j * k]) % mod print(ans % (mod * 2 ** 30))

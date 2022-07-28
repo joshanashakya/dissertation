@@ -1,0 +1,1 @@
+def mlt(): return map(int, input().split())  x, y = mlt()  def mn(x):    n = 2    if x % 2 == 0:        return 2     n = 3    while n*n <= x:        if x % n == 0:            return n        n += 2     return x  while y > x:    if mn(y) > x:        print(y)        exit(0)    y -= 1 print(-1)

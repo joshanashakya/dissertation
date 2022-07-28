@@ -1,0 +1,1 @@
+n = input()a = [int(each) for each in input().split()]a.sort(reverse=True)len0 = len(a)res = a[0]for i in range(1, len0):    if a[i] > a[i - 1] - 1:        a[i] = a[i - 1] - 1        if a[i] == 0:            break    res += a[i]print(res)  			   			 	  	 	 				 		 				 	

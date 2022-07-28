@@ -1,0 +1,1 @@
+s = input() ln = cap = low = digit = False  for char in s:    if len(s) > 4:        ln = True    if char.isupper():        cap = True    if char.islower():        low = True    if char.isdigit():        digit = True if ln == cap == low == digit != False:    print("Correct")else:    print("Too weak") 

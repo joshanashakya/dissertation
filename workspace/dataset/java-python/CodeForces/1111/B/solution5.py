@@ -1,0 +1,1 @@
+n,k,m = list(map(int, input().split()))a = list(map(int, input().split())) a.sort()s = sum(a)ans = 0 if m<n :    ans = (s+m)/n     for i in range(1,m+1) :        ans = max(ans,(sum(a[i:]) + (m-i))/(n-i)) else :    ans = a[-1] + min(m-n+1,k) print(ans) 

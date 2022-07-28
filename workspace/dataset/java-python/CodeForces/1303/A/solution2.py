@@ -1,0 +1,1 @@
+from re import findallfrom typing import Iterator  def get_num_input() -> Iterator[int]:    return map(int, input().split())  def main() -> None:    print(sum(map(len, findall(r"(?<=1)0+(?=1)", input()))))  if __name__ == "__main__":    ONLY_ONCE: bool = False    for _ in range(1 if ONLY_ONCE else int(input())):        main()

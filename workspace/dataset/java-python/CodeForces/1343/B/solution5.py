@@ -1,0 +1,1 @@
+t = int(input())for _ in range(t):    n = int(input())    a =[0]*n    if(n%4 == 0):        print("YES")        q = 2        for i in range(0,n//2):            a[i] = q            q += 2        q = 1        for i in range(n//2,n):            a[i] = q            q += 2        a[-1] += n//2        print(*a)    else:        print("NO")

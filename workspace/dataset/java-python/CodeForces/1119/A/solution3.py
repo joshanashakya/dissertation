@@ -1,0 +1,1 @@
+n = int(input())c = list(map(int, input().split()))i = 0j = n-1ans1 = 0ans2 = 0while i < n-1 and j > 0:	if c[j] != c[0]:		ans1 = j		break	else :		j -= 1	if c[i] != c[n-1]:		ans2 = n - 1 - i		break	else :		i += 1 print(max(ans1, ans2))

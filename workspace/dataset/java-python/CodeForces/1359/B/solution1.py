@@ -1,0 +1,1 @@
+testcases = int(input()) for testcase in range(testcases):    v, h, p1, p2 = [int(i) for i in input().split()]    r = 0    for v in range(v):        tiles = input()        double_dot = tiles.count('..')        single_dot = tiles.count('.')        r += min(single_dot*p1, double_dot*p2 + (single_dot - double_dot*2)*p1)    print(r)

@@ -1,0 +1,1 @@
+def fact(n):    if n == 0:        return 1    return n * fact(n-1)  cake = []chk = 0 for _ in range(int(input())):    s = input()    c = s.count('C')    chk += fact(c)//(2 * fact(c-2)) if c > 1 else 0    cake.append(s) cake = zip(*cake) for s in cake:    c = s.count('C')    chk += fact(c)//(2 * fact(c - 2)) if c > 1 else 0 print(chk)

@@ -1,0 +1,1 @@
+h, m = [int(x) for x in input().split(':')]a = int(input())hrs = a // 60h += hrsa = a - (60 * hrs)m += aif m >= 60:    m -= 60    h += 1t = str(h % 24).zfill(2) + ':' + str(m).zfill(2)print(t) 			 	  	   			 		 	  				 			

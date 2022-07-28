@@ -1,0 +1,1 @@
+temp=input().split(" ")n=int(temp[0])m=int(temp[1]) nli=[]mli=[] for _ in range(n):    nli.append(input()) for _ in range(m):    mli.append(input()) res=n-mcount=0for x in mli:    if x in nli:        count+=1 res=res+(count%2)if res>0:    print("YES") else:    print("NO")

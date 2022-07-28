@@ -1,0 +1,1 @@
+n=int(input())s=input()a=[0]*nl=[]k=""m=-1for i in range(n-1):    c=0    k=s[i:i+2]    if k not in l:        l.append(k)        for j in range(n-1):            if s[j:j+2]==k:                c+=1        a[c]=k        m=max(m,c)            print(a[m])     

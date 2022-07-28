@@ -1,0 +1,1 @@
+import systrash = int(input()) - 1ID = list(map(int,input().split()))otv = int()ID.sort()i = 0while i < trash:    if ID.count(ID[i]) == 2 and ID[i] != 0:        otv += 1        ID.remove(ID[i])        ID.remove(ID[i])        trash -= 2        continue    elif ID.count(ID[i]) > 2 and ID[i] != 0:        print('-1')        sys.exit()    i += 1print(otv)

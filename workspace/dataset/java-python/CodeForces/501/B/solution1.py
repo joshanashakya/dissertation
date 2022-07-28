@@ -1,0 +1,1 @@
+def get_key(my_dict , val):    for key, value in my_dict.items():        if val == value:            return key     return -1 n = int(input())arr = {}for _ in range(n):    a , b = input().split()    x = get_key(arr , a)    if x == -1:        arr[a] = b     else:        arr[x] = b print(len(arr))for i , j in arr.items():    print(i , j)

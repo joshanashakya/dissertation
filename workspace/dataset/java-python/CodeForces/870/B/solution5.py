@@ -1,0 +1,1 @@
+def maxOfSegmentMins(array,len,k):     if k ==1:         return min(array)     if k==2:         return max(array[0],array[n-1])     return max(array)  if __name__=='__main__':    n, k = map(int, input().split())    array = [int(x) for x in input().split()]     print(maxOfSegmentMins(array, len(array), k))

@@ -1,0 +1,1 @@
+s=input()n=len(s)l,r=[],[]for i in range(n-1):  if s[i:i+2]=="AB":    l.append(i)  elif s[i:i+2]=="BA":    r.append(i)i,j=0,0while i<len(l) and j<len(r):  if l[i]+2<=r[j]:    print("YES")    exit()  else:    j+=1l,r=r,li,j=0,0while i<len(l) and j<len(r):  if l[i]+2<=r[j]:    print("YES")    exit()  else:    j+=1print("NO")

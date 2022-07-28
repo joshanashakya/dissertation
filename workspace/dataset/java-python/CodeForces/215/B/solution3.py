@@ -1,0 +1,1 @@
+import mathr1 = [int(r1) for r1 in input().split()]p1 = [int(p1) for p1 in input().split()]p2 = [int(p2) for p2 in input().split()]a, b = map(int, input().split())x = math.sqrt((b * max(p1[1:]) * max(r1[1:]) * max(r1[1:])) / (a * min(p2[1:]) + b * max(p1[1:])))print(round(x, 15))

@@ -1,0 +1,1 @@
+import sysLI=lambda:list(map(int, sys.stdin.readline().split()))MI=lambda:map(int, sys.stdin.readline().split())SI=lambda:sys.stdin.readline().strip('\n')II=lambda:int(sys.stdin.readline()) n, a, b=MI()a, b=max(a, b), min(a, b)l=sorted(LI(), reverse=True)ans=sum(l[:b])/b+sum(l[b:b+a])/aprint(ans)

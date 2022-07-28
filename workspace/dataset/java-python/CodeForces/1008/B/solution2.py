@@ -1,0 +1,1 @@
+n = int(input())prev = 10 ** 9 + 1ans = 'YES'for _ in range(n):  w, h = map(int, input().split())  if w > h:    w, h = h, w  if h <= prev:    prev = h  elif w <= prev:    prev = w  else:    ans = 'NO'print(ans)

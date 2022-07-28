@@ -1,0 +1,1 @@
+if __name__ == '__main__':    Y = lambda: list(map(int, input().split()))    P = lambda: map(int, input().split())     a = Y()    a = sorted(a, key=a.count)     if a[2] != a[-1]:        print("Alien")    elif a[0] == a[1]:        print("Elephant")    else:        print("Bear")

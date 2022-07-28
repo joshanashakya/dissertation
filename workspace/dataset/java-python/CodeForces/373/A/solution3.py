@@ -1,0 +1,1 @@
+from collections import Counterk=int(input())*2x=[]for i in range(4):    x.extend(list(input()))c=Counter(x)v=0del c['.']for i in c:    if c[i]>k:        v=1        breakif v==1:    print("NO")else:    print("YES")

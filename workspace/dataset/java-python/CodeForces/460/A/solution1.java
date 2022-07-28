@@ -1,0 +1,1 @@
+import java.util.*;public class Main {  public static void main(String[] args) {    Scanner myObj = new Scanner(System.in);    int x = myObj.nextInt();    int y = myObj.nextInt();    int counter = 1;    while (x > 0){      x--;       if(counter % y == 0){        x++;      }      counter++;    }    System.out.println(counter - 1);  }}

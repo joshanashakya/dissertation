@@ -1,0 +1,1 @@
+from collections import Counter def solve():    str1=input()    str2=input()    count,j=1,0     for i in range(len(str2)):        if str1[j]==str2[i]:            count+=1            j+=1     return count        print(solve())

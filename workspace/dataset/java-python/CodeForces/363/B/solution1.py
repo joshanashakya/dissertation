@@ -1,0 +1,1 @@
+def solution():	n,k=map(int,input().split())	arr=list(map(int,input().split()))	sol=[0]*(n-k+1)	sol[0]=sum(arr[:k])	mn=sol[0]	idx=1	for i in range(1,n-k+1):		sol[i]=sol[i-1]-arr[i-1]+arr[i+k-1]		if sol[i]<mn:			mn=sol[i]			idx=i+1	print(idx) 	  	returnsolution()

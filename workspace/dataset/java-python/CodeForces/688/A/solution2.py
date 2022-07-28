@@ -1,0 +1,1 @@
+if __name__ == '__main__':    n, d = map(int, input().split())    mx, current = 0, 0    for _ in range(d):        if '0' in input():            current += 1        else:            mx = max(mx, current)            current = 0    print(max(mx, current))

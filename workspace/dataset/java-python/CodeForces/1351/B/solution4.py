@@ -1,0 +1,1 @@
+for _ in range(int(input())):    a1, b1 = map(int, input().split())    a2, b2 = map(int, input().split())    m1 = max(a1, b1)    m2 = max(a2, b2)    n1 = a1 if b1 == m1 else b1    n2 = a2 if b2 == m2 else b2    if m1 == m2 and m1 == n1 + n2:        print("YES")    else:        print("NO")

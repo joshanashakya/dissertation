@@ -1,0 +1,1 @@
+t=int(input())for i in range(t):    n,k=map(int,input().split())    l=list(map(int,input().split()))    q=sum(l)    if(q<=k):        print(0)    else:        s=0        j=0        while(s<=k):            s=s+l[j]            j=j+1        print(l.index(max(l[:j]))+1)

@@ -1,0 +1,1 @@
+s=[*input()]k=int(input())s.extend(['?']*k)m=0for i in range(1,len(s)//2+1):    for j in range(len(s)-2*i+1):        q=0        for k in range(i):            if s[j+k]=='?' or s[j+k+i]=='?':                continue            if s[j+k]!=s[j+k+i]:                q=1                break        if q:            continue        else:            m=i            breakprint(2*m)

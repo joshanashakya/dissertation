@@ -1,0 +1,1 @@
+t = int(input()) for i in range(t):  n, k = map(int, input().split())  a = list(map(int, input().split()))  s = set(a)    ans = []  if len(list(s)) > k:    print(-1)    continue  print(k * n)  for j in range(n):    for un in s:      ans.append(un)    for l in range(k-len(list(s))):      ans.append(1)  print(*ans)    

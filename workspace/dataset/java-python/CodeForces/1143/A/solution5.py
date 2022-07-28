@@ -1,0 +1,1 @@
+n=int(input())a=list(map(int, input().split()))z=a.count(0)o=a.count(1)ze=0on=0for i in range(n):    if ze==z:        print(i)        break;    elif on==o:        print(i)        break;    if a[i]==0:ze+=1    else:on+=1

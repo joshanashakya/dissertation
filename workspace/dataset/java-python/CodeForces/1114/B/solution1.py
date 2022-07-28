@@ -1,0 +1,1 @@
+n, m, k = map(int, input().split())a = list(map(int, input().split()))a1 = []for i in range(n):    a1.append((a[i], i))a1.sort(reverse=True)_max = [0] * nans = 0for i in range(m * k):    _max[a1[i][1]] = 1    ans += a1[i][0]print(ans)_sum = 0ans_ar = []for i in range(n):    _sum += _max[i]    if _sum == m:        ans_ar.append(i + 1)        _sum = 0ans_ar.pop()print(*ans_ar)     

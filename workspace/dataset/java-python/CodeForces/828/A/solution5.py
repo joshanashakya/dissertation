@@ -1,0 +1,1 @@
+l=input().split()n=int(l[0])a=int(l[1])b=int(l[2])l=input().split()li=[int(i) for i in l]ans=0rem=0for i in li:    if(i==2):        if(b>0):            b-=1        else:            ans+=2    else:        if(a>0):            a-=1        elif(b>0):            b-=1            rem+=1        elif(rem):            rem-=1        else:            ans+=1print(ans)

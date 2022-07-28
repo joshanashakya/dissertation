@@ -1,0 +1,1 @@
+from sys import maxsize, stdout, stdin,stderrmod = int(1e9 + 7)def I(): return int(stdin.readline())def lint(): return [int(x) for x in stdin.readline().split()]def S(): return input().strip()def grid(r, c): return [lint() for i in range(r)]from collections import defaultdictimport math              n,k=lint()print(3*n + min(k-1,n-k))

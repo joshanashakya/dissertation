@@ -1,0 +1,1 @@
+n, p = list(map(int, input().split()))s = list(input())s[n-1] = chr(ord(s[n-1]) + 1)i = n - 1while i >= 0 and i < n:    if ord(s[i]) >= ord('a') + p:        s[i] = 'a'        i -= 1        s[i] = chr(ord(s[i]) + 1)    elif i > 0 and s[i] == s[i-1] or i > 1 and s[i] == s[i-2]:        s[i] = chr(ord(s[i]) + 1)    else:        i += 1print("NO" if i < 0 else "".join(s))

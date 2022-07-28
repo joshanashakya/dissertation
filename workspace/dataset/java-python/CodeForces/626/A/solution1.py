@@ -1,0 +1,1 @@
+n = int(input())s = input()ans = 0for i in range(n):    x = s[i]    for j in range(i+1,n):        x += s[j]        if x.count('D') == x.count('U') and x.count('L') == x.count('R'):            ans +=1  print(ans)

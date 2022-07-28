@@ -1,0 +1,1 @@
+n,a,d=map(int,input().split())p=[0]*nfor i in range(n):    t,v=map(int,input().split())    x=v/a    y=(2*d/a) ** 0.5    p[i]=t+y if y<x else t+d/v+x/2    p[i]=max(p[i-1],p[i])print('\n'.join(map(str,p)))

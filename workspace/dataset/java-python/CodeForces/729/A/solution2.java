@@ -1,0 +1,1 @@
+import java.util.*;import java.io.*;import java.util.stream.*; public class Solution {	public static void main(String[] args) throws Exception {		Scanner scan = new Scanner(System.in);		int n = scan.nextInt();		scan.nextLine();		String s = scan.nextLine();		System.out.println(s.replaceAll("ogo(go)*", "***"));	}	}

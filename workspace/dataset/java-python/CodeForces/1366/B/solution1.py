@@ -1,0 +1,1 @@
+t=int(input()) for _ in range(t):    n,posof1,m=list(map(int,input().split(" ")))    res=0    begin=posof1    end=posof1    for x in range(m):         temp=list(map(int,input().split(" ")))        if temp[0]<=begin<=temp[1] or temp[0]<=end<=temp[1]:            begin=min(begin,temp[0])            end=max(end,temp[1])     print(end-begin+1)   

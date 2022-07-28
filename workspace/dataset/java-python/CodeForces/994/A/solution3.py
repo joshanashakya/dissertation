@@ -1,0 +1,1 @@
+n,m=map(int,input().split())l1=list(map(int,input().split()))l2=list(map(int,input().split()))d2={}for i in l2:    if(i in d2):        d2[i]+=1    else:        d2[i]=1for i in l1:    if(i in d2):        print(i,end=' ')        d2[i]-=1        if(d2[i]<=0):            del(d2[i])

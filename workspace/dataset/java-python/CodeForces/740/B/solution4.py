@@ -1,0 +1,1 @@
+n,m = map(int, input().strip().split(' '))lst = list(map(int, input().strip().split(' ')))s=0for i in range(m):    l,r = map(int, input().strip().split(' '))    s1=0    s1=sum(lst[l-1:r])    if s1>0:        s+=s1print(s)    

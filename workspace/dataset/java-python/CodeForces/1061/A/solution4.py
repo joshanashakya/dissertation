@@ -1,0 +1,1 @@
+max_coin, aim = map(int, input().split())need_more = aimcoins_used = 0 while(max_coin > 0):    coins_used += need_more // max_coin    need_more = need_more % max_coin    max_coin -= 1 print(coins_used)

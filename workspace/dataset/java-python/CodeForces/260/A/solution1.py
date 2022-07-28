@@ -1,0 +1,1 @@
+a, b, n = [int(x) for x in input().split()]for i in range(10):    temp = str(a) + str(i)    if(int(temp) % b == 0):        a = temp        breakif(int(a) % b != 0):    a = -1else:    a = a + ('0'*(n-1))print(a)

@@ -1,0 +1,1 @@
+s=int(input())n=0l=[]for i in range(0,s,1234567):    for j in range(0,s,123456):            n=s-i-j            l.append(n)                if any(i>=0 and i%1234==0 for i in l):    print("YES")elif s%1234567==0 or s%123456==0 or s%1234==0:    print("YES")else:    print("NO")    

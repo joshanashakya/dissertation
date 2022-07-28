@@ -1,0 +1,1 @@
+reFile = open('input.txt', 'r')pos = int(reFile.readline()) for i in range(3):    cup1, cup2 = [int(item) for item in reFile.readline().split(' ')]    if cup1 == pos:        pos = cup2    elif cup2 == pos:        pos = cup1reFile.close() wFile = open('output.txt', 'w')wFile.write(str(pos))wFile.close()

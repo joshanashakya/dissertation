@@ -1,0 +1,1 @@
+def solve(arr):  if arr[0] > 15 :    return 15  for i in range(len(arr) -1):    if arr[i+1]-arr[i] > 15:      return arr[i]+15  return 90 if arr[-1]+15 > 90 else arr[-1]+15          def main() :  n = int(input())  arr = list(map(int, input().split(' ')))  print(solve(arr))main()

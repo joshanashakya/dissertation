@@ -1,0 +1,1 @@
+import java.util.Scanner;import java.util.Arrays;public class Main {public static void main (String args[]){    Scanner scan=new Scanner(System.in);    int n=scan.nextInt();    int m = scan.nextInt();    int ans = 0;    for(int a=0;a*a<=n && a<=m;a++){        int b = n-a*a;        if(a+(b*b)==m){            ans++;        }    }    System.out.print(ans);        }}

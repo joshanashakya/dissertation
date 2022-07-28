@@ -1,0 +1,1 @@
+w,h  = map(int,input().split())l = []for i in range(h):    s = input()    l.append(s)for i in range(w):    s =''    for j in range(h-1,-1,-1):        s += l[j][i]*2    s = s[::-1]    print(s)    print(s)

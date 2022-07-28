@@ -1,0 +1,1 @@
+n, k = map(int, input().split())if n == 1 :    print (0)else:    l = sorted(list(map(int, input().split())))    m = sorted(list({(x-l[0])%k for x in l[1:]}))    if m[0] == 0 and len(m) == 1:        q = 0        for i in l[1:]:            q+= (i-l[0])//k        print(q)    else:        print(-1)

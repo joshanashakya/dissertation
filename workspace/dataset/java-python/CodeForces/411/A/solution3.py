@@ -1,0 +1,1 @@
+S=input()if len(S)<5:    print("Too weak")else:    B,Sm,D=0,0,0    for Val in S:        if Val.isupper():            B+=1        elif Val.islower():            Sm+=1        elif Val.isdigit():            D+=1    if B>0 and Sm>0 and D>0:        print("Correct")    else:        print("Too weak")            

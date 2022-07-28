@@ -1,0 +1,1 @@
+a,b,c,d = [int(i) for i in input().split(' ')]if a==c:    s = abs(d-b)    if a+s>1000:        a-=s    else:        a+=s    print(a,b,a,d)elif b==d:    s = abs(a-c)    if a+s>1000:        b-=s    else:        b+=s    print(a,b,c,b)elif abs(a-c)==abs(b-d):    print(a,d, c, b)else:    print(-1)

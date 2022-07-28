@@ -1,0 +1,1 @@
+x, y = map(int, input().split()) dx = -1 if x < 0 else 1dy = -1 if y < 0 else 1v = abs(x) + abs(y)x1 = min(0, v * dx)y1 = v * dy if x1 == 0 else 0x2 = max(0, v * dx)y2 = v * dy if x2 == 0 else 0 print(x1, y1, x2, y2)

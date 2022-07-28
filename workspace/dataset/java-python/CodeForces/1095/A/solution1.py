@@ -1,0 +1,1 @@
+n = int(input())m=input()s=[]s[:0]=mc=0a=[]if n==1:    print(m)else:    for i in range(1,n,1):        if(c<len(s)):            a.append(s[c])        else:            break        c+=i        print(''.join(map(str, a))) 

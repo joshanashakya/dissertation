@@ -1,0 +1,1 @@
+import itertoolslis = list(map(int, input().split()))lis = list(itertools.combinations(lis, 3)) f = 0for i in lis:    a, b, c = i    if a+b > c and a+c > b and b+c > a:        f = 1        break    elif a+b == c or a+c == b or b+c == a:        f = 2if f == 1:    print("TRIANGLE")elif f == 2:    print("SEGMENT")else:    print("IMPOSSIBLE")

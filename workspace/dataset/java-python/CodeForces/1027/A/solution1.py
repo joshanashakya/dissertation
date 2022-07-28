@@ -1,0 +1,1 @@
+t = int(input())for _ in range(t):    n = int(input())    s = str(input())    flag = True    for i in range(n):        c1 = ord(s[i])-ord('a')        c2 = ord(s[n-1-i])-ord('a')        if c1 == c2 or abs(c1-c2) == 2:            pass        else:            flag = False            break    if flag:        print('YES')    else:        print('NO')

@@ -1,0 +1,1 @@
+n = int(input()) mapping = {    "Icosahedron": 20,    "Dodecahedron": 12,    "Cube": 6,    "Octahedron": 8,    "Tetrahedron": 4,} sum = 0for i in range(n):    string = input()    sum += mapping[string] print(sum)		    	    	   		      	  	 			

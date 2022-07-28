@@ -1,0 +1,1 @@
+for _ in range(int(input())):    n,m = map(int, input().split())    for i in range(n):        for j in range(m):            if i==0 and j==0:                print('W',end='')            else:print('B',end='')        print()

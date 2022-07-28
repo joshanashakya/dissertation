@@ -1,0 +1,1 @@
+inp = input() n = int(inp[0:(len(inp) - 1)]) n -= 1 base = (n // 4) * 16 + (n % 2) * 7 def cnt(s):  if s == 'f': return 1  if s == 'e': return 2  if s == 'd': return 3  if s == 'a': return 4  if s == 'b': return 5  if s == 'c': return 6 print(base + cnt(inp[len(inp) - 1]))

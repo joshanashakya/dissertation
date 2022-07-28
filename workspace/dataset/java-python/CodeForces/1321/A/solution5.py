@@ -1,0 +1,1 @@
+n = int(input())X = list(map(int, input().split()))Y = list(map(int, input().split()))a = 0b = 0for i in range(n):    a += X[i] > Y[i]    b += X[i] < Y[i]if a == 0:    print(-1)else:    print(b // a + 1)

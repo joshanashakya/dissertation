@@ -1,0 +1,1 @@
+n,k = map(int, input().strip().split(' '))lst = list(map(int, input().strip().split(' ')))m=max(lst)lst2=[]s=0for i in range(n):    lst2.append(m-lst[i])    s+=m-lst[i]if s>k:    print(-1)else:    k-=s    k=k/n    for i in range(n):        print("{0:.6f}".format(k+lst2[i]))

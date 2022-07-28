@@ -1,0 +1,1 @@
+def all_same(s):    return len(set(s)) == 1  def solve(flag):     for row in flag:        if not all_same(row):            return "NO"        for i in range(len(flag)-2):        if flag[i] == flag[i+1]:            return "NO"         return "YES" rows, cols = map(int, input().split())flag = []for row in range(rows):    row = input()    flag.append(row)  print(solve(flag))

@@ -1,0 +1,1 @@
+n = int(input())d1,a,d2 = {},[],{}l = list(map(int,input().split()))for i in l:	if i in d1:		d1[i]+=1	else:		d1[i]=1for i in d1:	a.append(d1[i])m = max(a)for i in l:	if i in d2:		d2[i]+=1	else:		d2[i]=1	if d2[i]==m:		print(i)		break

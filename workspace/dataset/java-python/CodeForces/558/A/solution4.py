@@ -1,0 +1,1 @@
+n=int(input())pos=[]neg=[]for i in range(n):	x,y=map(int,input().split())	if x<0:		neg.append([x,y])	else:		pos.append([x,y])pos.sort()neg.sort(reverse=True)l1=len(pos)l2=len(neg)m=min(l1,l2)tot=0for i in range(m):	tot+=neg[i][1]+pos[i][1]if l1>l2:	tot+=pos[m][1]elif l2>l1:	tot+=neg[m][1]else:	passprint(tot)				

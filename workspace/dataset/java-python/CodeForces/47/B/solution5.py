@@ -1,0 +1,1 @@
+s = input(), input(), input()t = 0, 1, 2d = {}r = 'Impossible'for A in t:    for B in t:        for C in t:            if all(eval(x) for x in s):                d[A] = 'A'                d[B] = 'B'                d[C] = 'C'                r = d[0] + d[1] + d[2]print(r) 		 		    	 		 	      						

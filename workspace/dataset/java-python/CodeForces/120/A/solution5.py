@@ -1,0 +1,1 @@
+import syssys.stdin=open("input.txt","r")sys.stdout=open("output.txt","w")match=input()rail=int(input())if match=="front":	if rail==1:		print("L")	else:		print("R")else:	if rail==1:		print("R")	else:		print("L")

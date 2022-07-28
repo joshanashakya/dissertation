@@ -1,0 +1,1 @@
+n=int(input())arr=list(map(int,input().split()))dp=[0]*(n+1)for i in arr:  if i<=n:dp[i]+=1ar=[]for i in range(1,n+1):  if dp[i]==0:ar.append(i)cnt=0for i in range(n):  if arr[i]>n:arr[i]=ar[cnt];cnt+=1  elif dp[arr[i]]>=2:dp[arr[i]]-=1;arr[i]=ar[cnt];cnt+=1print(*arr)

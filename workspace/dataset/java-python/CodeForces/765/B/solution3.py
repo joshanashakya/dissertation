@@ -1,0 +1,1 @@
+import string def solve (seq) :    ref = list(string.ascii_lowercase)        index = 0    for x in seq :        if x > ref[index] :            return "NO"        elif x == ref[index] :            if index == 25 :                continue            index += 1                    return "YES"                    print (solve(input()))                           

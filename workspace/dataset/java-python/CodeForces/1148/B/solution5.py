@@ -1,0 +1,1 @@
+n,m,ta,tb,k=map(int, input().split())a=list(map(int, input().split()))b=list(map(int, input().split())) if n<=k:    print(-1)else:    ind=0    maxx=-1    for i in range(k+1):        arriv=a[i]+ta        while(ind<m and b[ind]<arriv):            ind+=1        if ind+(k-i)>=m:            maxx=-1            break        else:            maxx=max(maxx, b[ind+k-i]+tb)    print(maxx) 

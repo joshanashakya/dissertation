@@ -1,0 +1,1 @@
+n= input()a = list(map(int, input().split())) t = 0count = 1000000for i in range(1,101):    cost = sum(0 if k==i else abs(i-k) -1 for k in a)    if cost < count:        count = cost        t = iprint(t,count)

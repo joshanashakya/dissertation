@@ -1,0 +1,1 @@
+for _ in range(int(input())):    s=input()    a=s.count('S')    b=s.count('P')    c=s.count('R')    x=max(a,b,c)    if a==x:        print('R'*len(s))    elif b==x:        print('S'*len(s))    else:        print('P'*len(s))

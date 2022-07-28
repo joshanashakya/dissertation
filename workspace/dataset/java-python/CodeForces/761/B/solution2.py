@@ -1,0 +1,1 @@
+n, l = map(int, input().split())a = list(map(int, input().split()))b = list(map(int, input().split()))aa = [0] * lbb = [0] * lfor i in range(n):    aa[a[i]-1] += 1    bb[b[i]-1] += 1for i in range(l):    if aa == bb:        print("YES")        exit(0)    bb = [bb[-1]]+bb[:-1]print("NO")

@@ -1,0 +1,1 @@
+daf = list(map(int, input().split())) daf.sort() x1 = daf[2] - daf[1] - daf[0]x2 = daf[3] - daf[2] - daf[1] x = min(x1,x2) if x > 0:    print('IMPOSSIBLE')elif x == 0:    print('SEGMENT')else:    print('TRIANGLE')

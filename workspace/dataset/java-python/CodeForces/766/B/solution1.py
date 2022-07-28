@@ -1,0 +1,1 @@
+from itertools import combinations def solve():    n = int(input())    ls = sorted(list(map(int, input().split())))    for x, y, z in zip(ls, ls[1:], ls[2:]):        if x > z - y and x <= y + z:            print('YES')            return    print('NO') if __name__ == '__main__':    solve()            

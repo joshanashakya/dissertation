@@ -1,0 +1,1 @@
+n = int(input())*p, = map(int, input().split()) root_lens = [0] * nfor i in range(n - 1):  root_lens[i + 1] = root_lens[p[i] - 1] + 1 dict_lens = {}for i in range(n):  dict_lens.setdefault(root_lens[i], 0)  dict_lens[root_lens[i]] += 1 print(sum(v % 2 for v in dict_lens.values()))# Thu Jan 07 2021 09:19:48 GMT+0300 (Москва, стандартное время)

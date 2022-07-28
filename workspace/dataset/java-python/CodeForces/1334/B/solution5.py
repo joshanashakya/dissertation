@@ -1,0 +1,1 @@
+t = int(input()) while t>0:    t-=1    n, x = map(int, input().split(' '))    A = list(map(int, input().split(' ')))    A.sort(reverse=True)     c = 0    temp = 0    for i in range(n):        if temp+A[i]>=(i+1)*x:            temp+=A[i]            c+=1        else:            break    print(c)

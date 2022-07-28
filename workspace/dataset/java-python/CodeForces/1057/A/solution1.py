@@ -1,0 +1,1 @@
+n = int(input())a = [0] + [0] + [int(x) for x in input().strip().split()] b = [] while a[n] >= 1:    b.append(n)    n = a[n]  b.append(1)               b.reverse()b_new = (str(x) for x in b)print(" ".join(b_new))   	 		 	  	     				 		 			

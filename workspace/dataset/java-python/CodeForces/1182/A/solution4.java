@@ -1,0 +1,1 @@
+import java.util.*; public class Absolutezero {      public static void main(String[] args) {        Scanner sc = new Scanner(System.in);        int t1=sc.nextInt();        if(t1%2!=0){            System.out.println(0);        }else {            System.out.println((int)Math.pow(2,t1/2));        }       } }

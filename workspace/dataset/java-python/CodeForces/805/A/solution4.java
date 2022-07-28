@@ -1,0 +1,1 @@
+import java.util.*;import java.math.*;public class FakeNP{	public static void main(String[] args)		{			Scanner sc = new Scanner(System.in);			int l = sc.nextInt();			int r = sc.nextInt();			if(l==r)			{				System.out.println(l);				return;						}			System.out.println(2);		}}

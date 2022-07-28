@@ -1,0 +1,1 @@
+import java.util.Scanner;public class Main {    public static void main(String args[]) {        Scanner s = new Scanner(System.in);        int t = s.nextInt();        while(t-- != 0){            long k = s.nextLong();            long x = s.nextLong();            System.out.println(x + (9 * (k - 1)));        }    }}

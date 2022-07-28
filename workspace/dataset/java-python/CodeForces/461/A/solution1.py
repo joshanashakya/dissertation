@@ -1,0 +1,1 @@
+if __name__ == '__main__' :    for _ in range(1):        n=int(input())        a=list(map(int,input().split()))        a.sort()        ans=0        for i in range(n)[:n-1]:            ans+=(i+2)*a[i]        ans+=n*a[n-1]        print(ans)

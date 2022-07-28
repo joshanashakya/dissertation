@@ -1,0 +1,1 @@
+import java.util.*; public class zmperorjgf { 	static Scanner in = new Scanner(System.in);		public static void main(String[] args) {				int n = in.nextInt();		String s = in.next();				int[] nums = { 14, 9, 1, 3, 8, 0, 2, 12, 0, 6 };				int ans = 0;				for(int i = 0; i < n; i++) {			ans |= nums[s.charAt(i)-'0'];		}		System.out.println(ans == 15 ? "YES" : "NO");			}}

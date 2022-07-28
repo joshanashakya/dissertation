@@ -1,0 +1,1 @@
+t=int(input())for _ in range(t):  n=int(input())  a=list(map(int,input().split()))  x,y=0,0  for i in range(n):    x+=a[i]    y+=a[n-i-1]    if x<=0 or y<=0:      print("NO")      break  else:    print("YES")

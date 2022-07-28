@@ -1,0 +1,1 @@
+import java.util.Scanner; public class Main { 	public static void main(String[] args) {				Scanner input = new Scanner(System.in);				int n = input.nextInt();		int x1 = (n / 7) * 2;		int x2 = (n / 7) * 2;				 x1 += Math.min(2, n % 7);		 x2 += Math.max(0, (n % 7) - 5);				System.out.println( x2 + " " + x1 );					} }

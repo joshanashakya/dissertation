@@ -1,0 +1,1 @@
+k=int(input())l=list(map(int,input().split())) l.sort()l.reverse()  s=0 if k==0:    print(0)else:        for i in range(12):        s+=l[i]        if(s>=k):            print(i+1)            break    else:        print(-1)

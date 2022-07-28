@@ -1,0 +1,5 @@
+t = int(input())
+for _ in range(t):    n, m, r, c = map(int, input().split())
+q = max(r - 1, n - r)
+w = max(c - 1, m - c)
+print(q + w)

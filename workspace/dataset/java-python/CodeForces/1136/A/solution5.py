@@ -1,0 +1,1 @@
+n=int(input())d=[]while(n>0):    l,r=map(int,input().split())    n-=1    z=[l,r]    d.append(z)m=int(input())a=0for i in range(len(d)):    d1=d[i][0]    d2=d[i][1]    if (m>=d1 or m<=d2) and m<=d2:        a+=1 print(a)

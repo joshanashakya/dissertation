@@ -1,0 +1,1 @@
+import collections, bisect, heapqn = int(input())arr = list(map(int, input().split()))arr.sort()t = []for a in arr:    if not t or a < t[0]:        heapq.heappush(t, 1)    else:        c = heapq.heappop(t)        heapq.heappush(t, c + 1)print(len(t))

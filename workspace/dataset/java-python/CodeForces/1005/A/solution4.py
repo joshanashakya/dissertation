@@ -1,0 +1,1 @@
+#%% 1005a Tanya and stairways n = int(input())staircase = 0s = []for i in [int(x) for x in input().split()]:    if i == 1 and staircase>0:        s.append(staircase)        staircase = 1    else:        staircase+=1s.append(staircase)print(len(s))print(*s)    

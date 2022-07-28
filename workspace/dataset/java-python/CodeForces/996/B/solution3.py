@@ -1,0 +1,1 @@
+from math import ceil for u in range(1):	n = int(input())	x = [int(w) for w in input().split()]		ans = []	for i in range(n):		if(i+1 >= x[i] + 1):			ans.append(i+1)		else:			t = ceil((x[i]+1 - (i+1))/n)			ans.append(i+1 + t*n)			a = min(ans)	print(ans.index(a) + 1)

@@ -1,0 +1,1 @@
+for _ in range(int(input())):    b, p, f = map(int, input().split())    h, c = map(int, input().split())     if h > c:        r = min(b//2, p)        ans = r * h + min((b-2*r)//2, f) * c    else:        r = min(b//2, f)        ans = r * c + min((b-2*r)//2, p) * h     print(ans)

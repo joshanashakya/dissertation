@@ -1,0 +1,1 @@
+import sysinput=sys.stdin.readlinet=int(input())for you in range(t):    n=int(input())    s=input()    s=s[:-1]    ans=0    mina=s    for i in range(n):        pref=s[:i]        suff=s[i:]        swaps=(n-i)        if(swaps%2):            z=suff+pref[::-1]        else:            z=suff+pref        if(z<mina):            mina=z            ans=i    print(mina)    print(ans+1)

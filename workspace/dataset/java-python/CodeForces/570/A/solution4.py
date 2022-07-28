@@ -1,0 +1,1 @@
+n, m = [int(j) for j in input().split()]mat = []for j in range(m):    mat.append([int(j) for j in input().split()])stream = n * [0]for j in range(m):    index = 0    for k in range(1, n):        if mat[j][k] > mat[j][index]:            index = k    stream[index] += 1print(stream.index(max(stream)) + 1)

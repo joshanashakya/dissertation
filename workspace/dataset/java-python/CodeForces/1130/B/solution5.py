@@ -1,0 +1,1 @@
+l2=[]n=int(input())l=list(map(int,input().split()))for i in range(2*n):    l2.append([l[i],i])l2.sort()sd,dd=l2[0][1],l2[1][1]for i in range(2,2*n):    if i%2:        dd+=abs(l2[i][1]-l2[i-2][1])    else:        sd+=abs(l2[i][1]-l2[i-2][1])print(sd+dd)    

@@ -1,0 +1,1 @@
+n,l = map(int, input().split())lanterns = list(map(int, input().split())) sorted_lanterns = sorted(lanterns) largest_distance = 0for i in range(1, n):	largest_distance = max(sorted_lanterns[i] - sorted_lanterns[i-1], largest_distance)  d = max(largest_distance/2.0, sorted_lanterns[0], l - sorted_lanterns[-1]) print(d)

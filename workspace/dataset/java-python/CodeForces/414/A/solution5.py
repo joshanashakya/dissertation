@@ -1,0 +1,1 @@
+n,k=map(int,input().split())a=n//2z=k-a+1ans=[10**9-i for i in range(1,n+1)] if z==1:    print(*ans)elif z<1 or n==1:    print(-1)else:    if n==1:        print(99)    else:        ans[0],ans[1]=z,z*2        print(*ans)

@@ -1,0 +1,1 @@
+from sys import stdinn=int(stdin.readline())l=[[0 for i in range(26)] for i in range(26)]for i in range(n):	s=stdin.readline().strip()#	s=input() if i==n-1 else input()[0:-1]	a,b=ord(s[0])-97,ord(s[-1])-97	for j in range(26):		if l[j][a]>0:l[j][b]=max(l[j][a]+len(s),l[j][b])	l[a][b]=max(l[a][b],len(s))ans=0for i in range(26):	if l[i][i]>ans:ans=l[i][i]print(ans)

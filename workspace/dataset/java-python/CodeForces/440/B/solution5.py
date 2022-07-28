@@ -1,0 +1,1 @@
+  n=int(input())a=list(map(int,input().split())) need=sum(a)//n ans=0 from math import * for i in range(n-1):	if(a[i]<=need):		a[i+1]-=need-a[i]	else:		a[i+1]+=a[i]-need	ans+=abs(a[i]-need) print(ans)

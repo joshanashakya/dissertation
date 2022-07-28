@@ -1,0 +1,1 @@
+from collections import Countera=list(input())b=list(input())d1=Counter(a)c=0d2=Counter(b)for i in d2:    if i in d1:        if d1[i]<d2[i]:            c+=d1[i]        else:            c+=d2[i]    else:        c=0        breakif c==0:    print(-1)else:    print(c)

@@ -1,0 +1,1 @@
+n, h, m = map(int, input().split())X = [h]*nfor i in range(m):    l, r,x = map(int, input().split())    l, r = l-1, r-1    for j in range(l, r+1):        X[j] = min(X[j], x)ans = 0for i in range(n):    ans += X[i]**2print(ans)

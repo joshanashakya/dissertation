@@ -1,0 +1,1 @@
+# n = int(input("Enter a number: "))n = int(input())ac = 0dc = 0if (n >= 1) and (n <= 100000):    # s = input("Enter a word: ").upper()    s = input().upper()    for c1 in s:        if c1 == 'A':            ac += 1        elif c1 == 'D':            dc += 1    if ac > dc:        print("Anton")    elif dc > ac:        print("Danik")    else:        print("Friendship")

@@ -1,0 +1,1 @@
+n,m=map(int,input().split())cor=list(map(int,input().split()))wro=list(map(int,input().split()))maxx=max(cor)minn=min(wro)extra=min(cor)if maxx>=minn:    print(-1)    exit()while True:    if (extra*2)<=maxx:        print(maxx)        exit()    maxx += 1    if maxx>=minn:        print(-1)        exit()            

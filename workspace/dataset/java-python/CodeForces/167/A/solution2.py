@@ -1,0 +1,1 @@
+from sys import stdin, stdoutinput = stdin.readline n, a, d = map(int, input().split())arr = [tuple(map(int, input().split())) for _ in range(n)]res = [0] * nfor i in range(n):    t, v = arr[i]    x = v / a    y = (2 * d / a) ** 0.5    res[i] = (t + y if y < x else t + d/v + x/2)    res[i] = max(res[i-1], res[i])print('\n'.join(map(str, res)))

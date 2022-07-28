@@ -1,0 +1,1 @@
+n,k = map(int, input().split())a = list(map(int, input().split()))solved = 0 while a[0] <= k or a[len(a)-1] <= k:    if a[0] <= k:        solved += 1        a = a[1:len(a)]    elif a[-1] <= k:        solved += 1        a = a[0:len(a)-1]    if len(a) == 0:        a = [k+1]print(solved)	   			  	  			 	    	  	 	 		

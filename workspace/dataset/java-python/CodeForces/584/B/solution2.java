@@ -1,0 +1,1 @@
+import java.math.BigInteger;import java.util.Scanner; public class Practice {	public static void main(String[] args) {				Scanner input = new Scanner(System.in);		int n = input.nextInt();		BigInteger a = new BigInteger("3").pow(3 * n);		a = a.subtract(new BigInteger("7").pow(n));				System.out.println(a.mod(new BigInteger("1000000007")));	}}

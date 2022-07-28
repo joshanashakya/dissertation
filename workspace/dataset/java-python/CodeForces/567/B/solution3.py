@@ -1,0 +1,1 @@
+n=int(input())seats=[False for x in range(1, 1000010)]ans=0state=0for x in range(n):	di, idd=input().split()	idd=int(idd)	if di=='+':		seats[idd]=True		state+=1		ans=max(ans, state)	elif di=='-':		if seats[idd]==False:			ans+=1		else:			state-=1			ans=max(ans, state)			seats[idd]=Falseprint(ans)

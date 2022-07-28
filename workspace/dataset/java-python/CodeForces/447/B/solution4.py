@@ -1,0 +1,1 @@
+s=input()k=int(input())lst=list(map(int,input().split()))lst2=[chr(i) for i in range(97,123)]dct={}for i in range(len(lst2)):    dct[lst2[i]]=lst[i]value=0alpha=max(dct.values()) for i in range(len(s)):    value+=(i+1)*dct[s[i]]    #print(value)alpha=max(dct.values())#print(alpha)value+=alpha*(k*(k+2*len(s)+1)/2)print(int(value))

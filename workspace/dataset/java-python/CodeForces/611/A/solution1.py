@@ -1,0 +1,1 @@
+s = list(input().split()) if s[-1] == "week":    if s[0] in "56":        print(53)    else:        print(52)else:    if int(s[0]) == 31:        print(7)    elif int(s[0]) == 30:        print(11)    else:        print(12)

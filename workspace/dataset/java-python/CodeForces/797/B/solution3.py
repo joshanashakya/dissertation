@@ -1,0 +1,1 @@
+n=int(input())a=list(map(int,input().split()))INF=10**18dp=[[-INF]*2 for i in range(n)]if a[0]%2==0:  dp[0][0]=a[0]else:  dp[0][1]=a[0]for i in range(1,n):  if a[i]%2:    dp[i][0]=max(dp[i-1][1]+a[i],dp[i-1][0])    dp[i][1]=max([a[i],dp[i-1][0]+a[i],dp[i-1][1]])  else:    dp[i][0]=max([a[i],dp[i-1][0]+a[i],dp[i-1][0]])    dp[i][1]=max(dp[i-1][1]+a[i],dp[i-1][1])print(dp[-1][1])

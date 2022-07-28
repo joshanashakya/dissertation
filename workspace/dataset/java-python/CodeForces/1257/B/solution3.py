@@ -1,0 +1,1 @@
+for _ in range(int(input())):    x,y = map(int, input().split())    if x > 3:        print("YES")    elif x == 1:        if y == 1:            print("YES")        else:            print("NO")    else:        if y <= 3:            print("YES")        else:            print("NO")

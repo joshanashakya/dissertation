@@ -1,0 +1,1 @@
+import java.util.*;public class vesya_clender { 	public static void main(String[] args) {		// TODO Auto-generated method stub		Scanner sc= new Scanner(System.in);		int d=sc.nextInt();		int n=sc.nextInt();		int t=0;		for(int i=0;i<n;i++)		{			int t1=sc.nextInt();			if(i<n-1&&t1<d)				t+=d-t1;			else if(t1>d)				t+=(t1%d)+1;		}		System.out.println(t);	} }

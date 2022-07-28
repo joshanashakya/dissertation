@@ -1,0 +1,1 @@
+n=int(input())a=list(map(int,input().split()))z=0for i in range(n):    for j in range(n):        if i!=j:            for k in range(n):                if i!=k and j!=k and a[i]==a[j]+a[k]:                    z=1                    print(i+1,j+1,k+1)                    break            if z==1:                break    if z==1:        breakif z==0:    print(-1)

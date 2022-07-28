@@ -1,0 +1,1 @@
+n = int(input())a = list(map(int, input() .split()))m = int(input())b = list(map(int, input() .split()))l=[0]*(m+n)w = 0for i in range(m):  for j in range(n):    z = b[i] / a[j]     if(z.is_integer()):      l[j] = z      w+=1for k in range(l.count(0)):  l.remove(0)t = max(l)print(l.count(t)) 

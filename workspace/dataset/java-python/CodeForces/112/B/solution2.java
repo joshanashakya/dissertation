@@ -1,0 +1,1 @@
+import java.util.Scanner;  public class Main{    public static void main(String[] args) {        Scanner in = new Scanner(System.in);        int n,x,y,r;    	int i, j;    	n=in.nextInt();x=in.nextInt();y=in.nextInt();    	r=n/2;    	if( (x==r||x==r+1)&&(y==r||y==r+1) )        System.out.println("NO");        else        System.out.println("YES");}}

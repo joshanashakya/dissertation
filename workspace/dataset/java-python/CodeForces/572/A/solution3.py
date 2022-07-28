@@ -1,0 +1,1 @@
+A, B = map(int, input().split())k, m = map(int, input().split())a = list(map(int, input().split(' ', A)))b = list(map(int, input().split(' ', B)))if a[k-1] < b[len(b)-m]:    print('YES')else:    print('NO')

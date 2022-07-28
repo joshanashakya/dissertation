@@ -1,0 +1,1 @@
+from math import *# from itertools import combinationsfrom sys import stdininput = stdin.readline n, k = map(int, input().split())li = []for i in range(1, floor(sqrt(n)) + 1):    if n%i == 0:        li.append(i)        if i != n//i:            li.append(n//i)if k > len(li):    print(-1)else:    print(sorted(li)[k-1])

@@ -1,0 +1,1 @@
+n, h, a, b, k = map(int, input().split())for _ in range(k):  t1, f1, t2, f2 = map(int, input().split())  if t1 == t2:    ans = abs(f1 - f2)  else:    if f1 < a:      d1 = a    elif f1 in range(a, b + 1):      d1 = f1    else:      d1 = b    ans = abs(d1 - f1) + abs(t1 - t2) + abs(d1 - f2)  print(ans)

@@ -1,0 +1,1 @@
+events_num = input()events = input() rooms = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0] for e in events:    if (e == 'L'):        rooms[rooms.index(0)] = 1    elif(e == 'R'):        rooms[len(rooms)-1-rooms[::-1].index(0)] = 1    else:        rooms[int(e)] = 0     print(*rooms, sep="") 	  			  		  	  	      	   	

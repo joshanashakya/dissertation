@@ -1,0 +1,1 @@
+n = int(input())s = input() if n%2==0:    ans = [s[i:i+2] for i in range(0,n,2)]    print('-'.join(ans))else:    x = s[:3]    s = s[3:]    ans =[x] +  [s[i:i+2] for i in range(0,n-3,2)]    print('-'.join(ans))

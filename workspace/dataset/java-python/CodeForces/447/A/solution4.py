@@ -1,0 +1,1 @@
+def solve(arr,p):  d = {}  for i in range(len(arr)):    res = arr[i] % p    if not d.get(res):      d[res] = 1    else:      return i+1  return -1def main() :  p,n = list(map(int, input().split(' ')))  arr = []  for _ in range(n):    i = int(input())    arr.append(i)  print(solve(arr, p))main()

@@ -1,0 +1,1 @@
+# coding: utf-8 for ct in range(int(input())):  n = int(input())  s = input()  count = 0    while s[n - count - 1] == ')' and count < n:    count += 1      print('Yes') if count > n - count else print('No')

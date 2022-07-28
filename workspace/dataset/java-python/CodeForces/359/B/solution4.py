@@ -1,0 +1,1 @@
+import math ans = []n, m = map(int, input().split())for i in range(1, n + 1):    ans.append([2 * i - 1, 2 * i]) current = 0i = 0while current != 2 * m and i < n:    if current < m and i < n:        ans[i][0], ans[i][1] = ans[i][1], ans[i][0]        current += 1    i += 1for i in ans:    print(*i, end = " ")

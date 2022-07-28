@@ -1,0 +1,1 @@
+t = int(input())for i in range(0, t):    s, a, b, c = map(int, input().split())    chocolates = 0    chocolates += s // c    if s // c >= a:        chocolates += (chocolates//a)*b    print(chocolates)

@@ -1,0 +1,1 @@
+n=int(input())m=[int(q)for q in input().split()]r=[int(q)for q in input().split()]c=0for d in range(10**5):    for i in range(min(len(m),len(r))):        if d%m[i]==r[i]:            c+=1            breakprint(c/(10**5+1))        

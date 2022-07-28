@@ -1,0 +1,1 @@
+R = lambda: map(int, input().split())n, k1, k2 = R() diff = [abs(x1 - x2) for x1, x2 in zip(R(), R())] for _ in range(k1+k2):    diff.sort()    diff[-1] = abs(diff[-1] - 1) print(sum(i ** 2 for i in diff))

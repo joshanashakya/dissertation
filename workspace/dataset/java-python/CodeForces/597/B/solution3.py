@@ -1,0 +1,1 @@
+import sys  n = int(sys.stdin.readline())orders = [tuple(map(int, sys.stdin.readline().split())) for _ in range(n)] orders.sort(key=lambda x: x[1])prev_r = Nonecount = 0for l, r in orders:	if not prev_r or prev_r < l:		count += 1		prev_r = r print(count)

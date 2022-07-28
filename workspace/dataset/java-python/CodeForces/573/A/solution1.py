@@ -1,0 +1,1 @@
+def answer(n, a):    for i in range(n):        while a[i] % 2 == 0:            a[i] //= 2        while a[i] % 3 == 0:            a[i] //= 3    for i in range(1, n):        if a[i-1] != a[i]:            return 'No'     return 'Yes'       return def main():    n = int(input())    a = [int(i) for i in input().split()]    print(answer(n, a))    main()

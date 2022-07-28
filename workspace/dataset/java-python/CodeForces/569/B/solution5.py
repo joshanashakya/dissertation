@@ -1,0 +1,1 @@
+n=int(input())inventory=[*map(int, input().split())]bool = [False]*100001indices = set()for index,i in enumerate(inventory):    if i>n or bool[i]:        indices.add(index)    bool[i]=True for i in range(1,n+1):    if not bool[i]:        x=indices.pop()        inventory[x] = iprint(" ".join([*map(str,inventory)]))

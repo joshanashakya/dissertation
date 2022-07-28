@@ -1,0 +1,1 @@
+def solve():    n = int(input())    camels = {}    for i in range(n):        x, d = [int(s) for s in input().split(' ')]        camels[x] = d    for c in camels:        y = c + camels[c]        if y in camels and camels[y] == -camels[c]:            return "YES"    return "NO" print(solve())

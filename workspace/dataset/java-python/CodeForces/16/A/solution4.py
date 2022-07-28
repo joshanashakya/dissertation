@@ -1,0 +1,1 @@
+n,m=map(int,input().split())li = []for i in range(n):    li.append(list(map(int,input()))) if li[0].count(li[0][0]) != m:    print('NO')else:    for row in range(1,len(li)):         if li[row].count(li[row][0]) != m:            print('NO')            break        if li[row-1] == li[row]:            print('NO')            break    else:        print('YES')

@@ -1,0 +1,1 @@
+def solve():	s = input()	k = int(input())	len_s = len(s)	len_f = len_s + k	max_n = int(len_f / 2)	# print('max_n = %d' % max_n)	for i in range(max_n, 0, -1):		for j in range(len_f):			# print('%d %d', i, j)			if len_f - j >= 2*i:				ok = True				for k in range(j, j+i):					if k+i < len_s and s[k] != s[k+i]:						ok = False				if ok:					print(i*2)					return solve()

@@ -1,0 +1,1 @@
+n=int(input())m = list(map(int,input().strip().split()))[:n]r = list(map(int,input().strip().split()))[:n]counter=0for i in range(0,10000000):    for j in range (0,n):        if (i%m[j]==r[j]):            counter=counter+1            breakprint(counter/10000000)

@@ -1,0 +1,1 @@
+if __name__=='__main__':	n=int(input())	dl=[[0,0]]	end=0	for i in range(n):		dl.append(list(map(int,input().split())))	for i in range(1,n+1):		if not dl[i][0]:			dl[end][1]=i			dl[i][0]=end			j=i			while(dl[j][1]):				#print(dl[j])				#j+=1				j=dl[j][1]			end=j	for node in dl[1:]:		print(*node)					

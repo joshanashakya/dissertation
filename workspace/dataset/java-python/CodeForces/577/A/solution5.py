@@ -1,0 +1,1 @@
+rowscolumns, result = [int(i) for i in input().split()] counter = 0 for col in range(1, rowscolumns+1):    if result % col == 0 and result / col <= rowscolumns:        counter += 1                  print(counter)

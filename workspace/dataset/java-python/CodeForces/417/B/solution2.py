@@ -1,0 +1,1 @@
+def solve():    n = int(input())    p = True    d = []    for _ in range(int(1e5 + 1)):        d.append(set())     for _ in range(n):        x, k = map(int, input().split())        if x > 0 and x - 1 not in d[k]:            p = False        else:            d[k].add(x)    print('YES' if p else 'NO')  solve()

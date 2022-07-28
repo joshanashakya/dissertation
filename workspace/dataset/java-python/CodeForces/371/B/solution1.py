@@ -1,0 +1,1 @@
+def gcd(a,b):    while a%b:        a,b = b,a%b    return ba,b = map(int,input().split())g = gcd(a,b)a //= gb //= gcnt = 0for i in [2,3,5]:    while a%i==0:        a //= i        cnt += 1    while b%i==0:        b //= i        cnt += 1if a==1 and b==1:    print(cnt)else:    print(-1)

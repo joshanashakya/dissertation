@@ -1,0 +1,1 @@
+n = int(input())s = input()l=[]for i in range(0,n-1):    l.append(s[i:i+2])maxx=0for k in range(0,len(l)):    if(l.count(l[k])>maxx):        maxx=l.count(l[k])        for p in l:    if(l.count(p)==maxx):        print(p)        break

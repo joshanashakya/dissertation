@@ -1,0 +1,1 @@
+# https://codeforces.com/problemset/problem/368/A n, d = map(int, input().split())arr = sorted(list(map(int, input().split())))m = int(input())cost = sum(arr) if n <= m else sum(arr[:m])cost = cost + (-d) * (m - n) if n <= m else costprint(cost)

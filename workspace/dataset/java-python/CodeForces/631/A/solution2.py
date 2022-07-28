@@ -1,0 +1,1 @@
+import sys  n = int(sys.stdin.readline())a = [int(x) for x in sys.stdin.readline().strip().split()]b = [int(x) for x in sys.stdin.readline().strip().split()]A = a[0]for x in a:    A |= xB = b[0]for x in b:    B |= x print(A + B)

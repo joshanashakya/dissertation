@@ -1,0 +1,1 @@
+n=int(input())count=n//7ans=float('inf')val=Nonefor i in range(count,-1,-1):	remaining=n-7*i	if remaining%4==0:		if ans>i+remaining//4:			ans=i+remaining//4			val=(remaining//4,i)#print(val)if val:	print("4"*val[0]+"7"*val[1])else:	print(-1)

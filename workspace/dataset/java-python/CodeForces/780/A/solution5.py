@@ -1,0 +1,1 @@
+num = int(input())arr = list(map(int, input().split())) table = set()ct = 0mx = 0for sock in arr:    if sock not in table:        table.add(sock)        ct += 1    else:        ct -= 1     mx = max(ct, mx) print(mx)

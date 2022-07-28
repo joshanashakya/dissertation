@@ -1,0 +1,1 @@
+from sys import stdinn = int(stdin.readline())v = [0] * (n+1)h = [0] * (n+1) for i in range(n*n):        a, b = map(int, stdin.readline().split())        if v[a] == 0 and h[b] == 0:        print(i+1)                v[a] = h[b] = 1

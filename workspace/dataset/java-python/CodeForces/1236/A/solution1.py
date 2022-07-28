@@ -1,0 +1,1 @@
+t=int(input())for i in range(t):    a,b,c=map(int,input().split())    count=0    if b>0 and c>1:         while b>0 and c>1:                b=b-1                 c=c-2                 count+=1        if a>0 and b>1:        while a>0 and b>1:            a=a-1            b=b-2            count+=1    print(count*3)   

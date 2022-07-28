@@ -1,0 +1,1 @@
+n = int(input())t = nn_ans = 1i = 2while i <= n:    if n %i == 0:        n_ans *= i    while n%i == 0:        n //= i    i += 1 cnt = 0tmp = n_answhile tmp%t != 0:    cnt += 1    tmp *= tmp if tmp != t:    cnt += 1print(n_ans, cnt) 

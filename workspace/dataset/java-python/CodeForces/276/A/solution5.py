@@ -1,0 +1,1 @@
+cases, k = map(int, input().split())mx = float("-inf")while cases:    cases -= 1    fi, ti = map(int, input().split())    if ti > k:        mx = max(fi+k-ti, mx)    else:        mx = max(mx, fi) print(mx)

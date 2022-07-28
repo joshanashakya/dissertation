@@ -1,0 +1,1 @@
+n, k = map(int, input().split())a = sorted(list(map(int, input().split())))subtract = 0i = 0for kk in range(k):  if i < n:    print(a[i] - subtract)    subtract += a[i] - subtract    while i < n and a[i] <= subtract:      i += 1  else:    print(0)

@@ -1,0 +1,1 @@
+h1, h2 = map(int, input().split()) up, down = map(int, input().split()) v = up-downif v <= 0:  if ( (h2-h1) <= 8*up):    print(0)  else:    print(-1)else:  days = 0  h1 += 8*up  while h1 < h2:    h1 -= 12 * down    h1 += 12 * up    days += 1  print(days) 	  	 	 	 	  	   		  		 		 	 	

@@ -1,0 +1,1 @@
+import queue n, k = map(int, input().split())players = list(map(int, input().split()))p1 = players[0]p2 = players[1]q = queue.Queue() for i in range(2, n):    q.put(players[i]) c = 0while True:    if p1 > p2:        q.put(p2)        c += 1    else:        q.put(p1)        p1 = p2        c = 1            p2 = q.get()    if c == k or c >= n:        print(p1)        break        

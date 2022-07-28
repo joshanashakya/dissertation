@@ -1,0 +1,1 @@
+from math import ceiln = int(input())x = input()p = ['ogo']+['ogo'+'go'*i for i in range(1,50)]j = ceil((n-3)/2)if n<3:    print(x)else:    while j>=0:        if p[j] in x:            x = x.replace(p[j],'***')        else:            j = j-1    print(x)

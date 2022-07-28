@@ -1,0 +1,7 @@
+s1 = input()
+s2 = input()
+s3 = input()
+a = s1.count("a") + s1.count("o") + s1.count("e") + s1.count("i") + s1.count("u")
+b = s2.count("a") + s2.count("o") + s2.count("e") + s2.count("i") + s2.count("u")
+c = s3.count("a") + s3.count("o") + s3.count("e") + s3.count("i") + s3.count("u")
+print("YES" if a == 5 and b == 7 and c == 5 else "NO")

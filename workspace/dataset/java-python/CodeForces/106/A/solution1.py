@@ -1,0 +1,1 @@
+c = ['6','7','8','9','T','J','Q','K','A']t = input()f, s = input().split()if f[1] == t and s[1] != t:    print('YES')    exit()elif s[1]==t and f[1]!=t:    print('NO')    exit()if f[1] != s[1]:    print('NO')elif c.index(f[0]) > c.index(s[0]):    print('YES')else:    print('NO')

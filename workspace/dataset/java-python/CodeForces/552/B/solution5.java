@@ -1,0 +1,1 @@
+import java.util.*; public class a{	public static void main (String[] arg){		Scanner in = new Scanner(System.in);		long x = in.nextLong();		long at = 0, aux = x, u = 1, cnt = 1;		while(aux >= 10){			at+=x-u;			aux/=10;			u*=10;			cnt++;		}		at+=(x-u+cnt); 		System.out.printf("%d\n", at);	}}

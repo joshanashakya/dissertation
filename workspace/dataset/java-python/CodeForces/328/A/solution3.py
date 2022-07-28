@@ -1,0 +1,1 @@
+import sysn=input().split()a=int(n[0])b=int(n[1])c=int(n[2])d=int(n[3])if(b-a==c-b==d-c):    print(2*d-c)    sys.exit()if(b*b==a*c and c*c==b*d):    if(d*d%c==0):        print(d*d//c)    else:        print(42)    sys.exit()print(42)

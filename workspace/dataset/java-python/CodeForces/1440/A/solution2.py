@@ -1,0 +1,1 @@
+# coding: utf-8 for ct in range(int(input())):  n, c0, c1, h = map(int, input().split())  s = input()  zeros = s.count('0')  ones = s.count('1')    print(min(zeros * c0 + ones * c1, n * c0 + ones * h, zeros * h + n * c1))

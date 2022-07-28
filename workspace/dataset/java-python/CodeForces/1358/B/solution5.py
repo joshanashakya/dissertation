@@ -1,0 +1,1 @@
+t=int(input())for i in range(t):	n=int(input())	arr=list(map(int,input().split()))	s=1	arr.sort()	# print(arr) 	i=n-1	while i>=0 and arr[i]>i+1 :		arr.pop()		i=i-1	# if 	print(len(arr)+1)	# print(arr)

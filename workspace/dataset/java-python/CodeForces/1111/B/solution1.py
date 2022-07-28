@@ -1,0 +1,1 @@
+n,p,t=map(int,input().split())arr=sorted(map(int,input().split()))arr=[0]+arr[::-1]for i in range(1,n+1):    arr[i]+=arr[i-1]maxi=0count=0for i in range(n,0,-1):    if(t==-1):        break    maxi=max(maxi,(arr[i]+max(0,min(i*p,t)))/i)    t-=1print(maxi)

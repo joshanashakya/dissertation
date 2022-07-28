@@ -1,0 +1,1 @@
+import java.util.Scanner; public class Love_A {     public static void main(String[] args) {         Scanner in = new Scanner(System.in);         String s = in.nextLine();        int sa = s.replaceAll("[^a]", "").length();         if (sa <= s.length() / 2) {            System.out.println(2 * sa - 1);        } else {            System.out.println(s.length());        }    } }

@@ -1,0 +1,1 @@
+import sysimport itertoolsimport collections n = int(input())a = list(map(int, input().split())) mx, mn = max(a), min(a)for midx, val in enumerate(a):    if val == mx: break for mindx in range(n - 1, -1, -1):    if a[mindx] == mn: break ans = midx + n - 1 - mindxif midx > mindx:    ans -= 1print(ans)

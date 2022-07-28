@@ -1,0 +1,1 @@
+ n, V = input().split()n, V = int(n), int(V)a = list(map(int, input().split()))b = list(map(int, input().split())) ratio = 100000  for i in range(n):    ratio = min(ratio, b[i]/a[i])suma = 0for i in range(n):    suma += ratio * a[i] print(min(V, suma)) 

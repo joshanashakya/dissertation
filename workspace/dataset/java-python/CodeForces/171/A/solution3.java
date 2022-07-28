@@ -1,0 +1,1 @@
+import java.util.Scanner; public class A171 {     public static void main(String[] args) {        Scanner in = new Scanner(System.in);        int a = in.nextInt();        int b = Integer.parseInt(new StringBuilder(in.next()).reverse().toString());        System.out.println(a+b);    } }

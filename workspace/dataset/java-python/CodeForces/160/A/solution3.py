@@ -1,0 +1,1 @@
+import math def solve():    n=int(input())    array=[int(i) for i in input().split()]    sum1,sum2=0,0     for i in array:        sum1+=i     i,count=n-1,n    array.sort(reverse=True)     while sum1>sum2:        sum1-=array[i]        sum2+=array[i]        i-=1        count-=1     return count+1   print(solve())

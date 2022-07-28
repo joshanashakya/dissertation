@@ -1,0 +1,1 @@
+import matht = int(input())for i in range(t):    a,b,c,d = map(int,input().split())    if d >= c and b < a:        print(-1)    elif b >= a:        print(b)    else:        awalTidur = a - b        kesempatanTidur = c - d        banyakTidur = math.ceil(awalTidur / kesempatanTidur)         lamaTidur = (banyakTidur * c) + b        print(lamaTidur)		 			 	    		   	  	 					  	

@@ -1,0 +1,1 @@
+import ioimport osimport mathinput = io.BytesIO(os.read(0, os.fstat(0).st_size)).readline# python3 15.py<in>opa, b = map(float, input().split())n = int(input())ans = 1e9 for i in range(n):    x, y, v = map(float,input().split())    aa  = abs(x-a)    bb = abs(y-b)    temp = (aa*aa) + (bb*bb)    temp = math.sqrt(temp)    ans = min(ans, temp/v) print(ans)

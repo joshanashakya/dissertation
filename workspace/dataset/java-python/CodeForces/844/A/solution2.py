@@ -1,0 +1,1 @@
+string = list(input())differnt_words = int(input()) difset = set(string) if(differnt_words > len(string)):    print("impossible")else:    val = differnt_words - len(difset)    if(val< 0 ):        print(0)    else:        print(val)

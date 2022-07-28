@@ -1,0 +1,1 @@
+t = int(input())for _ in range(t):	n,s = map(int, input().split())	a = [int(x) for x in input().split()]	summa = 0	largest = -1	largest_i=0	for i in range(len(a)):		summa+=a[i]				if largest < a[i]:			largest = a[i]			largest_i = i 		if summa > s:			break 	if summa <= s:		print(0)	else:		print(largest_i+1)

@@ -1,0 +1,1 @@
+n = int(input()) a = ['o']*nl = [0]*19l[0],l[1] = 1,1i = 2while(i<=18):    l[i] = l[i-1] + l[i-2]    i+=1#print(l)#printfor i in range(n):    if i+1 in l:        #print('true')        a[i] = 'O' print(''.join(a))

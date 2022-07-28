@@ -1,0 +1,1 @@
+import sysimport math#sys.stdin = open('test.inp','r')n, k = map(int, input().split()) l, r, i, ok= n * 2 + 1, 1, 1, Falsewhile l <= k or r <= k and (l <= 4*n and r <= 2*n):	if l <= k and l <= 4*n:		print(l, end=' ')		l = l + 1	if r <= k and r <= 2*n:		print(r, end=' ')		r = r + 1

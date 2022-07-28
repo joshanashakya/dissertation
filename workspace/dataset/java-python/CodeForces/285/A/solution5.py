@@ -1,0 +1,1 @@
+n,k=[int(x) for x in input().split()]for i in range(n,n-k,-1):    print(str(i),end=" ")for i in range(1,n-k+1):    if(i==(n-k)):        print(str(i),end="")    else:        print(str(i),end=" ")print()

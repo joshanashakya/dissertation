@@ -1,0 +1,1 @@
+n,x,y=map(int,input().split())s=input()c=0ans1,ans2=0,0for i in range(n-1):    if s[i]=='0' and s[i+1]=='1':        c+=1if s[n-1]=='0':    c+=1if c==0:    print(0)else:    ans1=x*(c-1)+y    ans2=(c-1)*y+y    print(min(ans1,ans2))               

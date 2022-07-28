@@ -1,0 +1,1 @@
+n, k =map(int, input().split())k =  list(map(int , input().split()))l, ans = [], []for i in range(n):    l.append(i)leader=0for i in k:    ans.append( l[((leader+i)%(len(l)))] +1)    leader = ((leader+i)%(len(l)));    l.remove(ans[-1]-1)    leader = leader%len(l) print(*ans, sep=" ") 

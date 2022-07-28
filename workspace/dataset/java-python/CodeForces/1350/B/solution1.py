@@ -1,0 +1,1 @@
+for i in range(int(input())):    n =int(input())    a=[int(i) for i in input().split()]    dp=[1 for i in range(n)]    for i in range(1,n):        for j in range(i-1,n,i):            if a[j] > a[i-1]:                dp[j]= max(dp[j],1+dp[i-1])    ans =1     for i in dp:        ans = max(ans,i)    print(ans)     

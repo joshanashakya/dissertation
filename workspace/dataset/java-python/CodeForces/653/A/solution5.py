@@ -1,0 +1,1 @@
+n=int(input())li=list(set(sorted(list(map(int,input().split())))) )count=0for i in range(len(li)-1): if li[i+1]-li[i]==1:  count+=1 else:  count=0 if count>=2:  print("YES")  exit(0)else:  print("NO")             

@@ -1,0 +1,1 @@
+def xuli():    n=int(input())    s=input()    dem1=0    dem2=0    for i in s:        if i != '0':            break        dem1+=1    for i in reversed(s):        if i != '1':            break        dem2 += 1    for i in range(dem1+(dem1+dem2<n)):        print(0,end='')    for i in range(dem2):        print(1,end='')    print('')   t=int(input())while(t>0):    xuli()    t-=1

@@ -1,0 +1,1 @@
+import syssys.stdin=open("input.txt","r")sys.stdout=open("output.txt","w")n, k = map(int,input().split())arr = list(map(int,input().split()))mini = sorted(arr)[-k]s = []for i in range(n):    if len(s)<k and arr[i]>=mini:        s.append(i+1)print(mini)print(' '.join(map(str,s)))

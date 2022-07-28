@@ -1,0 +1,1 @@
+def test(i):    aa=input().split(' ')    ar=[]    for j in aa:        ar.append(int(j))    ark=[]    for jj in ar:            while jj in ark:                if jj<=0:                    break                jj-=1            ark.append(jj)    count=0    for n in ark:        count+=n    if len(ark)==i:        print(count)i=int(input())if i <=26 and i>=2:    test(i)

@@ -1,0 +1,1 @@
+import java.util.*;  public class prac {	public static void main(String[] args) {		Scanner s = new Scanner(System.in);		long N = s.nextLong(); 		long M = s.nextLong();		long K = s.nextLong();		if (K<N) {			System.out.println(K + 1 + " " + 1);			return;		}		K -= N;		M--; 		System.out.println(N - K / M + " " + (K / M % 2 == 0 ? K % M + 2 : M + 1 - K % M));	}}

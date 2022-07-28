@@ -1,0 +1,1 @@
+n=int(input())s=input()if(n==1):    if(s=="0"):        print("No")    else:        print("Yes")    exit(0)if ("11" in s) or ("000" in s) or (s[-2:]=="00") or (s[:2]=="00"):    print("No")else:    print("Yes")

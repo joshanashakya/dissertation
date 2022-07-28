@@ -1,0 +1,1 @@
+n, d = map(int,input().split())a = sorted(list(map(int,input().split())))if n==1:	print (0)	exit()ans = nfor i in range(n):	for j in range(i, n):		if a[j]-a[i]<=d:			ans = min(ans, i+n-j-1)print (ans)

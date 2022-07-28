@@ -1,0 +1,1 @@
+for _ in range(int(input())):    n = int(input())        if n % 2 == 0:        print(n // 2)    elif n % 3 == 0:        print(n // 3)    elif n % 4 == 0:        print(n // 4)    elif n % 5 == 0:        print(n // 5)    elif n % 6 == 0:        print(n // 6)    elif n % 7 == 0:        print(n // 7)    else:        print((n - 3) // 2 + 1)

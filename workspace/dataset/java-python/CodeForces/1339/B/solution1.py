@@ -1,0 +1,1 @@
+def min_adj():	for i in range(int(input())):		length = int(input())		lst = list(map(int, input().split()))		lst.sort()		new = []		while lst!=[]:			if len(lst) == 1:				new.append(lst[0])				break			new.append(lst.pop())			new.append(lst[0])			lst.pop(0)		print(*new[::-1]) min_adj()

@@ -1,0 +1,1 @@
+import sys lst = sys.stdin.readlines()n, q = map(int, lst[0].split()) for i in range(q):    x, y = map(int, lst[i + 1].split())    cnt = (x - 1) * n + y    ans = (cnt + 1) // 2    if ((x + y) % 2 == 1): ans += (n * n + 1) // 2    sys.stdout.write(str(ans) + '\n')

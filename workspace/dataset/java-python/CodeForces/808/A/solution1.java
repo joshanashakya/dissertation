@@ -1,0 +1,1 @@
+import java.util.*;import java.io.*;import java.util.stream.*; public class Solution {	public static void main(String[] args) throws Exception {		Scanner scan = new Scanner(System.in);		int n = scan.nextInt();		int result = 0;		int temp = n;		int pow = 1;		while(temp >= 10) {			temp = temp/10;			pow = pow*10;		}		result = ((temp+1)*pow) - n;				System.out.println(result);	}	}

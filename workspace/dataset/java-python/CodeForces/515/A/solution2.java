@@ -1,0 +1,1 @@
+import java.util.*;public class drazil_date { 	public static void main(String[] args) {		Scanner in = new Scanner(System.in);	int x = in.nextInt();	int y = in.nextInt();	int s = in.nextInt();	int min = Math.abs(x)+Math.abs(y);	if(s<min||(s-min)%2!=0)	 System.out.println("No");	 else 	 System.out.println("Yes");	} }

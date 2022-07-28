@@ -1,0 +1,1 @@
+# cook your dish herea, ta = map(int, input().split())b, tb = map(int, input().split())s=input()h=int(s[:2])m=int(s[3:])x1 = h * 60 + my1 = x1 + taans = 0for x2 in range(300,1440,b):	y2 = x2 + tb	x = max(x1, x2)	y = min(y1, y2)	if (x < y):		ans+=1print(ans)		

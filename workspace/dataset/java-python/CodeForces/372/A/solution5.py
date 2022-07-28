@@ -1,0 +1,1 @@
+import sys n = int(input())arr = sorted([int(i) for i in sys.stdin]) l = (n // 2) - 1r = n - 1res = 0while l >= 0 and r > n // 2 - 1:    if arr[l] * 2 <= arr[r]:        res += 1        r -= 1    l -= 1print(n - res)

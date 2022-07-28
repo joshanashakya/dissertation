@@ -1,0 +1,1 @@
+ans = []m,b = map(int,input().split())for x in range(m*b + 1):    y = -x/m + b    if y.is_integer():        y = -x//m + b        start = (0 + x)*(x+1)//2        end = (start + y*(x+1))        ans.append(int((start+end)*(y+1)//2))print(max(ans))

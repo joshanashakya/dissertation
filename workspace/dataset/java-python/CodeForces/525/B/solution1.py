@@ -1,0 +1,1 @@
+s=[i for i in input()]m=int(input());n=len(s)arr=list(map(int,input().split()));dp=[0]*nfor i in arr:dp[i-1]+=1;dp[n-i]+=1for i in range(1,n):dp[i]+=dp[i-1]for i in range((n+1)//2):  if dp[i]&1==1:s[i],s[n-i-1]=s[n-i-1],s[i]print("".join(s))

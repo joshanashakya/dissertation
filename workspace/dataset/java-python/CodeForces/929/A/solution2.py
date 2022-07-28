@@ -1,0 +1,1 @@
+n, k = list(map(int, input().split()))x = list(map(int, input().split()))dists = [x[i] - x[i - 1] for i in range(1, n)]if max(dists) > k:    print(-1)else:    cnt, rest = 0, 0    for dist in dists:        if rest < dist:            cnt += 1            rest = k - dist        else:            rest -= dist    print(cnt)        

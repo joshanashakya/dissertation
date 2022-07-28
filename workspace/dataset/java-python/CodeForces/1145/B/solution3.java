@@ -1,0 +1,1 @@
+import java.util.*;import java.lang.*;public class Cf92{	public static void main(String args[])	{		Scanner in = new Scanner(System.in);		int n=in.nextInt();		if(n%10==7 || n%10==9 ||n%10==1)		{			System.out.println("NO");			return;		}		int m=n/10;		if(m%10==2 || m%10==7 || m%10==9 || m%10==1 && n!=12)		{			System.out.println("NO");		}		else		{			System.out.println("YES");		}	}}

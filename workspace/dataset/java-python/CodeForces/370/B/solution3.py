@@ -1,0 +1,1 @@
+n = int(input())c = [[int(s) for s in input().split()][1:] for x in range (n)] for i in range (n):    for j in range (n):        if i != j:            for k in c[j]:                if k not in c[i]:                    break            else:                print("NO")                break    else:        print("YES")

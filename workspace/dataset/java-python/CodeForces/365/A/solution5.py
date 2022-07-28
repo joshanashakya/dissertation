@@ -1,0 +1,1 @@
+from sys import stdin,stdoutnmbr = lambda: int(stdin.readline())lst = lambda: list(map(int,stdin.readline().split()))for _ in range(1):#nmbr():    n,k=lst()    ans=0    for i in range(n):        s=input()        f=1        for d in range(k+1):            if str(d) not in s:                f=0                break        if f:ans+=1    print(ans)

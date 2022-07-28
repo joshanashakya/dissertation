@@ -1,0 +1,1 @@
+from math import ceil for t in range(int(input())):    a, b, c, d = map(int, input().split())    if b >= a:        print(b)        continue    if c-d <= 0:        print(-1)        continue    s = b + ceil((a-b) / (c-d))*c    if s > a: print(s)    else: print(-1)

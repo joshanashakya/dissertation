@@ -1,0 +1,1 @@
+n, m = map(int, input().split())arr = list(map(int, input().split()))ab = list(map(int, input().split()))ab.sort(reverse=True)for i in range(n):    if arr[i] == 0:        arr[i] = ab.pop(0) if arr == sorted(arr):    print("NO")else:    print("YES")

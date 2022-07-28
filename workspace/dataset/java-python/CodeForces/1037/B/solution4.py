@@ -1,0 +1,1 @@
+n,res=list(map(int,input().split()))s=list(map(int,input().split()))count=0s.sort() for i in range(n//2+1):    if(s[i]>res):        count+=s[i]-res     if(s[n-1-i]<res):        count+=res-s[n-1-i] print(count)

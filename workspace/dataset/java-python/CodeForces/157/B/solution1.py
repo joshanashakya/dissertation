@@ -1,0 +1,1 @@
+# cook your dish hereimport mathn=int(input())a=list(map(int,input().split()))for i in range(n):        a[i]=(math.pi)*(a[i]**2)a=sorted(a)c=0if (n&1)==1:    for i in range(n):        if i&1==0:            if i==0:                c+=a[i]            else:                c+=a[i]-a[i-1]else:    for i in range(n):        if i&1==1:            c+=a[i]-a[i-1]print(c)

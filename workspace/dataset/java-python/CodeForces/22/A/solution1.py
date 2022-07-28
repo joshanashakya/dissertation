@@ -1,0 +1,1 @@
+def main_funtion():    n = int(input())    s = [int(i) for i in input().split(" ")]    minimum = min(s)    the_val = 10000000000000    for i in s:        if i > minimum and i < the_val:            the_val = i    if the_val == 10000000000000:        return "NO"    return the_val  print(main_funtion())

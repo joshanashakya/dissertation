@@ -1,0 +1,1 @@
+for _ in range(int(input())):    s = ["-"]+list(input())+["-"]    p=True    for i in range(1, len(s) - 1):        if s[i] == s[i + 1] and s[i] != "?":            print(-1)            p=False            break        elif s[i] == "?":            s[i] = "abc".replace(s[i + 1], "").replace(s[i - 1], "")[0]    if p:        print("".join(s[1:][:-1]))

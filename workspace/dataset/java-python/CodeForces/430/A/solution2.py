@@ -1,0 +1,1 @@
+n,m = map(int,input().split())X = [int(x) for x in input().split()]segs = [[int(x) for x in input().split()] for _ in range(m)] D = {e:i%2 for i,e in enumerate(sorted(X))} for i in range(n):    X[i] = D[X[i]]print(*X)

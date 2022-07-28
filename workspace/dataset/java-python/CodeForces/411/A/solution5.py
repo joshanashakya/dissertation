@@ -1,0 +1,1 @@
+pwd=input()l=0cap=0small=0dig=0if len(pwd)<5:  l=1for letter in pwd:  if letter.isdigit():    dig=dig+1  if letter.isalpha():    if letter.isupper():      cap=cap+1    else:      small+=1if l==0 and cap>0 and small>0 and dig >0:  print('Correct')else:  print('Too weak')

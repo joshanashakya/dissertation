@@ -1,0 +1,1 @@
+n = int(input())a1 = [0] + [int(x) for x in input().strip().split(" ")] out = [] for i in range(1, n+1):    a = a1.copy()    j = a[i]#    k = a[j]    a[i] = 0    while a[j] != 0:        k = a[j]        a[j] = 0        j = k    out.append(j)out1 = [str(x) for x in out]print(" ".join(out1))  			  	 	 		 	 	  	 	 		 					

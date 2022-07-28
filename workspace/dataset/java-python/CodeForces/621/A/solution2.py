@@ -1,0 +1,1 @@
+n=int(input())l=list(map(int,input().split()))l.sort() if(sum(l)%2==0):    print(sum(l))    exit()else:    s=sum(l)    for i in range(len(l)):        if(l[i]%2==1):            s-=l[i]        if(s%2==0):            print(s)            exit()            

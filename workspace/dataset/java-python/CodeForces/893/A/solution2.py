@@ -1,0 +1,1 @@
+n = int(input())spectator = 3flag = Truefor i in range(n):    winner = int(input())    if winner == spectator:        flag = False        break    spectator = 6 - winner - spectatorif flag:    print("YES")else:    print("NO")     

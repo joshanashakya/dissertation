@@ -1,0 +1,1 @@
+n = int(input())al = []bl = []for i in range(n):    a, b = [int(x) for x in input().split()]    al.append(a)    bl.append(b)count = 0for i, bot in enumerate(al):    if bot in bl[:i] + bl[i+1:]:        count+=1 print(n-count)

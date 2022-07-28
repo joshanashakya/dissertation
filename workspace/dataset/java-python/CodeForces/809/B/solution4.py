@@ -1,0 +1,1 @@
+def get(l, r):    print(1, l, r)    return input() == 'TAK'def f(l, r):    while l < r:        m = (l + r) >> 1        if get(m, m + 1): r = m        else: l = m + 1    return ln, k = map(int, input().split())x = f(1, n)y = f(1, x - 1)if x == y or not get(y, x):    y = f(x + 1, n)print(2, x, y)exit()

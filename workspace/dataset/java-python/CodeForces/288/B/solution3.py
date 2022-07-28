@@ -1,0 +1,1 @@
+import sysread = lambda: sys.stdin.readline().strip()readi = lambda: map(int, read().split())from collections import * n, k = readi()mod = 10**9 + 7ans = 1 for i in range(1, k):    ans = (ans * k) % mod for _ in range(n - k):    ans = (ans * (n - k)) % mod print(ans)

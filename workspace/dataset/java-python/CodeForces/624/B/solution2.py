@@ -1,0 +1,1 @@
+n=int(input())a=[*map(int,input().split())]d={}a.sort(reverse=True)count=0for i in a:    if d.get(i)==None:        count+=i        d[i]=1    else:        while True:            i-=1            if i<0:                break            if d.get(i)==None:                d[i]=1                count+=i                breakprint(count)

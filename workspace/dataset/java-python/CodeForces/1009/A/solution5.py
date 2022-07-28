@@ -1,0 +1,1 @@
+n, m = map(int, input().split())c = list(map(int, input().split()))a = list(map(int, input().split()))j = count = 0for i in range(n):	if c[i]<=a[j]:		j+=1		count+=1	else:		continue	if j==m:		breakprint(count)

@@ -1,0 +1,1 @@
+n, m, k = map(int, input().split()) emotes = [int(bruhh) for bruhh in input().split()] emotes.sort() cycles = m//(k+1)leftover = m % (k+1)res = 0 res += ((k)*emotes[-1])*(cycles)res += emotes[-2]*(cycles) res += emotes[-1]*leftover print(res) 

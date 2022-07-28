@@ -1,0 +1,1 @@
+import java.util.*;public class permutation{    public static void main(String[] args)    {	int t,n,i; 	Scanner sc=new Scanner(System.in); 	t=sc.nextInt(); 	while(t-->0)	{	   n=sc.nextInt(); 	   for(i=0;i<n;i++)	   {	      System.out.println((i+1)%n+1);	   }	}    }}

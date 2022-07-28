@@ -1,0 +1,1 @@
+ import java.util.Scanner; public class b {	public static void main(String[] args) {		Scanner scan = new Scanner(System.in);		System.out.println(scan.nextDouble()*Math.pow(1.000000011, scan.nextDouble()));	}}

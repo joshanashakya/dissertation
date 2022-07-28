@@ -1,0 +1,1 @@
+import sys n, m, k = map(int, input().split())items = list(map(int, input().split()))ans = 0 for _ in range(n):    for x in map(int, input().split()):        i = items.index(x)        ans += i + 1        items.insert(0, items.pop(i)) print(ans)

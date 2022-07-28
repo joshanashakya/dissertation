@@ -1,0 +1,1 @@
+def f(a, b):    kentuky = a + b in ('pq', 'qp', 'bd', 'db')    yo_bro = a == b and a in 'AHIMOoTUVvWwXxY'    return kentuky or yo_bro  s = input()n = len(s)for i in range(n):    if not f(s[i], s[n - i - 1]):        print('NIE')        breakelse:    print('TAK')   				 	 				 				 			 	 	 	 	

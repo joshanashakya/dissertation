@@ -1,0 +1,1 @@
+import java.util.*; public class CodeForces922A{	public static void main(String[] args) {		Scanner input = new Scanner(System.in);		int x = input.nextInt();		int y = input.nextInt();		y--;		x-= y;		if(x%2 == 0 && x >= 0 && y > 0 || y == 0 && x == 0){			System.out.println("Yes");		}		else{			System.out.println("No");		}	}}

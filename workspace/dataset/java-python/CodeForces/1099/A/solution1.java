@@ -1,0 +1,1 @@
+import java.util.*;public class A{public static void main(String ar[]){Scanner s=new Scanner(System.in);int w=s.nextInt(); int h=s.nextInt();int w1=s.nextInt();  int h1=s.nextInt();int w2=s.nextInt();  int h2=s.nextInt();for(int i=h;i>=0;i--){w+=i;if(h1==i)w=w-w1;else if(h2==i)w=w-w2;if(w<0)w=0;}System.out.println(w);}}

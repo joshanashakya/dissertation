@@ -1,0 +1,1 @@
+import java.util.*;import java.lang.*;import java.io.*;public class Main{	public static void main (String[] args) throws java.lang.Exception	{	int n,c=0,i,m,k;	String s;	Scanner sc=new Scanner(System.in);	n=sc.nextInt();	s=sc.next();	for(i=0;i<n;i++)	{ if(s.charAt(i)=='8')	{c++;}}	m=n/11;	k=m>c?c:m;	System.out.println(k);}}	

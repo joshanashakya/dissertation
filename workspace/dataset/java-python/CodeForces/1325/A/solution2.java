@@ -1,0 +1,1 @@
+import java.util.Scanner; public class A1325 {    public static void main(String[] args) {        Scanner scanner = new Scanner(System.in);        int t = scanner.nextInt();        for (int i = t; i > 0; i--) {            int x = scanner.nextInt();            System.out.println(1 + " " + (x - 1));        }    }}

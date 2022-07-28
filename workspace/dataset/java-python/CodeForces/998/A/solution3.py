@@ -1,0 +1,1 @@
+'''Author- Akshit Monga'''from sys import stdin, stdout# input = stdin.readlinet = 1for _ in range(t):    n = int(input())    a=[int(x) for x in input().split()]    if n==1 or (n==2 and len(set(a))==1):        print(-1)        continue    x=min(a)    for i in range(n):        if a[i]==x:            print(1)            print(i+1)            break

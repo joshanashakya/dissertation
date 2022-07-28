@@ -1,0 +1,1 @@
+s = input()n = len(s)d = [[0]*3 for _ in range(0,5007)]mx = 0 for i in range(0,n):    d[i][0] = (d[i-1][0] if i>0 else 0) + (s[i]=='a')    d[i][1] = (max(d[i-1][0],d[i-1][1]) if i>0 else 0) + (s[i]=='b')    d[i][2] = (max(d[i-1][1],d[i-1][2]) if i>0 else 0) + (s[i]=='a')        for j in range(0,3):        mx = max(mx,d[i][j])    print(mx)

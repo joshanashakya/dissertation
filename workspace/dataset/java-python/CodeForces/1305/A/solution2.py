@@ -1,0 +1,1 @@
+import sys def main():    inp = sys.stdin.read().strip().split('\n')    out = []    for i in range(2, len(inp), 3):        a = ' '.join(sorted(inp[i].split(), key=int))        b = ' '.join(sorted(inp[i+1].split(), key=int))        out.extend((a, b))    return out    print(*main(), sep='\n')

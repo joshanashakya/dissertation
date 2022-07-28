@@ -1,0 +1,1 @@
+for _ in range(int(input())):	n,k=map(int,input().split())	a=list(map(int,input().split()))	b=list(map(int,input().split()))	x=min(a);y=max(b)	xi=a.index(x);yi=b.index(y)	if x>=y:		print(sum(a))	else:		i=1		while (x<y) and (i<=k):			a[xi],b[yi]=b[yi],a[xi]			x=min(a)			y=max(b)			xi=a.index(x)			yi=b.index(y)			i+=1		print(sum(a))

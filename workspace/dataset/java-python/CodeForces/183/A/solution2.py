@@ -1,0 +1,1 @@
+#!/usr/local/bin/python3 n = int(input()) w = 1h = 1 for _ in range(n):    s = input()    if s == 'ULDR':        w += 1        h += 1        continue    if s == 'UR' or s == 'DL':        w += 1        continue    h += 1 print(w * h)

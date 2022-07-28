@@ -1,0 +1,1 @@
+num = int(input())arr = list(map(int, input().split()))mx = 0for i, val in enumerate(arr):    if val > mx+1:        print(i+1)        exit()    mx = max(val, mx)    if mx > i:        print(i+1)        exit() print(-1)

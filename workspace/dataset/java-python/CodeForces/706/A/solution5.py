@@ -1,0 +1,1 @@
+import mathc=input().split()x1,y1=int(c[0]),int(c[1])n=int(input())d=[]for i in range(n):    c=[int(i) for i in input().split()]    distance=math.sqrt((c[0]-x1)**2+(c[1]-y1)**2)/c[2]    d.append(distance)print(min(d))

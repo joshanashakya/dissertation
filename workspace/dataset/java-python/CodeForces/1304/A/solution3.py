@@ -1,0 +1,1 @@
+t=input()t=int(t)while t!=0:      res=input()      res=res.split()      x =int( res[0])      y =int( res[1])      a =int( res[2])      b =int( res[3])      res=(y-x)%(a+b)      if res==0:          print((y-x)//(a+b))      else :          print(-1)      t=t-1

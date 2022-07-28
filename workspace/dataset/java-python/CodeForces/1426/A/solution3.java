@@ -1,0 +1,1 @@
+import java.util.*;import java.io.*; public class Main{	public static void main(String[] args) {				Scanner sc= new Scanner(System.in);		int t=sc.nextInt();				while(t-->0) {			int n=sc.nextInt();			int x=sc.nextInt();			if(n==1) {				System.out.println(1);			}else {				System.out.println((int)Math.ceil((double)(n-2)/(double)x)+1);			}		}	}		}

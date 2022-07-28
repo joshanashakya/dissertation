@@ -1,0 +1,1 @@
+for _ in range(int(input())):    a,b,n,s=map(int,input().split())    if s<=b:        print("YES")    else:        if (n*a)>=s:            if s%n<=b:                print("YES")            else:                print("NO")        else:            if (s-n*a)<=b:                print("YES")            else:                print("NO")

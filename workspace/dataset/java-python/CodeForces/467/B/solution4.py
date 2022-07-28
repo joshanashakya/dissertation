@@ -1,0 +1,1 @@
+def count(y):    s=0    for i in y:        if i=='1':            s+=1    return s    n,m,k=map(int,input().split())l=[]for i in range(m+1):    a=int(input())    l.append(a)res=0  f=l[-1] for i in range(m):    x=l[i]    y=bin(f^x)    c=count(y)        if c<=k:        res+=1print(res)     

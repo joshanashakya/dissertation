@@ -1,0 +1,1 @@
+t=int(input())for _ in range(t):     n=int(input())    li=list(map(int,input().split(" ")))     li.sort()     i=0    j=len(li)-1    area=li[i]*li[j]    res="YES"    while i<j:        if li[i]!=li[i+1] or li[j]!=li[j-1] or li[i]*li[j]!=area:            res="NO"            break         i+=2        j-=2    print(res)  

@@ -1,0 +1,1 @@
+string = input()n = len(string)count = 0contingency = Falsex = n // 2 + 1 if n % 2 == 1 else n // 2 for i in range(x):    if string[i] != string[n - i - 1]: count += 1 if count == 0 and n % 2 == 1: contingency = True if contingency: print("YES")else: print("NO" if count != 1 else "YES")

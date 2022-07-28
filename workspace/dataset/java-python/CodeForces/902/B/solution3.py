@@ -1,0 +1,1 @@
+n = int(input())p = list(map(int, input().split()))c = list(map(int, input().split())) colormap = [0]*ncount = 0for i in range(n):    if(i>0):        colormap[i]=colormap[p[i-1]-1]    if(c[i]!=colormap[i]):        count += 1        colormap[i]=c[i]print(count)

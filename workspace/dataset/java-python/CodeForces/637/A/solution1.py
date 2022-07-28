@@ -1,0 +1,1 @@
+n = int(input())a = list(map(int,input().split()))k = 0pas = 0a = a[::-1]for i in set(a):    s = a.count(i)    if s > k:        pas = i        k = s    elif s==k:        if a.index(i) > a.index(pas):            pas = i            k = a.count(i)print(pas)              

@@ -1,0 +1,1 @@
+n = input()m = n.split()[1]n = n.split()[0]i, j = len(n), len(m)k = max(i, j)t = min(i, j)s = 0for i in range(k):    if i < t:        s += (int(n[-i - 1]) + int(m[i])) * 10 ** i    elif len(n) > len(m):        s += int(n[-i - 1]) * 10 ** i    else:        s += int(m[i]) * 10 ** iprint(s)

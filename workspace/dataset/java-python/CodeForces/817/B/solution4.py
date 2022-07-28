@@ -1,0 +1,1 @@
+import sysfrom collections import defaultdictinput = sys.stdin.readline d, n = defaultdict(int), int(input())s = sorted(list(map(int, input().split())))for i in s: d[i] += 1if s[2] != s[1]: print(d[s[2]])elif s[2] == s[1] and s[1] != s[0]: print(d[s[2]] * (d[s[2]] - 1) // 2)else: print(d[s[0]] * (d[s[0]] - 1) * (d[s[0]] - 2) // 6)

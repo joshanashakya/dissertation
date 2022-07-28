@@ -1,0 +1,1 @@
+#n,m = map(int, input().strip().split(' '))n=int(input())lst = list(map(int, input().strip().split(' ')))s=""for i in range(n):    if lst[i]==0 and i!=n-1:        s+='R'    elif i==n-1 and lst[i]==0:        continue    elif i==0:        s+='PRL'*(lst[i])        s+='R'    elif i==n-1:        s+='PLR'*(lst[i])    else:        s+='PLR'*(lst[i]-1)        s+='PR'    print(s)

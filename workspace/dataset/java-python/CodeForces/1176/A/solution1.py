@@ -1,0 +1,1 @@
+task=int(input())while(task>0):    n=int(input())    cnt,flag=0,0    while(n!=1):        if(n%2==0):            n=n//2            cnt+=1        elif(n%3==0):            n=(2*n)//3            cnt+=1        elif(n%5==0):            n=(4*n)//5            cnt+=1        else:            flag=1            break    if(flag==1):        print(-1)    else:        print(cnt)    task-=1

@@ -1,0 +1,1 @@
+import java.util.*; public class questionCF { 	public static void main(String[] args) {				Scanner sc = new Scanner(System.in);		  		String s = sc.next();		int a=0, len=s.length();		for(int i=0; i<len; i++) {			char c=s.charAt(i);			if(c=='a') a++;		}		if(a>len/2)			System.out.println(len);		else {			System.out.println((2*a)-1);		} 				}}

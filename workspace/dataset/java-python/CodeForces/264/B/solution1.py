@@ -1,0 +1,1 @@
+m=10**5+1p=[0]*mt=[[] for i in range(m)]t[1]=[1]for i in range(2,m):  if not t[i]:    t[i]=[i]    for j in range(2*i,m,i):      t[j].append(i)n=int(input())a=list(map(int,input().split()))for i in range(n):  x=max(p[j] for j in t[a[i]])+1  for j in t[a[i]]:    p[j]=xprint(max(p))

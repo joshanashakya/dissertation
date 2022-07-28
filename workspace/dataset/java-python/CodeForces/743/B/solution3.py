@@ -1,0 +1,1 @@
+n, k = map(int, input().split())l, r = 0, 2**(n)-1 while(l<r):    mid = (l+r)//2    if(mid == k-1):        print(n)        break    if(mid<k-1):        l = mid+1    if(mid > k-1):        r = mid-1    n -= 1else:    print(n)

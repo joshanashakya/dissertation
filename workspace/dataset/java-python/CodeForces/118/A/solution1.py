@@ -1,0 +1,1 @@
+def task(input):    result = list()    vowels = ["a","o","y","e","u","i","A","O","Y","E","U","I"]    for n in list(input):        if(n not in vowels):            result.append(".")            result.append(n.lower())    return ''.join(result)  if __name__ == '__main__':    print(task(input()))

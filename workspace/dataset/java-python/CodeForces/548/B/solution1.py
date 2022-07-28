@@ -1,0 +1,1 @@
+'''Maximum number of consecutive 1's'''ml = lambda s: max(map(len,"".join(s).split('0')))n,m,q = map(int,input().split())arr = []l = [0]*nfor i in range(n):    a = list(input().split())    arr.append(a)    l[i] = ml(a)for i in range(q):    a,b = map(int,input().split())    a-=1    b-=1    arr[a][b] = str(int(arr[a][b])^1)    l[a] = ml(arr[a])    print(max(l))    

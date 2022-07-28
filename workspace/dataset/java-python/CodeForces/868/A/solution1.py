@@ -1,0 +1,1 @@
+import syspassword = input(); n = int(input()); first = second = 0; words = []for i in range(0,n):    words.append(input())for word in words:    if password[0] == word[1]:        first = 1    if password[1] == word[0]:        second = 1    if password == word:        first = second = 1    if first == second == 1:        print("YES")        sys.exit(0)print("NO")

@@ -1,0 +1,1 @@
+n, k = map(int, input().split())C = [0]*(k+1)for _ in range(n):    C[int(input())] += 1odd = 0for c in C:    if c % 2 == 1:        odd += 1print(((n+1)//2)*2 - (odd+1)//2) 		   		   	 	  	   		 	 	  				

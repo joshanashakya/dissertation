@@ -1,0 +1,1 @@
+from sys import stdin,stdoutnmbr = lambda: int(stdin.readline())lst = lambda: list(map(int,stdin.readline().split()))for _ in range(1):#nmbr()):    l,b,r=lst()    if 2*r>l or 2*r>b:print('Second')    else:print('First')

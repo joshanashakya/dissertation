@@ -1,0 +1,1 @@
+t = int(input())left =[]right = []for i in range(t):    n = int(input())    for j in range(n):        l , r = map( int, input().split())        left.append(l)        right.append(r)    if (max(left) - min(right)) > 0:        print(max(left) - min(right))    else:        print(0)    left.clear()    right.clear()                    

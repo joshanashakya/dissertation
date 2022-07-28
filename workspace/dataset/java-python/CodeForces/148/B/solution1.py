@@ -1,0 +1,1 @@
+vp=int(input())vd=int(input())t=int(input())f=int(input())c=int(input()) dist=0cnt=0if vd<=vp:print(0)else:    while True:        time = t+vp*t/(vd-vp)        if time*vp>=c:            print(cnt)            break        else:            t=t+2*(time-t)+f            cnt+=1

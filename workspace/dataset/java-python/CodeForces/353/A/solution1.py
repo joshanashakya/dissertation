@@ -1,0 +1,1 @@
+l1=[];l2=[]n=int(input())for __ in range(n):    x,y=map(int,input().split())    l1.append(x);l2.append(y)if sum(l1)%2==0 and sum(l2)%2==0:    print(0)elif sum(l1)%2!=0 and sum(l2)%2!=0 and n!=1:    c= -1    for i,j in zip(l1,l2):        if abs(i-j)%2!=0:            c+=2            break    print(c)else:print(-1)

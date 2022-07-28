@@ -1,0 +1,1 @@
+def gcd(a,b):    while b:        a%=b        a,b=b,a    return an=int(input())l=list(map(int,input().split()))if n==1:    print(l[0])else:    g=gcd(l[0],l[1])    a=(l[0]*l[1])//g    for i in range(2,n):        a,g=gcd(a,g*l[i]//gcd(g,l[i])),gcd(l[i],g)    print(a)

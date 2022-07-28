@@ -1,0 +1,1 @@
+def find(x,y,n):    for i in range(x,y+1):        if i>=n:            return i    return 0         n=int(input())a=list(map(int,input().split()))m=int(input())f=Truefor i in range(m):    x,y=map(int,input().split())    if find(x,y,sum(a))!=0 and f:        print(find(x,y,sum(a)))        f=Falseif f:    print(-1)

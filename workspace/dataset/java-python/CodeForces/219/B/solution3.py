@@ -1,0 +1,1 @@
+n, p = map(int, input().split()) ans = n l = len(str(n))for nine in range(0, l):    m = int(str(n)[:l-nine] + '9'*nine)    while m > n:        m -= 10**nine    if n - m <= p:        ans = m print(ans)

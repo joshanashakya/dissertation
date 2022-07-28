@@ -1,0 +1,1 @@
+n=int(input())a = list(map(int,input().split()))flag=0dic={}for i in a:    if(i not in dic):        dic[i]=1    else:        dic[i]+=1m = max(dic.values()) if(n==1):    print("YES")elif(n%2==1):    if(m>(n//2)+1):        print('NO')    else:        print('YES')else:    if(m>(n//2)):        print('NO')    else:        print('YES')

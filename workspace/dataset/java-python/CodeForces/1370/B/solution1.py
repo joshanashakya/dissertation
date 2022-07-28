@@ -1,0 +1,1 @@
+t=int(input())for i in range(t):	n=int(input())	l=list(map(int,input().split()))	e=[]	o=[]	for i in range(2*n):		if l[i]%2==0:			e.append(i+1)		else:			o.append(i+1)	for i in range(n-1):		if len(e)>1:			print(str(e.pop(0))+" "+str(e.pop(0)))		else:			print(str(o.pop(0))+" "+str(o.pop(0)))      	    

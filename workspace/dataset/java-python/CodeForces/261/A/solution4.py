@@ -1,0 +1,1 @@
+from sys import stdin,stdoutnmbr = lambda: int(stdin.readline())lst = lambda: list(map(int,stdin.readline().split()))for _ in range(1):#nmbr()):    n=nmbr()    a=sorted(lst())    d=a[0]    n=nmbr()    a=sorted(lst())    ans=0    p=n-1;buy=d    while p>=0:        if d==0:            d=buy            p-=2            continue        ans+=a[p]        d-=1        p-=1    print(ans)

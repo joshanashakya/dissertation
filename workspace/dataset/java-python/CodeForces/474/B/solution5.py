@@ -1,0 +1,1 @@
+n = int(input())a = [int(num) for num in input().split(' ')]c = [0] * (sum(a))k = 0for i in range(n):    for j in range(a[i]):        c[k] = i + 1        k += 1m = int(input())q = [int(num) for num in input().split(' ')]for i in range(m):    print(c[q[i] - 1])

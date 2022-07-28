@@ -1,0 +1,1 @@
+n, m, l, r = map(int , input().split())a = list(map(int , input().split()))if max(a) > r or  min(a) < l:    print("Incorrect")elif n - m >= 2 :    print("Correct")else:    if l not in a and r not in a and l != r:        print("Incorrect")    else:        print("Correct")

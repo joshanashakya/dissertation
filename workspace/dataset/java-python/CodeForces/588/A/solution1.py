@@ -1,0 +1,1 @@
+days = int(input())dailyReq = []dailyPrice = []totalCost = 0for day in range(days):    a,p = input().split()    dailyReq.append(int(a))    dailyPrice.append(int(p)) minPrice = dailyPrice[0]for day in range(days):    if(dailyPrice[day] < minPrice):        minPrice = dailyPrice[day]    totalCost += dailyReq[day] * minPrice print(totalCost) 

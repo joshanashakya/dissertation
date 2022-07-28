@@ -1,0 +1,1 @@
+#%% 1176a Divide it for _ in range(int(input())):    n = int(input())    move = 0    while n>1:        if n%2 == 0:            n = n//2        elif n%3==0:            n = n//3*2        elif n%5==0:            n = n//5*4        else:            n = -1        move+=1    print(move if n!=-1 else -1)        

@@ -1,0 +1,1 @@
+# https://codeforces.com/problemset/problem/1110/A b, k = map(int, input().split()) a = tuple(map(int, input().split())) if b % 2 == 1:    if sum(a) % 2 == 0:        print("even")    else:        print("odd")else:    if a[-1] % 2 == 0:        print("even")    else:        print("odd")

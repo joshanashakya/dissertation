@@ -1,0 +1,1 @@
+num=int(input())arr=[0]*numarr=input().split()for i in range (num):    arr[i]=int(arr[i])arr.sort()a=arr[0]b=arr[1]c=arr[2]ans=1ca=arr.count(a)cb=arr.count(b)cc=arr.count(c)if c !=b and b !=a:    ans=ca*cb*ccelif b==c and b !=a:    ans=ca*(cb*(cb-1)//2)elif a==b and b !=c:    ans=(ca*(ca-1))//2*ccelif a==b and b==c:    ans=(ca*(ca-1)*(ca-2))//6print (ans)

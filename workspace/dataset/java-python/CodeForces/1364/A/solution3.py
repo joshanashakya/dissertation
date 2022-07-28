@@ -1,0 +1,1 @@
+t=int(input())for _ in range(t):	n,x=map(int,input().split())	a=[int(x) for x in input().split()]	ok=False	for i in a:		ok|=(i%x)	if (not ok):		print(-1)	elif (sum(a)%x):		print(n)	else:		ans=n		for i in range(n):			if (a[i]%x):				ans=i+1				break		for i in range(n-1,0,-1):			if (a[i]%x):				ans=min(ans,n-i)				break		print(n-ans)

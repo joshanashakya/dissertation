@@ -1,0 +1,1 @@
+l, r, k = map(int, input().split())p = 1while p < l:    p = p * klis = []while p >= l and p <= r:    lis.append(p)    p = p * kif not lis:    print(-1)else:    for i in lis:        print(i, end = ' ')

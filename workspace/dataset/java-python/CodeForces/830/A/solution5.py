@@ -1,0 +1,1 @@
+n, k, p = map(int, input().split())a = sorted(list(map(int, input().split())))b = sorted(list(map(int, input().split()))) res = 1e15for i in range(k - n + 1):    ma = 0    for j in range(n):        te = abs(a[j] - b[i+j]) + abs(b[i+j] - p)        ma = max(ma, te)    res = min(res, ma)print(res)

@@ -1,0 +1,1 @@
+n, m, x, y = map(int, input().split())a = list(map(int, input().split()))b = list(map(int, input().split()))outputs, l = [], 0for i in range(n):    minm = max(1, a[i]-x)    while l<m and b[l]<minm:        l += 1    if l<m and b[l]<=a[i]+y:        outputs.append(f'{i+1} {l+1}')        l += 1print(len(outputs))for output in outputs:    print(output) 

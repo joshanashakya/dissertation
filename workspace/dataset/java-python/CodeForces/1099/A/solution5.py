@@ -1,0 +1,1 @@
+w, h = map(int, input().split()) u1, d1 = map(int, input().split()) u2, d2 = map(int, input().split()) floor = hwhile floor > 0:    w += floor    if d1 == floor:        w -= u1    elif d2 == floor:        w -= u2    if w < 0:        w = 0    floor -= 1 print(w)  

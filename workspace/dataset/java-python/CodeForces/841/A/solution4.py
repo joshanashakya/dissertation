@@ -1,0 +1,1 @@
+try:    a,b=map(int,input().split())    s=input()    alph=[]    count=[]    for i in range(a):        if s[i] in alph:            continue        else:            alph.append(s[i])            count.append(s.count(s[i]))            if(max(count)>b):        print('No')    else:        print('Yes')    except:    pass

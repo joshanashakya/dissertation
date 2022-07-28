@@ -1,0 +1,1 @@
+import mathp, x, y = map(int, input().split())s = ywhile 1:    if abs(x - s) % 50 == 0: break    s -= -1 while 1:    i = (s // 50) % 475    for j in range(25):        i = (i * 96 + 42) % 475        if i + 26 == p: break    if i + 26 == p:        break    s += 50if s <= x: print(0)else:    if (s - x) % 100 == 0: print((s - x) // 100)    else: print((s - x) // 100 + 1)

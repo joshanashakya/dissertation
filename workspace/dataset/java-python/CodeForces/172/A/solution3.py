@@ -1,0 +1,1 @@
+a=int(input())c=[] cnt=0for i in range(a):  c.append(input()) for i in range(0,len(c[0])):  b=0  for j in range(1,a):    if c[j][i]==c[0][i]:      b+=1    else:      break  if b==a-1:    cnt+=1  else:    breakprint(cnt)                                     

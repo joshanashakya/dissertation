@@ -1,0 +1,1 @@
+n, m = map(int, input().split())c = list(map(int, input().split()))w = list(map(int, input().split()))a = min(c)tl = 2*afor i in range(len(c)):    if tl >= c[i]:        pass    else:        tl = c[i]for i in range(len(w)):    if tl < w[i]:        pass    else:        print(-1)        exit()print(tl)

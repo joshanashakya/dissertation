@@ -1,0 +1,1 @@
+a,b,d = map(int, input().strip().split(' '))if d==0:    if a==b:        print('yes')    else:        print('no')elif a==b:    print('yes')elif (b-a)%d==0 and (b-a)*d>0:    print('yes')else:    print('no')

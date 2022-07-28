@@ -1,0 +1,1 @@
+def solve():    n, k = map(int, input().split())     arr = [int(i) for i in input().split()]     price = 1     while k >= price and price < len(arr):        if arr[price] == 0:            price += 1            continue         arr[price] -= 1        k -= price        arr[0] += 1     print(arr[0]) t = int(input()) while t:    solve()    t -= 1

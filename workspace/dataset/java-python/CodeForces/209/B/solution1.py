@@ -1,0 +1,1 @@
+import sysinput=sys.stdin.readlinel=input().split()li=[int(i) for i in l]maxa=10**18li.sort()if((li[2]-li[1])%2==0):    maxa=min(maxa,li[2])if((li[2]-li[0])%2==0):    maxa=min(maxa,li[2])if((li[1]-li[0])%2==0):    maxa=min(maxa,li[1])if(maxa==10**18):    print(-1)else:    print(maxa)

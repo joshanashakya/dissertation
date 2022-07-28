@@ -1,0 +1,1 @@
+n = int(input())li = list(map(int, input().split()))count = 0d = 0for i in li:    if i/1 > 0:        count += 1for j in li:    if j/(-1) > 0:        d += 1if count >= n/2:    print(1)elif d >= n/2:    print(-1)else:    print(0)

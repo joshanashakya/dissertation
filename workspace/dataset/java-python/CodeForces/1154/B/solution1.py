@@ -1,0 +1,1 @@
+n=int(input())a=list(map(int, input().split())) ans=1000 if n==1:    print(0)    exit()if len(set(a))==1:    print(0)    exit() for s in range(101):    t=set()    for i in range(n):        x=abs(s-a[i])        if x==0:            continue        t.add(x)    if len(t)==1:        ans=min(ans,list(t)[0])if ans==1000:    print(-1)else:    print(ans)

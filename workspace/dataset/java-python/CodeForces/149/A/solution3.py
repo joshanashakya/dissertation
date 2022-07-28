@@ -1,0 +1,1 @@
+# https://codeforces.com/problemset/problem/149/A k = int(input()) months = sorted(map(int, input().split()), reverse=True)ans = 0for i in months:    if k <= 0:        break    k -= i    ans += 1 if k > 0:    print(-1)else:    print(ans)

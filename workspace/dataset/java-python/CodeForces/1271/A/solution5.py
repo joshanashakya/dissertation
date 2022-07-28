@@ -1,0 +1,1 @@
+a = int(input())b = int(input())c = int(input())d = int(input())e = int(input())f = int(input())s1 = min(a, d)s2 = min(b, c, d) if e > f:    ans = s1*e + min(b, c, d-s1)*felse:    ans = s2*f + min(a, d-s2)*e print(ans)

@@ -1,0 +1,1 @@
+count1=0count2=0n = int(input())row = list(str(input()))for j in range(n-1):    if row[j] == 'S' and row[j+1] == 'F':        count1 = count1 + 1    elif row[j] == 'F' and row[j+1] == 'S':        count2 = count2 + 1if count1 > count2:    print("YES")else:    print("NO")

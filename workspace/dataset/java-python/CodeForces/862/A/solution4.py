@@ -1,0 +1,1 @@
+try:    n,x = map(int, input().split())    a = list(map(int, input().split()))    a.sort()    z=0    if a.__contains__(x):        z+=1    for i in range(x):        if not a.__contains__(i):            z+=1    print(z)except:    pass

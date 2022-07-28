@@ -1,0 +1,1 @@
+from math import ceil, log2 for t in range(int(input())):    n = int(input())    x = n    for k in range(2, ceil(log2(n))+1):        if n % (2**k - 1) == 0:            x = n // (2**k - 1)            break    print(x)

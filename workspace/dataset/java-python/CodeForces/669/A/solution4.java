@@ -1,0 +1,1 @@
+import java.util.Scanner; public class covidSpread2 {	static Scanner sc = new Scanner(System.in);	public static void main(String[] args) {			solvex();	}	public static void solvex() { 		int n = sc.nextInt();		int fac=n/3;		int ans=2*fac;		if(n%3!=0) ans++;		System.out.println(ans);	}}

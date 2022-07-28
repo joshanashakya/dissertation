@@ -1,0 +1,1 @@
+import java.util.Scanner;public class p1085B {	public static void main(String[] args) {		Scanner sc = new Scanner(System.in);		int n = sc.nextInt(), k = sc.nextInt(),p=k-1;		while(n%p>0 && p>0) p--;		System.out.println(n/p*k+p);	}}

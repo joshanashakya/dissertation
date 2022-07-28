@@ -1,0 +1,1 @@
+n = int(input())A = [int(d) for d in input()]f = [int(x) for x in input().split()]flag = Falsefor i in range(n):    d = A[i]    x = f[A[i] - 1]    if x > d:        flag = True        A[i] = x    elif x == d:        continue    else:        if flag:            breakA = list(map(str, A))print(''.join(A))

@@ -1,0 +1,1 @@
+from collections import Counterimport math def solve():    string=input()    count=0    l=len(string)    i=0     array=[]     while(i<l):        if string[i]!="0":            count+=1            array.append(int(string[i])*10**(l-1-i))        i+=1    print(count)    for i in array:        print(i,end=" ")    print() for i in range(int(input())):    solve()

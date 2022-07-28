@@ -1,0 +1,1 @@
+n = int(input())a = sorted(set(map(int, input().split())))ok = Falsefor i in range(len(a)-2):    x = a[i]    if (a[i] == x and a[i+1] == x+1 and a[i+2] == x+2):        ok = True        breakprint("YES" if ok else "NO")

@@ -1,0 +1,1 @@
+for t in range(int(input())):    x1, y1, z1 = map(int, input().split())    x2, y2, z2 = map(int, input().split())    sm = 0    two1 = min(z1, y2)    sm += (2*two1)    z1 -= two1    y2 -= two1    one0 = min(y1, x2)    y1 -= one0    x2 -= one0    one1 = min(y1, y2)    y1 -= one1    y2 -= one1    one2 = min(z2, y1)    sm -= 2*(one2)    z2 -= one2    y1 -= one2    print(sm)

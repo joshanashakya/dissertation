@@ -1,0 +1,1 @@
+n, k = map(int, input().split())l = 2 * k + 1stack = []if 0 < n % l < (k + 1):    for i in range(1, n+1, l):        stack.append(i)else:    for i in range(k + 1, n+1, l):        stack.append(i)print(len(stack))print(*stack)

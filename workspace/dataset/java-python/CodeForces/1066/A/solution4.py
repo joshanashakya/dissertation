@@ -1,0 +1,1 @@
+t = int(input())while t >= 1:    t = t - 1    a = list(map(int, input().split()))    L = a[0]    v = a[1]    l = a[2]    r = a[3]    ans = int(0)    ans = int(L / v) - (int(r / v) - int((l - 1) / v))    print(ans)	   	 			 			  	 	   	 						

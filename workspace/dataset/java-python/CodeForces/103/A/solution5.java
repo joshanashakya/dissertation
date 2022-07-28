@@ -1,0 +1,1 @@
+import java.util.Scanner; public class CodeForces2 {     public static void main(String[] args) {        Scanner sc = new Scanner(System.in);       long n = sc.nextInt(); long q, sum = 0;        for (long i = 1; i <= n; i++) {          q = sc.nextInt();          sum += (i*q)- (i-1);        }         System.out.println(sum);    }}

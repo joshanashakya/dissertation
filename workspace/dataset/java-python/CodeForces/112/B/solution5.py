@@ -1,0 +1,1 @@
+l=input().split(" ")n=int(l[0])x=int(l[1])y=int(l[2])h=n/2if( (x==h)&(y==h) ) :    print("NO")elif(( x==h)&(y==h+1 )):    print("NO")elif( (x==h+1)&(y==h) ):    print("NO")elif((x==h+1)&(y==h+1) ):    print("NO")else: print("YES")

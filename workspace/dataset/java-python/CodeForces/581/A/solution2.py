@@ -1,0 +1,1 @@
+from collections import Counterimport math def solve():    a,b=list(map(int,input().split()))    if a==b:        print(a,0)        return     if a<b:        print(a,(b-a)//2)        return     print(b,(a-b)//2)     solve()

@@ -1,0 +1,1 @@
+num = int(input())arr = list(map(int, input().split())) ones = sum(1 for i in arr if i == 1)twos = num - ones ans = max(ones // 3 + min(ones % 3, twos), min(ones, twos) + (ones - min(ones, twos)) // 3) print(ans)

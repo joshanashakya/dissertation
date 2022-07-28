@@ -1,0 +1,1 @@
+def maxSum(a,b):    s1 = 0    s2=0    for i in a:        s1 = s1 + int(i)    for i in b:        s2 = s2 + int(i)    print(s1+s2)    returntry:    n = input()    a = str(int(n[0])-1)    for i in range(len(n)-1):        a = a + "9"    b = str(int(n) - int(a))    maxSum(a,b)except:    pass

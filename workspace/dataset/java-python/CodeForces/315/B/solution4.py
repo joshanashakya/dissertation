@@ -1,0 +1,1 @@
+n , m = map(int, input().split())l = list(map(int, input().split()))tmp,s = 0,""for i in range(m):    op =  list(map(int, input().split()))    if op[0] == 1:        l[op[1]-1] = op[-1] - tmp    elif op[0] == 2 :        tmp += op[-1]    else:        s+=f"{l[op[-1]-1]+tmp}\n"print(s)

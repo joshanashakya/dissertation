@@ -1,0 +1,1 @@
+t = int(input()) for i in range(t):    s = input()    lst = set(list(s))    if len(lst) == 1:        print(s, end = "")    else:        if s[0] == "1":            for i in range(len(s)):                print("10", end = "")        else:            for i in range(len(s)):                print("01", end = "")    print("")

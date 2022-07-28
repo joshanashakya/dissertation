@@ -1,0 +1,1 @@
+import java.util.*;import java.io.*;public class Main{	public static void main(String[] args) {		Scanner sc = new Scanner(System.in);		int n = sc.nextInt();		int t = sc.nextInt(), rem = 0, res=0;		for(int i=1; i<=n; i++) {		    int num = sc.nextInt();		    rem += (86400-num);		    if(rem >= t && res == 0) 		        res = i;		}	    System.out.println(res);		sc.close();	}}

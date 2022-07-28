@@ -1,0 +1,1 @@
+from sys import stdininput = stdin.readline n, t = [int(x) for x in input().split()]a = [int(x) for x in input().split()]for i in range(n):    t -= 86400 - a[i]    if t <= 0:        print(i + 1)        break

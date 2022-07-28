@@ -1,0 +1,1 @@
+for _ in range(int(input())):    n=int(input())    arr=[abs(int(x)) for x in input().split()]    out=[]    for i in range(len(arr)):        if i%2==0:            out.append(arr[i])        else:            out.append(arr[i]*-1)    print(*out)

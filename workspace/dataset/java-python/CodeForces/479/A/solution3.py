@@ -1,0 +1,1 @@
+number1 = int(input())number2 = int(input())number3 = int(input()) one = number1 + number2 + number3two = number1 * number2 * number3three = (number1 + number2) * number3four = number1 * (number2 + number3) list1 = [one,two,three,four] print(max(list1))

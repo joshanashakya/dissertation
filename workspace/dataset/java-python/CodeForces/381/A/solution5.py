@@ -1,0 +1,1 @@
+n=int(input())a=[int(x) for x in input().split()]ans=[0,0]k=0i=0j=n-1while(n>0):    if(a[i]>a[j]):        ans[k]+=a[i]        i+=1    else:        ans[k]+=a[j]        j-=1    n-=1    if(k==0):        k=1    else:        k=0 print("{} {}".format(ans[0],ans[1]))

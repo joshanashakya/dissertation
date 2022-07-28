@@ -1,0 +1,1 @@
+n , k = map(int , input().split()) dit = 0 for i in range(n):    val , ice = input().split()    ice = int(ice)    if(val == '+'):        k += ice    else:        if(ice > k):            dit += 1        else:            k -= ice print(k , dit)

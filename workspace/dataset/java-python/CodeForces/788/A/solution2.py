@@ -1,0 +1,1 @@
+n=int(input())arr=list(map(int,input().split()))new=[]c=1for i in range(n-1):    new.append(abs(arr[i]-arr[i+1])*c)    c*=-1s=0s1=0m=0for i in range(n-1):    s+=new[i]    if s<0:        s=0    if i>0:        s1+=-new[i]        if s1<0:            s1=0        m=max(m,s1)    m=max(m,s)print(m)

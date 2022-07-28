@@ -1,0 +1,1 @@
+import bisectimport syssys.stdin = open('input.txt', 'r')sys.stdout = open('output.txt', 'w')n=int(input())a=list(map(int,input().split()))a.sort()ans=10**18for i in range(n):  x=a[i]*2  idx=bisect.bisect_right(a,x)  cnt=i+(n-idx)  ans=min(ans,cnt)print(ans)

@@ -1,0 +1,1 @@
+from math import combif __name__ == '__main__':    n, m, h = map(int, input().split())    h -= 1     arr = [int(i) for i in input().split()]    arr[h] -= 1    n -= 1     total = sum(arr)    if total < n:        print(-1)        exit(0)    ans = comb(total - arr[h], n) / comb(total, n)    print(1 - ans)

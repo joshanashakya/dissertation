@@ -1,0 +1,1 @@
+n,d=map(int,input().split())s=input()if max(list(len(i) for i in s.split('1')))>=d:    print(-1)else:    ans=0    i=0    while i<n-1:        for j in range(min(n-1,i+d),i,-1):            if s[j]=='1':                ans+=1                i=j                break    print(ans)

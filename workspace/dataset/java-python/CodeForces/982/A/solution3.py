@@ -1,0 +1,1 @@
+n = int(input())s = str(input())ans = 'YES'count = 1for i in range(n):    if int(s[i]) == 0:        count += 1    elif int(s[i]) == 1 and count > 0:        count = 0    else :        ans = "NO"        break    if count > 2:        ans = "NO"        breakif len(s) == 1 and int(s[0]) == 0:    ans = 'NO'if count >= 2:    ans = 'NO'print(ans)

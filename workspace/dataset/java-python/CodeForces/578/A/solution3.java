@@ -1,0 +1,1 @@
+import java.util.*; public class Ideone{	public static void main (String[] args) {		Scanner in = new Scanner(System.in);    	int a = in.nextInt(), b = in.nextInt();    	if (a < b) System.out.print(-1);    	else System.out.printf("%.10f", 1.0 * (a + b) / (2.0 * ((a + b) / (2 * b))));	}}

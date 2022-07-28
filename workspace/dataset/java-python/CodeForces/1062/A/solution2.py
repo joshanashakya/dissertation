@@ -1,0 +1,1 @@
+n=int(input())arr=[0]+list(map(int,input().split()))+[1001];ans=0for i in range(n+2):  e=0;s=arr[i]  for j in range(i+1,n+2):    if arr[j]==s+1:s=arr[j];e+=1    else:break  #print(arr[i],arr[j],e)  ans=max(e-1,ans)print(ans) 

@@ -1,0 +1,1 @@
+import java.util.*;public class Solution{    public static void main(String[] args){        Scanner s=new Scanner(System.in);        int n=s.nextInt();        int m=s.nextInt();        int count=0;        if(m==0)        count=1;        else{            count=Math.min(m,n-m);        }        System.out.println(count);    }}

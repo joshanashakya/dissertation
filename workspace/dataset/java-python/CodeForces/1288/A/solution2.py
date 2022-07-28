@@ -1,0 +1,1 @@
+import sysfrom math import floordef input():    return sys.stdin.readline().strip()def iinput():   return int(input())def minput():   return map(int, input().split()) def listinput(): return list(map(int, input().split()))for _ in range(iinput()):    n,d=minput()    if pow(n+1,2)>=4*d:        print("YES")    else:        print("NO")

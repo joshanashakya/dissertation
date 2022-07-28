@@ -1,0 +1,1 @@
+one, two = input().split()n = int(input())L = []for _ in range(n):    kill, new = input().split()    L.append( (kill, new) )# print(L,n)print(one, two)for (kill, new) in L:    # print(kill, new)    if one == kill:        print(new,two)        one = new    else:        print(one, new)        two = new

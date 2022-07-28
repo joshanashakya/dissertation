@@ -1,0 +1,1 @@
+n, t = (int(x) for x in input().strip().split(" "))a = [0] + [int(x) for x in input().strip().split(" ")] out = [1]j = 1while j < n:    j = j + a[j]    out.append(j) if t in out:    print("YES")else:    print("NO")				     			   	     		   	  	

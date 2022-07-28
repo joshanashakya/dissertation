@@ -1,0 +1,1 @@
+# cook your dish heres = input()q = input()qs = input()w = []for i in q:    w.append(i) for j in s:    w.append(j)    w.sort()sl = []for i in qs:    sl.append(i)sl.sort()if w == sl:    print("YES")else:    print("NO")         

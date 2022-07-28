@@ -1,0 +1,1 @@
+n,h,k = map(int,input().split())arr = list(map(int,input().split()))summ = j = sec = 0i = nwhile i:    while j<n and summ+arr[j]<=h:        summ += arr[j]        j += 1        i -= 1    if summ<k:        sec += 1        summ = 0    else:        sec += summ//k        summ %= kif summ:    sec += 1print(sec)

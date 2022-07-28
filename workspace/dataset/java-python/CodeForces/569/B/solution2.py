@@ -1,0 +1,1 @@
+n=int(input())a=list(map(int,input().split()))x=[0]*(100001)z=[0]*(100001)y=list()for i in range(0,n):	x[a[i]]+=1for i in range(1,n+1):	if x[i]==0:		y.append(i)j=0for i in range(0,n):	if z[a[i]]==0 and a[i]<=n:		print(a[i],end=" ")		z[a[i]]=1	else:		print(y[j],end=" ")		j+=1	

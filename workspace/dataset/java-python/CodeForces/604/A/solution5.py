@@ -1,0 +1,1 @@
+m = list(map(int, input().split()))w = list(map(int, input().split()))h = list(map(int, input().split()))points = [500, 1000, 1500, 2000, 2500]ans = 0for i in range(5):    ans += max(0.3 * points[i], ((1 - m[i] / 250) * points[i]) - 50 * w[i])ans += 100 * h[0] - 50 * h[1]print(int(ans))

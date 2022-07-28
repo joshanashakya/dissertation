@@ -1,0 +1,1 @@
+a,b=map(int,input().split())z=list(map(int,input().split()));s=0for i in set(z):    r=z.count(i);s+=2*(i-1)*(r//b)    for j in range(b*(r//b)):z.remove(i)z.sort(reverse=True)print(s+sum(2*(i-1) for i in z[::b]))

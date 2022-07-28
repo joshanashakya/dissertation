@@ -1,0 +1,1 @@
+n = int(input())A = list(map(int,input().split())) A.sort() dist = float("inf")cnt = 0 for i in range(n-1):    tmp = A[i+1]-A[i]    if tmp < dist:        dist = tmp        cnt = 1    elif tmp == dist:        cnt += 1        print(dist, cnt)

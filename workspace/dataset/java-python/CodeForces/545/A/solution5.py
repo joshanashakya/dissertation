@@ -1,0 +1,1 @@
+n = int(input())lst = [0]*nfor i in range(n):    s = input().split()    for j in range(n):        if s[j]=='1':            lst[i]=1        elif s[j]=='2':            lst[j]=1        elif s[j]=='3':            lst[i],lst[j]=1,1count = 0lstn = []for i in range(n):    if lst[i]==0:        lstn.append(i)        count += 1print(count)for j in lstn:    print(j+1,end = ' ')

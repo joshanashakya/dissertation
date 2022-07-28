@@ -1,0 +1,1 @@
+s=input()f=1for i in range(len(s)-1):    if s[i] not in "aeioun":        if s[i+1] not in "aeiou":            f=0if f:    if s[-1] in "aeioun":        print("YES")    else:        print("NO")else:    print("NO")

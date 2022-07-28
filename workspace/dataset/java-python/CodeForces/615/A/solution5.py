@@ -1,0 +1,1 @@
+n,m = map(int, input() .split())x=[]s = set()for i in range(n):  x += [list(map(int, input() .split()))]  x[i][0] = 'i'for i in range(n):  for j in range(1,len(x[i])):    s.add(x[i][j])if len(s) == m:  print('YES')else:  print('NO') 

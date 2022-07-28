@@ -1,0 +1,1 @@
+import syssys.stdin=open("input.txt","r")sys.stdout=open("output.txt","w")n=int(input())for i in range(3):    u,v=map(int,input().split())    if(u==n):        n=v    elif(v==n):        n=uprint(n)    

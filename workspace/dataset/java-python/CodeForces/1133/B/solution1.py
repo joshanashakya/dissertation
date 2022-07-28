@@ -1,0 +1,1 @@
+n, k = map(int, input().split())lst = sorted([int(i) % k for i in input().split()])low, high = 0, n-1count = 0 while low < high:    if lst[low] + lst[high] == k:        low += 1        high -= 1        count += 2    elif lst[low] + lst[high] < k:        low += 1    else:        high -= 1 print(count + 2 * (lst.count(0)//2))

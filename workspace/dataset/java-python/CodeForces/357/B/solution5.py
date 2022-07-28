@@ -1,0 +1,1 @@
+n,m = map(int,input().split())l=[0]*(n+1)for _ in range(m):    p=[1,2,3]    arr = list(map(int,input().split()))    for i in arr:        if l[i]!=0:            p.remove(l[i])    for i in arr:        if l[i]==0:            l[i]=p.pop()  #  print(p)for i in range(1,n+1):    print(l[i],end=" ")

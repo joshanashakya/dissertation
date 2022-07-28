@@ -1,0 +1,1 @@
+def main():    t = int(input())    for _ in range(t):        arr = tuple(map(int, input().split()))        if arr.count(max(arr)) > 1:            print("YES")            print(max(arr), min(arr), min(arr))        else:            print("NO")  if __name__ == '__main__':    main()

@@ -1,0 +1,1 @@
+n, m = [int(i) for i in input().split()]a = set(int(i) for i in input().split())b = set(int(i) for i in input().split())if a & b:    print(min(a & b))else:    x = min(a)    y = min(b)    print(min(x, y), max(x, y), sep='')

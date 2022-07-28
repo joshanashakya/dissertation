@@ -1,0 +1,1 @@
+a = int(input())l = list(map(int, input().split()))if len(set(l)) < 3:    print(0)else:    a, b, c = l.count(3), l.count(2), l.count(1)    d = min(a, b, c)    print(d)    k_1 = [ i for i,j in enumerate(l) if j == 1]    k_2 = [ i for i,j in enumerate(l) if j == 2]    k_3 = [ i for i,j in enumerate(l) if j == 3]    for i in range(d):        print(k_1[i]+1,k_2[i]+1,k_3[i]+1)  

@@ -1,0 +1,1 @@
+a, b, n = map(int, input().split()) def gcd(a,b):	if b==0:		return a	else:		return gcd(b, a%b) temp2 = True while n>0:	n -= gcd(a, n)	if n <= 0:		temp2 = False		break	n -= gcd(b, n)	 if temp2 != True:    print(0)else: 	print(1)	 

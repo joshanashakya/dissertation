@@ -1,0 +1,1 @@
+n=int(input())l,r=0,0index=-1a=[]for i in range(n):    x=[int(i) for i in input().split()]    l+=x[0]    r+=x[1]    a.append(x)ml,mr=l,rres=abs(l-r)for i in range(n):    temp=abs((l-a[i][0]+a[i][1])-(r-a[i][1]+a[i][0]))    #print(temp,res)    if temp>res:        res=temp        index=iprint(index+1) 			  	 		  	 		  		  	 	 	 		

@@ -1,0 +1,1 @@
+import sysinput = sys.stdin.readline n = int(input())a = list(map(int,input().split()))d = [0]*nc = [0]*ne = [0]*nx = 1mx = 0 for i in range(1,n):    d[i] = abs(a[i] - a[i-1]) for i in range(1,n):    c[i] = max(0,c[i-1] + d[i]*x)    e[i] = max(0,e[i-1] + d[i]*(-x))    mx = max(mx,max(c[i],e[i]))    x = -x print(mx)

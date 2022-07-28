@@ -1,0 +1,1 @@
+n = int(input())a = list(map(int, input().split()))b = list(map(int, input().split()))cnt = {}for x in a:  cnt[x] = cnt.get(x, 0) + 1for x in b:  cnt[x] = cnt.get(x, 0) - 1if any([abs(v) % 2 == 1 for v in cnt.values()]):  print(-1)else:  ans = sum([v for v in cnt.values() if v > 0]) // 2  print(ans)

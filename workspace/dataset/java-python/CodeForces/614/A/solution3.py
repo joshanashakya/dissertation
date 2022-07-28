@@ -1,0 +1,1 @@
+a = []d = input().split()l = int(d[0])r = int(d[1])k = int(d[2])t = 1;a.append(t);while (t < 10**20):	t *= k;	a.append(t);cnt = 0res = ''for i in range(len(a)):	if (a[i] <= r and a[i] >= l):		res += str(a[i]) + ' 'if (len(res) <= 0):	print(-1)else:	print(res)

@@ -1,0 +1,1 @@
+n,m=map(int,input().split())x=[]d={}for i in range(n):    a=list(input())    x.append(a)for i in x:    for j,k in enumerate(i):        d[j]=0for i in x:    for j,k in enumerate(i):        d[j]=max(d[j],int(k))c=0for i in x:    for j,k in enumerate(i):        if int(k)==d[j]:            c+=1            breakprint(c)

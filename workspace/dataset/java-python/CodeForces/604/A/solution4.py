@@ -1,0 +1,1 @@
+m = list(map(int, input().split(' ')))w = list(map(int, input().split(' ')))h = list(map(int, input().split(' ')))x = [500, 1000, 1500, 2000, 2500]res = 0 for i,j,y in zip(m, w, x):    res += max(0.3*y, (1-(i/250)) * y - 50*j) res += 100*h[0]res -= 50*h[1]print(int(res))  

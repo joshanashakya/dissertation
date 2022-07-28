@@ -1,0 +1,1 @@
+import java.util.*;public class Main {	public static void main(String[] args) {		Scanner sc=new Scanner(System.in);		int n = sc.nextInt();		int t = 0;		int[] x=new int[n+1];		x[1] = sc.nextInt();		for(int i=2;i<=n;i++) {			x[i] = sc.nextInt()^x[i-1];		}		for(int i=0;i<n;i++) {			for(int j=i+1;j<=n;j++) {				t = Math.max(t, x[i]^x[j]);			}		}		System.out.println(t);	}}

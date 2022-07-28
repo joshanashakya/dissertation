@@ -1,0 +1,1 @@
+months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November',          'December']month, skip = input(), int(input())years = int(skip / 12) remaining = skip - years * 12if remaining + months.index(month)<=11:    print(months[remaining+months.index(month)])else:    print(months[remaining+months.index(month)-12])

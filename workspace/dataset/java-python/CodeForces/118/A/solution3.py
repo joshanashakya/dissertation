@@ -1,0 +1,1 @@
+if __name__ == '__main__':    s = input()    temp = []    for i in s:        if i in ['A','E','I','O','U','a','e','i','o','u','Y','y']:            continue        else:            temp.append('.')            temp.append(i.lower())    print("".join(temp))

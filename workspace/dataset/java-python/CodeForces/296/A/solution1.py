@@ -1,0 +1,1 @@
+def solution():	n=int(input())	arr=list(map(int,input().split())) 	count={}	for i in arr:		if i not in count:			count[i]=1		else:			count[i]+=1 	maxi=n/2	if int(maxi)!=maxi:		maxi=int(maxi)+1	mx=0	for i in count:		mx=max(mx, count[i])	if mx<=maxi:		print('YES')	else:		print('NO')  	return		   solution()

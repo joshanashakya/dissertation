@@ -1,0 +1,1 @@
+n=input()stack = []for i in n:    if stack==[]:        stack.append(i)    else:        s = stack.pop()        if s=='y' and i=='x':            pass        elif s=='x' and i=='y':            pass        else:            stack.append(s)            stack.append(i)for i in stack:    print(i,end='')

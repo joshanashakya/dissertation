@@ -1,0 +1,1 @@
+for _ in range(int(input())):    n = int(input())    p = input()    q = p[::-1]    a = p.find('>')    b = q.find('<')    if a == -1:        print(b)    elif b == -1:        print(a)    else:        print(min(a, b))

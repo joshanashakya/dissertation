@@ -1,0 +1,1 @@
+n=int(input())k=int(n/2)s1="1"*(int(n/2)) + "0"*(n-int(n/2))s2="1"*(int(n/2)) + "0"*(n-int(n/2))s1=list(s1)s2=list(s2)a=[]b=[]for i in range(n):    c,d=input().split()    a.append(int(c))    b.append(int(d))for i in range(k,n):    if(a[i]<b[n-i-1]):        s1[i]="1"    if(b[i]<a[n-i-1]):        s2[i]="1"print(''.join(s1))print(''.join(s2))

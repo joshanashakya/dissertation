@@ -1,0 +1,1 @@
+n,m = map(int,input().split())ans = n+1for i in range(m):    a,b = map(int,input().split())    ans = min(ans, b-a+1)print(ans)arr = [0] * nput = 0for i in range(n):    arr[i] = put      put += 1    if(put == ans):        put = 0print(*arr)  

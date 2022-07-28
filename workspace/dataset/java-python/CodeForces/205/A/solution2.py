@@ -1,0 +1,1 @@
+n = int(input())min_idx = -1min_dist = float("inf") for idx, d in enumerate(map(int, input().split())):    if d == min_dist:        min_idx = -1    elif d < min_dist:        min_idx = idx + 1    min_dist = min(min_dist, d) if min_idx >= 0:    print(min_idx)else:    print("Still Rozdil")

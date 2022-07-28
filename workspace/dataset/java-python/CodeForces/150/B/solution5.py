@@ -1,0 +1,1 @@
+import math#n,m=map(int,input().split())from collections import Counter#for i in range(n):import math#for _ in range(int(input())):#n = int(input())n,m,k= map(int, input().split())mod=10**9+7if k==1 or k>n:    print((m**n)%mod)elif k==n:    var=(n+1)//2    var%=mod    print((m**(var))%mod)else:    if k%2==0:        print(m%mod)    else:        print((m*m)%mod) 

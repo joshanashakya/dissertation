@@ -1,0 +1,1 @@
+students,question = map(int,input().split()) final_list = []for each in range(0,students):    final_list.append(input())value = list(map(int,input().split())) i=0score = 0for each in range(0,question):    count_list = [0]*5    for ans_student in final_list:        count_list[ord(ans_student[i])-65] += value[i]    score = score + max(count_list)    i+=1    print(score) 

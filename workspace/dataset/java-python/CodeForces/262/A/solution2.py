@@ -1,0 +1,1 @@
+def f(n):    s=0    for a in list(str(n)):        if a=="4" or a=="7":            s+=1    return sn,k=map(int,input().split())l=[int(i) for i in input().split()]s1=0for a in l:    if f(a)<=k:        s1+=1print(s1)

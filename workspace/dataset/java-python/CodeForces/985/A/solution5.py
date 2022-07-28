@@ -1,0 +1,1 @@
+n = int(input())*p, = map(int, input().split())p.sort()black = sum(abs(i * 2 + 1 - x) for i,x in enumerate(p))white = sum(abs(i * 2 + 2 - x) for i,x in enumerate(p))print(min(black, white))# Thu Jan 07 2021 08:49:47 GMT+0300 (Москва, стандартное время)

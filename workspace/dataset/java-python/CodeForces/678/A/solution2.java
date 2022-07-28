@@ -1,0 +1,1 @@
+import java.util.*; public class questionCF { 	public static void main(String[] args) {				Scanner sc = new Scanner(System.in);		long n=sc.nextInt();		long k=sc.nextInt();		  		if(k==1) {			System.out.println(n+1);  return ;		}		if(n%k==0) ++n;				long x = n%k;		System.out.println(n+(k-x));			}}

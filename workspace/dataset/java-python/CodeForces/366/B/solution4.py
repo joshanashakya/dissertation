@@ -1,0 +1,1 @@
+def todo_list(end, k, arr):	count = 0	start = 0	result = 100000*1000000	while count != k:		b = 0		for x in range(start, end, k):			b += arr[x]		if b < result:			result = b			ans = start+1		start += 1		count += 1 	return ans  n, k = map(int, input().split())arr = list(map(int, input().split()))print(todo_list(n, k, arr))

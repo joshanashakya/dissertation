@@ -1,0 +1,1 @@
+n, k = map(int, input().split())s = input().split()ans = []for i in range(26):    ans.append(chr(65 + i) + "a")for i in range(24):    ans.append(chr(65 + i) + "b")for i in range(n - k + 1):    if s[i] == "NO":        ans[i + k - 1] = ans[i]ans = ans[:n]print(*ans)

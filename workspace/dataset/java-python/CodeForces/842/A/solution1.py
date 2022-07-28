@@ -1,0 +1,1 @@
+l,r,x,y,k=map(int,input().split())check=Trueif(x*k>r or y*k<l):    print("NO")else:    for i in range(x,y+1):        if(k*i<=r and k*i>=l):            check=False            break    if(check==True):        print("NO")    else:        print("YES")

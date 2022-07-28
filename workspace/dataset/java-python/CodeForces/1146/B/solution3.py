@@ -1,0 +1,1 @@
+T = input()Tp = '' for i in T:    Tp += (i, '')[i == 'a'] l = len(Tp)k = len(T) if l % 2 == 1:    print(':(')    exit(0) for i, j in zip(range(1 + l//2), range(l//2, l)):    if not Tp[i] == Tp[j]:        print(':(')        exit(0) for i in range(k - l//2, k):    if T[i] == 'a':        print(':(')        exit(0) for i in range(k - l//2):    print(T[i], end='')

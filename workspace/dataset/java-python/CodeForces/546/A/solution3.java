@@ -1,0 +1,1 @@
+import java.util.*; public class CompProg2 { 	public static void main(String[] args) {	    Scanner scan=new Scanner(System.in);	    int k=scan.nextInt();	    int n=scan.nextInt();	    int w=scan.nextInt();	    int price=0;	    for(int i=1;i<=w;i++){	    	price+=i*k;	    }	    if(n>price)	    	System.out.println(0);	    else	    	System.out.println(price-n);  	} }

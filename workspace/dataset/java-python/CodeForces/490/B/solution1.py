@@ -1,0 +1,1 @@
+n = int(input())dic = {}for i in range(n):    (a,b) = [int(j) for j in input().split(' ')]    dic[a] = b ans = []ans.append(0)val = set(dic.values())# print(val)for key in dic.keys():    if(key not in val):        ans.append(key)        breakfor i in range(n-1):    ans.append(dic[ans[-2]])ans = [str(i) for i in ans]print(' '.join(ans[1:]))	  		     	 			 	   	 		     		

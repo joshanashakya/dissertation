@@ -1,0 +1,1 @@
+import math def main_function():    output_list = []    s = input()    count = 0    vowels = ["a", "e", "o", "i", "u", "1", "3", "5", "7", "9"]    hash_list = [0 for i in vowels]    dict = {}    for i in range(len(vowels)):        dict[vowels[i]] = i    for i in s:        if i in vowels:            hash_list[dict[i]] += 1    return sum(hash_list)       print(main_function())

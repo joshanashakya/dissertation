@@ -1,0 +1,1 @@
+n=int(input())a=[int(x)for x in input().split()]first=Falseans,cur=1,0for e in a:    if first:        if not e:cur+=1        else:            ans*=cur+1            cur=0    elif e:first=Trueif ans==1 and not first:ans=0print(ans)

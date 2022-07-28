@@ -1,0 +1,1 @@
+for _ in range(int(input())):    n=int(input())    s=input()    if n==1:        print(0)    else:        if s[0]=='>' or s[-1]=='<':            print(0)        else:            a=s.index('>')            b=s[::-1].index('<')            print(min(a,b))

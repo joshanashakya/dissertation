@@ -1,0 +1,1 @@
+n, m = map(int, input().split()) arr = [0] * n for i in range(m):    a, b, c = map(int, input().split())    a -= 1    b -= 1    arr[b] += c    arr[a] -= c s = 0for e in arr:    if e < 0:        s += -e print(s)

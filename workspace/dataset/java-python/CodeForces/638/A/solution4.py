@@ -1,0 +1,1 @@
+n, k=map(int, input().split())a, b=[], []for x in range(1, n+1):    if x%2==0:        a.append(x)    else:        b.append(x)a=a[::-1]ans=0for x in range(len(a)):    ans+=1    if k==a[x] or k==b[x]:breakprint(ans)

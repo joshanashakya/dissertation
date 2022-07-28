@@ -1,0 +1,1 @@
+n, d = map(int, input().split())s = input()i = 0c = 0while i < n - 1:    j = i    i = min(n - 1, i + d)    while s[i] == '0':        i -= 1        if i == j:            print(-1)            exit()    c += 1print(c)

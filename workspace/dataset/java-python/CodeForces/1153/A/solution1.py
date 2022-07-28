@@ -1,0 +1,1 @@
+import math n, t = list(map(int, input().split())) matrix = [list(map(int, input().split())) for _ in range(n)] def calc_xi(s, d):    if t < s:        return s    u = math.ceil((t - s) / d)    return s + u * d xis = [calc_xi(s, d) for [s, d] in matrix] print(xis.index(min(xis)) + 1)  	 		  	 	 					  		 			 			 	

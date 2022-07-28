@@ -1,0 +1,1 @@
+''' 1300a Non zero'''for _ in range(int(input())):    input()    arr = [int(x) for x in input().split()]    ch = 0    for i,x in enumerate(arr):        ch+=x==0        arr[i]+=x==0    print(ch+int(sum(arr)==0))

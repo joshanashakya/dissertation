@@ -1,0 +1,1 @@
+from sys import stdininput = stdin.readline t = int(input())for _ in range(t):    x = input().rstrip()    y = input().rstrip()    for i in range(len(y)-1, -1, -1):        if y[i] == "1":            a = i            break    c = 0    for i in range(len(x) - (len(y) - a), -1, -1):        if x[i] == "1":            break        c += 1    print(c)

@@ -1,0 +1,1 @@
+import math as mpdef parallelepiped(areas):    a=areas[0]/areas[1]    b2=mp.sqrt(areas[2]/a)    a1=areas[1]/b2    b1=areas[0]/a1    edge_sum=(4*a1)+(4*b1)+(4*b2)    return(int(edge_sum)) areas=list(map(int,input().split()))result=parallelepiped(areas)print(result)

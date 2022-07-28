@@ -1,0 +1,1 @@
+def answer(s):    ss = set(s)    num_odds = 0    for char in ss:        ccnt = s.count(char)        if ccnt % 2 == 1: #odd number of chars            num_odds += 1    if num_odds == 0 or num_odds == 1:        return 'First'    if num_odds % 2 == 0:        return 'Second'            return 'First' def main():    s = input()    print(answer(s))      returnmain()

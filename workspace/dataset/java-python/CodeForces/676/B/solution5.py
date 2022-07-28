@@ -1,0 +1,1 @@
+n,t=map(int,input().split()) an=[[0 for i in range(j+1)] for j in range(n)]  def dfs(i,j,v):	if an[i][j]+v>1:		vv=v-(1-an[i][j])		an[i][j]=1		if i==n-1:return		dfs(i+1,j,vv/2)		dfs(i+1,j+1,vv/2)		return	d=1 if (j==0 or j==i) else 2	an[i][j]+=v for i in range(t):	dfs(0,0,1)ans=0for i in range(n):	for j in range(i+1):		ans+=an[i][j]>=1 print(ans)

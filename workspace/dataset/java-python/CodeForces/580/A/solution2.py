@@ -1,0 +1,1 @@
+n = int(input())x = [int(i) for i in input().split()]counter = 1maxcounter = 1for i in range(1, n):    if x[i] >= x[i-1]:        counter += 1    if counter > maxcounter:        maxcounter = counter    elif x[i] < x[i-1]:        counter = 1print(maxcounter)

@@ -1,0 +1,1 @@
+n = int(input()) arr1 = set()arr2 = set() for i in range(n**2):    a , b = map(int , input().split())    if a not in arr1 and b not in arr2:        print(i+1 , end = " ")        arr1.add(a)        arr2.add(b)    

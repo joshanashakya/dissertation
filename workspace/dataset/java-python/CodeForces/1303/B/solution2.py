@@ -1,0 +1,1 @@
+t=int(input())for i in range(t):    n,g,b = map(int,input().split())    q = n//2 + n%2    ans =0    if(q%g == 0):        ans = q//g        ans = (ans*g) + ((ans - 1)*b)    else:        ans = q//g+1        ans = ((ans - 1)*(g + b)) + (q%g)    print(max(n,ans))

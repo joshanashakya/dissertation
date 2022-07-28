@@ -1,0 +1,1 @@
+A = input().split()n,m = int(A[0]), int(A[1])X = []result = []for i in range(n):    k = int(input())    l  = list(map(int,list(str(k))))    X.append(l) for i in range(m):    k = []    for j in range(n):        k.append(X[j][i])    l = max(k)    for j in range(n):        if X[j][i]==l:            result.append(j)        else:            continueprint(len(set(result))) 

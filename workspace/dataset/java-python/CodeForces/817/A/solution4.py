@@ -1,0 +1,1 @@
+import mathdef main():    x1, y1, x2, y2 = map(int, input().split())    x, y = map(int, input().split())     dx = abs(x1 - x2)    dy = abs(y1-y2)     if dx%x==0 and dy%y==0:        if (dx/x)%2 == (dy/y) % 2:            print("YES")        else:            print("NO")    else:        print("NO")                   if __name__ == '__main__':    main()

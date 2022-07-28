@@ -1,0 +1,1 @@
+li = list(input())i = 0j = len(li) -1while i <= j:    tmp = li[i]    res = 0    if li[i] != li[j]:        print(0)        exit()    while i <= j and li[i] == tmp:        res += 1        i += 1    while i <= j and li[j] == tmp:        res += 1        j -= 1    if res <= 2 and i < j:        print(0)        exit()if res > 1:    print(res + 1)else:    print(0)

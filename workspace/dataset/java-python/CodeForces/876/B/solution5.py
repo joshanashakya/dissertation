@@ -1,0 +1,1 @@
+n, k, m = map(int, input().split())A = tuple(map(int, input().split())) ring = [[] for i in range(m)]for a in A:   ring[a%m].append(a) for i in range(m):   if len(ring[i]) >= k:       A = ring[i][:k]       print("Yes")       print(*A)       exit(0) print("No")

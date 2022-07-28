@@ -1,0 +1,1 @@
+def polo(n,k):    if k==1 and n>1:        return -1    if k==1 and n==1:        return "a"    if k>n:        return -1    base="ab"*(n)    k-=2    n-=k    ans=base[:n]    l="cdefghijklmnopqrstuvwxyz"    ans+=l[:k]    return ans  a,b=map(int,input().strip().split())print(polo(a,b))

@@ -1,0 +1,1 @@
+from sys import stdinn = int(stdin.readline())s = stdin.readline()[:-1]ans = 10000t = 'ACTG'for i in range(n-3):    r = s[i:i+4]    c = 0    for j in range(4):        x = ((ord(r[j]) - ord(t[j])+26)%26)        y = ((ord(t[j]) - ord(r[j])+26)%26)        c = c + min(x, y)    ans = min(ans, c)print(ans)

@@ -1,0 +1,1 @@
+n = int(input())x = FalseA = [int(i) for i in input().split()]for i in range(n-2):	x1 , x2= min(A[i],A[i+1]),max(A[i],A[i+1])	for j in range(i+1,n-1):		X1,X2 = min(A[j],A[j+1]),max(A[j],A[j+1])		if(x1<X1 and X1<x2 and x2<X2):			x = True		elif(X1<x1 and X2>x1 and X2<x2):			x = Trueif(x):	print("yes")else:	print("no")

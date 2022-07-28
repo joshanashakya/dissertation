@@ -1,0 +1,1 @@
+str1 = input()str = str1.split('=')ans = str[0].split('+')r = len(ans[0]) + len(ans[1])if r-len(str[1])!=0 and r-len(str[1]) != -2 and r-len(str[1]) != 2:print("Impossible")else:    a = len(ans[0])    b = len(ans[1])    c = len(str[1])     if r-c==2:        if a>1: a-=1        else:b-=1        c += 1    elif r-c==-2:        a += 1        c -=1    print(a*'|'+'+'+b*'|'+'='+c*'|')

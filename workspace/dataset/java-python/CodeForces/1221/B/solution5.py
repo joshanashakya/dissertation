@@ -1,0 +1,1 @@
+# collaborated with no one sizeOfBoard = int(input()) for x in range(sizeOfBoard):    for y in range(sizeOfBoard):        if (x + y) % 2 == 0:            print("B", end="")        else:            print("W", end="")    print("")  	  	    		   		    	  		  	 	 	

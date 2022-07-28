@@ -1,0 +1,1 @@
+n,m,k=map(int,input().split())l=list(map(int,input().split()))min_d=float('inf')for i in range(n):    if l[i]<=k and l[i]!=0:        if abs(((m-1)-i)*10)<min_d:            min_d=abs(((m-1)-i)*10)        print(min_d)

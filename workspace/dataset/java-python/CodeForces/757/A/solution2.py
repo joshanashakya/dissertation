@@ -1,0 +1,1 @@
+s=input()temp='Bulbasaur'l=[]for i in range(0,len(temp)):		l.append(int(s.count(temp[i])))if min(l)<=min(int(s.count('a')/2),int(s.count('u')/2)):    print(min(l))else:	print(min(int(s.count('a')/2),int(s.count('u')/2)))

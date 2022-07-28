@@ -1,0 +1,1 @@
+def solve(arr):  for i in arr:    if i not in ['WBWBWBWB','BWBWBWBW']:      return 'NO'  return 'YES'     def main() :  # n,k = list(map(int, input().split(' ')))  # n = int(input())  # arr = input().split(' ')  # s = input()  # res=''   arr = []  for _ in range(8):    i = input()    arr.append(i)    # # for i in arr:  # n = int(input())  # s = input()  print(solve(arr)) main()  

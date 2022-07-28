@@ -1,0 +1,1 @@
+a = input()b = input() a = a.lstrip('0')b = b.lstrip('0') l = max(len(a) , len(b))a = a.rjust(l , "0")b = b.rjust(l , "0") # print(a , b)if a == b:    print("=")elif a>b:    print('>')else:    print('<') 

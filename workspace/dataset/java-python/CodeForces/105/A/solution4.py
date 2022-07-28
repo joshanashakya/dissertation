@@ -1,0 +1,1 @@
+from collections import Counter n, m, k = input().split() k, c = int(k.split('.')[1]), Counter() for i in range(int(n)):     s, e = input().split()     e = int(e) * k // 100     if e >= 100:         c[s] = e for i in range(int(m)):     c[input()] += 0 print(len(c)) print('\n'.join(sorted(x + ' ' + str(c[x]) for x in c)))

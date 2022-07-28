@@ -1,0 +1,1 @@
+import java.util.*;public class Wizrds_Duel { 	public static void main(String[] args) {		// TODO Auto-generated method stub		Scanner sc=new Scanner(System.in);		int l=sc.nextInt();		int p=sc.nextInt();		int q=sc.nextInt();		double y=l*p;		double x=y/(p+q);		System.out.print(x);	} }

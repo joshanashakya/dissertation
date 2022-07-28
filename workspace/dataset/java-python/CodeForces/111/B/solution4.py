@@ -1,0 +1,1 @@
+import sysimport collections as ccinput=sys.stdin.buffer.readlineI=lambda:list(map(int,input().split()))prev=cc.defaultdict(int)for tc in range(int(input())):	x,y=I()	div=set()	for i in range(1,int(x**0.5)+1):		if x%i==0:			div.add(i)			div.add(x//i)	ans=0	now=tc+1	for i in div:		if now-prev[i]>y:			ans+=1		prev[i]=now	print(ans)

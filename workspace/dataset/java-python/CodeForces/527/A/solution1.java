@@ -1,0 +1,1 @@
+import java.util.*; public class questionA2OJ {		public static void main(String[] args) {				Scanner sc = new Scanner(System.in);		long a = sc.nextLong();		long b = sc.nextLong();		long s =0 ;		while(a>0 && b>0) {			if(a>b) {				s+=a/b;  a=a%b;			}			else {				s+=b/a;  b=b%a;			}		}		System.out.println(s);							}}

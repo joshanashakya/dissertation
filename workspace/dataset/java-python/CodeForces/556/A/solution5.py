@@ -1,0 +1,1 @@
+from sys import stdin, stdout def main():    n = stdin.readline()    s = stdin.readline()[:-1]    ones = s.count('1')    zeros = len(s)-ones    x = abs(ones-zeros)    stdout.write(str(x)+'\n') if __name__ == "__main__":    main()

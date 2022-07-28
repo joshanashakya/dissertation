@@ -1,0 +1,1 @@
+length = int(input())array = list(map(int, input().rstrip().split()))max_count, count = 1, 1for i in range(1, length):    if array[i - 1] < array[i]:        count += 1        if max_count < count:            max_count = count    else:        count = 1 print(max_count)

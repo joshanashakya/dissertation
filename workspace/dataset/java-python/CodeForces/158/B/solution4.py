@@ -1,0 +1,1 @@
+n=int(input())l=list(map(int,input().split()))a=l.count(1)b=l.count(2)c=l.count(3)d=l.count(4)res=dres+=ca-=cif b%2==0:    res+=b//2else:    res+=(b//2)+1    a-=2if a > 0:    if a%4!=0:        res+=(a//4)+1    else:        res+=a//4print(res)

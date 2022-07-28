@@ -1,0 +1,1 @@
+s = input()piv = s.index('^')sum = 0 for i in range(len(s)):    if s[i].isdigit():        sum += (i-piv) * int(s[i]) if sum == 0:    print('balance')elif sum > 0:    print('right')else:    print('left')

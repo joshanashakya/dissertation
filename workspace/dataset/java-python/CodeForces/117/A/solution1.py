@@ -1,0 +1,1 @@
+n, m = map(int, input().split())k = 2 * (m - 1)p = [0] * nfor i in range(n):    s, f, t = map(int, input().split())    d = t % k    if s < f: p[i] = (k if s <= d else 0) + f - 1 + t - d    elif f < s: p[i] = (k  if d + s > k + 1 else 0) + k + 1 - f + t - d    else: p[i] = tprint('\n'.join(map(str, p)))

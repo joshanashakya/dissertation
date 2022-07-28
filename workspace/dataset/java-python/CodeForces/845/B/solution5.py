@@ -1,0 +1,1 @@
+s=input()mas=[]for i in range(6):    mas+=[int(s[i])]a,b=mas[0:3],mas[3:6]if(sum(a)<sum(b)):    a,b=b,adelta=sum(a)-sum(b)a=sorted(a,reverse=True)b.sort()ans,sum,l1,l2=0,0,0,0 while(sum<delta):    if(a[l1]>9-b[l2]):        sum+=a[l1]        l1+=1    else:        sum+=9-b[l2]        l2+=1    ans+=1 print(ans)

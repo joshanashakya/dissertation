@@ -1,0 +1,1 @@
+a, b = map(int, input().split())ans = 0seen = set()while b:    b -= 1     num = int(input())    ans += 1    rem = num % a     if rem in seen:        print(ans)        exit()    else:        seen.add(rem) print(-1)    

@@ -1,0 +1,1 @@
+def hcfnaive(a,b):     if(b==0):         return a     else:         return hcfnaive(b,a%b)         n = int(input())li = [int(x) for x in input().split()]a = li[0]for _ in range(n-1):    a = hcfnaive(a , li[_+1])print(a*n)

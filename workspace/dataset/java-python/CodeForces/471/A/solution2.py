@@ -1,0 +1,1 @@
+t = list(map(int, input().split())) c_max = 0c_min = 6for x in range(6):     c_max = max(c_max, t.count(t[x]))    c_min = min(c_min, t.count(t[x])) if c_max < 4:       print('Alien')elif c_max == 4:    if c_min == 1:  print('Bear')    else:           print('Elephant')elif c_max == 5:    print('Bear')elif c_max == 6:    print('Elephant')

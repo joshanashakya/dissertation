@@ -1,0 +1,1 @@
+import java.util.*;public class Main{public static void main(String[] args){ Scanner in= new Scanner(System.in); double x=in.nextDouble();double m,conter=0;  for(int i=0;i<x;i++)  {      m=in.nextDouble();       if(360%(180-m)==0)      System.out.println("YES");      else      System.out.println("NO");      }  	}}  

@@ -1,0 +1,1 @@
+s = input()sl = []for j in s:    sl.append(int(j))i = 0while i < len(sl):    if sl[i] >= 5:        if i == 0 and sl[i] == 9:            s += 'bruh'        else:            sl[i] = 9-sl[i]    i += 1 k = len(sl)p = 1num = 0while k > 0:    k -= 1    num += p*sl[k]    p *= 10print(num)

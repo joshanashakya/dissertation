@@ -1,0 +1,1 @@
+import java.util.*;public class square{    public static void main(String ar[])    {        Scanner sc=new Scanner(System.in);        int n=sc.nextInt(),m=sc.nextInt();        System.out.println(n+m-1);        for(int i=1;i<=m;i++)System.out.println(1+" "+i);        for(int j=2;j<=n;j++)System.out.println(j+" "+1);    }}

@@ -1,0 +1,1 @@
+def findcolor(x,p):    i=0    while i*i<x*x+p*p:        i+=1        l=0    if (i*i==x*x+p*p) or (x*p>=0)!=(i%2==0):        l=1    print("black")if l else print("white")x,p=map(int,input().split())findcolor(x,p)

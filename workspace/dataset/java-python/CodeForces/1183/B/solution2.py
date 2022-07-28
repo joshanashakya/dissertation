@@ -1,0 +1,1 @@
+cases = int(input())while cases:    cases -= 1    a, b = map(int, input().split())    arr = list(map(int, input().split()))     mn = min(arr)    mx = max(arr)    if mx - mn > 2* b:        print(-1)    else:        print(mn+b)

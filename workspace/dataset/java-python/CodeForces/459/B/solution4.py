@@ -1,0 +1,1 @@
+n = int(input())flowers = list(sorted(list(map(int, input().split()))))madiff = flowers[n-1]-flowers[0]i = 0count0 = countn = 0while(i < n and flowers[i]==flowers[0]):    count0 +=1    i += 1i = n-1while(i>=0 and flowers[i]==flowers[n-1]):    countn+=1    i-=1if(flowers[0]!=flowers[n-1]):    print(madiff, count0*countn)else:    print(madiff, n*n-(1+n)*n//2)

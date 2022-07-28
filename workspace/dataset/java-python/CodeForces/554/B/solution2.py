@@ -1,0 +1,1 @@
+n = int(input()) a = [] for i in range(n):    a.append(input()) res = 0for i in range(n):    count = 0    for j in range(n):        if a[i] == a[j]:            count += 1    res = max(res, count) print(res)

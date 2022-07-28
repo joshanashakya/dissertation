@@ -1,0 +1,1 @@
+s=input()r=l=d=u=0for i in s:    if i=='R':        r+=1    if i=='L':        l+=1    if i=='D':        d+=1    if i=='U':        u+=1if (u+d+r+l)%2==0:    #print("u={},r={},l={},d={}".format(u,r,l,d))    if u==d and r==l:        print("0")    else:        print((abs(r-l)+abs(u-d))//2)else:    print("-1")

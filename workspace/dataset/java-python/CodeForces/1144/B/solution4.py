@@ -1,0 +1,1 @@
+n = int(input())daf = list(map(int, input().split()))daf_even = [x for x in daf if x%2==0]daf_odd = [x for x in daf if x%2]daf_even.sort()daf_odd.sort()x = len(daf_even)y = len(daf_odd)if abs(x-y) <= 1:    print(0)else:    if x > y + 1:        sel = x - (y + 1)        print(sum(daf_even[:sel]))    else:        sel = y - (x + 1)        print(sum(daf_odd[:sel]))        

@@ -1,0 +1,1 @@
+n = int(input())array = [int(x) for x in input().split()] a=[]count = 1Max = 0 for i in range(len(array)-1):    if (array[i] == array[i+1]):        count += 1    else:        a.append(count)        count = 1 a.append(count) for i in range(1,len(a)):        temp = min(a[i-1],a[i])        Max = max(temp,Max)print(Max*2)

@@ -1,0 +1,1 @@
+if __name__ == '__main__':    for _ in range(int(input())):        n, m = [int(s) for s in input().split()]        aa = [int(s) for s in input().split()]         if n < 3 or m < n:            print(-1)         else:            print(f'{2 * sum(aa)}')            for i in range(n):                print(f'{i+1} {(i+1)%n + 1}')  

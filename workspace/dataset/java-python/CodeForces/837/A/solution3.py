@@ -1,0 +1,1 @@
+import string uppercased_letters = string.ascii_uppercase def find_volume(word):  volume = 0  for character in word:    if character in uppercased_letters:      volume += 1  return volume _ = int(input())text = input()  volumes = []words = text.split()  for word in words:  volumes.append(find_volume(word)) volume_of_text = max(volumes)print(volume_of_text)

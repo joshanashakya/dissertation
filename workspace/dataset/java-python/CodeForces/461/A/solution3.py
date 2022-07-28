@@ -1,0 +1,1 @@
+from sys import stdin A = int(stdin.readline())B = list(map(int,stdin.readline().split()))K=0 if A==1:    print(B[0])    K=1 if A==2:    print(2*(B[0]+B[1]))    K=1 if K==0:    B.sort()    sum=B[len(B)-1]+B[len(B)-2]    ans=sum     for t in range(len(B)-3,-1,-1):        sum+=B[t]        ans+=sum     ans+=sum     print(ans)

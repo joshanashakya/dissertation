@@ -1,0 +1,1 @@
+m=input()l=list(m)s=list(set(l))z=0 if(m[0]=='4'):    z=1elif('444' in m):    z=1    for i in s:    if(i=='4' or i=='1'):        pass    else:        z=1        break if(z==1):    print("NO")else:    print("YES")    

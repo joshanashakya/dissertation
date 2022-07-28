@@ -1,0 +1,1 @@
+n0 = lambda n: sum(n//5**i for i in range(1, 64))n = int(input()) l, r, x = 0, 4000006, 0while l <= r:    m = (l+r)//2    k = n0(m)    if n == k:        x = m        r = m-1    elif n > k:        l = m+1    else:        r = m-1 print(f'{5}\n{x} {x+1} {x+2} {x+3} {x+4}' if n0(x) == n else 0)	  				 		 		 	       			 		  	

@@ -1,0 +1,1 @@
+n, k = map(int, input().split(" "))l = list(map(int, input().split(" ")))dp = []for i, x in enumerate(l):    if x == 0:        z = min(i+k+1, n) - max(0, i-k)    else:        z = dp[x-1] +  max(0,min(i+k+1,n)-max(i-k,x+k))    dp.append(z)print(*dp)

@@ -1,0 +1,1 @@
+import java.util.*;public class functions{   public static void main(String[] args)   {	int t;	String n;		Scanner sc=new Scanner(System.in); 	t=sc.nextInt(); 	while(t-->0)	{	   n=sc.next(); 	   System.out.println(n.length());	}   }}

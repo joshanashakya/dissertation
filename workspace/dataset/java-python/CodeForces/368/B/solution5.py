@@ -1,0 +1,1 @@
+n, m = map(int, input().split()) ans = []d = {} for i in map(int, reversed(input().split())):    if d == {}:        ans.append(1)        d[i] = 1    elif i in d:        ans.append(ans[-1])    else:        ans.append(ans[-1] + 1)        d[i] = 1 for _ in range(m):    q = int(input())    print(ans[n - q])

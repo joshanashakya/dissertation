@@ -1,0 +1,1 @@
+a , b = map(int , input().split())s = input()x = 0a-=1b-=1 if(b < a-b):    for i in range(b): print("LEFT")    x = 1else:    for i in range(a-b): print("RIGHT")    x = -1    s = s[::-1]  for i in s[:-1]:    print(f"PRINT {i}")    if x == -1: print("LEFT")    else: print("RIGHT")  print(f"PRINT {s[-1]}")

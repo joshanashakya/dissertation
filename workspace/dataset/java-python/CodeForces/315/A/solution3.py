@@ -1,0 +1,1 @@
+n = int(input())nn = nnnn = nb = []o = []c = 0while n > 0:    n -= 1    bt, ot = map(int, input().split())    b.append(bt)    o.append(ot)for i in range(0, nnn):    if b[i] == o[i] and o.count(o[i]) == 1:        nn += 1o = set(o)for i in o:    temp = b.count(i)    nn -= temp print(nn)

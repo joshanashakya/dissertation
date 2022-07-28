@@ -1,0 +1,1 @@
+MOD = 1000000007 def modpow(a, b): 	res = 1	while b > 0: 		if b % 2 == 1: 			res = (res * a) % MOD		a = (a * a) % MOD		b >>= 1	return res % MOD n, m, k = map(int, input().split())if (k == -1 and (n % 2 != m % 2)): 	print(0)elif n == 1 or m == 1:	print(1)else:	print(modpow(2, (n - 1) * (m - 1)) % MOD)# print(n)# print(m)# print(k)

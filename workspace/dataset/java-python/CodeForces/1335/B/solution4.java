@@ -1,0 +1,1 @@
+import java.util.*; public class Try{	public static void main(String args[])	{		Scanner br=new Scanner(System.in);		int t=br.nextInt();		while(t-->0)		{			int n=br.nextInt();			int a=br.nextInt();			int b=br.nextInt();			int ch=96;			while(n--!=0)			{				++ch;				System.out.print((char)ch);				if(96+b==ch)				ch=96;			}			System.out.println();		}	}}

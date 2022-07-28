@@ -1,0 +1,1 @@
+n = int(input())lst = sorted(list(map(int,input().split())),reverse = True)pis = [ i for i in lst if i % 2 == 0]pos = [ i for i in lst if i not in pis ]a,b = len(pis),len(pos)if abs(a-b) <= 1: print(0)else: print(sum(pis[b+1:]) if a > b else sum(pos[a+1:]))

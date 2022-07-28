@@ -1,0 +1,6 @@
+for _ in range(int(input())):    a, b, x, y, n = map(int, input().split())
+a1 = max(x, a - n)
+b1 = max(y, b - (n - (a - a1)))
+b2 = max(y, b - n)
+a2 = max(x, a - (n - (b - b2)))
+print(min(a1 * b1, a2 * b2))

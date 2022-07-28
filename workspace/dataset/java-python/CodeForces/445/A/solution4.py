@@ -1,0 +1,1 @@
+r, c = map(int, input().split())g = [] for _ in range(r):    g.append(list(input())) for ri in range(r):    for ci in range(c):        if g[ri][ci] == "-":            continue         cm = 1        if (ri + 1) % 2 == 0:            cm *= -1         if (ci + 1) % 2 == 0:            cm *= -1         g[ri][ci] = "B" if cm == 1 else "W"     print("".join(g[ri]))

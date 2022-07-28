@@ -1,0 +1,1 @@
+def func(n,m,x,y):    t=max(x)    a=min(x)*2    t=max(t,a)    for i in y:        if i<=t:            return -1    return t n,m=map(int,input().split())x=list(map(int,input().split()))y=list(map(int,input().split()))print(func(x,m,x,y))

@@ -1,0 +1,1 @@
+n=int(input())arr=list(map(int,input().split()))fl=Falsemax_ans=0for i in range(n):  ans=arr[i]  for j in range(n):    if i!=j:      ans=ans&(~arr[j])      if ans<=max_ans:break  #print()  if ans>max_ans:    max_ans=ans    idx=i    fl=Trueif fl:arr[0],arr[idx]=arr[idx],arr[0]print(*arr)

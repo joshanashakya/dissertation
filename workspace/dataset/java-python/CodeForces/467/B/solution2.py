@@ -1,0 +1,1 @@
+n, m, k = map(int, input().split())army = []for i in range(m+1):    army.append(int(input()))fed = army[-1]ans = 0for i in range(m):    temp = bin(fed^army[i])    if temp.count("1") <= k:        ans += 1print(ans)    

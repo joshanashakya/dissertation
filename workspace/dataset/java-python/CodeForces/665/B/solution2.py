@@ -1,0 +1,1 @@
+n,m,k = map(int,input().split())P = list(map(int,input().split()))count = 0for i in range(n):    X = list(map(int,input().split()))    for j in X:        t = P.index(j)        count += (t+1)        P = [j] + P[:t] + P[t+1:]print(count)                

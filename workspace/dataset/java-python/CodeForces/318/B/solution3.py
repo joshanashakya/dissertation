@@ -1,0 +1,1 @@
+s = input()l = len(s)i = length = sub = 0while 1:    if i<=l-5:        if s[i:i+5]=='heavy':            length += 1            i += 5        elif s[i:i+5]=='metal':            sub += length            i += 5        else:            i += 1    else:        breakprint(sub)

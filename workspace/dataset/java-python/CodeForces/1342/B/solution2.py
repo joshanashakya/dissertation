@@ -1,0 +1,1 @@
+t = int(input())for _ in range(t):    s = input()    zero = s.find('0')    one = s.find('1')    if zero == -1 or one == -1: print(s)    else:        ans = ''        for i in range(len(s)):            ans += '10'        print(ans)

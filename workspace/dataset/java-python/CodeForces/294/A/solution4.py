@@ -1,0 +1,1 @@
+n = int(input()) wires = [*map(int, input().split(" "))] m = int(input()) for i in range(m):    value = [*map(int, input().split(" "))]    if value[0] < n:        wires[value[0]] += (wires[value[0] - 1] - value[1])    if value[0] >= 2:        wires[value[0] - 2] += (value[1] - 1)    wires[value[0] - 1] = 0 for i in wires:    print(i)

@@ -1,0 +1,1 @@
+n,m,k = list(map(int, input().split()))a = list(map(int, input().split())) no = 0nt = 0 for i in a:	if i == 1:		no += 1	else:		nt += 1 ans = (0 if no - m < 0 else (no - m)) + (0 if (nt - (k + (abs(no - m) if no - m < 0 else 0))) < 0 else (nt - (k + (abs(no - m) if no - m < 0 else 0)))) print(ans)

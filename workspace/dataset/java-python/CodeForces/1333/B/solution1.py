@@ -1,0 +1,1 @@
+for _ in range(int(input())):    n=int(input())    a=list(map(int,input().split()))    b=list(map(int,input().split()))    ans="YES"    s=set()    for i in range(n):        if(b[i]>a[i] and (1 not in s) or b[i]<a[i] and (-1 not in s)):            ans="NO"            break        s.add(a[i])    print(ans)

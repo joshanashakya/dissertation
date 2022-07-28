@@ -1,0 +1,1 @@
+from collections import Counter  def solve(a):    res = 0    c = Counter(a)    for e in a:        for p in range(31):            power = 2 ** p            r = power - e            if r in c:                res += c[r] - (1 if r == e else 0)    assert res % 2 == 0    return res // 2  input()a = list(map(int, input().split()))print(solve(a))

@@ -1,0 +1,1 @@
+n=int(input(''))x=list(map(int,input().split()))if(x==sorted(x)):    print('0')else:    for i in range(0,len(x)):        if(x[i]>x[i+1]):            c=i            break    b=x[c+1:]    c=b+x[:c+1]    if(c==sorted(x)):        print(len(b))    else:        print('-1')

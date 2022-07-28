@@ -1,0 +1,1 @@
+a = list(map(int, input().split()))b = list(map(int, input().split()))c = list(map(int, input().split())) position = ((b[0] - a[0])*(c[1] - a[1]) - (b[1] - a[1])*(c[0] - a[0])) if position < 0:    print("RIGHT")elif position == 0:    print("TOWARDS")else:    print("LEFT")         	   

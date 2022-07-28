@@ -1,0 +1,1 @@
+s = input()arr = [0]for i in range(1, len(s)):    if s[i] == s[i - 1]:        arr.append(1)    else:        arr.append(0)for i in range(1, len(s)):    arr[i] += arr[i - 1]for _ in range(int(input())):    l, r = map(int, input().split())    print(arr[r - 1] - arr[l - 1])

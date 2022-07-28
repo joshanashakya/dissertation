@@ -1,0 +1,1 @@
+n = int(input())v = input() ans = [] i = 0while(i < n):    if(n - i == 3):        ans.append(v[i]+v[i+1]+v[i+2])        i += 4        break    else:        ans.append(v[i]+v[i+1])        i += 2        print('-'.join(ans))

@@ -1,0 +1,1 @@
+from collections import defaultdict,Countern=int(input())s=input()d=defaultdict(list)for i in range(n):    d[s[i]].append(i)m=int(input())for i in range(m):    s1=input()    d1=Counter(s1)    ans=0    for p in d1.keys():        ans=max(ans,d[p][d1[p]-1])    print(ans+1)

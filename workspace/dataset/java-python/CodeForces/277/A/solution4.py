@@ -1,0 +1,1 @@
+from sys import stdininput = stdin.readlinen, m = map(int, input().split())l = []cnt = 0for _ in range(n):    a = set(list(map(int, input().split()))[1:])    if len(a) == 0:        cnt += 1        continue    li = []    for s in l:        if a&s:            a |= s        else:            li.append(s)    li.append(a)    l = liprint(cnt + max(0, len(l) - 1))

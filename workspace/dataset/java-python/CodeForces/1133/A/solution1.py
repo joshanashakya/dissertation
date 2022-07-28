@@ -1,0 +1,1 @@
+start=input().split(':')end=input().split(':')start_min=int(start[0])*60+int(start[1])end_min=int(end[0])*60+int(end[1])diff=(end_min-start_min)//2print('{:0>2}'.format(str((start_min+diff)//60))+':'+'{:0>2}'.format(str((start_min+diff)%60)))

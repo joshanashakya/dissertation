@@ -1,0 +1,1 @@
+import sysdef get_ints ():    return map (int, sys.stdin.readline ().strip().split ())for i in range (int (input ())):    n, k = get_ints ()    if (k**2 > n) or (k%2 != n%2):        print ("NO")    else:        print("yes") 

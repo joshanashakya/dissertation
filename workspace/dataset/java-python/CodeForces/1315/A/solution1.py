@@ -1,0 +1,1 @@
+def solve(a,b,p,q):	area1 = a*q	area2 = a*(b-q-1)	area3 = b*p	area4 = b*(a-p-1)	return max(area1,area2,area3,area4) if __name__ == '__main__':	S = int(input())	for s in range(S):		a,b,p,q = tuple(map(int,input().split()))		print(solve(a,b,p,q))

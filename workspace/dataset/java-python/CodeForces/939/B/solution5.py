@@ -1,0 +1,1 @@
+if __name__ == '__main__':	n,k = map(int, input().split())	l = list(map(int, input().split()))	min1 = 99999999999999999999999999	q = 1 	for i in range (k):		if n%l[i] < min1:			min1 = n%l[i]			q = i+1	print(q,n//l[q-1])

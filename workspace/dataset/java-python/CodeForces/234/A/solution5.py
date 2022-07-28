@@ -1,0 +1,1 @@
+import sys sys.stdin = open('input.txt', 'r')  sys.stdout = open('output.txt', 'w') x=int(input())y=list(input())for i in range(x//2):    if(y[i+x//2]!=y[i]):        if(y[i+x//2]=="R"):            print(i+1,i+1+x//2)        else:            print(i+1+x//2,i+1)    else:        print(i+1,i+x//2+1)

@@ -1,0 +1,1 @@
+n,k=list(map(int,input().split()))a=n/2v=round(a)while round(a)>0:    b=0    m=0    while v//(k**b)>0:        m+=v//(k**b)        b+=1    if m<n:        v+=round(a/2)    else:        v-=round(a/2)    a/=2b=0m=0while v//(k**b)>0:    m+=v//(k**b)    b+=1if m<n:    v+=1print(v)

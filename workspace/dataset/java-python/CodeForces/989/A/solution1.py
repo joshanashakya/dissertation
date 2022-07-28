@@ -1,0 +1,1 @@
+from itertools import permutations flag = 0a = input()a_list = list(permutations("ABC"))a_list = [ "".join(x) for x in a_list]for x in a_list:    if x in a:        flag = 1if flag==1:    print("Yes")else:    print("No")

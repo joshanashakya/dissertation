@@ -1,0 +1,1 @@
+import java.util.*;public class Solution{	static Scanner sc = new Scanner(System.in);	public static void main(String args[]){		int n = sc.nextInt();		int a = n/2;		int b = n/2 + (n%2);		int ans = (a+1)*(b+1);		if(n%2!=0)			ans*=2;		System.out.println(ans);	}}			 	  		 			 	 			  		     	 	

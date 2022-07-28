@@ -1,0 +1,1 @@
+# A. Favorite Sequencet=int(input())for i in range(t):    n=int(input())    b=list(map(int,input().split()))    i=0    j=n-1    a=[]    k=1    while i<=j :        if k%2!=0:            a.append(b[i])            i+=1        else:            a.append(b[j])            j-=1        k+=1      for k in range(n):        print(a[k],end=" ")

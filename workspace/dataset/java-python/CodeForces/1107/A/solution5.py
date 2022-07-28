@@ -1,0 +1,1 @@
+cases = int(input())while cases:    cases -= 1    num = int(input())    s = input()     if num == 2 and int(s[0]) >= int(s[1]):        print("NO")    else:        print("YES")        print(2)        print(s[0], s[1:])

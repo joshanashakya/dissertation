@@ -1,0 +1,1 @@
+choices = []d = ['A', 'B', 'C', 'D'] for _ in range(4):    choices.append(len(input())-2) option = choices.copy()choices.sort() if choices[0] <= choices[1]/2 and choices[2] <= choices[3]/2:    ans = 2elif choices[0] <= choices[1]/2:    ans = option.index(choices[0])elif choices[2] <= choices[3]/2:    ans = option.index(choices[3])else:    ans = 2 print(d[ans])

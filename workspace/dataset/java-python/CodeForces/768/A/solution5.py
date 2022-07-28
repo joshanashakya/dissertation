@@ -1,0 +1,1 @@
+n=int(input())l=list(map(int,input().split()))c1,c2=0,0m=min(l)mx=max(l)if n==1 or n==2:    print(0)elif mx==m:    print(0)else:    for i in range(n):        if l[i]==mx:            c1+=1        if l[i]==m:            c2+=1    print(n-c1-c2)

@@ -1,0 +1,1 @@
+n = int(input())arr = list(map(int,input().split()))i = 0 while i+1<n and arr[i+1]>arr[i]:    i+=1while i+1<n and arr[i+1]==arr[i]:    i+=1while i+1<n and arr[i+1]<arr[i]:    i+=1print("YES" if i==n-1 else "NO")

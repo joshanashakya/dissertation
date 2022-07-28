@@ -1,0 +1,1 @@
+def get_winners(places, scores):    while ("0" in scores):        scores.remove("0")    winners = scores[:int(places)]    losers = scores[int(places):]     for i in losers:        if winners[-1] == i:            winners.append(i)    return len(winners)  participants, places = input().split()scores = input().split() print(get_winners(places, scores))

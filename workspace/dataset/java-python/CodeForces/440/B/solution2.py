@@ -1,0 +1,1 @@
+n = int(input())a = list(map(int, input().split())) + [0]s = sum(a) // nd = 0for i in range(n):    if a[i] > s:        a[i + 1] += abs(a[i] - s)    else:        a[i + 1] -= abs(a[i] - s)    d += abs(a[i] - s)print(d)

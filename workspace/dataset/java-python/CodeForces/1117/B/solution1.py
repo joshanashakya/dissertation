@@ -1,0 +1,1 @@
+n , m , k = map(int , input().split())r = lambda : list(map(int, input().split()))arr = r()arr.sort(reverse=True) base = arr[0] * k + arr[1]t = m // (k+1)base = base * t t = m %(k+1)base += t*arr[0]  print(int(base))

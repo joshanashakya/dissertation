@@ -1,0 +1,1 @@
+n, m = input().split()n = int(n)m = int(m)c = [[0] * m for i in range(n)]cc = [[0] * n for i in range(m)]for i in range(n):    tmp_list = [int(each) for each in input().split()]    for j in range(m):        c[i][j] = tmp_list[j]        cc[j][i] = tmp_list[j] res = 0for i in range(n):    res = max(min(c[i]), res)print(res)		 				 	  	 		      		   		

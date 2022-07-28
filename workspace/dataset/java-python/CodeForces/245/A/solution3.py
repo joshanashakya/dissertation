@@ -1,0 +1,1 @@
+cases = int(input()) ax = 1ay = 1 bx = 1by = 1 while cases:    cases -= 1    t, x, y = map(int, input().split())     if t == 1:        ax += x        ay += y    else:        bx += x        by += y if ax//ay >= 1:    print("LIVE")else:    print("DEAD") if bx//by >= 1:    print("LIVE")else:    print("DEAD")          

@@ -1,0 +1,1 @@
+    import java.util.*;    public class Solution{            public static void main(String[] args){        Scanner s=new Scanner(System.in);        int n=s.nextInt();        int a=9*n;        int b=8*n;        System.out.println(a+" "+b);                    }      }    

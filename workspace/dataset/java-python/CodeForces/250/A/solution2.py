@@ -1,0 +1,1 @@
+input()days = map(int, input().split())folders = []fc = 0c = 0 for i in days:  if i < 0:    if c < 2:      c += 1    else:      fc += 1      c = 1  if len(folders) <= fc:    folders.append(0)  folders[fc] += 1 print(fc + 1)print(*folders)

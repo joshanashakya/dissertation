@@ -1,0 +1,1 @@
+import sys n, p = map(int, input().split())a = [input() for _ in range(n)] assert a[-1] == 'halfplus' ans = p >> 1cnt = 1for s in a[-2::-1]:    if s == 'half':        ans += cnt * p        cnt <<= 1    else:        ans += cnt * p + (p >> 1)        cnt += cnt + 1 print(ans)

@@ -1,0 +1,1 @@
+# RawCoder : https://bit.ly/RCyouTube# Author : MehulYKs = list(input())t = input()ti = 0 for i in range(len(s)):    if(s[i] != t[i]):        ti += 1        if(ti % 2 != 0):            s[i] = t[i]        if(ti % 2 == 0):print(''.join(s))else:print("impossible")

@@ -1,0 +1,1 @@
+n=int(input())s=list(map(ord,list(input())))a=list(map(ord,list("ACTG")))m=0for i in range(n-3):	x=s[i:i+4]	c=min(26 - abs(x[0]-a[0]), abs(x[0]-a[0]))	c+=min(26 - abs(x[1]-a[1]), abs(x[1]-a[1]))	c+=min(26 - abs(x[2]-a[2]), abs(x[2]-a[2]))	c+=min(26 - abs(x[3]-a[3]), abs(x[3]-a[3]))	if i==0:		m=c	else:		m=min(m,c)print(m)

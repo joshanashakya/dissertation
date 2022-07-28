@@ -1,0 +1,1 @@
+from sys import stdin ,stdoutfrom os import pathrd = lambda:stdin.readline().strip()wr = stdout.writeif(path.exists('input.txt')):    stdin = open("input.txt","r")import time #------------------------------------arr = [rd() for _ in range(int(rd()))]print(max(arr.count(s) for s in arr))

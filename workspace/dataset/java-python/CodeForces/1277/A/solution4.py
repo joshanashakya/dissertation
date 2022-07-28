@@ -1,0 +1,1 @@
+from math import log10, floor for _ in range(int(input())):    count = 0     n = int(input())    L = floor(log10(n)) + 1     for i in ['1', '2', '3', '4', '5', '6', '7', '8', '9']:        for l in range(1, 1 + L):            x = int(i * l)            if x <= n:                count += 1     print(count)

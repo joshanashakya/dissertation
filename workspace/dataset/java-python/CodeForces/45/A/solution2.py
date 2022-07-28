@@ -1,0 +1,1 @@
+meses = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'] mes = input()ini = meses.index(mes) + 1 fim = int(input()) ans = (ini + fim) % 12 print(meses[ans-1])

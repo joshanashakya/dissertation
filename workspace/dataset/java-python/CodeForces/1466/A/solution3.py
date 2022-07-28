@@ -1,0 +1,1 @@
+# https://codeforces.com/problemset/problem/1466/A for _ in range(int(input())):    n = int(input())    points = tuple(map(int, input().split()))    ans = set()    for i in range(n):        for j in range(i+1, n):            ans.add(points[j] - points[i])     print(len(ans))

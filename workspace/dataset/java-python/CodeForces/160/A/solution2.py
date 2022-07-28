@@ -1,0 +1,1 @@
+import sysinput = sys.stdin.readline def solve(n,arr):	tot = 0	count = 0	arr = sorted(arr)[::-1]	for i in range(len(arr)):		tot += arr[i]		count = len(arr[:i])		if tot > sum(arr[i+1:]):			print(count+1)			return     # for _ in range(int(input())):n = int(input())arr = list(map(int,input().split()))solve(n,arr)

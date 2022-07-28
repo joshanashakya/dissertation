@@ -1,0 +1,1 @@
+import java.util.Scanner; public class A {     public static void main(String args[]){        Scanner in = new Scanner(System.in);        long n = in.nextLong();        long pow3 = 1;        while (pow3 <= 3*n){            if(n%pow3 != 0){                System.out.println(n/pow3 + 1);                return;            }            pow3 = pow3*3;        }    }}

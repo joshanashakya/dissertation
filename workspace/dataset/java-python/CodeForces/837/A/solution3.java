@@ -1,0 +1,1 @@
+import java.util.*; public class P3 {	public static void main(String[] args) {		Scanner sc = new Scanner(System.in);		int n =sc.nextInt();	 sc.nextLine();	 String s =sc.nextLine(); 	int c=0;	int max=0;	for(int i=0;i<s.length();i++) {		if(s.charAt(i)>='A'&&s.charAt(i)<='Z') {			c++;						max=Math.max(c, max);		}			if(s.charAt(i)==' ') {					c=0;			}			}	System.out.println(max);	}}

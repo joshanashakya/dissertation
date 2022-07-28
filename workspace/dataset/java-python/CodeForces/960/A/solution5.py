@@ -1,0 +1,1 @@
+if __name__ == '__main__':    cin = input    s = list(cin())    a = [0] * 3    if len(set(s)) < 3 or s != sorted(s):        print("NO")    else:        for c in s:            a["abc".index(c)] += 1        print("YNEOS"[not (a[0] == a[2] or a[1] == a[2])::2])

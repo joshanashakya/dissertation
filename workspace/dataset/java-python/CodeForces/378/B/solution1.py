@@ -1,0 +1,1 @@
+n=int(input())k=[]a=[]b=[]for i in range(n):    A,B=map(int, input().split())    a.append(A)    b.append(B)la=0lb=0aind=[0]*nbind=[0]*nfor i in range(n):    if a[la]<b[lb]:        aind[la]=1        la+=1    else:        bind[lb]=1        lb+=1for i in range(n//2):    aind[i]=1    bind[i]=1for i in aind:    print(i,end='')print('')for i in bind:    print(i,end='')

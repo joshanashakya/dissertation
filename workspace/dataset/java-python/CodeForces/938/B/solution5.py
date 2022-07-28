@@ -1,0 +1,1 @@
+import mathimport collectionsimport bisect def solve(n, a):    ans = 0    for i in range(n):        ans = max(ans, min(a[i] - 1, 10**6 - a[i]))    return ans n = int(input())a = [int(s) for s in input().split()]result = solve(n, a)print(result)

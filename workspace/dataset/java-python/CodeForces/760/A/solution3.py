@@ -1,0 +1,1 @@
+m, d = map(int, input().split())from calendar import monthrange x = monthrange(2017, m)[1] if x == 28:    if d == 1:        print(4)    else:        print(5) elif x == 31:    if d == 7 or d == 6:        print(6)    else:        print(5)else:    if d == 7:        print(6)    else:        print(5)

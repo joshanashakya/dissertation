@@ -1,0 +1,1 @@
+n=int(input())a=input().strip()if sorted(set(a))!=['4','7'] and sorted(set(a))!=['7'] and sorted(set(a))!=['4']:	print("NO")else:	x=[int(i) for i in a[:n//2]]	y=[int(i) for i in a[n//2:]]	if sum(x)==sum(y):		print("YES")	else:		print("NO")

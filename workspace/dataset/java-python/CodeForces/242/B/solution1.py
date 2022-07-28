@@ -1,0 +1,1 @@
+def solution():	n=int(input())	k=[]	mn=float('Inf') 	mx=float('-Inf')	for i in range(n):		l,r=map(int,input().split())		k.append((l,r))		mn=min(l,mn)		mx=max(r, mx) 	for i in range(n):		if k[i][0]==mn and k[i][1]==mx:			print(i+1)			return	print(-1)	return  solution()

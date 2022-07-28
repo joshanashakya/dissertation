@@ -1,0 +1,1 @@
+import math n,k=map(int,input().split())a=list(map(int,input().split())) ans=0for i in range(k):    r=a[i];m=0    for j in range(n//k):        if a[i+j*k]!=r:            m+=1    ans+=min(m,n//k-m) print(ans)

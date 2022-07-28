@@ -1,0 +1,1 @@
+n , m = map(int,input().split())lst = []for i in range(m):    lst.append(list(map(int,input().split())))lst.sort(key = lambda x: x[1])lst.reverse()count = 0for i in lst:    if n <= i[0]:        count+= (n*i[1])        break    else:         count+= (i[0]*i[1])        n -= i[0]    if n == 0:        break    print(count)

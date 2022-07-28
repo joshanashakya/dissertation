@@ -1,0 +1,1 @@
+l,r,x,y,k=[int(a) for a in input().split()]i=lj=xs=0while(i<=r and j<=y):    d=(i/j)    if(d==k):        s=1        break    elif(d<k):        i=i+1    else:        j=j+1if(s):    print("YES")else:    print("NO")

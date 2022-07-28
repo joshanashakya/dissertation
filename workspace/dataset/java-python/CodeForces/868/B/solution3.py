@@ -1,0 +1,1 @@
+h,m,s,t1,t2 = map(int,input().split())t = [t1,t2]hms = [h,m/5,s/5]ans = [[0,0] for i in range(3)]for i in range(2):    for j in range(3):        ans[j][i] = t[i] > hms[j]ans2 = [(ans[i][0] + ans[i][1]) % 2 for i in range(3)]if sum(ans2) == 3 or sum(ans2) == 0:    print("YES")else:    print("NO")

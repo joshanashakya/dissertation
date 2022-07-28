@@ -1,0 +1,1 @@
+n=int(input())if n<4:print("NO")else:    print("YES")    if n==4:print("4 * 3 = 12\n12 * 2 = 24\n24 * 1 =24")    elif n==5:print("5 * 4 = 20\n20 + 3 = 23\n23 + 2 = 25\n25 - 1 = 24")    else:        print("4 * 3 = 12\n12 * 2 = 24\n"+str(n)+" - "+str(n-1)+" = 1\n1 - 1 = 0")        for i in range(5,n-1):print(str(i)+" * 0 = 0")        print("24 + 0 = 24")

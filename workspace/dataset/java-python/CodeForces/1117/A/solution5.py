@@ -1,0 +1,1 @@
+for _ in range(1):    n=int(input())    arr=list(map(int,input().split()))    ans=0    x=max(arr)    k=0    for i in range(n):        if(arr[i]==x):            k+=1        else:            k=0        ans=max(ans,k)    print(ans)

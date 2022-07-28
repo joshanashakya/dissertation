@@ -1,0 +1,1 @@
+import java.util.*;public class P2 { 	public static void main(String[] args) {		Scanner sc = new Scanner(System.in);		int n =sc.nextInt();		int a = sc.nextInt();		int b= sc.nextInt();		int aa[]=new int[n];		for(int i =0;i<n;i++) {			aa[i]=sc.nextInt();		}		Arrays.sort(aa);		int p =aa[n-a]-aa[n-a-1];		if(p>0) {			System.out.println(p);		}else {			System.out.println(0);		}					}	}

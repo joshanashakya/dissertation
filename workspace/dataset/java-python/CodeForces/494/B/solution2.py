@@ -1,0 +1,1 @@
+s, t = input(), input()n, m = len(t), len(s) + 1d = 1000000007g = [1] * mf = k = 0for i in range(1, m) :    if s[i - n:i] == t : k = i    if k : f = (f + g[k - n]) % d    g[i] += (g[i - 1] + f) % dprint(f)

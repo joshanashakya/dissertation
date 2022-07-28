@@ -1,0 +1,1 @@
+  n,m = map(int,input().split()) ans=0u=[]s=m if m>0:    for j in range(n):        if s>=j:            s-=j        else:            if s>0:                mas=n-(j+1)                break            else:                mas=n-j                break if m==0:    mas=nelif m==n*(n-1)//2:    mas = 0      print(max(0,n-(m*2)),mas)

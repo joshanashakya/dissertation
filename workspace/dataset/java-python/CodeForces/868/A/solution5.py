@@ -1,0 +1,1 @@
+password = input()n = int(input())res = []for i in range(n):    res.append(input())flag = Falsefor i in range(len(res)):    for j in range(len(res)):        if password in res[i]+res[j]:            flag = True            break        if password in res[j]+res[i]:            flag = True            break    if flag:        breakif flag:    print("YES")else:    print("NO")

@@ -1,0 +1,1 @@
+n = int(input())s = str(input())count = 0for j in range(n):    x, y = 0, 0    for k in range(j, n):        if s[k] == 'D':            y -= 1        elif s[k] == 'U':            y += 1        elif s[k] == 'R':            x += 1        else:            x -= 1        if x == 0 and y == 0:            count += 1print(count)

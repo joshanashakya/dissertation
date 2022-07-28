@@ -1,0 +1,1 @@
+import math def is_prime(n):    for i in range(2, n):        if not n % i:            return False    return True  def main_function():    n = int(input())    m = 1    while is_prime(n * m + 1):        m += 1    return m       print(main_function())

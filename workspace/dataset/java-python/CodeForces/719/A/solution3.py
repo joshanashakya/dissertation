@@ -1,0 +1,1 @@
+n = int(input())arr = list(map(int, input().split()))if arr[n-1] == 15 :    print ("DOWN")elif arr[n-1] == 0 :    print ('UP')elif n== 1 :    print (-1)else :    if arr[n-2] > arr[n-1] :        print ('DOWN')    else :        print ("UP")

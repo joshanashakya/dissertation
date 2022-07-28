@@ -1,0 +1,1 @@
+from collections import *N = int(input())Lst = deque(map(int,input().split()))NLst = list(Lst)(Lst1,Lst2) = (deque(),deque())for i in range(N):    if Lst[i] % 2 == 0:        Lst1.append(Lst[i])    else:        Lst2.append(Lst[i])if len(Lst1) == 1:    print(NLst.index(Lst1[0])+1)else:    print(NLst.index(Lst2[0])+1)

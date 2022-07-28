@@ -1,0 +1,1 @@
+# your code goes heret=int(input())for k in range(t):	[n,x]=list(map(int,input().split()))	a=list(map(int,input().split()))	flag=1	p=0	i=0	while flag:		if i%n==0:			p+=1		if a[i]%(x**p)==0:			a+=[a[i]]		else:			flag=0		i+=1		print(sum(a))

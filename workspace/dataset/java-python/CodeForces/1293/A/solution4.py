@@ -1,0 +1,1 @@
+for _ in range(int(input())):    n,s,k=[int(x) for x in input().split()]    fl={int(x) for x in input().split()}    i=0    while 1:        if max(s-i,1) not in fl or min(n,s+i) not in fl:            print(i);break        i+=1

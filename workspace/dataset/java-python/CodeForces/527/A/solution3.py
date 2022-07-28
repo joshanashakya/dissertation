@@ -1,0 +1,1 @@
+a,b = map(int, input().split()) # Simula dobradurassum = 0while a > 0 and b > 0:    if a > b:        sum += a//b        a = a%b        continue        sum += b//a    b = b%aprint(int(sum)) 	 	   		    		 	 		  		 		  	

@@ -1,0 +1,1 @@
+t = int(input())while t:    t-=1    n = int(input())    l= list(map(int,input().split()))    o=0    e=0    for i in range(n):        if i%2!=l[i]%2:            if i%2==0:                e+=1            else:                o+=1    if e==o:        print(e)    else:        print(-1)

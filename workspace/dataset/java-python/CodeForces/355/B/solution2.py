@@ -1,0 +1,1 @@
+import sysinput=sys.stdin.readlinel=input().split()c1=int(l[0])c2=int(l[1])c3=int(l[2])c4=int(l[3])l=input().split()n=int(l[0])m=int(l[1])l=input().split()ai=[int(i) for i in l]l=input().split()bi=[int(i) for i in l]maxa=c4sumi=0for i in ai:    sumi+=min(i*c1,c2)sumi=min(sumi,c3)sumi1=0for i in bi:    sumi1+=min(i*c1,c2)sumi1=min(sumi1,c3)print(min(maxa,sumi+sumi1))

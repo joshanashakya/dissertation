@@ -1,0 +1,1 @@
+import sys#import bisectimport mathimport itertoolsimport timedef get_line(): return list(map(int, sys.stdin.readline().strip().split()))def in1(): return int(input()) n=in1()t1=-1for i in range(n):    x,y=get_line()    t2=x+y    if t2>t1:        t1=t2print(t1)               

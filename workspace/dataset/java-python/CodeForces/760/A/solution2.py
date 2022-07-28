@@ -1,0 +1,1 @@
+import mathm,d = map(int, input() .split())if m == 1 or m==3 or m==5 or m==7 or m==8 or m==10 or m==12:  t = 31 - (8 -  d)  y = math.ceil(t / 7)  print(y+1)elif m == 4 or m==6 or m==9 or m==11 :  t = 30 - (8 - d)  y = math.ceil(t / 7)  print(y+1)  else:  t = 28 - (8 - d)  y = math.ceil(t / 7)  print(y+1)

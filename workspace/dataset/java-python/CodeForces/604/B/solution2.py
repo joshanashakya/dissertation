@@ -1,0 +1,1 @@
+n,k=map(int,input().split())arr=list(map(int,input().split()))#make the pair of small and bigger ele#2*(n-k)maxx=arr[-1]for i in range(n-k):  maxx=max(maxx,arr[i]+arr[2*(n-k)-i-1])print(maxx)         

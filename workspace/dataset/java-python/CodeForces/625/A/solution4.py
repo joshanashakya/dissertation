@@ -1,0 +1,1 @@
+def solve(n, a, b, c):     if b - c >= a:        return n // a        if n < b:        return n // a        g = ((n - b) // (b - c)) + 1    p = (n - g * (b - c)) // a    return g + p  if __name__ == '__main__':    N = int(input())    A = int(input())    B = int(input())    C = int(input())     result = solve(N, A, B, C)    print(result)

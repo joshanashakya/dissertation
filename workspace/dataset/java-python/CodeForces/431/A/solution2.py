@@ -1,0 +1,1 @@
+a1, a2, a3, a4 = map(int, input().split())s = input()c1 = c2=c3=c4=0for i in s:    if i == '1':        c1 += 1    elif i == '2':        c2 += 1    elif i == '3':        c3 += 1    else:        c4 += 1print(c1*a1 + c2*a2 + c3*a3 + c4*a4)

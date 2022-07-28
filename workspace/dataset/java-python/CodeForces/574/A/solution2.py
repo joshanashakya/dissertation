@@ -1,0 +1,1 @@
+n = int(input())a = list(map(int, input().split()))mx = max(a)for i in range(a[0], mx + 2):    need = i - a[0]    changes = sum([x - i + 1 for x in a[1:] if x >= i])    if changes <= need:        print(need)        exit(0)

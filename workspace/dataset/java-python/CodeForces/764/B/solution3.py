@@ -1,0 +1,1 @@
+if __name__ == "__main__":    n = int(input())    l = list(map(int,input().split()))    l = l[::-1]    if n<=2:        print(*l)    else:        i = 1        till = n//2 - 1        while  i < n//2:            l[i],l[n-i-1] = l[n-i-1],l[i]            i = i + 2        print(*l)    

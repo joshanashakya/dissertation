@@ -1,0 +1,1 @@
+import java.util.Scanner; public class A638 {     public static void main(String[] args) {        Scanner in = new Scanner(System.in);        int N = in.nextInt();        int A = in.nextInt();        int answer;        if (A%2 == 0) {            answer = ((N+2)-A)/2;        } else {            answer = (A+1)/2;        }        System.out.println(answer);    } }

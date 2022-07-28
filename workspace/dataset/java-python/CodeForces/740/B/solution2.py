@@ -1,0 +1,1 @@
+n,q=map(int,input().split())a=list(map(int,input().split()))for i in range(1,n):    a[i]=(a[i-1]+a[i]) ans=0for i in range(q):    x,y=map(int,input().split())    temp=a[y-1]    if x!=1:        temp-=a[x-2]    ans=max(ans,ans+temp)print(ans)

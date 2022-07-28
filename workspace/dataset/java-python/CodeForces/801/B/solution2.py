@@ -1,0 +1,1 @@
+try:    x = input()    z = input()    y = ""    v = True    for i in range(len(x)):        if ascii(x[i]) < ascii(z[i]):            print(-1)            v = False            break        else:            y = y + z[i]    if v:        print(y)except:    pass

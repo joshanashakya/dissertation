@@ -1,0 +1,1 @@
+s = input()m = int(input()) for _ in range(m):    l, r, k = map(int, input().split())    l -= 1    r -= 1     k %= (r - l + 1)     t = s[l:r+1]    t = t[-k:] + t[:-k]     s = s[:l] + t + s[r+1:] print(s)

@@ -1,0 +1,1 @@
+import math n = int(input())cnt = 0for _ in range(n):  a = int(input())  if a % 2 == 0:    print(a // 2)  else:    cnt += 1    if cnt % 2 == 1:      print(math.ceil(a / 2))    else:      print(math.floor(a / 2))

@@ -1,0 +1,1 @@
+import sys n, m = map(int, sys.stdin.readline().split()) num_twos = n // 2;num_steps = num_twos + n % 2 num_changed = 0 while (num_steps % m != 0) and (num_twos > 0) and (num_changed < 30):    num_twos -= 1    num_steps += 1    num_changed += 1 if num_steps % m != 0:    print(-1)else:    print(num_steps)

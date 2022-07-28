@@ -1,0 +1,1 @@
+for _ in range(int(input())):    n = list(map(str, input()))    z = 0    ev = 0    tmp = 0    for i in n:        if int(i) == 0:            z += 1        if int(i)%2 == 0:            ev += 1        tmp += int(i)    if tmp % 3 == 0 and z > 0 and ev > 1:        print('red')    else:        print('cyan')

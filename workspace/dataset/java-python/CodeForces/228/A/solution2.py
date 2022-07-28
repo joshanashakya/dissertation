@@ -1,0 +1,1 @@
+# This is experiment programa,b,c,d = map(int,input().split(' '))ans = 0 if(b==a):    ans = ans+1    if((c==b) or (c==a)):    ans = ans+1    if((d == c) or (d==b) or (d==a)):    ans += 1    print(ans)

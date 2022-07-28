@@ -1,0 +1,1 @@
+n = int(input())res = 0for a in range(1, n):    for b in range(a+1, n+1):        c = a ^ b        if c >=b and c <= n and (a+b > c) and (a+c > b) and (b+c > a) and (a^b^c == 0):            res += 1print(res)

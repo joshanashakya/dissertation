@@ -1,0 +1,1 @@
+s = input()k = int(input())l = len(s) if l%k:    print("NO")else:     f = True    t = l // k    for i in range(0 , l , t):        sub = s[i:i+t]        if sub != sub[::-1]:            f = False            break     print("YES" if f else "NO")   

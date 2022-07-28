@@ -1,0 +1,1 @@
+# https://codeforces.com/problemset/problem/1251/C# check for all the parties before this number v1, v2 = map(int, input().split(" "))a, b = map(int, input().split(" ")) ans = 0z = [v1]x = [v2]for i in range(a-2):    z.append(z[-1]+b)    x.append(x[-1]+b)x.append(v1)z.append(v2)x.reverse()for i in range(a):    ans+= min(x[i],z[i])print(ans)

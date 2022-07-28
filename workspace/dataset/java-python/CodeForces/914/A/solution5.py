@@ -1,0 +1,1 @@
+import mathn = int(input())s = list(map(int, input().strip().split()))s.sort(reverse=True)for i in s:    if i >=0:        t = math.sqrt(i)        if t != int(t):            print(i)            break    else:        print(i)        break

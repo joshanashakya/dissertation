@@ -1,0 +1,1 @@
+def check_thanossort(arr,x,y):	t = 0	for i in range(x + 1,y + 1):		if(arr[i] >= arr[i - 1]): t += 1	if(t == y - x): p = 1	else: p = 0	return pa = int(input())arr = list(map(int , input().split()))j = awhile(j >= 1):	k = 0	brk = False	while(k < a):		if(check_thanossort(arr,k,k+j-1) == 1): ans = j;brk = True;break		k += j	if(brk): break	j //= 2print(ans)

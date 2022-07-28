@@ -1,0 +1,1 @@
+n=int(input())p=[0]*100003ans=-1ar=input().split()for i in range(1,n+1):    x=int(ar[i-1])    if(p[x-1]>p[x+1]): ans = max(ans, i-max(p[x+1],p[x-2]))    else: ans = max(ans, i-max(p[x+2],p[x-1]))    p[x] = i;print(ans)

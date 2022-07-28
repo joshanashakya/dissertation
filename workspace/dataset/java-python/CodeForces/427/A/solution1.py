@@ -1,0 +1,1 @@
+current_popo = 0untreated = 0num_of_events = int(input())sequence = input().split(' ') for i in range(sequence.__len__()):    num = int(sequence[i])    if(num > 0):        current_popo = current_popo + num    if(num < 0):        if(current_popo == 0):            untreated = untreated + abs(num)        else:            current_popo = current_popo + num  print(untreated)  

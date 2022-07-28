@@ -1,0 +1,1 @@
+import java.util.Scanner; public class Main { 	public static void main(String[] args) {		Scanner sc = new Scanner(System.in);		int tc = sc.nextInt();		while(tc-->0) {		   int n = sc.nextInt();		   int mid = 2*n;		   int count=n;		   for(int i=4*n;i>mid && count>0;i-=2) {			   System.out.print(i+" ");			   count--;		   }		   System.out.println();		}		sc.close();	} }

@@ -1,0 +1,1 @@
+for _ in range(int(input())):    a,b,c=map(int,input().split())    s=input()     n=len(s)    j=n    for i  in range(n-2,-1,-1):        if s[i]!=s[i+1] or i==n-2:             if s[i]=="A":                 c-=a             else:                 c-=b        if c>=0:                 j-=1        else:                 break            print(j)

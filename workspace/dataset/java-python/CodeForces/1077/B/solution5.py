@@ -1,0 +1,1 @@
+n = int(input())arr = list(map(int, input().split()))ans = 0used = [0]*n for i in range(1,n - 1) :    if arr[i+1] == 1 and arr[i] == 0 and arr[i-1] == 1:        ans += 1        used[i+1] = used[i-1] = used[i] = 1        arr[i+1] = 0  print (ans)

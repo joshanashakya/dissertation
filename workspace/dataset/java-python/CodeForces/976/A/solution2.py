@@ -1,0 +1,1 @@
+n=int(input())s=input()d={}for i in s:    if(i in d):        d[i]+=1    else:        d[i]=1if(len(d)==2):    s1='1'*1+'0'*d['0']    print(s1)else:    if('0' in d):        print('0'*d['0'])    else:        print('1')

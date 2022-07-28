@@ -1,0 +1,1 @@
+n = int(input())arr = [int(x) for x in input().split()]dp = [[0 for _ in range(2)] for _ in range(n)]dp[0][0] = abs(1-arr[0])dp[0][1] = abs(-1-arr[0])for i in range(1,n):    plus1 = abs(1-arr[i])    minus1 = abs(-1-arr[i])    dp[i][0] = min(dp[i-1][0] + plus1, dp[i-1][1] + minus1)    dp[i][1] = min(dp[i-1][0] + minus1, dp[i-1][1] + plus1)print(dp[n-1][0])

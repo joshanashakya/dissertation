@@ -1,0 +1,1 @@
+//package com.company; import java.util.*;import java.lang.*;import java.io.*; public class Main {     public static void main(String[] args)throws Exception {        Scanner sx = new Scanner(System.in);        int n = sx.nextInt();        int m = sx.nextInt();        for(int i=m;i>0;i--){            System.out.print(n/i+" ");            n-=(n/i);        }    }}

@@ -1,0 +1,1 @@
+I = lambda: map(int, input().split())INT = lambda: int(input()) def gcd(x, y):     return x if y == 0 else gcd(y, x % y) T = INT()##T = 1for _ in range(T):##     n = INT()     a, b = I()     print("IN"*(gcd(a, b) > 1) + "FINITE") 

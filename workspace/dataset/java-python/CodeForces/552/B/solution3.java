@@ -1,0 +1,1 @@
+import java.util.Scanner; public class DigitCounter {    public static void main(String[] args) {        Scanner scanner = new Scanner(System.in);         long n = scanner.nextLong();        long count = 0;         for (int i = 1; i <= n; i *= 10) {            count += n - i + 1;        }         System.out.println(count);    }}

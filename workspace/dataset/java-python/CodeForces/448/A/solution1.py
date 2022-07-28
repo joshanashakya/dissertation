@@ -1,0 +1,1 @@
+from collections import Counterimport math def solve():    a=list(map(int,input().split()))    b=list(map(int,input().split()))    n=int(input())    sum1,sum2=0,0     for i in a:        sum1+=i    for i in b:        sum2+=i     if math.ceil(sum1/5)+math.ceil(sum2/10)<=n:        return "YES"     return "NO"        print(solve())

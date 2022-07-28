@@ -1,0 +1,1 @@
+import math n,k=map(int,input().split()) mn=10**12for i in range(1,int(n**0.5)+3):    if n%i==0:        x1=i*k+n//i        x2=k*(n//i)+i        if x1//k * (x1%k)==n:            mn=min(mn,x1)        if x2//k * (x2%k)==n:            mn=min(mn,x2)print(mn)        

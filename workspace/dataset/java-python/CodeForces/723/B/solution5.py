@@ -1,0 +1,1 @@
+n, s = int(input()), input()max_len, in_par = 0, 0while s.find('(') != -1:	i, j = s.find('('), s.find(')')	in_par += len([t for t in s[i+1:j].split('_') if t])	s = s[:i] + "_" + s[j+1:]max_len = max([len(t) for t in s.split('_')])print(max_len, in_par)

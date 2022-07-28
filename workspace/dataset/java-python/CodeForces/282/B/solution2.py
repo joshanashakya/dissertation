@@ -1,0 +1,1 @@
+import sysinput = sys.stdin.readlinea,g = 0,0for _ in range(int(input())):	r = input().split()	r[0] = int(r[0])	r[1] = int(r[1])	if abs(a+r[0]-g)<=500:		a+=r[0]		sys.stdout.write("A")	else:		g+=r[1]		sys.stdout.write("G")

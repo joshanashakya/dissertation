@@ -1,0 +1,1 @@
+from sys import stdin,stdoutfor _ in range(1):#int(stdin.readline())):    n=int(stdin.readline())    a=list(map(int,stdin.readline().split()))    mn=min(a)    sm=sum(a);ans=sm    for v in a:        for fact in range(2,v):            if v%fact==0:                rem=v-v//fact                add=mn*fact-mn                ans=min(ans,sm+add-rem)    print(ans)

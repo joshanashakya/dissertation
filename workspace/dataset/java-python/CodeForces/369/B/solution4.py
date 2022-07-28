@@ -1,0 +1,1 @@
+n,k,l,r,sa,sk=map(int,input().split(" "))ans=[sk//k]*(k - sk%k) + [sk//k + 1]*(sk%k)n-=kif n!=0:    sa-=sk    ans1 = [sa//n]*(n - sa%n) + [sa//n + 1]*(sa%n)    ans+=ans1ans = [str(i) for i in ans]print(" ".join(ans))

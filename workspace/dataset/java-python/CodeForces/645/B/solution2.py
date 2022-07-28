@@ -1,0 +1,1 @@
+#lst = list(map(int, input().strip().split(' ')))n,k = map(int, input().strip().split(' '))if n==1 or k==0:    print(0)elif k>=n//2:    p=(n*(n-1))//2    print(p)else:    q=n-2*k    p=(n*(n-1))//2 - (q*(q-1))//2    print(p)     

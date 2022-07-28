@@ -1,0 +1,1 @@
+sections,nuts,divisors,capacity = map(int,input().split())count = 0while True:    if nuts<=0:        print(count)        break    else:        x=min(sections-1,divisors)        divisors-=x        nuts-=((x+1)*capacity)        count+=1

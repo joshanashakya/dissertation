@@ -1,0 +1,1 @@
+n,k = map(int, input().strip().split(' '))lst = list(map(int, input().strip().split(' ')))t = list(map(int, input().strip().split(' ')))s=0l=[]for i in range(n):    if t[i]==1:        s+=lst[i]    if t[i]==0:        l.append(lst[i])    else:        l.append(0)s1=sum(l[:k])m=s1for i in range(n-k):    s1-=l[i]    s1+=l[k+i]    if s1>m:        m=s1print(m+s)

@@ -1,0 +1,1 @@
+a, b, c, d = list(map(int, input().split()))s = sorted([a, b, c])ab = s[1] - s[0]bc = s[2] - s[1]if ab < d:    if bc < d:        print((d-s[1]+s[0])+(d-s[2]+s[1]))    else:        print(d-s[1]+s[0])else:    if bc < d:        print(d-s[2]+s[1])    else:        print(0) 

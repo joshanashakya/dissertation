@@ -1,0 +1,1 @@
+n, n1, n2 = map(int, input().split()) people = [int(bruh) for bruh in input().split()] people.sort() larger = max(n1, n2)smaller = min(n1, n2) small = people[n-smaller:]large = people[n - larger-smaller:n-smaller] arithmean = sum(small)/smaller + sum(large)/larger print((f'{arithmean:.9f}'))

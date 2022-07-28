@@ -1,0 +1,1 @@
+l=lenimport sysc=sys.stdin.readline()d=[0]*l(c)p=c[0]for i,t in enumerate(c[1:]):	d[i+1]=d[i]+1*(t==p)	p=tfor _ in range(int(sys.stdin.readline())):	l,r=map(int,sys.stdin.readline().split())	sys.stdout.write(str(d[r-1]-d[l-1])+"\n")

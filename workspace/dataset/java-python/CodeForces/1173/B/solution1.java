@@ -1,0 +1,1 @@
+import java.util.*; public class B_564{public static void main(String[] args){   Scanner omkar = new Scanner(System.in);   int n = omkar.nextInt();   int m = n/2 + 1;   System.out.println(""+m);   for(int i = 1; i <= m; i++)   {      System.out.println("1 " + i);   }   for(int i = 1; i <= n-m; i++)   {      System.out.println((i+1) + " " + m);   }           }  }

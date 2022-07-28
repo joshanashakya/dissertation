@@ -1,0 +1,1 @@
+cities, tank = map(int,input().split()) fuel_cost = 0 # full tank in city 1if( cities > tank):    fuel_cost = tank    for i in range(2,cities+1-tank):        fuel_cost += ielse:    fuel_cost = cities-1 print(fuel_cost)

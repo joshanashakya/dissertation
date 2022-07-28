@@ -1,0 +1,1 @@
+#include<bits/stdc++.h> #define ll long long#define fo(i,j,n) for(register int i=j; i<=n; ++i)using namespace std; int n,k,a[200];int main(){ 	cin>>n>>k;	int x;	fo(i,1,n){		scanf("%d",&x);		a[x]++;	}	int mx= -1,sum=0;	fo(i,1,100){		if(a[i]) mx = max(mx,a[i]),sum++;	}	if(mx%k==0)mx/=k;	else mx = mx/k +1;	int ans = sum*mx*k - n;	cout<<ans;	return 0;}

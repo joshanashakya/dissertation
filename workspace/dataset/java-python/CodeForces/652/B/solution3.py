@@ -1,0 +1,1 @@
+n=int(input())array=list(map(int,input().split()))array.sort()ans=[] for i in range(n//2):	ans.append(array[i])	ans.append(array[n-i-1]) if len(array)%2!=0:	ans.append(array[n//2])print(" ".join([str(i) for i in ans]))

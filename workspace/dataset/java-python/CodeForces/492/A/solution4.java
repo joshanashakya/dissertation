@@ -1,0 +1,1 @@
+import java.util.Scanner; public class VanyaCubes { 	public static void main(String[] args) {		// TODO Auto-generated method stub		Scanner s =  new Scanner(System.in);		int  n = s.nextInt();		int  c = 0;		int ans = 0;		while(ans<=n)		{			c++;			ans += (c*(c+1)/2);					}		System.out.println(c-1); 	} }

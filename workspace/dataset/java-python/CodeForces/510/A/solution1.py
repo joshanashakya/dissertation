@@ -1,0 +1,1 @@
+a,b=map(int,input().split())s='#'t='.'flag=0for i in range(a):    if i%2==0:       print(s*b)    else:        if flag==0:            print(t*(b-1)+s)            flag=1        elif flag==1:            print(s+t*(b-1))            flag=0

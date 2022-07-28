@@ -1,0 +1,1 @@
+def solve():    s = input()        if(s[-5:] == 'lala.' and s[:5] != "miao."):        print("Freda's")    elif(s[-5:] != 'lala.' and s[:5] == "miao."):        print("Rainbow's")    else:        print("OMG>.< I don't know!")  n = int(input())for _ in range(n):    solve()

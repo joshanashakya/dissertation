@@ -1,0 +1,1 @@
+n  = int(input())x=1res=[]for i in range(64):	lo, hi =0, int(1e15)	f=0	ans=0	while lo+1<hi:		mid=(lo+hi)//2		v = (x-1)*mid+ (mid*mid-mid)//2		if(v==n):			f=1;			ans=mid			break;		if(v>n):			hi=mid		else:			lo=mid	if(f and ans%2==1):		res.append(ans*x)	x=x*2if(len(res)==0):	print(-1);	exit(0)for x in res:	print(int(x))

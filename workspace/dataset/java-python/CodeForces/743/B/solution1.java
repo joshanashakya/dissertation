@@ -1,0 +1,1 @@
+import java.util.Scanner; public class CodeParsing {   public static void main(String[] args) {    Scanner sc = new Scanner(System.in);    int n = sc.nextInt();    long k = sc.nextLong();    long ans = 0;    while(k % 2 == 0){        ans++;        k /= 2;    }    System.out.println(ans+1);    sc.close();  }}

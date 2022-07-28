@@ -1,0 +1,1 @@
+n = int(input())quest = []for i in range(2, n + 1):    if all(i % q != 0 for q in quest):	    x = i	    while x <= n:		    quest.append(x)		    x *= iprint(len(quest))print(' '.join(str(q) for q in quest))

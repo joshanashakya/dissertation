@@ -1,0 +1,1 @@
+n = int(input())old_pos = list(map(int, input().split())) # Transforming multithread position in the real orderreal_pos = list(reversed(old_pos))flag = Truefor i in range(1,n):  if real_pos[i] > real_pos[i-1]:    print(n - i)    flag = False    break if(flag == True):    print(0)				  		  	  		 		 		 	  	  		

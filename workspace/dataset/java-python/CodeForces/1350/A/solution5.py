@@ -1,0 +1,1 @@
+for _ in range(int(input())):	n=[int(i)for i in input().split()]	a=n[0]	b=n[1]	c=0	if a%2==0:		print(a+b*2)		continue	for e in range(3,a+1,2):		if e*e<=a:			if a%e==0:				print(a+e+((b-1)*2))				break		else:			print(a*2+((b-1)*2))			break

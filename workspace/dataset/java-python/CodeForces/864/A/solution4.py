@@ -1,0 +1,1 @@
+list_n_len = [0 for i in range(120)]list_n = []for i in range(int(input())):	a = int(input())	list_n_len[a] += 1	list_n.append(a)list_n = list(set(list_n))if len(list_n) == 2 and list_n_len[list_n[0]] == list_n_len[list_n[1]]:	print("YES")	print(list_n[0], list_n[1])else:	print("NO")

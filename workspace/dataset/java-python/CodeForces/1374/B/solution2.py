@@ -1,0 +1,1 @@
+from sys import stdininput = stdin.readline t = int(input())for _ in range(t):    n = int(input())    ans = 0    while n % 3 == 0:        if n % 6 == 0:            n //= 6        else:            n *= 2        ans += 1    if n == 1:        print(ans)    else:        print(-1)

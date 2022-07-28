@@ -1,0 +1,1 @@
+def check(s):	for i in range(1, n):		if s[i]==s[i-1] and s[i]!="?":			return False	return True n = int(input())s = input()if not check(s):	print ("NO")	exit() ans = "NO"if s[0]=="?" or s[-1]=="?":	print ("YES")	exit()for i in range(n-1):	if (s[i]=="?" and s[i+1]=="?") or (i>0 and s[i-1]==s[i+1] and s[i]=="?"):		# print (i)		ans = "YES"		breakprint (ans)   

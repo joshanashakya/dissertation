@@ -1,0 +1,1 @@
+s=input()l,r=s.split('e')a,d=l.split('.')a=int(a)b=int(r)if int(b):    d=int(str(d)[-1::-1])    for i in range(b):        a=a*10+d%10        d//=10    d=str(d)[-1::-1]print(a,end='')if int(d):    print('.',end='')    print(d)

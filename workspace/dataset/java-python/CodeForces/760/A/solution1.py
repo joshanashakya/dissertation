@@ -1,0 +1,1 @@
+month,day,  = map(int, input().split()) short = [2]mid = [4, 6, 9, 11]long = [1, 3, 5, 7, 8, 10, 12]  if month in short:    if day == 1:        print(4)    else:        print(5) elif month in mid:    if day == 7:        print(6)    else:        print(5)else:    if day in (6, 7):        print(6)    else:        print(5)

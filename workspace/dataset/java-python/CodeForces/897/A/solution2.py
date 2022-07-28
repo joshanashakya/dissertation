@@ -1,0 +1,1 @@
+n,m=map(int,input().split())s=list(input())for i in range(m):	a,b,c,d=map(str,input().split())	a=int(a)	b=int(b)	if a==b:		if s[a-1]==c:			s[a-1]=d	else:		for j in range(a-1,b):			if s[j]==c:				s[j]=dfor i in s:	print(i,end='')

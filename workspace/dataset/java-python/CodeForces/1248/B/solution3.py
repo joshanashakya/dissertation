@@ -1,0 +1,1 @@
+# https://codeforces.com/problemset/problem/1248/B n = int(input()) sticks = sorted(map(int, input().split())) i = 0j = n - 1a = 0b = 0 while i < j:    a += sticks[i]    b += sticks[j]    i += 1    j -= 1if n % 2 == 1:    b += sticks[i] print(a ** 2 + b ** 2)

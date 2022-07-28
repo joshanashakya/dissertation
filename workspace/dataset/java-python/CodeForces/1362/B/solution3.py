@@ -1,0 +1,1 @@
+t=int(input())while(t>0):    n=int(input())    l=list(map(int,input().split()))    s=set(l)    a=max(l)    b=1    while(b<a):        b=b*2    if(a==b):        b=b*2    # print(b)    for j in range(1,b+1):        ans=[]        for i in l:            ans.append(i^j)        if set(ans)==s:            print(j)            break    else:        print(-1)    t=t-1  

@@ -1,0 +1,1 @@
+from sys import stdin, stdout input = stdin.readline n = int(input())a = list(map(int, input().split()))p = 1l = 0pr = 1for i in range(n):    if a[i]<0:        pr*=-1    if pr > 0:        p+=1    else:        l+=1print(l*p,(n*(n+1))//2-(l*p))

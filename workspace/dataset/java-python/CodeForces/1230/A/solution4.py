@@ -1,0 +1,1 @@
+line1=input() a = int(line1.split(' ')[0])b = int(line1.split(' ')[1])c = int(line1.split(' ')[2])d = int(line1.split(' ')[3]) if (((a+b)==(c+d)) or ((a+c)==(b+d)) or ((a+d)==(b+c)) or ((a+b+c)==(d)) or ((a+b+d)==(c)) or ((a+c+d)==(b)) or ((b+c+d)==(a))):    print("YES")else:    print("NO") 	 						 	    	 	 	 			  		

@@ -1,0 +1,1 @@
+t,s1,s2,e1,e2=map(int,input().split())drc=input()x=e1-s1y=e2-s2time=0for i in drc:    if x==0 and y==0:        break    elif x!=0 and x>0 and i=='E':         x-=1    elif x!=0 and x<0 and i=='W':         x+=1    elif y!=0 and y>0 and i=='N':         y-=1    elif y!=0 and y<0 and i=='S':         y+=1    time+=1if x==0 and y==0:    print(time)else:    print(-1) 

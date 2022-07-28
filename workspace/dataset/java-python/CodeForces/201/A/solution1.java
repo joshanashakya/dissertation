@@ -1,0 +1,1 @@
+import java.util.Scanner; public class Main {	public static void main(String[] args) {		Scanner sc = new Scanner(System.in);		int x = sc.nextInt();		if(x==3) {			System.out.println(5);  //特判		}else {			int i = 1;			while((i*i+1)/2<x) {  //考虑奇数放的比偶数多  只需要从奇数找   最多放得数量为(i*i+1)/2 				i+=2;			}			System.out.println(i);		}	}} 	    		 	 		    			      	  	 	

@@ -1,0 +1,1 @@
+arr = set()c = 0while 1:    try:        s = input()        # print(arr)        if s[0] == '+': arr.add(s[1:])        elif s[0] == '-': arr.remove(s[1:])        else:            msg = s[s.index(':')+1 : ]            c += len(msg) * (len(arr))     except:        # pass        print(c)        break

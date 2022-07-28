@@ -1,0 +1,1 @@
+from itertools import accumulate n, v = map(int, input().split())cost = []n -= 1while v:    cost.append(1)    v -= 1    n -= 1k = 2while n > 0:    cost.append(k)    k += 1       n -= 1 total_cost = list(accumulate(cost))print(total_cost[n-1])

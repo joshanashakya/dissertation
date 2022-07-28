@@ -1,0 +1,1 @@
+n,m=map(int,input().split())L=[0]*nfor i in range(m):    a,b=map(int,input().split())    L[a-1]=-1    L[b-1]=-1central=0for i in range(n):    if L[i]==0:        central=i+1        breakprint(n-1)for i in range(1,n+1):    if i!=central:        print(central,i)

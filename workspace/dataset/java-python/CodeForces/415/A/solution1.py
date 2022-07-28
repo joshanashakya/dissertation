@@ -1,0 +1,1 @@
+n,m = map(int,input().split())l=list(map(int,input().split())) s=[i+1 for i in range(n)] for i in range(m):    for j in range(len(s)):        if(s[j]>=0 and s[j]>=l[i]):            s[j]=-(l[i]) for i in s:    print(abs(i),end=" ")    

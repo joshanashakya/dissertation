@@ -1,0 +1,1 @@
+import sys def main():    inp = sys.stdin.read().strip().split('\n')    s = inp[1]    for i in inp[2:]:        r, l, c, d = i.split()        r, l = int(r) - 1, int(l) - 1        s = s[:r] + s[r:l+1].replace(c, d) + s[l+1:]    return s    print(main())

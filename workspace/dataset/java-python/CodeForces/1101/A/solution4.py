@@ -1,0 +1,1 @@
+for i in range(int(input())):    l, r, d = map(int, input().split())    ans = False    p = 0    if l > d:        ans = True        print(d)    else :        if (r+1)%d == 0:            print(r+1)        else :            print((r//d + 1)*d )

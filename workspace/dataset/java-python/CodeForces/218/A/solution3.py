@@ -1,0 +1,1 @@
+inn = list(map(int, input().split(" ")))mnts = list(map(int, input().split(" ")))pks = inn[0]cngd = inn[1]k = []for i in range(1,len(mnts)-1):    if mnts[i] > (mnts[i-1]+1) and mnts[i] > (mnts[i+1]+1):        k.append(i)for j in range(cngd):    mnts[k[j]] = mnts[k[j]]-1print(" ".join(map(str, mnts)))

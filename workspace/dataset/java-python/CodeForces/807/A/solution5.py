@@ -1,0 +1,1 @@
+n=int(input())a=[]fl=1for i in range(n):	a.append([int(x) for x in input().split(' ')])	if(a[-1][0]!=a[-1][1]):		fl=0if(not fl):	print("rated")else:	fl=1	for i in range(1,n):		if(a[i-1][0]<a[i][0]):			fl=0	if(fl):		print("maybe")	else:		print("unrated")

@@ -1,0 +1,1 @@
+n, pos, l, r = map(int, input().split())if l==1 and r==n:    print(0)elif l==1 and r!=n:    print(abs(r-pos)+1)elif l!=1 and r==n:    print(abs(l-pos)+1)else:    print((r-l)+min(abs(l-pos), abs(r-pos))+2) 

@@ -1,0 +1,1 @@
+x, y, z = map(int, input().split())a, b, c = map(int, input().split()) a -= x if a < 0:    print("NO")    exit() b -= yy = 0 if b < 0:    y = abs(b)    b = 0 if y > 0:    a -= y if a < 0:    print("NO")    exit()  if (a + b + c) >= z:    print("YES")else:    print("NO")

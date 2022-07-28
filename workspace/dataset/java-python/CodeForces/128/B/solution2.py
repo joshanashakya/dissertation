@@ -1,0 +1,1 @@
+import heapq s = input()k = int(input())N = len(s) if k>N*(N+1)//2:    print('No such line.')    exit() A = [(c,j) for j,c in enumerate(list(s))]heapq.heapify(A) for i in range(k):    if not A:        break    min_item, index = heapq.heappop(A)    if index + 1 < N:        heapq.heappush(A, (min_item + s[index+1], index+1))print(min_item)

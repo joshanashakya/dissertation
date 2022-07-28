@@ -1,0 +1,1 @@
+n, k = map(int, input().split())arr = list(map(int, input().split())) given = 0ans = -1save = 0for i, candy in enumerate(arr, start=1):    if candy >= 8:        k -= 8        save += candy-8    else:        need = 8 - candy        available = min(need, save)        k -= (available+candy)        save -= available    if k <=0:        ans = i        break print(ans)

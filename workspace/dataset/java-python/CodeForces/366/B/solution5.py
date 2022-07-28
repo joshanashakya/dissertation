@@ -1,0 +1,1 @@
+n, k = map(int, input().split())a = list(map(int, input().split())) ans = 10**9bestI = 0for i in range(k):    score = 0    r = n // k    while r > 0:        score += a[i]        i += k        if i >= n:            i -= n        r -= 1    if score < ans:        ans = score        bestI = i+1 print(bestI)

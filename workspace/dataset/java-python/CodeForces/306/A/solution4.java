@@ -1,0 +1,1 @@
+import java.util.*;public class P2 { 	public static void main(String[] args) {		Scanner sc = new Scanner(System.in);					int n =sc.nextInt();			int m = sc.nextInt();			while(n%m!=0) {				int p = n/m;				System.out.print(p+" ");				n-=p;				m--;							}			for(int i =0;i<m;i++) {				System.out.print(n/m+" ");			}					}	}

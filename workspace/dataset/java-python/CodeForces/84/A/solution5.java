@@ -1,0 +1,1 @@
+import java.util.*;import java.util.regex.*; public class Solution {	    public static void main(String[] args) {        Scanner scan = new Scanner(System.in);		int n = scan.nextInt();				System.out.println((3*n)/2);    }		}

@@ -1,0 +1,1 @@
+def solve(bin_str, x, y):    target = ('0'*(x-y-1)) + (str(10 ** y))    trimmed = bin_str[-x:]    return sum([1 if target_i != trim_i else 0 for target_i, trim_i in zip(target, trimmed)]) if __name__ == '__main__':    n, x, y = list(map(int, input().split()))    bin_str = input()    print(solve(bin_str, x, y))  	    			 	 		  	 	  									

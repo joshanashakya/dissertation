@@ -1,0 +1,1 @@
+n, m, k = map(int, input().split())P = list(map(int, input().split()))S = list(map(int, input().split()))C = list(map(int, input().split())) M = [-1]*md = {}for i, s in enumerate(S):    d[i] = s-1    M[s-1] = max(P[i], M[s-1]) ans = 0for c in C:    if M[d[c-1]] != P[c-1]:        ans += 1print(ans)

@@ -1,0 +1,1 @@
+n = int(input())lists = []elems = set();for _ in range(n):	a = list(map(int, input().split(' ')))	a = a[1:]	lists.append(a)	for x in a:		elems.add(x)# print(lists)ans = []for x in elems:	common = 0	for i in range(n):		if x in lists[i]:			common += 1	if common == n:		ans.append(x) print(*ans)

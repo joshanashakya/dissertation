@@ -1,0 +1,1 @@
+t=int(input()) ans=[] while t:        x1,y1,z1 = map(int, input().split())    x2,y2,z3 = map(int, input().split())    c=0    abp=min(z1,y2)    c=c+abp*2    z3=z3-min(z3,x1)    y1=y1-min(x2,y1)    abn=min(z3,y1)    c=c-abn*2    ans.append(c)    t=t-1  for i in ans:    print(i)

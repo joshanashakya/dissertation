@@ -1,0 +1,1 @@
+ n, t = [int (_) for _ in input().split()]b = [int(_) for _ in input().split()] bc = 0j = 0tr = t for i in range (n):    while j < n and tr >= b[j]:        tr -= b[j]        j += 1     bc = max(bc, j - i)    tr += b[i]  print(bc)

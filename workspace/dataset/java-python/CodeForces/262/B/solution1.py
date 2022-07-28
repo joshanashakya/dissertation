@@ -1,0 +1,1 @@
+n, k = map(int, input().split())a = list(map(int, input().split()))i = 0while i < n and k > 0 and a[i] < 0:    a[i] = -1*a[i]    i += 1    k -= 1a = sorted(a)if k%2 == 1:    a[0] = -1*a[0]print(sum(a))

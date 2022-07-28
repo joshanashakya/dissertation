@@ -1,0 +1,1 @@
+n = int(input())a = [x * (x + 1) // 2 for x in range(1, int((2 * n) ** .5) + 1)]i = 0j = len(a) - 1while i <= j:    if a[i] + a[j] == n:        print("YES")        break    elif a[i] + a[j] < n:        i += 1    else:        j -= 1else:    print("NO")

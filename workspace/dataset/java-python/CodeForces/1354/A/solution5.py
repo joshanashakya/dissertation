@@ -1,0 +1,1 @@
+for _ in range(int(input())):    a,b,c,d=map(int,input().split())    ans=0    i=0    if b>=a:        print(b)    elif a>b and c>d:        k=(a-b+(c-d-1))//(c-d)        print(b+k*c)    else:        print(-1)      

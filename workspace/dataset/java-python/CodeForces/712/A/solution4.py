@@ -1,0 +1,1 @@
+def solve(arr):  res = [arr[-1]]  for i in range(len(arr)-2,-1,-1):        res.insert(0,arr[i]+arr[i+1])      return res           def main() :  n = int(input())  arr = list(map(int, input().split(' ')))  print(*solve(arr))main()

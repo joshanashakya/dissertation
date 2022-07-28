@@ -1,0 +1,1 @@
+a=int(input())b=list()for i in range(a):  b.append(list(map(int, input().split())))h=0for i in range(a):  for j in range(a):    if (sum(b[i][j] for i in range(a))>sum(b[i])):      h+=1print(h)             

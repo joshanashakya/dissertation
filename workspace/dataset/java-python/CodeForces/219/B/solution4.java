@@ -1,0 +1,1 @@
+import java.util.*;public class abc{    public static void main(String[] args)	{		Scanner sc=new Scanner(System.in);		long p=sc.nextLong();		long d=sc.nextLong(),ans=++p;				for(long t=10;;t*=10)		{			if(p%t>d)				break;			ans=p-p%t;		}		System.out.println(ans-1);	}}

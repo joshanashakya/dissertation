@@ -1,0 +1,1 @@
+def sign(x):    return (x>=0)*2-1x1,y1=list(map(int,input().split(" ")))x2,y2=list(map(int,input().split(" "))) n=int(input())count=0 for _ in range(n):    a,b,c=list(map(int,input().split(' ')))    if sign(a*x1+b*y1+c)*sign(a*x2+b*y2+c)==-1:        count+=1print(count)

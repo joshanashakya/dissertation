@@ -1,0 +1,1 @@
+for _ in range(int(input())):    n,k = map(int, input().split())    res = 0    if n == 1:        print(1)    elif n % k == 0:        print(n)    else:        tmp = n // k        st = k // 2        n = n % k        ex = min(n,st)        res = (tmp*k) + ex        print(res) 

@@ -1,0 +1,1 @@
+import sys  if __name__ == '__main__':	h1, h2 = [int(x) for x in input().split()]	a, b = [int(x) for x in input().split()]  	if a == b and h1 + 8 * a < h2:		print(-1)		sys.exit(0) 	if h1 + 8 * a >= h2:		print(0)		sys.exit(0) 	if b > a:		print(-1)		sys.exit(0) 	rest = h2 - h1 - 8 * a	div = 12 * (a - b)	result = rest // div 	if rest % div > 0:		result += 1 	print(result)

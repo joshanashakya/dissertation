@@ -1,0 +1,1 @@
+datos_n_d = input().split()n = int(datos_n_d[0])d = int(datos_n_d[1]) costo_gancho = []datos_gancho = input().split()for dato in datos_gancho:    costo_gancho.append(int(dato))    m = int(input()) balance = 0costo_gancho.sort()if n >= m:    for i in range(m):        balance = balance + costo_gancho[i]else:    balance = sum(costo_gancho) - ((m - n)*d) print(balance)

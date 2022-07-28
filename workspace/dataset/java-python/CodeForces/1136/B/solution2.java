@@ -1,0 +1,1 @@
+import java.util.Scanner; public class _0721NastyaIsPlayingComputerGames { 	public static void main(String[] args) {				Scanner sc = new Scanner(System.in);		int n=sc.nextInt();		int k=sc.nextInt();		System.out.println(3*n+Math.min(n-k,k-1));	} }

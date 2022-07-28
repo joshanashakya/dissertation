@@ -1,0 +1,1 @@
+import sysn=int(input())arr=list(map(int,input().split()))min1=sys.maxsizefor i in range(n):    temp=list(map(int,input().split()))    temp2=0    temp2+=sum(temp)*5+arr[i]*15    if min1>temp2:        min1=temp2print(min1)

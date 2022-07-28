@@ -1,0 +1,1 @@
+t = int(input())for _ in range(t):	l = list(map(int,input().split()))	if sum(l)%3==0:		for x in l[:-1]:			if x>sum(l)//3:				# print(x)				print("No")				break		else:			print("Yes")	else:		print("No")

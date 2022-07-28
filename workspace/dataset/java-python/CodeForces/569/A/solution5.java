@@ -1,0 +1,1 @@
+import java.util.Scanner; public class CF_569A {	public static void main(String[] args) {		Scanner sc=new Scanner(System.in);		int T=sc.nextInt(),S=sc.nextInt(),q=sc.nextInt();		int cnt=0;		while(S<T) {			S=S*q;			cnt++;		}		System.out.print(cnt);	}}

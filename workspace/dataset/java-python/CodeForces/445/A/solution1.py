@@ -1,0 +1,1 @@
+n,m = map(int,input().split())ans =[]for i in range(n):    if i%2==0:        x='B'    else:        x='W'        s = input()    a = ''    for j in range(len(s)):        if s[j]=='.':            a+=x        else:            a+='-'        if x=='B':            x='W'        else:            x='B'    ans.append(a)  for i in ans:    print(i)

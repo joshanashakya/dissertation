@@ -1,0 +1,1 @@
+from sys import stdin, stdout def main():    for _ in range(int(stdin.readline())):        n, a, b, c, d = map(int, stdin.readline().split(' '))        min_mass = (a-b)*n        max_mass = (a+b)*n        if min_mass>c+d or max_mass<c-d:            stdout.write('No\n')        else:            stdout.write('Yes\n') if __name__ == "__main__":    main()

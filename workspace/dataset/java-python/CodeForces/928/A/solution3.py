@@ -1,0 +1,1 @@
+from sys import stdinimport re def chs(s,l):	s = s.upper().replace('O','0')	return l.sub('1',s.rstrip('\n')) def main():	l = re.compile(r'[LI]')	s = chs(next(stdin),l)	next(stdin)	for line in stdin:		if s == chs(line,l):			print('No')			break	else:		print('Yes') main()

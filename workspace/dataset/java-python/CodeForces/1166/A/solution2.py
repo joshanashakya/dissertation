@@ -1,0 +1,1 @@
+from collections import Counter cases = int(input())letters = []while cases:    cases -= 1    s = input()[0]    letters.append(s) count = Counter(letters)  def cnt(num):    res = num * (num - 1) // 2    return res  ans = 0 for val in count.values():    ans += cnt(val // 2)    ans += cnt(val - val // 2) print(ans)

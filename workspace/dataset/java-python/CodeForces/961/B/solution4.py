@@ -1,0 +1,1 @@
+n,k=map(int,input().split(" "))v=list(map(int,input().split(" ")))condition =list(map(int,input().split(" "))) sum=0for i in range(n):    if condition[i]==1:        sum+=v[i]        v[i]=0sum2=0for i in range(k):    if condition[i]==0:        sum2+=v[i]temp=sum2for i in range(0,n-k):    temp=temp-v[i]+v[i+k]    if temp>sum2:        sum2=tempprint(sum2+sum)

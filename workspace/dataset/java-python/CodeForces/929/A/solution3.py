@@ -1,0 +1,1 @@
+n, k = map(int, input().split(" ")) x = list(map(int, input().split(" "))) r = 1 cK = k for i in range(n): 	try: 		rr = x[i+1] - x[i] 		if k < rr: 			r = -1 			break 		if rr <= cK: 			cK -= rr 		else: 			r+=1 			cK = k-rr 	except: 		break; print(r)   # Made By Mostafa_Khaled

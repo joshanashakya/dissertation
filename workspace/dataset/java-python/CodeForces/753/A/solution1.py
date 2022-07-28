@@ -1,0 +1,1 @@
+num = int(input())a = [i for i in range(45)]s = 1idx = 1while True:    idx += 1    if (s + idx > num):        n = idx-1        break     s += idx left = num - s a[n] += leftprint(n)for i in range(1, n+1):    print(a[i], end=" ")print()

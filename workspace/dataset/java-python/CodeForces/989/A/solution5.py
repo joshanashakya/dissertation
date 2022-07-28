@@ -1,0 +1,1 @@
+s=str(input())n=len(s)flag=0for i in range(1,n-1):    if(s[i]!='.' and s[i-1]!='.' and s[i+1]!='.'):        if(s[i-1]!=s[i] and s[i]!=s[i+1] and s[i-1]!=s[i+1]):            flag=1if(flag==1):    print("Yes")else:    print("No")    

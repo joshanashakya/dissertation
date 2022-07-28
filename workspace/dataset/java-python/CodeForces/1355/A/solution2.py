@@ -1,0 +1,1 @@
+if __name__ == '__main__':	for _ in range (int(input())):		n,k = map(int, input().split())		i = 1		ans = str(n)		while i < k and '0' not in ans:			ans = str(int(ans)+ int(max(ans))*int(min(ans)))			i+=1		print(ans)

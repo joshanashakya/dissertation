@@ -1,0 +1,1 @@
+n=int(input())k=0d={}i=0for x in map(int,input().split()):    d.setdefault(n-x,[]).append(i);    i+=1b=[0]*ng=0for x in d: l=d[x];g+=1;j=0 if len(l)%x:     print('Impossible');     break for i in l:  if j==x:      j=0;g+=1  b[i]=g;  j+=1else:print('Possible' ,*b)

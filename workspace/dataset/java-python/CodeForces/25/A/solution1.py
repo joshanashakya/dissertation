@@ -1,0 +1,1 @@
+def f(x):    return(x % 2)n = int(input())a = list(map(int, input().split()))s=0for i in range(n):    s+=f(a[i])if s==(n-1):    k=2    i=0    while k>0:        k=f(a[i])        i+=1    print(i)else:    k = -1    i = 0    while k < 1:        k = f(a[i])        i += 1    print(i)

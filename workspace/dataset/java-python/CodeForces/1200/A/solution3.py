@@ -1,0 +1,1 @@
+n = int(input())vet = list(input())res = [0,0,0,0,0,0,0,0,0,0]for item in vet:    if item == 'L':        pos = res.index(0)        res[pos] = 1     elif item == 'R':        res.reverse()        pos = 9 - res.index(0)        res.reverse()        res[pos] = 1     else:        res[int(item)] = 0 str1 = ''.join([str(elem) for elem in res])print(str1)		 				 	  	 					 	   	 		 		

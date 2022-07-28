@@ -1,0 +1,1 @@
+import java.util.Scanner; public class kick {     public static void main(String[] args) {        Scanner in = new Scanner(System.in);        int n;        n = in.nextInt();        in.nextLine();        String a;        while (n-- != 0) {            a = in.nextLine();            System.out.println(a.length());        }    }}

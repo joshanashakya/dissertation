@@ -1,0 +1,1 @@
+y,w = map(int,input().split())d = [i for i in range(max(y,w),7)]f = len(d)d = {1:[1,6],     2:[1,3],     3:[1,2],     4:[2,3],     5:[5,6],     6:[1,1]}for i in d.keys():    if i==f:     print(d[i][0],"/",d[i][1], sep = "")     break

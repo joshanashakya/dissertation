@@ -1,0 +1,1 @@
+n,l,m,a=int(input()),[0]*1000000,0,[]for _ in range(n):a.append(input())for i in range(n):    v=int(a[i][2:])    if a[i][0]=='+':l[v-1]=1    elif not l[v-1]:m+=1ans=mfor i in range(n):    if a[i][0]=='+':m+=1;ans=max(m,ans)    else:m-=1print(ans)

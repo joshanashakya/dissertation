@@ -1,0 +1,1 @@
+t, m = input("").split()c = 0flag = 0t = int(t)m = int(m)for i in range(0,t):	p, q = input("").split()	p = int(p)	q = int(q)	if (p<m) or (p==m and q ==0):		flag = 1		if q > 0:			if (100 - q > c):				c = 100 - qif ( flag == 0):	print(-1)else:	print(c)		

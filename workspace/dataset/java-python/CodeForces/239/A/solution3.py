@@ -1,0 +1,1 @@
+y, k, n = list(map(int, input().split()))  if y==k:    count = 0elif y >k:    count = ((y//k + 1) * k) - yelse:    count = k - y  if y>=n:    print(-1)else:    if y +count >n:        print(-1)    else:         while y+count <= n:            if count==0:                count+=k                continue            print(count, end = " ")            count+= k  

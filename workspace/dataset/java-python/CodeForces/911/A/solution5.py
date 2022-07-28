@@ -1,0 +1,1 @@
+import sysreadline = sys.stdin.readline N = int(readline())A = list(map(int, readline().split()))res = []mini = min(A)for i in range(N):    if A[i] == mini:        res.append(i) print(min(i - j for i, j in zip(res[1:], res)))

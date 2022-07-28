@@ -1,0 +1,1 @@
+# coding: utf-8 for ct in range(int(input())):  q, d = map(int, input().split())  a = list(map(int, input().split()))    for i in range(q):    answer = 'NO'        while a[i] > 0:      if str(d) in str(a[i]):        answer = 'YES'        break            a[i] -= d          print(answer)

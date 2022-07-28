@@ -1,0 +1,1 @@
+n, m = map(int, input().split())str1 = input().lower()for j in range(m):    l, r, c1, c2 = input().split()    l, r = (int(l)-1), int(r)    l1 = [i for i in str1]    for p in range(l, r):        if l1[p] == c1:            l1[p] = c2        s = ""        str1 = s.join(l1)print(str1)

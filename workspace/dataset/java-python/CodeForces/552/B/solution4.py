@@ -1,0 +1,1 @@
+ n=int(input())i=10count=0c2=0while True:     if n>=i:        count+=9*(i//10)*(len(str(i//10)))        i*=10     elif n<i:        i=i//10         count+=((n-i)+1)*(len(str(i)))        break print(count)

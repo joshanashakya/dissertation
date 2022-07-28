@@ -1,0 +1,1 @@
+s = input()new_s = ""n = len(s)for i in range(n - 1, -1, -1):    new_s += s[i]s = new_skek = 0for i in range(n):    kek += (1 << i) * (s[i] == '1')for i in range(n - 1):    kek *= 2print(kek % (10 ** 9 + 7))

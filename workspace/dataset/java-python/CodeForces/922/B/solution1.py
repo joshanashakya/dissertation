@@ -1,0 +1,1 @@
+import sys,mathfrom collections import defaultdict,dequeinput=sys.stdin.readline n=int(input())c=0for i in range(1,n+1):    for j in range(i+1,n+1):        k=i^j        if(i<j<k<=n and i+j>k and j+k>i and i+k>j):            #print(i,j,k)            c+=1print(c)

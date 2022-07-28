@@ -1,0 +1,1 @@
+n = int(input())from collections import defaultdicta = defaultdict(lambda: {-1})for i in range(n):    x,k = map(int,input().split())    p = a[k]    if x-1 not in p:        print('NO')        break    else:        a[k].add(x)else:    print('YES')

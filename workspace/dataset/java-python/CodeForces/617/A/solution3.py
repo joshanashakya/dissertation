@@ -1,0 +1,1 @@
+x=0z=int(input())while z > 0:    if z >= 5:        z=z-5        x+=1    elif z >= 4:        z=z-4        x+=1    elif z >= 3:        z=z-3        x+=1    elif z >= 2:        z=z-2        x+=1    elif z >= 1:        z=z-1        x+=1print(x)

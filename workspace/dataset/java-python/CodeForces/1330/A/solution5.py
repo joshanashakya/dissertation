@@ -1,0 +1,1 @@
+for _ in range(int(input())):    n,x=map(int,input().split())    l=list(map(int,input().split()))    ans=0    k=0    for i in range(1,n+x+1):        if i not in l:            ans+=1            if ans==x:                break    for j in range(i+1,n+x+1):        if j in l:            k+=1        else:            break     print(i+k) 

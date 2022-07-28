@@ -1,0 +1,1 @@
+import systry:	fin = open('in')except:	fin = sys.stdininput = fin.readline n,d,m,l=map(int,input().split())cur=0R = Nonefor i in range(n):	R = i * m + l	# Platform: i * m to i * m + l	# Gap: i * m + l + 1 to i * m + m - 1	if (i * m + l) // d != (i * m + m - 1) // d:		breakprint (R // d * d + d)

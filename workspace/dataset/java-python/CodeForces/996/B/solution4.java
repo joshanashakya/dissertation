@@ -1,0 +1,1 @@
+import java.util.Scanner;public class BREAK {	public static void main(String[] args)	{		Scanner obj=new Scanner(System.in);		int n= obj.nextInt();		int[] arr=new int[n];		for(int i=0;i<n;i++)		{			arr[i]=obj.nextInt();		}		int k=0;		for(int i=0;;i++)		{			if(i==n)				i=0;			if(arr[i]-k<=0)			{				System.out.println(i+1);				break;			}			k++;		}  	}}

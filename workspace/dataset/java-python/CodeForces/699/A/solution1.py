@@ -1,0 +1,1 @@
+n = int(input()) directions = [x for x in input()]points = [int(x) for x in input().split()] m = 9999999999999flag = Falsefor x in range(len(directions)-1):		if directions[x] == "R" and directions[x+1] == "L":		 a =((points[x]+points[x+1]) /2) - points[x]		 flag = True		 if(a<m):		 	m=aif flag:	print(int(m))else:	 	print(-1)

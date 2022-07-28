@@ -1,0 +1,1 @@
+from sys import stdin, stdoutnmbr = lambda: int(stdin.readline())lst = lambda: list(map(int,stdin.readline().split()))for i in range(1):#nmbr()):    n,c=lst()    ans=0    for i in range(n):        a,b=lst()        ans+=b-a+1    if ans%c==0:print(0);continue    next=ans//c*c+c    print(next-ans)

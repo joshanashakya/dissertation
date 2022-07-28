@@ -1,0 +1,1 @@
+n  , k = map(int , input().split())ans = []r = lambda : list(map(int, input().split()))for x in range(n):    seller , *prices = r()    if any(i<k for i in prices): ans.append(x+1)  print(len(ans))print(*ans)

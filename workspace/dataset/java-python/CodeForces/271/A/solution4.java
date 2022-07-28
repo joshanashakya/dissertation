@@ -1,0 +1,1 @@
+import java.util.Scanner;public class year{	public static void main(String[] args)	{		Scanner sc= new Scanner(System.in);		int x = sc.nextInt();		while(x>0)		{			x = x+1;			int a = x%10;			int b = (x/10)%10;			int c = (x/100)%10;			int d= (x/1000)%10;			if(a!=b&& a!=c&& a!=d&& b!=c && b!=d && c!=d)			{				break;			}			else continue;					}		System.out.println(x);	}}

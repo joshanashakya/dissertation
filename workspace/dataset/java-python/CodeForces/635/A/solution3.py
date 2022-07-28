@@ -1,0 +1,1 @@
+r, c, n, k = map(int, input().split())a = [tuple(map(int, input().split())) for _ in range(n)]ans = 0for x1 in range(1, r + 1):  for x2 in range(x1, r + 1):    for y1 in range(1, c + 1):      for y2 in range(y1, c + 1):        if len([1 for x, y in a if x1 <= x <= x2 and y1 <= y <= y2]) >= k:          ans += 1print(ans)

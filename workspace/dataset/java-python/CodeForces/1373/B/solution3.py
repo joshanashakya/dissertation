@@ -1,0 +1,1 @@
+from sys import stdin, stdout def main():    for _ in range(int(stdin.readline())):        s = stdin.readline()[:-1]        ones = s.count('1')        zeros = len(s)-ones        x = min(ones, zeros)        if x&1:            stdout.write('DA\n')        else:            stdout.write('NET\n') if __name__ == "__main__":    main()

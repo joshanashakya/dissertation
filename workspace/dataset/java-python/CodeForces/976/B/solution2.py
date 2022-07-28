@@ -1,0 +1,1 @@
+n, m, k = map(int, input().split()) if n == k:    print(n, 2)    quit() if n > k:    print(k+1, 1)    quit() k = k - nx = n - k//(m-1)if x % 2 == 0:    print(x, 2+(k%(m-1)))else:    print(x, m-(k%(m-1)))

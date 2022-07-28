@@ -1,0 +1,1 @@
+n = int(input()) def triangle_check(a, b, c):    return (c < a + b) count = 0for a in range(1, n + 1):    for b in range(a + 1, (n + 1)):        c = a ^ b        if (c <= n and c > b):            if (triangle_check(a, b, c)):                count += 1print(count)

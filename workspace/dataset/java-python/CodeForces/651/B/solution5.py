@@ -1,0 +1,1 @@
+n = int(input())A = [int(a) for a in input().split()]A.sort()last = A[0]c = 0aux = 0for i in range(n):    a = A[i]    if a == last:        aux += 1    else:        aux = 1        last = A[i]    c = max(c, aux)print(n - c)

@@ -1,0 +1,1 @@
+from collections import Counterdef func():    n=int(input())    l=list(map(int,input().split()))    k={}    m=0    for i in l:        if i in k:            del k[i]        else:            k[i]=1        if len(k)>m:            m=len(k)    print(m)    t=1#t=int(input())for i in range(t):    func()

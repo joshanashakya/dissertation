@@ -1,0 +1,1 @@
+a,b = (map(int,input().split()))dic = {}for i in range(b):    a = input().split(' ')    if(len(a[0])>len(a[1])):        dic[a[0]] = a[1]        dic[a[1]] = a[1]    else:        dic[a[0]] = a[0]        dic[a[1]] = a[0]t = input().split()for i in range(len(t)):    print(dic[t[i]],end = ' ')

@@ -1,0 +1,1 @@
+import java.util.*;public class Main {    public static void main(String[] args) {        Scanner s = new Scanner(System.in);        long n = s.nextLong();        long res = 6*n*(n-1)+1;        System.out.println(res);    }}

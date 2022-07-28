@@ -1,0 +1,1 @@
+#himport math a1, a2, a3 = map(int, input().split())b1, b2, b3 = map(int, input().split())n = int(input())a = a1 + a2 + a3b = b1 + b2 + b3 #math.ceil itu buletin keataslemari_a = math.ceil(a / 5)lemari_b = math.ceil(b / 10) if n >= lemari_a + lemari_b:  print('YES')else:  print('NO')    				   				 	  	 	  				

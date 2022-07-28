@@ -1,0 +1,1 @@
+m=int(input())a=sorted(map(int, input().split()))if a[m-2]==a[m-1]:    i=m-2    while a[i]==a[m-1] and i!=-1:        i-=1    i+=1    m-=len(a[i:m-1])    a=a[:i+1]bv=[a[0]]bu=[a[0]-1]for i in range(1,m):    if a[i]!=bv[len(bv)-1]:        bv.append(a[i])    elif a[i]!=bu[len(bu)-1]:        bu.append(a[i])    else:        m-=1bu=sorted(bu[1:],reverse=True)print(m)print(*(bv+bu))

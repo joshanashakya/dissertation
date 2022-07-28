@@ -1,0 +1,1 @@
+# -*- coding: utf-8 -*-"""Created on Sat Apr 10 08:35:39 2021 @author: nagan""" n = int(input())if n >= 0:    print(n)else:    a = str(n)    b = str(n)    a = int(a[:-1])    b = int(b[:-2] + b[-1])     if a > b:        print(a)    else:        print(b)

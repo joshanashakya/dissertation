@@ -1,0 +1,1 @@
+n = int(input())a = list(map(int, input().split()))b = list(map(int, input().split())) def f(x,l,r):	t = 0	for i in x[l:r]:		t |= i 	return t ms = 0for s in range(n,0,-1):	for l in range(0,s):		r = l + s		if r > n:			break		else:			if (f(a,l,r) + f(b,l,r)) > ms:				ms = f(a,l,r) + f(b,l,r) print(ms)			 

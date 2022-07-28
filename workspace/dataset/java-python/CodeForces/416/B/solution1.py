@@ -1,0 +1,1 @@
+m,n=map(int, input().split())l=[]for i in range(m):    k=list(map(int, input().split()))    l.append(k)p=[0]*6for i in range(m):    for j in range(1, n+1):        p[j]=max(p[j],p[j-1])        p[j]+=l[i][j-1]    print(p[n], end=' ') 

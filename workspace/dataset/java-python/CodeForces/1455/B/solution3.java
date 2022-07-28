@@ -1,0 +1,1 @@
+import java.util.*;import java.math.*;public class Jumps{	public static void main(String[] args)		{			Scanner sc = new Scanner(System.in);			int runs = sc.nextInt();			while(runs-->0)			{				int x = sc.nextInt();				int cur = 0;				int i = 1;				while(cur<x)				{					cur+= i++;				}				if(cur == x+1)					System.out.println(i);				else					System.out.println(i-1);			} 		}}

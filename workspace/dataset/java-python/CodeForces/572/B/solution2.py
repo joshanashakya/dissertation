@@ -1,0 +1,1 @@
+a,b=map(int,input().split())bs,s={},{}for _ in " "*a:    x,y,z=input().split()    y,z=int(y),int(z)    if x=='B':        if y in bs:bs[y]+=z        else:bs[y]=z    else:        if y in s:s[y]+=z        else:s[y]=z#29z=[['S',i,s[i]] for i in sorted(s)][:b][::-1]z1=[['B',i,bs[i]] for i in sorted(bs,reverse=True)][:b]for i in z:print(*i)for i in z1:print(*i)

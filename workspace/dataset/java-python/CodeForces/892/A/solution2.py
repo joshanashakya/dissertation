@@ -1,0 +1,1 @@
+try:    n = int(input())    a = list(map(int, input().split()))    b = list(map(int, input().split()))    z = []    b.sort()    r = sum(a)    if (b[len(b)-1] + b[len(b)-2]) >= r:        print("YES")    else:        print("NO")except:    pass

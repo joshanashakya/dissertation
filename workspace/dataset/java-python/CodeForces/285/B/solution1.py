@@ -1,0 +1,1 @@
+n,m,t = map(int,input().split())arr = list(map(int, input().split()))brr = [0]*nf = mcount = 1if(m==t):    print(0)else:    while(brr[f-1]!=1 and arr[f-1]!=t):        brr[f-1] = 1        f = arr[f-1]        count+=1    if(arr[f-1] == t):        print(count)    else:        print(-1)

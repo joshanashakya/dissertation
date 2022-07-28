@@ -1,0 +1,1 @@
+n=int(input())s=input()x,y=0,0count=0for i in range(len(s)-1):    if(s[i]=="U"):        y=y+1        if(x==y and s[i+1]=="U"):            count=count+1    if(s[i]=="R"):        x=x+1        if(x==y and s[i+1]=="R"):            count=count+1print(count)    

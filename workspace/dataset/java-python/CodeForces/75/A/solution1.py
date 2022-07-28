@@ -1,0 +1,5 @@
+a = input()
+b = input()
+c = int(a) + int(b) new_a = int(str(a).replace('0', ''))
+new_b = int(str(b).replace('0', ''))
+new_c = int(str(c).replace('0', '')) print("YES" if new_a + new_b == new_c else "NO")

@@ -1,0 +1,1 @@
+tk=input()m=tk[0]n=tk[1]flag=0inp2=list(map(str,input().split())) for st in inp2:    if st[0]==m:        print("YES")        flag=1        break    elif st[1]==n:        print("YES")        flag=1        break  if flag==0:    print("NO")                 

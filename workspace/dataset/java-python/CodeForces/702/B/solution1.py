@@ -1,0 +1,1 @@
+lst = [2**i for i in range(1,34)]s = dict()n = int(input())ss = [int(i) for i in input().split()]sss = 0for i in range(0,n):    for j in lst:        if j - ss[i] in s:            sss += s[j-ss[i]]    if ss[i] in s:        s[ss[i]] += 1    else:        s[ss[i]] = 1print(sss)

@@ -1,0 +1,1 @@
+def main_function():    x, y, z = [int(i) for i in input().split(" ")]    if x - y > z:        return "+"    elif y - x > z:        return "-"    elif z == 0: return 0    else: return "?"  print(main_function()) 

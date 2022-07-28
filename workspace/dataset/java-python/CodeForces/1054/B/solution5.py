@@ -1,0 +1,1 @@
+n = int(input())a = list(map(int, input().split()))e = 0flag = 0for i in range(0, n):    if a[i] == e:        e = e + 1    elif a[i] < e:        pass    else:        flag = i+1        breakif flag == 0:    print(-1)else:    print(flag)

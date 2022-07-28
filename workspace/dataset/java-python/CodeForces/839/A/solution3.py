@@ -1,0 +1,1 @@
+n, k = [int(i) for i in input().split()]a = [int(i) for i in input().split()]b = 0c = 0for i in range(n):    b += a[i]    if b >= 8:        b -= 8        c += 8    else:        c += b        b = 0    if c >= k:        print(i+1)        breakelse:    print(-1)

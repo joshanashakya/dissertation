@@ -1,0 +1,1 @@
+f = open("input.txt",'r')g = open("output.txt",'w')n, m = map(int, f.readline().split())start = ""end = ""row = ""if n > m:    start = "B"    end = "G"else:    start = "G"    end = "B"i, j = 0, 0while i < n and j < m:    row += start    row += end    i += 1    j += 1while i < n:    row += "B"    i += 1while j < m:    row += "G"    j += 1g.write(row)

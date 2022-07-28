@@ -1,0 +1,1 @@
+[n, t] = [int(el) for el in input().split()] min_time = 2000001bus_line = 101 for i in range(n):    [start, interval] = [int(el) for el in input().split()]    if min_time == t:    continue    while(start < t):    start += interval    if start < min_time:    min_time = start    bus_line = i+1    print(bus_line)   	 	 	  		 	 	 		  		  	   		

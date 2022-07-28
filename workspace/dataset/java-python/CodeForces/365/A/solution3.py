@@ -1,0 +1,1 @@
+import mathdef isk(n,d,k):    for i in n:        if i in d:            d[i] = 1    for i in range(k+1):        if str(i) in d and d[str(i)] == 0:            return False    return True n, k = map(int,input().split())d = {}c=0for _ in range(n):    s = input()    for i in range(k+1):        d[str(i)] = 0    if isk(s,d,k):        c+=1print(c)

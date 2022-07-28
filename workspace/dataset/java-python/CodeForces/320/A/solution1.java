@@ -1,0 +1,1 @@
+import java.util.Scanner;import java.util.regex.Pattern; public class problem76 { 	public static void main(String[] args) {		// TODO Auto-generated method stu		  				Scanner sc=new Scanner(System.in);				String s= sc.nextLine();								if(Pattern.matches("(144|14|1)+", s))				{					System.out.println("YES");				}				else				{					System.out.println("NO");				}			}			 }

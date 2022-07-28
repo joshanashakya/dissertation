@@ -1,0 +1,1 @@
+n = int(input())llst = []llst1 = []summ = 0for i in range(n):    llst.append(int(input()))for i in llst:    if i not in llst1 and llst.count(i) == n // 2:        summ += llst.count(i)        llst1.append(i)if summ == n:    print('YES')    print(*llst1)else:    print('NO')

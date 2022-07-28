@@ -1,0 +1,1 @@
+for i in range(int(input())):    a,b,c=map(int,input().split())     for j in range(a,b+1):         if c%j <(b-a+1) and c//j!=0:            print(j, a + c % j, a)             break        if (j-c%j)<(b-a+1) :            print(j, a, a+ (j - c % j))            break

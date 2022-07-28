@@ -1,0 +1,1 @@
+n,k = map(int, input().split()) joy=int() for i in range(n):     f,t = map(int, input().split())     if i == 0:        if t > k:            joy = f-t+k         else:            joy =f     else:        if t > k:            joy = max(joy ,f-t+k)         else:            joy =max(joy,f) print(joy)

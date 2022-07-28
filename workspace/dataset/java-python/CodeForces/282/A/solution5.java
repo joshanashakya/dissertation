@@ -1,0 +1,1 @@
+import java.util.Scanner; public class Bit {	public static void main(String[] args)	{		Scanner s=new Scanner(System.in);		int n=s.nextInt();		int result=0;		for(int i=0;i<n;i++)		{			String str=s.next();			if(str.equals("X++") || str.equals("++X"))			{				result=result+1;			}			else			{				result=result-1;			}		}		System.out.println(result);	}}

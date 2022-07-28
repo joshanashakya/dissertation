@@ -1,0 +1,1 @@
+n = int(input()) a = list(map(int,input().split()))a.sort()  start_sum = end_sum = 0for i in range(0,n):    start_sum += a[i] for i in range(n,2*n):    end_sum += a[i]    if(start_sum!=end_sum):    for i in a:        print(i,end=" ")else:    print(-1) 

@@ -1,0 +1,1 @@
+N=int(input())ch=input()equipe1=chNb1=1Nb2=0for i in range(1,N):    ch=input()    if(ch==equipe1):        Nb1+=1    else :        equipe2=ch        Nb2+=1if(Nb1>Nb2):    print(equipe1)else:    print(equipe2)

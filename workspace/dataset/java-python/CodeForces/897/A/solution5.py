@@ -1,0 +1,1 @@
+string_length,test_case=map(int,input().split())st = list(input())  for x in range(test_case):   start,end,frm,to= map(str,input().split())   for y in range(int(start)-1,int(end)):       if st[y]==frm:           st[y]=toprint("".join(st))    

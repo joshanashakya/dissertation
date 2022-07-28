@@ -1,0 +1,1 @@
+n=int(input(""))l=[]for i in range(n):    a,b=input("").split(" ")    a,b=int(a),int(b)    l.append(a)    l.append(b)c=0for i in range(0,len(l),2):    for j in range(1,len(l),2):        if l[i]==l[j]:            c=c+1print(c)    

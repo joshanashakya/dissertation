@@ -1,0 +1,1 @@
+n, k = map(int, input().split())A = list(map(int, input().split()))Max = A[-1]while 2 * k > len(A) and A != []:    del A[-1]    k -= 1while A != []:    Max = max(Max, A[0] + A[-1])    del A[0], A[-1]print(Max)

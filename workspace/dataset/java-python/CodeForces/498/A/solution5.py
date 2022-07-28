@@ -1,0 +1,1 @@
+h=list(map(int,input().strip().split()))u=list(map(int,input().strip().split()))n=int(input())count=0for i in range(n):	a,b,c=list(map(int,input().strip().split()))	t1=a*h[0]+b*h[1]+c	t2=a*u[0]+b*u[1]+c	#print(">",t1,t2)	if ((t1>0) != (t2>0)):		count+=1print(count)    			 		      	  	 	 		  	  	

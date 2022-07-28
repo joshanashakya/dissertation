@@ -1,0 +1,1 @@
+from collections import dequen, b = map(int,input().split())q = deque()ans = []for i in range(n):    ti, di = map(int,input().split())    while q and ti >= q[0]:        q.popleft()    if len(q) > b:        ans.append(-1)    elif q:        ans.append(q[-1]+di)        q.append(q[-1]+di)    else:        ans.append(ti+di)        q.append(ti+di)print(*ans)

@@ -1,0 +1,1 @@
+n=input()num=int(n)x=list(map(int,n.strip()))y=list(n.strip())  if len(x)==1 and x!="5":    if x[0]>5:        print(10)    else:        print(0)else:    if int(x[-1])<5:        y[-1]="0"        print(''.join(y))     else:         while(n[-1]!="0"):            num=num+1            n=str(num)            if n[-1]=="0":                print(num)

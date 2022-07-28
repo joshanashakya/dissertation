@@ -1,0 +1,1 @@
+n, m = map(int, input().split())cnt, l, r, u, d = 0, n, 0, m, 0for i in range(n):    s = input()    for j in range(m):        if s[j] == 'X':            cnt += 1            l = min(l, i) ; u = min(u, j)            r = max(r, i) ; d = max(d, j)print('YES' if cnt == (r-l+1)*(d-u+1) else 'NO')

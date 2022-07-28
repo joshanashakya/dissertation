@@ -1,0 +1,1 @@
+#include<bits/stdc++.h>using namespace std;int d[10020],m,n,sav;int main(){	cin>>m>>n;	for(int i=1;i<=n;i++){		cout<<1<<endl;		cin>>sav;		if(sav==0){return 0;}		if(sav==1) d[i]=1;		if(sav==-1) d[i]=-1;	} 	d[0]=d[n];	int l=1,r=m;	for(int i=1;;i++){		int mid=(l+r)>>1;		cout<<mid<<endl;		cin>>sav;		if(sav==0){return 0;}		sav*=d[i%n];		if(sav>0) l=mid+1;		else r=mid-1;	}	return 0;}

@@ -1,0 +1,1 @@
+n, a, b = map(int, input().split())if b < 0:    for x in range(abs(b)):        if a != 1:            a -= 1        else:            a = nelif b >= 0:    for y in range(b):        if a == n:            a = 1        else:            a += 1 print(a)

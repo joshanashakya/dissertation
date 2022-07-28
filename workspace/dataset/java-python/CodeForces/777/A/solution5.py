@@ -1,0 +1,1 @@
+n = int(input())x = int(input())a = [0,1,2]k = 0for i in range(n%6):    if i%2==0:        k = a[0]        a[0] = a[1]        a[1] = k    else:        k = a[1]        a[1] = a[2]        a[2] = kprint(a[x])

@@ -1,0 +1,1 @@
+a = input()k = int(input())arr = list(map(int,input().split()))t = max(arr)count = 0for i in range(1,len(a)+1):    count+= arr[(ord(a[i-1])-97)]*(i)for i in range(1,k+1):    count+=(i+len(a))*tprint(count)

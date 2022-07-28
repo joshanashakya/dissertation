@@ -1,0 +1,1 @@
+n,oa,ob = map(int,input().split())a = list(map(int,input().split()))b = list(map(int,input().split()))diff = []for i,j in zip(a,b):	diff.append(abs(i-j))k = oa+obwhile k >0:	diff.sort()	if diff[len(diff)-1] == 0:		break	diff[len(diff)-1] = diff[len(diff)-1] - 1	k = k-1if k&1 == 1:	print(1)else:	ans = [i**2 for i in diff]	print(sum(ans))

@@ -1,0 +1,1 @@
+def sol(a: list):    n = len(a)    a.sort(reverse = True)    ans = 0     for i in range(n):        if a[i] >= i + 1:            ans = i + 1        else:            break    print(ans)  n = int(input())for i in range(n):    z = int(input())    x = list(map(int, input().split()))    sol(x)

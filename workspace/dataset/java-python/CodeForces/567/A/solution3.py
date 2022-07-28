@@ -1,0 +1,1 @@
+n=int(input())l=list(map(int,input().split())) print(abs(l[0]-l[1])," ",abs(l[0]-l[n-1]))for i in range(1,n-1):    c=l[i]    s1=abs(c-l[i+1])    s2=abs(c-l[i-1])    b1=abs(c-l[0])    b2=abs(c-l[n-1])    print(min(s1,s2)," ",max(b1,b2))print(abs(l[n-1]-l[n-2])," ",abs(l[0]-l[n-1]))

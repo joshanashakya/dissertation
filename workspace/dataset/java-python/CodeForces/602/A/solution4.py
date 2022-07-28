@@ -1,0 +1,1 @@
+n,b1=map(int,input().split())x=list(map(int,input().split()))m,b2=map(int,input().split())y=list(map(int,input().split()))x=x[::-1]y=y[::-1]ans1 = 0for i in range(n):	ans1+=(b1**i)*x[i]ans2 = 0 for i in range(m):	ans2+=(b2**i)*y[i]if ans1==ans2:	print("=")elif ans1<ans2:	print("<")else:	print(">")

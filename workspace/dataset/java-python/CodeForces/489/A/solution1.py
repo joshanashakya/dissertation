@@ -1,0 +1,1 @@
+n = int(input())x = list(map(int, input().split()))z=[]c=0for i in range(n):    a,b=i,x[i]    for j in range(i,n):        if x[j]<b:            a=j            b=x[j]    x[i],x[a]=x[a],x[i]    if a!=i:        c+=1        z.append([i,a])print(c)for i in z:    for j in i:        print(j,end=" ")    print("")

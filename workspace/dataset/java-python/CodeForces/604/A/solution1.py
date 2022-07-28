@@ -1,0 +1,1 @@
+r = lambda : list(map(int, input().split()))arr = r()w = r()hacks = r() score = 0for i in range(5):    tot = (500*(i+1))    score += max(0.3 * tot  , tot * (1 - arr[i]/250) - 50 * w[i])  score += 100 * hacks[0]score -= 50 * hacks[1]  print(int(score)) 

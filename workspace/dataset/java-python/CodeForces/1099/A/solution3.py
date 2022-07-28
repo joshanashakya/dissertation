@@ -1,0 +1,1 @@
+# cook your dish here w,h= map(int,input().split()) u1,d1= map(int,input().split())u2,d2= map(int,input().split()) for height in range(h,-1,-1):    if(height==d1):        w = w- u1+height            elif(height == d2):        w =w- u2 +height          else:        w += height     if(w<0):        w=0print(w)         

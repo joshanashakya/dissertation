@@ -1,0 +1,1 @@
+n=int(input())b=list(map(int,input().split()))l=[[] for i in range(10**6)]d=[b[i]-(i+1) for i in range(n)]for i in range(n):  l[d[i]].append(b[i])ans=-1for i in range(len(l)):  if l[i]:    ans=max(ans,sum(l[i]))print(ans)

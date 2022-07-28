@@ -1,0 +1,1 @@
+d=dict();o=int(input())for t in range(o):    x,y=input().replace('',' ').split()    i,j=input().replace('',' ').split()    if t!=o-1:input()    if not((x,y,i,j) in d or (y,j,x,i) in d or (j,i,y,x) in d or (i,x,j,y) in d):d[(x,y,i,j)]=1print(len(d))

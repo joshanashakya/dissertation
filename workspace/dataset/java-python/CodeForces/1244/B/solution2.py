@@ -1,0 +1,1 @@
+for _ in range(int(input())):    n = int(input())    li = input()    if li[0] == '1' or li[-1] == '1':        print(n*2)    elif '1' not in li:        print(n)    else:        k1 = n - li.index('1')        k2 = li.rindex('1') + 1        res = max(k1*2,k2*2)        print(res)

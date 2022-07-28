@@ -1,0 +1,1 @@
+from sys import stdoutwrite = stdout.write n, p, k = map(int,input().split())if p-k > 1:  write('<< ')for i in range(p-k,p+k+1):  if 1 <= i <= n:    write(f'{i} ' if i != p else f'({i}) ')if p+k < n:  print('>>')else:  print()

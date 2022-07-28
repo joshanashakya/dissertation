@@ -1,0 +1,1 @@
+from sys import stdin, stdoutinput = stdin.readlineprint = stdout.writen=int(input())a,g=0,0sol=""for i in range (n):    prva, druga = map(int, input().split())    if a+prva-g<=500:        a+=prva        print("A")    else:        g+=druga        print("G")

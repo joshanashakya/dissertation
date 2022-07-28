@@ -1,0 +1,1 @@
+import syssys.stdin = open(r'input.txt', 'r')sys.stdout = open(r'output.txt', 'w')n, k = map(int, input().split())a = list(map(int, input().split()))i = k-1;while (True):    if i == n:        i = 0        continue    if a[i] == 1:        print(i+1)        break    i += 1

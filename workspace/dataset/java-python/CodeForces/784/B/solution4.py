@@ -1,0 +1,1 @@
+a = int(input())b = str(hex(a)).upper()l = list(b)count = -1for i in l:    if(i == '8' or i == 'B'):        count += 2        continue    if(i == '0' or i == '4' or i == '6' or i == '9' or i == 'A' or i == 'D'):        count += 1        continueif(count < 0):    count = 0print(count)			 	 	 	 		    											 			

@@ -1,0 +1,1 @@
+import sysinput=sys.stdin.readlinen=int(input())l=input().split()li=[int(i) for i in l]l=[]for i in range(n):    if(li[i]==1):        l.append(i)ans=0for i in range(len(l)-1):    ans+=min(l[i+1]-l[i],2)if(l!=[]):    ans+=1print(ans)

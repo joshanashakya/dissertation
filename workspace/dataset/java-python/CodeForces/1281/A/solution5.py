@@ -1,0 +1,1 @@
+import sys def main():    inp = sys.stdin.read().strip().split('\n')[1:]    d = {'po': 'FILIPINO', 'desu': 'JAPANESE', 'masu': 'JAPANESE', 'mnida': 'KOREAN'}    out = []    for s in inp:        for k in d:            if s.endswith(k):                out.append(d[k])                break    return out print(*main(), sep='\n')

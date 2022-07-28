@@ -1,0 +1,1 @@
+n = int(input())u = v = 9 + 8 * nfor a in range(1, int(n ** (1 / 3)) + 1):    if n % a: continue    m = n // a    for b in range(a, int(m ** 0.5) + 1):        if m % b: continue        p = (a + 1) * (b + 2) * (m // b + 2) - n        if u > p: u = pprint(u, v)

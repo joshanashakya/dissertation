@@ -1,0 +1,1 @@
+n = int(input())d = list(map(int, input().split()))s, t = sorted(map(int, input().split()))result1=0result2=d[n-1]for i in range(s-1, t-1):	result1+=d[i]for i in range(s-1):	result2+=d[i]for i in range(t-1, n-1):	result2+=d[i]print(min(result1, result2))

@@ -1,0 +1,1 @@
+import sys lines = list(sys.stdin.read().strip().split()) print_lines = 0columns = [0 for _ in range(8)]for line in lines:    if line == 'BBBBBBBB':        print_lines += 1    for j,s in enumerate(line):        columns[j] += bool(s == 'B') print_col = sum(j == 8 for j in columns) if print_col == 8:    print_col = 0 # print(lines)# print(columns)print(print_lines + print_col)

@@ -1,0 +1,1 @@
+n = int(input())l = -2 * 10**9r = 2 * 10**9for i in range(n):	s, v, f = input().split()	v = int(v)	if f == 'N':		s = {'<': '>', '>': '<'}[s[0]] + s[1:]		if len(s) == 1:			s += '='		else:			s = s[0]	if s[0] == '<':		if len(s) != 2:			v -= 1		r = min(r, v)	else:		if len(s) != 2:			v += 1		l = max(l, v)if l <= r:	print(l)else:	print('Impossible')

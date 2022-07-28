@@ -1,0 +1,1 @@
+apa=input()ha=["A","H",'I','M','O','T','U','V','W','X','Y']for i in apa:    if i not in ha:        print("NO")        breakelse:    if apa==apa[::-1]:        print("YES")    else:        print("NO")			 			 		   	 		 		  	   	   	

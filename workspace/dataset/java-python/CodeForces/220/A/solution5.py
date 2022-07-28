@@ -1,0 +1,1 @@
+def solve(n,arr) :    sortedArr = sorted(arr)    times = 0    index = 0        while index < n :        if arr[index] != sortedArr[index] :            times += 1        index += 1        if times > 2 :        return "NO"    else :        return "YES"        n = int(input())arr = list(map(int,input().split()))print (solve(n,arr))

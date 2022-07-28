@@ -1,0 +1,1 @@
+n=int(input())a=list(map(int,input().split()))a+=aans=nd=set()for i in range(n):    d=set()    for j in range(i,i+n):        if a[j] not in d:            d.add(a[j])            if(i==0 or j>=n-1):                ans=min(ans,n-(j-i+1))        else:            breakprint(ans)

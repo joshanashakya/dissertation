@@ -1,0 +1,1 @@
+def solve():    n=int(input())    l=list(map(int,input().split()))    x,ct,max_ct=0,0,0    for i in range(0,n):        if(x<l[i]):            x=l[i]    for i in range(0,n):        if(l[i]==x):            ct+=1        else:            max_ct=max(ct,max_ct)            ct=0    max_ct=max(ct,max_ct)    print(max_ct)solve()

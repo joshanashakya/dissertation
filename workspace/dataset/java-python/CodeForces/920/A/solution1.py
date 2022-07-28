@@ -1,0 +1,1 @@
+r = lambda : list(map(int, input().split()))t = int(input())for _ in range(t):    n , k = map(int , input().split())     arr = r()     bed = [1] + ([0] * n)    i = 0    t = 0    while 0 in bed:        # print(bed)        for w in arr:            if w-i >=0: bed[w - i] = 1            if w+i <=n: bed[w + i] = 1        i+=1      print(i) 

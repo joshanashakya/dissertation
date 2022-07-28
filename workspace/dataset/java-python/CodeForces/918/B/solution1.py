@@ -1,0 +1,1 @@
+a, b = map(int, input().split()) mapping = {} while a:    a-= 1    s = list(input().split())    mapping[s[1]+";"] = "#" + s[0] while b:    b-=1    ss = list(input().split())    print(" ".join(ss + [mapping[ss[1]]])) 

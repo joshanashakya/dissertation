@@ -1,0 +1,1 @@
+n,h,m = list(map(int,input().split()))doma = [h]*n for _ in range(m):    l,r,x = list(map(int,input().split()))    for i in range(l,r+1):        if doma[i-1] > x:            doma[i-1] = x summ = 0for i in doma:    summ += i**2 print(summ)

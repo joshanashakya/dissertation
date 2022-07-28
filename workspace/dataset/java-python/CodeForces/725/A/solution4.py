@@ -1,0 +1,1 @@
+n = int(input())s = input()s = list(s)count = 0for i in range(len(s)):    if(s[i]=='<'):        count += 1    else:        break    for i in range(len(s)-1,-1,-1):    if(s[i]=='>'):        count += 1    else:        break    print(count)    

@@ -1,0 +1,1 @@
+# -*- coding: utf-8 -*-"""Created on Sun Apr 11 19:02:22 2021 @author: Yogesh Panjwani"""n=int(input()) a=list(map(int,input().split())) m=int(input()) b=list(map(int,input().split()))a.sort()b.sort()c=0for i in range(n):    for j in range(m):        if abs(a[i]-b[j])<=1:            b[j]=1000            c+=1            breakprint(c)   

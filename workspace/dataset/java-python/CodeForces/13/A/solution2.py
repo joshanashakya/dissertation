@@ -1,0 +1,1 @@
+a = int(input())s = 0for i in range(2,a):    x = a    while x:        s += x%i        x //= ib =a-2for i in range(2,1001):    while s%i==0 and b%i==0:        s //= i        b //= iprint(s,'/',b,sep='')

@@ -1,0 +1,1 @@
+n, b, d = map(int, input().split())cont, answ = 0, 0oranges = input().split()for orange in oranges:       if int(orange) <= b:        cont += int(orange)    if cont > d:        answ += 1        cont = 0print(answ)

@@ -1,0 +1,1 @@
+num = int(input()) for i in range(num):     x,y,n = map(int,input().split())    z = n%x    if z == y:        print(n)    elif z>y :        n = n-(z-y)        print(n)    else:        n = (n-z-(x-y))        print(n)    #    for i in range(n,-1,-1):       # if i%x == y:            #print(i)            #break   

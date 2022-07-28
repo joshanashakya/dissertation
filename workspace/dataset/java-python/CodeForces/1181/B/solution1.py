@@ -1,0 +1,1 @@
+n = int(input())a = str(input()) l = r = int(n / 2)while(l > 0 and a[l] == '0'):	l -= 1while(r < len(a) and a[r] == '0'):	r += 1 ans = float('inf')if(l > 0):	ans = min(ans, int(a[:l]) + int(a[l:]))if(l + 1 < len(a) and a[l + 1] != '0'):	ans = min(ans, int(a[:l + 1]) + int(a[l + 1:]))if(r < len(a)):	ans = min(ans, int(a[:r]) + int(a[r:]))print(ans)

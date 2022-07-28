@@ -1,0 +1,1 @@
+import mathdef solve(a,b):  if a==0 and b==0:    return 'NO'  if abs(a-b) <= 1:    return 'YES'  return 'NO' def main() :  arr = list(map(int, input().split(' ')))  # arr = []  # for _ in range(3):  #   arr.append(input())  print(solve(*arr))main()

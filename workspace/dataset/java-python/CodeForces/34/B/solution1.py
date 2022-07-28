@@ -1,0 +1,1 @@
+import sysfrom math import *input = sys.stdin.readline def solve(n,k,arr):	arr.sort()	tot = 0	for i in range(n):		if i+1 > k:			print(tot)			return		else:			if arr[i] <= 0:				tot += abs(arr[i])			else:				print(tot)				return	else:		print(tot) # for _ in range(int(input())):n,k = map(int,input().split())arr = list(map(int,input().split()))solve(n,k,arr)

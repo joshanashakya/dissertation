@@ -1,0 +1,1 @@
+import mathx1,y1= (int(x) for x in input().split())n=int(input())t=10**9+7for _ in range(n):    x2,y2,v= (int(x) for x in input().split())    if abs(math.sqrt((x2-x1)**2+(y2-y1)**2))/v<t:        t=abs(math.sqrt((x2-x1)**2+(y2-y1)**2))/vprint(t)

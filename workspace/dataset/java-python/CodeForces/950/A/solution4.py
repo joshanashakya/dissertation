@@ -1,0 +1,1 @@
+l,r,a = map(int, input().split())# print(l,r,a) shortOf = abs(l-r)if not( shortOf ):    print( (max(l,r) + a//2 )*2 )else:    if a >= shortOf:        team = max(l,r) + (a-shortOf)//2        print(team*2)    else:        print( (min(l,r)+a)*2 )

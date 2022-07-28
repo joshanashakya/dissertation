@@ -1,0 +1,1 @@
+import java.util.*;public class Main{	public static void main(String[] args){	    Scanner sc=new Scanner(System.in);		int n=sc.nextInt(),a=sc.nextInt(),b=sc.nextInt(),c=sc.nextInt(),t=sc.nextInt();		long ans=n*a;		if(b<c) for(int i=0;i<n;i++){			int tx=sc.nextInt();			ans=ans+(t-tx)*(c-b);		}		System.out.println(ans);	}}

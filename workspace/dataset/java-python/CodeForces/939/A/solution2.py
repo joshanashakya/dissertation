@@ -1,0 +1,1 @@
+n=int(input())l=[]a=(input().split(" "))# here it is list# print(a)for i in a:    l.append(int(i)) # print(l)z=0x=0for i in range(len(l)):    b=l[i]     c=l[b-1]     d=l[c-1]     if l[i]==l[d-1]:        z+=1    else:        x+=1 if z==0:    print("NO")else:    print("YES") 

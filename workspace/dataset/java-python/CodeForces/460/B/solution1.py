@@ -1,0 +1,1 @@
+def getSum(n):	ans = 0	while (n != 0):		ans+= int(n % 10)		n = int(n//10)	return ansa,b,c = map(int,input().split())ans = []for i in range(82):	x = b*(i**a)+c	if x>0 and x<1e9 and i==getSum(x):		ans.append(x)print(len(ans))if len(ans)!=0:	print(*ans)

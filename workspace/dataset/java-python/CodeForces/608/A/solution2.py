@@ -1,0 +1,1 @@
+n, s = map(int, input().split()) ft = []for _ in range(n):  f, t = map(int, input().split())  ft.append([f, t])ft.sort(reverse=True)prevf, ans = s, 0for f, t in ft:  ans += prevf - f  if ans < t:     ans = t  prevf = fans += ft[-1][0]print(ans)   

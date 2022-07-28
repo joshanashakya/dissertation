@@ -1,0 +1,1 @@
+n=int(input())Al,Ar=map(int,input().split())cnt=[0]*101for i in range(n-1):    l,r=map(int,input().split())    for j in range(l,r):        cnt[j]=1ans=0for i in range(Al,Ar):    if cnt[i]==0:        ans+=1print(ans)

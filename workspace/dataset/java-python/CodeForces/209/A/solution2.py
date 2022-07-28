@@ -1,0 +1,1 @@
+n = int(input())mod = 10**9 + 7 dp = {} for i in range(n):        dp[i] = {}        if i == 0: dp[i][0], dp[i][1] = 1, 0    else:        dp[i][i%2] = (1 + dp[i -1][i%2] + dp[i - 1][1 - i%2])%mod        dp[i][1 - i%2] = dp[i - 1][1 - i%2]        print((dp[n - 1][0] + dp[n - 1][1])%mod)

@@ -1,0 +1,1 @@
+d={}d["monday"]=1d["tuesday"]=2d["wednesday"]=3d["thursday"]=4d["friday"]=5d["saturday"]=6d["sunday"]=7a=d[input()]b=d[input()]if b>=a and b-a in [0, 2, 3]:    print("YES")elif b<a and b-a in [-4, -5]:    print("YES")else:    print("NO")

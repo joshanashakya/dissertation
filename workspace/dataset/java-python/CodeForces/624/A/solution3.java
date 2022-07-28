@@ -1,0 +1,1 @@
+	import java.util.*;					public class Code {				public static void main(String[] args) { 			Scanner in = new Scanner(System.in);			int d = in.nextInt();			int L = in.nextInt();			int v1 = in.nextInt();			int v2 = in.nextInt();			System.out.println( (double)(L-d)/(v1+v2));	}} 

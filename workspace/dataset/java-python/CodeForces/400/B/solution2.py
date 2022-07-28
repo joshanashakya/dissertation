@@ -1,0 +1,1 @@
+n, m = map(int, input().split())minn = 1000a=[]for i in range(n):    word = input()    if word.find("S") < word.find("G"):        print(-1)        exit()    else:        x = word.find("S") - word.find("G")        if x not in a:            a.append(x)print(len(a)) 

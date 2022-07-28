@@ -1,0 +1,1 @@
+a,b=[int(i) for i in input().split()]if b>a:    print(-1)else:    if b==1:        if a>1:            print(-1)        else:print('a')    else:        b-=2        for i in range(0,a-b):            if i%2==0:print('a',end='')            else:print('b',end='')        for i in range(b):            print(chr(ord('c')+i),end='')

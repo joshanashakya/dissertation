@@ -1,0 +1,1 @@
+t = int(input())for i in range(t):    temp = [int(x) for x in input().split()]    a = temp[0]    b = temp[1]    c = temp[2]    result = 0    result += min(b, c//2)    b -= result    result += min(a, b//2)    print(result * 3)

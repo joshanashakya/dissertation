@@ -1,0 +1,1 @@
+# -*- coding: utf-8 -*-"""Created on Tue Mar 30 19:32:51 2021 @author: nehas"""from itertools import combinationsn,d=list(map(int,input().split()))l=list(map(int,input().split()))l1=list(combinations(l,2))count=0for comb in l1:    if(abs(comb[1]-comb[0])<=d):        count+=1print(count*2)

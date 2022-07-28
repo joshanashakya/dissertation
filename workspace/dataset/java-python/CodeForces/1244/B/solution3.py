@@ -1,0 +1,1 @@
+def read():    return list(map(int, input().split()))  def run():    [n] = read()    s = input()    left = s.find('1')    right = s[::-1].find('1')    if left == -1:        return n    return 2 * n - 2 * min(left, right)  [t] = read()for i in range(t):    print(run())

@@ -1,0 +1,1 @@
+cases = int(input()) numbers = []while cases:    cases -= 1    s = input()    numbers.append(s) numbers.sort() ct = 0 for i, j in zip(numbers[0], numbers[-1]):    if i == j:        ct += 1    else:        print(ct)        break

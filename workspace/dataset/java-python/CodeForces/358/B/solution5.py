@@ -1,0 +1,1 @@
+n = int(input())s = '<3' + '<3'.join([input() for i in range(n)]) + '<3'idx = 0for i in input():    if len(s) > idx and s[idx] == i:        idx += 1if len(s) > idx:    print("no")else:    print("yes")

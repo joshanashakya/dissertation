@@ -1,0 +1,1 @@
+         		t=int(input())for i in range(t):		x1,y1,z1=(map(int,input().split()))	x2,y2,z2=(map(int,input().split()))	Sum=0	sub=0	if z1<=y2:		Sum=2*z1		z1=0	else:		Sum=2*y2		z1=z1-y2    	if z1+x1<=z2:		z2=z2-(z1+x1)		sub=2*z2		print(Sum-sub)	

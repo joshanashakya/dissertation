@@ -1,0 +1,1 @@
+n = int(input()) v = ['a',['aa','bb'],'aab','aabb']if n == 1:	print('a')elif n == 2:	print('ab')elif n == 3:	print('aab')elif n == 4:	print('aabb')else:	s = 'aabb'	while len(s) < n:		s += s 	print(s[:n])

@@ -1,0 +1,1 @@
+#B. Non-Coprime Partitionn=int(input())if n%2==0:    k=int(n/2)else:    k=int((n+1)/2)if n<=2:    print("No")else:    print("Yes")    print(1,k)    print(n-1,end=" ")    for i in range(1,n+1):        if i==k:            pass        else:            print(i,end=" ")

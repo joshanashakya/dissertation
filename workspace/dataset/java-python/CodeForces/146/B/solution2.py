@@ -1,0 +1,1 @@
+def solve(str_):    res=""    for i in str_:        if i == "7" or i == "4":            res+=i    if len(res)>0:         ans=int(res)    else:        ans=0    return ans a,b=map(int,input().split())while True:    a+=1    a_str=str(a)    res=""    if solve(a_str) == b:        print(a)        break

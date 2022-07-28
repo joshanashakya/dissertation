@@ -1,0 +1,1 @@
+for _ in range(int(input())):	b,p,f=map(int,input().split())	h,c=map(int,input().split())	ma=b//2	k=0	if h>c:		while ma>0 and p>0:			ma-=1			p-=1			k+=h		while ma>0 and f>0:			ma-=1			f-=1			k+=c	else:		while ma>0 and f>0:			ma-=1			f-=1			k+=c		while ma>0 and p>0:			ma-=1			p-=1			k+=h	print(k)

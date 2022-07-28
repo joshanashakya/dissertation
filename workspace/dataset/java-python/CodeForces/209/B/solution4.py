@@ -1,0 +1,1 @@
+a = list(map(int,input().split()))def calc(a): return int((((a[1]-a[0])+(a[1]+a[0]))/2))a.sort()if a[1] % 2 == 0 and a[0] % 2 == 0: print(calc(a))elif a[1] % 2 == 0 or a[0] % 2 == 0: print(a[2])else: print(calc(a))

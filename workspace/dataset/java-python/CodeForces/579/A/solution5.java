@@ -1,0 +1,1 @@
+import java.util.Scanner;import java.lang.Math; import java.util.Arrays; public class pa {		static Scanner sc = new Scanner(System.in);		public static void main(String args[])	{		long n=sc.nextInt();		long i,x=0;		while(n>=1)		{			if(n%2==1)			{				x++;				n--;			}			else				n/=2;		}			System.out.println(x);	}			}

@@ -1,0 +1,1 @@
+a, b = [int(x) for x in input().split()]  c = (a-b) / 2if not c.is_integer() or int(c) & b:    print(0)    exit(0) t = 0while b:  # for each x_i, y_i in binary only 0, 1 or 1, 0 valid if b_i == 1    t += b & 1    b >>= 1t = 1 << t if c == 0:  # for x = 0, y = a or swapped    t -= 2print(t) 

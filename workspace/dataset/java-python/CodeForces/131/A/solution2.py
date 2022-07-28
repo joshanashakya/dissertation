@@ -1,0 +1,1 @@
+s=input()x, up, low, st=len(s),0 ,0, ""for i in range (1,x):  if(ord(s[i])>90):    low+=1  else:    up+=1if(up==(len(s)-1) or len(s)==1):  st+=s[0].swapcase()  i=1  for i in range (x):    if(i>0):     st+= s[i].swapcase()  print(st)else:  print(s)

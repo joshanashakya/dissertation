@@ -1,0 +1,1 @@
+n=int(input())if n%2==0:    print('NO')else:    print('YES')    z=[1]    l=[2]    for i in range(n-1):        if i%2==0:           z+=[z[-1]+3]        else:            z+=[z[-1]+1]    for i in range(n-1):        if i%2!=0:           l+=[l[-1]+3]        else:            l+=[l[-1]+1]    c=z+l    print(*c)                                                     

@@ -1,0 +1,1 @@
+def gf(x):    if fa[x] != x:        fa[x] = gf(fa[x])    return fa[x]  n, m = map(int, input().split())fa = list(range(n + 1))for _ in range(m):    x, y = map(int, input().split())    fa[gf(x)] = gf(y)ans = 2 ** nfor i in range(1, n + 1):    if gf(i) == i:        ans //= 2print(ans)

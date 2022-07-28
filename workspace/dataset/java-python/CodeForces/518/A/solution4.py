@@ -1,0 +1,1 @@
+s=input()t=input()flag=Trueans=list(s)i=len(s)-1while True:    if ord(s[i])!=ord('z'):        ans[i]=chr(ord(ans[i])+1)        break    else:        ans[i]='a'    i-=1t=list(t)if ans!=t:    for i in range (len(ans)):        print(ans[i], end="")else:    print('No such string')

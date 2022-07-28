@@ -1,0 +1,1 @@
+n, m, k = map(int, input().split()) total = n * m * 2  per_lane = m * 2 lane = (k+per_lane-1) // per_lane new_k = k % per_laneif new_k == 0:    new_k = per_lane side = Noneif new_k % 2 == 0:    side = "R"    row = new_k // 2else:    side = "L"    row = new_k // 2 + 1 print(lane, row, side) 

@@ -1,0 +1,2 @@
+t = int(input()) for i in range(t):    n = list(map(int, input().split()))     s = input()      l = len(
+    s)  # print(s[0:2])    # print(s[l-2:l])    if s[0:2]=='20' and s[l-2:l]=='20':        print('YES')    elif s[0:1]=='2' and s[l-3:l]=='020':        print('YES')    elif s[0:4]=='2020':        print("YES")    elif s[l-4:l]=='2020':        print("YES")    elif s[0:3]=='202' and s[l-1]=='0':        print("YES")    else:        print("NO")

@@ -1,0 +1,1 @@
+s = list(map(int, input().split()))n =s[0]a = s[1]b = s[2]c = s[3]if n%4==0:    print(0)elif n%4==3:    print(min(a*1, 3*c, c+b))elif n%4==2:    print(min(2*a, b, 2*c))else:    print(min(3*a, b+a, c))

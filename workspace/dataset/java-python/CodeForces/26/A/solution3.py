@@ -1,0 +1,1 @@
+n=int(input())ans=0for i in range(2,n+1):    j=2    k=i    cnt=0    while(j*j<=k):        if(k%j==0):            cnt+=1            while(k%j==0):                k=k//j        j+=1    if(k!=1):        cnt+=1    if(cnt==2):        ans+=1print(ans)

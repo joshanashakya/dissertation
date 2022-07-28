@@ -1,0 +1,1 @@
+if __name__ == '__main__':    cin = open("input.txt", "r")    cout = open("output.txt", "w")    n = int(cin.readline())    s = cin.readline()    d = n//2    for i in range(d):        if s[i] + s[i + d] == "RL":            cout.write("%s %s\n" % (i + d + 1, i + 1))        else:            cout.write("%s %s\n" % (i + 1, i + d + 1))

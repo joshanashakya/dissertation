@@ -1,0 +1,1 @@
+import sysdef get_ints ():    return list (map (int, sys.stdin.readline ().strip ().split ()))li1 = get_ints ()li2 = get_ints ()if li2 [0] - li1 [0] >=0:    li2 [0] -= li1[0]    summ = sum (li2)    if sum (li2 [:2]) >= li1 [1]:        if summ - (li1 [1]) >= li1 [2]:            print ('yes')        else:            print ('No')    else:        print ('no')else:    print ('NO')   

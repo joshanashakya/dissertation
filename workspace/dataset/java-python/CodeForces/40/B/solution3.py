@@ -1,0 +1,1 @@
+n, m = map(int, input().split())x = int(input())k = 0for i in range(n):    for j in range(m):        if not (i + j) % 2:            if min(min(i, j) + 1, min(n - i, m - j)) == x:                k += 1print(k)

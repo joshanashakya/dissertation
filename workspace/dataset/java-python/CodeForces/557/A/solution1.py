@@ -1,0 +1,1 @@
+n = int(input())mn1,mx1 = map(int, input().split())mn2,mx2 = map(int, input().split())mn3,mx3 = map(int, input().split()) fd = n - mn2 - mn3if fd > mx1:    fd = mx1n -= fdsd = n - mn3if sd > mx2:    sd = mx2td = n - sdprint(fd,sd,td)

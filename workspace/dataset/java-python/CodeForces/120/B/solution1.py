@@ -1,0 +1,1 @@
+if __name__ == '__main__':    cin = open("input.txt", "r")    cout = open("output.txt", "w")    n, k = map(int, cin.readline().split())    a = [int(i) for i in cin.readline().split()]    a = [i + 1 for i in range(n) if a[i]]     for i, v in enumerate(a):        if k <= v:            cout.write(str(v))            break    else:        cout.write(str(a[0]))

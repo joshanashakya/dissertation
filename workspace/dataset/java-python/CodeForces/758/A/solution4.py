@@ -1,0 +1,1 @@
+from collections import Counterimport math def solve():    n=int(input())    array=list(map(int,input().split()))    count=0    array.sort()     for i in range(n-1):        count+=abs(array[i]-array[n-1])     return count print(solve())

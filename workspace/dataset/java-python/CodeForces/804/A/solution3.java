@@ -1,0 +1,1 @@
+import java.util.Scanner; public class Comp11HW3 {    static int m(int i1) {return i1%2 == 0 ? i1/2 - 1 : i1/2;}     public static void main(String[] args) {        Scanner input = new Scanner(System.in);        int i1 = input.nextInt();         // from the patterns I see that          System.out.println(m(i1));     }}

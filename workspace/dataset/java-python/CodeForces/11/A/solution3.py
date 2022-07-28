@@ -1,0 +1,1 @@
+n,k=input().split()n=int(n)k=int(k)li=[]p=input().split()for i in p:    li.append(int(i))cnt=0for i in range(1,n):    if li[i]<=li[i-1]:        p = (li[i-1]-li[i])//k        p=p+1        cnt=cnt+p        li[i]=li[i]+(k*p)        print(cnt)

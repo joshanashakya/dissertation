@@ -1,0 +1,1 @@
+n, m = map(int, input().split())f = sorted(list(map(int, input().split())))i = 0j = i+n-1mindif = f[-1]-f[0]#print(f)while j < len(f):    mindif = min(mindif, f[j]-f[i])    #print(i, j, f[i], f[j], mindif)    i += 1    j += 1print(mindif)

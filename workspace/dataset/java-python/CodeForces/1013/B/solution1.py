@@ -1,0 +1,1 @@
+import sysfrom collections import Counter def main():    _, x, *l = map(int, sys.stdin.read().strip().split())    s, c = set(l), Counter()    if len(s) < len(l): return 0    for i in l:        a = i&x        if a in s and a != i: return 1        c[a] += 1    if c.most_common()[0][1] > 1: return 2        return -1    print(main())

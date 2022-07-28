@@ -1,0 +1,1 @@
+li=[500,1000,1500,2000,2500]M=list(map(int,input().split()))W=list(map(int,input().split()))hs,hu=map(int,input().split())ans=0for i in range(5):    x=li[i]    m=M[i]    w=W[i]    ans+=max(0.3*x,(1-m/250)*x-50*w)ans=ans+(hs*100-hu*50)print(int(ans))

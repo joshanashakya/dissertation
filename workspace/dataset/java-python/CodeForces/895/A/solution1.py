@@ -1,0 +1,1 @@
+N = int(input())raw = input()numbers = [int(token) for token in raw.split(' ')] total = sum(numbers) smallest = 1000for i in range(N):    for j in range(i, N):        sum1 = sum(numbers[i:j])        sum2 = total-sum1        smallest = min(smallest, abs(sum1-sum2)) print(smallest) 			 	 	 		    	  	  		  		 		

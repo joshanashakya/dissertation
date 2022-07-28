@@ -1,0 +1,1 @@
+n , m = map(int , input().split()) debts = [0]*(n+1)  for i in range(m):    a , b , debt = map(int , input().split())    debts[a] -= debt    debts[b] += debt  total = 0for i in range(n):    if debts[i+1] > 0:        total += debts[i+1] print(total)

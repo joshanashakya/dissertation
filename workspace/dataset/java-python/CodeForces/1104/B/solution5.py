@@ -1,0 +1,1 @@
+n=input()lst=[]cnt=0for i in n:    if len(lst)==0:        lst.append(i)    elif i==lst[-1]:        lst.pop()        cnt+=1    else:        lst.append(i)      if cnt%2==0:    print('No')else:    print('Yes')          

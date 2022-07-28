@@ -1,0 +1,1 @@
+cards=input()numbers="0123456789"even = "02468"vowals="aeiou"count = 0 for s in range(len(cards)):  if cards[s] in vowals:    count += 1  else:    if cards[s] in numbers and cards[s] not in even:      count += 1 print(count) 		   	    	    	 	      		  		

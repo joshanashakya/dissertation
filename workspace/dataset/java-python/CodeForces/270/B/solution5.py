@@ -1,0 +1,1 @@
+nr_threads = int(input())old_position = list(map(int,input().split()))ans = nr_threads-1 if(nr_threads == 1):    print(0)    quit() i = ans  while (i > 0):    if (old_position[i-1] > old_position[i]):        print(ans)        quit()    else:        i -=1        ans -=1 print(ans)   						   		 	  	     		   		

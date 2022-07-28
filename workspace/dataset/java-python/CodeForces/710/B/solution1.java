@@ -1,0 +1,1 @@
+import java.util.*; public class CodeForces710B{	public static void main(String[] args) {		Scanner input = new Scanner(System.in);		int n = input.nextInt();		Integer[] a = new Integer[n];		for(int i = 0;i<n;i++){			a[i] = input.nextInt();		} 		Arrays.sort(a);		System.out.println(n%2 == 0?a[n/2-1]: a[n/2]); 	}}

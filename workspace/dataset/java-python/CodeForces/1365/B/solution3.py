@@ -1,0 +1,1 @@
+t = int(input())for _ in range(t):    n = int(input())    a = list(map(int,input().split()))    b = list(map(int,input().split()))    if a == sorted(a):        print("YES")        continue    if b.count(1) > 0 and b.count(0) > 0:        print('YES')    else:        print('NO')

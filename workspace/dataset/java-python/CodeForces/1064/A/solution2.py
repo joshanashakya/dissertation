@@ -1,0 +1,1 @@
+a, b, c = map(int, input().split())if(a < b):    max = b    b = a    a = maxif(a < c):    max = c    c = a    a = maxk = 0if a >= b+c:    k = a - (b+c) + 1else:    k = 0print(k)  			 		   			    			  			 	 	

@@ -1,0 +1,1 @@
+from math import sqrtx,y=list(map(int,input().split()))l=sqrt(x**2+y**2)if x*y>0:    if l%2>1:        print('white')    else:        print('black')else:    if 1>l%2>0:        print('white')    else:        print('black')

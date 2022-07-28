@@ -1,0 +1,1 @@
+import heapq n,k = map(int,input().split(' '))pos =  list(map(int,input().split(' ')))heapq.heapify(pos)s = sum(pos)i = 0while k > 0:    k-=1    n = heapq.heappop(pos)    heapq.heappush(pos,-n)    s = s + (-n) - (n)print(s) # k mod no of neg

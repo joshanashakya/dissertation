@@ -1,0 +1,1 @@
+for _ in range(int(input())):    n=int(input())    l=list(map(int,input().split()))    c=0    for i in range(n):        if(l[i]==1):            c+=1        else:            break     if(c==n):        if(c%2==0):            print("Second")        else:            print("First")               elif(c%2!=0):        print("Second")    else:        print("First")             

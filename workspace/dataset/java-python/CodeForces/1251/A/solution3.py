@@ -1,0 +1,1 @@
+import string r = lambda : list(map(int, input().split()))t = int(input())for _ in range(t):    s = input()    a = ""    for i in string.ascii_lowercase:         if i not in s: continue         x = s.count(i*2)        y = (s.count(i)+1) // 2         if y!=x: a +=i      print(a)  

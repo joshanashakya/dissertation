@@ -1,0 +1,1 @@
+def cnt(x, y):  return y-x w, m, k = map(int, input().split())p, d, res = 1, 0, 0while p <= m:  p *= 10  d += 1while cnt(m, p)*d*k <= w:  w -= cnt(m, p)*d*k  res += cnt(m, p)  m = p  p *= 10  d += 1lo, hi = m, pwhile hi-lo > 1:  mid = (lo+hi)//2  if (cnt(m, mid)*d*k <= w): lo = mid  else: hi = midres += cnt(m, lo) print(res)

@@ -1,0 +1,1 @@
+n = int(input())L = []R = [] for _ in range(n):    l,r = map(int,input().split())    L.append(l)    R.append(r) l0 = L.count(0)l1 = n - l0 r0 = R.count(0)r1 = n - r0 t = 0 if r0 > r1:    t += r1else:    t += r0 if l0 > l1:    t += l1else:    t += l0 print(t)

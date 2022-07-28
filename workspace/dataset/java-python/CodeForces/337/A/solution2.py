@@ -1,0 +1,1 @@
+nums = input().split()puzzles = input().split()for i in range(len(puzzles)):    puzzles[i] = int(puzzles[i])puzzles.sort()min = 1000for i in range(int(nums[1]) - int(nums[0]) + 1):    if puzzles[i+int(nums[0])-1] - puzzles[i] < min:        min = puzzles[i+int(nums[0])-1] - puzzles[i]print(min)

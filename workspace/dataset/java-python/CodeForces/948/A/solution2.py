@@ -1,0 +1,1 @@
+def main():    n, m = map(int, input().split())    l = [input() for _ in range(n)]    r = any('SW' in s or 'WS' in s for s in [*l, *[''.join(t) for t in zip(*l)]])    if r:        print('No')    else:        print('Yes')        for s in l:            print(s.replace('.','D')) if __name__ == '__main__':    main()

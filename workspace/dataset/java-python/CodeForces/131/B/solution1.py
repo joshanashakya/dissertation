@@ -1,0 +1,1 @@
+test_Cases=int(input())t=0arr = list(map(int, input().split()))hash_2=[0]*10000000for  i in arr:                 u=i+10         hash_2[u]=hash_2[u]+1                  sum=0for  i in range(0,10) :   sum+=hash_2[i]*hash_2[20-i]       y= hash_2[10]*(hash_2[10]-1)sum=int(sum+y/2)print(sum)

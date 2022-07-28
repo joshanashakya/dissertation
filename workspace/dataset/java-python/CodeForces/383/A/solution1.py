@@ -1,0 +1,1 @@
+    #n,k=map(int, input().split())n=int(input())arr=list(map(int,input().split()))cnt=[0]*ncnt[0]=arr[0]for i in range(1,n):    cnt[i]=cnt[i-1]+arr[i]ans=0for i in range(n):    if arr[i]==0:        ans+=cnt[i]print(ans)

@@ -1,0 +1,1 @@
+import java.util.*;public class ch1{	 public static void main(String[] args)throws Exception	 {	  int a,b=0;	  char ch;	  Scanner reader=new Scanner(System.in);	  a=reader.nextInt();	  String str=reader.next();	  for(int i=0;i<a;++i)	  {		  if(str.charAt(i)=='+')			  ++b;		  else if(b>0)			  --b;	  }	  System.out.print(b);	 }	}	 		   					  	  	  	 	 	   		

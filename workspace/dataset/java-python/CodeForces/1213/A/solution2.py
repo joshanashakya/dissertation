@@ -1,0 +1,1 @@
+import mathimport sysinput = sys.stdin.readlinedef inp():    return(int(input()))def inlt():    return(list(map(int,input().split())))def insr():    s = input().strip()    return(list(s[:len(s)]))def invr():    return(map(int,input().split()))n=inp()l=inlt()n_eve=0n_odd=0for i in range(n):    if l[i]%2==0:        n_eve+=1    else:        n_odd+=1print(min(n_eve,n_odd))

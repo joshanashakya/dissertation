@@ -1,0 +1,1 @@
+n = int(input())a = [list(map(int, input().split())) for _ in range(n)] for ai in a:    ai.insert(0, '')dic = {} for k in range(1, 7**n):    tmp = k    i = 0    arr = []    while 0 < tmp:        arr.append(str(a[i][tmp % 7]))        tmp //= 7        i += 1    arr.sort()    dic[''.join(arr)] = True ans = 0while ''.join(sorted(list(str(ans + 1)))) in dic:    ans += 1print(ans)

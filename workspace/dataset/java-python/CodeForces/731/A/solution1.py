@@ -1,0 +1,1 @@
+s = input()ans  = 0for i in range(len(s)):    if i == 0:        ans += (min(abs(ord(s[i]) - ord('a')), 26 - abs(ord(s[i]) - ord('a'))))    else:        ans += (min(abs(ord(s[i]) - ord(s[i - 1])), 26 - abs(ord(s[i]) - ord(s[i - 1]))))print(ans)

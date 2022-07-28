@@ -1,0 +1,1 @@
+n, s = map(int, input().rstrip().split(" "))if s ==0 or n == 1:    print(0)elif s >= n//2:    print((n-1)*(n)//2)else:    t = 0    for i in range(s):        t+=(n-1-i)    for i in range(s, n-s):        t+=s    for i in range(s):        t+=i    print(t)

@@ -1,0 +1,1 @@
+x, y = map(int, input().split())a, b = 0, 0if x > 0:    if y > 0:        a = x+y    else:        a = x + -1*yelse:    if y > 0:        a = x+ -1*y    else:        a = x + yif y > 0:    if x > 0:        b = x+y    else:        b = y + -1*xelse:    if x > 0:        b = -1*x + y    else:        b = x + yif a < 0:    print(a, 0, 0, b)else:    print(0, b, a, 0)

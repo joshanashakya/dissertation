@@ -1,0 +1,1 @@
+n = int(input())W = 0h1 = [0] * (n + 2)h = [0] * (n + 2)w = [0] * (n + 2)for i in range(1, n + 1):    w[i], h[i] = map(int, input().split())    W += w[i]    h1[i] = max(h[i], h1[i - 1])h2 = [0] * (n + 2)for i in range(n, 0, -1):    h2[i] = max(h[i], h2[i + 1])print(' '.join([str((W - w[i]) * max(h1[i - 1], h2[i + 1])) for i in range(1, n + 1)]))

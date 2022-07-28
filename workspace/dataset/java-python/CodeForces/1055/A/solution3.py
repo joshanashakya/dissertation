@@ -1,0 +1,1 @@
+n , s = map(int,input().split())a = list(map(int,input().split()))b = list(map(int,input().split()))ans = "NO"if a[0] == 1 and a[s-1] == 1:	ans = "YES"elif a[0] == 1 and b[s-1] == 1:	for i in range(s,n):		if a[i] == 1 and b[i]==1:			ans = "YES"			breakprint(ans)

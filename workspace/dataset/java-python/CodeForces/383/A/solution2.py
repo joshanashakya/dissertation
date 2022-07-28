@@ -1,0 +1,1 @@
+n=int(input())arr=list(map(int,input().split()))dif=[0]*nl=0for i in range(n-1,-1,-1):    if arr[i]==0:        l+=1    dif[i]=lnuksan=0for i in range(n-1):    if arr[i]==1:        nuksan+=dif[i+1]print(nuksan)        

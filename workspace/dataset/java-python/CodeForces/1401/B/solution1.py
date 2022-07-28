@@ -1,0 +1,1 @@
+for _ in range(int(input())):    x0,x1,x2 = map(int, input().split())    y0,y1,y2 = map(int,input().split())    res = 0    tmp = min(x0,y2)    x0 -= tmp    y2 -= tmp     tmp = min(x1,y0)    x1 -= tmp    y0 -= tmp     tmp = min(x2,y1)    x2 -= tmp    y1 -= tmp    res += 2*tmp     res -= 2*min(x1,y2)    print(res)

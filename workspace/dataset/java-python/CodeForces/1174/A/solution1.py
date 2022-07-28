@@ -1,0 +1,1 @@
+def check():    a.sort()    if len(set(a))==1:        print("-1")    else:        if sum(a[:n])!=sum(a[:2*n]):            for item in a:                print(item, end=" ")        else:            print("-1") n = int(input())a = list(map(int, input().split(" ")))check()

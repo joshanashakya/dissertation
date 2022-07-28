@@ -1,0 +1,1 @@
+n,m=map(int,input().split())ar=list(map(int,input().split()))ar=sorted(ar);ans=0#print(ar)for i in range(n//2,n):  if ar[i]<=m:ans+=m-ar[i]for i in range(n//2,-1,-1):  if ar[i]>=m:ans+=ar[i]-mprint(ans)

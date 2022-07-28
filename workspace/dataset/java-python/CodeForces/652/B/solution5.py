@@ -1,0 +1,1 @@
+n = int(input())a = list(map(int, input().split()))ans = []check = sorted(a)i, j = 0, n-1while i < j :    ans.append(check[i])    ans.append(check[j])    i += 1    j -= 1if i == j:    ans.append(check[i])print(*ans)

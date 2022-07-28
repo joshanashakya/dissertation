@@ -1,0 +1,1 @@
+import java.util.Scanner; public class WorldCup {	public static void main(String[] args) {		Scanner scanner = new Scanner(System.in);		int n = scanner.nextInt();		int a = scanner.nextInt();		int b = scanner.nextInt();		int pow = 2;		int i = 1;		for(i = 1; Math.abs(((a - 1)/ pow) - ((b - 1) / pow)) > 0; i++) {			pow *= 2;		}		System.out.println(pow >= n ? "Final!" : i);	}}

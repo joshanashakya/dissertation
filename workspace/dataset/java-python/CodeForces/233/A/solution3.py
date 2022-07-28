@@ -1,0 +1,1 @@
+import sys # sys.stdin = open('input.txt', 'r')  # sys.stdout = open('output.txt', 'w')    # T = int(input())# for t in range(T):n = int(input())if n%2==1:    print("-1")else:    l1 = [x for x in range(n,0,-1)]    for i in l1:        print(i,end=" ")   

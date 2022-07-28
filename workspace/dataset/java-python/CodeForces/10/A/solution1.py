@@ -1,0 +1,1 @@
+n,p1,p2,p3,t1,t2=map(int,input().split())l,r=map(int,input().split())power=(r-l)*p1last_time=rfor _ in range(n-1):    l,r=map(int,input().split())    if l-last_time<=t1:power+=(l-last_time)*p1    elif l-last_time<=t1+t2:power+=t1*p1+(l-last_time-t1)*p2    else:power+=t1*p1+t2*p2+(l-last_time-t1-t2)*p3    power+=(r-l)*p1    last_time=rprint(power)

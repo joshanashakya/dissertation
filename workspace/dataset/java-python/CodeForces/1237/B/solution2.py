@@ -1,0 +1,1 @@
+n = int(input())first = list(input().strip().split())second = list(input().strip().split())toDict = dict(zip(second, range(n)))bef, aft = 0, 0for item in first:    if toDict.get(item) >= aft:        aft = toDict.get(item)        continue    bef += 1 print(bef) 	   	 		   		 			 	  	  	 		

@@ -1,0 +1,1 @@
+from math import logfrom collections import defaultdictn=int(input())a=list(map(int, input().split()))a.sort()dic=defaultdict(lambda:0)ans=0for el in a:    i = int(log(el*2,2))    temp = 2**i    while temp>0:        if dic[temp-el]!=0:            ans+=dic[temp-el]        temp//=2    dic[el]+=1print(ans)

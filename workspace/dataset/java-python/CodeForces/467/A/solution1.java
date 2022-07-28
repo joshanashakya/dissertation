@@ -1,0 +1,1 @@
+import java.io.*;import java.util.*;public class Main{    public static void main(String args[]){        Scanner sc=new Scanner(System.in);        int t=sc.nextInt();        int cnt=0;        while(t-->0){	        int a=sc.nextInt();	        int b=sc.nextInt();	        if(a<b-1){	            cnt++;	        }        }        System.out.println(cnt);    }}

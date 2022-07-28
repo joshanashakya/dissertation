@@ -1,0 +1,1 @@
+a=["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]d1=a.index(input())d2=a.index(input())cnt=0while(d1!=d2):    d1+=1;d1%=7;cnt+=1print(("YES") if ((cnt==0) or (cnt==2) or (cnt==3)) else ("NO"))

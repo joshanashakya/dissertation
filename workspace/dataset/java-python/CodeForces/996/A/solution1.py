@@ -1,0 +1,1 @@
+n = int(input())c=0;while n>0:    #print(n)    if n>=100:        c += int(n/100)        n = n%100    elif n>=20:        c += int(n/20)        n = n%20    elif n>=10:        c += int(n/10)        n = n%10    elif n>=5:        c += int(n/5)        n = n%5    elif n>=1:        c += n        n=0print(c)

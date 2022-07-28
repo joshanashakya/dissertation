@@ -1,0 +1,1 @@
+a=int(input())b=input().split()sec=0mx=0mn=0x=[]for i in b:    x.append(int(i))if x[0]!=max(x):    for i in range(a):        if x[i]==max(x):            sec+=i            mx=i            breakelse:    mx=0if x[-1]!=min(x):    for i in range(a-1,-1,-1):        if x[i]==min(x):            sec+=len(x)-1-i            mn=i            breakelse:    mn=a-1if mx>mn:    sec-=1print(sec)

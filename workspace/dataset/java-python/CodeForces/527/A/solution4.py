@@ -1,0 +1,1 @@
+finished=Falselado = list(map(int, input().split()))navios=0base=lado[0]altura=lado[1]while altura!=0:    navios+=(base//altura)    (base,altura)=(altura, base%altura)print(navios)	 			  	 								 	  	 				 	

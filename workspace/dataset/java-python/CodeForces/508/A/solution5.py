@@ -1,0 +1,1 @@
+n , m  , k= map(int , input().split())l = [[0 for i in range(m+2)]for j in range(n+2)] def check(r , c):    return l[r][c] and l[r][c+1] and l[r+1][c] and l[r+1][c+1]  for i in range(k):    x , y = map(int , input().split())    l[x][y] = 1    ans = check(x, y) or check(x , y-1) or check(x-1 , y-1) or check(x-1 , y)    if ans :        print(i+1)        breakelse:    print(0)    

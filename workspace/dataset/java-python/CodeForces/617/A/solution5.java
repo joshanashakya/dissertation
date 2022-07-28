@@ -1,0 +1,1 @@
+import java.util.Scanner; public class BigO {     public static void main(String[] args) {        int x;         Scanner sc = new Scanner(System.in);        x = sc.nextInt();                        int step = 1;                while(x > 5){            x -= 5;            step++;        }               System.out.println(step);    }     }

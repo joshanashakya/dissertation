@@ -1,0 +1,1 @@
+  def f(a,b,c):	res=None	cnt=0	for i in range(0,9+1):		if int(str(a)+str(i))%b==0:			res=str(a)+str(i)			break  	if res==None:		return -1	return res+(c-1)*"0"    a,b,c=map(int,input().strip().split())print(f(a,b,c))

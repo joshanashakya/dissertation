@@ -1,0 +1,1 @@
+from math import gcdn=int(input())if(n<3):    print(n)else:    if(n%2==1):        print(n*(n-1)*(n-2))    else:        if(gcd(n,n-3)==1):            print(n*(n-1)*(n-3))        else:            print((n-3)*(n-1)*(n-2))

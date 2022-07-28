@@ -1,0 +1,1 @@
+from math import gcd n = int(input())a = [int(i) for i in input().split()]ans = [a[0]] for i in range(n-1):    if gcd(a[i], a[i+1]) != 1:        ans.append(1)    ans.append(a[i+1]) print(len(ans) - len(a))print(*ans)

@@ -1,0 +1,1 @@
+import java.util.*; public class CodeForces1159B{	public static void main(String[] args) {		Scanner input = new Scanner(System.in);		int n = input.nextInt();		int min = Integer.MAX_VALUE;		for(int i = 0;i<n;i++){			min = Math.min(min,input.nextInt()/Math.max(i,n-i-1));		}		System.out.println(min);	}}

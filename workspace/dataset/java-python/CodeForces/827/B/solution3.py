@@ -1,0 +1,1 @@
+n,k = map(int,input().split())n -= 1val = n//kdiv = n%ki = 2if div==0:    print(val*2)elif div==1:    print(val*2+1)else:    print((val+1)*2)for a in range(k):    print(1,i)    for j in range(val-1):        print(i,i+1)        i+=1    i+=1j = i-1while(div):    print(j,i)    i+=1    j-=val    div -= 1

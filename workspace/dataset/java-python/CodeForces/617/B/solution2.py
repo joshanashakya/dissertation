@@ -1,0 +1,1 @@
+input()c = input().replace(' ','')if '1' in c:    count_zeros = 0    sum = 1    first = c.index('1')    for i in range(first, len(c)):        if c[i] is '1':            sum = sum * (count_zeros+1)            count_zeros = 0            continue        count_zeros += 1    print(sum)else:print(0) 

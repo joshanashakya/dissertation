@@ -1,0 +1,1 @@
+n = int(input())arr = [int(num) for num in input().split()]count = 0for i in range(1, len(arr)-1):	if(arr[i-1] < arr[i] and arr[i+1] < arr[i] or arr[i-1] > arr[i] and arr[i+1] > arr[i]):		count += 1print(count)

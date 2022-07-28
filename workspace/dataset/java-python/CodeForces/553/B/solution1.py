@@ -1,0 +1,1 @@
+n, k = map(int, input().split())a = [0 for i in range(n+1)]a[0], a[1] = 1, 1for i in range(2, n+1):    a[i] = a[i-1] + a[i-2]p = [i+1 for i in range(n)]i = 0while i < n:    if k > a[n-1-i]:        p[i], p[i+1] = p[i+1], p[i]        k -= a[n-1-i]        i += 2    else: i += 1p = [str(i) for i in p]print(' '.join(p))                                           

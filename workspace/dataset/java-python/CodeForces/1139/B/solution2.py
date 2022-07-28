@@ -1,0 +1,1 @@
+n = int(input())a = [int(i)for i in input().split()]a.reverse()SUM = [a[0]]min = a[0]for i in range(1, n):    if a[i] < min:        min = a[i]        SUM.append(min)    elif a[i] >= min and min != 1:        min -= 1        SUM.append(min)print(sum(SUM))

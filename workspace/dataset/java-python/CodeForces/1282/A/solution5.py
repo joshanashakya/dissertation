@@ -1,0 +1,1 @@
+# https://codeforces.com/problemset/problem/1282/A for _ in range(int(input())):    a, b, c, r = map(int, input().split())    a, b = min(a, b), max(a, b)    L = c - r    R = c + r    st = max(L, min(a, b))    ed = min(R, max(a, b))    print(abs(b - a) - max(0, (ed - st)))

@@ -1,0 +1,1 @@
+inp = input().split(' ')n,m = int(inp[0]),int(inp[1])c = input().split(' ')a = input().split(' ')bill = 0for i in range(n):    if bill == len(a):        break    if int(a[bill])>=int(c[i]):        bill+=1print(bill)

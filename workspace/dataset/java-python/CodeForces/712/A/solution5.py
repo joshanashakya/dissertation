@@ -1,0 +1,1 @@
+n = int(input())List = list(map(int,input().split())) A = 0list_new = []for i in range(0,n):    if i == len(List)-1:        list_new.append(List[i])         break       A = List[i+1] + List[i]    list_new.append(A)    A = 0 for i in range(len(list_new)):    print(list_new[i],end=" ")

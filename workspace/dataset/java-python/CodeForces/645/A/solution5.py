@@ -1,0 +1,1 @@
+a=input()+input()a=a.replace('',' ').split()b=input()+input()b=b.replace('',' ').split()for _ in " "*16:    k=a.index('X')    if k==2:        a[2],a[3]=a[3],a[2]    elif k==0:        a[0],a[2]=a[2],a[0]    elif k==3:        a[3],a[1]=a[1],a[3]    else:a[1],a[0]=a[0],a[1]    if a==b:print("YES");breakelse:print('NO')

@@ -1,0 +1,1 @@
+x, y = map(int, input().split())n = int(input())temp = n % 6if temp == 0:    a = x-yelif temp == 1:    a = xelif temp == 2:    a = yelif temp == 3:    a = y-xelif temp == 4:    a = -xelif temp == 5:    a = -yprint(a % 1000000007)

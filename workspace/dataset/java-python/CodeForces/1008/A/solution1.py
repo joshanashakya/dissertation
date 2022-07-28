@@ -1,0 +1,1 @@
+s = input() ok = {"a", "o", "u", "i", "e"}nn = {"n"} if s[-1] not in ok.union(nn):    print("NO")else:    for i in range(len(s)-1):        if s[i] not in ok.union(nn) and s[i+1] not in ok:            print("NO")            exit()    print("YES")   

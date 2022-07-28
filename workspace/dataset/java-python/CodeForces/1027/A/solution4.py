@@ -1,0 +1,1 @@
+t = int(input())for _ in range(t):  n = int(input())  s = input()  i, j = 0, n - 1  ans = 'YES'  while i < j:    if abs(ord(s[i]) - ord(s[j])) not in [0, 2]:      ans = 'NO'      break    i += 1    j -= 1  print(ans)

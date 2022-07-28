@@ -1,0 +1,1 @@
+n,m,ta,tb,k=map(int, input().split())a=list(map(int, input().split()))b=list(map(int, input().split()))j=0ans=-1for i in range(m):    if j<n and a[j]+ta<=b[i]:        k-=1        j+=1    if k<0:        ans=b[i]+tb        break    if j>=n:        breakprint(ans)

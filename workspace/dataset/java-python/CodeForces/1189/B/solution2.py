@@ -1,0 +1,1 @@
+import sysdef input():    return sys.stdin.readline().strip()def iinput():   return int(input())def minput():   return map(int, input().split()) def listinput(): return list(map(int, input().split()))n=iinput()a=listinput()a.sort()if a[-2]+a[-3]<=a[-1]:    print("NO")else:    print("YES")    print(*a[:-2],a[-1],a[-2])

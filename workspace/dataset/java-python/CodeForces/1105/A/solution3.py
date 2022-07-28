@@ -1,0 +1,1 @@
+n=int(input())stk=list(map(int,input().split()))t,mn=0,1000000for i in range(1,101):    s=0    for j in range(n):        s+=min(abs(stk[j]-i),abs(stk[j]-i-1),abs(stk[j]-i+1))    if mn>s:        t,mn=i,sprint(t,mn)

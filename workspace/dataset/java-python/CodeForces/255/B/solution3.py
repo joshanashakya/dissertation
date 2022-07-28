@@ -1,0 +1,1 @@
+# cook your dish herels = input()x = 0y = 0for i in ls:    if i=='x':        x+=1    else:        y+=1if x>y:    dif = x-y    for _ in range(dif):        print('x',end='')elif x<y:    dif = y-x    for _ in range(dif):        print('y',end='')else:    print()

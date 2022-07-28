@@ -1,0 +1,1 @@
+n , k = map(int , input().split())a = list(map(int , input().split()))b = list(map(int , input().split())) if k > 1:    print("Yes")else:    for i in range(n):        if a[i] == 0:            a[i] = b[0]    lst = a.copy()    lst.sort()    if lst == a:        print("No")    else:        print("Yes")  	 	 		 		   	 	  	 		 	 	   	

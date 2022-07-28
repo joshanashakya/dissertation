@@ -1,0 +1,1 @@
+import mathn,k,l,r,sall,sk = map(int,input().split())osk,ok = sk,klst = []while k:    x = math.ceil(sk/k)    lst.append(x)    k -= 1    sk -= xv = n-oksall -= oskwhile v:    x = math.ceil(sall/v)    lst.append(x)    v -= 1    sall -= xprint(*lst)

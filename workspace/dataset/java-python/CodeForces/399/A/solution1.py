@@ -1,0 +1,1 @@
+n, p, k = list(map(int, input().split(' '))) #print '<<'if(p-k > 1):    print('<<', end=" ")    for i in range(max(p-k, 1), p):    print(i, end=" ")    print(f'({p})', end=" ")    for i in range(p+1, min(p + k + 1, n+1)):    print(i, end=" ")    #print '>>'if(n > p+k):    print('>>')

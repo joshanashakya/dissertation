@@ -1,0 +1,1 @@
+import java.util.Scanner; public class Singleton_Pattern {    public static void main(String[] args) {       Scanner sc = new Scanner(System.in);      int n = sc.nextInt();      sc.nextLine();      int res = 0 ;      int l =1 ;      while (l<=n/2){          if (n%l==0)              res++;          l=l+1;      }        System.out.println(res);    }}

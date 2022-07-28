@@ -1,0 +1,1 @@
+n = int(input())a = list(map(int, input().split()))  res = float("inf")  for i in range(len(a)):     l,r = 0, 360    for i in a[i:] + a[:i]:        res = min(res, abs(l - r))        l += i        r -= i     res = min(res, abs(l - r)) print(res)

@@ -1,0 +1,1 @@
+a, d = map(float, input().split())n = int(input())s = 0for i in range(1, n + 1):    s += d    s %= 4 * a    t = s // a    if t % 4 == 0:        print(s % a, 0)    elif t % 4 == 1:        print(a, s % a)    elif t % 4 == 2:        print(a - s % a, a)    elif t % 4 == 3:        print(0, a - s % a)

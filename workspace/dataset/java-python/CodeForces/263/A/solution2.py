@@ -1,0 +1,1 @@
+data = []for i in range(5):    data.append(list(map(int, input().split()))) n, m = 0, 0for i in range(5):    for j in range(5):        if data[i][j] == 1:            n, m = i, j print(abs(3 - (n + 1)) + abs(3 - (m + 1)))

@@ -1,0 +1,1 @@
+n = int(input())odd = 0x = y = 0for i in range(n):    l,r = map(int,input().split())    x+=l    y+=r    if (l+r)%2!=0:        odd+=1if x%2==0 and y%2==0:    print(0)else:    if odd%2==0 and n!=1 and odd>0:        print(1)    else:        print(-1)

@@ -1,0 +1,1 @@
+a,b,c = map(int, input().split())data = list(map(int, input().split()))datb = list(map(int, input().split()))res = []for i in range(1, a+1):    if i in data:        res.append("1")    else:        res.append("2")print(" ".join(res))

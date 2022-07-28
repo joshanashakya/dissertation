@@ -1,0 +1,1 @@
+n = int(input()) a = list(map(int,input().split(" "))) min_x = 101min_i =0max_x = 0max_i = 0for i in range(n):    if a[i]<=min_x:        min_i = i        min_x = a[i]    if a[i]>max_x:        max_i= i        max_x = a[i] if min_i < max_i :    print((n-1-min_i)+max_i-1)else:    print((n-1-min_i)+max_i)

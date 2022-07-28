@@ -1,0 +1,1 @@
+n=int(input())bt=list(map(int,input().split()))if 0 in bt:    c5=0    c0=0    for a in bt:        if a==5:            c5+=1        else:            c0+=1    if c5<9:        print(0)    else:        print((int(c5/9))*9*"5"+c0*"0")else:    print(-1)

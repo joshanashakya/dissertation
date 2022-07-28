@@ -1,0 +1,1 @@
+import java.util.*; public class P1 {		public static void main(String[] args) {		Scanner sc = new Scanner(System.in);int sum =0; int a = sc.nextInt();int f=a;int b = sc.nextInt();while(a>=b) {	sum++;	a-=b;	a+=1;}System.out.println(f+sum);	}}

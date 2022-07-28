@@ -1,0 +1,1 @@
+import sysinput = sys.stdin.readline pozicia = input()if pozicia[0] == "a" or pozicia[0] == "h":    if pozicia[1] == "1" or pozicia[1] == "8":        print(3)    else:        print(5) elif pozicia[1] == "1" or pozicia[1] == "8":    print(5)else:    print(8)

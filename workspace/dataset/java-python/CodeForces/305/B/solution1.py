@@ -1,0 +1,1 @@
+def solve (p, q, a, st, n):	if st == n-1:		return p == q*a[st]	return solve(q, p-a[st]*q, a, st+1, n);  p, q = map(int, input().split())n = int(input())a = list(map(int, input().split())) if solve(p, q, a, 0, n):	print("YES")else:	print("NO")

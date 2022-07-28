@@ -1,0 +1,1 @@
+n = int(input())a = input().replace(' ','')a+='00'result = 0start = 0count = 0count0 = 0for i in range(n+2):	if a[i]=='1':		start=1		count+=1		count0=0	if a[i]=='0' and start==1:		count+=1		count0+=1		if count0==2:			result+=(count-2)			count0=0			count=0			start=0result+=countprint(result)

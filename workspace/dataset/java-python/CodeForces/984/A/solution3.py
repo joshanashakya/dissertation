@@ -1,0 +1,1 @@
+n = int(input())numbers = list(map(int, input().split(" ")))player_1=1player_2=0for i in range(n-1):    if player_1==1:        numbers.remove(max(numbers))    else:        numbers.remove(min(numbers))    player_1, player_2 = player_2, player_1print(numbers[0])

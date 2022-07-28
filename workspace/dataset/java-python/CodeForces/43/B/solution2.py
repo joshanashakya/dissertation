@@ -1,0 +1,1 @@
+from collections import Counter s = input()a = input() arr = Counter(s)brr = Counter(a)f = True for i in brr.keys():    if i==' ': continue    if arr[i] < brr[i]:         f = False        break print("YES" if f else "NO")

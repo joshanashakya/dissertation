@@ -1,0 +1,1 @@
+def bs(l, h):    while l < h:        m = (l + h + 1) // 2        if gf(m):            l = m        else:            h = m - 1    return l def gf(x):    if x % 2:        return sum(sorted(a[:x + 1])[1:: 2]) <= h    else:        return sum(sorted(a[:x + 1])[0:: 2]) <= h  n, h = map(int, input().split())a = tuple(map(int, input().split()))print(bs(0, n  - 1) + 1)

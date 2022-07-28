@@ -1,0 +1,1 @@
+#%% 988a Diverse team n,k = map(int,input().split())arr = [*map(int,input().split())]x = []; ind = []for elem in arr:    if elem not in x:        ind+= [arr.index(elem)+1]        x.append(elem)    if len(x) == k:        break if len(x)<k:    print('NO')else:    print('YES')    print(*ind)

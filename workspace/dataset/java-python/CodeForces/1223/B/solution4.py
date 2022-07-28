@@ -1,0 +1,1 @@
+try:    q = int(input())    for i in range(q):        s = input()        t = input()        v = True        for j in s:            if t.__contains__(j):                print("YES")                v = False                break        if v:            print("NO")except:    pass

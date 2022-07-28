@@ -1,0 +1,1 @@
+import sysfrom math import sqrtinput = lambda: sys.stdin.readline().rstrip("\r\n") n=int(input())t=ns=set()i=2while i*i<=n :    if n%i==0:        s.add(i)        while n%i==0:            n=n//i    i+=1if n!=1:    s.add(n)if len(s)>=2 or t==1:    print(1)else:    print(s.pop()) 

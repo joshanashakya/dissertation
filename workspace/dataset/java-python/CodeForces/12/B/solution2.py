@@ -1,0 +1,1 @@
+a = list(input())b = list(input()) if a.count('0') == len(a):    if(b.count('0') == len(b)):        if len(a) == len(b):            print("OK")        else: print("WRONG_ANSWER")    else:        print("WRONG_ANSWER") else:      a.sort()    x = a.count('0')    a = [a[x]] + ['0'] * x + a[x+1:]    print("OK" if a == b else "WRONG_ANSWER") 

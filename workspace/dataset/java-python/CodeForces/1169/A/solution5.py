@@ -1,0 +1,1 @@
+n, a, x, b, y = map(int, input().split())for i in range(n):    if a == b:        print('YES')        exit(0)    if a == x or b == y:        break    a = (a + 1) % n    if a == 0:        a = n    b = (b - 1)    if b <= 0:        b = n + bprint('NO')

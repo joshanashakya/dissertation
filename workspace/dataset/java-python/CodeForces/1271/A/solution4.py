@@ -1,0 +1,1 @@
+a = int(input())b = int(input())c = int(input())d = int(input())e = int(input())f = int(input())if e > f:    x = min(a, d)    result = x * e    a -= x    d -= x    result += min(b, c, d) * f    print(result)else:    x = min(b, c, d)    result = x * f    b -= x    c -= x    d -= x    result += min(a, d) * e    print(result)

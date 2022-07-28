@@ -1,0 +1,1 @@
+n=int(input())l=list(map(int, input().split()))ones=l.count(1)twos=n-onesif ones>=3:  print("1 1 1 " + "2 "*twos + "1 "*(ones-3))elif ones == 2:  if twos:    print("2 1 " + "2 "*(twos-1) + "1")  else:    print("1 1")elif ones == 1:  if twos:    print("2 1 " + "2 "*(twos-1))  else:    print("1")else:  print("2 "*twos)

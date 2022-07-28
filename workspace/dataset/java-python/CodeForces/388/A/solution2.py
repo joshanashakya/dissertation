@@ -1,0 +1,1 @@
+n=int(input())arr=[int(x) for x in input().split()]arr.sort()ans=[]for ele in arr:    for i in range(len(ans)):        if(ans[i]<=ele):            ans[i]+=1            break    else:        ans.append(1)print(len(ans))        

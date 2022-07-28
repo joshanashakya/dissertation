@@ -1,0 +1,1 @@
+import java.util.*;public class Main{		 public static void main(String args[])    {        Scanner in  = new Scanner(System.in);        int t= in.nextInt();        while(t-->0)        {            int n = in.nextInt();            String s = in.next();            char c[] = s.toCharArray();            Arrays.sort(c);            System.out.println(String.valueOf(c));        }    }}

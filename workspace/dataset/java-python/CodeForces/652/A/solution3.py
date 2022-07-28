@@ -1,0 +1,1 @@
+import sys h1, h2 = map(int, input().split())a, b = map(int, input().split()) if h1 + 8*a >= h2:    print(0)    exit() h1 += 8*a - 12*b if h1 + 12*a >= h2:    print(1)    exit()if a <= b:    print(-1)    exit() delta = 12*a - 12*bprint((h2 - h1 - 12*a + delta - 1) // delta + 1)

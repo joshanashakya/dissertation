@@ -1,0 +1,1 @@
+x=[]for i in range(8):    s=str(input())    x.append(s)d=Falsefor i in range(8):    s=x[i]    if(s=="BWBWBWBW" or s=="WBWBWBWB"):        continue    else:        d=True        print("NO")        breakif(d==False):    print("YES")            

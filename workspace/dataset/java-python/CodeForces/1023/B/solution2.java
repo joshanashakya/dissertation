@@ -1,0 +1,1 @@
+import java.util.Scanner; public class B {    public static void main(String args[]){        Scanner sc=new Scanner(System.in);        long n=sc.nextLong();        long k=sc.nextLong();        long half=k/2;        if(n<half){            System.out.println("0");        }        else            System.out.println((Math.min(n,k-1))-half);    }}

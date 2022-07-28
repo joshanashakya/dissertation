@@ -1,0 +1,1 @@
+from sys import stdinc = [[0]*1002 for _ in range(0,1002)]MOD = int(1e9+7) for i in range(0,1002):    c[i][0] = c[i][i] = 1    for j in range(0,i):        c[i][j] = (c[i-1][j-1] + c[i-1][j])%MOD r = map(int,stdin.read().split()) n = next(r)ans = 1sum = 0 for _ in range(0,n):    x = next(r)    ans = (ans * c[sum+x-1][sum])%MOD    sum += x print(ans)

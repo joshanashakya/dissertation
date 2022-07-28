@@ -1,0 +1,1 @@
+import java.util.*;public class A {    public static void main(String[] args) {        Scanner sc = new Scanner(System.in);        int arr[]=new int[101];        int n=sc.nextInt();        arr[0]=1;        arr[1]=5;        for (int i=2;i<101;i++){            arr[i]=arr[i-1]+2*(arr[i-1]-arr[i-2]);        }        System.out.println(2*n*(n-1)+1);    } }

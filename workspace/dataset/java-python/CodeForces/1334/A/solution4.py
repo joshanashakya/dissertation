@@ -1,0 +1,1 @@
+for _ in range(int(input())):    n = int(input())    p0,c0 = 0,0    res= True    for i in range(100):        h = p0+c0    for i in range(n):        p,c = map(int,input().split())        ap,ac,p0,c0 =p-p0 , c-c0,p,c        res= res and ap>=ac and ac>=0 and ap>=0    print("YES" if res else "NO")

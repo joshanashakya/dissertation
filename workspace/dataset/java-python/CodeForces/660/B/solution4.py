@@ -1,0 +1,1 @@
+n,m=input().split()n,m=int(n),int(m)temp=1groos=n*2+1while groos<=m:    print(groos,end=" ")    print(temp,end=" ")    groos,temp=groos+1,temp+1while temp<=min(n*2,m):    print(temp,end=" ")    temp+=1

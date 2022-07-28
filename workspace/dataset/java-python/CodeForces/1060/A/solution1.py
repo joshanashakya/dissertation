@@ -1,0 +1,1 @@
+n = int(input())str = input()solution = 0eights = str.count("8") while n >= 11 and eights > 0:    if n >=11 and eights > 0:        solution += 1        eights -= 1        n -= 11    else:        break print(solution)

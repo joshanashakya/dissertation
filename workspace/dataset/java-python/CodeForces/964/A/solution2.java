@@ -1,0 +1,1 @@
+/** *  */  import java.util.Scanner; /** * @author ChristinaXinny * */public class A_Splits { 	/**	 * @param args	 */	public static void main(String[] args) {		// TODO Auto-generated method stub		Scanner in = new Scanner(System.in);		int n = in.nextInt();		System.out.printf("%d\n", (n / 2) + 1);		in.close(); 	} }   					 	 			   	 	 	 	   	   	

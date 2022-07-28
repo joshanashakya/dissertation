@@ -1,0 +1,1 @@
+a, b, c = (int(x) for x in input().strip().split(' '))if a < b:    max = b    b = a    a = maxif a < c:    max = c    c = a    a = max if a < b+c:    time = 0else:    time = a - (b + c) + 1 print(time) 	  			 	  			            			 	

@@ -1,0 +1,1 @@
+s=input()a,b=map(str,input().split()) #suit = ['S','H','D','C']rank = ['6','7','8','9','T','J','Q','K','A'] if (a[1]==b[1] and rank.index(a[0])>rank.index(b[0])) or (a[1]==s and a[1]!=b[1]):    print('YES')else:    print('NO')

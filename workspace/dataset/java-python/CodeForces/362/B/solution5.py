@@ -1,0 +1,1 @@
+n,m=map(int,input().split())if m==0:    print("YES")    exit()a=sorted(list(map(int,input().split())))if a[0]==1 or a[-1]==n:    print("NO")    exit()x=0for i in range(m-1):    if a[i]+1==a[i+1]:        x+=1        if x==2:            print("NO")            exit()    else:        x=0print("YES")

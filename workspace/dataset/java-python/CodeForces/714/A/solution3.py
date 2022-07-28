@@ -1,0 +1,1 @@
+  l1,r1,l2,r2,k = map(int,input().split())  start = max(l2,l1)end  = min(r1,r2)    if end>=start:    total = end-start+1    if start<=k<=end:        print(max(total-1,0))    else:        print(total)else:    print(0)

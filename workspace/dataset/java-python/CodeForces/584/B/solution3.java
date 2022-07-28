@@ -1,0 +1,1 @@
+import java.util.Scanner; public class Practice {	public static void main(String[] args) {				Scanner input = new Scanner(System.in);		long n = input.nextLong();		long a = 1, b = 1, mod = (long) (1E9)+7;				for (int i = 0; i < 3  * n; i++)		{			a = (a * 3) % mod; 		}				for (int i = 0; i <  n; i++)			b = (b * 7) % mod;				System.out.println((a - b + mod) % mod);	}}

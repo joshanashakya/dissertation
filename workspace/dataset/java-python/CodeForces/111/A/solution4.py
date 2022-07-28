@@ -1,0 +1,1 @@
+#!/usr/bin/env python3 from math import sqrt n, x, y = map(int, input().split()) if y < n:    print(-1)    exit(0) ok = Falseif x - n + 1 <= 0:    ok = Trueelse:    v = x - n + 1    sqrt_v = int(sqrt(v))    if sqrt_v * sqrt_v < v:        sqrt_v += 1    if y - n + 1 >= sqrt_v:        ok = True if ok:    for _ in range(n-1):        print(1)    print(y-n+1)else:    print(-1)

@@ -1,0 +1,1 @@
+from math import floort = int(input()) for i in range(t):    hp, va, ls = map(int, input().split())     if hp>20:        for j in range(va):            hp = floor(hp/2) + 10            if hp<=20:                break    hp -= 10 * ls     if hp<=0:        print('YES')    else:        print('NO')

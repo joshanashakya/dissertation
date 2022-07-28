@@ -1,0 +1,1 @@
+z=[]l=0r=0for _ in range(int(input())):    a=list(map(int,input().split()))    z.append(a)    l+=a[0]    r+=a[1]s=abs(l-r)idx=-1for i in range(len(z)):    ll=l-z[i][0]+z[i][1]    rr=r-z[i][1]+z[i][0]    ss=abs(ll-rr)    if(ss>s):        s=ss        idx=iprint(idx+1)        

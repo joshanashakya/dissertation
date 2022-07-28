@@ -1,0 +1,1 @@
+import sysinput = sys.stdin.readline ''' ''' from math import ceil a1,a2,a3 = map(int, input().split())b1,b2,b3 = map(int, input().split())n = int(input())shelves_cup = ceil((a1+a2+a3) / 5)shelves_medal = ceil((b1+b2+b3) / 10) print("YES" if shelves_cup+shelves_medal <= n else "NO")

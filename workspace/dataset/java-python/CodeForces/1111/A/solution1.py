@@ -1,0 +1,1 @@
+s = input()t = input()v = ['a','e','i','o','u']if len(s) == len(t):	for i in range(len(s if len(s) < len(t) else t)):		if s[i] in v and t[i] in v:			continue		elif s[i] in v or t[i] in v:			print("NO")			exit()		else:			continue	print('YES')else:	print('NO')

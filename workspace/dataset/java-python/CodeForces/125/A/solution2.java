@@ -1,0 +1,1 @@
+import java.util.*;public class MeasuringLengthsInBaden{	public static void main(String[] args) 	{		Scanner sc=new Scanner(System.in);		int n=sc.nextInt();        int inches=(n+1)/3;        int feets=inches/12;        System.out.println(feets+" "+(inches-12*feets));			}}

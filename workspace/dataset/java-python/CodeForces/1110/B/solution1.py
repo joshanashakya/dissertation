@@ -1,0 +1,1 @@
+n, m, k = list(map(int, input().split()))b = list(map(int, input().split())) c = [] for i in range(n-1):    c.append(b[i+1] - b[i]) c.sort() ret = 0 for i in range(n-k):    ret += c[i] ret += k print(ret) 						  	 	 	 	 				 			    	

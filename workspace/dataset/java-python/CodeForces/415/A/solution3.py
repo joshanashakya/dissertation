@@ -1,0 +1,1 @@
+n, m = map(int, input().split()) dicti = {} for x in range(n):    dicti[x+1] = "on" opers = [int(bruh) for bruh in input().split()] for oper in opers:    for light in range(oper, n+1):        if dicti[light] == "on":            dicti[light] = oper lst = []for bruhh in range(1, n+1):    lst.append(str(dicti[bruhh])) print(' '.join(lst)) 

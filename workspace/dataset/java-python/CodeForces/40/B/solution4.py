@@ -1,0 +1,1 @@
+import itertoolsimport math n, m = [int(k) for k in input().split()]x = int(input())if n-2*(x-1) < 1 or m-2*(x-1) < 1:    print(0)elif n-2*(x-1) == 1 or m-2*(x-1) == 1:    print((n+m-4*(x-1))//2)else: print(n+m-2 - 4*(x-1))        # Made By Mostafa_Khaled

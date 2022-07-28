@@ -1,0 +1,1 @@
+# coding: utf-8 n = int(input())original = input()combination = input()moves = 0 for i in range(n):  difference = abs(ord(original[i]) - ord(combination[i]))  moves += min(difference, 10 - difference)  print(moves)

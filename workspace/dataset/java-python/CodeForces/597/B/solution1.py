@@ -1,0 +1,1 @@
+def second(x):    return x[1]n = int(input())arr = []for i in range(n):    a,b = map(int,input().split())    arr.append([a,b])arr.sort(key = second) ans = 1till = arr[0][1]for i in range(n):    if(arr[i][0] > till):        ans += 1        till = arr[i][1]print(ans)

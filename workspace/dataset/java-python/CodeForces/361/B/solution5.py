@@ -1,0 +1,1 @@
+v = map(int,input().split())n , k = v r2 = [] if k > n or (n == 1 and k > 0) :    print(-1)elif k == n :    print(-1)  else:           r2.append(n - k)     for d in range(1,n - k):        r2.append(d)          for e in range(n - k + 1,n + 1):        r2.append(e)     for v in r2:        print(v,end = ' ')		   	 				 	 	 	 	 	   			  	

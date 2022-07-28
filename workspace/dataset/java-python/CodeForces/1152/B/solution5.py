@@ -1,0 +1,1 @@
+x = int(input())flag = 0ans = []cnt = 0while flag == 0:    s = bin(x)[2:]    if s.count("0") == 0:        flag = 1        break     i = len(s)    no = (2**i)-1    x = x^no    ans.append(i)    cnt += 1    s = bin(x)[2:]    if s.count("0") == 0:        flag = 1        break     cnt += 1    x += 1 # print(x)print(cnt)print(*ans)

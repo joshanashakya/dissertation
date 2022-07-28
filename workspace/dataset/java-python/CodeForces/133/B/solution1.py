@@ -1,0 +1,1 @@
+def binaryToDecimal(n):    return int(n,2)s = input()s=s.replace(">","1000")s=s.replace("<","1001")s=s.replace("+","1010")s=s.replace("-","1011")s=s.replace(".","1100")s=s.replace(",","1101")s=s.replace("[","1110")s=s.replace("]","1111")p = binaryToDecimal(s)ans = p%((10**6) +3)print(ans)

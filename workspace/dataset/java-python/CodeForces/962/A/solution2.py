@@ -1,0 +1,1 @@
+from collections import Counterfrom itertools import combinations if __name__ == '__main__':    n = int(input())    a = [int(i) for i in input().split()]    s = sum(a)    t = s     while n > 0 and t > (s / 2):        t -= a[n - 1]        n -= 1    print(n + 1 if t < s / 2 else n)

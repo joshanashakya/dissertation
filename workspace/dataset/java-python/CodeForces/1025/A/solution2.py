@@ -1,0 +1,1 @@
+num = int(input())pup = input() lst = []for i in range(num):    lst.append(pup[i]) lst.sort() if num > 1:    for i in range(num):        if i < num-1:            if lst[i] == lst[i+1]:                print("YES")                break     if i == (num-1):        print("NO") elif num ==1:    print("YES")

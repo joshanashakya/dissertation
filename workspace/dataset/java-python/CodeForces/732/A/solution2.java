@@ -1,0 +1,1 @@
+import java.util.*; public class Main {    public static void main(String[] args) {        Scanner in = new Scanner(System.in);         int k = in.nextInt() % 10;        int r = in.nextInt();        int res = 1;        int s = k;        while (s%10 != 0 && s % 10 != r) {            s = k * ++res;        }        System.out.println(res);    } }  

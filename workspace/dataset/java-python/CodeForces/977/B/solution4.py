@@ -1,0 +1,1 @@
+from sys import stdin, stdout def main():    n = int(stdin.readline())    s = stdin.readline()[:-1]    c = {}    for i in range(n-1):        c[s[i:i+2]] = c.get(s[i:i+2], 0) + 1    x = max(c, key=c.get)    stdout.write(str(x)+'\n') if __name__ == "__main__":    main()

@@ -1,0 +1,1 @@
+import java.util.*;import java.io.*;public class Main{    static PrintWriter w=new PrintWriter(System.out);	public static void main(String[] args) {	    Scanner s=new Scanner(System.in);	    int n=s.nextInt();	    if(n>36)	    w.println(-1);	    else	    {	        for(int i=1;i<=n/2;i++)	        w.print("8");	        if(n%2==1)	        w.print("4");	    }        w.close();	}}

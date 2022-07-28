@@ -1,0 +1,1 @@
+for u in range(int(input())):    s=input()    r=input()    n,m=len(s),len(r)    s+='3'    c=0    for i in range(m):        if(s[c]==r[i] and c<n):            c+=1        elif(r[i]!=r[i-1] or i==0):            c=c-1            break    if(c==n):        print('YES')    else:        print('NO')

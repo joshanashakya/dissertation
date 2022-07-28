@@ -1,0 +1,1 @@
+b, c = int(input()), input()f = 0m = 0for i in range(0, len(c)):    if c[i] == "x":        f += 1    else:        if f > 2:            m += f-2        f = 0    if i+1 == len(c) and f > 2:        m += f-2print(m)

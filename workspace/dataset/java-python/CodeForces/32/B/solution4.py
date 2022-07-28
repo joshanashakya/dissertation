@@ -1,0 +1,1 @@
+if __name__ == '__main__':    s = input()    numb = ""    i = 0    while i < len(s):        if s[i] == '.':            numb += '0'            i += 1        elif (s[i] == '-') and (s[i+1] == '.'):            numb += '1'            i += 2        elif (s[i] == '-') and (s[i+1] == '-'):            numb += '2'            i += 2    print(numb)

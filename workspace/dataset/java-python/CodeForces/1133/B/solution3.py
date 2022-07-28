@@ -1,0 +1,1 @@
+#1133import mathn,k=map(int,input().split())l=[int(i)%k for i in input().split()]s=0for i in range(1,k//2+1):  if i==k/2:    s+=l.count(i)//2*2  else:    s+=(min(l.count(i), l.count(k-i)))*2s+=l.count(0)//2*2print(s)

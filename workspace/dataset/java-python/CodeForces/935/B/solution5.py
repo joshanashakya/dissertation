@@ -1,0 +1,1 @@
+n = int(input())s = input()x,y = 0,0f = 0ans = 0for c in s:    if c=='U':        y+=1    else:        x+=1    if x==y:        continue    else:        f1 = 1        if x>y:            f1=1        else:            f1 = -1        if f1*f<0:            ans+=1        f = f1print(ans)

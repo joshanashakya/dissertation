@@ -1,0 +1,1 @@
+n= int(input(""))A=[]for i in range(n):    x=int(input(""))    A.append(x)for i in A:    if (i%3==0 or i%7==0 or i%10==0):        print('YES')    else:        if(i>12):            print('YES')        else:            print("NO")

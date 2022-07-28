@@ -1,0 +1,1 @@
+n = int(input())l = [int(x) for x in input().split()]c, r = 0, 0 for i in range(n):    if l[i] > 0:        c += l[i]    elif l[i] < 0:        if l[i] + c < 0:            r += l[i] + c        else:            c = c+l[i] print(abs(r))

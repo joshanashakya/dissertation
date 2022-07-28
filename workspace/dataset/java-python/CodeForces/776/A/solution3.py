@@ -1,0 +1,1 @@
+one, other = [ str(x) for x in input().split()] murders = int(input()) for i in range(murders):    killed, replaced_by = [ str(x) for x in input().split()]     print(f'{one} {other}')    if( killed == one):        one = replaced_by    else:        other = replaced_byprint(f'{one} {other}')

@@ -1,0 +1,1 @@
+n=int(input())li=list()for i in range(n):    a,b=input().split()    a=int(a);b=int(b)    if(i==0):        npass=b        li.append(npass)    else:        cpss=npass-a+b        npass=cpss        li.append(cpss)print(max(li))

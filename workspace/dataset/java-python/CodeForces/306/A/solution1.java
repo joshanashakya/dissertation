@@ -1,0 +1,1 @@
+import java.util.*;public class Sol{    public static void main(String[] args){        Scanner s=new Scanner(System.in);        int n=s.nextInt(),m=s.nextInt(),t=m;        for(int i=0;i<t;i++){            System.out.print(n/m+" ");            n-=n/m;--m;}}}

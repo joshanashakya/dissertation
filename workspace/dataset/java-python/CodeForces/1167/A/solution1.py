@@ -1,0 +1,1 @@
+tests = int(input())t = 0for t in range(0,tests):    n = int(input())    s = input()    bol=False    for i in range(0,len(s)):        if s[i] == '8':            bol=True            cnt=i            break    if(bol):        if n-cnt >= 11:            print('YES')        else:            print('NO')    else:        print("NO")

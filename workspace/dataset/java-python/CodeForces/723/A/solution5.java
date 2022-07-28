@@ -1,0 +1,1 @@
+import java.util.Scanner; public class A723 {    public static void main(String[] args) {        Scanner scanner = new Scanner(System.in);        int x1 = scanner.nextInt(), x2 = scanner.nextInt(), x3 = scanner.nextInt(), max, min;         max = Math.max(x1, Math.max(x2, x3));        min = Math.min(x1, Math.min(x2, x3));        System.out.println(max - min);    }}

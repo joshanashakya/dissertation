@@ -1,0 +1,1 @@
+for _ in range(int(input())):    n=int(input())    l=[int(i) for i in input().split()]    mx=max(l)    mxsq=0    for i in range(1,mx+1):        c=0        for j in l:            if j>=i:                c+=1        if c>=i:            mxsq=max(mxsq,i)    print(mxsq)

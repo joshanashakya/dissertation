@@ -1,0 +1,1 @@
+import sys#input = sys.stdin.readline n = input()m = input()x = {}y = {}ans = 0 for i in n:    if i not in x:        x[i] = 0    x[i] += 1 for i in m:    if i not in y:        y[i] = 0    y[i] += 1 for i in y:    if i not in x:        print(-1)        sys.exit()    ans += min(x[i], y[i]) print(ans)

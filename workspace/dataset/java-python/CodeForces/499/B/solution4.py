@@ -1,0 +1,1 @@
+a , b = map(int , input().split())arr = {}for _ in range(b):    x , y = input().split()    arr[x] = y   s = input().split() for i in s:    val = arr[i]    if len(val) < len(i): print(val , end = " ")    else: print(i , end = " ")

@@ -1,0 +1,1 @@
+f = lambda: map(int, input().split())r, c, n, k = f()t = [list(f()) for i in range(n)]s = 0for i in range(1, r + 1):    for j in range(i, r + 1):        for u in range(1, c + 1):            for v in range(u, c + 1):                s += sum([i <= x <= j and u <= y <= v for x, y in t]) >= kprint(s)

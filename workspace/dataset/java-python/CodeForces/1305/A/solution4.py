@@ -1,0 +1,1 @@
+t = int(input())for i in range(t):    n = int(input())    a = [int(x) for x in input().split()]    b = [int(x) for x in input().split()]    a = [str(x) for x in sorted(a)]    b = [str(x) for x in sorted(b)]    print(' '.join(a))    print(' '.join(b))

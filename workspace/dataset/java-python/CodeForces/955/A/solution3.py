@@ -1,0 +1,1 @@
+import mathr, m = map(int, input().split())h, d, c, n = map(int, input().split())if r >= 20:    print(math.ceil(h/n)*c*0.8)else :    print(min(math.ceil(((20*60 - r*60 - m)*d + h)/n)*c*0.8, math.ceil(h/n)*c))

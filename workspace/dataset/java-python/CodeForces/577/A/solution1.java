@@ -1,0 +1,1 @@
+import java.util.Scanner;  public class MutliTable {        public static void main(String[] args) {    Scanner S = new Scanner(System.in);    int table = S.nextInt();    int find = S.nextInt();    int answer = 0;        for(int x = 1;x <= table; x++)    {        if(find % x == 0 && find / x <= table)             answer++;                 }      System.out.print(answer);    }}

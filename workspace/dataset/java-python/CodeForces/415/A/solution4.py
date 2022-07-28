@@ -1,0 +1,1 @@
+n,m=map(int,input().split())buttons=list(map(int,input().split()))lights=[0]*nfor i in buttons:    for j in range(i-1,len(lights)):        if lights[j]==0:            lights[j]=ifor i in range(len(lights)):    print(lights[i],end=" ")        

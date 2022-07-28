@@ -1,0 +1,1 @@
+for _ in range(int(input())):    n,a,b,c,d=map(int,input().split())    u1=a+b    d1=abs(a-b)    u2=c+d    d2=abs(c-d)    z=0    if(n*u1<d2):        z=1    elif(n*d1>u2):        z=1        if(z==1):        print("NO")    else:        print("YES")

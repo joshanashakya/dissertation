@@ -1,0 +1,1 @@
+n, d = (int(x) for x in input().strip().split(' '))a = [int(x) for x in input().strip().split(' ')]a.sort()res = nout = []for i in range(n):    for j in range(i, n):        if abs(a[j]-a[i]) <= d:            res = res - 1                    out.append(res)    res = n print(min(out))	 	  	   		       	 		 	  		 		

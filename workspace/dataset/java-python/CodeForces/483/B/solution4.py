@@ -1,0 +1,1 @@
+c1, c2, x, y = map(int, input().split()) def valid(m):    a = m - m // x    b = m - m // y - max(0, c1 - m // y + m // x // y)    return a >= c1 and b >= c2  l, r = 0, (1<<62)while l+1 < r:     m = l + r >> 1    if valid(m):        r = m    else:         l = mprint(r)

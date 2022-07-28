@@ -1,0 +1,1 @@
+import math n,k=map(int,input().split())a=list(map(int,input().split())) a.sort()r=a[0]%k;t=0for i in range(1,n):    if a[i]%k!=r:        print(-1)        break    else:        t+=(a[i]-a[0])//kelse:    print(t)

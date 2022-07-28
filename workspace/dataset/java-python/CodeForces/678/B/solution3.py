@@ -1,0 +1,1 @@
+import sys y = int(input())leap = 1 if y % 400 == 0 or y % 4 == 0 and y % 100 else 0 y += 1m = (366 if leap else 365) % 7 while 1:    l = 1 if y % 400 == 0 or y % 4 == 0 and y % 100 else 0    if m == 0 and leap == l:        print(y)        exit()     m = (m + (366 if l else 365)) % 7    y += 1

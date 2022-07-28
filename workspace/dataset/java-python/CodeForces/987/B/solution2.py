@@ -1,0 +1,1 @@
+import mathtry:    x,y = map(int, input().split())    z = y*(math.log(x))    w = x*(math.log(y))    if w>z:        print("<")    elif w == z:        print("=")    else:        print(">")except:    pass

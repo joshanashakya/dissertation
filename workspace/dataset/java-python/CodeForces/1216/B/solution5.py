@@ -1,0 +1,1 @@
+n = int(input()) daf = list(map(int, input().split()))mul = [x for x in range(n)]has = 0daf2 = sorted(daf, reverse=True)daf_has = [] for i in range(n):    x = daf2[i]    y = daf.index(x)    daf_has.append(str(y+1))    daf[y] = 0    has += daf2[i] * mul[i]has += nprint(has)print(' '.join(daf_has))

@@ -1,0 +1,1 @@
+n = int(input())l = list(map(int, input().split(" ")))d = []for i in range(n-1):    a = 1    if i%2:        a = -1    d.append(a*(abs(l[i]-l[i+1]))) s, b = 0, 0sm, bm = 0, 0for i in range(n-1):    s = max(d[i], s + d[i])    b = max(s, b) for i in range(1, n-1):    sm = min(d[i], sm + d[i])    bm = min(sm, bm)print(max(abs(bm), abs(b)))

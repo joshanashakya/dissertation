@@ -1,0 +1,1 @@
+n=int(input())a=list(map(int,input().split()))b=list(map(int,input().split()))# l=list(map(lambda x,y:y-x ,a,b))# l=sorted(l)b=sorted(b)remain=b[-1]+b[-2]pour=sum(a)if(remain<pour):    print("NO")else:    print("YES")

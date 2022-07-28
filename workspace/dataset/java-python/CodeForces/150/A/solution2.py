@@ -1,0 +1,1 @@
+import sysinput=sys.stdin.readlinedef read(): return map(int,  input().split())n=int(input())i=2ans, ans2=1, 0while i * i <= n:    if n%i==0:        ans+=1        ans2=i        n//=i        break    i += 1while i * i <= n:    if n%i==0:        ans=1        ans2*=i        n//=i        break    i += 1if ans == 1:    print(ans)    print(ans2)else:    print(ans)

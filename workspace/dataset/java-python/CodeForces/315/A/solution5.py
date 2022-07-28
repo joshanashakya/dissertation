@@ -1,0 +1,1 @@
+n=int(input())a=[]b=[]cnt=0carry=dict()for i in range(n):    ai,bi=[int(x) for x in input().split()]    a.append(ai)    b.append(bi)    if bi in carry.keys():        carry[bi]+=1    else:        carry[bi]=1for i in range(n):    carry[b[i]]-=1    if(a[i] not in carry.keys() or carry[a[i]]==0):        cnt+=1    carry[b[i]]+=1print(cnt)

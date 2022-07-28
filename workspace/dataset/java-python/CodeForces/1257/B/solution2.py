@@ -1,0 +1,1 @@
+import sysinput = sys.stdin.readline for test in range(int(input())):    x, y = [int(i) for i in input().split()]    if x == 1:        print("YES" if y == 1 else "NO")    elif x <= 3:        print("YES" if 1 <= y <= 3 else "NO")    else:        print("YES")

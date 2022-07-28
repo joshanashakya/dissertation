@@ -1,0 +1,1 @@
+a,b=map(int,input().split())if a%2==0:    if b>a/2:        print(int((b-a/2)*2))    else:        print(int(b*2-1))else:    if b>a//2+1:        print(int((b-(a//2+1))*2))    else:        print(int(b*2-1))

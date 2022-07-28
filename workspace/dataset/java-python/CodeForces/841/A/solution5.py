@@ -1,0 +1,1 @@
+n,k=map(int,input().split())s=list(input())l=[]d=[]for i in s:    if i not in d:        d.append(i)        l.append(s.count(i))c=0for j in l:    if j>k:        c=1if c==1:    print("NO")else:    print("YES")

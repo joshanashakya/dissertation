@@ -1,0 +1,1 @@
+y,k,n=map(int,input().split())print(-1) if len([print(i-y,end=' ') for i in range(y+(k-(y%k)),n+1,k)])==0 else print('')  # flag=True# for i in range(y+(k-(y%k)),n,k):# 	print(i-y,end=' ')# 	flag=False# if flag:# 	print(-1)  

@@ -1,0 +1,1 @@
+def solve():  s = input()  digit_sum = 0  even_cnt = 0  zero_cnt = 0  for x in s:    if int(x) == 0:      zero_cnt += 1    elif int(x) % 2 == 0:      even_cnt += 1    digit_sum += int(x)  if digit_sum % 3 == 0 and (zero_cnt >= 2 or even_cnt >= 1 and zero_cnt >= 1):    print('red')  else:    print('cyan') t = int(input())for _ in range(t):  solve()

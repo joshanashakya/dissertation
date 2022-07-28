@@ -1,0 +1,1 @@
+# coding: utf-8 from collections import Counter for ct in range(int(input())):  n = int(input())  a = list(map(int, input().split()))  unique = sorted([i for i, v in Counter(a).items() if v == 1])    print(a.index(unique[0]) + 1) if len(unique) > 0 else print(-1)

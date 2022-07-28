@@ -1,0 +1,1 @@
+//package codeforces;import java.util.*;public class PositioninFraction { 	public static void main(String[] args) {		Scanner in=new Scanner(System.in);		int a,b,c,i;		a=in.nextInt();b=in.nextInt();c=in.nextInt();		int value,flag=0;		for(i=1;i<=b;i++)		{			a*=10;			value=a/b;			a=a%b;			if(value==c){flag=1;System.out.println(i);break;}		}		if(flag==0)System.out.println(-1);	} }

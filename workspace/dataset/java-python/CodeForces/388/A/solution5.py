@@ -1,0 +1,1 @@
+import collections, bisectn = int(input())arr = list(map(int, input().split()))arr.sort()ans = 0while arr:    ans += 1    k = 1    arr.pop(0)    while arr and k <= arr[-1]:        j = bisect.bisect_left(arr, k)        arr.pop(j)        k += 1print(ans)

@@ -1,0 +1,1 @@
+from collections import*h,w=map(int,input().split())a=[input()for _ in[0]*h] def f(a,w): c=Counter((x.index('*'),x[::-1].index('*'),x.count('*'))for x in a if '*' in x);z=2;  if len(c)==2:(x,y,z),u=c return z>1 or x<=u[0]or y<=u[1]or sum(u)<w print('YNEOS'[f(a,w) or f(zip(*a),h)::2])  

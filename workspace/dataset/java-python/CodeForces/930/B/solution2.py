@@ -1,0 +1,1 @@
+s=input()def uniq(iii): tmp=0 for jj in range(1,len(s)):  bb={}  for ii in iii:   bb.setdefault(s[ii-jj],[]).append(ii)  tmp=max(tmp,sum(1 for vvv in bb.values() if len(vvv)==1)) return tmpaa={}for ii,ss in enumerate(s): aa.setdefault(ss,[]).append(ii)ans=0for iii in aa.values(): ans+=uniq(iii)print(ans/len(s))	   	 	  			   		 	  		       	

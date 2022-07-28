@@ -1,0 +1,1 @@
+n=int(input())s=input()l=[]l.append(s[0])for i in range(1,len(s)):    if((l[len(l)-1]=="a" or l[len(l)-1]=="e" or l[len(l)-1]=="i" or l[len(l)-1]=="o" or l[len(l)-1]=="u" or l[len(l)-1]=="y" )and ( s[i]=="a" or s[i]=="e" or s[i]=="i" or s[i]=="o" or s[i]=="u" or s[i]=="y")):        pass    else:        l.append(s[i])for i in range(len(l)):    print(l[i],end="")

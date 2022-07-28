@@ -1,0 +1,1 @@
+n = int(input()) l = list(map(int,input().split())) color = flag = 0 l.sort() for each in l:    flag=0    if(each!=-1):        for each_color in range(0,n):            ele=l[each_color]            if(ele!=-1 and ele%each==0):                flag=1                 l[each_color] = -1                   if(flag==1):            color+=1            print(color)

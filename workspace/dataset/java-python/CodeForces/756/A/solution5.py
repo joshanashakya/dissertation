@@ -1,0 +1,1 @@
+n = int(input())p = [int(i) for i in input().split()]b = [int(i) for i in input().split()]ans = 0visited = [False for i in range(n)]for i in range(n):    if visited[i]:        continue    ans += 1    while not visited[i]:        visited[i] = True        i = p[i] - 1if ans == 1:    ans = 0ans += (sum(b) + 1) % 2print(ans)  	    	  	 			  		 	     	

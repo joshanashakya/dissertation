@@ -1,0 +1,1 @@
+D,points = {},[25, 18, 15, 12, 10, 8, 6, 4, 2, 1]+[0]*50for tour in range(int(input())):	for j in range(int(input())):		player =str(input())		if player not in D:			D[player] = [0]*51+[player]		D[player][0] += points[j]		D[player][j+1] += 1win = D.values()print(sorted(win)[-1][-1])win= [[p[1]]+p for p in win]print(sorted(win)[-1][-1])

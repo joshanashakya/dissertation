@@ -1,0 +1,1 @@
+n, c = map(int, input().split())prices = list(map(int, input().split())) max_i = Nonemax_p = Nonefor i, p in enumerate(prices):    if max_p is None or (i < len(prices) - 1 and p - prices[i + 1] > max_p):        max_i = i        max_p = p - prices[i + 1] print(max(0, prices[max_i] - c - prices[max_i + 1]))

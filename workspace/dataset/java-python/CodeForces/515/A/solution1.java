@@ -1,0 +1,1 @@
+import java.util.Scanner; public class _0636DrazilandDate { 	public static void main(String[] args) {				Scanner sc = new Scanner(System.in);		int a=sc.nextInt();		int b=sc.nextInt();		int s=sc.nextInt();				int distance=Math.abs(a)+Math.abs(b);		if(s<distance || (distance-s)%2!=0) {			System.out.println("No");		}		else {			System.out.println("Yes");		}	} }

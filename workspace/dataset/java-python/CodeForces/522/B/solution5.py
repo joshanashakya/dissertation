@@ -1,0 +1,1 @@
+n=int(input())ar=[]max1=0 max2=0tw=0for i in range(n):    w,h=map(int,input().split())    tw+=w     if(h>=max1):        max2=max1         max1=h     if(max2<h and h<max1):        max2=max(max2,h)        ar.append((w,h))        for i in range(n):    if(ar[i][1]==max1):        print((tw-ar[i][0])*max2,end=' ')    else:         print((tw-ar[i][0])*max1 , end=' ')    

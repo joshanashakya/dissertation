@@ -1,0 +1,1 @@
+n = int(input())data = list(map(int, input().split())) uniqueness, great_l = [], 0for i in data:    if i not in uniqueness:        uniqueness.append(i)    if data.count(i) > great_l:        great_l = data.count(i) print(great_l, len(uniqueness)) 

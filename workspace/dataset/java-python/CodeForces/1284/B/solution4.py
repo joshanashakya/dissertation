@@ -1,0 +1,1 @@
+import bisectn = int(input())f = []l = []for i in range(n):    a = list(map(int,input().split()))    a = a[1:]    if sorted(a)==a[::-1]:        f.append(a[0])        l.append(a[-1])f.sort()l.sort()ans = 0for i in range(len(f)):    pos = bisect.bisect_right(f,l[i])    ans+=posprint(n*n-ans)        

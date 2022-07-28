@@ -1,0 +1,1 @@
+for _ in range(int(input())):	n=int(input())	odd_str=0	good_str=0	bad_str=0	for i in range(n):		s=input()		if len(s)%2!=0:			odd_str+=1		else:			if s.count('0')%2==0 and s.count('1')%2==0:				good_str+=1			else:				bad_str+=1	if bad_str%2!=0 and not odd_str:		print(n-1)	else:		print(n)   

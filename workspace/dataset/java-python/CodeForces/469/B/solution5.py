@@ -1,0 +1,1 @@
+p, q, l, r = map(int, input().split()) x = []z = []for i in range(p):    a, b = map(int, input().split())    for i in range(a, b+1):        z.append(i)for i in range(q):    a, b = map(int, input().split())    for i in range(a, b+1):        x.append(i)t = 0for i in range(l, r+1):    for val in x:        if val + i in z:            t += 1            break  print(t)

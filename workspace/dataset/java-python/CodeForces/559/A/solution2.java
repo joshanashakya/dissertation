@@ -1,0 +1,1 @@
+import java.util.Scanner; public class GeraldHexagonC313Q1 {	public static void main(String[] args) {		Scanner sc = new Scanner(System.in);		int[] arr = new int[6];		for(int i=0;i<6;i++) {			arr[i] = sc.nextInt();		}		int a1 = arr[0];		int a2 = arr[1];		int a3 = arr[2];		int a5 = arr[4];		System.out.println((a1+a2+a3)*(a1+a2+a3)-a1*a1-a3*a3-a5*a5);		sc.close();	}}

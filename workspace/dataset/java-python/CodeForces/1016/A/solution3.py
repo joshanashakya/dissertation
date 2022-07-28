@@ -1,0 +1,1 @@
+n, m = map(int, input().split())A = list(map(int, input().split()))cur = mans = [0]*nfor i, a in enumerate(A):    if a < cur:        cur -= a        ans[i] = 0    else:        q = (a-cur+m-1)//m        r = q*m-(a-cur)        #print(q, r)        if r == 0:            cur = m            ans[i] = q+1        else:            cur = r            ans[i] = qprint(*ans)

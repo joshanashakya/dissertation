@@ -1,0 +1,1 @@
+from math import sqrtn,v1,v2=list(map(int,input().split()))a=list(map(int,input().split()))x,y=list(map(int,input().split()))b=[]c=[]d=[]for i in range(n):    b.append(sqrt((x-a[i])**2+y**2))    d.append(a[i]/v1+b[i]/v2)e=sorted(d[1:])[0]f=[]for i in range(n):    if d[i]==e:        f.append(i)g=0h=-1for i in f:    if h==-1 or b[i]<h:        h=b[i]        g=i+1print(g)

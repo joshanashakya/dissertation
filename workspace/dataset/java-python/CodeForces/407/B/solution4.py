@@ -1,0 +1,1 @@
+n = int(input()) a = list(map(int,input().split())) values = [0 for k in range(n)]  for k in range(n) :     back = a[k]     if a[k] == k+1 :         values[k] = 2     else :         values[k] += 2         for t in range(a[k]-1,k) :             values [k] += values[t]         values[k] %= int(1e9 +7)print(int(sum(values)%(1e9 + 7)))

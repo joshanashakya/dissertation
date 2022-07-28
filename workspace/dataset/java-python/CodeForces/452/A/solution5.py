@@ -1,0 +1,1 @@
+import sysa =\    ['vaporeon','jolteon','flareon','espeon','umbreon','leafeon','glaceon','sylveon']n = int(input())s = input()for i in a:    if len(i) == n:        ss = 0        for x in range(n):            if s[x] == i[x]:                ss+=1        if ss == n-s.count('.'):            print(i) 

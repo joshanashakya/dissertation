@@ -1,0 +1,1 @@
+from math import ceil,floor,logx=int(input())def get_bits(x):    return len(bin(x)[2:])def test(x):    return bin(x)[2:].count('0')count=0val=[]while test(x)!=0:    if count%2==0:        x=x^(pow(2,get_bits(x))-1)        val.append(get_bits(x))    else:        x+=1    count+=1print(count)print(*val)

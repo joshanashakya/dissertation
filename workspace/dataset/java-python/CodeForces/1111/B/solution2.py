@@ -1,0 +1,1 @@
+import sysinput=sys.stdin.readlinen,k,m=map(int,input().split())ar=list(map(int,input().split()))ar.sort()avg=(sum(ar)+min(k*n,m))/nsu=sum(ar)for i in range(min(n-1,m)):    su-=ar[i]    avg=max(avg,(su+min((n-1-i)*k,m-1-i))/(n-1-i)) print(avg)

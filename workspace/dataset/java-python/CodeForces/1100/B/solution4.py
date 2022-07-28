@@ -1,0 +1,1 @@
+def ints():    return list(map(int,input().split()))n,le = ints()l = ints()d = [0]*nres = ''dis = 0def chk(n):    global d    global dis    for i in range(n):        d[i-1] -= 1        if d[i-1] == 0:            dis-=1for i in range(le):    d[l[i]-1]+=1    if d[l[i]-1] == 1:        dis+=1    if dis == n:        chk(n)        print(1,end='')    else:        print(0,end='') 

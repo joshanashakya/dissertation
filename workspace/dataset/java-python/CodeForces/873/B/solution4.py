@@ -1,0 +1,1 @@
+import io,os# input = io.BytesIO(os.read(0,os.fstat(0).st_size)).readline n = int(input())s = [int(x) for x in list(input())]l = []z = 0o = 0d = {}d[0] = -1for i in range(n):    if(s[i] == 0):        z+=1    else:        o+=1    l.append(z-o)ans = 0for i in range(n):    if(l[i] not in d):        d[l[i]] = i     else:        ans = max(ans, i-d[l[i]]) # print(l)print(ans)

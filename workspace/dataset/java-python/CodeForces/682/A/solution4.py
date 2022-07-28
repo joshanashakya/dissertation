@@ -1,0 +1,1 @@
+n, m = map(int, input().split()) t1 = [n//5]*5for x in range(1, n%5 + 1): t1[x] += 1 t2 = [m//5]*5for x in range(1, m%5 + 1): t2[x] += 1 s = 0s += t1[0]*t2[0] for x in range(1, 5): s += t1[x]*t2[5-x] print(s)

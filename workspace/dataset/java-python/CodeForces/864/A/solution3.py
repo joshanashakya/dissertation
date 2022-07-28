@@ -1,0 +1,1 @@
+n = int(input())freq = {}for _ in range(n):  num = int(input())  freq[num] = freq.get(num, 0) + 1keys = list(freq.keys())if len(keys) == 2 and freq[keys[0]] == n // 2:  print('YES')  print(*keys)else:  print('NO')

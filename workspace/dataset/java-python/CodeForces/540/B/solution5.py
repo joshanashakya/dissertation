@@ -1,0 +1,1 @@
+n, k, p, x, y = map(int, input().split())l = list(map(int, input().split()))m = 0for x1 in l:  if x1 >= y:    m += 1t = (n) // 2 + 1if m > t:  t=0else :  t = abs(t - m)if sum(l) + t * y + abs(n - k - t) > x or p < y or (n - k) < t:  print(-1)  exit()ans = [y] * t + [1] * (n - k - t)print(*ans)

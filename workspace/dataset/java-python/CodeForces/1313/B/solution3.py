@@ -1,0 +1,1 @@
+t = int(input())arr_1 = []arr_2 = []for x in range(t):    n,x,y = list(map(int,input().split(' ')))    arr_1.append(max(1,min(n,x+y-n+1)))    arr_2.append(min(n,x+y-1))for x in range(t):    print(arr_1[x],arr_2[x])

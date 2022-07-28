@@ -1,0 +1,1 @@
+import sys tc = int(sys.stdin.readline())for _ in range(tc):    n, r = map(int, sys.stdin.readline().split())    arr = sorted(set(map(int, sys.stdin.readline().split())))    idx = len(arr) - 1    cnt = 0    ans = 0    while idx >= 0:        if arr[idx] - cnt > 0:            ans += 1            cnt += r        idx -= 1    print(ans)

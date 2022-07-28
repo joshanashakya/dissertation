@@ -1,0 +1,1 @@
+n=int(input())a=[int(x)for x in input().split()]b=[int(x)for x in input().split()]mxa=0for i in range(n):    cur=a[i]    for j in range(i,n):cur|=a[j]    mxa=max(mxa,cur)mxb=0for i in range(n):    cur=b[i]    for j in range(i,n):cur|=b[j]    mxb=max(mxb,cur)print(mxa+mxb)

@@ -1,0 +1,1 @@
+t = int(input())for _ in range(t):    n, k = map(int, input().split())    s = (1 + (1 + 2*(k - 1))) * k / 2    if s <= n :         if k % 2 == 1 and n % 2 == 1:            print('YES')        elif k % 2 == 0 and n % 2 == 0:            print('YES')        else:            print('NO')    else :         print("NO")

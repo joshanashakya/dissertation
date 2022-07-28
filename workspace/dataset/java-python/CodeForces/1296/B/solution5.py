@@ -1,0 +1,1 @@
+cases = int(input())while cases:    cases -= 1    num = int(input())    ans = 0    ans += num // 10 * 10    rem = num % 10 + num // 10    while rem >= 10:        ans += rem // 10 * 10         rem = rem % 10 + rem // 10     print(ans + rem)

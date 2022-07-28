@@ -1,0 +1,1 @@
+import java.util.Scanner; public class problem65 { 	public static void main(String[] args) {		// TODO Auto-generated method stub		Scanner sc = new Scanner(System.in);		int n = sc.nextInt();		int f = sc.nextInt();		int [] a = new int[f];		for(int i=0;i<n;i++)		{			a[i%f]++;		}       for(int k:a)    	   System.out.print(k+" ");	} }

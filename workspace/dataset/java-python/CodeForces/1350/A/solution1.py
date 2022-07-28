@@ -1,0 +1,1 @@
+import matht = int(input())for _ in range(t):    n,k = map(int, input().split())    num = -1    for i in range(2,math.ceil(math.sqrt(n))+1):        if(n%i == 0):            num = i            break    k -= 1    if(num == -1):        num = n    # print(num)    n = n+num    q = k*2    print(n+q)        

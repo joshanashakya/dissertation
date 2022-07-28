@@ -1,0 +1,1 @@
+from sys import stdinfrom collections import defaultdictinput = stdin.readline# ~ T = int(input())T = 1for t in range(1,T + 1):	n,k = map(int,input().split())	_input = list(map(int,input().split()))	_input.sort(reverse = True)	total_cost = 0	for i in range(0,len(_input),k):		total_cost += (_input[i] - 1) * 2	print(total_cost)

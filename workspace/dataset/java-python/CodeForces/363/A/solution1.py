@@ -1,0 +1,1 @@
+chot = {0: "O-|-OOOO", 1: "O-|O-OOO", 2: "O-|OO-OO", 3: "O-|OOO-O", 4: "O-|OOOO-", 5: "-O|-OOOO", 6: "-O|O-OOO",        7: "-O|OO-OO", 8: "-O|OOO-O", 9: "-O|OOOO-"} num = int(input()) divs = [] if num == 0:    print(chot[0])    exit() while num > 0:    divs.append((num % 10))    num //= 10 for i in divs:    print(chot[i])

@@ -1,0 +1,1 @@
+import mathn = input()def length(s):    res = []    counter = 1    for i in range(1, len(s)):        if s[i - 1] == s[i]:            counter += 1        else:            res.append(counter)            counter = 1    res.append(counter)    return ressol = length(n)for i in range(len(sol)):    sol[i] = math.ceil(sol[i] / 5)print(sum(sol)) 

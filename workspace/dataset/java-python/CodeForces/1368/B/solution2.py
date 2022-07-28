@@ -1,0 +1,1 @@
+def solve(x,n):   if n==1:      return x   # if isprime(n):   #    return x+'s'*(n-1)   p=[1]*10   sn=""   product=1   i=0   while product<n:      product=product//p[i]      p[i]+=1      product=product*p[i]      i=(i+1)%10   for i in range(10):      sn+=x[i]*(p[i])   return sn if __name__=="__main__":   t=int(input())   # t=(3**9)*27   s="codeforces"   print(solve(s,t))

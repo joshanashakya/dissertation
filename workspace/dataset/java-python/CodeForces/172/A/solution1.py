@@ -1,0 +1,1 @@
+n=int(input())s1 = input()s2 = input()mi = 0for j in range(len(s1)):	if s1[j]!=s2[j]:		mi = j		breaktemp = s2for j in range(n-2):	s3 = input()	for i in range(len(temp)):		if temp[i]!=s3[i]:			mi = min(i,mi)			break	temp = s3print(mi)

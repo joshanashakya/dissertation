@@ -1,0 +1,1 @@
+n = int(input())s = input()ans = 0for i in range(n):    k = s[i:]    d = [0, 0]    for j in range(len(k)):        if k[j] == "U":            d[1] += 1        elif k[j] == "D":            d[1] -= 1        elif k[j] == "L":            d[0] -= 1        else:            d[0] += 1        if d == [0, 0]:            ans += 1print(ans)

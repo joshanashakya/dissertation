@@ -1,0 +1,1 @@
+import java.util.*; public class Test {    public static void main(String[] args) {                Scanner input = new Scanner(System.in);         double n = input.nextDouble();        double p = input.nextDouble();        double q = input.nextDouble();         System.out.printf(Locale.UK, "%.4f\n", p * n / (p + q));    }}

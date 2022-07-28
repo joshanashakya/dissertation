@@ -1,0 +1,1 @@
+import sys def main():    inp = sys.stdin.read().strip().split('\n')    n, m = map(int, inp[0].split())    t = []    for s in inp[1:]:        a, b = map(int, s.split())        t.append(a/b*m)    return min(t)        print(main())

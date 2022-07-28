@@ -1,0 +1,1 @@
+n = int(input())a = list(map(int,input().split()))res = 360 for qq in range(n):    sm = 0    for i in range(n - 1):        sm += a[i]        q = 360 - sm        res = min(res, abs(sm-q))    a = [a[-1]] + a[:-1] print(res)

@@ -1,0 +1,1 @@
+n, h, a, b, k = map(int, input().split())for _ in range(k):  t1, f1, t2, f2 = map(int, input().split())  ans = abs(t1 - t2)  if t1 == t2 or f1 in range(a, b + 1) or f1 > b and f2 <= b or f1 < a and f2 >= a:    ans += abs(f1 - f2)  elif f1 > b and f2 > b:    ans += f1 - b + f2 - b  elif f1 < a and f2 < a:    ans += a - f1 + a - f2  print(ans)

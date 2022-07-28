@@ -1,0 +1,1 @@
+r = lambda : list(map(int, input().split()))t = int(input())for _ in range(t):    arr = r()     dist1 = abs(arr[0] - arr[2]) - 1    dist2 = abs(arr[1] - arr[3]) - 1    dist12 = arr[2]    dist22 = arr[3]      a = dist1 * arr[1]    b = dist12 * arr[1]     c = dist2 * arr[0]    d = dist22 * arr[0]      print(max(a,b,c,d))    

@@ -1,0 +1,1 @@
+n = int(input())ls = list(map(int,input().split()))ls.sort()x = ls[len(ls)-1] - ls[0]y = 0x7fffffffffor i in range(1,n):    tep = ls[i+n-1] - ls[i]    if tep < y:        y = tepans = x*yx = ls[n-1] - ls[0]y = ls[len(ls)-1] - ls[n]ans = min(ans, x*y)print(ans)     			  			 	  		 	 	      		

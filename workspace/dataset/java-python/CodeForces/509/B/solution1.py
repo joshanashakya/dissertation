@@ -1,0 +1,1 @@
+n,c=map(int, input().split())l=list(map(int,input().split()))mn=min(l)mx=max(l)if mx-mn>c:	print("NO")else:	print("YES")	for i in range(n):		h=l[i]		for j in range(mn):			print(1, end=" ")		for j in range(h-mn):			print(j+1, end=" ")		print()

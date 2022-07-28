@@ -1,0 +1,1 @@
+t=int(input())for i in range(t):    n=int(input())    min=999999    a=list(map(int,input().split()))    a.sort()    if (len(set(a))==len(a)):        for i in range(n-1):            if(a[i+1]-a[i]<min):                min=a[i+1]-a[i]        print(min,'\n')    else:        print(0,'\n')                   

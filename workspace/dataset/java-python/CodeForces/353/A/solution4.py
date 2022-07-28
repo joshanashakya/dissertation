@@ -1,0 +1,1 @@
+n = int(input())l =0r =0flag = Falsefor i in range(n):    x, y = map(int, input().split())    l += x    r += y    if (x + y) %2 != 0: flag = Trueif l%2 == 0 and r%2 == 0:    print('0')elif (l + r)%2== 0 and flag:    print('1')else: print('-1')

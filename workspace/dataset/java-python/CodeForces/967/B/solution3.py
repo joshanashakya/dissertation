@@ -1,0 +1,1 @@
+n , s , a = map(int , input().split())r = lambda : list(map(int, input().split()))arr = r() t = sum(arr) f= arr[0]arr = arr[1:]arr.sort(reverse = True)  c = 0 for i in range(n-1):    if (f * s)/t >= a: break    t -= arr[i]    c += 1 print(c)   

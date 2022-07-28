@@ -1,0 +1,1 @@
+arr = list(map(int, input().split()))n=arr[0]m=arr[1]if(n==1):    print(1)elif(n%2==0):    if(m==n/2):        print(m+1)    elif(m==(n/2+1)):        print(m-1)    elif(m<(n/2)):        print(m+1)    else:        print(m-1)else:    k=(n+1)/2    if(m==k):        print(m-1)    elif(m<k):        print(m+1)    else:        print(m-1)                

@@ -1,0 +1,1 @@
+#include <iostream>#include<bits/stdc++.h>using namespace std;#define ll long long int main() {//	cout<<"GfG!";ll n,k;cin>>n>>k;ll arr[n];map<ll,ll>mp;for(ll i=0;i<n;i++){    cin>>arr[i];    mp[arr[i]]++;}sort(arr,arr+n);vector<ll>v;ll c=0;for(ll i=0;i<n;i++){    if(mp[arr[i]]==1){        c++;       mp[arr[i]*k]--;    }}    cout<<c; 	return 0;}

@@ -1,0 +1,1 @@
+import sysdef get_ints(): return map(int, sys.stdin.readline().strip().split())def get_ints_lists(): return list(map(int, sys.stdin.readline().strip().split()))def get_string(): return sys.stdin.readline().strip()input()li=get_ints_lists()li1=[]s=set(li)for i in s:    p=li.count(i)    li1.append(p)print(max(li1),len(s))   	 	  			 				 			 				 			 	

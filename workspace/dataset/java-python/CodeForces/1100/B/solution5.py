@@ -1,0 +1,1 @@
+import collectionsn, m = map(int, input().split())d = collections.defaultdict(set)cnt = collections.defaultdict(int)for k in map(int, input().split()):    cnt[k] += 1    d[cnt[k]].add(k)    if len(d[cnt[k]]) == n:        print(1, end="")    else:        print(0, end="")

@@ -1,0 +1,1 @@
+#https://codeforces.com/problemset/problem/198/Ak,b,n,t = map(int, input().split())x = 1a = 0flag = Falsefor _ in range(n):    z = k*x + b    x = z    a += 1    if z > t:        flag = True        breakif flag:    print(n-a+1)else:    print(n-a) 

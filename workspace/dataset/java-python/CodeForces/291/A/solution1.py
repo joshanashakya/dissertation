@@ -1,0 +1,1 @@
+from collections import Counter n = int(input())arr = list(map(int, input().split())) count = Counter(arr)ans = 0for key, val in count.items():    if val > 2 and key != 0:        print(-1)        exit()    if val == 2 and key != 0:        ans += 1 print(ans)  

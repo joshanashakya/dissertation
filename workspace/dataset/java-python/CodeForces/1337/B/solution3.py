@@ -1,0 +1,1 @@
+for _ in range(int(input())):    h,a,l= map(int,input().split())        while a!=0 and h > 0 and h > (h//2 + 10) :        h = h//2 + 10        a = a - 1        h = h - 10*l        if h <=0 :        print("YES")    else:        print("NO")        

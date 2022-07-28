@@ -1,0 +1,1 @@
+n = int(input())secuencia = input().split() c1 = 0c2 = 0c3 = 0 for i in range(n):    if secuencia[i] == '1':        c1 = c1+1    elif secuencia[i] == '2':        c2 = c2+1    else:        c3 = c3+1        maximo = max(c1,c2,c3)rpta = c1+c2+c3 - maximoprint(rpta)

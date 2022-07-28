@@ -1,0 +1,1 @@
+s, n = map(int, input().split())dragons = []for i in range(n):    x, y = map(int, input().split())    dragons += [[x, y]]dragons.sort()ans = 'YES'for i in range(n):    if s > dragons[i][0]:        s += dragons[i][1]    else:        ans = 'NO'        breakprint(ans)

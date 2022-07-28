@@ -1,0 +1,1 @@
+import java.util.*;public class BetOffice1{	public static void main(String args[]){		Scanner sc=new Scanner(System.in);		int a=sc.nextInt();		String s=sc.next();		s=s.toLowerCase();		int z=s.length()-1;		if(s.indexOf('s')==0&&s.indexOf('f',z)==z)			System.out.println("Yes");		else			System.out.println("No");	}}

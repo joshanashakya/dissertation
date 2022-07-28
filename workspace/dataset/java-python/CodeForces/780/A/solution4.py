@@ -1,0 +1,1 @@
+from collections import defaultdict n = int(input())dic = defaultdict(lambda: 0)socks = [int(i) for i in input().split()]table = 0Max = 0 for i in socks:    if dic[i] == 1:        if Max < table:            Max = table        table -= 1    else:        dic[i] = 1        table += 1 print(Max)

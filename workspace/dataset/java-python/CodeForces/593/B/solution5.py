@@ -1,0 +1,1 @@
+import sysinput=sys.stdin.readlinen=int(input())x1,x2=map(int,input().split())s=[]for _ in range(n):    k,b=map(int,input().split())    s.append([x1*k+b,x2*k+b])s.sort()ans='NO'for i in range(1,n):    x1,x2=s[i-1]    x3,x4=s[i]    if x1<x3 and x2>x4 or x1>x3 and x2<x4:ans='YES';breakprint(ans)

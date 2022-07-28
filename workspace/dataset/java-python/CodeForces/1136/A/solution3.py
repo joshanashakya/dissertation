@@ -1,0 +1,1 @@
+n = int(input())m = []while n!=0:    l,r = map(int,input().split())    m.append(l)    m.append(r)    n-=1k = int(input())for i in range(len(m)):    if k<=m[i]:        print(int(((len(m)-i)+1)/2))        break

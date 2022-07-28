@@ -1,0 +1,1 @@
+n, m = [int(y) for y in input().split()]a=set()found=Falsefor _ in range(n):    s=input()    for i in range(m):        if s[i]=='G':g=i        if s[i]=='S':c=i    if c<g:        print(-1)        found=True        break    else:        a.add(c-g)if not found:print(len(a))

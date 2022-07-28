@@ -1,0 +1,1 @@
+n=int(input())s=list(input())x=0for i in range(0,n-1):    if s[i]=='U' and s[i+1]=='R':        s[i]='D'        s[i+1]='D'        x+=1    elif s[i]=='R' and s[i+1]=='U':        s[i]='D'        s[i+1]='D'        x+=1print(n-x)                

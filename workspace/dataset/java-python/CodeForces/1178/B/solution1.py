@@ -1,0 +1,1 @@
+s = input()dp = []dp.append([0] * len(s))dp.append([0] * len(s))dp.append([0] * len(s))for i in range(1, len(s)):    dp[0][i] = dp[0][i - 1]    dp[1][i] = dp[1][i - 1]    dp[2][i] = dp[2][i - 1]    if s[i] == 'o':        dp[1][i] += dp[0][i - 1]    if i > 0 and s[i - 1] == 'v' and s[i] == 'v':        dp[0][i] += 1        dp[2][i] += dp[1][i]print(dp[2][-1])

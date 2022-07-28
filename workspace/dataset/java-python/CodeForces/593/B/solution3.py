@@ -1,0 +1,1 @@
+ertekek=[]n=int(input())x1, x2 = [int(i) for i in input().split()]for i in range(n):    k, b = [int(i) for i in input().split()]    bal=k*x1+b    jobb=k*x2+b    ertekek.append([bal,jobb])ertekek.sort()szamlalo=0for i in range(len(ertekek)-1):    if ertekek[i][0]<ertekek[i+1][0] and ertekek[i][1]>ertekek[i+1][1]:        szamlalo+=1if szamlalo>0:    print("YES")else:    print("NO")

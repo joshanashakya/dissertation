@@ -1,0 +1,1 @@
+import mathl,r = map(int, input().strip().split(' '))#lst = list(map(int, input().strip().split(' ')))c=0for i in range(32):    for j in range(21):        p=(2**i)*(3**j)        if p>=l and p<=r:            c+=1            print(c)

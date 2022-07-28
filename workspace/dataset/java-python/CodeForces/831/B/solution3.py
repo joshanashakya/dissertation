@@ -1,0 +1,1 @@
+x=list(input().strip())y=list(input().strip()) s=list(input().strip()) z=s for i in range(len(z)):    if z[i].isnumeric():        continue    else:        if z[i].islower():            j=z[i].lower()            ind=x.index(j)            z[i]=y[ind]        else:            j=z[i].lower()            ind=x.index(j)            z[i]=y[ind].upper()  print(''.join(z))            

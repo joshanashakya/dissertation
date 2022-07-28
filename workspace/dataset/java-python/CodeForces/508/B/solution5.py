@@ -1,0 +1,1 @@
+n=list(input())a,b=-1,-1for i,j in enumerate(n):    if int(j)>b and int(j)%2==0 and int(j)<int(n[-1]):        b=int(j)        a=i        breakif a==-1 and b==-1:    a, b = -1, 2**31    for i, j in enumerate(n):        if int(j) % 2 == 0 :            b = int(j)            a = iif a==-1:    print(-1)else:    n[a],n[-1]=n[-1],n[a]    print("".join(n))

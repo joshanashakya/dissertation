@@ -1,0 +1,1 @@
+import syssys.stdin = open(r'input.txt', 'r')sys.stdout = open(r'output.txt', 'w')n, k = map(int, input().split())arr = list(map(int, input().split()))for i in range(k-1,2*n):    pos=i%n    if arr[pos]==1:        print(pos+1)        break

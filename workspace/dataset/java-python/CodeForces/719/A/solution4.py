@@ -1,0 +1,1 @@
+t = int(input())a = list(map(int, input().split())) if len(a) == 1:    if a[0] == 0:        print('UP')    elif a[0] == 15:        print('DOWN')    else:        print(-1)    quit() last = a[-1]prev = a[-2] if last == 0 or (last > prev and last != 15):    print('UP')else:    print('DOWN')

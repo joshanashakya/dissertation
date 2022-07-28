@@ -1,0 +1,1 @@
+n, m, d = map(int, input().split())A = []for i in range(n):    A += list(map(int, input().split())) A = sorted(A)median = A[m*n // 2] rem = A[0] % d    sum = 0 for i in range(n*m):    if A[i] % d != rem:        print(-1)        exit()    else:        sum += abs(A[i] - median) / d print(int(sum)) 

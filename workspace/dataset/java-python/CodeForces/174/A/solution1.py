@@ -1,0 +1,1 @@
+n,t=map(int,input().split())l=list(map(int,input().split()))X=float((sum(l)+t)/n )#print(X)for i in l:    if(i>X):        print(-1)        breakelse:    for i in l:        print("{0:.6f}".format(X-i))

@@ -1,0 +1,1 @@
+a,b = map(int,input().split())i = 0d = 0while a>=0 and b>=0:    if i%2 == 0 and i>0:        if b-d>=0:            b-=d            i+=1            d+=1        else:            print('Valera')            break    elif a-d>=0:        a-=d        i+=1        d+=1    else:        print('Vladik')        break                 

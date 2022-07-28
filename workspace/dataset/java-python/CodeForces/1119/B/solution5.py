@@ -1,0 +1,1 @@
+def check(k):    g=h    x=sorted(l[:k+1],reverse=True)    for i in range(0,k+1,2):        if g<x[i]:            return False        g-=x[i]    return True         n,h=list(map(int,input().split()))l=list(map(int,input().split()))for j in range(n-1,-1,-1):    if check(j):        print(j+1)        break

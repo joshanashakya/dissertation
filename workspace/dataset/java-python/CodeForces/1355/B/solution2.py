@@ -1,0 +1,1 @@
+t=int(input())for i in range(t):    n=int(input())    l=list(map(int,input().split()))    l.sort()    ans=i=0    for x in l:        i+=1        if i == x :            ans+=1            i=0    print(ans)

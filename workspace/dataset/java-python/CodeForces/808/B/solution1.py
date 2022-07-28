@@ -1,0 +1,1 @@
+n, k = [int(j) for j in input().split()]nums = [int(j) for j in input().split()]s = sum(nums[: k])tot = sp1, p2 = 0, kfor j in range(n - k):    s -= nums[p1]    s += nums[p2]    tot += s    p1 += 1    p2 += 1print(tot / (n - k + 1))

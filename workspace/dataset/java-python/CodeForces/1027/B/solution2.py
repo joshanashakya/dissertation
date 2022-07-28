@@ -1,0 +1,1 @@
+import sys inp = sys.stdin.readlines()ii = 0 n, q = map(int, inp[ii].split())ii += 1 for qu in range(q):    x, y = map(int, inp[ii].split())    ii += 1    c = (x - 1) * n + y    a = (c + 1) // 2    if (x + y) %2 == 1:        a += (n**2 + 1) // 2    print(a)  

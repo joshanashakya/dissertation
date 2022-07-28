@@ -1,0 +1,1 @@
+t=int(input())for i in range(t):   cnt=0   cnt1=0   s=input()   for i in s:      if i=='0':         cnt=cnt+1      else:         cnt1=cnt1+1   m=min(cnt,cnt1)   if m%2==1:      print('DA')   else:      print('NET')

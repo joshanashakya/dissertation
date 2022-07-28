@@ -1,0 +1,1 @@
+a = int(input())res = 0for i in range(a):    r = list(map(int, input().split()))    res = res + int(r[0] > r[1]) - int(r[0] < r[1])print(['Friendship is magic!^^', 'Mishka', 'Chris'][res if not(res) else abs(res)//res])

@@ -1,0 +1,8 @@
+for _ in range(int(input())):    a, b, x, y, n = map(int, input().split())
+n1 = min(a - x, n)
+n2 = min(b - y, n - n1)
+res1 = (a - n1) * (b - n2)
+n1 = min(b - y, n)
+n2 = min(a - x, n - n1)
+res2 = (a - n2) * (b - n1)
+print(min(res1, res2))

@@ -1,0 +1,1 @@
+num_numbers = int(input())integers = sorted([int(i) for i in input().split()])num_nums = []for number in set(integers):    num_nums.append(integers.count(number))    num_nums = sorted(num_nums, reverse = True)print(num_nums[0])

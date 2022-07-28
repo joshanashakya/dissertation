@@ -1,0 +1,1 @@
+n=int(input())arr=list(map(int,input().split())) j=-1re=1for i in range(n):    if(j==-1 and arr[i]):        j=i        continue    if(arr[i]==1):        re*=(i-j)        j=iif(j==-1):    re=0print(re)

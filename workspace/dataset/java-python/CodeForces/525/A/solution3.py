@@ -1,0 +1,1 @@
+from collections import defaultdict t=1 for _ in range(t):    n=input()    s=input()    keys=defaultdict(int)    ans=0    for i in s:        if i.islower():            keys[i]+=1        else:            if keys[i.lower()]>0:                keys[i.lower()]-=1            else:                ans+=1    print(ans)

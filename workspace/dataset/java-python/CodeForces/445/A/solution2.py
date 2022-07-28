@@ -1,0 +1,1 @@
+rows, cols = map(int, input().split())grid = [input() for _ in range(rows)] for i in range(rows):    for j in range(cols):        if grid[i][j] == '.':            colors = ['B', 'W']            print(colors[i % 2 ^ j % 2],end='')        else:            print('-',end='')    print()

@@ -1,0 +1,1 @@
+n = int(input())cho = [int(x) for x in input().split()]cho.reverse()s = cho[0]prev = cho[0]for i in range(1, len(cho)):    if cho[i] >= prev:        if prev > 1:            s += prev - 1            prev -= 1        else:            break    else:        s += cho[i]        prev = cho[i]print(s)

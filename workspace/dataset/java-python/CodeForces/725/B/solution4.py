@@ -1,0 +1,1 @@
+s=input()n=int(s[:len(s)-1])s=s[-1]ans=0if n%2==0:    if (n//2)%2==1:                ans=ans+(((n-1)//2)//2)*16+7    else:        ans=ans+(((n-3)//2)//2)*16 +7else:    if (n//2)%2==0:        ans=ans+((n//2)//2)*16    else:        ans=ans+(((n-2)//2)//2)*16if s in ['d','e','f']:    ans=ans+abs(ord(s)-ord('f'))+1else:    ans=ans+abs(ord(s)-ord('a'))+4print(ans)

@@ -1,0 +1,1 @@
+# import sys#import math#sys.stdout=open("python/output.txt","w")#sys.stdin=open("python/input.txt","r") t=int(input())for i in range(t):        a,b,c,d=(map(int,input().split()))    f=a+b    s=c+d    print(max(f,s))                                        

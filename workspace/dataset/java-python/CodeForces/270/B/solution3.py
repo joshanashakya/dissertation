@@ -1,0 +1,1 @@
+n = int(input())aux = input().split()first = int(aux[0])flag = 1for i in range(1,n):    if int(aux[i]) < first: flag=1    else: flag+=1    first = int(aux[i])print(n-flag)  		 		 	 		   	  						   	 	

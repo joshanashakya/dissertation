@@ -1,0 +1,1 @@
+for _ in range(int(input())):    n=int(input())    s=input()    if n==0:        print("YES")    else:            count=0        for i in range(n//2):            if ord(s[i])-ord(s[n-1-i])==2 or s[i]==s[n-1-i] or ord(s[i])-ord(s[n-1-i])==-2:                count+=1                if (count==(n//2)):            print("YES")        else:            print("NO")

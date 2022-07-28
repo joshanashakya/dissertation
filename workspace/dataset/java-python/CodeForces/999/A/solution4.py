@@ -1,0 +1,1 @@
+N,S=map(int,input().split())A=list(map(int,input().split()))Score=0while(len(A)>0 and (A[0]<=S or A[len(A)-1]<=S)):    if A[0]<=S:        Score+=1        A.pop(0)    else:        Score+=1        A.pop()print(Score)

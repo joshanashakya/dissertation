@@ -1,0 +1,1 @@
+n = int(input()) space = n*2arr = [' '*space + "0"] for i in range(1,n+1):    space -= 2    arr.append((' '*space + (arr[-1] + " " + str(i)).strip())) # print(len(arr[3])) for i,j in enumerate(arr):    arr[i] = j + j[:-1][::-1] # print(*arr , sep = '\n')for i in arr: print(i.rstrip())arr = arr[:-1][::-1]# print(*arr , sep = '\n')for i in arr: print(i.rstrip())

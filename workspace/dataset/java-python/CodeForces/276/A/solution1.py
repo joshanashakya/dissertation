@@ -1,0 +1,1 @@
+import sysinput = sys.stdin.readlinerr = lambda: sys.stdin.readline().strip()restaurants, givenTime = map(int, rr().split())restDetails = [tuple(map(int, rr().split())) for _ in range(restaurants)]restDetails.sort() ans = -10 ** 69for f, t in restDetails:    cur = f    if t > givenTime:        cur = f - (t - givenTime)    ans = max(cur, ans)print(ans)

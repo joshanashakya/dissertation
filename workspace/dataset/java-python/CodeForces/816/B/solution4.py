@@ -1,0 +1,1 @@
+  import sysinput = sys.stdin.readline  n,k,q = map(int,input().split())  t=[0]*(200002)b=[0]*(200002)  for j in range(n):    x,y = map(int,input().split())     t[x]+=1    t[y+1]-=1  for j in range(1,200002):    t[j]+=t[j-1]     if t[j]>=k:        b[j]=1    b[j]+=b[j-1] while q>0:    a,r = map(int,input().split())     print(b[r]-b[a-1])    q-=1

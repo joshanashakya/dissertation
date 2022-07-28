@@ -1,0 +1,1 @@
+import sysn, m = (list(map(int,input().split())))a = (list(map(int,input().split())))b = (list(map(int,input().split())))a.sort()def findPos(arr, l, r, x):    m=0    while l<=r:        m = (l+r)//2                if arr[m] <= x:            l = m+1        else:            r = m-1            return lans = []for x in b:    ans.append(str(findPos(a, 0, n-1, x)))print(' '.join(ans))

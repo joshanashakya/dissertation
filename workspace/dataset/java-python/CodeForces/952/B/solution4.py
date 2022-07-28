@@ -1,0 +1,1 @@
+normal = ["don't think so","don't touch me","not bad","cool","great"]grumpy = ["are you serious?","go die in a hole","worse",'terrible',"don't even"]for i in range(0,10):    print(i)    S = input()    if S in normal:        print("normal")        break    elif S in grumpy:        print("grumpy")        break

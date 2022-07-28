@@ -1,0 +1,1 @@
+n,L,a = map(int,input().split())T = [(0,0)]for i in range(n):    t,l = map(int,input().split())    l += t    T.append((t,l)) count = 0for i in range(1,n+1):    if (T[i][0] - T[i-1][1] >= a):        count += (T[i][0] - T[i-1][1]) // aif (L - T[n][1] >= a):    count += (L - T[n][1]) // aprint(count)             

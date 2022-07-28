@@ -1,0 +1,1 @@
+n=int(input())def pp(t):    res=['O']*8    res[2]='|'    res[t%5+3]='-'    res[1-t//5]='-'    print("".join(res))if n==0:    pp(n)while n!=0:    t=n%10    pp(t)    n//=10	 	 	 			  	   			 			 	 					

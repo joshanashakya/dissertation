@@ -1,0 +1,1 @@
+from sys import*input= stdin.readlinet=int(input())for _ in range(t):    n=int(input())    l=list(map(int,input().split()))    m=[-1]*n    least=l[-1]    for i in range(n-2,-1,-1):        if(least>=l[i]):            least=l[i]        else:            m[i]=least    bad=n-m.count(-1)    #print(m)    print(bad)

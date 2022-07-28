@@ -1,0 +1,1 @@
+n=int(input())arr=[int(x) for x in input().split()]#l=[0 for i in range(n)]#mini=arr[0]d={}for i in range(n):    if arr[i]-1 in d:        d[arr[i]]=d[arr[i]-1]+1    else:        d[arr[i]]=1print(n-max(d.values()))        

@@ -1,0 +1,1 @@
+def solve():    n = int(input())    p = list(map(int, input().split()))    for i in range(n):        s = input()        tot = 0        tot += s.count('a')        tot += s.count('e')        tot += s.count('i')        tot += s.count('o')        tot += s.count('u')        tot += s.count('y')        if tot != p[i]:            print('NO')            return    print('YES')    solve()

@@ -1,0 +1,1 @@
+n = int(input())a= [] for i in range(1,n+1):    b=input()    a.append(b)a.sort(key=len)t= 0for i in range (1,n):        if a[i-1] in a[i]:        t = 0            else:        t = 1       # print("no")        breakif (t ==0):    print("YES")    for i in range(n):        print(a[i],end="\n")else:     print("NO")

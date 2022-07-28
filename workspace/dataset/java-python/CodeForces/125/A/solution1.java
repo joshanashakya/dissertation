@@ -1,0 +1,1 @@
+/*package whatever //do not write package name here */ import java.io.*;import java.util.*;public class S {	public static void main (String[] args) {		Scanner in=new Scanner(System.in);		int n=in.nextInt();		int q=n/3,r=n%3,f=0,i=0;		if(r==2)q++;		f+=(q/12);i+=q%12;		System.out.print(f+" "+i);	}}

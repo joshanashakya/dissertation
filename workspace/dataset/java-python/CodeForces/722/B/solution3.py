@@ -1,0 +1,1 @@
+'''import syssys.stdin=open("input.txt","r")sys.stdout=open("output.txt","w")''' n=int(input())p=[int(i) for i in input().split()]flag=Truefor i in range(n):    s=input()    if (s.count('a')+s.count('e')+s.count('i')+s.count('o')+s.count('u')+s.count('y'))!=p[i] and flag:        flag=Falseif flag:    print("YES")else:    print("NO")

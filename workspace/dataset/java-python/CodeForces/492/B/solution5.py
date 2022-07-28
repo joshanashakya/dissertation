@@ -1,0 +1,1 @@
+n,m = map(int,input().split())arr = list(map(int,input().split()))arr.sort()count = arr[0]for i in range(1,n):    if((arr[i]-arr[i-1])/2 > count):        count = (arr[i]-arr[i-1])/2if(m-arr[-1] > count):    count = m-arr[-1]print(count)

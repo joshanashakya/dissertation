@@ -1,0 +1,1 @@
+n=int(input())arr=[int(z) for z in input().split()]x,y=map(int,input().split())for i in range(1,n):    b=sum(arr[:i])    a=sum(arr[i:])    if b>=x and b<=y and a>=x and a<=y:        print(i+1)        exit()print(0)

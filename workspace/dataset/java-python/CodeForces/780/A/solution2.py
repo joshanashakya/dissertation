@@ -1,0 +1,1 @@
+import sys def main():    _, *l = map(int, sys.stdin.read().strip().split())    s, c, m = set(), 0, 0    for i in l:        if i in s:            s.remove(i)            if m < c: m = c            c -= 1        else: s.add(i); c += 1    return m        print(main())

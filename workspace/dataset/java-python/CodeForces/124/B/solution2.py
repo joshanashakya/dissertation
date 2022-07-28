@@ -1,0 +1,1 @@
+import itertoolsn,k=map(int,input().split())a=list(range(k))b=[]for i in range(n): b.append(input())ans=10**10for z in itertools.permutations(a):    m1,m2=10**10,0    for p in b:        s=""        for i in z: s+=p[i]        x=int(s)        m1,m2=min(m1,x),max(m2,x)    ans=min(ans,m2-m1)print(ans)

@@ -1,0 +1,1 @@
+for _ in range(1):        n, b, d = map(int , input().split())    arr = list(map(int , input().split()))     trashBin = 0    mixed = 0    total = 0    for i in range(n):        if arr[i] > b:            trashBin += b        else:            mixed += arr[i]         if mixed > d:             trashBin = 0            mixed = 0            total += 1     print(total)

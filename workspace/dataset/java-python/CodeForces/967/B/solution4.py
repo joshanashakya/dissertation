@@ -1,0 +1,1 @@
+n, A ,B = map(int, input().rstrip().split())l = list(map(int, input().rstrip().split()))se=l[1:]se.sort(reverse=True)re=(A*l[0])/Bse.insert(0,l[0])S=sum(l)if S<=re:    print(0)    exit()# print(se)c=0for i in range(1,n):    S-=se[i]    if S<=re:        print(c+1)        exit()    c+=1

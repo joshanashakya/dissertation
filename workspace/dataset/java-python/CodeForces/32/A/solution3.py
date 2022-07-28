@@ -1,0 +1,1 @@
+n,d=map(int,input().split())a=list(map(int,input().split()))cnt=0i=0for i in range(n):    for j in range(i+1,n):        if i!=j and abs(a[i]-a[j])<=d:            cnt=cnt+2print(cnt)  		      	 	   	  	  	   		 	

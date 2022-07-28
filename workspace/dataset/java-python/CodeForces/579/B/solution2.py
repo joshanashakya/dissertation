@@ -1,0 +1,1 @@
+n = int(input())arr = []ans = [0] * (2 * n + 1)vis = [0] * (2 * n + 1)for i in range(2, 2 * n + 1):    temp = list(map(int, input().split()))    for j in range(1, i):        arr.append([temp[j - 1], i, j])arr.sort(reverse = True)for i in arr:    if vis[i[1]] or vis[i[2]]: continue    ans[i[1]] = i[2]    ans[i[2]] = i[1]    vis[i[1]] = 1    vis[i[2]] = 1print(*ans[1: ])

@@ -1,0 +1,1 @@
+import math as mtimport sys,stringinput=sys.stdin.readlinefrom collections import defaultdictL=lambda : list(map(int,input().split()))Ls=lambda : list(input().split())M=lambda : map(int,input().split())I=lambda : int(input()) n=I()l=L()m=0g=l[0]for i in l:    g=mt.gcd(g,i)    m=max(m,i)ans=(m//g-n)if(ans%2):    print("Alice")else:    print("Bob")

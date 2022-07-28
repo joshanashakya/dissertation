@@ -1,0 +1,1 @@
+n = int(input())l = list(map(int,input().split()))ans = l[-1]x = n - 1p = l[-1]while x >= 1:    if p == 0:        break    else:        if l[x - 1] >= p:            ans += p-1            p = p - 1        else:            ans += l[x-1]            p = l[x-1]        x -= 1print(ans)

@@ -1,0 +1,1 @@
+n = int(input())flag = Falsefor i in range(4):    l = [int(i) for i in input().split()]    if not flag and n >= min(l[0],l[1]) + min(l[2],l[3]):        print(i+1, min(l[0],l[1]), n-min(l[0],l[1]))        flag = Trueif not flag:    print(-1)       		 							  	  	 	 	 		 	

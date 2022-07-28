@@ -1,0 +1,1 @@
+t = int(input())while(t):     n,a,b = map(int,input().split())    al= 1    bl=2    cost=0        if((a//al)>(b//bl)):       # cost=(bl*b) +a*(n-(bl*b))       cost =(n//bl)*b+a*(n%bl)       #       print(cost)    else:        cost=(n//al)*a+ b*(n%al)        print(cost)    t=t-1                

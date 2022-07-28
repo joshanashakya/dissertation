@@ -1,0 +1,1 @@
+from  math import combdef minp(arr):    arr=sorted(arr)    st=arr[:3]    ans=1    for i in set(st):        ans*=comb(arr.count(i),st.count(i))    return ans a=input()lst=list(map(int,input().strip().split()))print(minp(lst))

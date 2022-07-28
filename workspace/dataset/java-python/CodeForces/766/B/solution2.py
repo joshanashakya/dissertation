@@ -1,0 +1,1 @@
+if __name__ == "__main__":    n = int(input())    segments = list(map(int, input().split()))        segments.sort()     i,j,k = 0,1,n-1    flag = False    for i in range (1,n-1):        if segments[i-1] + segments[i] > segments[i+1]:            flag = True            break     if flag:        print('YES')    else:        print('NO')

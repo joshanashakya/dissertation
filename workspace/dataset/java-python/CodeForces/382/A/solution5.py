@@ -1,0 +1,1 @@
+s= input()left = s.index("|")right = len(s)-left-1t = input()if abs(left-right)>len(t) or (len(s)+len(t))%2==0:    print("Impossible")else:    if left>right:        print(t[0:(len(t)+(len(s)-1))//2-left]+s+t[(len(t)+(len(s)-1))//2-left:len(t)])    else:        print(t[(len(t)+(len(s)-1))//2-right:len(t)]+s+t[0:(len(t)+(len(s)-1))//2-right])

@@ -1,0 +1,1 @@
+for _ in range(int(input())):    n=int(input())    a=[int(x) for x in input().split()]    a.sort()    flag=0    for i in range(n-1):        if a[i+1]==a[i]+1:            flag=1            break    if flag:        print(2)    else:        print(1)

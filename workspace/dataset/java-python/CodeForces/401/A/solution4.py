@@ -1,0 +1,1 @@
+import mathn,x= map(int,input().split())l=[]c=0y=0list1=[]l.extend(map(int,input().split()))sumy= sum(l)res=math.fabs(sumy) if res>x:  while res>x:    res-=x    c+=1  else :    c+=1elif not res:  print(0)else:  print(1)if c:  print(c)

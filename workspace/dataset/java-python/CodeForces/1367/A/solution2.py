@@ -1,0 +1,1 @@
+x = int(input())a = []for i in range(x):    a.append(input()) t = []for i in a:    s = ""    if(len(i)>2):        for x in range(0, len(i), 2):            s+= i[x]        s+=i[len(i)-1]    else:        t.append(i)    if(len(s)!=0):        t.append(s) for i in range(len(t)):    print(t[i])

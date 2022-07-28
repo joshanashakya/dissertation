@@ -1,0 +1,1 @@
+n = int(input()) a = [int(x) for x in input().split()] max_length_local = 1 max_length = 1 i = 0 while i < (n - 1):    if a[i + 1] > a[i]:        max_length_local += 1    else:        max_length_local = 1     if max_length_local > max_length:        max_length = max_length_local     i += 1 print(max_length)

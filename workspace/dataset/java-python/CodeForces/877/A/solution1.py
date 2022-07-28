@@ -1,0 +1,1 @@
+import sys inp = sys.stdin.readlines(); ii = 0 out = [] name = inp[ii]ii += 1 lst = ['Danil', 'Olya', 'Slava', 'Ann', 'Nikita'] cnt = 0 for x in lst:    cnt += name.count(x) if cnt == 1:    sys.stdout.write("YES")else:    sys.stdout.write("NO")  

@@ -1,0 +1,1 @@
+s=list(input())v=["A", "O", "Y", "E", "U", "I","a","o","y","e","u","i"]for i in range(len(s)):    if s[i] not in v:            if ord(s[i])<97:               print('.',end="")               print(chr(ord(s[i])+32),end="")            else:                print('.',end="")                print(s[i],end="")

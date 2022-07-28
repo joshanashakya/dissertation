@@ -1,0 +1,1 @@
+n,m=map(int,input().split())from sys import*ans=4for _ in range(n):    a=[int(x)for x in input().split()]    if _==0 or _==n-1:        if a[0] or a[-1]:print(1);exit()        else:            for i in a[1:-1]:                if i:ans=2    else:        if a[0] or a[-1]:            ans=2print(ans)  

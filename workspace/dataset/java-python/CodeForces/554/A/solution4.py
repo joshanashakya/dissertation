@@ -1,0 +1,1 @@
+b = []s = input()b += sans = set()for i in range(len(s) + 1):    for j in range(26):        b.insert(i, chr(ord('a') + j))        now = 0        y = 37        for h in range(len(b)):            now += (ord(b[h]) - ord('a') + 1) * y            y *= 37        del b[i]        ans.add(now)print(len(ans))

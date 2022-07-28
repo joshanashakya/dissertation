@@ -1,0 +1,1 @@
+from collections import defaultdict,dequeimport sysimport bisectinput=sys.stdin.readline  n=int(input())a=[int(i) for i in input().split() if i!='\n']ind=defaultdict(int)for i in range(n):    ind[a[i]]=ia.sort()ans=[0]*(n)for i in range(n):    index=ind[a[(i+1)%n]]    ans[index]=a[i]print(*ans)

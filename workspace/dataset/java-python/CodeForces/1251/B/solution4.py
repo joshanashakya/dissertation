@@ -1,0 +1,1 @@
+for _ in range(int(input())):    n = int(input())    odd,evenGood,evenBad = 0,0,0    for i in range(n):        a = input()        if len(a)%2==1:            odd+=1        if a.count('0')%2==0:            evenGood+=1        else:            evenBad+=1    print(n-1 if (odd==0 and evenBad%2==1) else n)

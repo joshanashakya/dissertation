@@ -1,0 +1,1 @@
+def solve(s,n,k):  d= {}  for c in s:    if d.get(c):      d[c]+=1    else:      d[c] = 1  for i in d:    if d[i] > k:      return 'NO'  return 'YES'              def main() :  # s = input()  # n = int(input())  arr = list(map(int, input().split(' ')))  s = input()  # res=''  # for _ in range(n):  #   i = input()  #   arr.append(i)  print(solve(s,*arr))main()

@@ -1,0 +1,1 @@
+def main_function():    n = int(input())    l_0 = 0    r_0 = 0    for i in range(n):        l, r = [int(i) for i in input().split(" ")]        if l == 0:            l_0 += 1        if r == 0:            r_0 += 1    return min(l_0, n - l_0) + min(r_0, n - r_0)  print(main_function())

@@ -1,0 +1,1 @@
+n,k,q=map(int,input().split()) c = [0]*200002p = [0]*200002 for i in range(n):    a,b=map(int,input().split())    p[a]+=1    p[b+1]-=1for i in range(1,200002):    p[i]+=p[i-1]    c[i]=c[i-1]+(p[i]>=k)l = []for i in range(q):    a,b = map(int,input().split())    print(c[b]-c[a-1])

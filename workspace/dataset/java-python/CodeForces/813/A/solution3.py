@@ -1,0 +1,1 @@
+def solve():    n = int(input())    a = [int(s) for s in input().split(' ')]    x = sum(a)    m = int(input())    u = [tuple([int(x) for x in input().split(' ')]) for i in range(m)]    for l, r in u:        if r >= x:            return max(l, x)    return - 1  print(solve())

@@ -1,0 +1,1 @@
+n = int(input())c_score,m_score = 0,0for i in range(n):    m,c = map(int,input().split())    if c>m:        c_score += 1    elif c<m:        m_score += 1    else:        continueif c_score>m_score:    print("Chris")elif c_score<m_score:    print("Mishka")else:    print("Friendship is magic!^^")

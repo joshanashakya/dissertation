@@ -1,0 +1,1 @@
+import java.io.*;import java.util.*; public class GFG {	public static void main (String[] args) 	{	    Scanner sc=new Scanner(System.in);	    int N=sc.nextInt();	        int y=(int)((double)Math.log(N)/Math.log(2));	        System.out.println(y+1);	    	}}

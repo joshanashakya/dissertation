@@ -1,0 +1,1 @@
+for _ in range(int(input())):  n,k=map(int,input().split());ans=[];idx=0;summ=0  arr=list(map(int,input().split()))  for i in range(n):   summ+=arr[i]   if summ%2==1 and len(ans)!=k-1:ans.append(i+1);summ=0;  if summ%2==1 and len(ans)==k-1:print("YES");ans.append(n);print(*ans)  else:print("NO")

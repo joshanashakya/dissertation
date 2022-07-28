@@ -1,0 +1,1 @@
+import sysimport re def main():    inp = sys.stdin.read().strip().split('\n')[1:]    out = []    for s in inp:        n, a, b = map(int, s.split())        out.append(min(a*n, n//2*b + n%2*a))    return out print(*main(), sep='\n')

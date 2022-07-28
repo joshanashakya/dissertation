@@ -1,0 +1,1 @@
+from collections import defaultdictimport sysinput = sys.stdin.readline n = int(input())s = input()m = defaultdict(lambda : -1)m[0] = 0ans = 0sum = 0 for i in range(1,n+1):    sum += (1 if s[i-1]=='1' else -1)        if(sum == 0):        ans = i    elif(m[sum]!=-1):        ans = max(ans,i-m[sum])    else:        m[sum] = i    print(ans)

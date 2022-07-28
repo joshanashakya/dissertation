@@ -1,0 +1,1 @@
+n,m=map(int,input().split())x=[]for i in range(n):    x.append(list(map(int,input().split())))for i in range(1,m):    x[0][i]+=x[0][i-1]for i in range(1,n):    for j in range(m):        if j==0:            x[i][j]+=x[i-1][j]        else:            x[i][j]+=max(x[i-1][j],x[i][j-1])for i in x:    print(i[-1],end=" ")

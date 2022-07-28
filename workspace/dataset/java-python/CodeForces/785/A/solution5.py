@@ -1,0 +1,1 @@
+num_of_hed = int(input())faces = 0 for i in range(0, num_of_hed):    str1 = input()    if str1[0] == "T":        faces += 4    elif str1[0] =="C":        faces += 6    elif str1[0] =="O":        faces += 8    elif str1[0] =="D":        faces += 12    else:        faces += 20 print(faces)

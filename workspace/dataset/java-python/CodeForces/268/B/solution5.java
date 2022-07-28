@@ -1,0 +1,1 @@
+import java.util.*;public class Main {  public static void main(String[] args){  Scanner scanner = new Scanner(System.in);  int recibido=scanner.nextInt();  int suma=0;  int i;	for(i=1;i<=recibido;i++){		suma+=1+(recibido-i)*i;	}  System.out.printf("%d\n",suma);  }}  		  	  	 	  		  				  	 	

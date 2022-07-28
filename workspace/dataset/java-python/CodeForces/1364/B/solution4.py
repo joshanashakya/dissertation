@@ -1,0 +1,1 @@
+t=int(input())for test in range (0,t):    n=int(input())    a=list(map(int,input().split()))    ans=[a[0]]    for i in range (1,n-1):        if(a[i]>a[i-1] and a[i]>a[i+1]):            ans.append(a[i])        if(a[i]<a[i-1] and a[i]<a[i+1]):            ans.append(a[i])    ans.append(a[n-1])    print(len(ans))    print(*ans,sep=" ")

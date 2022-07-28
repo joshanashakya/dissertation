@@ -1,0 +1,1 @@
+import java.util.*; public class Main {	public static void main(String[] args) {		Scanner scan=new Scanner(System.in);			int k=scan.nextInt();		int P=scan.nextInt();				long sum=0;		for(int i=1;i<=k;i++){			String first=i+"";			StringBuilder last=new StringBuilder(first).reverse();						sum+=Long.parseLong(first+last);			sum=sum%P;		}				System.out.println(sum);			}}

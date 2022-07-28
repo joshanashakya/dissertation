@@ -1,0 +1,1 @@
+n=int(input())p=list(map(int,input().split()))r=[0]*nmn=360for i in range(n):    q=[]    q.extend(p[i:])    if i>0:        q.extend(p[0:i])##    print(p,q)    sm=0    for i in range(len(q)):        sm+=q[i]        r[i]=sm    for i in r:        if abs(360-2*i)<mn:            mn=abs(360-2*i)print(mn)    

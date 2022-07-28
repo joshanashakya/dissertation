@@ -1,0 +1,1 @@
+n,k=map(int,input().split())s=[]for i in range(n):    s.append(input())a=list(map(int,input().split()))ans=0for i in range(k):    b=[0]*5    for j in range(n):        b[ord(s[j][i])-ord('A')]+=1    tmp=0    for j in range(5):        tmp=max(tmp,b[j])    ans+=tmp*a[i]print(ans)

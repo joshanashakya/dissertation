@@ -1,0 +1,1 @@
+# cook your dish heren=int(input())arr=[int(x) for x in input().split()]li=arr[:]li.sort()c=0for i in range(n):    if(arr[i]!=li[i]):        c+=1    if(c>2):        print("NO")        breakelse:    print("YES")

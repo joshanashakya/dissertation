@@ -1,0 +1,1 @@
+n,k=list(map(int,input().split(" "))) li=list(map(int,input().split(" ")))sum=0for x in range(k):    sum=sum+li[x] i=0j=kres=sumfor x in range(n-k):    sum = sum - li[i] + li[j]    res=res+sum     i+=1    j+=1  print(res/(n-k+1))

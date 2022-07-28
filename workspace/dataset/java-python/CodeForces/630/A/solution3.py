@@ -1,0 +1,1 @@
+def power(base,exp):    if exp<0:        return 1 / power(base,-exp)    ans = 1    while exp:        if exp & 1:            ans *= base        exp >>= 1        base *= base    return ans    def fn():    r=0    t = int(input())    if t<2 & t>2*(power(10,18)):    	return 0    r = 25    print(r) fn()

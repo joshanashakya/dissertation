@@ -1,0 +1,1 @@
+import java.util.*; public class Main{	public static void main(String[] args) {				Scanner sc= new Scanner(System.in);				int a=sc.nextInt()*sc.nextInt();		while(a-->0) {			String x=sc.next();			if(!(x.equals("B")|x.equals("G")|x.equals("W"))){				System.out.println("#Color");				return;			}		}		System.out.println("#Black&White");			}}

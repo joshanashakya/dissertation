@@ -1,0 +1,1 @@
+import mathdef solve(n,m):  start = n % 2 + n // 2  while start <= n:    if start % m == 0:      return start    start += 1  return -1         def main() :  # n = int(input())  arr = list(map(int, input().split(' ')))  print(solve(*arr))main()

@@ -1,0 +1,1 @@
+n, m = map(int, input().split())g = [0] * (n + 1)for k in range(m):    a, b = map(int, input().split())    g[a] = 1    g[b] = 1 c = 0for k in range(1, len(g)):    if g[k] == 0:        c = k        break print(n - 1)for k in range(1, len(g)):    if k == c:        continue    print(c, k)

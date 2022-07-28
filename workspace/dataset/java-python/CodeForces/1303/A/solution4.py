@@ -1,0 +1,1 @@
+for _ in range(int(input())):    x=input()    c=0    a=0    f=0    for i in range(len(x)):        if x[i]=='1':            f=1            a=a+c            c=0        if x[i]=='0' and f:            c=c+1    print(a)

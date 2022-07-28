@@ -1,0 +1,1 @@
+n = int(input())t = [int(x) for x in input().split()]d = []for i in range(n):    x = list.copy(t)    if i != 0 and i != n-1:        x.pop(i)        max = 0        for e in range(n - 2):            if x[e + 1] - x[e] > max:                max = x[e + 1] - x[e]        d.append(max)print(min(d))   

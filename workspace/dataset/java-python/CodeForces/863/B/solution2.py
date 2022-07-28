@@ -1,0 +1,1 @@
+import mathn = int(input())a = list(map(int,input().split()))a.sort()x = []ans = math.inffor t in range(2 * n):   for k in range(t, 2 * n):      c = a[:]      c = a[:t] + a[t + 1 : k] + a[k + 1:]      for i in range(0, 2 * n - 2, 2):         x.append(c[i + 1] - c[i])         ans = min(ans, sum(x))      x = []print(ans)

@@ -1,0 +1,1 @@
+n = int(input())lst = [0] * (2 * n)f = 0lst[0] = 1ind = 0for i in range(2, (2 * n) + 1):    if f == 0:        ind = (ind + n) % (2 * n)        lst[ind] = i        f = 1    else:        ind -= 1        lst[ind] = i        f = 0 if n % 2:    print("YES")    print(*lst)else:    print("NO")

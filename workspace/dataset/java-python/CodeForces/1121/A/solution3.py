@@ -1,0 +1,1 @@
+n, m, k = map(int, input().split())p = [int(i) for i in input().split()]s = [int(i) for i in input().split()]c = [int(i) for i in input().split()]count = 0for i in c:    x = i - 1    school = s[x]    for j in range(n):        if s[j] == school and p[j] > p[x]:            count += 1            breakprint(count)

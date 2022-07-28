@@ -1,0 +1,1 @@
+li=[ ]for i in range(0,4):    s=input()    li.append(list(s))fl=0for i in range(0,3):    for j in range(0,3):        se=[li[i][j],li[i][j+1],li[i+1][j],li[i+1][j+1]]         if se.count('#')>=3 or se.count('.')>=3:            fl=1            break    if fl==1:        breakif fl==1:    print("YES")else:    print("NO")

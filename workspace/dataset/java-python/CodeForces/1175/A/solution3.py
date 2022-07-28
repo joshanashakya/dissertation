@@ -1,0 +1,1 @@
+t = int(input())for i in range(t):    n, k = [int(x) for x in input().split()]    ind = 0    while n != 0:        if n % k == 0:            n = n // k            ind += 1        else:            ind = ind + (n % k)            n = n - (n % k)    print(ind)

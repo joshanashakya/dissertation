@@ -1,0 +1,1 @@
+t=int(input())for i in range(t):    c=0    a,b=input().split()    a=int(a)    b=int(b)    flg=0    if(b<9):        print("0")    else:        while(b!=0):            x=b%10            if(x!=9):                flg=1            c=c+1            b=int(b/10)        if(flg==1):            c=c-1        v=a*c        print(v)

@@ -1,0 +1,1 @@
+x = int(input())votes1 = list(map(int,input().split()))votes2 = []pivot = max(votes1)for i in range(pivot,202):    for j in range(len(votes1)):        vote = i - votes1[j]        votes2.append(vote)    if sum(votes2) > sum(votes1):        print(i)        break      else:        votes2 = []  

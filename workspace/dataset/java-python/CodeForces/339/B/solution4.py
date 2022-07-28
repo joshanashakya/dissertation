@@ -1,0 +1,1 @@
+n,m=(map(int,input().split()))bt=list(map(int,input().split()))ini=1ans=0for a in bt:    if(a>=ini):        ans+=(a-ini)        ini=a    else:        ans+=(n-ini)+1        ini=1        ans+=(a-ini)        ini=aprint(ans)

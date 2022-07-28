@@ -1,0 +1,1 @@
+import java.util.*;public class A {	public static void main(String[] args) 	{		Scanner input = new Scanner(System.in);		int n = input.nextInt();		int[] dig = {6, 8, 4, 2};		System.out.println((n==0) ? 1 : dig[n%4]);				input.close();	}}

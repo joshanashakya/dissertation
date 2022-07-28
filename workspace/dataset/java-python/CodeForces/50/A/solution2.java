@@ -1,0 +1,1 @@
+import java.util.*; public final class domino {    public static void main(String Args[]){        Scanner s=new Scanner(System.in);        int m = s.nextInt();        int n= s.nextInt();        System.out.println((m*n)/2);    }    }

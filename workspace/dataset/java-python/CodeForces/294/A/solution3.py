@@ -1,0 +1,1 @@
+n=int(input())list=list(map(int,input().split(' ')))shot=int(input())for i in range(shot):    x,y=(map(int,input().split(' ')))    if x-2 >=0:        list[x-2]+=y-1    if x<=n-1:        list[x]+=list[x-1]-y    list[x-1]=0 for i in list:    print(i)

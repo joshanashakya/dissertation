@@ -1,0 +1,1 @@
+import java.util.*; public class Solve {     static Scanner scan = new Scanner(System.in);     public static void solve(int n,int a,int b){         System.out.println(Math.min((n-a),(b+1)));    }     public static void main(String[] args) {         int n = scan.nextInt();        int a = scan.nextInt();        int b = scan.nextInt();         solve(n,a,b);    }}

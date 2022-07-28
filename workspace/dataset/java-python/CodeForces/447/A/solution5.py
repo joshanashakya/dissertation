@@ -1,0 +1,1 @@
+from collections import Counter n, k = map(int, input().split())c = Counter()ans = -1for i in range(1, k+1):    x = int(input())    c[x % n] += 1     if ans == -1 and c[x % n] > 1:        ans = i print(ans)

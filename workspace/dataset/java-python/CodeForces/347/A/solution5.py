@@ -1,0 +1,1 @@
+n=int(input())a=input().split()a_array=[]array2=[]for i in range(n):    a_array.append(int(a[i]))a_array=sorted(a_array)a=a_array[0]a_array[0]=a_array[len(a_array)-1]a_array[len(a_array)-1]=afor i in range(len(a_array)):    array2.append(a_array[i])    print(array2[i],end=" ")		    	 		 	 	  	   	 	 			 		

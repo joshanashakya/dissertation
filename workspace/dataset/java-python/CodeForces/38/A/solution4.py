@@ -1,0 +1,1 @@
+def main_function():    n = int(input())    d = [int(i) for i in input().split(" ")]    a, b = [int(i) for i in input().split(" ")]    sum = 0    a, b = a - 1, b - 1    for i in range(a, b):        sum += d[i]    return sum   print(main_function())

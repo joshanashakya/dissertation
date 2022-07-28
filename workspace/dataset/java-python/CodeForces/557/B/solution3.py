@@ -1,0 +1,1 @@
+n,w=map(int, input().split())a=list(map(int, input().split()))a.sort()g=a[0]b=a[n]if g>=w:    print(w)else:    if g*2>b:        g=b/2    t=g*n + g*2*n    if t<=w:        print(t)    else:        print(w)

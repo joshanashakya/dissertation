@@ -1,0 +1,1 @@
+p, deg = [int(x) for x in input().split()] ang = 180 / pans = 420v = 2for i in range(2, p):    p_ang = ang * (p - i)    if ans > abs(p_ang - deg):        v = i        ans = abs(p_ang - deg)print(p, 1, v)

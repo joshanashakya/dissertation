@@ -1,0 +1,1 @@
+n, m = map(int, input().split())a = [int(i) for i in input().split()]b = [0] * (10**5+1)p = [0]*n + [0]for i in range(len(a)-1,-1,-1):    if b[a[i]] == 0:        b[a[i]]+=1        p[i] = p[i+1]+1    else:        p[i] = p[i+1]for i in range(m):    k = int(input())    print(p[k-1])    

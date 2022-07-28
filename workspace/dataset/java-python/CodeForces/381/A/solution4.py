@@ -1,0 +1,1 @@
+n = int(input())a = tuple(map(int, input().split()))i, j = 0, n - 1x = y = 0c = 1while i <= j:    if a[i] >= a[j]:        if c:            x += a[i]        else:            y += a[i]        i += 1    else:        if c:            x += a[j]        else:            y += a[j]        j -= 1    c = not c and 1print(x, y)

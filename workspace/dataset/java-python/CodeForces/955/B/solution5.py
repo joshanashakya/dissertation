@@ -1,0 +1,1 @@
+from collections import Counters = input()A = [char for char in s] A.sort()c = Counter(A)if len(c.keys()) > 4:  print("No")elif len(c.keys()) == 4:  print("Yes")elif len(c.keys()) == 3:  z = list(c.values())  if z == [1,1,1]:    print("No")  else:    print("Yes")elif len(c.keys()) == 2:  z = list(c.values())  if 1 in z:    print("No")  else:    print("Yes")else:  print("No")

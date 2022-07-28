@@ -1,0 +1,1 @@
+import java.util.*; public class Test {    public static void main(String[] args) {                Scanner input = new Scanner(System.in);        int[] a = {input.nextInt(), input.nextInt(), input.nextInt()};            Arrays.sort(a);        int res = a[2] + 1 - a[0] - a[1];        System.out.println(res < 0 ? 0 : res);    }}

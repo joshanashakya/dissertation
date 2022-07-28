@@ -1,0 +1,1 @@
+n, a, b, c = map(int, input().split())dp = [float("-inf") for i in range(n + 1)]if a <= n:    dp[a] = 1if b <= n:    dp[b] = 1if c <= n:    dp[c] = 1for i in range(1, n + 1):    if i - a >= 0:        dp[i] = max(dp[i], 1 + dp[i - a])    if i - b >= 0:        dp[i] = max(dp[i], 1 + dp[i - b])    if i - c >= 0:        dp[i] = max(dp[i], 1 + dp[i - c])print(dp[-1])

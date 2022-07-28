@@ -1,0 +1,1 @@
+n=int(input())a=list(map(int,input().split()))z=[0 for i in range(n)]c=0ans=0f=0while(set(z)!={1}): 	if f==0:		for j in range(len(a)):			if a[j]<=c and z[j]!=1:				c+=1				z[j]=1		f=1	else:		for j in range(len(a)-1,-1,-1):			if a[j]<=c and z[j]!=1:				c+=1				z[j]=1		f=0	ans+=1print(ans-1)

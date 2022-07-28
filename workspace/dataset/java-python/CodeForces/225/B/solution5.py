@@ -1,0 +1,1 @@
+s,k=map(int,input().split())f=[0]f.append(1)while(True):    cur=sum(f[-k:])    if cur>s:        break    f.append(cur)f=list(set(f))f.sort()ans=[]i=len(f)-1while(s and i>0):    if f[i]<=s:        s-=f[i]        ans.append(f[i])    i-=1print(len(ans)+1)print(*(ans+[0]))

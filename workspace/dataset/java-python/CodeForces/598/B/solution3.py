@@ -1,0 +1,1 @@
+if __name__ == '__main__':    a = list(input())    m = int(input())    s = ""     while m > 0:        l, r, k = map(int, input().split())        d = r - l + 1         for i in range(d):            if (i + k) % d == 0:                a = a[:l - 1] + a[i + l - 1:r] + a[l - 1:i + l - 1] + a[r:]                break        m -= 1    print("".join(a))

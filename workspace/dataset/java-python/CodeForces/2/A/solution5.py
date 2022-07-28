@@ -1,0 +1,1 @@
+n = int(input())d = {}q = [] for i in range(n):    x, y = input().split()    y = int(y)    q.append([x, y])    d[x] = d.get(x, 0)+yans = max(d.values())ma = {}for x, y in q:    ma[x] = ma.get(x, 0)+y    if ma[x] >= ans and d[x] == ans:        print(x)        break

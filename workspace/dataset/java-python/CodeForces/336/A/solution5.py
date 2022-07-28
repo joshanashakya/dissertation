@@ -1,0 +1,1 @@
+x, y = map(int, input().split())ans = abs(x)+abs(y) if x > 0 and y > 0:    print(0, ans, ans, 0)if x < 0 and y > 0:    print(-ans, 0, 0, ans)if x < 0 and y < 0:    print(-ans, 0, 0, -ans)if x > 0 and y < 0:    print(0, -ans, ans, 0)

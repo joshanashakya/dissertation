@@ -1,0 +1,1 @@
+n, a, b = map(int, input().split())x = [int(i) for i in input().split()] def find_index(n):	l = 0; r = n	while l < r:		mid = (l+r)//2		if (mid*a)//b == (r*a)//b:			r = mid		else:			l = mid+1	return r for i in range(n):	print(x[i]-find_index(x[i]), end = " ") print()

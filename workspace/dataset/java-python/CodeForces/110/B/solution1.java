@@ -1,0 +1,1 @@
+import java.util.*;public class Main{		 public static void main(String args[])    {        Scanner in  = new Scanner(System.in);        int n = in.nextInt();        String s="abcd";        for(int i=0 ; i<n/4 ; i++)        System.out.print(s);        System.out.print(s.substring(0,n%4));    }}

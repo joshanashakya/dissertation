@@ -1,0 +1,1 @@
+v = []c = []resp = "" while True:	try:		v.append(input())	except:		break i = 0while i < len(v):	k = v[i].replace(" ","")	if(k == ""):		v[i] = k		c.append(False)	elif(k[0] == '#'):		c.append(True)	else:		v[i] = k		c.append(False)	i+=1 n = len(v)i = 0while i < n - 1:	if(not c[i] and not c[i+1]):		resp += v[i]	else:		resp += v[i] + "\n"	i += 1resp += v[i] print(resp)

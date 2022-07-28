@@ -1,0 +1,1 @@
+n,k= map(int,input().split())s= '.'*nm=(k+1)//2a='.' + '#'*m + '.'*(n-m-1)if k%2 == 0:    b=aelif k<n:    t= (n- k)//2*'.'    a,b = t+'#'*k +t , selse:    b = a[:2]+ '.' + a[3:]print('YES',s,a,b,s,sep='\n')

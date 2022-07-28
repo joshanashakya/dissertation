@@ -1,0 +1,1 @@
+x, y = map(int, input().split()) if y == 0:    print('No')    exit(0) if y == 1:    if x == 0:        print('Yes')    else:        print('No')    exit(0) print('Yes' if x >= y - 1 and (x - y + 1) % 2 == 0 else 'No')

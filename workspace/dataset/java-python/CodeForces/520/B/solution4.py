@@ -1,0 +1,1 @@
+from collections import deque n, m = map(int, input().split())a = [1000000] * 10100a[n] = 0q = deque()q.append(n)# print(q)# print(q[0])while len(q) > 0:	v = q[0]	q.popleft()	if v * 2 <= 10000 and a[v * 2] > a[v] + 1:		a[v * 2] = a[v] + 1		q.append(v * 2)	if v - 1 > 0 and a[v - 1] > a[v] + 1:		a[v - 1] = a[v] + 1		q.append(v - 1)print(a[m])

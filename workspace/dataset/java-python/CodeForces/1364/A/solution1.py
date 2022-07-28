@@ -1,0 +1,1 @@
+t=int(input())for i in range(t):    n,x=map(int,input().split())    l=list(map(int,input().split()))    s=0    left=-1    for i in range(n):        if l[i]%x!=0:            if left==-1:                left=i             r=i        s=s+l[i]         if s%x!=0:        print(n)    elif left==-1:        print(-1)    else:        pre=left+1        suf=n-r        print(n-min(pre,suf))

@@ -1,0 +1,1 @@
+a,b,c=map(int,input().split(" "))  ans=[]for s in range(1,81):    x=b*s**a+c    if x<1 or x>=10**9:        continue    z = len(str(x))    d=0    for i in range(z):        d+=int(str(x)[i])    if d==s:        ans.append(x) print(len(ans))for i in range(len(ans)):    print(ans[i],end=" ")

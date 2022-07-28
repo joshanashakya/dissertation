@@ -1,0 +1,1 @@
+ans1=0ans2=0l1=[]l2=[]for _ in range(int(input())):    n=int(input())    if(n>0):        ans1+=n        l1.append(n)    else:        ans2+=abs(n)        l2.append(-n)if(ans1>ans2 or(ans1==ans2 and l1>l2) or(l1==l2 and n>0)):    print("first")else:    print("second")

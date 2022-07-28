@@ -1,0 +1,1 @@
+n = int(input())xs = set(range(1, n + 1))ys = set(range(1, n + 1))for _ in range(1, n ** 2 + 1):    x, y = map(int, input().split())    if x in xs and y in ys:        print(_)        xs.discard(x)        ys.discard(y)   		   	 	 		     	   	   		

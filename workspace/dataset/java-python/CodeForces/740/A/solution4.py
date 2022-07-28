@@ -1,0 +1,1 @@
+# 1# 2 1# 3 (1) (2 check11 check2 check33 8) (3 check 1 and check32  12)n,a,b,c = [int(x) for x in input().split()]if n%4==0:    print(0)elif n%4==1:    print(min(c,a*3,a+b))elif n%4==2:    print(min(b,a*2,c*2))else:    print(min(a,c*3,b*2+a,b+c))

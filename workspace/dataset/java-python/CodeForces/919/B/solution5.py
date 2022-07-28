@@ -1,0 +1,1 @@
+#B. Perfect Number    k=int(input())out=[]i=1while len(out)!=k:    x=i    s=0    #print(i)    while(x):        s+=int(x%10)        x=int(x/10)    #print(s)    if s==10:        out.append(i)        i+=1        #print(out)    else:        i+=1    #print(i,out)        print(out[-1])

@@ -1,0 +1,1 @@
+import java.util.*;public class HelloWorld{      public static void main(String []args){        // System.out.println("Hello World");        Scanner sc=new Scanner(System.in);        int t=sc.nextInt();        while(t-->0)        {  //                     String s=sc.next();          System.out.println(s.length());                                                }     }}

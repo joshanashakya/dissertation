@@ -1,0 +1,1 @@
+a,x,y=map(int,input().split())ans=0if x>=a or x<=-a: ans=-1if ((y//a)%2==1 or y//a==0) and (x>=a/2 or x<=-a/2): ans=-1if y//a==y/a:ans=-1if (y//a)%2==0 and y//a>0 and x==0:ans=-1if ans==0:    ans=y//a+1 + (y//a)//2    if (y//a)%2==0 and y//a>0 and x<0:ans-=1    print(ans)else:    print(-1)

@@ -1,0 +1,1 @@
+# coding: utf-8 for ct in range(int(input())):  a, b, c = [input() for i in range(3)]  possible = True    for i in range(len(a)):    if a[i] != c[i] and b[i] != c[i]:      possible = False      break      print('YES') if possible else print('NO')

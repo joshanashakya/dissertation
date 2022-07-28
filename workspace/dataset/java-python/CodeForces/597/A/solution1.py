@@ -1,0 +1,1 @@
+k,a,b=map(int,input().split())if (a>=0 and b>=0) or (a<0 and b<0):    if a<0 and b<0:        temp=-b        b=-a        a=temp    c=b//k-a//k    if a%k==0:        c+=1elif a<0 and b>=0:    a=-a    c=a//k+b//k+1print(c)    

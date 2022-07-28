@@ -1,0 +1,1 @@
+# -*- coding: utf-8 -*-"""Created on Tue Mar 30 19:32:51 2021 @author: nehas"""n=int(input())d=list(map(int,input().split()))a,b=map(int,input().split())s=0for i in range(a-1,b-1):    s=s+d[i]print(s)

@@ -1,0 +1,1 @@
+# code_forces_1095_array_stabilization _ = input() # pega os elementos da lista e ordena eleselements = sorted(list(map(int, input().split()))) # calcula a instabilidade sem o menor numero e, depois, sem o maior numero e comparainst = min(max(elements[:-1]) - min(elements[:-1]), max(elements[1:]) - min(elements[1:]))print(inst)

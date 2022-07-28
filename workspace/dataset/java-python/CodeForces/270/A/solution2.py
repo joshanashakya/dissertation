@@ -1,0 +1,1 @@
+import mathvalidangles = set()i=3while (angle:=(180*(i-2))/i) <= 179:    if math.floor(angle)==angle: validangles.add(angle)    i+=1  n = int(input())for i in range(n):    a = int(input())    if a in validangles: print('YES')    else: print('NO')

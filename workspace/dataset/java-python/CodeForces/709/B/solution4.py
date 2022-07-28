@@ -1,0 +1,1 @@
+n,a = map(int,input().split())x = [*map(int,input().split())]x.sort()if(n==1):    print(0)    exit(0)ind = 0dist1 = min(abs(a-x[n-1]),abs(a-x[1]))+abs(x[n-1] - x[1])dist2 = min(abs(a-x[0]),abs(a-x[n-2]))+abs(x[0] - x[n - 2])print(min(dist1,dist2)) 

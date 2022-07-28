@@ -1,0 +1,1 @@
+s = input()u = input()t = [0] * len(s)d = {chr(i) : [] for i in range(ord('a'), ord('z')+1)}for i, j in enumerate(s) :    d[j].append(i)for i in u:    for j in d[i]:        t[j] += 1    t = [0] + tprint(len(u) - max(t))

@@ -1,0 +1,1 @@
+from math import pi n = int(input())r = lambda : list(map(int, input().split()))arr = r()arr.sort(reverse= True)arr.append(0)ans = 0.0i = 0while i<n:    ans += pi * (arr[i]**2 - arr[i+1]**2)    i += 2 print(f"{ans:.10f}")

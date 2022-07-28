@@ -1,0 +1,1 @@
+n=int(input())arr=list(int(x) for x in input().split())even=0for i in arr:	if i%2==0:		even+=1 if even==n-1:	for i in range(len(arr)):		if arr[i]%2!=0:			print(i+1)			breakelif even==1:	for i in range(len(arr)):		if arr[i]%2==0:			print(i+1)			break

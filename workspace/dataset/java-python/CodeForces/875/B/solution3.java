@@ -1,0 +1,1 @@
+#include <bits/stdc++.h>using namespace std;const int N = 1e6 + 7; bool vis[N];int main(){	int n;	scanf("%d", &n);	printf("1 ");	int y = n;	for (int i = 1; i <= n; i++){		int x; scanf("%d", &x);		vis[x] = true;		while (vis[y]) y--;		printf("%d ", 1 + i - (n - y));	}	return 0;}

@@ -1,0 +1,1 @@
+n = int(input())now = [1, 2]for i in range(n):    a = int(input())    if a == now[0]:        now[1] = 6 - sum(now)    elif a == now[1]:        now[0] = 6 - sum(now)    else:        print("NO")        breakelse:    print("YES")

@@ -1,0 +1,1 @@
+import java.util.*;public class P2 { 	public static void main(String[] args) {		Scanner sc = new Scanner(System.in);		int n  =sc.nextInt();		int c=1;		int k=2;		System.out.print(2+" ");		for(int i=0;i<n-2;i++) {			c++;			k+=c;			if(k%n==0) {				System.out.print(n+" ");			}else			System.out.print(k%n+" ");		}	}}

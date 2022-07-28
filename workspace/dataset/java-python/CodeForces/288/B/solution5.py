@@ -1,0 +1,1 @@
+mod=10**9+7def power(x, a):    if(a==0):        return(1)    z=power(x, a//2)    z=(z*z)%mod    if(a%2):        z=(z*x)%mod    return(z)[n, k]=list(map(int, input().split()))print((power(n-k, n-k)*power(k, k-1))%mod)

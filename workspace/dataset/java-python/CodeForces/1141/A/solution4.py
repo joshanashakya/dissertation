@@ -1,0 +1,1 @@
+n,m=map(int,input().split())if n==m:	print(0)elif m%n!=0:	print(-1)else:	s=0	x=m//n	while x%2==0 or x%3==0:		if x%2==0:			x=x//2			s=s+1		if x%3==0:			x=x//3			s=s+1	if x==1 and s!=0:print(s)	else:print(-1)

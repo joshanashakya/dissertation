@@ -1,0 +1,1 @@
+n = int(input())ans = 1 A = list(map(int, input().split()))h = [0 for i in range(n+1)]B = [0 for i in range(n+1)] for i in range(n-1):    h[i+2] = h[A[i]] + 1    B[h[i+2]] += 1        for x in B:    if x % 2 != 0:        ans += 1        print(ans)

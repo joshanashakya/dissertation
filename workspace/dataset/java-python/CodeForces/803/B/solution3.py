@@ -1,0 +1,1 @@
+from bisect import bisect_left as blt=int(input())a=list(map(int,input().split()))q,l=[],[0]*tfor i in range(t):    if a[i]==0:        q.append(i)r=len(q)for i in range(t):    if a[i]!=0:        p=bl(q,i)        if p==0:            l[i]=q[0]-i        elif p==r:            l[i]=i-q[-1]        else:            l[i]=min(i-q[p-1],q[p]-i)print(*l)

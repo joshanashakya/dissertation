@@ -1,0 +1,1 @@
+k=int(input())n=-1m=-1for i in range(5,k//5+1):    if(k%i==0):        n=i        m=k/i        breakif(n==-1 or m==-1):    print(-1)    exit()s=""v="aeiou"for i in range(k):    s+=v[int((i//m+i%m)%5)]print(s)

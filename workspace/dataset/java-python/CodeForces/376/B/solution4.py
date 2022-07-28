@@ -1,0 +1,1 @@
+from collections import defaultdict n, m = map(int, input().split())s = defaultdict(lambda: 0)for i in range(m):    a, b, c = map(int, input().split())    s[a]-=c    s[b]+=c print(sum(i for i in s.values() if i>0))

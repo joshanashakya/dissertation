@@ -1,0 +1,1 @@
+n=int(input())x=[]for i in range(n):    a=list(map(int,input().split()))    x.append(a)c=1x.sort(key=lambda i:i[0],reverse=True)x.sort(key=lambda i:i[1],reverse=True)p=0for i in x:    c-=1    c+=i[1]    p+=i[0]    if c==0:        breakprint(p)

@@ -1,0 +1,1 @@
+k = int(input())a = []for i in range(4):    s = input()    for j in s:        if j.isdigit():            a.append(int(j))for i in range(1, 10):    if a.count(i) > k * 2:        print("NO")        breakelse:    print("YES")

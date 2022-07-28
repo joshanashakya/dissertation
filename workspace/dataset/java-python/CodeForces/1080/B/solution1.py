@@ -1,0 +1,1 @@
+import math def total(l,r):    l -= 1    if l % 2 == 0:        l /= 2    else:        l = int(math.ceil(l/2)*-1)    if r % 2 == 0:        r /= 2    else:        r = int(math.ceil(r/2)*-1)    return int(r - l) q = int(input())ans = "" for i in range(q):    l,r = map(int, input().split())    ans += str(total(l,r)) + "\n" print(ans) 	 		     		    		 	 				 		 	

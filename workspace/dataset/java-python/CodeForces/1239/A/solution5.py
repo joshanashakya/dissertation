@@ -1,0 +1,1 @@
+import io, osinput = io.BytesIO(os.read(0,os.fstat(0).st_size)).readlinen,m=list(map(int,input().split()))z=(10**9)+7fib=[0,1,2]for i in range(3,max(n,m)+1):    fib.append((fib[-1]+fib[-2])%z)print((2*((fib[n]+fib[m]-1)%z))%z)

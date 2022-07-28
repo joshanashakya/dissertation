@@ -1,0 +1,1 @@
+t = int(input())ans = [] for _ in range(t):    n = int(input())    nums = list(map(int, input().split()))    lkp = {v: i for i, v in enumerate(nums)}    arr = [0] * n    l, r = n+1, -1     for i in range(1, n + 1):        pos = lkp[i]        l = min(l, pos)        r = max(r, pos)        arr[i-1] = int(r-l+1 == i)     ans.append("".join(map(str, arr))) for a in ans:    print(a)   

@@ -1,0 +1,1 @@
+a=int(input())b=input().split()count=0x=[]for i in b:    x.append(int(i))for i in range(a):    try:        if x[i]<min(x[:i]) or x[i]>max(x[:i]):            count+=1    except ValueError:        passprint(count)

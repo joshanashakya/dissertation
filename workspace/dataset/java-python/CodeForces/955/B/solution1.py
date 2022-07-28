@@ -1,0 +1,1 @@
+from collections import Counter  def has_beautiful_splits(s):    counter = Counter(s)    if len(counter) == 4:        return True    elif len(counter) == 3:        return max(counter.values()) > 1    elif len(counter) == 2:        return min(counter.values()) > 1    return False  s = input()print("Yes" if has_beautiful_splits(s) else "No")

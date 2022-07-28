@@ -1,0 +1,1 @@
+n = int(input())prev = 0count = -1f = 0for i in range(n):    a,b = map(int,input().split())    #print(prev,a)    if a != b:        print("rated")        f = 2         break    elif a > prev and prev != 0:        f = 1    prev = a        #print("unrated")        #breakif f == 0 :    print("maybe")elif f == 1:    print("unrated")

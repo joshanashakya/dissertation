@@ -1,0 +1,1 @@
+n, k = input().split(' ')a = input().split(' ')k = int(k)count = 0storage = 0total = 0for ai in a:    total += int(ai)     df = min(8, total)    k -= df    total -= df    count += 1    if k <= 0:        break if k > 0:    print(-1)else:    print(count)

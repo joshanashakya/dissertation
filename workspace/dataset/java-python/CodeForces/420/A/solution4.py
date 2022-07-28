@@ -1,0 +1,1 @@
+def tetap_identik(nama):    char_list = ["A","H","I","M","O","T","U","V","W","X","Y"]    matched_list = [characters in char_list for characters in nama]    if all(matched_list):        if nama == nama[::-1]:            return "YES"        else:            return "NO"    else:        return "NO" nama = input().upper()print(tetap_identik(nama))		  	 	 	 				    	 	  	 		  		

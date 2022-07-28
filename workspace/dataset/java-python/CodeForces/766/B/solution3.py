@@ -1,0 +1,1 @@
+def ok(a, b, c):  return (a + b > c) and (a + c > b) and (b + c > a) n = int(input())a = sorted(list(map(int, input().split())))ye = 0for i in range(n - 2):  ye |= ok(a[i], a[i + 1], a[i + 2])if ye:  print("YES")else:  print("NO") '''* So I drown it out * Like I always do* Dancing through our house* With the ghost of you'''

@@ -1,0 +1,1 @@
+p = {}for i in range(int(input())):    x, k = map(int, input().split())    if k in p:        if x == p[k] + 1: p[k] = x        elif x > p[k]:            print('NO')            exit(0)    elif x:        print('NO')        exit(0)    else:        p[k] = 0print('YES')

@@ -1,0 +1,1 @@
+from collections import Countern,k=map(int,input().split())s=input()d=Counter(s)ans,opened=0,set()for i in s:    if i not in opened:        opened.add(i)        ans+=1        if ans>k:print("YES");break    d[i]-=1    if not d[i]:ans-=1else:print("NO")

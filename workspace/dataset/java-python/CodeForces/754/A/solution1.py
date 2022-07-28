@@ -1,0 +1,1 @@
+n = int(input()) a = [int(b) for b in input().split()] ans = 0indexes = [] if len(set(a)) == 1 and a[0] == 0:    print("NO")    exit() if sum(a) != 0:    print("YES")    print(1)    print(1, n)    exit() for i in range(n):    if a[i] != 0:        indexes.append(i) print("YES")print(2)print(1, indexes[0]+1)print(indexes[0]+2, n) 

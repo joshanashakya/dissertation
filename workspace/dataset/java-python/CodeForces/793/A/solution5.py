@@ -1,0 +1,1 @@
+n, k = map(int, input().split())arr = list(map(int,input().split())) min = min(arr)sum = 0for a in arr:    if (a - min) % k != 0:        sum = 1        k = 2        break    sum += a - min print(-1) if sum % k != 0 and n > 1 else print(int((sum / k)))

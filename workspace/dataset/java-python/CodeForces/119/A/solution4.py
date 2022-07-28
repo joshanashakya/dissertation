@@ -1,0 +1,1 @@
+import matha,b,n=list(map(int , input().split()))c=0while n>=0:     if(n!=0):        x=math.gcd(a,n)        n=n-x        c=1        if(n!=0):        y=math.gcd(b,n)        n=n-y        c=2        if(n==0):        break if(c==1):    print("0")else:    print("1") 

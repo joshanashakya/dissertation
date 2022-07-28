@@ -1,0 +1,1 @@
+import java.util.Scanner;public class Main{	static Scanner in = new Scanner(System.in);	public static void main(String[] args) {		int ans = 0;		int  n = in.nextInt();		if(n % 2 == 0) {			if((n >> 1) % 2 == 1) ans = 1;			else ans = 0;		}else {			if(((n - 1) >> 1) % 2 == 0)ans = 1;			else ans = 0;		}		System.out.println(ans);			}}   	 	   		   				   		 							

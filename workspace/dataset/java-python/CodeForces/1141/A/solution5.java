@@ -1,0 +1,1 @@
+import java.util.*;public class game23{	public static void main (String[]args){		Scanner sc =new Scanner (System.in);int n =sc.nextInt();int x =sc.nextInt();int c =0;		while (n<x){			if (x%(3*n)==0){				n*=3;++c;			}else if (x%(2*n)==0){				n*=2;++c;			}else{				System.out.print(-1);return;			} 		}		System.out.print(c);	}}

@@ -1,0 +1,1 @@
+n = int(input())a = input()i = n // 2j = i - (n % 2 == 0)while i < n and a[i] == '0':    i += 1while a[j] == '0':    j -= 1if i == j:    j += 1if i == n:    i = jb1 = '0' + a[:i]b2 = '0' + a[i:]c1 = '0' + a[:j]c2 = '0' + a[j:]s = min(int(b1) + int(b2), int(c1) + int(c2))print(s)

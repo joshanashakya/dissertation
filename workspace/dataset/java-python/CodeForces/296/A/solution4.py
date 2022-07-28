@@ -1,0 +1,1 @@
+n = int(input())array = input().split()c = (n + 1) / 2most_repeated = max(set(array), key=array.count)counter = 0 for i in array:    if(i == most_repeated):        counter += 1    else:        continue if(c <= counter and n % 2 == 0):    print("NO")elif(c < counter and n % 2 != 0):    print("NO")else:    print("YES")

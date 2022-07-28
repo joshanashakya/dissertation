@@ -1,0 +1,1 @@
+n = int(input())a = list(map(int, input().split()))b = list(map(int, input().split()))backpack = set()cur = 0for x in b:  if cur >= n or x in backpack:    print(0, end=' ')  else:    cnt = 0    while a[cur] != x:      backpack.add(a[cur])      cnt += 1      cur += 1    backpack.add(a[cur])    cur += 1    cnt += 1    print(cnt, end = ' ')

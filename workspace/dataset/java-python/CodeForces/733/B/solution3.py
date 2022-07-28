@@ -1,0 +1,1 @@
+n=int(input())a=[]sum=0while n:    n-=1    l,r=[int(x) for x in input().split()]    a.append(l-r)    sum+=l-rmax=summaxi=-1for i in range(len(a)):    if abs(sum-a[i]*2)>abs(max):        max=sum-a[i]*2        maxi=iprint(maxi+1)     					 		 	     	  			  		

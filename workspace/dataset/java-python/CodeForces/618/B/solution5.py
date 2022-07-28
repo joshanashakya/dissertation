@@ -1,0 +1,1 @@
+n = int(input())permutation = []for _ in range(n):    S = set(input().split())    permutation.append(len(S) - 1)for i in range(n):    if permutation[i] == n - 1:        permutation[i] += 1        breakprint(*permutation)

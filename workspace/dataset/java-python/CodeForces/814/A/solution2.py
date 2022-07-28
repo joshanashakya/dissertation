@@ -1,0 +1,1 @@
+n, k = map(int, input().split())a = [int(i) for i in input().split()]b = [int(i) for i in input().split()]b.sort(reverse=True)j = 0for i in range(n):    if a[i] == 0:        a[i] = b[j]        j += 1can = Falsefor i in range(1, n):    if a[i] < a[i - 1]:        can = Trueif can:    print("Yes")else:    print("No")

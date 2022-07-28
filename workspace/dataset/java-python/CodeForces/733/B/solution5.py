@@ -1,0 +1,1 @@
+sl = 0sr = 0d = []n = int(input())for i in range(n):    l,r = map(int,input().split())    sl+=l    sr+=r    d.append([l-r,i+1])d.sort() md = sl-srans = 0ad = abs(md) if abs(md-d[0][0]*2)>ad:    ans = d[0][1]    ad = abs(md-d[0][0]*2) if abs(md-d[-1][0]*2)>ad:    ans = d[-1][1]    ad = abs(md-d[-1][0])print(ans)

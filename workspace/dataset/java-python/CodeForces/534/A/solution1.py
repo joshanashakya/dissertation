@@ -1,0 +1,1 @@
+def odd(lst,n):    for i in range(1,n+1,2):        lst.append(i)    def even(lst,n):        start=2        if len(lst)==1 or n==3:            start=4        for j in range(start,n+1,2):            lst.append(j)     n=int(input())lst=[] if n%2==0 and n>2:    even(lst, n)    odd(lst, n)     else:        odd(lst, n)    even(lst, n)print(len(lst))print(*lst)

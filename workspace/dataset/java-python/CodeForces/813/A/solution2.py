@@ -1,0 +1,1 @@
+a = 0c = input()for x in list(map(int,input().split())):	a += xb = []for x in range(int(input())):	i,j = map(int,input().split())	for y in range(i, j + 1):		b.append(y)for x in b:	if a == x or a < x:		print(x)		breakelse:	print(-1)

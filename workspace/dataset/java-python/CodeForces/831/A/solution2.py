@@ -1,0 +1,1 @@
+n = int(input())a = list(map(int, input().split()))i = 0while i + 1 < n and a[i] < a[i + 1]:  i += 1while i + 1 < n and a[i] == a[i + 1]:   i += 1while i + 1 < n and a[i] > a[i + 1]:   i += 1if i == n - 1:  print('YES')else:  print('NO')

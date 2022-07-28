@@ -1,0 +1,1 @@
+def solve():    ls=input().split()    lst1=list(map(int,input().split()))    lst2=list(map(int,input().split()))    st={1}    st.pop()    for x in lst1:        st.add(x)    for x in lst2:        if x in st:            print("YES 1",end=" ")            print (x)            return ''    print("NO") test=int(input())for i in range(test):    solve()

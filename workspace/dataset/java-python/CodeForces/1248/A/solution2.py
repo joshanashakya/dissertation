@@ -1,0 +1,1 @@
+t = int(input())while t!=0:    n = int(input())    p = [int(x) for x in input().split()]    m = int(input())    q = [int(y) for y in input().split()]    p1,p0,q1,q0 = 0,0,0,0    for ele in p:        if ele%2:            p1 +=1        else:            p0 +=1    for e in q:        if e%2:            q1 += 1        else:            q0 += 1     print(p0*q0+p1*q1)    t-=1

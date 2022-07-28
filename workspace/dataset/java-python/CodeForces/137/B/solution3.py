@@ -1,0 +1,1 @@
+a = int(input())b = list(map(int,input().split()))d = {}for x in range(a):    if d.get(b[x]) == None:        d[b[x]] = 1    else:        d[b[x]] += 1 h = 0for x in d:    if x > a:        h += d[x]    else:        h += d[x]-1 print(h) 

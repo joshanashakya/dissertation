@@ -1,0 +1,1 @@
+rfile = open('input.txt', 'r')maintxt = rfile.read().split('\n')rfile.close()pos = int(maintxt[0])for i in range(1, 4):    temp = maintxt[i].split(' ')    cup1, cup2 = int(temp[0]), int(temp[1])    if pos == cup1:        pos = cup2    elif pos == cup2:        pos = cup1wfile = open('output.txt', 'w')wfile.write(str(pos)) 

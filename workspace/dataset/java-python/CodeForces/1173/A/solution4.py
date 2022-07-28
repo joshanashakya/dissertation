@@ -1,0 +1,1 @@
+a, b, c = map(int, input().split())if a > b+c:    print('+')elif a + c < b:    print('-')elif a <= b and c!=0:    t = a    a = b    b = t    if a <= (b+c) or c >= (a-b) or a == b:        print('?') elif a > b and c!=0:    if c>=(a-b):        print('?') elif a == b and c ==0:    print(0)   	 			 				 			    						

@@ -1,0 +1,1 @@
+try:    n = int(input())    if n<=2:        print("No")    else:        e = []        o = []        for i in range(1,n+1):            if i%2 == 0:                e.append(i)            else:                o.append(i)        print("Yes")        print(len(e),*e)        print(len(o),*o)except:    pass

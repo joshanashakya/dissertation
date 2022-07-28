@@ -1,0 +1,1 @@
+n=int(input())ai=[int(x) for x in input().split()]m=int(input())bj=[int(x) for x in input().split()]gears=[]for i in ai:    for j in bj:        if(j%i==0):            gears.append(int(j/i))maxgear=max(gears)print(gears.count(maxgear))

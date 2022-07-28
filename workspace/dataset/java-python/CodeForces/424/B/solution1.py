@@ -1,0 +1,1 @@
+n ,p=map(int ,input().split())dic={}for i in range (n):    x , y ,t=map(int ,input().split())    dist=((x**2)+(y**2))**.5    if dist in dic.keys():        dic[dist]=dic[dist]+t    else:        dic[dist]=tfor j in sorted(dic):    p=p+dic[j]    if p>=1000000:        print(j)        breakelse:    print(-1)

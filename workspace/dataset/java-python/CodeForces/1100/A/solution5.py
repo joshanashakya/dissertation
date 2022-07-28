@@ -1,0 +1,1 @@
+n,k=map(int,input().split())x=list(map(int,input().split())) sumi=0maxi=-10000 for i in range(n):    sumi +=x[i] for i in range(k):    ans=sumi    for j in range(i,n,k):        ans-=x[j]        maxi=max(maxi,abs(ans))  print(maxi)

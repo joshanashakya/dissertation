@@ -1,0 +1,1 @@
+m, k = [int(i) for i in input().split()] days = [int(i) for i in input().split()]  s1 = 0for q in range(1, m):    if days[q] + days[q-1] < k:        s1 += k - (days[q] + days[q-1])        days[q] += k - (days[q] + days[q-1]) print(s1)print(*days)

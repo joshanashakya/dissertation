@@ -1,0 +1,1 @@
+"""CONTESTANT: ngtien2CONTEST: April Fools Day Contest 2020LANGUAGE: Python 3.7PROBLEM: B. Limericks"""  def factors(n):    p = 2    f = []    while n > 1:        if n % p:            p += 1        else:            n //= p            if p not in f:                f.append(f"{p}")    return "".join(f)  n = int(input())print(factors(n))

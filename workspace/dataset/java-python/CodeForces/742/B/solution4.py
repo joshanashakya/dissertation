@@ -1,0 +1,1 @@
+n,x=map(int,input().split())arr=list(map(int,input().split()))dp=[0]*(10**6+1)for i in arr:dp[i]+=1#repitation of different noumbersans=0for i in arr:  ans+=dp[i^x]  if x==0:ans-=1#beacuse we 0^n=n ,we added same indexprint(ans//2)#we took (i,j)and (j,i) both

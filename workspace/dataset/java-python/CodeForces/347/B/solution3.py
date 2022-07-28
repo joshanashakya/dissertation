@@ -1,0 +1,1 @@
+n = int(input())arr = list(map(int, input().split()))d = {}ans = 0flag = Falsefor i,x in enumerate(arr):	d[i] = x	if i == x:		ans += 1for i in d:	if i != d[i] and d[d[i]] == i:		ans += 2		flag = True		breakif flag: 	print(ans)else:	if ans == len(arr):		print(ans)	else:		print(ans + 1)

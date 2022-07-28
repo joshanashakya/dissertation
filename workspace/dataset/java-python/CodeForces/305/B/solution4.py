@@ -1,0 +1,1 @@
+from math import gcdq,p= map(int,input().split())n = int(input())a = [*map(int,input().split())]d = gcd(p,q)p//=dq//=dm,b = 1,a[-1]i = n-2while(i>=0):    m = b*a[i]+m    d = gcd(m,b)    m //=d    b //=d    i-=1    m,b = b,mprint("YES" if(m==p and b==q) else "NO")

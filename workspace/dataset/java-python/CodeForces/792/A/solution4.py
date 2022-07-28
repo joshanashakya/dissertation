@@ -1,0 +1,1 @@
+import mathn = int(input())li = list(map(int,input().strip().split()))[:n] li.sort()mindiff = li[1]-li[0]for i in range(2,n):    diff = li[i]-li[i-1]    if(diff<mindiff):        mindiff=diffprint(mindiff,end=" ")count=0for i in range(1,n):    if(li[i]-li[i-1]==mindiff):        count+=1print(count)        

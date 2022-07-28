@@ -1,0 +1,1 @@
+n = int(input())num = [int(i) for i in input().split(" ")] odd = 0even = 0 for i in num:    if even and odd:        break    if i%2 == 0:        even = 1    else:        odd = 1if even and odd:    num = sorted(num)        s = ""for i in range(0, len(num)):    s+=str(num[i])+" "print(s)

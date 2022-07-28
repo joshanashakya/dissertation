@@ -1,0 +1,1 @@
+n,k = map(int,input().split())a2 = []d2 = {}for i in range(n):    p,t = map(int,input().split())    a2.append((p,t))    try:        d2[(p,t)] += 1    except:         d2[(p,t)] = 1a2 = (sorted(a2,key = lambda x: (-x[0],x[1])))(pk,tk) = a2[k-1]print(d2[pk,tk])

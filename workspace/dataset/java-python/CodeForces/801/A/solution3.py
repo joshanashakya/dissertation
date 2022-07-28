@@ -1,0 +1,1 @@
+''' Welcome to GDB Online.GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.Code, Compile, Run and Debug online from anywhere in world. '''c=input()x=c.count("VK")c=c.replace("VK","O")if "VV" in c or "KK" in c:    x=x+1;    print(x)

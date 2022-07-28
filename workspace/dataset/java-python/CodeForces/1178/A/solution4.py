@@ -1,0 +1,1 @@
+n = int(input())a = list(map(int, input().split()))count = 1ref = a[0]arr = [0]s = reffor i in range(n):    if 2 * a[i] <= ref:        arr.append(i)        s += a[i]        count += 1if s <= sum(a) / 2:    print(0)else:    print(count)    for item in arr:        print(item + 1, end=" ")

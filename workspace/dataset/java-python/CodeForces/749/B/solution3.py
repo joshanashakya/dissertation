@@ -1,0 +1,1 @@
+x1,y1=map(int, input().split())x2,y2=map(int, input().split())x3,y3=map(int, input().split()) points=[]points.append([x1+x2-x3,y1+y2-y3])if [x2+x3-x1,y2+y3-y1] not in points:    points.append([x2+x3-x1,y2+y3-y1])if [x3+x1-x2,y3+y1-y2] not in points:    points.append([x3+x1-x2,y3+y1-y2]) print(len(points))for m in points:    print(m[0],m[1])

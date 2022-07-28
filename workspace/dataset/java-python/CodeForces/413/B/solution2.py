@@ -1,0 +1,1 @@
+from sys import stdin,stdouta,b,c=map(int,stdin.readline().split())z=[list(map(int,stdin.readline().split())) for _ in " "*a]k=[0]*am=[0]*b;ans=[0]*afor _ in " "*c:    u,v=map(int,stdin.readline().split())    k[u-1]+=1;m[v-1]+=1for i in range(a):    ans[i]=-k[i]    for j in range(b):ans[i]+=m[j]*z[i][j]stdout.write(' '.join(map(str,ans)))

@@ -1,0 +1,1 @@
+n=int(input())t=int(input())t1=7-tf=0for i in range(n):    p=[]    #lst = list(map(int, input().strip().split(' ')))    l,r = map(int, input().strip().split(' '))    p=[l,r,7-l,7-r]    if t not in p and t1 not in p:        t,t1=t1,t    else:        f=1        breakif f==0:    print('YES')else:    print('NO')                   

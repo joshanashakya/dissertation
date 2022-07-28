@@ -1,0 +1,1 @@
+def main():    n, k = map(int, input().split())    res = ''    for i in range(n):        res += chr(ord('a') + i % k)    print(res)  if __name__ == '__main__':    t = int(input())    for _ in range(t):        main()

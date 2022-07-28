@@ -1,0 +1,1 @@
+import java.util.*;public class P2 { 	public static void main(String[] args) {		Scanner sc = new Scanner(System.in);		int w = sc.nextInt();		int h = sc.nextInt();int k =sc.nextInt();int r=0;for(int i=0;i<k;i++) {	r+=2*(h);	r+=2*(w-2);	w-=4;	h-=4;}System.out.println(r);	}}

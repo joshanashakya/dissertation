@@ -1,0 +1,1 @@
+from math import ceiln, k = map(int, input().split())a = list(map(int, input().split()))b = list(map(int, input().split()))m = 10 ** (k - 1)ans = 1for i in range(n // k):    an = (10 ** k - 1) // a[i] + 1    l = b[i] * m    r = (b[i] + 1) * m - 1    count = r // a[i] - ceil(l / a[i]) + 1    ans = (ans * (an - count)) % (10 ** 9 + 7)print(ans)

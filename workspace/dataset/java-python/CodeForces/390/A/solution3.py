@@ -1,0 +1,1 @@
+n=int(input())dr={}dc={}for i in range(n):    li=[int(x) for x in input().split()]    x,y=li[0],li[1]    if(x in dr):        dr[x]+=1    else:        dr[x]=1    if(y in dc):        dc[y]+=1    else:        dc[y]=1print(min(len(dr),len(dc)))        

@@ -1,0 +1,1 @@
+a = input()b = input() def dfs(sa,sb):    if sa==sb:        return True    if len(sa)&1:        return False        n = len(sa)//2    sa1 = sa[:n]    sa2 = sa[n:]    sb1 = sb[:n]    sb2 = sb[n:]    if dfs(sa1,sb2) and dfs(sa2,sb1):        return True    if dfs(sa1, sb1) and dfs(sa2, sb2):        return True    return False if dfs(a,b):    print("YES")else:    print("NO")

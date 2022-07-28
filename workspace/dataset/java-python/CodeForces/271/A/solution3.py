@@ -1,0 +1,1 @@
+n = int(input())#print(list(n))while True:    n += 1    i1 = i = str(n)    ##print(",")    if (i[0] != i[1] and i[0] != i[2] and i[0] != i[3] and i[1] != i[2] and i[1] != i[3] and i[2] != i[3]):        print(i1)        break#print(".")

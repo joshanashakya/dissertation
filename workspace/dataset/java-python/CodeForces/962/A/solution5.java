@@ -1,0 +1,1 @@
+import java.util.Scanner; public class Demo2 { 	public static void main(String[] args) { 		int n,t=0,sum=0,fin=0;		Scanner sc = new Scanner(System.in);		n=sc.nextInt();		int a[] = new int[n];		for(int i=0;i<n;i++)		{			a[i]=sc.nextInt();			sum+=a[i];		}		for(int i=0;i<n;i++)		{			fin+=a[i];			if(fin*2>=sum)			{				t=i;				break;			}		}		System.out.println(t+1);	} }

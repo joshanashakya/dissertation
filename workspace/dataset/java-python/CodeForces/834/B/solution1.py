@@ -1,0 +1,1 @@
+l=[-1]*122g=[-1]*122r=0ch=0n,k=map(int, input().split())s=input()j=nfor i in range(0,n):  j-=1  indf=ord(s[i])  indb=ord(s[j])  if(l[indf]!=-1):    pass  else:    l[indf]=i  if(g[indb]!=-1):    pass  else:    g[indb]=j for i in range(0,n):  indx=ord(s[i])  if(l[indx]==i):    r+=1  if(r>k):    ch=1    break    if(g[indx]==i):    r-=1if(ch==1):  print("YES")else:  print("NO")

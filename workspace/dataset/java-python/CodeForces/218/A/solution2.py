@@ -1,0 +1,1 @@
+n,k= map(int, input().split())arr =[int(x) for x in input().split()] # f = 0for i in range(0,2*n+1):    if i%2==1 and k and arr[i]>arr[i+1]+1 and arr[i]>arr[i-1]+1:        k-=1        print(str(arr[i]-1),end=" ")    else:        print(str(arr[i]),end=" ")

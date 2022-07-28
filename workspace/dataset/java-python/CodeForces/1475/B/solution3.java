@@ -1,0 +1,1 @@
+import java.util.Scanner; public class problem69 { 	public static void main(String[] args) {		// TODO Auto-generated method stub		Scanner sc = new Scanner(System.in);		int t = sc.nextInt();		while(t!=0)				{		int n = sc.nextInt();		int x = n/2020;		int y = n%2020;		if(x>=y)			System.out.println("YES");		else			System.out.println("NO");									t--;		} 	} }

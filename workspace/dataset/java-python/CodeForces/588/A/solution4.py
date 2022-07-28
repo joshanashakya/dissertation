@@ -1,0 +1,1 @@
+t=int(input())meat=[]money=[]while t>0:  num=[int(i) for i in input().split()]  a=num[0]  b=num[1]  meat.append(a)  money.append(b)  t=t-1meat.append(0)money.append(0)tot=0i=0while i< len(money)-1:  if money[i]<money[i+1]:    money[i+1]=money[i]    tot=tot+(meat[i]*money[i])    i=i+1  else:    tot=tot+(meat[i]*money[i])    i=i+1print(tot)

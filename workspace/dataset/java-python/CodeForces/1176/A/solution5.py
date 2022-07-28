@@ -1,0 +1,1 @@
+test=int(input())while test!=0:    num=int(input())    cnt=0    while num>1:        if num%2==0:            num//=2        elif num%3==0:            num=(num*2)//3        elif num%5==0: num=(num*4)//5        else:break        cnt += 1    if num==1:print(cnt)    else:print(-1)    test-=1				 	 				 		   		 	    		 	 	

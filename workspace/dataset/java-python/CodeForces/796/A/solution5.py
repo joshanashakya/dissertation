@@ -1,0 +1,1 @@
+n, m, k = map(int, input().split())houses = [int(i) for i in input().split()]frwd, bcwd = 999, -999 for i in range(m, n):    if 0 < houses[i] <= k:        frwd = i+1        break for i in range(m-2, -1, -1):    if 0 < houses[i] <= k:        bcwd = i+1        break print(min(frwd-m, m-bcwd)*10)

@@ -1,0 +1,1 @@
+n=int(input())l=[]for i in range(n):    l.append(input())c=0for i in range(n):    if "OO" in l[i]:        c=1        if l[i][0]=='O' and l[i][1]=='O':            l[i]="++"+l[i][2:]        else:            l[i]=l[i][:3]+"++"        breakif c:    print("YES")    for i in l:        print(i)else:    print("NO")

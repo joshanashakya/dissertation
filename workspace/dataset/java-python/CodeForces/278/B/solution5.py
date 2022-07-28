@@ -1,0 +1,1 @@
+import strings=' '.join(input()for i in range(int(input())))alph= string.ascii_lowercasefor i in alph:    if i not in s:print(i);exit()for i in alph:    for j in alph:        if i+j not in s:print(i+j);exit()

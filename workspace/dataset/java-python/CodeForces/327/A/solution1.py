@@ -1,0 +1,1 @@
+x = int(input()) difference = [0] ones = 0zeros = 0 line = input().split(" ") for i in line:    if (int(i) == 1):        ones += 1    else:        zeros += 1    difference.append(zeros-ones) minimum = 0maximum = 0 for i in range(1,len(difference)):    result = difference[i] - minimum    maximum = max(ones + result,maximum)    minimum = min(difference[i],minimum) print(maximum) 

@@ -1,0 +1,1 @@
+# cook your dish heren,k=map(int,input().split())st=input()s=set(st)ans=0d=[0]*nfor i in s:    for j in range(st.find(i),st.rfind(i)+1):#        print(st.find(i))        d[j]+=1 #print(d)if(max(d)>k):    print("YES")else:    print("NO")

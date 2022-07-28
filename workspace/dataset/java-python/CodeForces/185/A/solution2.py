@@ -1,0 +1,1 @@
+z = 1000000007def f(a,m):    p = 1    while m:        if m%2:            p = (p*a)%z            m -= 1        else:            m //= 2            a = (a*a)%z    return pn = int(input())x = f(2,n)print((x*(x+1)//2)%z)

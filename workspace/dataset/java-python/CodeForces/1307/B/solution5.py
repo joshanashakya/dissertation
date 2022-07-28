@@ -1,0 +1,1 @@
+from math import ceil,sqrt,gcd,factorialfrom collections import defaultdict as ddd=dd(lambda:0)from sys import stdininput = stdin.readline def mp():return map(int,input().split())def it():return int(input()) for _ in range(it()):	a,b=mp()	s=list(mp())	if b in s:		print(1)	else:		print(max(2,ceil(b/max(s))))

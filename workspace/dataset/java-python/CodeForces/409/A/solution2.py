@@ -1,0 +1,1 @@
+s = input()t = input()n = len(s)d = {'([': [0, 1], '((': [0, 0], '[[': [0, 0], '88': [0, 0], '(8': [1, 0],     '8(': [0, 1], '[8': [0, 1], '8[': [1, 0], '[(': [1, 0]}p, q = 0, 0for i in range(0, n, 2):    p += d[s[i] + t[i]][0]    q += d[s[i] + t[i]][1]if p == q:    print('TIE')elif p > q:    print('TEAM 1 WINS')else:    print('TEAM 2 WINS')

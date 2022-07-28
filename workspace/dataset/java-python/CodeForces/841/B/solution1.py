@@ -1,0 +1,1 @@
+n=int(input())print('First' if any(int(i)%2!=0 for i in input().split()) else 'Second')  '''c=0flag=0for i in range(n):    if a[i]%2!=0:        flag=1        breakif flag==1:    print('First')else:    print('Second') '''    

@@ -1,0 +1,1 @@
+n = int(input())a = list(map(int, input().split(' ')))a = list(sorted(a)) days_of_training = 0for i in range(len(a)):    if a[i] > days_of_training:        days_of_training += 1print(days_of_training)

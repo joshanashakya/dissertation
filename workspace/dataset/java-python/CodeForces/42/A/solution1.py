@@ -1,0 +1,1 @@
+n, V = map(int, input().split())a = list(map(int, input().split()))b = list(map(int, input().split()))Sa=sum(a)m = min(b)res = 0for i in range(n):    cur_r = 0    for j in range(n):        if(b[j]>=a[j]*b[i]/a[i]):            cur_r += a[j]*b[i]/a[i]        else:            break    else:        res = max(cur_r, res)print(min(res, float(V)))

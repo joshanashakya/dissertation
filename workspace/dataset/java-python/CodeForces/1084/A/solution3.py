@@ -1,0 +1,1 @@
+n = int(input())A = list(map(int, input().split()))ans = 10**18for i in range(n):    x = i+1    temp = 0    for j in range(n):        k = j+1        temp += (abs(k-x)+abs(k-1)+abs(x-1))*A[j]        temp += (abs(1-x)+abs(1-k)+abs(k-x))*A[j]        y = abs(k-x)+abs(x-1)+abs(x-1)+abs(1-x)+abs(1-k)+abs(k-x)        #print(x, k, y)    ans = min(ans, temp)print(ans)

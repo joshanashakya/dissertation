@@ -1,0 +1,1 @@
+/*package whatever //do not write package name here */    import java.util.*;public class f{    public static void main(String[]a){   Scanner sc =new Scanner(System.in) ; if(sc.hasNext()){int t = sc.nextInt();while(t-->0){int n = sc.nextInt();System.out.println(n/2);  } } }}    	      

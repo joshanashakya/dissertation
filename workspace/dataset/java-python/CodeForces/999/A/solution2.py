@@ -1,0 +1,1 @@
+import renumber1=str(input())arr=str(input())z=re.findall(r"\d+",number1)c=[int(b) for b in z]x=re.findall(r"\d+",arr)y=[int(a) for a in x]lr=0rl=0for i in range(len(y)):    if y[i]<=c[1]:        lr+=1    else:        breakfor i in reversed(range(len(y))):    if y[i]<=c[1]:        rl+=1    else:        break print(min(lr+rl,c[0]))

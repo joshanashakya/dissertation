@@ -1,0 +1,1 @@
+# https://codeforces.com/problemset/problem/608/A n, f = map(int, input().split()) a = []for i in range(n):    a.append([x for x in map(int, input().split())]) a.sort(reverse=True) time = 0for i in range(n):    time += f - a[i][0]    f = a[i][0]    time += max(0, a[i][1] - time) time += f print(time)

@@ -1,0 +1,1 @@
+n, k = map(int, input().split())a = list(map(int, input().split()))ans = 0for b in range(k):  e, s = 0, 0  for i in range(n):    if i % k != b:      if a[i] == 1:        e += 1      else:        s += 1  ans = max(ans, abs(e - s))print(ans)

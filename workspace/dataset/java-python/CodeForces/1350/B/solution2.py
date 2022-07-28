@@ -1,0 +1,1 @@
+from sys import stdint=int(input())l=[[1] for i in range(10**5+1)]for i in range(2,10**5+1):  for j in range(i,10**5+1,i):    l[j].append(i)for _ in range(t):  n=int(stdin.readline())  s=[0]+list(map(int,stdin.readline().split()))  dp=[0]*(n+1)  for i in range(1,n+1):    for x in l[i]:      if s[x]<s[i]:        dp[i]=max(dp[i],dp[x])    dp[i]+=1  print(max(dp))

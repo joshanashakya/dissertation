@@ -1,0 +1,1 @@
+from math import ceil n_sets = int(input())for _ in range(n_sets):    a, b, c, d, k = map(int, input().split())    n_pen = ceil(a / c)    n_pencil = ceil(b / d)    if n_pen + n_pencil <= k:        print(n_pen, n_pencil)    else:        print(-1)

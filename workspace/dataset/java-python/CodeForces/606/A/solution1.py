@@ -1,0 +1,1 @@
+  t=  list(map(int,input().split())) g = list(map(int,input().split()))  re=0for j in range(3):    if t[j]>g[j]:        re+=(t[j]-g[j])//2 u=0  for k in range(3):    if t[k]<g[k]:        if re  >= g[k]-t[k]:            re-=(g[k]-t[k])        else:            print('No')                        u+=1            breakif u==0:    print('Yes')

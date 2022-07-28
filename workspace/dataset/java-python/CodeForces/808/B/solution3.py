@@ -1,0 +1,1 @@
+n,m = map(int,input().split())x = list(map(int,input().split())) ss=0c=0l=0f=0for i in range(len(x)):    ss+=x[i]    if(i==m-1 and l==0):        c+=ss        l=1            elif(l==1):        ss-=x[f]        c+=ss        f+=1          print(c/(n-m+1))

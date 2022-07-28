@@ -1,0 +1,1 @@
+import java.util.Scanner; public class Game{	public static void main(String[] args)	{		Scanner input = new Scanner(System.in); 		int x = input.nextInt(), y = input.nextInt(), s = 0;		if (y > x && x >= -y)			s = -2 + y * 4;		if (y < x && x <= -y + 1)			s = -y * 4;  		if (y <= x && x > -y + 1)			s = -3 + x * 4;		if (y >= x && x < -y)			s = -1 - 4 * x;		System.out.println(s); 	}}

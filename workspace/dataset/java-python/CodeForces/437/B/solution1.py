@@ -1,0 +1,1 @@
+sum, limit = map(int, input().split()) ans = []while limit > 0 and sum > 0:    if (limit & -limit) <= sum:        sum -= (limit & -limit)        ans.append(limit)    limit -= 1 if sum > 0:    print(-1)else:    print(len(ans))    print(*ans)

@@ -1,0 +1,1 @@
+ax, ay, bx, by, cx, cy = map(int, input().split())ans =  (by - ay)*(cx - bx) == (cy - by)*(bx - ax)if ans:    ans = 0else:    ans = 1d1 = (by - ay)**2 + (bx - ax)**2d2 = (cy - by)**2 + (cx - bx)**2if d1 == d2:    ans2 = 1else:    ans2 = 0if ans and ans2:    print("Yes")else:    print("No") 		 	  	       		   	   	  			

@@ -1,0 +1,1 @@
+n = int(input())A = list(map(int, input().split()))x, y = map(int, input().split()) for i in range(1, n):    A[i] = A[i] + A[i-1] for i in range(n):    a = A[i]    itr = A[-1] - a    if a >= x and a <= y and itr >= x and itr <= y:        print(i+2)        breakelse:    print(0)

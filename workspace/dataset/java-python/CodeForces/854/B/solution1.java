@@ -1,0 +1,1 @@
+import java.util.*;public class Main{	public static void main(String[] args) {		Scanner s=new Scanner(System.in);		int n=s.nextInt();		int k=s.nextInt();		if(k==0||k==n)		System.out.print("0 ");		else		System.out.print("1 ");		if(n-(3*k)>=0)		System.out.print(2*k);		else		System.out.print(n-k);	}}

@@ -1,0 +1,1 @@
+  n,x,y = map(int,input().split())  t=[]  for k in range(n-1):    t.append(1) s = y-(n-1) if s>0:    if n-1+(s)**2>=x:        for si in t:            print(si)        print(s)    else:print(-1)else:    print(-1)

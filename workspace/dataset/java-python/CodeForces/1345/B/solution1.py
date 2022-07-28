@@ -1,0 +1,1 @@
+container = [2]d = 26000for i in range(1, d+1):    h = i+1    container.append(h*2+h-1+container[i-1]) cases = int(input())for t in range(cases):    n = int(input())    count = 0    while n>1:        for i in range(len(container)):            if n < container[i]:                n -= container[i-1]                count+=1                break     print(count)

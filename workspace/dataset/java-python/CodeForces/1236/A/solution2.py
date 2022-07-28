@@ -1,0 +1,1 @@
+n=int(input()) for i in range(n):    x=list(map(int,input().split()))    a=x[0]    b=x[1]    c=x[2]     asd=min(b,c//2)    ans=0    if asd>0:        ans=ans+(3*asd)        b=b-asd     asd=min(a,b//2)    if asd>0:        ans=ans+(3*asd)    print(ans)

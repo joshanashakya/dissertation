@@ -1,0 +1,1 @@
+import mathdef solve(t,s,x):  if x< t:    return 'NO'  if x == t:    return 'YES'  if x< t+s :    return 'NO'  if (x-t)%s == 0 or (x-t-1)%s == 0:    return 'YES'  return 'NO'          def main() :  # n = int(input())  arr = list(map(int, input().split(' ')))  print(solve(*arr))main()

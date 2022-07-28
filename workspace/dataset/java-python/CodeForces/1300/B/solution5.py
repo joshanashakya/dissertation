@@ -1,0 +1,1 @@
+import mathcan = []n = int(input())ye = [[None]*n]*n for i in range(n):     m = int(input())    can = list(map(int, input().split()))    can.sort()    ye[i] = can[m] - can[m-1]      for i in range(n):     print(ye[i])	     				    	   	  		    		

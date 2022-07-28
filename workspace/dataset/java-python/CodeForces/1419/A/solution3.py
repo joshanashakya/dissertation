@@ -1,0 +1,5 @@
+import sys input = sys.stdin.buffer.readline t = int(input())
+for _ in range(t):    n = int(input())
+s = input().strip()     if n % 2 == 1:        any_winners = any(int(a) % 2 == 1 for i, a in enumerate(s) if i % 2 == 0)
+print(1 if any_winners else 2) else:        any_winners = any(int(a) % 2 == 0 for i, a in enumerate(s) if i % 2 == 1)
+print(2 if any_winners else 1)

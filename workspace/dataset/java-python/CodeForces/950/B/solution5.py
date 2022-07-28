@@ -1,0 +1,1 @@
+n,m=[int(i) for i in input().split()]a=[int(i) for i in input().split()]b=[int(i) for i in input().split()]sum=0sums=0for i in  range(0,len(a)):    sum=sum+a[i]    a[i]=sumfor i in  range(0,len(b)):    sums=sums+b[i]    b[i]=sumsprint(n+m-(len(set(a+b))))

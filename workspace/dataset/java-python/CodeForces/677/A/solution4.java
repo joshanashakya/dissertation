@@ -1,0 +1,1 @@
+import java.util.Scanner; public class vanyaAndFence { 	public static void main(String[] args) {		Scanner sc=new Scanner(System.in);		int n = sc.nextInt();		int h = sc.nextInt();	    int res = n;	    for (int i=1;i<=n;i++) {	    	int hi = sc.nextInt();	    	if(hi > h) {	    		res++;	    	}	    }	    System.out.println(res);	} }

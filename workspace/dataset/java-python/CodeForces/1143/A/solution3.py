@@ -1,0 +1,1 @@
+n=int(input())l=list(map(int,input().split()))m=l.count(1)x=l.count(0)c=0b=0for i in range (n):    if (c==m ):        print(i)        break    elif(b==x):        print(i)        break    elif(l[i]==0):        b+=1    else:        c+=1   

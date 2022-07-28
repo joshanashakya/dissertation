@@ -1,0 +1,1 @@
+A = set()B = set()cost1 = 0cost2 = 0def swap(a,b):    a,b = b,a    return a,bn = int(input())for i in range(n):    a,b,c = map(int,input().split())    if (a in A) or (b in B):        a,b = swap(a,b)        cost1 += c    else:        cost2 += c    A.add(a)    B.add(b)print(min(cost1,cost2))

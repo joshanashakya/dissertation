@@ -1,0 +1,1 @@
+for e in range(int(input())):    n, m = map(int, input().split())    l = list(map(int, input().split()))        first = l[0]    l.sort()    if(sum(l) >= m):        print(m)    else:        print(sum(l))

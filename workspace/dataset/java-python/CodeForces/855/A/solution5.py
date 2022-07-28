@@ -1,0 +1,1 @@
+import sys def main():    _, *l = sys.stdin.read().strip().split()    out, s = [], set()    for i in l:        if i in s: out.append('YES')        else: s.add(i); out.append('NO')    return out print(*main(), sep='\n')

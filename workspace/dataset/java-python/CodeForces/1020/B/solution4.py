@@ -1,0 +1,1 @@
+n = int(input())p = list(map(int,input().split()))ans = []for start in range(n):	holes = [0 for i in range(n)]	holes[start] = 1	cur = start	while max(holes)!=2:		holes[p[cur]-1]+=1		cur = p[cur]-1	ans.append(cur+1) print(' '.join(list(map(str,ans))))

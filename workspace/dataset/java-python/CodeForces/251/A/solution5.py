@@ -1,0 +1,1 @@
+#1 A. Points on Line div 1 round 153 #solve this problem using binary search n,k=map(int,input().split())a=list(map(int,input().split()))l,r,ans=0,0,0while r<n:	while a[r]-a[l]>k:		l+=1	m=r-l	ans+=m*(m-1)//2	r+=1	print(ans) 

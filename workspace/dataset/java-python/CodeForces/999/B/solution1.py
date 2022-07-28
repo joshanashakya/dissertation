@@ -1,0 +1,1 @@
+def divisors(n):    divs = []    i = 1    while n >= i ** 2:        if n % i == 0:            divs.append(i)            if i ** 2 != n:                divs.append(n // i)        i = i + 1    divs.sort()    return divs  num = int(input())s = input()divs = divisors(num)for i in divs:    s = s[:i][::-1] + s[i:] print(s)# print(divs) 

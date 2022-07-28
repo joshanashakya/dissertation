@@ -1,0 +1,1 @@
+try:    n = int(input())    c = list(map(int, input().split()))    z=[]    i=n-1    while i>0:        if not c[i] == c[0]:            z.append(i)            break        else:            i=i-1    i=0    while i<n-1:        if not c[i] == c[n-1]:            z.append(n-1-i)            break        else:            i=i+1    print(max(z))except:    pass

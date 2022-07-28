@@ -1,0 +1,1 @@
+n,m=map(int,input().split())c=0s=set()for i in range(n):    k=input()    if 'S' not in k:        c+=1        continue    for j in range(m):        if k[j]=='S':            s.add(j)t=(m-len(s))*n+c*m-c*(m-len(s))print(t)

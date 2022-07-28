@@ -1,0 +1,1 @@
+# https://codeforces.com/contest/426/problem/A n, s = list(map(int, input().split()))mugs = list(map(int, input().split())) mx = -1sum = 0for m in mugs:    mx = max(m, mx)    sum += mif sum - mx > s:    print("NO")else:    print("YES")

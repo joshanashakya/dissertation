@@ -1,0 +1,1 @@
+s=str(input())l=',.!?'e=''for i in range(0,len(s)):    if(s[i] not in l and s[i]!=' '):        e=e+s[i]    elif(s[i]==' '):        if(e[-1]==' '):            pass        else:            e=e+s[i]    else:        if(e[-1]==' '):            e=e[0:len(e)-1]            e=e+s[i]+' '        else:            e=e+s[i]+' 'print(e)

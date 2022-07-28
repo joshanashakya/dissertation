@@ -1,0 +1,1 @@
+def solution():	n=int(input())	count={}	arr=list(map(int,input().split())) 	for i in arr:		if i not in count:			count[i]=1		else:			count[i]+=1	 	mx=max(arr)	mn=min(arr)	if mx==mn:		print(0, int(count[mx]*(count[mx]-1)/2))	else:		print(mx-mn,count[mx]*count[mn])   solution()

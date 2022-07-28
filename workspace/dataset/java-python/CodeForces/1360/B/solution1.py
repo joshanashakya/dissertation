@@ -1,0 +1,1 @@
+t = int(input()) for tc in range(t):    n = int(input())     athletes = [int(z) for z in input().split()]     athletes.sort()     res = []     for i in range(1, n):        a = athletes[:i]        b = athletes[i:]         res.append(abs(max(a) - min(b)))     print(min(res))

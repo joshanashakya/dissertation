@@ -1,0 +1,1 @@
+from sys import*input= stdin.readlinet=int(input())l={}level=[]for i in range(t):    s,p=map(str,input().split())    p=int(p)    l[s]=l.get(s,0)+p    level.append([l[s],s])res=list(l.values())maxp=max(res)name=[]for i in l:    if(l[i]==maxp):        name.append(i)for i in level:    if(i[0]>=maxp and i[1] in name):        print(i[1])        break     

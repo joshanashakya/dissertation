@@ -1,0 +1,1 @@
+from sys import stdin, stdout def main():    n, m = map(int, stdin.readline().split(' '))    q, r = n//m, n%m    s = [q for i in range(m-r)]    s.extend([(q+1) for i in range(m-r, m)])    print(*s, sep=' ') if __name__ == "__main__":    main()

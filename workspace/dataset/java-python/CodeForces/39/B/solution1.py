@@ -1,0 +1,1 @@
+a=int(input());p=[]for i,j in enumerate(map(int,input().split())):    if j>0:            p.append([2000+i+1,j])p=sorted(p);t=1;ok=0;o=[]for i in range(len(p)):    if p[i][0]>ok and t==p[i][1]:o.append(p[i][0]);ok=p[i][0];t+=1print(t-1);print(*o)

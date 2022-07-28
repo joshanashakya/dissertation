@@ -1,0 +1,1 @@
+n,a,b,c=map(int, input().split())if (n%4 == 0):print(0)else:    hf = ((n//4)*4)+4    diff = hf-n    if (diff == 1):        print(min(a,b+c,3*c))    elif (diff == 2):        print(min(2*a,2*c,b))    else:        print(min(c,3*a,a+b))

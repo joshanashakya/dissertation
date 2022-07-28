@@ -1,0 +1,1 @@
+def solve(n, m, k):    if n < m:        n, m = m, n    if k < n:        return -1        if (k - n) % 2 == 1:        m -= 1        k -= 1          return k - (n - m) % 2 for _ in range(int(input())):    n, m, k = map(int, input().split())    print(solve(n, m, k))

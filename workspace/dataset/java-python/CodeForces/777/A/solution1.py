@@ -1,0 +1,1 @@
+n = int(input())x = int(input())a = [0] * 3a[x] = 1for i in range(n % 6 + 1, 7):  if i % 2 == 1:    a[0], a[1] = a[1], a[0]  else:    a[1], a[2] = a[2], a[1]for i in range(3):  if a[i] == 1:    print(i)

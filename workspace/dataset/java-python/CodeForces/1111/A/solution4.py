@@ -1,0 +1,1 @@
+s = input()t = input()if len(s)!=len(t):    print("No")else:    p=1    l = ['a','e','i','o','u']    for i in range(len(s)):        if s[i] in l and t[i] in l:            p=1        elif s[i] not in l and t[i] not in l:            p=1        else:            p=0            break    if p==1:        print("Yes")    else:        print("No")

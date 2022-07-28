@@ -1,0 +1,1 @@
+from itertools import combinationsl=list(map(int,input().split()))s=sum(l);f=0if s%2!=0:  print("NO")  f=1else:  for i in combinations(l, 3):    if sum(i)==s//2:      print("YES")      f=1      breakif f==0:print("NO")

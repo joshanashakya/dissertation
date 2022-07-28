@@ -1,0 +1,1 @@
+import java.util.*;public class Hulk {	public static void main(String args[]) {		int n=0;		Scanner sc = new Scanner(System.in);		n = sc.nextInt();		String res = "";		for(int i=1;i<=n;i++)		{			if(i % 2 != 0) res = res + "I hate ";			else res = res + "I love ";			if(i!=n) res = res + "that ";		}		res = res + "it";		System.out.println(res);	}}

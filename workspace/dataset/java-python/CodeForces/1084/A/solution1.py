@@ -1,0 +1,1 @@
+n = int(input())a = [1] + [int(x) for x in input().strip().split(' ')]res = 0power = []for i in range(1, n+1):    for j in range(1, n+1):        if j > i:            res = a[j] * ((j-i)*2+(j-1)*2) * 2 + res        else:            res = a[j] * (j-1)*2 * 2 + res    power.append(res)    res = 0 ans = min(power)print(ans) 	 		 		    	  	 	   		  	 	 		

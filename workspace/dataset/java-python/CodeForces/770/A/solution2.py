@@ -1,0 +1,1 @@
+from itertools import cyclest = 'abcdefghijklmnopqrstuvwxyz'ls = list(map(int, input().split()))l, k = ls[0], ls[1]os = ''ls = list(st[0:k])pool = cycle(ls)while len(os) < l:    os += next(pool)print(os)

@@ -1,0 +1,1 @@
+""" import syssys.stdin = open('input.txt', 'r')sys.stdout = open('output.txt', 'w') """def sol():    x=int(input())    s=list(map(int,input().split()))    st=set()    for n in range(x):        u=(s[n]+n)%x        st.add(u)     print('YES' if len(list(st))==x else 'NO')  for n in range(int(input())):    sol()

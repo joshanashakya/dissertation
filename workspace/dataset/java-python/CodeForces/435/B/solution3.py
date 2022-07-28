@@ -1,0 +1,1 @@
+n, k = input().split()n = [*n]k = int(k)for i in range(len(n)):    if k == 0:        break    big = i    for j in range(i + 1, min(i + k + 1, len(n))):        if n[j] > n[big]:            big = j    ch = n[big]    del n[big]    n.insert(i, ch)    k -= big - iprint(*n, sep = '')

@@ -1,0 +1,1 @@
+# cook your dish heredef check(lst,i):    x=y=0    if(i-b<0):        x=0    else:        x=i-b        if(lst[i]==min(lst[x:i+c+1])):        return True    else:        False        def solve(lst):    for i in range(a):        if check(lst,i):            print(i+1)            return  a,b,c=list(map(int,input().split()))lst=list(map(int,input().split()))solve(lst)

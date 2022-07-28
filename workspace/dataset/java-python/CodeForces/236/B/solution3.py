@@ -1,0 +1,1 @@
+a,b, c = map(int, input().split())m = [2] * (a*b*c+1)m[1] = 1for i in range(2,len(m)):    for j in range(2*i,len(m),i):        m[j]+=1ans = 0for i in range(1,a+1):    for j in range(1,b+1):        for l in range(1,c+1):            ans = (ans + m[i*j*l]) %1073741824print(ans)

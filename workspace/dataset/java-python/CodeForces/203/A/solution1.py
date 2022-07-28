@@ -1,0 +1,1 @@
+x, t, a, b, da, db = [int(i) for i in input().split()] if x == 0:    print("YES")    exit(0) for i in range(t):    for j in range(t):        if (a - i*da + b - j*db == x) or (a - i*da == x) or (b - j*db == x):            print("YES")            exit(0) print("NO")

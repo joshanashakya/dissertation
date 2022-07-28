@@ -1,0 +1,1 @@
+t = int(input())for _ in range(t):    n = int(input())    maxl, minr = 1, 10 ** 9    for i in range(n):        l, r = map(int, input().split())        maxl, minr = max(maxl, l), min(minr, r)    if maxl <= minr:        print(0)    else:        print(maxl - minr)

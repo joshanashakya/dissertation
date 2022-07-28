@@ -1,0 +1,1 @@
+x=int(input())for i in range(x):    n=int(input())    s=input()    b=[]    for j in range(n):        if(s[j]=="A"):            b.append(j)    d=0    if(len(b)>0):        for k in range(0,len(b)-1):            t=b[k+1]-b[k]-1            d=max(d,t)        if(b[-1]!=n-1):            t=n-1-b[-1]            d=max(t,d)        print(d)    else:        print(0)                

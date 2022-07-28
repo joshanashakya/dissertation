@@ -1,0 +1,1 @@
+def mex(lst,blanck):    ans=0    for i in blanck:        ans=max(ans,ans+sum(lst[i[0]:i[1]+1]))    return ans a,b=map(int,input().strip().split())blanck=[]lst=list(map(int,input().strip().split()))for i in range(b):    x,y=map(int,input().strip().split())    blanck.append([x-1,y-1])print(mex(lst,blanck))

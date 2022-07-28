@@ -1,0 +1,1 @@
+n = int(input()) maxln = 0minrn = 10 ** 9 + 1for i in range(n):    l, r = map(int, input().split())    maxln = max(l, maxln)    minrn = min(r, minrn) m = int(input()) ans = -1for i in range(m):    l, r = map(int, input().split())    if l > minrn:        ans = max(ans, l - minrn)    if r < maxln:        ans = max(ans, maxln - r) ans = max(0, ans)print(ans)

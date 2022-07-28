@@ -1,0 +1,1 @@
+t = int(input())ans = []for _ in range(t):    arr = sorted(map(int, input().split()))    if arr[-1] > arr[0] + arr[1]:        ans.append(arr[0] + arr[1])    else:        ans.append(sum(arr) // 2) for a in ans:    print(a)

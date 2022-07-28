@@ -1,0 +1,1 @@
+# RawCoder : https://bit.ly/RCyouTube# Author : MehulYK import math as mfor i in range(int(input())):    n = int(input())    w = list(map(int, input().split()))    ch = [0] * 100    ans = 0    for j in w:        ch[len(bin(j))] += 1    for j in ch:        ans += j*(j-1)//2        print(ans)

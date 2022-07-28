@@ -1,0 +1,1 @@
+t=int(input())for i in range(t):    n=int(input())    tm=1    x=0    l1=[]    while(x<n):        l,r=input().split()        l=int(l)        r=int(r)        if(l>tm):            tm=l        elif(tm>r):            l1.append(0)            x=x+1            continue        l1.append(tm)        tm=tm+1        x=x+1    c=0    while(c<n):        print(l1[c],end=" ")        c=c+1

@@ -1,0 +1,1 @@
+n = int(input())s = input()a = len(s)c = 0d = 0for i in range(a):    if(s[i] == 'A'):         c = c + 1    elif(s[i] == 'D'):        d = d + 1if(c>d):    print("Anton")elif(d>c):    print("Danik")elif(c == d):    print("Friendship")

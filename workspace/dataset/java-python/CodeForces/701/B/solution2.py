@@ -1,0 +1,1 @@
+n, m = map(int, input().split())res = []v = [0]*(10**5 + 1)k1 = k2 = 0h = [0]*(10**5 + 1)for i in range(m):    x, y = map(int, input().split())    if not v[x] or not h[y]:        if not v[x]:            v[x] = 1            k1 += 1        if not h[y]:            h[y] = 1            k2 += 1        res += [(n - k1) * (n - k2)]    else: res += [res[-1]]print(*res, sep='\n')

@@ -1,0 +1,1 @@
+n = int(input())a = []for i in range(n):    x = int(input())    a.append(x)maxcount = 1for i in range(n):    if a[i] != -1:         j = i         count = 0         while j >= 0:             j = a[j] - 1             count+=1         maxcount = max(count, maxcount)print(maxcount)		   	 	 							  		   						

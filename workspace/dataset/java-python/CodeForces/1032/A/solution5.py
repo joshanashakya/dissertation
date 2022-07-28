@@ -1,0 +1,1 @@
+# https://codeforces.com/problemset/problem/1032/A# 900import math n, k = map(int, input().split())us = list(map(int, input().split())) s = {}for u in us:    s.setdefault(u, 0)    s[u] += 1 d = math.ceil(max(s.values()) / k) * ko = 0 for v in s.values():    o += d - v print(o)

@@ -1,0 +1,1 @@
+n = int(input())stop = []person = 0count = 0for i in range(n):    a = list(map(int,input().split()))    stop.append(a) for i in stop:    person = person - i[0] + i[1]    if count < person:        count = person    print (count)

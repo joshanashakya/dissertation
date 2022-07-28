@@ -1,0 +1,1 @@
+from fractions import gcdn = int(input())a = list(map(int,input().split()))d = max(a)c = 0for i in range(len(a)):    c = gcd(c,a[i])result = d //c-nif result % 2 == 0:    print("Bob")else:    print("Alice")

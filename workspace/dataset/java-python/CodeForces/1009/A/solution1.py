@@ -1,0 +1,1 @@
+import sys def main():    inp = sys.stdin.read().strip().split('\n')    w = list(map(int, inp[2].split()))    c, j = 0, 0    for i in map(int, inp[1].split()):        if j == len(w): break        if w[j] >= i: c += 1; j += 1    return c print(main())

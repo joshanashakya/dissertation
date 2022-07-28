@@ -1,0 +1,1 @@
+s = 'qwertyuiopasdfghjkl;zxcvbnm,./'direction= input()sentence = input()st = ''if direction == 'R':    for i in range(len(sentence)):        s1 = s.find(sentence[i])        st+= s[s1-1]else:    for i in range(len(sentence)):        s1 = s.find(sentence[i])        st+= s[s1+1]    print(st)

@@ -1,0 +1,1 @@
+import sysn=int(input())ls=[]for _ in range(n):    s=sys.stdin.readline()    ls.append(int(s))ls.sort() cnt=0mid=n//2-1right=n-1mated=0for _ in range(n//2):    if ls[right]>=2*ls[mid] and mid>=0:        cnt+=1        mid-=1        right-=1        mated+=2    else:        mid-=1print(cnt+n-mated)

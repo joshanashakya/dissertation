@@ -1,0 +1,1 @@
+n,t,c=map(int,input().split())a=list(map(int,input().split()))summ=0count=0 for i in range(n):		if a[i]<=t:		count+=1 	else:		if count>=c:			summ+=(count-c+1)		count=0 if count>=c:	summ+=(count-c+1)  print(summ)

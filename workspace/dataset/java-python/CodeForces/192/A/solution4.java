@@ -1,0 +1,1 @@
+import java.util.*; public class Demo{	public static void main (String[] args)	{		int n,t;		Scanner sc=new Scanner(System.in);		n=sc.nextInt();		for(int i=1;i<n;i++){  		int z=i*(i+1);  		if(n<z)break;  		t=(int)Math.sqrt(2*n-z);  		t=t*(t+1);  		if(t==2*n-z){  			System.out.println("YES");  			return;  		}  	}  		System.out.println("NO");	}}

@@ -1,0 +1,1 @@
+s, k=map(int, input().split())fib=[0, 1]for i in range(80):    g=0    for x in range(k):        if len(fib)-x-1<0:break        g+=fib[len(fib)-x-1]    fib.append(g)ans=[]for x in reversed(fib):    if x<=s:        s-=x        ans.append(x)print(len(ans))print(" ".join(str(x) for x in ans))
