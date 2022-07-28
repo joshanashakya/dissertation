@@ -1,0 +1,100 @@
+Throughout this study, Python was used as the programming language. The transformer-based neural translation model was implemented using PyTorch, and the CodeBERT-based encoder-decoder model was initialized using HuggingFace.
+
+\section{Implementation Tools}
+The following are the tools employed in the study:
+\begin{enumerate}[topsep = 0pt, label=\roman*.]
+\item Python programming language \\
+Python is a high-level, interpreted, and dynamically-typed programming language, first released in 1991 by Guido van Rossum. It supports procedural, functional, and object-oriented programming. Python is the most often used language for creating machine learning projects. In the study, the Anaconda distribution of Python version 3.9 was used on a personal computer, and the default version 3.7 was used in Colab and Kaggle.
+
+\item Anaconda distribution \\
+Anaconda distribution is an open-source Python distribution platform for scientific computing such as data science and machine learning. It allows users to effortlessly install, run, and update packages using Conda, an open-source package management system. An Anaconda distribution version of 2022.05 was used.
+
+\item Jupyter notebook \\
+Jupyter notebook is an open-source web-based tool used for creating computational notebooks. The kernel embedded in the notebook handles the execution of code. The Jupyter notebook of version 6.4.8 provided by Anaconda distribution was used for this study.
+
+\item Google colaboratory (Colab) \\
+Colab is a free Jupyter notebook environment provided by Google Research. It allows Google users to write and execute Python code without any setup. Colab has libraries like PyTorch and TensorFlow integrated within its environment. It provides 12GB of RAM, an Nvidia K80/T4 GPU with 12GB/16GB of GPU memory, and 358GB of disk space when the GPU is enabled. It has a 12 hour maximum execution time and a 90 minute maximum idle time \cite{kazemnejad_2019}. Colab was used to train the models, to perform translation, and to evaluate the models.
+
+\item Kaggle kernel \\
+Kaggle kernel is a free platform that allows its users to run Jupyter notebook in their browser without any configuration and installation of framework like PyTorch. It provides an Nvidia P100 GPU with 16GB of GPU memory, 12GB of RAM, and 5GB of disk space. The maximum execution time is 9 hours and the maximum idle time is 60 minutes \cite{kazemnejad_2019}. However, Kaggle kernel requires the user’s phone number to connect the virtual machine to the internet. It was used to train the neural translation models in this study.
+
+\item Javalang, Tokenize, and FastBPE \\
+Javalang is a Python library built on the Java 8 language specification. It provides a lexer and a parser for Java programs.
+\\
+The module, tokenize, is a lexical scanner implemented in Python. When given the Python source code, this module returns the tokens of the Python code.
+\\
+FastBPE is the implementation of the Byte Pair Encoding algorithm in C++ with a Python API.
+
+\item PyTorch \\
+PyTorch is a framework built on top of the open-source machine learning library, Torch. It was developed by Meta AI to be used for applications like natural language processing and computer vision. PyTorch has a Python and C++ interface with two high-level features: Tensor computing using a Graphical Processing Unit (GPU) and Deep Neural Networks built on an automatic differentiation system. For the study, PyTorch version 1.11.0 was used.
+
+\item HuggingFace \\
+HuggingFace is a data science platform that provides tools to build, train, and deploy machine learning models. It provides a platform to store and share machine learning models and datasets. The HuggingFace repository contains trained models such as BERT, RoBERTa, CodeBERT, and so on, which can be used by anyone.
+
+\item CodeXGLUE \\
+CodeXGLUE, General Language Understanding Evaluation benchmark for CODE, is a set of code intelligence tasks as well as a platform for evaluating and comparing the models. It is equipped with the CodeBLEU evaluation mechanism. The CodeBLEU implementation in CodeXGLUE was used to assess program translation models.
+
+\item Matplotlib \\
+Matplotlib is a cross-platform data visualization library. The object-oriented APIs provided by matlotlib can be used to integrate plots in applications. The matplotlib library can be used in Jupyter notebook and other web application servers.
+\end{enumerate}
+
+\section{Test Environment}
+The hardware and software specifications used in the study are listed below.
+\\
+Hardware Specifications
+\begin{itemize}[nosep] 
+\item Processor: 11\textsuperscript{th} Gen Intel(R) Core(TM) i7-11390H @ 3.40GHz
+\item RAM: 16GB
+\item Disk Space: 500GB SSD
+\end{itemize}
+\
+\\
+Software Specifications
+\begin{itemize}[nosep]
+\item Operating System: Microsoft Windows 10 Home 
+\item Programming Language: Python
+\item Tools: Jupyter Notebook, Google Colaboratory, Kaggle Kernel 
+\end{itemize}
+
+\section{Hyperparameters}
+The following are the hyperparameters that were used in the study:
+\begin{enumerate}[topsep = 0pt, label=\roman*.]
+\item No. of layers \\It refers to the number of encoder and decoder layers used in the model. 6 encoder layers and 6 decoder layers are the default settings.
+\item No. of heads \\In a multi-headed attention mechanism, this is the number of attention heads used. The number of heads is set to 8 by default. 
+\item Embedding size \\The embedding size is the dimension of each token's vector, and it is set to 512 by default. 
+\item Feed-Forward network hidden dimension \\It is the dimension of the inner layer of the feed forward network model. The value is 2048 by default.
+\item Activation \\An activation function is a function that transforms the weighted sum of inputs into an output. The default activation function is ReLU.
+\item Dropout \\Dropout is a technique where randomly selected values are zeroed out. The default dropout is 0.1.
+\item Layer normalization epsilon \\To avoid division by zero, a small float value is added to variance.
+1e-5 is the default value. 
+\item Loss function \\A loss function is a method for assessing how effectively a model works. The study used a cross entropy loss function.
+\item Optimizer \\An optimizer is an algorithm that adjusts the weights and the learning rate to reduce the overall loss. By default, the Adam optimizer is used.
+\item Batch size \\It is the number of training instances used in a single iteration.
+\item Learning rate \\The learning rate is defined as a tuning parameter that controls a step size in each iteration to minimize the loss.
+\item Number of epochs \\It refers to the number of times the entire training dataset is fed into the model. 
+\item $\alpha$, $\beta$, $\gamma$, $\delta$ (CodeBLEU) \\These are the weights given to each component in the calculation of the CodeBLEU score. The default values are 0.25, 0.25, 0.25, and 0.25.
+\end{enumerate}
+\
+\\
+The values of the hyperparameters used to train the models are shown in the Table \ref{table:5.1}.
+\begin{table}[H]
+\centering
+\def\arraystretch{1.25}
+\caption{Hyperparameters}
+\label{table:5.1}
+\begin{tabular}{|l|l|l|} \hline
+\multicolumn{1}{|c|}{\textbf{Hyperparameter}} & \multicolumn{1}{|c|}{\textbf{Transformer}} & \multicolumn{1}{|c|}{\textbf{CodeBERT}}\\ \hline
+No. of layers & \multicolumn{1}{|r|}{(6, 6), (12, 12)} & \multicolumn{1}{|r|}{(6, 6), (12, 12)} \\ \hline
+No. of heads & \multicolumn{1}{|r|}{12} & \multicolumn{1}{|r|}{12} \\ \hline
+Embedding size & \multicolumn{1}{|r|}{768} & \multicolumn{1}{|r|}{768} \\ \hline
+Feed-Forward network hidden dimension & \multicolumn{1}{|r|}{3072} & \multicolumn{1}{|r|}{3072}  \\ \hline
+Activation & GELU & GELU  \\ \hline
+Dropout & \multicolumn{1}{|r|}{0.1} & \multicolumn{1}{|r|}{0.1}  \\ \hline
+Layer normalization epsilon & \multicolumn{1}{|r|}{1e-12} & \multicolumn{1}{|r|}{1e-12}  \\ \hline
+Loss function & Cross Entropy Loss & Cross Entropy Loss  \\ \hline
+Optimizer & Adam Optimizer & Adam Optimizer  \\ \hline
+Batch size & \multicolumn{1}{|r|}{16} & \multicolumn{1}{|r|}{16}  \\ \hline
+Learning rate & \multicolumn{1}{|r|}{2e-5} & \multicolumn{1}{|r|}{2e-5}  \\ \hline
+No. of epochs & \multicolumn{1}{|r|}{50, 100} & \multicolumn{1}{|r|}{50, 100}  \\ \hline
+\end{tabular}
+\end{table}

@@ -1,0 +1,49 @@
+\section{Introduction}
+Software applications are computer programs that may become obsolete over time due to a variety of factors, including hardware platform updates, skills shortages in the original programming language in which the application was written, and a lack of software support from the language compiler vendors \cite{sommerville_2002}. As a result, software developers are often required to rewrite software applications implemented in one programming language to a more recent and efficient language. Such reimplementation of any software needs knowledge of both programming languages: one that was used to develop the software and the other that will be used to rewrite the software. Also, reimplementation is an expensive and time-consuming procedure. A bank in Australia, for example, spent \$750 million in 5 years to migrate its core COBOL platform to Java \cite{lachaux2020unsupervised}. To reduce the risk and cost associated with code migration, developers often apply the simplest form of software re-engineering approach called program translation \cite{sommerville_2002}.
+\\\\
+Program translation is the technical process of automatically translating the source code of a computer program written in one language into an equivalent program in another language \cite{ahmad2021avatar}. Unlike traditional compilers, which translate a program written in a high-level programming language to a lower-level machine code (Java $\rightarrow$ Bytecode), the program translation system, also called a transcompiler, focuses on translation between high-level programming languages \cite{zhu2022multilingual}. The quality of the transcompiler decides whether or not the translated code need manual editing to function properly. 
+\\\\
+Traditionally, program translation is performed in a rule-based manner, which involves parsing the input source code, constructing an abstract syntax tree (AST), transforming the AST, and finally generating source code in the target programming language \cite{taverna_2022}. This process is illustrated in Figure \ref{fig:1.1}. Similarly, provided the dataset, the program written in one language can be translated to a different language without any programmatic intervention by employing a modern machine translation approach like neural machine translation (NMT).
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.95]{{ast_translation.png}}
+\caption[Program translation using AST]{Program translation using AST \cite{taverna_2022}}
+\label{fig:1.1}
+\end{figure}
+\noindent
+NMT is a machine learning approach to automate translation by utilizing neural networks. Through training on the datasets, the NMT model captures the source and target connections and learns to predict and increase the probability of correct translations \cite{the_big_language_team_2022}. A few years back, the most popular architecture for NMT was the recurrent neural network based encoder-decoder model. But, this model has issues with long-range dependencies and non-parallelization within training examples. To deal with these issues, a novel transformer model was presented that achieved the state-of-the-art on the WMT-14 English-to-German and English-to-French translation tasks and required significantly fewer calculations and less time to train \cite{vaswani2017attention}. The transformer-based NMT model can be trained by initializing the model weights to random values. Alternatively, the weights can be initialized by copying them from a previously trained model. This approach is called warm-starting \cite{jennifer_villa2018Oct}. In the case of the programming language, the encoder-only model, Code Bidirectional Encoder Representations from Transformers (CodeBERT), can be used to warm-start the encoder and decoder of the NMT model.
+
+\section{Problem Statement}
+As programming languages can be considered as natural languages \cite{aggarwal2015using}, program translation problems can also be viewed as natural language translation problems. Therefore, different natural language translation approaches, such as rule-based, statistical machine translation (SMT), or NMT methods, can be applied to program translation problems. The rule-based program translation method is inefficient and time-consuming \cite{chen2018tree}. Also, the SMT technology delivers lower quality translation and is time-consuming in comparison to NMT \cite{omniscien_technologies_2020}. The transformer-based NMT architecture and the pretrained models improve the translation quality. In the case of the pretrained models, the CodeBERT encoders can also be used on the decoder side of the encoder-decoder model to have better output representation. And to reduce the memory usage, the weights of encoders can be shared with those of decoders.
+
+\newpage
+
+\section{Research Questions}
+The study attempts to provide answers of the following questions:
+\begin{enumerate}[nosep, label = \roman*.]
+\item How does the encoder-decoder model initialized with the public CodeBERT checkpoint perform on the program translation task in comparison with a transformer model, as measured with the Bilingual Evaluation Understudy Score (BLEU) and CodeBLEU scores?
+\item What are the BLEU and CodeBLEU scores of the Java to Python and Python to Java translation models on the test dataset?
+\item Do the Java to Python and Python to Java translation models yield similar scores?
+\end{enumerate}	
+
+\section{Objectives}
+The general and specific objectives of the study are:
+\\
+\textbf{General Objective:} To compare the deep learning models, transformer and CodeBERT, on the translation task.
+\\\\
+\textbf{Specific Objectives}
+\begin{enumerate}[nosep, label = \roman*.]
+\item To train the transformer and CodeBERT models on the Java-Python parallel program dataset.
+\item To compare the performance of the trained transformer and CodeBERT models using BLEU and CodeBLEU evaluation metrics.
+\item To translate programs written in Java to Python and vice-versa using the trained trans-former and CodeBERT models.
+\end{enumerate}
+
+\section{Dissertation Organization}
+This dissertation is organized as follows: \\
+Chapter 1 consists of the introduction, problem statement, research questions, and objectives of this dissertation. \\
+Chapter 2 discusses the theoretical background that provides theoretical details of the components used in this dissertation. \\
+Chapter 3 includes the literature review of the existing works related to the transformer, CodeBERT, and translation. \\
+Chapter 4 describes the methodology used to compare the transformer and CodeBERT models. \\
+Chapter 5 explains the implementation tools, test environment, and hyperparameters used. \\
+Chapter 6 presents the results and analysis of the results. \\
+Chapter 7 includes the dissertation conclusion and limitations. It also provides future recommendations.

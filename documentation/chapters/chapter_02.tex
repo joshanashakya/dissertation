@@ -1,0 +1,291 @@
+\section{Transformer}
+A transformer is a deep learning model that utilizes the self-attention mechanism to solve sequence-to-sequence problems while resolving long-range dependencies. This model avoids recurrence and trains the network in parallel to speed up the development of the model with a large number of parameters. The transformer architecture is shown in Figure \ref{fig:2.1}.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.175]{{transformer.png}}
+\caption[Transformer model architecture]{Transformer model architecture \cite{vaswani2017attention}}
+\label{fig:2.1}
+\end{figure}
+The model consists of two components: an encoder and a decoder. The encoder reads a sequence of symbol representations $x = (x_1, \ldots, x_n)$ as input and generates a sequence of continuous representations $z = (z_1, \ldots, z_n)$. Given $z$, the decoder produces a sequence of symbols $(y_1, \ldots, y_m)$ one element at a time.
+\begin{enumerate}[topsep = 0pt, label=\roman*.]
+\item Encoder \\
+The encoder block consists of $N$ identical layers stacked on top of each other. Each layer contains two basic sub-layers: a multi-head self-attention mechanism and a position-wise fully connected feed-forward network, as shown in Figure \ref{fig:2.1}(left). The residual connection surrounds each of the two sub-layers, $SubLayer(x)$, to forward the unprocessed input $x$ of the sub-layer to a layer normalization function. Thus, each sub-layer produces an output:
+\begin{equation}
+\label{eq:2.1}
+LayerNorm(x + SubLayer(x))
+\end{equation}
+The residual connections, the output of all the sub-layers in the model, including the embedding layers, has a constant dimension $d_{model}$ \cite{vaswani2017attention, rothman2021transformers}.
+\item Decoder \\
+The decoder also consists of $N$ identical layers stacked on top of each other. Each layer contains three sub-layers: a masked multi-head attention mechanism, a multi-head attention mechanism, and a position-wise fully connected feed-forward network. The structure of the single decoder layer is shown in Figure \ref{fig:2.1}(right). The masked multi-head attention mechanism prevents from looking into the future positions, and the multi-head attention mechanism works over the output of the encoder stack. Similar to the encoder, the residual connection surrounds each of the three sub-layers, $Sublayer(x)$ \cite{vaswani2017attention, rothman2021transformers}.
+\end{enumerate}
+
+\subsection{Embeddings and Softmax}
+Given the input tokens or the output tokens, the embedding sub-layer generates the vectors of dimensions $d_{model}$ using learned embeddings \cite{vaswani2017attention}. The learned linear transformation sub-layer projects the vector produced by the stack of decoders to a logits vector, and the softmax function converts the logit vector to predicted next-token probabilities \cite{alammar}. The two embedding layers and linear transformation have the same weight matrix, but in the embedding layers those weights are multiplied by $\sqrt{d_{model}}$ \cite{vaswani2017attention}.
+
+\subsection{Positional Encoding}
+To add information about the relative or absolute position to input embeddings, positional encoding of dimension $d_{model}$ is computed using sine and cosine functions of different frequencies:
+\begin{equation}
+\label{eq:2.2}
+PE_{(pos,\ 2i)} = sin\left(\frac{pos}{10000^{2i/d_{model}}}\right)
+\end{equation}
+\begin{equation}
+\label{eq:2.3}
+PE_{(pos,\ 2i + 1)} = cos\left(\frac{pos}{10000^{2i/d_{model}}}\right)
+\end{equation}
+where $pos$ is the position and $i$ is the dimension \cite{vaswani2017attention}.
+
+\subsection{Attention}
+An attention function uses a query and a set of key-value pairs to calculate an attention. The attention is a weighted sum of the values. The compatibility function of the query with the corresponding key determines the weight allocated to each value.
+
+\subsubsection{Scaled Dot-Product Attention}
+Figure \ref{fig:2.2} shows a scaled dot-product attention.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.25]{{scaled_dot_product_attention.png}}
+\caption[Scaled dot-product attention]{Scaled dot-product attention \cite{vaswani2017attention}}
+\label{fig:2.2}
+\end{figure}
+The scaled dot-product attention takes queries of dimension $d_k$, keys of dimension $d_k$, and values of dimension $d_v$, as inputs. It computes the attention function on a set of queries, keys, and values packed together into matrices $Q$, $K$, and $V$ respectively as \cite{vaswani2017attention}:
+\begin{equation}
+\label{eq:2.4}
+Attention(Q, K, V) = softmax\left(\frac{QK^T}{\sqrt{d_k}}\right)V
+\end{equation}
+
+\subsubsection{Multi-Head Attention}
+The multi-head attention mechanism linearly projects the queries, keys, and values to $d_k$, $d_k$, and $d_v$ dimensions, respectively, $h$ times with different learned projections. The $h$ heads are run in parallel to obtain $d_v$-dimensional output values. The outputs of $h$ heads are then concatenated as:
+\begin{equation}
+\label{eq:2.5}
+MultiHead(Q, K, V) = Concat(head_1, \ldots, head_h)W^O
+\end{equation}
+\begin{equation}
+\label{eq:2.6}
+head_i = Attention(Q{W_i^Q}, K{W_i^K}, V{W_i^V})
+\end{equation}
+where parameter matrices, $W_i^Q \in \mathbb{R}^{d_{model} \times d_k}$, $W_i^K \in \mathbb{R}^{d_{model} \times d_k}$
+, $W_i^V \in \mathbb{R}^{d_{model} \times d_v}$, and $W_i^O \in \mathbb{R}^{hd_v \times {d_{model}}}$ are the projections \cite{vaswani2017attention}. The structure of multi-head attention is depicted in Figure \ref{fig:2.3}.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.25]{{multi_head_attention.png}}
+\caption[Multi-head attention]{Multi-head attention \cite{vaswani2017attention}}
+\label{fig:2.3}
+\end{figure}
+\
+The transformer model employs multi-head attention as:
+\begin{enumerate}[topsep = 0pt, label = \roman*.]
+\item Encoder-decoder attention
+\\
+Here, the attention function uses queries from the previous decoder layer and the memory keys and values from the output of the encoder.
+\item Encoder self-attention
+\\
+The encoder self-attention uses keys, values, and queries from the output of the previous layer of the encoder.
+\item Masked decoder self-attention
+\\
+It permits self-attention to focus on earlier positions in the output sequence by masking future positions (setting them to -inf) prior to the softmax step in the calculation \cite{alammar}.
+\end{enumerate}
+
+\subsection{Position-wise Feed-Forward Network}
+The feed-forward network contains two layers and applies a Rectified Linear Unit (ReLU) activation function in between.
+\begin{equation}
+\label{eq:2.7}
+FFN(x) = max(0, xW_1 + b_1)W_2 + b_2
+\end{equation}
+
+\subsection{Post-layer Normalization}
+Post-layer normalization comes after each attention sub-layer and each feed-forward sub-layer. It has an add function and a layer normalization process. The add function processes the residual connections from the input of the sub-layer to ensure that the critical information is not lost. The layer normalization function is defined as \cite{rothman2021transformers}:
+\begin{equation}
+\label{eq:2.8}
+LayerNorm(v) = \gamma{\frac{v-\mu}{\sigma}} + \beta
+\end{equation}
+where $v = x + SubLayer(x)$, \\ \medskip
+\hspace*{10mm} $\displaystyle \mu = \frac{1}{d} \sum_{k = 1}^{d}v_k$ is the mean of $v$ of dimenstion $d$, \\ \medskip
+\hspace*{10mm} $\displaystyle \sigma = \sqrt{\frac{1}{d} \sum_{k = 1}^{d}(v_k-\mu)^2}$ is the standard deviation of $v$ of dimention $d$, \\ \medskip
+\hspace*{10mm} $\gamma$ is a scaling parameter, \\
+\hspace*{10mm} and $\beta$ is a bias vector.
+%\hspace*{10mm} $\mu$ is the mean of $v$ of dimenstion $d$. As such: $\mu = \frac{1}{d} \sum_{k = 1}^{d}v_k$\\
+%\hspace*{10mm} $\sigma$ is the standard deviation of $v$ of dimention d. As such: $\sigma^2 = \frac{1}{d} \sum_{k = 1}^{d}(v_k-\mu)^2$ \\
+
+\section{BERT}
+Bidirectional Encoder Representations from Transformers (BERT) is a language representation model based on the transformer architecture. The two types of BERT models based on the model size are BERTBase and BERTLarge.  BERTBase has 12 transformer layers, 768 hidden size, 12 attention heads, and 110M trainable parameters, whereas  BERTLarge has  24 transformer layers, 1024 hidden size, 16 attention heads, and 340M trainable parameters. The general architecture of BERT is shown in Figure \ref{fig:2.4}.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{{bert.png}}
+\caption[BERT architecture]{BERT architecture \cite{devlin2018bert}}
+\label{fig:2.4}
+\end{figure}
+The BERT model is designed to pretrain deep bidirectional representation using two tasks: masked language modeling (MLM) and next sentence prediction (NSP). During training the model, 15\% of the tokens are masked, and the correct tokens in the masked positions are predicted using the final hidden state. NSP is used to learn the link between sentence pairs. For NSP, when choosing sentence pair A and B, 50\% of the time B is the actual next sentence after A, and 50\% of the time it is an arbitrary sentence in the corpus. To predict the correct label and compute loss, the output hidden state is used.  The pretrained BERT model can be used to fine-tune the downstream natural language processing tasks \cite{devlin2018bert}. 
+
+\subsection{RoBERTa}
+Robustly optimized BERT approach (RoBERTa) is a replication of BERT with the following useful modifications \cite{Durgia2022Jan}:
+\begin{enumerate}[topsep = 0pt, label=\roman*.]
+\item Dynamic masking
+\\
+BERT employs static masking during preprocessing, whereas RoBERTa employs dynamic masking wherein different parts of the sentences are masked in different epochs.
+\item No NSP task
+\\
+The NSP task is not used to train the RoBERTa model. 
+\item More data points
+\\
+RoBERTa was trained on more datasets which include Common Crawl-News, Open WebText, etc., in addition to the Toronto BookCorpus and English Wikipedia datasets with which BERT was trained.
+\item Large batch size
+\\
+BERT used a batch size of 256 with 1 million steps, whereas RoBERTa used a batch size of 8,000 with 300,000 steps. 
+\end{enumerate}
+
+\subsection{CodeBERT}
+CodeBERT is a bimodal pretrained model based on the transformer architecture for programming languages (PL) and natural language (NL). It learns the semantic connection between PL and NL and supports downstream NL-PL tasks like natural language code search, code documentation generation, and so on. CodeBERT uses the RoBERTa-base architecture with 125M model parameters \cite{feng2020codebert, AnalyticsIndiaMagazine2020}.
+
+\subsubsection{Pretraining CodeBERT}
+In the pretraining phase, the input is set as:
+\begin{center}
+$[CLS], w_1, w_2, \ldots, w_n, [SEP], c_1, c_2, \ldots, c_m, [EOS]$
+\end{center}
+where $w_1, w_2, \ldots, w_n$ is a natural language text,\\
+\hspace*{10mm} $c_1, c_2, \ldots, c_m$ is a code,\\
+\hspace*{10mm} $[CLS]$ is a special token whose final hidden representation works as the aggregated \hspace*{10mm} sequence representation,\\
+\hspace*{10mm} $[SEP]$ is a separator token,\\
+\hspace*{10mm} and $[EOS]$ is End of Sequence token.\\
+\\
+The CodeBERT is trained on both bimodal data (natural language–code) and unimodal data (code) across six programming languages (Python, Java, JavaScript, PHP, Ruby, and Go) with a hybrid objective function which includes \cite{feng2020codebert}:
+\begin{enumerate}[topsep = 0pt, label=\roman*.]
+\item Masked Language Modeling \\
+Given a datapoint, $x = {w, c}$, where $w$ is a NL word sequence and $c$ is a PL token sequence, 15\% of the tokens from $x$ are replaced with [MASK] tokens at random NL positions $m^w$ and PL positions $m^c$.
+\begin{equation}
+\label{eq:2.9}
+m_i^w \sim unif\{1, |w|\}\ for\ i = 1\ to\ |w|
+\end{equation}
+\begin{equation}
+\label{eq:2.10}
+m_i^c \sim unif\{1, |c|\}\ for\ i = 1 \ to\ |c|
+\end{equation}
+\begin{equation}
+\label{eq:2.11}
+w^{masked} = REPLACE(w, m^w, [MASK])
+\end{equation}
+\begin{equation}
+\label{eq:2.12}
+c^{masked} = REPLACE(c, m^c, [MASK])
+\end{equation}
+\begin{equation}
+\label{eq:2.13}
+x = w + c
+\end{equation}
+The MLM objective is formulated as follows:
+\begin{equation}
+\label{eq:2.14}
+L_{MLM}(\theta) = \sum_{i \in m^w \cup m^c} -log p^{D_1}(x_i|w^{masked}, c^{masked})
+\end{equation}
+where $p^{D_1}$ predicts a token from a large vocabulary.
+
+\item Replace Token Detection \\
+The replaced token detection (RTD) objective has an NL generator $p^G_w$ and a PL generator $p^G_c$ to produce alternatives for the randomly masked positions.
+\begin{equation}
+\label{eq:2.15}
+\hat{w}_i \sim p^{G_w}(w_i|w^{masked})\ for\ i \in m^w
+\end{equation}
+\begin{equation}
+\label{eq:2.16}
+\hat{c}_i \sim p^{G_c}(c_i|c^{masked})\ for\ i \in m^c
+\end{equation}
+\begin{equation}
+\label{eq:2.17}
+w^{corrupt} = REPLACE(w,m^w, \hat{w})
+\end{equation}
+\begin{equation}
+\label{eq:2.18}
+c^{corrupt} = REPLACE(c, m^c, \hat{c})
+\end{equation}
+\begin{equation}
+\label{eq:2.19}
+x^{corrupt} = w^{corrupt} + c^{corrupt}
+\end{equation}
+The discriminator, which is a binary classification problem, is trained to find out whether a word is the original or not. The RTD objective is formulated as:
+\begin{equation}
+\label{eq:2.20}
+\begin{split}
+L_{RTD}(\theta) & = \sum_{i = 1}^{|w| + |c|} \left(\delta(i) log p^{D_2}(x^{corrupt}, i) \ + \right. \\
+& \left. (1 - \delta(i))(1 - log p^{D_2}(x^{corrupt}, i))  \right)
+\end{split}
+\end{equation}
+\begin{equation}
+\label{eq:2.21}
+\delta(i) = 
+\begin{cases}
+	1, & if\; x_i^{corrupt} = x_i \\
+	0, & otherwise
+\end{cases}       
+\end{equation}
+where $p^{D_2}$ is the probability of the $i^{th}$ word being original, \\
+\hspace*{10mm} and $\delta(i)$ is an indicator function.
+\end{enumerate}
+The combined MLM and RTD loss function is:
+\begin{equation}
+\label{eq:2.22}
+min_{\theta}\ L_{MLM}(\theta) + L_{RTD}(\theta)
+\end{equation}
+
+\section{Gaussian Error Linear Unit}
+Gaussian Error Linear Unit (GELU) is an activation function with the following equation \cite{hansen_2019}:
+\begin{equation}
+\label{eq:2.23}
+GELU(x) = 0.5 x \left( 1 + tanh \left(\sqrt{\frac{2}{\pi}}(x + 0.044715x^3)\right)\right)
+\end{equation}
+
+\section{Cross Entropy Loss}
+Cross entropy loss is a function to compute the differences between the estimated probability and the actual probability. It is defined as \cite{manning2019cs224n}:
+\begin{equation}
+\label{eq:24}
+H(\hat{y}, y) = - \sum _{j = 1} ^{m} y_j log(\hat{y}_j)
+\end{equation}
+
+\section{Adam Optimization Algorithm}
+The Adam optimization algorithm updates the parameters of the model as follows \cite{ng}:
+\begin{algorithm}[H]
+\caption{Adam Optimization Algorithm}
+\begin{algorithmic}[1]
+\State Initialize $V_{dW} = 0, S_{dW} = 0, V_{db} = 0, S_{db} = 0$ 
+\State On iteration $t$:
+\State \hspace{6mm} Compute $dW$, $db$ using current mini-batch
+\State \hspace{6mm} $V_{dW} = \beta_1 V_{dW} + (1 - \beta_1)dW $
+\State \hspace{6mm} $V_{db} = \beta_1 V_{db} + (1 - \beta_1)db $
+\State \hspace{6mm} $S_{dW} = \beta_1 S_{dW} + (1 - \beta_2)dW^2$
+\State \hspace{6mm} $S_{db} = \beta_1 S_{db} + (1 - \beta_2)db^2$
+\State \hspace{6mm} $V_{dW}^{corrected} = \frac{V_{dW}}{1 - \beta_1^t}$
+\State \hspace{6mm} $V_{db}^{corrected} = \frac{V_{db}}{1 - \beta_1^t}$
+\State \hspace{6mm} $S_{dW}^{corrected} = \frac{S_{dW}}{1 - \beta_2^t}$
+\State \hspace{6mm} $S_{db}^{corrected} = \frac{S_{db}}{1 - \beta_2^t}$
+\State \hspace{6mm} $W := W - \alpha \frac{V_{dW}^{corrected}}{\sqrt{S_{dW}^{corrected}} + \epsilon}$
+\State \hspace{6mm} $b := b - \alpha \frac{V_{db}^{corrected}}{\sqrt{S_{db}^{corrected}} + \epsilon}$
+\end{algorithmic}
+\end{algorithm}
+The default values of the hyperparameters are $\beta_1$ = 0.9, $\beta_2$ = 0.999, and $\epsilon$ = 10\textsuperscript{-8}.
+
+\section{Evaluation Metrics}
+\subsection{BLEU}
+The BLEU algorithm calculates the precision score of a candidate machine translation against a reference translation. The reference translation is a sample translation. The algorithm finds all of $n$-gram matches and determines the strength of the match with the precision score. The precision score is the fraction of $n$-grams in the translation that also appear in the reference. Let $k$ be the maximum n-gram considered to evaluate the score of translation. The $n$-gram precision score is:
+\begin{equation}
+\label{eq:2.25}
+p_n = \frac{\# \; matched \; n\mbox{-}grams}{\# \; n\mbox{-}grams \; in \; candidate \; translation}
+\end{equation}
+Let $w_n = \frac{1}{2n}$  be a geometric weighting for the precision of the $n$'th gram. The brevity penalty is:
+\begin{equation}
+\label{eq:2.26}
+\beta = exp ^ {min \left(0, 1 - \frac{len_{ref}}{len_{MT}} \right)}
+\end{equation}
+where $len_{ref}$ is the length of the reference translation and $len_{MT}$ is the length of the machine translation. \\
+The BLEU score is defined as \cite{manning2019cs224n}:
+\begin{equation}
+\label{eq:2.27}
+BLEU = \beta \prod _{i = 1} ^ k p_n ^{w_n}
+\end{equation}
+
+\subsection{CodeBLEU}
+CodeBLEU is defined as the weighted combination of the four components as follows \cite{ren2020codebleu}:
+\begin{equation}
+\label{eq:2.28}
+CodeBLEU = \alpha \cdot BLEU + \beta \cdot BLEU_{weight} + \gamma \cdot Match_{ast} + \delta \cdot Match_{df}
+\end{equation}
+where $BLEU$ is the standard BLEU score, \\
+\hspace*{10mm} $BLEU_{weight}$ is the weighted n-gram match (WNM), \\
+\hspace*{10mm} $Match_{ast}$ is the syntactic AST match (SM), \\
+\hspace*{10mm} $Match_{df}$ is the semantic dataflow match (DM), \\
+\hspace*{10mm} and $\alpha$, $\beta$, $\gamma$, and $\delta$ are hyperparameters.

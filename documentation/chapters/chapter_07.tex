@@ -1,0 +1,15 @@
+\section{Conclusion}
+The purpose of this study was to compare the transformer and the CodeBERT model on program translation tasks. The study used a 3133 Java-Python parallel program dataset to translate the programs written in the source language to the target language. 80\% (2506) of the data was used to train and 20\% (672) of the data was used to test the transformer and the CodeBERT models. To be able to translate the programs, the study followed the following steps: data preprocessing, model training, inference, and data postprocessing.
+\\\\
+Based on the BLEU and CodeBLEU scores of the models trained for different epochs, it can be concluded that the transformer models performed better than the CodeBERT models on the test dataset used in the study. For the Java to Python program translation task, the transformer model with 6 encoder and 6 decoder layers trained for 50 epochs achieved the highest BLEU and Code BLEU scores, of 0.2812 and 0.2802, respectively. Similarly, for the Python to Java program translation task, the transformer model with 6 encoder and 6 decoder layers trained for 100 epochs received the highest BLEU and CodeBLEU scores, with values of 0.3891 and 0.4018, respectively. Furthermore, the scores of Java to Python translation models differ from those of Python to Java translation models.
+
+\section{Limitations}
+The study on program translation has the following limitations:
+\begin{itemize}[nosep]
+\item The autoregressive model pretrained on codes exists. However, the study focused on exploiting the public CodeBERT checkpoint to initialize the encoder and the decoder of the encoder-decoder model.
+\item The parallel corpora of other programming languages, such as Java-C++, Java-C\#, PHP-Java, etc., are also available, but the study used only the Java-Python corpus to train and evaluate the models.
+\item Despite the availability of evaluation metrics like computational accuracy, the dissertation has focused on using BLEU and CodeBLEU scores, which are the most extensively used evaluation metrics for assessing the performance of the translation models.
+\end{itemize}
+
+\section{Future Recommendations}
+The study used the CodeBERT block on both the encoder and decoder side of the translation model with shared weights. It is possible to use an autoregressive model on the decoder side. Additionally, due to resource constraints, the experiment was run on a small set of data. It would have been good if all of the datasets were used to train the models.

@@ -1,0 +1,188 @@
+% Run BibTeX, Run XeLaTeX 2 times, Run View PDF
+\documentclass[12pt, a4paper]{report}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{times}
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\usepackage{amsmath, amsfonts, amssymb}
+%\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+\usepackage[nostruts]{titlesec}
+\usepackage{titletoc}
+\usepackage{caption}
+\usepackage{fontspec}
+\usepackage{layout}
+\usepackage{subcaption}
+\usepackage{array}
+\usepackage{fancyvrb}
+\usepackage{fvextra}
+\usepackage{enumitem}
+\usepackage{url}
+\usepackage[english]{babel}
+
+\usepackage[backend=biber, style=ieee, maxcitenames=2, mincitenames=1, minbibnames=1, maxbibnames=6]{biblatex}
+\addbibresource{references.bib}
+\urlstyle{same}
+
+% format miscelleneous references
+\DeclareFieldFormat[misc]{title}{\mkbibquote{#1}}
+\usepackage{xpatch}
+\xpatchbibdriver{misc}
+  {\usebibmacro{title}%
+   \newunit}
+  {\usebibmacro{title}%
+   \printunit{\adddot\addspace}}
+  {}
+  {}
+
+\DeclareFieldFormat[misc]{url}{\url{#1}}
+\DeclareFieldFormat{urldate}{%
+    (accessed 
+    \mkbibmonth{\thefield{urlmonth}}\addspace
+    \thefield{urlday}\addcomma \addspace    
+    \thefield{urlyear}\isdot)}
+
+% separate multiple citation with space
+%\renewcommand{\multicitedelim}{\space}
+
+\setmainfont{Times New Roman}
+
+% justify text without hyphen
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
+\addto\captionsenglish{\renewcommand{\contentsname}{Table of Contents}}
+\newcommand{\dottedline}[1]{\makebox[#1]{\dotfill}}
+\renewcommand{\baselinestretch}{1.5}
+%\renewcommand\refname{References}
+\setlength{\parindent}{0pt}
+
+\titlecontents{chapter}[0pt]{\bfseries}{\MakeUppercase{\chaptername\ \thecontentslabel\quad}\MakeUppercase}{\MakeUppercase}{\dotfill\contentspage}
+\titlecontents{table}[0pt]{}{Table~ \thecontentslabel\quad}{}{\dotfill\contentspage}
+\titlecontents{figure}[0pt]{}{Figure~ \thecontentslabel\quad}{}{\dotfill\contentspage}
+
+\titleformat{\chapter}{\Large\bfseries\center\MakeUppercase}{\chaptertitlename\ \thechapter}{10pt}{}
+\titlespacing{\chapter}{0pt}{-45pt}{20pt}
+
+\titleformat{\section}[block]{\normalfont\Large\bfseries}{\thesection}{5mm}{}
+
+\titleformat{\subsection}[block]{\large\bfseries}{\thesubsection}{5mm}{}
+
+\titleformat{\subsubsection}[block]{\large\bfseries}{\thesubsubsection}{5mm}{}
+
+% spacing: how to read {12pt plus 4pt minus 2pt}
+%           12pt is what we would like the spacing to be
+%           plus 4pt means that TeX can stretch it by at most 4pt
+%           minus 2pt means that TeX can shrink it by at most 2pt
+%       This is one example of the concept of, 'glue', in TeX
+% \titlespacing{command}{left spacing}{before spacing}{after spacing}[right]
+
+\titlespacing{\section}{0pt}{12pt plus 4pt minus 2pt}{-\parskip}
+\titlespacing{\subsection}{0pt}{12pt plus 4pt minus 2pt}{-\parskip}
+\titlespacing{\subsubsection}{0pt}{12pt plus 4pt minus 2pt}{-\parskip}
+
+\captionsetup[table]{belowskip = \parskip, singlelinecheck=off,textfont=it,labelfont=it, justification=centering}
+\captionsetup[figure]{singlelinecheck=off,textfont=it,labelfont=it, justification=centering}
+\setlength\belowcaptionskip{-\baselineskip}
+%\setlength{\intextsep}{10pt plus 2pt minus 2pt}
+
+\newcommand*{\noaddvspace}{\renewcommand*{\addvspace}[1]{}}
+\addtocontents{lof}{\protect\noaddvspace}
+\addtocontents{lot}{\protect\noaddvspace}
+
+\newcommand*{\fancychapterstyle}{
+\titleformat{\chapter}[display]{\Large\bfseries\filcenter}{\MakeUppercase{\chaptertitlename} \thechapter}{0pt}{\MakeUppercase}
+\titlespacing*{\chapter}{0pt}{-32pt}{20pt}
+}
+
+\newcommand*{\appendixtocstyle}{
+\titlecontents{chapter}[0pt]{\bfseries}{\MakeUppercase{appendix\ \thecontentslabel\quad}\MakeUppercase}{\MakeUppercase}{\dotfill\contentspage}
+}
+
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+
+\setcounter{secnumdepth}{3}
+
+\begin{document}
+\input{cover}
+\input{student_declaration}
+\input{supervisor_recommendation}
+\input{letter_of_approval}
+
+\pagenumbering{roman}
+\setcounter{page}{1}
+
+\chapter*{Acknowledgement}
+\input{chapters/acknowledgement}
+\addcontentsline{toc}{chapter}{Acknowledgement}
+
+\chapter*{Abstract}
+\input{chapters/abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+
+\newpage
+{\let\clearpage\relax 
+\vspace*{3pt}
+\addcontentsline{toc}{chapter}{Table of Contents}
+\tableofcontents
+}
+
+\newpage
+\addcontentsline{toc}{chapter}{List of Figures}
+\listoffigures
+
+\newpage
+\addcontentsline{toc}{chapter}{List of Tables}
+\listoftables
+
+\newpage
+\addcontentsline{toc}{chapter}{List of Abbreviations}
+\chapter*{List of Abbreviations}
+\input{chapters/abbreviations}
+
+\clearpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\fancychapterstyle
+\chapter{Introduction}
+\input{chapters/chapter_01}
+
+\chapter{Theoretical Background} 
+\input{chapters/chapter_02}
+
+\chapter{Literature Review} 
+\input{chapters/chapter_03}
+
+\chapter{Methodology} 
+\input{chapters/chapter_04}
+
+\chapter{Implementation} 
+\input{chapters/chapter_05}
+
+\chapter{Results and Analysis}
+\input{chapters/chapter_06}
+
+\chapter{Conclusion}
+\input{chapters/chapter_07}
+
+\newpage
+\addcontentsline{toc}{chapter}{References}
+\printbibliography[title={References}]
+
+\appendix
+
+\appendixtocstyle
+\chapter{Sample Dataset}
+\input{chapters/appendix_a}
+
+\chapter{Example Translation}
+\input{chapters/appendix_b}
+
+\end{document}

@@ -1,0 +1,119 @@
+\textbf{Sample 1:}\\ % java-python_GeeksForGeeks_4023_A_1
+\textbf{Java Program}\\
+\vspace*{-\baselineskip}
+\begin{Verbatim}[frame=single]
+// Java implementation to find  
+// the sum of the given series 
+import java.io.*; 
+  
+class GfG { 
+      
+// function to find the sum 
+// of the given series 
+static int sumOfTheSeries(int n) 
+{ 
+    // required sum 
+    return (n * (n + 1) / 2) * 
+            (2 * n + 1) / 3; 
+} 
+      
+  
+// Driver program to test above 
+public static void main (String[] args)  
+{ 
+    int n = 5; 
+      
+    System.out.println("Sum = "+  
+                sumOfTheSeries(n)); 
+  
+} 
+  
+} 
+  
+// This code is contributed by Gitanjali. 
+\end{Verbatim}
+\textbf{Python Program} \\
+\vspace*{-\baselineskip}
+\begin{Verbatim}[frame=single]
+# Python3 implementation to find 
+# the sum of the given series 
+  
+# functionn to find the sum 
+# of the given series 
+def sumOfTheSeries( n ): 
+      
+    # required sum 
+    return int((n * (n + 1) / 2) *
+            (2 * n + 1) / 3) 
+              
+# Driver program to test above 
+n = 5
+print("Sum =", sumOfTheSeries(n)) 
+  
+# This code is contributed by "Sharad_Bhardwaj". 
+\end{Verbatim}
+\newpage
+\textbf{Sample 2:} \\ % java-python_ProjectEuler_p007_A_30
+\textbf{Java Program} \\
+\vspace*{-\baselineskip}
+\begin{Verbatim}[frame=single, breaklines=true, breakanywhere=true]
+/* 
+ * Solution to Project Euler problem 7
+ * Copyright (c) Project Nayuki. All rights reserved.
+ * 
+ * https://www.nayuki.io/page/project-euler-solutions
+ * https://github.com/nayuki/Project-Euler-solutions
+ */
+
+
+public final class p007 implements EulerSolution {
+	
+	public static void main(String[] args) {
+		System.out.println(new p007().run());
+	}
+	
+	
+	/* 
+	 * Computers are fast, so we can implement this solution by testing each number
+	 * individually for primeness, instead of using the more efficient sieve of Eratosthenes.
+	 */
+	public String run() {
+		for (int i = 2, count = 0; ; i++) {
+			if (Library.isPrime(i)) {
+				count++;
+				if (count == 10001)
+					return Integer.toString(i);
+			}
+		}
+	}
+	
+}
+\end{Verbatim}
+\textbf{Python Program} \\
+\vspace*{-\baselineskip}
+\begin{Verbatim}[frame=single, breaklines=true, breakanywhere=true]
+# 
+# Solution to Project Euler problem 7
+# Copyright (c) Project Nayuki. All rights reserved.
+# 
+# https://www.nayuki.io/page/project-euler-solutions
+# https://github.com/nayuki/Project-Euler-solutions
+# 
+
+import eulerlib, itertools
+
+
+# Computers are fast, so we can implement this solution by testing each number
+# individually for primeness, instead of using the more efficient sieve of Eratosthenes.
+# 
+# The algorithm starts with an infinite stream of incrementing integers starting at 2,
+# filters them to keep only the prime numbers, drops the first 10000 items,
+# and finally returns the first item thereafter.
+def compute():
+	ans = next(itertools.islice(filter(eulerlib.is_prime, itertools.count(2)), 10000, None))
+	return str(ans)
+
+
+if __name__ == "__main__":
+	print(compute())
+\end{Verbatim}

@@ -1,0 +1,171 @@
+The purpose of the study was to assess the performance of deep learning models for program translation tasks. For this, the models were trained to transform the programs written in the source language into the programs in the target language. The different steps involved in this development and the evaluation of the models are illustrated by the diagram in Figure \ref{fig:4.1}.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=1]{{process_flow_diagram.png}}
+\caption[Process flow diagram outlining methodological steps]{Process flow diagram outlining methodological steps}
+\label{fig:4.1}
+\end{figure}
+
+\section{Data Collection}
+A parallel dataset for Java-Python program translation was collected from AVATAR: A Parallel Corpus for Java-Python Program Translation \cite{ahmad2021avatar}. The dataset contains Java and Python solutions to the programming problems. These solutions were taken from programming contest sites such as Codeforces, AtCoder, Google Code Jam, and online platforms such as GeeksforGeeks, LeetCode, and Project Euler. For the study, the dataset from AtCoder was not used, as there was no clear separation of equivalent Java and Python programs. Hence, 20,363 parallel programs were taken. However, due to resource limitations, the programs having lengths less than 5 and greater than 450 were discarded after cleaning and pretokenization. The details of the dataset are shown in the Table \ref{table:4.1}.
+\begin{table}[H]
+\centering
+\def\arraystretch{1.25}
+\caption{Dataset description}
+\label{table:4.1}
+\begin{tabular}{|l|r|R{5.5cm}|} \hline
+\multicolumn{1}{|c|}{\textbf{Source}} & \textbf{Java-Python programs count} & \textbf{Java-Python programs count (5 $\le$ length $\le$ 450)}\\ \hline
+Codeforces & 11205 & 1726 \\ \hline
+Code Jam & 3546 & 0 \\ \hline
+GeeksforGeeks & 5289 & 1354 \\ \hline
+LeetCode & 122 & 35 \\ \hline
+Project Euler & 201 & 18 \\ \hline
+\textbf{Total} & \textbf{20363} & \textbf{3133} \\ \hline
+\end{tabular}
+\end{table}
+Of 3133 parallel programs, 80\% (2506) were used for training and the remaining 20\% (627) were used as test samples.
+
+\section{Data Preprocessing}
+The dataset of Java and Python programs were processed through the preprocessing tasks to obtain data suitable to train the models. The tasks include data cleaning, pretokenization and tokenization.
+
+\subsection{Data Cleaning}
+Unlike other programming languages, indentation is a crucial concept that should be followed when writing Python code. Moreover, Python does not allow mixing tabs and spaces for indentation. However, Python programs in Project Euler have IndentationError, which was fixed using autopep8. Following this, pyminifier was used to remove the docstrings, comments, and extraneous whitespaces present in each Python program, as well as to minimize indentation spaces. The pyminifier uses a single space to substitute multiple whitespaces or tabs used as an indentation in the program.
+
+\subsection{Pretokenization}
+In pretokenization phase, each program was split into meaningful code tokens. For the transformer model, each Java program was tokenized using javalang. The javalang tokenizer generates a stream of Java tokens, each having position (line, column) and value information. It also removes code comments. Each Python program was tokenized using tokenize from the Python library. From the generated Python tokens, tokens of type {\lq\lq COMMENT\rq\rq} and type {\lq\lq NL\rq\rq} following the type {\lq\lq COMMENT\rq\rq} were removed. As newlines and spaces define the structure of the Python code, all tokens of type {\lq\lq NEWLINE\rq\rq} were replaced with the text {\lq\lq NEWLINE\rq\rq}, type {\lq\lq NL\rq\rq} with the text {\lq\lq NL\rq\rq}, type {\lq\lq INDENT\rq\rq} with the text {\lq\lq INDENT\rq\rq}, type {\lq\lq DEDENT\rq\rq} with the text {\lq\lq DEDENT\rq\rq}, and type {\lq\lq ENDMARKER\rq\rq} with the text {\lq\lq ENDMARKER". All the tokens were then joined together by a space character.
+\\\\
+For CodeBERT, pretokenization of a Java program was done by splitting the program into tokens, detokenizing those tokens using javalang, and then binding tokens using a space character. In the case of a Python program, tokens of type {\lq\lq COMMENT\rq\rq} and {\lq\lq NL\rq\rq} following the type {\lq\lq COMMENT\rq\rq} were removed; and tokens of type {\lq\lq NEWLINE\rq\rq}, {\lq\lq NL\rq\rq}, {\lq\lq INDENT\rq\rq}, {\lq\lq DEDENT\rq\rq}, and {\lq\lq ENDMARKER\rq\rq} were replaced with text {\lq\lq NEWLINE\rq\rq}, {\lq\lq NL\rq\rq}, {\lq\lq INDENT\rq\rq}, {\lq\lq DEDENT\rq\rq}, and {\lq\lq ENDMARKER\rq\rq} with each text attached to a space character at the start.
+
+\subsection{Tokenization}
+Tokenization is the process of splitting a text into words, phrases, or other meaningful elements called tokens. In this step, each pretokenized program was split into smaller subunits using a subword tokenization approach called Byte Pair Encoding (BPE). A BPE has two parts: a token learner that generates a vocabulary from a raw training corpus and a token segmenter that tokenizes a raw program based on the vocabulary. The BPE token learning algorithm is as follows \cite{jurafsky_martin}:
+
+\begin{algorithm}[H]
+\caption{BPE token learner algorithm}
+\begin{algorithmic}[1]
+\Function{Byte Pair Encoding}{strings $C$, number of merges $k$}
+\State $V \gets $ all unique characters in $C$ \Comment{initial set of tokens is characters}
+\For{$i$ = 1 to $k$} \Comment{merge tokens til $k$ times}
+\State $t_L, t_R \gets $ Most frequent pair of adjacent tokens in $C$
+\State $t_{NEW} \gets t_L + t_R$ \Comment{make new token by concatenating}
+\State $V \gets V + t_{NEW}$ \Comment{update the vocabulary}
+\State Replace each occurrence of $t_L, t_R$ in $C$ with $t_{NEW}$ \Comment{and update the corpus}
+\EndFor
+\State\Return $V$
+\EndFunction
+\end{algorithmic}
+\end{algorithm}
+
+For the transformer model, the BPE tokenization of the programs was done using fastBPE.  First, the BPE codes were learned from both the Java and Python programs in the training dataset. The learned BPE codes were then applied separately to the training set of Java and Python programs. Finally, the Java and Python program BPE codes were used to construct separate Java and Python program vocabularies and additional special tokens {\lq\lq <unk>\rq\rq}, {\lq\lq <pad>\rq\rq}, {\lq\lq <bos>\rq\rq}, and {\lq\lq <eos>\rq\rq} were added to each vocabulary. The details of the number of codes and vocabulary are shown in Table \ref{table:4.2}.
+\begin{table}[H]
+\centering
+\def\arraystretch{1.25}
+\caption{Dataset BPE description}
+\label{table:4.2}
+\begin{tabular}{|l|r|} \hline
+No. of codes & 10000 \\ \hline
+Java vocabulary size & 3279 \\ \hline
+Python vocabulary size & 3472 \\ \hline
+\textbf{Total} & \textbf{6751} \\ \hline
+\end{tabular}
+\end{table}
+
+For CodeBERT, RobertaTokenizer pretrained on {\lq\lq microsoft/codebert-base\rq\rq} was used. RobertaTokenizer follows the byte-level BPE approach and has a 50265-sized vocabulary.
+
+\section{Neural Translation Model}
+Two neural translation models were built using an encoder and decoder model: one with a transformer architecture and the other with both the encoder and the decoder initialized with the public CodeBERT checkpoint.
+
+\subsection{Transformer}
+An overview of the transformer model is illustrated in Figure \ref{fig:4.2}.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.9]{{transformer_architecture.png}}
+\caption[Overview of the transformer model]{Overview of the transformer model}
+\label{fig:4.2}
+\end{figure}
+The following steps were used to train the model. 
+\\
+\textbf{Step 1: Process input} \\
+The tokens of each tokenized program were converted to the vocabulary indexes. \\
+For each batch of training data, the index of tokens {\lq\lq <bos>\rq\rq} and {\lq\lq <eos>\rq\rq} were added at the beginning and end of the training data. And, the resulting vector was padded to the maximum length by appending {\lq\lq <pad>\rq\rq} token indexes. \\
+The padding entry in the source data was masked to be ignored, and the future positions in the target data were masked to be hidden. 
+\\\\
+\textbf{Step 2: Generate input embeddings} \\
+The inputs were first randomly initialized to the vectors of dimension $d_{model}$ in the embedding layer, which were then updated during backpropagation. 
+\\\\
+\textbf{Step 3: Generate positional embeddings} \\
+The positional encoding vector of dimension $d_{model}$ was calculated using Equation \ref{eq:2.2} and Equation \ref{eq:2.3}, which was then added to each embedding vector before applying dropout with probability $p$. 
+\\\\
+\textbf{Step 4: Perform multi-head attention mechanism} \\
+In the multi-head attention sub-layer of the encoder, each input vector $x_i$ was transformed to $Q$, $K$, and $V$. The $h$ heads were run in parallel. After that, the outputs of $h$ heads were concatenated and multiplied by the weight matrix $W^O$ as given by Equation \ref{eq:2.5}. \\
+Inside each head, $head_i$, of the attention layer, each vector has three representations obtained by multiplying the vectors with the respective weights $W_i^Q$, $W_i^K$, and $W_i^V$.
+\begin{enumerate}[nosep, label=\roman*.]
+\item A query vector, $Q$, of dimension $d_k$. It is trained when an input vector $x_i$ requires all of the key-value pairs of the other input vectors, including itself. 
+\item A key vector, $K$, of dimension $d_k$, it is trained to calculate attention value.
+\item A value vector, $V$, of dimension $d_v$, is trained to calculate attention value.
+\end{enumerate}
+The attention values were computed using Equation \ref{eq:2.4}.
+\\\\
+\textbf{Step 5: Apply post-layer normalization}\\
+The output and input of the previous sub-layer were added, and the resulting vector was normalized using $LayerNorm$ of Equation \ref{eq:2.8}.\\\\
+\textbf{Step 6: Apply feed-forward network} \\
+The input and output of the feed-forward network are $d_{model}$, whereas the inner layer is $d_{ffn}$. The output of the network was subjected to post-layer normalization.
+\\\\
+\textbf{Step 7: Repeat} \\
+Step 4 to 6 were applied $N$ times.
+\\\\
+\textbf{Step 8: Generate output positional embeddings} \\
+In the decoder part, Step 2 and Step 3 were performed to produce output positional embeddings.
+\\\\
+\textbf{Step 9: Perform decoder multi-head attention mechanism} \\
+To keep future positions out of sight, masked multi-head attention was used on the target vector. Following that, post-layer normalization was applied to the vectors. Then, as in Step 4, the second multi-head attention mechanism was implemented, with $K$ and $V$ derived from the encoder output and $Q$ derived from the prior decoder sub-layer. The results were then passed through the post-layer normalization. 
+\\\\
+\textbf{Step 10: Apply decoder feed-forward network} \\
+The identical procedure as in Step 6 was followed when applying feed-forward network. 
+\\\\
+\textbf{Step 11: Repeat decoder} \\
+Steps 9 and 10 were repeated $N$ times.
+\\\\
+\textbf{Step 12: Apply linear transformation and softmax} \\
+The linear transformation was applied to the output of the decoder stack. The output was then converted into a probable element using softmax.
+\\\\
+\textbf{Step 13: Compute loss and backpropagate} \\
+The loss was computed using the cross entropy loss, and each batch was optimized using the Adam optimization algorithm.
+
+\subsection{CodeBERT}
+In the encoder-decoder model based on CodeBERT, both the encoder and the decoder were initialized with CodeBERT's pretrained weight parameters. Because CodeBERT solely consists of encoder layers, the weight parameters of the decoder layer that is not present in CodeBERT were randomly initialized. In this study, the weights of encoders were shared with those of decoders to reduce the memory usage. The overview of the CodeBERT-based encoder-decoder model is illustrated in Figure \ref{fig:4.3}.
+\newpage
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.75]{{codebert_architecture.png}}
+\caption[Overview of the CodeBERT model]{Overview of the CodeBERT model}
+\label{fig:4.3}
+\end{figure}
+\newpage
+The following steps were used to train the model. 
+\\
+\textbf{Step 1: Initialize the encoder-decoder model} \\
+Both the encoder and the decoder of the encoder-decoder model were initialized with the pretrained {\lq\lq microsoft/codebert-base\rq\rq} model with all encoder weights tied to their equivalent decoder weights.
+\\\\
+\textbf{Step 2: Add and update configuration} \\
+The configuration of the model, such as {\lq\lq decoder\_start\_token\_id\rq\rq}, {\lq\lq eos\_token\_id\rq\rq},  {\lq\lq pad\_token\_id\rq\rq},  {\lq\lq max\_length\rq\rq},  {\lq\lq no\_repeat\_ngram\_size\rq\rq}, and  {\lq\lq vocab\_size\rq\rq}, were added and updated.
+\\\\
+\textbf{Step 3: Train model} \\
+The configured model was trained following the same steps (2-13) as the transformer model, with the exception that the weights were shared and were taken from the pretrained model. During backpropagation, the shared weights were updated twice: once in the decoder stack and then in the encoder stack.
+
+\section{Inference}
+To generate translations from a probability model, the Greedy 1-best search criterion was used. In greedy search, the probability at every time step is calculated and the token that gives the highest probability is selected to use as the next token in the sequence. In other words,
+\begin{equation}
+\label{eq:4.1}
+x_t = argmax_{\tilde{x}_t}\mathbb{P}(\tilde{x}_t|x_1, \ldots, x_n)
+\end{equation}
+This technique is efficient and natural. However, it explores only a small part of the search space \cite{manning2019cs224n}.
+
+\section{Data Postprocessing}
+The programs translated using the transformer were postprocessed by first removing BPE tokens and {\lq\lq <unk>\rq\rq} tokens. In the case of the Java program, the program tokens were detokenized by simply reformatting using javalang. For a Python program, any text in capital or small letters matching {\lq\lq newline\rq\rq} and {\lq\lq new line\rq\rq} was replaced with the text {\lq\lq NEWLINE\rq\rq}, {\lq\lq indent\rq\rq} with {\lq\lq INDENT\rq\rq}, and {\lq\lq dedent\rq\rq} with {\lq\lq DEDENT\rq\rq}. Following that, the program was detokenized by splitting it on {\lq\lq NEWLINE\rq\rq}, replacing {\lq\lq INDENT\rq\rq} appearing at the beginning of each line with four spaces, and removing the texts {\lq\lq INDENT\rq\rq}, {\lq\lq DEDENT\rq\rq}, {\lq\lq NL\rq\rq}, and {\lq\lq ENDMARKER\rq\rq}. Finally, all the lines were joined with the {\lq\lq \textbackslash n\rq\rq} character. In the resulting program, {\lq\lq . \rq\rq} and {\lq\lq ~.\rq\rq} were replaced with {\lq\lq .\rq\rq} and minified using pyminifier.
+\\\\
+For model evaluation, both the predicted and reference Python programs were detokenized by splitting the program on a single space character. The {\lq\lq NL\rq\rq}, {\lq\lq DEDENT\rq\rq}, {\lq\lq ENDMARKER\rq\rq}, and multiple {\lq\lq NEWLINE\rq\rq} tokens were removed and the {\lq\lq NEWLINE\rq\rq} and {\lq\lq INDENT\rq\rq} were replaced with {{\lq\lq \textbackslash\textbackslash n\rq\rq}} and {\lq\lq \textbackslash\textbackslash t\rq\rq} respectively. The tokens were then joined with a single space character.
+\\\\
+For programs translated using CodeBERT, the same data postprocessing steps were followed, but BPE special token and the {\lq\lq <unk>\rq\rq} token were not replaced. 
+
+\section{Evaluation}
+The BLEU score and the CodeBLEU score were used to assess the transformer and CodeBERT models' performance. Both the BLEU and CodeBLEU scores range from 0 to 1, with 0 indicating a perfect mismatch and 1 indicating a perfect match.
